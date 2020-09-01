@@ -1,0 +1,24 @@
+Date : 13/05/2020
+Heure : 21:38:40
+Name : Jimmy
+
+Date of introduction : 02 August 2020
+Nom du ttt : Res
+Dosage du ttt : 20gttes
+Réserve : Oui
+2ème intention : Oui
+Date of end : 25 October 2021
+Signature : ec
+
+Date : 13/05/2020
+Heure : 21:38:40
+Name : Jimmy
+
+Date of introduction : 02 August 2020
+Nom du ttt : Test
+Dosage du ttt : 20gttes
+Réserve : Oui
+1ère intention : Oui
+Date of end : 25 October 2021
+Signature : ec
+

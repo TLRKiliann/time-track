@@ -1,0 +1,33 @@
+Date: 09/05/2020
+Heure: 17:39:47
+Prenom et Nom: Julia Roberts
+TA: 129/88 mmHg
+Puls: 90/min
+SaO2: 99%
+FR: 16/min
+Temperature: 36°C
+Glycemie: 5 mmol/l
+Douleurs: 0/10
+
+Date: 10/05/2020
+Heure: 10:30:44
+Prenom et Nom: Julia Roberts
+TA: 120/7744 mmHg
+Puls: 87/min
+SaO2: 99%
+FR: 16/min
+Temperature: 36.4°C
+Glycemie: 5.3 mmol/l
+Douleurs: 2/10
+
+Date: 10/05/2020
+Heure: 10:30:44
+Prenom et Nom: Julia Roberts
+TA: 120/77 mmHg
+Puls: /min
+SaO2: %
+FR: /min
+Temperature: °C
+Glycemie:  mmol/l
+Douleurs: /10
+

@@ -1,0 +1,14 @@
+Date : 09/05/2020
+Heure : 16:09:26
+Prenom et Nom : Geronimo
+Poids : 77
+Taille : 1.60
+BMI : 30.078124999999993
+
+Date : 10/05/2020
+Heure : 16:09:26
+Prenom et Nom : Geronimo
+Poids : 70
+Taille : 1.60
+BMI : 27.343749999999996
+

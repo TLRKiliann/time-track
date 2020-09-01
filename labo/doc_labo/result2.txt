@@ -1,0 +1,17 @@
+
+Date : 09/05/2020
+Nom du patient : Geronimo
+# Ca value and treatment : (add what the patient needs)
+# ALAT value and treatment : (add what the patient needs)
+# HbA1c value and treatment : (add what the patient needs)
+
+
+***************************************************************************
+Date : 11/05/2020
+Patient name : Geronimo
+pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : +2 Ery : neg Hb : neg
+***************************************************************************
+Date : 11/05/2020
+Nom du patient : Geronimo
+# TP value and treatment : (add what the patient needs)
+# INR value and treatment : (add what the patient needs)

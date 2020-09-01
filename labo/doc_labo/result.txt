@@ -1,0 +1,14 @@
+
+
+***************************************************************************
+Date : 04/07/2020
+Patient name : Jimmy
+pH : 5 Leuco : 0 Nit : - Pro : +3 Glu : neg Ket : neg Ery : neg Hb : neg
+***************************************************************************$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Date : 04/07/2020
+Patient name : Jimmy
+# TSH value and treatment : (add what the patient needs)
+# free T4 value and treatment : (add what the patient needs)
+# free free T3 value and treatment : (add what the patient needs)
+# free total T3 value and treatment : (add what the patient needs)
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

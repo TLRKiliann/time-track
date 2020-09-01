@@ -1,0 +1,11 @@
+Date: 09/05/2020
+Heure: 17:45:18
+Prenom et Nom: Natacha Squinz
+TA: 120/90 mmHg
+Puls: 88/min
+SaO2: 99%
+FR: 15/min
+Temperature: 36.7°C
+Glycemie: 5 mmol/l
+Douleurs: 2/10
+

@@ -1,0 +1,22 @@
+Date: 09/05/2020
+Heure: 16:09:59
+Prenom et Nom: Geronimo
+TA: 199/100 mmHg
+Puls: 80/min
+SaO2: 98%
+FR: 17/min
+Temperature: 36.4°C
+Glycemie: 5 mmol/l
+Douleurs: 1/10
+
+Date: 10/05/2020
+Heure: 16:09:59
+Prenom et Nom: Geronimo
+TA: 120/80 mmHg
+Puls: 88/min
+SaO2: 99%
+FR: 16/min
+Temperature: 36°C
+Glycemie: 5.4 mmol/l
+Douleurs: 0/10
+

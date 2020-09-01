@@ -1,0 +1,22 @@
+
+---
+
+
+***************************************************************************
+Date : 16/05/2020
+Patient name : Julian Assange
+pH : 6 Leuco : 0 Nit : - Pro : +1 Glu : neg Ket : neg Ery : neg Hb : neg
+***************************************************************************
+Date : 16/05/2020
+Nom du patient : Julian Assange
+# Na value and treatment : (add what the patient needs)
+# K value and treatment : (add what the patient needs)
+# Cholesterol total value and treatment : (add what the patient needs)
+# ASAT value and treatment : (add what the patient needs)
+# ALAT value and treatment : (add what the patient needs)
+# Gamma-GT value and treatment : (add what the patient needs)
+# Fasting glucose value and treatment : (add what the patient needs)
+# Iron value and treatment : (add what the patient needs)
+# Ferritine value and treatment : (add what the patient needs)
+# TSH value and treatment : (add what the patient needs)
+# Stix (strip) and treatment will be... : (add what the patient needs)
