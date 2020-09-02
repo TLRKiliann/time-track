@@ -12,3 +12,7 @@ Current date : 29/06/2020, 23:36:25 :
 Appointment set for : 30/06/2020 :
 rdv chez le dentiste à 9h00
 
+Current date : 02/09/2020, 06:53:03 :
+Appointment set for : 2/09/2020 :
+ECG à faire !
+

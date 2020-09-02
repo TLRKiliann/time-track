@@ -1,11 +1,11 @@
 [
     [
         "day_selected",
-        30
+        2
     ],
     [
         "month_selected",
-        6
+        9
     ],
     [
         "year_selected",
@@ -17,6 +17,6 @@
     ],
     [
         "month_name",
-        "June"
+        "September"
     ]
 ]
