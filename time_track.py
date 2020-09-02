@@ -934,6 +934,28 @@ class Application(Frame):
         else:
             ("Error unknow")
 
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+            with open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if dateagenda in line:
+                        print(lines[i])
+                        print(lines[i+1])
+                        self.t63.insert(END, "\n\n--- Patient 1 ---\n")
+                        self.t63.insert(INSERT, lines[i])
+                        self.t63.insert(INSERT, lines[i+1])
+                        self.t63.insert(INSERT, "...")
+                        MSB2 = messagebox.showwarning('Info',
+                            'Look at AGENDA,there is an appointment for patient 1 tomorrow !')
+                    else:
+                        pass
+        except FileNotFoundError as infofile1:
+            print("File 1 has not been found", infofile1)
+        else:
+            ("Error unknow")
+
     def agendaDateSearch(self):
         """
         Display messagebox for agenda if an 
@@ -949,6 +971,7 @@ class Application(Frame):
                     line = lines[i]
                     if dateagenda in line:
                         print(lines[i])
+                        print(lines[i+1])
                         MSB2 = messagebox.showwarning('Info',
                             'Look at AGENDA,there is an appointment for patient 1 tomorrow !')
                     else:

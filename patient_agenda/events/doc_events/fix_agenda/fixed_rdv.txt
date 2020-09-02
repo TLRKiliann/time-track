@@ -1,13 +1,8 @@
-Current date : 02/09/2020, 07:43:36 :
-31/08/2020 : Faire ECG !
+Current date : 02/09/2020, 08:23:50 :
+03/09/2020 :
+Voilà est-ce que le msg apparaît ?
 
-Current date : 02/09/2020, 07:43:36 :
-01/09/2020 : Faire ECG !
-
-Current date : 02/09/2020, 07:43:36 :
-02/09/2020 : Faire ECG !
-
-Current date : 02/09/2020, 07:43:36 :
-03/09/2020 : Faire ECG !
-
+Current date : 02/09/2020, 08:24:34 :
+04/09/2020 :
+Ok
 
