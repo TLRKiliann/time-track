@@ -819,10 +819,7 @@ class Application(Frame):
                         self.t63.insert(INSERT, line)
                         self.t63.insert(INSERT, lines[i+1])
                         self.t63.insert(INSERT, lines[i+2])
-                        self.t63.insert(INSERT, lines[i+3])
-                        self.t63.insert(INSERT, lines[i+4])
-                        self.t63.insert(INSERT, lines[i+5])
-                        self.t63.insert(INSERT, lines[i+6])
+                        self.t63.insert(INSERT, "...")
                     else:
                         pass
         except FileNotFoundError as infofileout1:
@@ -843,10 +840,7 @@ class Application(Frame):
                         self.t63.insert(INSERT, line)
                         self.t63.insert(INSERT, lines[i+1])
                         self.t63.insert(INSERT, lines[i+2])
-                        self.t63.insert(INSERT, lines[i+3])
-                        self.t63.insert(INSERT, lines[i+4])
-                        self.t63.insert(INSERT, lines[i+5])
-                        self.t63.insert(INSERT, lines[i+6])
+                        self.t63.insert(INSERT, "...")
                     else:
                         pass
         except FileNotFoundError as infofileout3:
@@ -867,10 +861,7 @@ class Application(Frame):
                         self.t63.insert(INSERT, line)
                         self.t63.insert(INSERT, lines[i+1])
                         self.t63.insert(INSERT, lines[i+2])
-                        self.t63.insert(INSERT, lines[i+3])
-                        self.t63.insert(INSERT, lines[i+4])
-                        self.t63.insert(INSERT, lines[i+5])
-                        self.t63.insert(INSERT, lines[i+6])
+                        self.t63.insert(INSERT, "...")
                     else:
                         pass
         except FileNotFoundError as infofileout4:
@@ -891,10 +882,7 @@ class Application(Frame):
                         self.t63.insert(INSERT, line)
                         self.t63.insert(INSERT, lines[i+1])
                         self.t63.insert(INSERT, lines[i+2])
-                        self.t63.insert(INSERT, lines[i+3])
-                        self.t63.insert(INSERT, lines[i+4])
-                        self.t63.insert(INSERT, lines[i+5])
-                        self.t63.insert(INSERT, lines[i+6])
+                        self.t63.insert(INSERT, "...")
                     else:
                         pass
         except FileNotFoundError as infofileout5:
@@ -915,10 +903,7 @@ class Application(Frame):
                         self.t63.insert(INSERT, line)
                         self.t63.insert(INSERT, lines[i+1])
                         self.t63.insert(INSERT, lines[i+2])
-                        self.t63.insert(INSERT, lines[i+3])
-                        self.t63.insert(INSERT, lines[i+4])
-                        self.t63.insert(INSERT, lines[i+5])
-                        self.t63.insert(INSERT, lines[i+6])
+                        self.t63.insert(INSERT, "...")
                     else:
                         pass
         except FileNotFoundError as infofileout6:
@@ -939,10 +924,7 @@ class Application(Frame):
                         self.t63.insert(INSERT, line)
                         self.t63.insert(INSERT, lines[i+1])
                         self.t63.insert(INSERT, lines[i+2])
-                        self.t63.insert(INSERT, lines[i+3])
-                        self.t63.insert(INSERT, lines[i+4])
-                        self.t63.insert(INSERT, lines[i+5])
-                        self.t63.insert(INSERT, lines[i+6])
+                        self.t63.insert(INSERT, "...")
                     else:
                         pass
         except FileNotFoundError as infofileout7:
