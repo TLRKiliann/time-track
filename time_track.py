@@ -309,7 +309,7 @@ class MenuBar(Frame):
 class Application(Frame):
     def __init__(self, boss=None):
         Frame.__init__(self, borderwidth=5, bg='grey22', padx=20, pady=20, relief=GROOVE)
-        self.master.title('ANGEL-VISION - Developed by ko@l@tr33 - 2020')
+        self.master.title('TIME-TRACK - Developed by ko@l@tr33 - 2020')
         mBar = MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=YES)
         # ScrollCanvas limite de la zone à parcourir avec la barre
@@ -341,7 +341,7 @@ class Application(Frame):
         self.button1_window = self.can.create_window(75, 30, anchor=CENTER,
             window=self.button1)
         # Synopsis button
-        self.button2 = Button(self, text="SYNOPSIS", font=('Times 18 bold'),
+        self.button2 = Button(self, text="TIME-TRACK", font=('Times 18 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.showsynopsis)
         self.button2.configure(width=15, bd=3, highlightbackground='#82193e',
             activebackground='dark turquoise')
@@ -396,7 +396,7 @@ class Application(Frame):
         self.button1_window = self.can.create_window(75, 30, anchor=CENTER,
             window=self.button1)
         # Synopsis button
-        self.button2 = Button(self, text="SYNOPSIS", font=('Times 18 bold'),
+        self.button2 = Button(self, text="TIME-TRACK", font=('Times 18 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.showsynopsis)
         self.button2.configure(width=15, bd=3, highlightbackground='#82193e',
             activebackground='dark turquoise')
@@ -475,7 +475,7 @@ class Application(Frame):
         self.can.delete(ALL)
         self.photo=PhotoImage(file='./syno_gif/fondcolor2.png')
         self.item=self.can.create_image(625, 400, image=self.photo)
-        self.can.create_text(625, 80, anchor=CENTER, text="SYNOPSIS",
+        self.can.create_text(625, 80, anchor=CENTER, text="TIME-TRACK",
             font=('Times New Roman', 40), fill='turquoise')
 
         self.x1, self.y1 = 1100, 50

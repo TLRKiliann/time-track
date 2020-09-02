@@ -1,19 +1,11 @@
-En date du : 30/08/2020 at 07:50:42 :
-Oui oui
-
-En date du : 31/08/2020 at 07:50:42 :
-Oui oui
-
-En date du : 01/09/2020 at 07:50:42 :
-Oui oui
-Ok fait c'est bon
-
-En date du : 01/09/2020 at 07:50:42 :
-Non non
-Ok fait c'est bon
-
-En date du : 02/09/2020 at 07:51:45 :
-Et alors
-
-En date du : 03/09/2020 at 07:51:58 :
-Bon alors
+En date du : 02/09/2020 at 08:56:43 :
+Date : 02/09/2020
+Patient name : Esteban Catanea
++ Surveillance pour éviter les dangers requise
+Suppression des fichiers diag à revoir !!!
+---
+***************************************************************************
+Date : 02/09/2020
+Patient name : Esteban Catanea
+pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
+***************************************************************************
