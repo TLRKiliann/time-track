@@ -25,18 +25,28 @@ data_month = data_list1[1]
 data_year = data_list1[2]
 
 try:
-    if data_month < 10:
-        extradala = '0' +''+ str(data_month)
-    elif data_month >= 10:
-        extradala = str(data_month)
+    if data_day < 10:
+        extraday = '0' +''+ str(data_day)
+    elif data_day >= 10:
+        extraday = str(data_day)
     else:
         pass
 except ValueError as valout:
-    print("Value is a problem", valout)
+    print("Value of day is a problem", valout)
+
+try:
+    if data_month < 10:
+        extramounth = '0' +''+ str(data_month)
+    elif data_month >= 10:
+        extramounth = str(data_month)
+    else:
+        pass
+except ValueError as valout:
+    print("Value of mounth is a problem", valout)
 
 # initword = "Appointment set for :"
 # initword +' '+ 
-final_data = str(data_day) +'/'+ extradala +'/'+ str(data_year) +' :'
+final_data = extraday +'/'+ extramounth +'/'+ str(data_year) +' :'
 print(final_data)
 
 try:

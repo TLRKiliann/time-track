@@ -950,7 +950,7 @@ class Application(Frame):
                     if dateagenda in line:
                         print(lines[i])
                         MSB2 = messagebox.showwarning('Info',
-                            'Look at AGENDA,there is an appointment for patient 1!')
+                            'Look at AGENDA,there is an appointment for patient 1 tomorrow !')
                     else:
                         pass
         except FileNotFoundError as infofile1:
@@ -969,7 +969,7 @@ class Application(Frame):
                         print(lines[i+1])
                         print(lines[i+2])
                         MSB2 = messagebox.showwarning('Info',
-                            'Look at AGENDA, there is an appointment for patient 2!')
+                            'Look at AGENDA, there is an appointment for patient 2 tomorrow !')
                     else:
                         pass
         except FileNotFoundError as infofile2:
@@ -988,7 +988,7 @@ class Application(Frame):
                         print(lines[i+1])
                         print(lines[i+2])
                         MSB2 = messagebox.showwarning('Info',
-                            'Look at AGENDA, there is an appointment for patient 3!')
+                            'Look at AGENDA, there is an appointment for patient 3 tomorrow !')
                     else:
                         pass
         except FileNotFoundError as infofile3:
@@ -1007,7 +1007,7 @@ class Application(Frame):
                         print(lines[i+1])
                         print(lines[i+2])
                         MSB2 = messagebox.showwarning('Info',
-                            'Look at AGENDA, there is an appointment for patient 4!')
+                            'Look at AGENDA, there is an appointment for patient 4 tomorrow !')
                     else:
                         pass
         except FileNotFoundError as infofile4:
@@ -1026,7 +1026,7 @@ class Application(Frame):
                         print(lines[i+1])
                         print(lines[i+2])
                         MSB2 = messagebox.showwarning('Info',
-                            'Look at AGENDA, there is an appointment for patient 5!')
+                            'Look at AGENDA, there is an appointment for patient 5 tomorrow !')
                     else:
                         pass
         except FileNotFoundError as infofile5:
@@ -1045,7 +1045,7 @@ class Application(Frame):
                         print(lines[i+1])
                         print(lines[i+2])
                         MSB2 = messagebox.showwarning('Info',
-                            'Look at AGENDA, there is an appointment for patient 6!')
+                            'Look at AGENDA, there is an appointment for patient 6 tomorrow !')
                     else:
                         pass
         except FileNotFoundError as infofile6:
@@ -1064,7 +1064,7 @@ class Application(Frame):
                         print(lines[i+1])
                         print(lines[i+2])
                         MSB2 = messagebox.showwarning('Info',
-                            'Look at AGENDA, there is an appointment for patient 7!')
+                            'Look at AGENDA, there is an appointment for patient 7 tomorrow !')
                     else:
                         pass
         except FileNotFoundError as infofile7:
