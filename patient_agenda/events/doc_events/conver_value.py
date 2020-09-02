@@ -34,8 +34,9 @@ try:
 except ValueError as valout:
     print("Value is a problem", valout)
 
-initword = "Appointment set for :"
-final_data =  initword +' '+ str(data_day) +'/'+ extradala +'/'+ str(data_year) +' :'
+# initword = "Appointment set for :"
+# initword +' '+ 
+final_data = str(data_day) +'/'+ extradala +'/'+ str(data_year) +' :'
 print(final_data)
 
 try:

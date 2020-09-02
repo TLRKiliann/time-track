@@ -1,18 +1,4 @@
-Current date : 15/05/2020, 10:57:15 :
-Appointment set for : 16/05/2020 :
-Ok that seems good !
+Current date : 02/09/2020, 07:43:36 :
+3/09/2020 : Faire ECG !
 
-Current date : 18/06/2020, 16:22:19 :
-Appointment set for : 19/06/2020 :
-rdv chez MDO !
-
-
-
-Current date : 29/06/2020, 23:36:25 :
-Appointment set for : 30/06/2020 :
-rdv chez le dentiste à 9h00
-
-Current date : 02/09/2020, 06:53:03 :
-Appointment set for : 2/09/2020 :
-ECG à faire !
 

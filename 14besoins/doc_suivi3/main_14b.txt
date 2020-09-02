@@ -1,0 +1,29 @@
+
+
+En date du : 13/05/2020 at 16:49:36 :
++ Surveillance de la température requise
+ok
++ Surveillance urinaire et/ou fécale requise requise
+Il a fugué
++ Surveillance posturale et/ou des déplacements requise
+Mal au dos
+
+***************************************************************************
+Date : 13/05/2020
+Patient name : Edward Snowden
+pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
+***************************************************************************
+
+En date du : 14/05/2020 at 16:57:20 :
+Date : 13/05/2020
+Nom du patient : Edward Snowden
++ Surveillance de la température requise
++ Surveillance urinaire et/ou fécale requise requise
++ Surveillance posturale et/ou des déplacements requise
+
+Date : 13/05/2020
+Nom du patient : Edward Snowden
++ Surveillance pour éviter les dangers requise
++ Stimulation ou aide pour la communication requise
++ Agir pour aider la personne dans ses valeurs et croyances
++ Accompagnement ou aide dans l'apprentissage requis

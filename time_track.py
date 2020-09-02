@@ -157,6 +157,80 @@ class MenuBar(Frame):
         self.cmd_agenda.configure(activeforeground='black', activebackground='cyan', 
             menu=me3)
 
+        # 14 besoins menu
+        self.cmd_Besoins=Menubutton(self, text='14 Needs', font=("Times 14"),
+            fg='cyan', bg='grey30', relief=GROOVE)
+        self.cmd_Besoins.pack(side=LEFT, padx=3)
+        # Partie déroulante du menu 14b
+        me4 = Menu(self.cmd_Besoins)
+        me4.add_command(label=new_text, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoinsCoche)
+        me4.add_separator()
+        me4.add_command(label=new_text2, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins2Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text3, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins3Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text4, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins4Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text5, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins5Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text6, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins6Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text7, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins7Coche)
+        # Integration of 14b menu
+        self.cmd_Besoins.configure(activeforeground='black', activebackground='cyan',
+            menu=me4)
+
+        # Helth and care menu
+        self.cmd_Soins=Menubutton(self, text='Care and monitoring', font=("Times 14"),
+            fg='cyan', bg='grey30', relief=GROOVE)
+        self.cmd_Soins.pack(side=LEFT, padx=3)
+        # Partie déroulante du menu health and care
+        meSoins = Menu(self.cmd_Soins)
+        meSoins.add_command(label=new_text, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins1)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text2, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins2)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text3, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins3)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text4, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins4)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text5, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins5)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text6, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins6)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text7, font=('Times 16'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins7)
+        # Integration of health and care menu
+        self.cmd_Soins.configure(activeforeground='black', activebackground='cyan',
+            menu=meSoins)
+
         # Treatments
         self.cmd_ttt=Menubutton(self, text='Treatments', font=("Times 14"),
             fg='cyan', bg='grey30', relief=GROOVE)
@@ -724,10 +798,7 @@ class Application(Frame):
                         self.t63.insert(INSERT, line)
                         self.t63.insert(INSERT, lines[i+1])
                         self.t63.insert(INSERT, lines[i+2])
-                        self.t63.insert(INSERT, lines[i+3])
-                        self.t63.insert(INSERT, lines[i+4])
-                        self.t63.insert(INSERT, lines[i+5])
-                        self.t63.insert(INSERT, lines[i+6])
+                        self.t63.insert(INSERT, "...")
                     else:
                         pass
         except FileNotFoundError as infofileout:
@@ -895,9 +966,7 @@ class Application(Frame):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if dateagenda in line:
-                        print(line)
-                        print(lines[i+1])
-                        print(lines[i+2])
+                        print(lines[i])
                         MSB2 = messagebox.showwarning('Info',
                             'Look at AGENDA,there is an appointment for patient 1!')
                     else:
@@ -1387,6 +1456,53 @@ class Application(Frame):
 
     def patientAgenda7(self):
         subprocess.call('./patient_agenda/origin_agenda7.py')
+
+    # CheckBox 14 needs OK
+    def besoinsCoche(self):
+        subprocess.call('./14besoins/checkb.py')
+
+    def besoins2Coche(self):
+        subprocess.call('./14besoins/checkb2.py')
+
+    def besoins3Coche(self):
+        subprocess.call('./14besoins/checkb3.py')
+
+    def besoins4Coche(self):
+        subprocess.call('./14besoins/checkb4.py')
+
+    def besoins5Coche(self):
+        subprocess.call('./14besoins/checkb5.py')
+
+    def besoins6Coche(self):
+        subprocess.call('./14besoins/checkb6.py')
+
+    def besoins7Coche(self):
+        subprocess.call('./14besoins/checkb7.py')
+
+    def launchPsycho(self):
+        subprocess.call('./psychotabs.py')
+
+    # Func 14 needs suivi OK
+    def suiviSoins1(self):
+        subprocess.call("./14besoins/suivi_patient_1.py")
+
+    def suiviSoins2(self):
+        subprocess.call("./14besoins/suivi_patient_2.py")
+
+    def suiviSoins3(self):
+        subprocess.call("./14besoins/suivi_patient_3.py")
+
+    def suiviSoins4(self):
+        subprocess.call("./14besoins/suivi_patient_4.py")
+
+    def suiviSoins5(self):
+        subprocess.call("./14besoins/suivi_patient_5.py")
+
+    def suiviSoins6(self):
+        subprocess.call("./14besoins/suivi_patient_6.py")
+
+    def suiviSoins7(self):
+        subprocess.call("./14besoins/suivi_patient_7.py")
 
     # treatments
     def tttMed1(self):

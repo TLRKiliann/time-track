@@ -1,0 +1,39 @@
+
+
+Date : 13/05/2020
+Nom du patient : Geronimo
+pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
+
+En date du : 13/05/2020 à 16:16:29 :
++ Surveillance respiratoire requise
+Test2 ok
+
+En date du : 10/05/2020 à 10:29:09 :
+# Ca value and treatment : (add what the patient needs)
+Result1
+# ALAT value and treatment : (add what the patient needs)
+R2
+# HbA1c value and treatment : (add what the patient needs)
+R3
+
+En date du : 10/05/2020 à 10:38:42 :
++ Surveillance du sommeil requise
+Revoir les somnifères.
+
+***************************************************************************
+Date : 13/05/2020
+Patient name : Geronimo
+pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : +2 Ery : neg Hb : neg
+***************************************************************************
+
+En date du : 11/05/2020 at 22:56:37 :
+# TP value and treatment : in 3 weeks
+# INR value and treatment : ok
+
+En date du : 11/05/2020 at 22:57:04 :
+***************************************************************************
+Date : 11/05/2020
+Patient name : Geronimo
+pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : +2 Ery : neg Hb : neg
+***************************************************************************
+Dr Angel has said that we could check wrekle the patient.
