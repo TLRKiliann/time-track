@@ -1,6 +1,0 @@
-
-+++ Changes about rdv +++
-Appointment set for : 27/5/2020 :
-RDV chez le dentiste à 13h30.
-Le médecin aura du retard.
-

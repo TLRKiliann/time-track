@@ -1,8 +1,0 @@
-Current date : 10/05/2020, 10:04:26 :
-Appointment set for : 16/5/2020 :
-RDV chez l'ergo à 18h00.
-
-Current date : 15/05/2020, 10:24:39 :
-Appointment set for : 16/05/2020 :
-test2 to see agenda in front when app start.
-

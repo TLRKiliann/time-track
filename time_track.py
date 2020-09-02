@@ -433,7 +433,7 @@ class Application(Frame):
             "---> Agenda is verified every day and pop-up\n"
             "to show you if an appointment is fixed for tomorrow.\n\n"
 
-            "SYNOPSIS\n\n"
+            "TIME-TRACK\n\n"
             "Entry + Add patient ---> Allergy + Intolerance ---> 14 Needs ---> Care and Monitoring :\n"
             "---------------------------------------------------------------------------------------------------------\n"
             "Use 'Entry' button to enter for first time new patient. Use 'Add "
@@ -452,18 +452,9 @@ class Application(Frame):
             "+ Labo + Comburtest (urinary stix)\n"
             "+ ttt and R\n"
             "+ 14 Needs\n"
-            "+ Externals Stackeholders\n\n"
+            "+ BMI\n"
+            "+ Agenda\n\n"
 
-            "Global :\n"
-            "----------\n"
-            "---> All txt files are consultable and accessibles\n"
-            "---> Graphics : all Graphics open them-self to show you "
-            "BMI, Weight(kg), TA, Puls, SaO2, FR, T°C,\n" 
-            "and level of Pain\n"
-            "---> Angel Eye : tetra vision about : BMI, Vital parameters, Visit "
-            "Medical and Care and Monitoring.\n"
-            "---> Global Vision : tetra vision about : Diagnosis, Agenda, Auxiliary "
-            "resources and Story Life.\n\n"
             "PSYCHOTABS\n\n"
             "Psychotabs is an application only for consulting neurleptics treatments.\n\n"
             "\nDevelopped on Linux Xubuntu (xfce4) Voyager 18.04 by Cédric Kuchen - alias ko@l@tr33\n",
@@ -475,8 +466,8 @@ class Application(Frame):
         self.can.delete(ALL)
         self.photo=PhotoImage(file='./syno_gif/fondcolor2.png')
         self.item=self.can.create_image(625, 400, image=self.photo)
-        self.can.create_text(625, 80, anchor=CENTER, text="TIME-TRACK",
-            font=('Times New Roman', 40), fill='turquoise')
+        #self.can.create_text(625, 80, anchor=CENTER, text="TIME-TRACK",
+        #    font=('Times New Roman', 40), fill='turquoise')
 
         self.x1, self.y1 = 1100, 50
         self.Date_write=Entry(self.can)
