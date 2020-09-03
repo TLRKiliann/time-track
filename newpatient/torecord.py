@@ -86,6 +86,110 @@ def get(Nompatient, entree, Birthvalue, Birthentree):
                     line = lines[i]
                     if mot7 in line:
                         searchLine7(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile8.txt'):
+            with open('./newpatient/entryfile8.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot4 in line:
+                        searchLine4(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile9.txt'):
+            with open('./newpatient/entryfile9.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot5 in line:
+                        searchLine5(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile10.txt'):
+            with open('./newpatient/entryfile10.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot6 in line:
+                        searchLine6(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile11.txt'):
+            with open('./newpatient/entryfile11.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine7(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile12.txt'):
+            with open('./newpatient/entryfile12.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot5 in line:
+                        searchLine5(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile13.txt'):
+            with open('./newpatient/entryfile13.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot6 in line:
+                        searchLine6(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile14.txt'):
+            with open('./newpatient/entryfile14.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine7(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile15.txt'):
+            with open('./newpatient/entryfile15.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine7(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile16.txt'):
+            with open('./newpatient/entryfile16.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot5 in line:
+                        searchLine5(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile17.txt'):
+            with open('./newpatient/entryfile17.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot6 in line:
+                        searchLine6(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile18.txt'):
+            with open('./newpatient/entryfile18.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine7(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile19.txt'):
+            with open('./newpatient/entryfile19.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot6 in line:
+                        searchLine6(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile20.txt'):
+            with open('./newpatient/entryfile20.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine7(Nompatient, Birthvalue)
         gui.destroy()
 
 def searchLine1(Nompatient, Birthvalue):
