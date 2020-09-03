@@ -81,19 +81,142 @@ def get(Nompatient, entree):
                         delFuncFile7()          
                     else:
                         print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile8.txt'):
+            with open('./newpatient/entryfile8.txt', 'r') as file8:
+                lines = file8.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile8()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile9.txt'):
+            with open('./newpatient/entryfile9.txt', 'r') as file9:
+                lines = file9.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile9()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile10.txt'):
+            with open('./newpatient/entryfile10.txt', 'r') as file10:
+                lines = file10.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile10()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile11.txt'):
+            with open('./newpatient/entryfile11.txt', 'r') as file11:
+                lines = file11.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile11()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile12.txt'):
+            with open('./newpatient/entryfile12.txt', 'r') as file12:
+                lines = file12.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile12()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile13.txt'):
+            with open('./newpatient/entryfile13.txt', 'r') as file13:
+                lines = file13.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile13()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile14.txt'):
+            with open('./newpatient/entryfile14.txt', 'r') as file14:
+                lines = file14.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile14()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile15.txt'):
+            with open('./newpatient/entryfile15.txt', 'r') as file15:
+                lines = file15.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile15()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile16.txt'):
+            with open('./newpatient/entryfile16.txt', 'r') as file16:
+                lines = file16.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile16()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile17.txt'):
+            with open('./newpatient/entryfile17.txt', 'r') as file17:
+                lines = file17.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile17()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile18.txt'):
+            with open('./newpatient/entryfile18.txt', 'r') as file18:
+                lines = file18.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile18()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile19.txt'):
+            with open('./newpatient/entryfile19.txt', 'r') as file19:
+                lines = file19.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile19()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile20.txt'):
+            with open('./newpatient/entryfile20.txt', 'r') as file20:
+                lines = file20.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile20()          
+                    else:
+                        print("End of test delete files.")
     else:           
         NoforQ = messagebox.showinfo('Return', 'None file was found !')
 
     gui.destroy()
 
 def delFuncFile1():
-    try:
-        if os.path.getsize('./admin/readadmin/fileAdmin1.txt'):
-            os.remove('./admin/readadmin/fileAdmin1.txt')
-            print("+ File fileAdmin1.txt deleted")
-    except FileNotFoundError as filefunc1:
-        print("+ File fileAdmin1.txt does not exist", filefunc1)
-
     try:
         if os.path.getsize('./14besoins/doc_suivi/main_14b.txt'):
             os.remove('./14besoins/doc_suivi/main_14b.txt')
@@ -137,62 +260,6 @@ def delFuncFile1():
         print("+ File intro_res.txt does not exist", filefunc62)
 
     try:
-        if os.path.getsize('./param/aspifile/dlr.json'):
-            os.remove('./param/aspifile/dlr.json')
-            print("+ File dlr.json deleted")
-    except FileNotFoundError as filefunc6:
-        print("+ File dlr.json does not exist", filefunc6)
-
-    try:
-        if os.path.getsize('./param/aspifile/freq.json'):
-            os.remove('./param/aspifile/freq.json')
-            print("+ File freq.json deleted")
-    except FileNotFoundError as filefunc7:
-        print("+ File freq.json does not exist", filefunc7)
-
-    try:
-        if os.path.getsize('./param/aspifile/gly.json'):
-            os.remove('./param/aspifile/gly.json')
-            print("+ File gly.json deleted")
-    except FileNotFoundError as filefunc8:
-        print("+ File gly.json does not exist", filefunc8)
-
-    try:
-        if os.path.getsize('./param/aspifile/puls.json'):
-            os.remove('./param/aspifile/puls.json')
-            print("+ File puls.json deleted")
-    except FileNotFoundError as filefunc9:
-        print("+ File puls.json does not exist", filefunc9)
-
-    try:
-        if os.path.getsize('./param/aspifile/sat.json'):
-            os.remove('./param/aspifile/sat.json')
-            print("+ File sat.json deleted")
-    except FileNotFoundError as filefunc10:
-        print("+ File sat.json does not exist", filefunc10)
-
-    try:
-        if os.path.getsize('./param/aspifile/temp.json'):
-            os.remove('./param/aspifile/temp.json')
-            print("+ File temp.json deleted")
-    except FileNotFoundError as filefunc11:
-        print("+ File temp.json does not exist", filefunc11)
-
-    try:
-        if os.path.getsize('./param/aspifile/tensor.json'):
-            os.remove('./param/aspifile/tensor.json')
-            print("+ File tensor.json deleted")
-    except FileNotFoundError as filefunc12:
-        print("+ File tensor.json does not exist", filefunc12)
-
-    try:
-        if os.path.getsize('./param/Main.txt'):
-            os.remove('./param/Main.txt')
-            print("+ File Main.txt deleted")
-    except FileNotFoundError as filefunc13:
-        print("+ File Main.txt does not exist", filefunc13)
-
-    try:
         if os.path.getsize('./calBmi/doc_BMI/file_bmi.json'):
             os.remove('./calBmi/doc_BMI/file_bmi.json')
             print("+ File file_bmi.json deleted")
@@ -214,13 +281,6 @@ def delFuncFile1():
         print("+ File bmi.txt does not exist", filefunc16)
 
     try:
-        if os.path.getsize('./vmed/doc_vmed/resultvmed.txt'):
-            os.remove('./vmed/doc_vmed/resultvmed.txt')
-            print("+ File resultvmed deleted")
-    except FileNotFoundError as filefunc17:
-        print("+ File resultvmed does not exist", filefunc17)
-
-    try:
         if os.path.getsize('./diag/doc_diag/diagrecap.txt'):
             os.remove('./diag/doc_diag/diagrecap.txt')
             print("+ File diagrecap.txt deleted")
@@ -233,20 +293,6 @@ def delFuncFile1():
             print("+ File result.txt deleted")
     except FileNotFoundError as filefunc19:
         print("+ File result.txt does not exist", filefunc19)
-
-    try:
-        if os.path.getsize('./auxsrc/doc_auxsrc/auxsrcfile1.txt'):
-            os.remove('./auxsrc/doc_auxsrc/auxsrcfile1.txt')
-            print("+ File auxsrcfile1.txt deleted")
-    except FileNotFoundError as filefunc20:
-        print("+ File auxsrcfile1.txt does not exist", filefunc20)
-
-    try:
-        if os.path.getsize('./histv/doc_histv/Hvie_patient1.txt'):
-            os.remove('./histv/doc_histv/Hvie_patient1.txt')
-            print("+ File Hvie_patient1.txt deleted")
-    except FileNotFoundError as filefunc21:
-        print("+ File Hvie_patient1.txt does not exist", filefunc21)
 
     try:
         if os.path.getsize('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt'):
@@ -301,13 +347,6 @@ def delFuncFile1():
 
 def delFuncFile2():
     try:
-        if os.path.getsize('./admin/readadmin/fileAdmin2.txt'):
-            os.remove('./admin/readadmin/fileAdmin2.txt')
-            print("+ File fileAdmin2.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File fileAdmin2.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./14besoins/doc_suivi2/main_14b.txt'):
             os.remove('./14besoins/doc_suivi2/main_14b.txt')
             print("+ File main_14b.txt deleted")
@@ -350,62 +389,6 @@ def delFuncFile2():
         print("+ File intro_res.txt does not exist", fileres5)
 
     try:
-        if os.path.getsize('./param/aspifile2/dlr.json'):
-            os.remove('./param/aspifile2/dlr.json')
-            print("+ File dlr.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File dlr.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile2/freq.json'):
-            os.remove('./param/aspifile2/freq.json')
-            print("+ File freq.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File freq.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile2/gly.json'):
-            os.remove('./param/aspifile2/gly.json')
-            print("+ File gly.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File gly.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile2/puls.json'):
-            os.remove('./param/aspifile2/puls.json')
-            print("+ File puls.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File puls.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile2/sat.json'):
-            os.remove('./param/aspifile2/sat.json')
-            print("+ File sat.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File sat.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile2/temp.json'):
-            os.remove('./param/aspifile2/temp.json')
-            print("+ File temp.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File temp.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile2/tensor.json'):
-            os.remove('./param/aspifile2/tensor.json')
-            print("+ File tensor.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File tensor.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/Main2.txt'):
-            os.remove('./param/Main2.txt')
-            print("+ File Main2.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Main2.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./calBmi/doc_BMI2/file_bmi.json'):
             os.remove('./calBmi/doc_BMI2/file_bmi.json')
             print("+ File file_bmi.json deleted")
@@ -427,13 +410,6 @@ def delFuncFile2():
         print("+ File bmi2.txt does not exist", filefunc28)
 
     try:
-        if os.path.getsize('./vmed/doc_vmed2/resultvmed.txt'):
-            os.remove('./vmed/doc_vmed2/resultvmed.txt')
-            print("+ File resultvmed.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File resultvmed.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./diag/doc_diag2/diagrecap.txt'):
             os.remove('./diag/doc_diag2/diagrecap.txt')
             print("+ File diagrecap.txt deleted")
@@ -446,20 +422,6 @@ def delFuncFile2():
             print("+ File result2.txt deleted")
     except FileNotFoundError as filefunc28:
         print("+ File result2.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./auxsrc/doc_auxsrc2/auxsrcfile2.txt'):
-            os.remove('./auxsrc/doc_auxsrc2/auxsrcfile2.txt')
-            print("+ File auxsrcfile2.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File auxsrcfile2.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./histv/doc_histv2/Hvie_patient2.txt'):
-            os.remove('./histv/doc_histv2/Hvie_patient2.txt')
-            print("+ File Hvie_patient2.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Hvie_patient2.txt does not exist", filefunc28)
 
     try:
         if os.path.getsize('./patient_agenda/events2/doc_events/fix_agenda/fixed_rdv.txt'):
@@ -514,13 +476,6 @@ def delFuncFile2():
 
 def delFuncFile3():
     try:
-        if os.path.getsize('./admin/readadmin/fileAdmin3.txt'):
-            os.remove('./admin/readadmin/fileAdmin3.txt')
-            print("+ File fileAdmin3.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File fileAdmin3.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./14besoins/doc_suivi3/main_14b.txt'):
             os.remove('./14besoins/doc_suivi3/main_14b.txt')
             print("+ File main_14b.txt deleted")
@@ -563,62 +518,6 @@ def delFuncFile3():
         print("+ File intro_res.txt does not exist", fileres5)
 
     try:
-        if os.path.getsize('./param/aspifile3/dlr.json'):
-            os.remove('./param/aspifile3/dlr.json')
-            print("+ File dlr.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File dlr.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile3/freq.json'):
-            os.remove('./param/aspifile3/freq.json')
-            print("+ File freq.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File freq.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile3/gly.json'):
-            os.remove('./param/aspifile3/gly.json')
-            print("+ File gly.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File gly.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile3/puls.json'):
-            os.remove('./param/aspifile3/puls.json')
-            print("+ File puls.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File puls.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile3/sat.json'):
-            os.remove('./param/aspifile3/sat.json')
-            print("+ File sat.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File sat.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile3/temp.json'):
-            os.remove('./param/aspifile3/temp.json')
-            print("+ File temp.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File temp.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile3/tensor.json'):
-            os.remove('./param/aspifile3/tensor.json')
-            print("+ File tensor.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File tensor.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/Main3.txt'):
-            os.remove('./param/Main3.txt')
-            print("+ File Main3.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Main3.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./calBmi/doc_BMI3/file_bmi.json'):
             os.remove('./calBmi/doc_BMI3/file_bmi.json')
             print("+ File file_bmi.json deleted")
@@ -640,13 +539,6 @@ def delFuncFile3():
         print("+ File bmi3.txt does not exist", filefunc28)
 
     try:
-        if os.path.getsize('./vmed/doc_vmed3/resultvmed.txt'):
-            os.remove('./vmed/doc_vmed3/resultvmed.txt')
-            print("+ File resultvmed.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File resultvmed.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./diag/doc_diag3/diagrecap.txt'):
             os.remove('./diag/doc_diag3/diagrecap.txt')
             print("+ File diagrecap.txt deleted")
@@ -659,20 +551,6 @@ def delFuncFile3():
             print("+ File result3.txt deleted")
     except FileNotFoundError as filefunc28:
         print("+ File result3.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./auxsrc/doc_auxsrc3/auxsrcfile3.txt'):
-            os.remove('./auxsrc/doc_auxsrc3/auxsrcfile3.txt')
-            print("+ File auxsrcfile3.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File auxsrcfile3.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./histv/doc_histv3/Hvie_patient3.txt'):
-            os.remove('./histv/doc_histv3/Hvie_patient3.txt')
-            print("+ File Hvie_patient3.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Hvie_patient3.txt does not exist", filefunc28)
 
     try:
         if os.path.getsize('./patient_agenda/events3/doc_events/fix_agenda/fixed_rdv.txt'):
@@ -727,13 +605,6 @@ def delFuncFile3():
 
 def delFuncFile4():
     try:
-        if os.path.getsize('./admin/readadmin/fileAdmin4.txt'):
-            os.remove('./admin/readadmin/fileAdmin4.txt')
-            print("+ File fileAdmin4.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File fileAdmin4.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./14besoins/doc_suivi4/main_14b.txt'):
             os.remove('./14besoins/doc_suivi4/main_14b.txt')
             print("+ File main_14b.txt deleted")
@@ -776,62 +647,6 @@ def delFuncFile4():
         print("+ File intro_res.txt does not exist", fileres5)
 
     try:
-        if os.path.getsize('./param/aspifile4/dlr.json'):
-            os.remove('./param/aspifile4/dlr.json')
-            print("+ File dlr.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File dlr.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile4/freq.json'):
-            os.remove('./param/aspifile4/freq.json')
-            print("+ File freq.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File freq.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile4/gly.json'):
-            os.remove('./param/aspifile4/gly.json')
-            print("+ File gly.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File gly.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile4/puls.json'):
-            os.remove('./param/aspifile4/puls.json')
-            print("+ File puls.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File puls.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile4/sat.json'):
-            os.remove('./param/aspifile4/sat.json')
-            print("+ File sat.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File sat.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile4/temp.json'):
-            os.remove('./param/aspifile4/temp.json')
-            print("+ File temp.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File temp.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile4/tensor.json'):
-            os.remove('./param/aspifile4/tensor.json')
-            print("+ File tensor.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File tensor.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/Main4.txt'):
-            os.remove('./param/Main4.txt')
-            print("+ File Main4.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Main4.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./calBmi/doc_BMI4/file_bmi.json'):
             os.remove('./calBmi/doc_BMI4/file_bmi.json')
             print("+ File bmi.json deleted")
@@ -853,13 +668,6 @@ def delFuncFile4():
         print("+ File bmi4.txt does not exist", filefunc28)
 
     try:
-        if os.path.getsize('./vmed/doc_vmed4/resultvmed.txt'):
-            os.remove('./vmed/doc_vmed4/resultvmed.txt')
-            print("+ File resultvmed.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File resultvmed.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./diag/doc_diag4/diagrecap.txt'):
             os.remove('./diag/doc_diag4/diagrecap.txt')
             print("+ File diagrecap.txt deleted")
@@ -872,20 +680,6 @@ def delFuncFile4():
             print("+ File result4.txt deleted")
     except FileNotFoundError as filefunc28:
         print("+ File result4.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./auxsrc/doc_auxsrc4/auxsrcfile4.txt'):
-            os.remove('./auxsrc/doc_auxsrc4/auxsrcfile4.txt')
-            print("+ File auxsrcfile4.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File auxsrcfile4.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./histv/doc_histv4/Hvie_patient4.txt'):
-            os.remove('./histv/doc_histv4/Hvie_patient4.txt')
-            print("+ File Hvie_patient4.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Hvie_patient4.txt does not exist", filefunc28)
 
     try:
         if os.path.getsize('./patient_agenda/events4/doc_events/fix_agenda/fixed_rdv.txt'):
@@ -940,13 +734,6 @@ def delFuncFile4():
 
 def delFuncFile5():
     try:
-        if os.path.getsize('./admin/readadmin/fileAdmin5.txt'):
-            os.remove('./admin/readadmin/fileAdmin5.txt')
-            print("+ File fileAdmin5.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File fileAdmin5.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./14besoins/doc_suivi5/main_14b.txt'):
             os.remove('./14besoins/doc_suivi5/main_14b.txt')
             print("+ File main_14b.txt deleted")
@@ -989,62 +776,6 @@ def delFuncFile5():
         print("+ File intro_res.txt does not exist", filefunc5)
 
     try:
-        if os.path.getsize('./param/aspifile5/dlr.json'):
-            os.remove('./param/aspifile5/dlr.json')
-            print("+ File dlr.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File dlr.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile5/freq.json'):
-            os.remove('./param/aspifile5/freq.json')
-            print("+ File freq.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File freq.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile5/gly.json'):
-            os.remove('./param/aspifile5/gly.json')
-            print("+ File gly.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File gly.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile5/puls.json'):
-            os.remove('./param/aspifile5/puls.json')
-            print("+ File puls.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File puls.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile5/sat.json'):
-            os.remove('./param/aspifile5/sat.json')
-            print("+ File sat.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File sat.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile5/temp.json'):
-            os.remove('./param/aspifile5/temp.json')
-            print("+ File temp.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File temp.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile5/tensor.json'):
-            os.remove('./param/aspifile5/tensor.json')
-            print("+ File tensor.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File tensor.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/Main5.txt'):
-            os.remove('./param/Main5.txt')
-            print("+ File Main5.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Main5.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./calBmi/doc_BMI5/file_bmi.json'):
             os.remove('./calBmi/doc_BMI5/file_bmi.json')
             print("+ File file_bmi.json deleted")
@@ -1066,13 +797,6 @@ def delFuncFile5():
         print("+ File bmi5.txt does not exist", filefunc28)
 
     try:
-        if os.path.getsize('./vmed/doc_vmed5/resultvmed.txt'):
-            os.remove('./vmed/doc_vmed5/resultvmed.txt')
-            print("+ File resultvmed.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File resultvmed.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./diag/doc_diag5/diagrecap.txt'):
             os.remove('./diag/doc_diag5/diagrecap.txt')
             print("+ File diagrecap.txt deleted")
@@ -1085,20 +809,6 @@ def delFuncFile5():
             print("+ File result5.txt deleted")
     except FileNotFoundError as filefunc28:
         print("+ File result5.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./auxsrc/doc_auxsrc5/auxsrcfile5.txt'):
-            os.remove('./auxsrc/doc_auxsrc5/auxsrcfile5.txt')
-            print("+ File auxsrcfile5.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File auxsrcfile5.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./histv/doc_histv5/Hvie_patient5.txt'):
-            os.remove('./histv/doc_histv5/Hvie_patient5.txt')
-            print("+ File Hvie_patient5.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Hvie_patient5.txt does not exist", filefunc28)
 
     try:
         if os.path.getsize('./patient_agenda/events5/doc_events/fix_agenda/fixed_rdv.txt'):
@@ -1153,13 +863,6 @@ def delFuncFile5():
 
 def delFuncFile6():
     try:
-        if os.path.getsize('./admin/readadmin/fileAdmin6.txt'):
-            os.remove('./admin/readadmin/fileAdmin6.txt')
-            print("+ File fileAdmin6 deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File fileAdmin6 does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./14besoins/doc_suivi6/main_14b.txt'):
             os.remove('./14besoins/doc_suivi6/main_14b.txt')
             print("+ File main_14b.txt deleted")
@@ -1202,62 +905,6 @@ def delFuncFile6():
         print("+ File intro_res.txt does not exist", fileres5)
 
     try:
-        if os.path.getsize('./param/aspifile6/dlr.json'):
-            os.remove('./param/aspifile6/dlr.json')
-            print("+ File dlr.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File dlr.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile6/freq.json'):
-            os.remove('./param/aspifile6/freq.json')
-            print("+ File freq.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File freq.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile6/gly.json'):
-            os.remove('./param/aspifile6/gly.json')
-            print("+ File gly.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File gly.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile6/puls.json'):
-            os.remove('./param/aspifile6/puls.json')
-            print("+ File puls.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File puls.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile6/sat.json'):
-            os.remove('./param/aspifile6/sat.json')
-            print("+ File sat.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File sat.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile6/temp.json'):
-            os.remove('./param/aspifile6/temp.json')
-            print("+ File temp.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File temp.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile6/tensor.json'):
-            os.remove('./param/aspifile6/tensor.json')
-            print("+ File tensor.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File tensor.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/Main6.txt'):
-            os.remove('./param/Main6.txt')
-            print("+ File Main6.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Main6.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./calBmi/doc_BMI6/file_bmi.json'):
             os.remove('./calBmi/doc_BMI6/file_bmi.json')
             print("+ File file_bmi.json deleted")
@@ -1279,13 +926,6 @@ def delFuncFile6():
         print("+ File bmi6.txt does not exist", filefunc28)
 
     try:
-        if os.path.getsize('./vmed/doc_vmed6/resultvmed.txt'):
-            os.remove('./vmed/doc_vmed6/resultvmed.txt')
-            print("+ File resultvmed.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File resultvmed.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./diag/doc_diag6/diagrecap.txt'):
             os.remove('./diag/doc_diag6/diagrecap.txt')
             print("+ File diagrecap.txt deleted")
@@ -1298,20 +938,6 @@ def delFuncFile6():
             print("+ File result6.txt deleted")
     except FileNotFoundError as filefunc28:
         print("+ File result6.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./auxsrc/doc_auxsrc6/auxsrcfile6.txt'):
-            os.remove('./auxsrc/doc_auxsrc6/auxsrcfile6.txt')
-            print("+ File auxsrcfile6.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File auxsrcfile6.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./histv/doc_histv6/Hvie_patient6.txt'):
-            os.remove('./histv/doc_histv6/Hvie_patient6.txt')
-            print("+ File Hvie_patient6.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Hvie_patient6.txt does not exist", filefunc28)
 
     try:
         if os.path.getsize('./patient_agenda/events6/doc_events/fix_agenda/fixed_rdv.txt'):
@@ -1366,13 +992,6 @@ def delFuncFile6():
 
 def delFuncFile7():
     try:
-        if os.path.getsize('./admin/readadmin/fileAdmin7.txt'):
-            os.remove('./admin/readadmin/fileAdmin7.txt')
-            print("+ File fileAdmin7.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File fileAdmin7.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./14besoins/doc_suivi7/main_14b.txt'):
             os.remove('./14besoins/doc_suivi7/main_14b.txt')
             print("+ File main_14b.txt deleted")
@@ -1415,62 +1034,6 @@ def delFuncFile7():
         print("+ File intro_res.txt does not exist", fileres5)
 
     try:
-        if os.path.getsize('./param/aspifile7/dlr.json'):
-            os.remove('./param/aspifile7/dlr.json')
-            print("+ File dlr.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File dlr.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile7/freq.json'):
-            os.remove('./param/aspifile7/freq.json')
-            print("+ File freq.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File freq.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile7/gly.json'):
-            os.remove('./param/aspifile7/gly.json')
-            print("+ File gly.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File gly.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile7/puls.json'):
-            os.remove('./param/aspifile7/puls.json')
-            print("+ File puls.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File puls.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile7/sat.json'):
-            os.remove('./param/aspifile7/sat.json')
-            print("+ File sat.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File sat.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile7/temp.json'):
-            os.remove('./param/aspifile7/temp.json')
-            print("+ File temp.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File temp.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/aspifile7/tensor.json'):
-            os.remove('./param/aspifile7/tensor.json')
-            print("+ File tensor.json deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File tensor.json does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./param/Main7.txt'):
-            os.remove('./param/Main7.txt')
-            print("+ File Main7.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Main7.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./calBmi/doc_BMI7/file_bmi.json'):
             os.remove('./calBmi/doc_BMI7/file_bmi.json')
             print("+ File file_bmi.json deleted")
@@ -1492,13 +1055,6 @@ def delFuncFile7():
         print("+ File bmi7.txt does not exist", filefunc28)
 
     try:
-        if os.path.getsize('./vmed/doc_vmed7/resultvmed.txt'):
-            os.remove('./vmed/doc_vmed7/resultvmed.txt')
-            print("+ File resultvmed.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File resultvmed.txt does not exist", filefunc28)
-
-    try:
         if os.path.getsize('./diag/doc_diag7/diagrecap.txt'):
             os.remove('./diag/doc_diag7/diagrecap.txt')
             print("+ File diagrecap.txt deleted")
@@ -1511,20 +1067,6 @@ def delFuncFile7():
             print("+ File result7.txt deleted")
     except FileNotFoundError as filefunc28:
         print("+ File result7.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./auxsrc/doc_auxsrc7/auxsrcfile7.txt'):
-            os.remove('./auxsrc/doc_auxsrc7/auxsrcfile7.txt')
-            print("+ File auxsrcfile7.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File auxsrcfile7.txt does not exist", filefunc28)
-
-    try:
-        if os.path.getsize('./histv/doc_histv7/Hvie_patient7.txt'):
-            os.remove('./histv/doc_histv7/Hvie_patient7.txt')
-            print("+ File Hvie_patient7.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File Hvie_patient7.txt does not exist", filefunc28)
 
     try:
         if os.path.getsize('./patient_agenda/events7/doc_events/fix_agenda/fixed_rdv.txt'):
