@@ -846,9 +846,6 @@ class Application(Frame):
         # To backup
         self.updateFiletxt()
 
-        # To check agenda
-        # self.agendaDateSearch()
-
         # Static time
         self.x2, self.y2 = 1100, 100
         self.Date_write2 = Entry(self.can)
@@ -888,7 +885,6 @@ class Application(Frame):
             text="Add patient", command=self.addPatientAfter)
         self.fb200=self.can.create_window(self.x200, self.y200, window=self.b200)
 
-
         # TextBox
         self.x63, self.y63 = 625, 325 #625, 600
         self.t63=Text(self.can, height=15, width=60, font=18, relief=SUNKEN)
@@ -896,7 +892,6 @@ class Application(Frame):
         self.t63.insert(END, (datetime.datetime.now() + datetime.timedelta(days=-1)).strftime('%d/%m/%Y'))
             #time.strftime("%d/%m/%Y at %H:%M:%S :\n"))
         self.ft63=self.can.create_window(self.x63, self.y63, window=self.t63)
-
 
         #Patient1
         # For label below (in me2.add_command)
@@ -1117,32 +1112,32 @@ class Application(Frame):
             print("File entryfile7.txt doen't exist !", callfile7)
 
         self.new_data7=line7
-        self.x54, self.y54 = 129, 717 #392
+        self.x70, self.y70 = 129, 717 #392
         self.Data_write=Entry(self.can)
         self.new_data7=StringVar()
         self.Data_write=Entry(textvariable=self.new_data7,
           highlightbackground='grey', bd=4)
         self.new_data7.set(line7)
-        self.Data_write=self.can.create_window(self.x54, self.y54,
+        self.Data_write=self.can.create_window(self.x70, self.y70,
           window=self.Data_write)
 
-        self.x54, self.y54 = 271, 717
-        self.b54=Button(self.can, width=8, font=16, bg='black', fg='coral',
+        self.x71, self.y71 = 271, 717
+        self.b71=Button(self.can, width=8, font=16, bg='black', fg='coral',
             activebackground='dark turquoise', text="Allergy",
             command=self.allergyLink7)
-        self.fb54=self.can.create_window(self.x54, self.y54, window=self.b54)
+        self.fb71=self.can.create_window(self.x71, self.y71, window=self.b71)
 
-        self.x57, self.y57 = 429, 717
-        self.b57=Button(self.can, width=18, font=16, bg='black', fg='cyan',
+        self.x72, self.y72 = 429, 717
+        self.b72=Button(self.can, width=18, font=16, bg='black', fg='cyan',
             activebackground='dark turquoise', text="Diagnostic + ATCD",
             command=self.diag7)
-        self.fb57=self.can.create_window(self.x57, self.y57, window=self.b57)
+        self.fb72=self.can.create_window(self.x72, self.y72, window=self.b72)
 
-        self.x58, self.y58 = 597, 717
-        self.b58=Button(self.can, width=10, font=16, bg='black', fg='cyan',
+        self.x73, self.y73 = 597, 717
+        self.b73=Button(self.can, width=10, font=16, bg='black', fg='cyan',
             activebackground='dark turquoise', text="Laboratory",
             command=self.laboResult7)
-        self.fb58=self.can.create_window(self.x58, self.y58, window=self.b58)
+        self.fb73=self.can.create_window(self.x73, self.y73, window=self.b73)
 
         #patient8 new patients added !!!
         try:
@@ -1165,7 +1160,7 @@ class Application(Frame):
         self.b81=Button(self.can, width=8, font=16, bg='black', fg='coral',
             activebackground='dark turquoise', text="Allergy",
             command=self.allergyLink8)
-        self.fb81=self.can.create_window(self.x81, self.y81, window=self.b54)
+        self.fb81=self.can.create_window(self.x81, self.y81, window=self.b81)
 
         self.x82, self.y82 = 429, 1042
         self.b82=Button(self.can, width=18, font=16, bg='black', fg='cyan',
@@ -1744,6 +1739,69 @@ class Application(Frame):
             print("File 7 has not been found", infofileout7)
         except IndexError as inforange7:
             print("List 7 got less than 6 lines", inforange7)
+        else:
+            ("Error unknow")
+
+        try:
+            datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+            with open('./14besoins/doc_suivi8/main_14b.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if datesearch in line:
+                        self.t63.insert(END, "\n\n--- Patient 8 ---\n")
+                        self.t63.insert(INSERT, line)
+                        self.t63.insert(INSERT, lines[i+1])
+                        self.t63.insert(INSERT, lines[i+2])
+                        self.t63.insert(INSERT, "...")
+                    else:
+                        pass
+        except FileNotFoundError as infofileout7:
+            print("File 8 has not been found", infofileout8)
+        except IndexError as inforange8:
+            print("List 8 got less than 6 lines", inforange8)
+        else:
+            ("Error unknow")
+
+        try:
+            datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+            with open('./14besoins/doc_suivi9/main_14b.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if datesearch in line:
+                        self.t63.insert(END, "\n\n--- Patient 9 ---\n")
+                        self.t63.insert(INSERT, line)
+                        self.t63.insert(INSERT, lines[i+1])
+                        self.t63.insert(INSERT, lines[i+2])
+                        self.t63.insert(INSERT, "...")
+                    else:
+                        pass
+        except FileNotFoundError as infofileout7:
+            print("File 9 has not been found", infofileout9)
+        except IndexError as inforange9:
+            print("List 9 got less than 6 lines", inforange9)
+        else:
+            ("Error unknow")
+
+        try:
+            datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+            with open('./14besoins/doc_suivi10/main_14b.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if datesearch in line:
+                        self.t63.insert(END, "\n\n--- Patient 10 ---\n")
+                        self.t63.insert(INSERT, line)
+                        self.t63.insert(INSERT, lines[i+1])
+                        self.t63.insert(INSERT, lines[i+2])
+                        self.t63.insert(INSERT, "...")
+                    else:
+                        pass
+        except FileNotFoundError as infofileout7:
+            print("File 10 has not been found", infofileout10)
+        except IndexError as inforange10:
+            print("List 10 got less than 6 lines", inforange10)
         else:
             ("Error unknow")
 
