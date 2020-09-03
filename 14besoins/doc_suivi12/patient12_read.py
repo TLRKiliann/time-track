@@ -31,7 +31,7 @@ labelallergy=Label(fen, text="Allergy",
 labelallergy.pack(padx=5, pady=5)
 
 # To read name in Entry widget
-with open('./newpatient/entryfile7.txt', 'r') as filename:
+with open('./newpatient/entryfile12.txt', 'r') as filename:
     line1=filename.readline()
 
 text_name=StringVar()
@@ -40,7 +40,7 @@ Entryname=Entry(fen, textvariable=text_name)
 Entryname.pack(in_=top, side=LEFT, padx=10, pady=20)
 
 # To read allergy in Entry widget
-with open('./allergy/allergyfile7.txt', 'r') as allerfile:
+with open('./allergy/allergyfile12.txt', 'r') as allerfile:
     lineA1=allerfile.readline()
     lineA2=allerfile.readline()
     lineA3=allerfile.readline()
@@ -63,7 +63,7 @@ buttonClose=Button(fen, text="Quit", fg='white', width=10, bd=3,
 buttonClose.pack(side='right', padx=10, pady=10)
 
 try:
-    importationFile('./14besoins/doc_suivi7/main_14b.txt',
+    importationFile('./14besoins/doc_suivi12/main_14b.txt',
         encodage="Utf-8")
 except FileNotFoundError as filereach:
     print("File main_14b.txt not exist", filereach)

@@ -123,6 +123,7 @@ with open('./allergy/allergyfile2.txt', 'r') as allerfile:
     lineA5=allerfile.readline()
     lineA6=allerfile.readline()
     lineA7=allerfile.readline()
+    
 text_aller=StringVar()
 text_aller.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
 Entryaller=Entry(root, textvariable=text_aller, width=60)

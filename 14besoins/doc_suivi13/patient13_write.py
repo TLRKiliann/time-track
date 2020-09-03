@@ -12,20 +12,20 @@ from tkinter import messagebox
 
 def saveData():
     """
-    To record data from result7.txt
-    and from patient7_14b.txt into 
+    To record data from result13.txt
+    and from patient13_14b.txt into 
     txt main file
     """
     try:        
-        if os.path.getsize('./14besoins/doc_suivi7/main_14b.txt'):
+        if os.path.getsize('./14besoins/doc_suivi13/main_14b.txt'):
             print("+ File 'main_14b.txt' exist !")
-            with open('./14besoins/doc_suivi7/main_14b.txt', 'a+') as namefile:
+            with open('./14besoins/doc_suivi13/main_14b.txt', 'a+') as namefile:
                 namefile.write(textBox.get("1.0", "end-1c" + '\n\n'))
     except FileNotFoundError as outcom:
         print("+ Sorry, file 'main_14b.txt' not exist !")
         print(str(outcom))
         print("+ File 'main_14b.txt' created !")
-        with open('./14besoins/doc_suivi7/main_14b.txt', 'a+') as namefile:
+        with open('./14besoins/doc_suivi13/main_14b.txt', 'a+') as namefile:
             namefile.write(textBox.get("1.0", "end-1c" + '\n\n'))
 
 def messFromSafeButt():
@@ -40,11 +40,11 @@ def messFromSafeButt():
         print("+ Nothing has been saved !")
 
 def lectureFic():
-    with open('./14besoins/doc_suivi7/patient7_14b.txt', 'r') as f1read:
-        with open('./labo/doc_labo/result7.txt', 'r') as f2read:
+    with open('./14besoins/doc_suivi13/patient13_14b.txt', 'r') as f1read:
+        with open('./labo/doc_labo/result13.txt', 'r') as f2read:
             print(f1read.read())
             print(f2read.read())
-    subprocess.call('./14besoins/doc_suivi7/patient7_read.py')
+    subprocess.call('./14besoins/doc_suivi13/patient13_read.py')
 
 def ajouterText():
     """
@@ -63,13 +63,13 @@ def importationFile(fichier, encodage="Utf-8"):
     """
     try:        
         if os.path.getsize(fichier):
-            print("+ File 'patient7_14b.txt' exist !")
+            print("+ File 'patient13_14b.txt' exist !")
             with open(fichier, 'r', encoding=encodage) as fileneeds:
                 content=fileneeds.readlines()
                 for li in content:
                     textBox.insert(END, li)
     except FileNotFoundError as outcom:
-        print("+ Sorry, file 'patient7_14b.txt' not exist !", outcom)
+        print("+ Sorry, file 'patient13_14b.txt' not exist !", outcom)
 
 def importationLabo(fichier2, encodage="Utf-8"):
     """
@@ -78,13 +78,13 @@ def importationLabo(fichier2, encodage="Utf-8"):
     """
     try:        
         if os.path.getsize(fichier2):
-            print("+ File 'result7.txt' exist !")
+            print("+ File 'result13.txt' exist !")
             with open(fichier2, 'r', encoding=encodage) as filelab:
                 content2=filelab.readlines()
                 for li in content2:
                     textBox.insert(END, li)
     except FileNotFoundError as outcom:
-        print("+ Sorry, file 'result7.txt' not exist !")
+        print("+ Sorry, file 'result13.txt' not exist !")
         print(str(outcom))
 
 root=Tk()
@@ -106,7 +106,7 @@ labelallergy=Label(root, text="Allergy",
 labelallergy.pack(padx=5, pady=5)
 
 # To read name in Entry widget
-with open('./newpatient/entryfile7.txt', 'r') as filename:
+with open('./newpatient/entryfile13.txt', 'r') as filename:
     line1=filename.readline()
 
 text_name=StringVar()
@@ -115,7 +115,7 @@ text_name.set(line1)
 Entryname.pack(in_=top, side=LEFT, padx=10, pady=20)
 
 # To read allergy in Entry widget
-with open('./allergy/allergyfile7.txt', 'r') as allerfile:
+with open('./allergy/allergyfile13.txt', 'r') as allerfile:
     lineA1=allerfile.readline()
     lineA2=allerfile.readline()
     lineA3=allerfile.readline()
@@ -154,8 +154,8 @@ buttonQuitter=Button(root, text="Quit", fg='white', bg='navy',
     bd=3, highlightbackground='grey17', command=quit)
 buttonQuitter.pack(side='right', padx=10, pady=10)
 
-importationFile('./14besoins/doc_suivi7/patient7_14b.txt', encodage='Utf-8')
+importationFile('./14besoins/doc_suivi13/patient13_14b.txt', encodage='Utf-8')
 
-importationLabo('./labo/doc_labo/result7.txt', encodage='Utf-8')
+importationLabo('./labo/doc_labo/result13.txt', encodage='Utf-8')
 
 mainloop()
