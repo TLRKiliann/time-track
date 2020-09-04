@@ -165,6 +165,44 @@ def treatmentFunc(self):
     else:
         ("Error unknow")
 
+    try:
+        dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+        initword = "Date of end : "
+        with open('./ttt/doc_ttt9/convdose.json', 'r') as filedate:
+            lines = filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if initword in line:
+                    print(line)
+                    if dateagenda in line:
+                        print(line)
+                        MSBTTT2 = messagebox.showwarning('Info',
+                            'Look at TTT, there is a ttt for patient \
+                             9 which is stopped today!')
+    except FileNotFoundError as info_ttt9:
+        print("No date of end has been found for ttt into file convdose.json (patient 9)", info_ttt9)
+    else:
+        ("Error unknow")
+
+    try:
+        dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+        initword = "Date of end : "
+        with open('./ttt/doc_ttt10/convdose.json', 'r') as filedate:
+            lines = filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if initword in line:
+                    print(line)
+                    if dateagenda in line:
+                        print(line)
+                        MSBTTT2 = messagebox.showwarning('Info',
+                            'Look at TTT, there is a ttt for patient \
+                             10 which is stopped today!')
+    except FileNotFoundError as info_ttt10:
+        print("No date of end has been found for ttt into file convdose.json (patient 10)", info_ttt10)
+    else:
+        ("Error unknow")
+
 def reserveFunc(self):
     """
     To search the end date into the intro_res.txt 
@@ -319,5 +357,43 @@ def reserveFunc(self):
                              for patient 8 which is stopped today!')
     except FileNotFoundError as info_res8:
         print("No date of end has been found for reserve into file convres.json (patient 8)", info_res8)
+    else:
+        ("Error unknow")
+
+    try:
+        dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+        res_initword = "Date of end : "
+        with open('./ttt/doc_ttt9/conv_res.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if res_initword in line:
+                    print(line)
+                    if dateagenda in line:
+                        print(line)
+                        MSBRES2 = messagebox.showwarning('Info',
+                            'Look at RESERVE onto TTT, there is a RESERVE \
+                             for patient 9 which is stopped today!')
+    except FileNotFoundError as info_res9:
+        print("No date of end has been found for reserve into file convres.json (patient 9)", info_res9)
+    else:
+        ("Error unknow")
+
+    try:
+        dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+        res_initword = "Date of end : "
+        with open('./ttt/doc_ttt10/conv_res.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if res_initword in line:
+                    print(line)
+                    if dateagenda in line:
+                        print(line)
+                        MSBRES2 = messagebox.showwarning('Info',
+                            'Look at RESERVE onto TTT, there is a RESERVE \
+                             for patient 10 which is stopped today!')
+    except FileNotFoundError as info_res10:
+        print("No date of end has been found for reserve into file convres.json (patient 10)", info_res10)
     else:
         ("Error unknow")

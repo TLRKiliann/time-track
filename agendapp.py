@@ -166,3 +166,41 @@ def displayDates(self):
         print("File 8 has not been found", infofile8)
     else:
         ("Error unknow")
+
+    try:
+        dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./patient_agenda/events9/doc_events/fix_agenda/fixed_rdv.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if dateagenda in line:
+                    print(line)
+                    print(lines[i+1])
+                    print(lines[i+2])
+                    MSB2 = messagebox.showwarning('Info',
+                        'Look at AGENDA, there is an appointment for patient 9!')
+                else:
+                    pass
+    except FileNotFoundError as infofile9:
+        print("File 9 has not been found", infofile9)
+    else:
+        ("Error unknow")
+
+    try:
+        dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./patient_agenda/events10/doc_events/fix_agenda/fixed_rdv.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if dateagenda in line:
+                    print(line)
+                    print(lines[i+1])
+                    print(lines[i+2])
+                    MSB2 = messagebox.showwarning('Info',
+                        'Look at AGENDA, there is an appointment for patient 10!')
+                else:
+                    pass
+    except FileNotFoundError as infofile10:
+        print("File 10 has not been found", infofile10)
+    else:
+        ("Error unknow")

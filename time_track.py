@@ -47,6 +47,8 @@ class MenuBar(Frame):
         new_text6=StringVar()
         new_text7=StringVar()
         new_text8=StringVar()
+        new_text9=StringVar()
+        new_text10=StringVar()
 
         fileMenu.pack(side=LEFT, padx=3)
         # Partie déroulante du menu 1st
@@ -132,6 +134,20 @@ class MenuBar(Frame):
         except FileNotFoundError as fileout8:
             print("No file entryfile8.txt exist", fileout8)
 
+        try:
+            with open('./newpatient/entryfile9.txt', 'r') as namefile:
+                line9=namefile.readline()
+                new_text9=line9
+        except FileNotFoundError as fileout9:
+            print("No file entryfile9.txt exist", fileout9)
+
+        try:
+            with open('./newpatient/entryfile10.txt', 'r') as namefile:
+                line10=namefile.readline()
+                new_text10=line10
+        except FileNotFoundError as fileout10:
+            print("No file entryfile10.txt exist", fileout10)
+
         # Agenda menu
         self.cmd_agenda=Menubutton(self, text='Agenda', font=("Times 14"),
             fg='cyan', bg='grey30', relief=GROOVE)
@@ -169,6 +185,14 @@ class MenuBar(Frame):
         me3.add_command(label=new_text8, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda8)
+        me3.add_separator()
+        me3.add_command(label=new_text9, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda9)
+        me3.add_separator()
+        me3.add_command(label=new_text10, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda10)
         # Integration of agenda menu
         self.cmd_agenda.configure(activeforeground='black', activebackground='cyan', 
             menu=me3)
@@ -210,6 +234,14 @@ class MenuBar(Frame):
         me4.add_command(label=new_text8, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins8Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text9, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins9Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text10, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins10Coche)
         # Integration of 14b menu
         self.cmd_Besoins.configure(activeforeground='black', activebackground='cyan',
             menu=me4)
@@ -251,6 +283,14 @@ class MenuBar(Frame):
         meSoins.add_command(label=new_text8, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins8)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text9, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins9)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text10, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins10)
         # Integration of health and care menu
         self.cmd_Soins.configure(activeforeground='black', activebackground='cyan',
             menu=meSoins)
@@ -292,6 +332,14 @@ class MenuBar(Frame):
         meTtt.add_command(label=new_text8, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed8)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text9, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed9)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text10, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed10)
         # Integration of health and care menu
         self.cmd_ttt.configure(activeforeground='black', activebackground='cyan',
             menu=meTtt)
@@ -333,6 +381,14 @@ class MenuBar(Frame):
         meBmi.add_command(label=new_text8, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB8)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text9, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB9)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text10, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB10)
         # Integration of 3rd menu
         self.cmd_BMI.configure(activeforeground='black', activebackground='cyan',
             menu=meBmi)
@@ -374,6 +430,14 @@ class MenuBar(Frame):
         meVmed.add_command(label=new_text8, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed8)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text9, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed9)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text10, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed10)
         # Integration of 3rd menu
         self.cmd_Vmed.configure(activeforeground='black', activebackground='cyan',
             menu=meVmed)
@@ -415,6 +479,14 @@ class MenuBar(Frame):
         mePrint.add_command(label=new_text8, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu8)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text9, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu9)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text10, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu10)
         # Integration of nutrition menu
         self.cmd_Print.configure(activeforeground='black', activebackground='cyan',
             menu=mePrint)
@@ -490,6 +562,24 @@ class MenuBar(Frame):
         me1.add_cascade(label=new_text8, underline=0, font=('Times 14'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me9)
+        me1.add_separator()
+        me10=Menu(me1)
+        me10.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup9)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text9, underline=0, font=('Times 14'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me10)
+        me1.add_separator()
+        me11=Menu(me1)
+        me11.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup10)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text10, underline=0, font=('Times 14'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me11)
         # Integration of Graph menu
         self.cmd_Graph.configure(activeforeground='black', activebackground='cyan', menu=me1)
 
@@ -537,21 +627,21 @@ class Application(Frame):
         # Info button
         self.button1 = Button(self, text="Info", font=('Times 14 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.frameInfo)
-        self.button1.configure(width=10, bd=3, highlightbackground='#82193e',
+        self.button1.configure(width=10, bd=3, highlightbackground='blue',
             activebackground='dark turquoise')
         self.button1_window = self.can.create_window(75, 30, anchor=CENTER,
             window=self.button1)
         # Synopsis button
         self.button2 = Button(self, text="SYNOPSIS", font=('Times 18 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.showsynopsis)
-        self.button2.configure(width=15, bd=3, highlightbackground='#82193e',
+        self.button2.configure(width=15, bd=3, highlightbackground='blue',
             activebackground='dark turquoise')
         self.button2_window = self.can.create_window(450, 550, anchor=CENTER,
             window=self.button2)
         # Psychotabs button
         self.button3 = Button(self, text="PSYCHOTABS", font=('Times 18 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.launchPsycho)
-        self.button3.configure(width=15, bd=3, highlightbackground='#82193e', 
+        self.button3.configure(width=15, bd=3, highlightbackground='blue', 
             activebackground='dark turquoise')
         self.button3_window = self.can.create_window(790, 550, anchor=CENTER,
             window=self.button3)
@@ -592,21 +682,21 @@ class Application(Frame):
         # Info button
         self.button1 = Button(self, text="Info", font=('Times 14 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.frameInfo)
-        self.button1.configure(width=10, bd=3, highlightbackground='#82193e',
+        self.button1.configure(width=10, bd=3, highlightbackground='blue',
             activebackground='dark turquoise')
         self.button1_window = self.can.create_window(75, 30, anchor=CENTER,
             window=self.button1)
         # Synopsis button
         self.button2 = Button(self, text="SYNOPSIS", font=('Times 18 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.showsynopsis)
-        self.button2.configure(width=15, bd=3, highlightbackground='#82193e',
+        self.button2.configure(width=15, bd=3, highlightbackground='blue',
             activebackground='dark turquoise')
         self.button2_window = self.can.create_window(450, 550, anchor=CENTER,
             window=self.button2)
         # Statistics button
         self.button3 = Button(self, text="PSYCHOTABS", font=('Times 18 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.launchPsycho)
-        self.button3.configure(width=15, bd=3, highlightbackground='#82193e',
+        self.button3.configure(width=15, bd=3, highlightbackground='blue',
             activebackground='dark turquoise')
         self.button3_window = self.can.create_window(790, 550, anchor=CENTER,
             window=self.button3)
@@ -753,6 +843,12 @@ class Application(Frame):
     def besoins8Coche(self):
         subprocess.call('./14besoins/checkb8.py')
 
+    def besoins9Coche(self):
+        subprocess.call('./14besoins/checkb9.py')
+
+    def besoins10Coche(self):
+        subprocess.call('./14besoins/checkb10.py')
+
     def launchPsycho(self):
         subprocess.call('./psychotabs.py')
 
@@ -781,6 +877,12 @@ class Application(Frame):
     def patientAgenda8(self):
         subprocess.call('./patient_agenda/origin_agenda8.py')
 
+    def patientAgenda9(self):
+        subprocess.call('./patient_agenda/origin_agenda9.py')
+
+    def patientAgenda10(self):
+        subprocess.call('./patient_agenda/origin_agenda10.py')
+
     # Func 14 needs suivi OK
     def suiviSoins1(self):
         subprocess.call("./14besoins/suivi_patient_1.py")
@@ -806,6 +908,12 @@ class Application(Frame):
     def suiviSoins8(self):
         subprocess.call("./14besoins/suivi_patient_8.py")
 
+    def suiviSoins9(self):
+        subprocess.call("./14besoins/suivi_patient_9.py")
+
+    def suiviSoins10(self):
+        subprocess.call("./14besoins/suivi_patient_10.py")
+
     # treatments
     def tttMed1(self):
         subprocess.call("./ttt/patienttt1.py")
@@ -830,6 +938,12 @@ class Application(Frame):
 
     def tttMed8(self):
         subprocess.call("./ttt/patienttt8.py")
+
+    def tttMed9(self):
+        subprocess.call("./ttt/patienttt9.py")
+
+    def tttMed10(self):
+        subprocess.call("./ttt/patienttt10.py")
     
     # Func BMI
     def calculB(self):
@@ -856,6 +970,12 @@ class Application(Frame):
     def calculB8(self):
         subprocess.call("./calBmi/CalculBmi8.py")
 
+    def calculB9(self):
+        subprocess.call("./calBmi/CalculBmi9.py")
+
+    def calculB10(self):
+        subprocess.call("./calBmi/CalculBmi10.py")
+
     # Func Visit MED
     def visitMed(self):
         subprocess.call("./vmed/vm_patient1.py")
@@ -880,6 +1000,12 @@ class Application(Frame):
 
     def visitMed8(self):
         subprocess.call("./vmed/vm_patient8.py")
+
+    def visitMed9(self):
+        subprocess.call("./vmed/vm_patient9.py")
+
+    def visitMed10(self):
+        subprocess.call("./vmed/vm_patient10.py")
 
     # Allergy OK
     def allergyLink(self):
@@ -906,6 +1032,12 @@ class Application(Frame):
     def allergyLink8(self):
         subprocess.call('./allergy/allerpatient8.py')
 
+    def allergyLink9(self):
+        subprocess.call('./allergy/allerpatient9.py')
+
+    def allergyLink10(self):
+        subprocess.call('./allergy/allerpatient10.py')
+
     # Func labo
     def laboResult(self):
         subprocess.call('./labo/resultlabo1.py')
@@ -931,6 +1063,12 @@ class Application(Frame):
     def laboResult8(self):
         subprocess.call('./labo/resultlabo8.py')
 
+    def laboResult9(self):
+        subprocess.call('./labo/resultlabo9.py')
+
+    def laboResult10(self):
+        subprocess.call('./labo/resultlabo10.py')
+
     # Func Diagnostic
     def diag1(self):
         subprocess.call("./diag/diag_patient1.py")
@@ -955,6 +1093,12 @@ class Application(Frame):
 
     def diag8(self):
         subprocess.call("./diag/diag_patient8.py")
+
+    def diag9(self):
+        subprocess.call("./diag/diag_patient9.py")
+
+    def diag10(self):
+        subprocess.call("./diag/diag_patient10.py")
 
     # Manual nurse
     def manualFile(self):
@@ -984,6 +1128,12 @@ class Application(Frame):
 
     def nutritionMenu8(self):
         subprocess.call('./nutrition/nutrit_patient8.py')
+
+    def nutritionMenu9(self):
+        subprocess.call('./nutrition/nutrit_patient9.py')
+
+    def nutritionMenu10(self):
+        subprocess.call('./nutrition/nutrit_patient10.py')
 
     def newsTextBox(self):
         self.can.textBox = Text(app, text = "")
@@ -1080,7 +1230,7 @@ class Application(Frame):
         self.label=Label(self.label, justify=LEFT, font=('Times 14'),
             bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
 
-        # Backup
+    # Backup
     def allFilesBackup8(self):
         self.label=Tk()
         self.label.title("Search File")
@@ -1092,6 +1242,33 @@ class Application(Frame):
 
         self.label=Label(self.label, justify=LEFT, font=('Times 14'),
             bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
+
+    # Backup
+    def allFilesBackup9(self):
+        self.label=Tk()
+        self.label.title("Search File")
+        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files9",
+            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
+        print(filepath)
+        with open(filepath, 'r') as fichier:
+            content = fichier.read()
+
+        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
+            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
+
+    # Backup
+    def allFilesBackup10(self):
+        self.label=Tk()
+        self.label.title("Search File")
+        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files10",
+            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
+        print(filepath)
+        with open(filepath, 'r') as fichier:
+            content = fichier.read()
+
+        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
+            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
+
 
     def updateFiletxt(self):
         # To backup all files

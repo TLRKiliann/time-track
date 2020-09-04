@@ -276,6 +276,70 @@ def callBox(self):
     except FileNotFoundError as callfile:
         print("File entryfile.txt doesn't exist !", callfile)
 
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi9/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 9 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout9:
+        print("File 9 has not been found", infofileout9)
+    except IndexError as inforange9:
+        print("List 9 got less than 6 lines", inforange9)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 10 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout10:
+        print("File 10 has not been found", infofileout10)
+    except IndexError as inforange10:
+        print("List 10 got less than 6 lines", inforange10)
+    else:
+        ("Error unknow")
+
+    #Patient1
+    # For label below (in me2.add_command)
+    try:
+        with open('./newpatient/entryfile.txt', 'r') as namefile:
+            line1=namefile.readline()
+    except FileNotFoundError as callfile:
+        print("File entryfile.txt doesn't exist !", callfile)
+
+    #Patient1
+    # For label below (in me2.add_command)
+    try:
+        with open('./newpatient/entryfile.txt', 'r') as namefile:
+            line1=namefile.readline()
+    except FileNotFoundError as callfile:
+        print("File entryfile.txt doesn't exist !", callfile)
+
     self.data_time=line1
     self.x2, self.y2 = 129, 525
     self.Data_write=Entry(self.can)
@@ -549,3 +613,73 @@ def callBox(self):
         command=self.laboResult8)
     self.fb58=self.can.create_window(self.x58, self.y58, window=self.b58)
 
+    #patient9
+    try:
+        with open('./newpatient/entryfile9.txt', 'r') as namefile:
+            line9=namefile.readline()
+    except FileNotFoundError as callfile9:
+        print("File entryfile9.txt doesn't exist !", callfile9)
+
+    self.new_data9=line9
+    self.x54, self.y54 = 129, 781
+    self.Data_write=Entry(self.can)
+    self.new_data9=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data9,
+      highlightbackground='grey', bd=4)
+    self.new_data9.set(line9)
+    self.Data_write=self.can.create_window(self.x54, self.y54,
+      window=self.Data_write)
+
+    self.x54, self.y54 = 271, 781
+    self.b54=Button(self.can, width=8, font=16, bg='black', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink9)
+    self.fb54=self.can.create_window(self.x54, self.y54, window=self.b54)
+
+    self.x57, self.y57 = 429, 781
+    self.b57=Button(self.can, width=18, font=16, bg='black', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag9)
+    self.fb57=self.can.create_window(self.x57, self.y57, window=self.b57)
+
+    self.x58, self.y58 = 597, 781
+    self.b58=Button(self.can, width=10, font=16, bg='black', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult9)
+    self.fb58=self.can.create_window(self.x58, self.y58, window=self.b58)
+
+    #patient10
+    try:
+        with open('./newpatient/entryfile10.txt', 'r') as namefile:
+            line10=namefile.readline()
+    except FileNotFoundError as callfile10:
+        print("File entryfile10.txt doesn't exist !", callfile10)
+
+    self.new_data10=line10
+    self.x54, self.y54 = 129, 813
+    self.Data_write=Entry(self.can)
+    self.new_data10=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data10,
+      highlightbackground='grey', bd=4)
+    self.new_data10.set(line10)
+    self.Data_write=self.can.create_window(self.x54, self.y54,
+      window=self.Data_write)
+
+    self.x54, self.y54 = 271, 813
+    self.b54=Button(self.can, width=8, font=16, bg='black', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink10)
+    self.fb54=self.can.create_window(self.x54, self.y54, window=self.b54)
+
+    self.x57, self.y57 = 429, 813
+    self.b57=Button(self.can, width=18, font=16, bg='black', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag10)
+    self.fb57=self.can.create_window(self.x57, self.y57, window=self.b57)
+
+    self.x58, self.y58 = 597, 813
+    self.b58=Button(self.can, width=10, font=16, bg='black', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult10)
+    self.fb58=self.can.create_window(self.x58, self.y58, window=self.b58)
+    self.can.configure(scrollregion=self.can.bbox(ALL))
