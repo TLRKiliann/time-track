@@ -23,87 +23,125 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         Birthvalue = Birth_entree.get()
         print(Nompatient)
         print(Birthvalue)
+        try:
+            if os.path.getsize('./newpatient/entryfile.txt'):
+                print("+ File 'entryfile.txt' exist !")
+                #searchLine1(Nompatient, Birthvalue) 
+                try:
+                    if os.path.getsize('./newpatient/entryfile2.txt'):
+                        print("+ File 'entryfile2.txt' exist !")
+                        #searchLine2(Nompatient, Birthvalue)
+                        try:
+                            if os.path.getsize('./newpatient/entryfile3.txt'):
+                                print("+ File 'entryfile3.txt' exist !")
+                                #searchLine3(Nompatient, Birthvalue)
+                                try:
+                                    if os.path.getsize('./newpatient/entryfile4.txt'):
+                                        print("+ File 'entryfile4.txt' exist !")
+                                        #searchLine4(Nompatient, Birthvalue)
+                                        try:
+                                            if os.path.getsize('./newpatient/entryfile5.txt'):
+                                                print("+ File 'entryfile5.txt' exist !")
+                                                #searchLine5(Nompatient, Birthvalue)
+                                                try:
+                                                    if os.path.getsize('./newpatient/entryfile6.txt'):
+                                                        print("+ File 'entryfile6.txt' exist !")
+                                                        #searchLine6(Nompatient, Birthvalue)
+                                                        try:
+                                                            if os.path.getsize('./newpatient/entryfile7.txt'):
+                                                                print("+ File 'entryfile7.txt' exist !")
+                                                                #searchLine7(Nompatient, Birthvalue)
+                                                                try:
+                                                                    if os.path.getsize('./newpatient/entryfile8.txt'):
+                                                                        print("+ File 'entryfile8.txt' exist !")
+                                                                        #searchLine8(Nompatient, Birthvalue)
+                                                                        try:
+                                                                            if os.path.getsize('./newpatient/entryfile9.txt'):
+                                                                                print("+ File 'entryfile9.txt' exist !")
+                                                                                #searchLine9(Nompatient, Birthvalue)
+                                                                                try:
+                                                                                    if os.path.getsize('./newpatient/entryfile10.txt'):
+                                                                                        print("+ File 'entryfile10.txt' exist !")
+                                                                                        #searchLine10(Nompatient, Birthvalue)
+                                                                                except FileNotFoundError as outcom:
+                                                                                    print("+ Sorry, file 'entryfile10.txt' not exist !")
+                                                                                    print(str(outcom))
+                                                                                    print("+ File 'entryfile10.txt' created !")
+                                                                                    with open('./newpatient/entryfile10.txt', 'w') as namefile:
+                                                                                        namefile.write(Nompatient + '\n')
+                                                                                        namefile.write(Birthvalue + '\n')
 
-        if os.path.getsize('./newpatient/entryfile.txt'):
-            print("+ File 'entryfile.txt' exist !")
-            #searchLine1(Nompatient, Birthvalue) 
+                                                                        except FileNotFoundError as outcom:
+                                                                            print("+ Sorry, file 'entryfile9.txt' not exist !")
+                                                                            print(str(outcom))
+                                                                            print("+ File 'entryfile9.txt' created !")
+                                                                            with open('./newpatient/entryfile9.txt', 'w') as namefile:
+                                                                                namefile.write(Nompatient + '\n')
+                                                                                namefile.write(Birthvalue + '\n')
+                                                                              
+                                                                except FileNotFoundError as outcom:
+                                                                    print("+ Sorry, file 'entryfile8.txt' not exist !")
+                                                                    print(str(outcom))
+                                                                    print("+ File 'entryfile8.txt' created !")
+                                                                    with open('./newpatient/entryfile8.txt', 'w') as namefile:
+                                                                        namefile.write(Nompatient + '\n')
+                                                                        namefile.write(Birthvalue + '\n')
 
-        if os.path.getsize('./newpatient/entryfile2.txt'):
-            print("+ File 'entryfile2.txt' exist !")
-            #searchLine2(Nompatient, Birthvalue)
+                                                        except FileNotFoundError as outcom:
+                                                            print("+ Sorry, file 'entryfile7.txt' not exist !")
+                                                            print(str(outcom))
+                                                            print("+ File 'entryfile7.txt' created !")
+                                                            with open('./newpatient/entryfile7.txt', 'w') as namefile:
+                                                                namefile.write(Nompatient + '\n')
+                                                                namefile.write(Birthvalue + '\n')
+                                                                
+                                                except FileNotFoundError as outcom1:
+                                                    print("+ Sorry, file 'entryfile.txt6' not exist !")
+                                                    print(str(outcom1))
+                                                    print("+ File 'entryfile.txt6' created !")
+                                                    with open('./newpatient/entryfile6.txt', 'w') as namefile:
+                                                        namefile.write(Nompatient + '\n')
+                                                        namefile.write(Birthvalue + '\n')
+                                        
+                                        except FileNotFoundError as outcom2:
+                                            print("+ Sorry, file 'entryfile5.txt' not exist !")
+                                            print(str(outcom2))
+                                            print("+ File 'entryfile5.txt' created !")
+                                            with open('./newpatient/entryfile5.txt', 'w') as namefile:
+                                                namefile.write(Nompatient + '\n')
+                                                namefile.write(Birthvalue + '\n')
+                                
+                                except FileNotFoundError as outcom3:
+                                    print("+ Sorry, file 'entryfile4.txt' not exist !")
+                                    print(str(outcom3))
+                                    print("+ File 'entryfile4.txt' created !")
+                                    with open('./newpatient/entryfile4.txt', 'w') as namefile:
+                                        namefile.write(Nompatient + '\n')
+                                        namefile.write(Birthvalue + '\n')
+                        
+                        except FileNotFoundError as outcom4:
+                            print("+ Sorry, file 'entryfile3.txt' not exist !")
+                            print(str(outcom4))
+                            print("+ File 'entryfile3.txt' created !")
+                            with open('./newpatient/entryfile3.txt', 'w') as namefile:
+                                namefile.write(Nompatient + '\n')
+                                namefile.write(Birthvalue + '\n')
+                
+                except FileNotFoundError as outcom5:
+                    print("+ Sorry, file 'entryfile2.txt' not exist !")
+                    print(str(outcom5))
+                    print("+ File 'entryfile2.txt' created !")
+                    with open('./newpatient/entryfile2.txt', 'w') as namefile:
+                        namefile.write(Nompatient + '\n')
+                        namefile.write(Birthvalue + '\n')
 
-        if os.path.getsize('./newpatient/entryfile3.txt'):
-            print("+ File 'entryfile3.txt' exist !")
-            #searchLine3(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile4.txt'):
-            print("+ File 'entryfile4.txt' exist !")
-            #searchLine4(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile5.txt'):
-            print("+ File 'entryfile5.txt' exist !")
-            #searchLine5(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile6.txt'):
-            print("+ File 'entryfile6.txt' exist !")
-            #searchLine6(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile7.txt'):
-            print("+ File 'entryfile7.txt' exist !")
-            #searchLine7(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile8.txt'):
-            print("+ File 'entryfile8.txt' exist !")
-            #searchLine1(Nompatient, Birthvalue) 
-
-        if os.path.getsize('./newpatient/entryfile9.txt'):
-            print("+ File 'entryfile9.txt' exist !")
-            #searchLine2(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile10.txt'):
-            print("+ File 'entryfile10.txt' exist !")
-            #searchLine3(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile11.txt'):
-            print("+ File 'entryfile11.txt' exist !")
-            #searchLine4(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile12.txt'):
-            print("+ File 'entryfile12.txt' exist !")
-            #searchLine5(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile13.txt'):
-            print("+ File 'entryfile13.txt' exist !")
-            #searchLine6(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile14.txt'):
-            print("+ File 'entryfile14.txt' exist !")
-            #searchLine7(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile15.txt'):
-            print("+ File 'entryfile15.txt' exist !")
-            #searchLine7(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile16.txt'):
-            print("+ File 'entryfile16.txt' exist !")
-            #searchLine7(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile17.txt'):
-            print("+ File 'entryfile17.txt' exist !")
-            #searchLine7(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile18.txt'):
-            print("+ File 'entryfile18.txt' exist !")
-            #searchLine7(Nompatient, Birthvalue)
-            
-        if os.path.getsize('./newpatient/entryfile19.txt'):
-            print("+ File 'entryfile19.txt' exist !")
-            #searchLine7(Nompatient, Birthvalue)
-
-        if os.path.getsize('./newpatient/entryfile20.txt'):
-            print("+ File 'entryfile20.txt' exist !")
-            #searchLine7(Nompatient, Birthvalue)
-
+        except FileNotFoundError as outcom5:
+            print("+ Sorry, file 'entryfile.txt' not exist !")
+            print(str(outcom5))
+            print("+ File 'entryfile.txt' created !")
+            with open('./newpatient/entryfile.txt', 'w') as namefile:
+                namefile.write(Nompatient + '\n')
+                namefile.write(Birthvalue + '\n')
     gui.destroy()
 
 labelName = Label(gui)

@@ -8,7 +8,7 @@ import subprocess
 
 
 try:
-    with open('./patient_agenda/events/doc_events/patient_rdv.json') as file:
+    with open('./patient_agenda/events7/doc_events/patient_rdv.json') as file:
         data=json.load(file)
 except FileNotFoundError as fileout:
     print("File 7 patient_rdv.json not created", fileout)

@@ -12,7 +12,7 @@ gui.title("Enter new patient")
 gui.configure(bg='#82193e')
 #gui.geometry('300x200')
 
-def get(Nompatient, entree, Birthvalue, Birthentree):
+def get(Nompatient, entree, Birthvalue, Birth_entree):
     """
     Test at first time and
     after when file was earased
@@ -28,19 +28,22 @@ def get(Nompatient, entree, Birthvalue, Birthentree):
         mot7 = "-------"
         mot8 = "--------"
         mot9 = "---------"
-        mot10 = "---------"
-        mot11 = "----------"
-        mot12 = "-----------"
-        mot13 = "------------"
-        mot14 = "-------------"
-        mot15 = "--------------"
-        mot16 = "---------------"
-        mot17 = "----------------"
-        mot18 = "-----------------"
-        mot19 = "------------------"
-        mot20 = "-------------------"
+        mot10 = "----------"
+        """
+        mot11 = "-----------"
+        mot12 = "------------"
+        mot13 = "-------------"
+        mot14 = "--------------"
+        mot15 = "---------------"
+        mot16 = "----------------"
+        mot17 = "-----------------"
+        mot18 = "------------------"
+        mot19 = "-------------------"
+        mot20 = "--------------------"
+        """
+
         Nompatient = entree.get()
-        Birthvalue = Birthentree.get()
+        Birthvalue = Birth_entree.get()
         print(Nompatient)
         print(Birthvalue)
 
@@ -105,25 +108,25 @@ def get(Nompatient, entree, Birthvalue, Birthentree):
                 lines = file.readlines()
                 for i in range(0, len(lines)):
                     line = lines[i]
-                    if mot4 in line:
-                        searchLine4(Nompatient, Birthvalue)
+                    if mot8 in line:
+                        searchLine8(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile9.txt'):
             with open('./newpatient/entryfile9.txt', 'r') as file:
                 lines = file.readlines()
                 for i in range(0, len(lines)):
                     line = lines[i]
-                    if mot5 in line:
-                        searchLine5(Nompatient, Birthvalue)
+                    if mot9 in line:
+                        searchLine9(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile10.txt'):
             with open('./newpatient/entryfile10.txt', 'r') as file:
                 lines = file.readlines()
                 for i in range(0, len(lines)):
                     line = lines[i]
-                    if mot6 in line:
-                        searchLine6(Nompatient, Birthvalue)
-
+                    if mot10 in line:
+                        searchLine10(Nompatient, Birthvalue)
+        """
         if os.path.getsize('./newpatient/entryfile11.txt'):
             with open('./newpatient/entryfile11.txt', 'r') as file:
                 lines = file.readlines()
@@ -203,6 +206,9 @@ def get(Nompatient, entree, Birthvalue, Birthentree):
                     line = lines[i]
                     if mot7 in line:
                         searchLine7(Nompatient, Birthvalue)
+        else:
+            print("There is no file to edit as entryfile")
+        """
         gui.destroy()
 
 def searchLine1(Nompatient, Birthvalue):
@@ -272,13 +278,13 @@ labelBirth.pack(pady=10)
 
 Birthvalue=StringVar()
 Birthvalue.set('Format: 00/00/0000')
-Birthentree = Entry(gui, textvariable=Birthvalue, highlightbackground='gray', bd=4)
-Birthentree.pack()
+Birth_entree = Entry(gui, textvariable=Birthvalue, highlightbackground='gray', bd=4)
+Birth_entree.pack()
 
 bouton1 = Button(gui, text="Enter", width=8, bd=3,
     fg='yellow', bg='RoyalBlue3', highlightbackground='#82193e',
     activebackground='dark turquoise',
-    command = lambda: get(Nompatient, entree, Birthvalue, Birthentree))
+    command = lambda: get(Nompatient, entree, Birthvalue, Birth_entree))
 bouton1.pack(side=LEFT, padx=30, pady=10)
 
 buttQuit=Button(gui, text="Quit", width=8, bd=3,

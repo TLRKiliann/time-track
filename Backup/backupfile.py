@@ -45,6 +45,9 @@ for i in listeDate:
             shutil.copy('./ttt/doc_ttt5/intro_res.txt', './Backup/Files5/Backup_res5.txt')
             shutil.copy('./ttt/doc_ttt6/intro_res.txt', './Backup/Files6/Backup_res6.txt')
             shutil.copy('./ttt/doc_ttt7/intro_res.txt', './Backup/Files7/Backup_res7.txt')
+            shutil.copy('./ttt/doc_ttt8/intro_res.txt', './Backup/Files8/Backup_res8.txt')
+            shutil.copy('./ttt/doc_ttt9/intro_res.txt', './Backup/Files9/Backup_res9.txt')
+            shutil.copy('./ttt/doc_ttt10/intro_res.txt', './Backup/Files10/Backup_res10.txt')
         except FileNotFoundError as infousr3:
             print("Process interrupted", infousr3)
         try:
@@ -56,6 +59,9 @@ for i in listeDate:
             shutil.copy('./diag/doc_diag5/diagrecap5.txt', './Backup/Files5/Backup_diag5.txt')
             shutil.copy('./diag/doc_diag6/diagrecap6.txt', './Backup/Files6/Backup_diag6.txt')
             shutil.copy('./diag/doc_diag7/diagrecap7.txt', './Backup/Files7/Backup_diag7.txt')
+            shutil.copy('./diag/doc_diag8/diagrecap8.txt', './Backup/Files8/Backup_diag8.txt')
+            shutil.copy('./diag/doc_diag9/diagrecap9.txt', './Backup/Files9/Backup_diag9.txt')
+            shutil.copy('./diag/doc_diag10/diagrecap10.txt', './Backup/Files10/Backup_diag10.txt')
         except FileNotFoundError as infousr4:
             print("Process interrupted", infousr4)
         try:
@@ -67,6 +73,9 @@ for i in listeDate:
             shutil.copy('./14besoins/doc_suivi5/patient5_14b.txt', './Backup/Files5/Backup_careneeds5.txt')
             shutil.copy('./14besoins/doc_suivi6/patient6_14b.txt', './Backup/Files6/Backup_careneeds6.txt')
             shutil.copy('./14besoins/doc_suivi7/patient7_14b.txt', './Backup/Files7/Backup_careneeds7.txt')
+            shutil.copy('./14besoins/doc_suivi8/patient8_14b.txt', './Backup/Files8/Backup_careneeds8.txt')
+            shutil.copy('./14besoins/doc_suivi9/patient9_14b.txt', './Backup/Files9/Backup_careneeds9.txt')
+            shutil.copy('./14besoins/doc_suivi10/patient10_14b.txt', './Backup/Files10/Backup_careneeds10.txt')
         except FileNotFoundError as infousr6:
             print("Process interrupted", infousr6)
     else:
