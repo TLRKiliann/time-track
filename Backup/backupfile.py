@@ -24,6 +24,9 @@ for i in listeDate:
             shutil.copy('./calBmi/bmi5.txt', './Backup/Files5/Backup_Bmi5.txt')
             shutil.copy('./calBmi/bmi6.txt', './Backup/Files6/Backup_Bmi6.txt')
             shutil.copy('./calBmi/bmi7.txt', './Backup/Files7/Backup_Bmi7.txt')
+            shutil.copy('./calBmi/bmi8.txt', './Backup/Files8/Backup_Bmi8.txt')
+            shutil.copy('./calBmi/bmi9.txt', './Backup/Files9/Backup_Bmi9.txt')
+            shutil.copy('./calBmi/bmi10.txt', './Backup/Files10/Backup_Bmi10.txt')
         except FileNotFoundError as infousr2:
             print("Process interrupted", infousr2)
         try:

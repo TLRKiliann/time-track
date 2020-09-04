@@ -1042,7 +1042,7 @@ class Application(Frame):
             print("File entryfile5.txt doen't exist !", callfile5)
 
         self.new_data5=line5
-        self.x36, self.y36 = 129, 653 #328
+        self.x36, self.y36 = 129, 653
         self.Data_write=Entry(self.can)
         self.new_data5=StringVar()
         self.Data_write=Entry(textvariable=self.new_data5,
@@ -1077,7 +1077,7 @@ class Application(Frame):
             print("File entryfile6.txt doen't exist !", callfile6)
 
         self.new_data6=line6
-        self.x45, self.y45 = 129, 685 #360
+        self.x45, self.y45 = 129, 685
         self.Data_write=Entry(self.can)
         self.new_data6=StringVar()
         self.Data_write=Entry(textvariable=self.new_data6,
@@ -1112,7 +1112,7 @@ class Application(Frame):
             print("File entryfile7.txt doen't exist !", callfile7)
 
         self.new_data7=line7
-        self.x70, self.y70 = 129, 717 #392
+        self.x70, self.y70 = 129, 717
         self.Data_write=Entry(self.can)
         self.new_data7=StringVar()
         self.Data_write=Entry(textvariable=self.new_data7,
@@ -2154,6 +2154,63 @@ class Application(Frame):
         else:
             ("Error unknow")
 
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+            with open('./patient_agenda/events8/doc_events/fix_agenda/fixed_rdv.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if dateagenda in line:
+                        print(line)
+                        print(lines[i+1])
+                        print(lines[i+2])
+                        MSB2 = messagebox.showwarning('Info',
+                            'Look at AGENDA, there is an appointment for patient 8 tomorrow !')
+                    else:
+                        pass
+        except FileNotFoundError as infofile8:
+            print("File 8 has not been found", infofile8)
+        else:
+            ("Error unknow")
+
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+            with open('./patient_agenda/events9/doc_events/fix_agenda/fixed_rdv.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if dateagenda in line:
+                        print(line)
+                        print(lines[i+1])
+                        print(lines[i+2])
+                        MSB2 = messagebox.showwarning('Info',
+                            'Look at AGENDA, there is an appointment for patient 9 tomorrow !')
+                    else:
+                        pass
+        except FileNotFoundError as infofile9:
+            print("File 9 has not been found", infofile9)
+        else:
+            ("Error unknow")
+
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+            with open('./patient_agenda/events10/doc_events/fix_agenda/fixed_rdv.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if dateagenda in line:
+                        print(line)
+                        print(lines[i+1])
+                        print(lines[i+2])
+                        MSB2 = messagebox.showwarning('Info',
+                            'Look at AGENDA, there is an appointment for patient 10 tomorrow !')
+                    else:
+                        pass
+        except FileNotFoundError as infofile10:
+            print("File 10 has not been found", infofile10)
+        else:
+            ("Error unknow")
+
     def tttDataSearch(self):
         """
         To search the end date into the intro_ttt.txt 
@@ -2292,6 +2349,63 @@ class Application(Frame):
         else:
             ("Error unknow")
 
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+            initword = "Date of end : "
+            with open('./ttt/doc_ttt8/convdose.json', 'r') as filedate:
+                lines = filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if initword in line:
+                        print(line)
+                        if dateagenda in line:
+                            print(line)
+                            MSBTTT2 = messagebox.showwarning('Info',
+                                'Look at TTT, there is a ttt for patient \
+                                 8 which is stopped today!')
+        except FileNotFoundError as info_ttt8:
+            print("No date of end has been found for ttt into file convdose.json (patient 8)", info_ttt8)
+        else:
+            ("Error unknow")
+
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+            initword = "Date of end : "
+            with open('./ttt/doc_ttt9/convdose.json', 'r') as filedate:
+                lines = filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if initword in line:
+                        print(line)
+                        if dateagenda in line:
+                            print(line)
+                            MSBTTT2 = messagebox.showwarning('Info',
+                                'Look at TTT, there is a ttt for patient \
+                                 9 which is stopped today!')
+        except FileNotFoundError as info_ttt9:
+            print("No date of end has been found for ttt into file convdose.json (patient 9)", info_ttt9)
+        else:
+            ("Error unknow")
+
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+            initword = "Date of end : "
+            with open('./ttt/doc_ttt10/convdose.json', 'r') as filedate:
+                lines = filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if initword in line:
+                        print(line)
+                        if dateagenda in line:
+                            print(line)
+                            MSBTTT2 = messagebox.showwarning('Info',
+                                'Look at TTT, there is a ttt for patient \
+                                 10 which is stopped today!')
+        except FileNotFoundError as info_ttt10:
+            print("No date of end has been found for ttt into file convdose.json (patient 10)", info_ttt10)
+        else:
+            ("Error unknow")
+
     def reserveDataSearch(self):
         """
         To search the end date into the intro_res.txt 
@@ -2427,6 +2541,63 @@ class Application(Frame):
                                  for patient 7 which is stopped today!')
         except FileNotFoundError as info_res7:
             print("No date of end has been found for reserve into file convres.json (patient 7)", info_res7)
+        else:
+            ("Error unknow")
+
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+            res_initword = "Date of end : "
+            with open('./ttt/doc_ttt8/conv_res.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if res_initword in line:
+                        print(line)
+                        if dateagenda in line:
+                            print(line)
+                            MSBRES2 = messagebox.showwarning('Info',
+                                'Look at RESERVE onto TTT, there is a RESERVE \
+                                 for patient 8 which is stopped today!')
+        except FileNotFoundError as info_res8:
+            print("No date of end has been found for reserve into file convres.json (patient 8)", info_res8)
+        else:
+            ("Error unknow")
+
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+            res_initword = "Date of end : "
+            with open('./ttt/doc_ttt9/conv_res.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if res_initword in line:
+                        print(line)
+                        if dateagenda in line:
+                            print(line)
+                            MSBRES2 = messagebox.showwarning('Info',
+                                'Look at RESERVE onto TTT, there is a RESERVE \
+                                 for patient 9 which is stopped today!')
+        except FileNotFoundError as info_res9:
+            print("No date of end has been found for reserve into file convres.json (patient 9)", info_res9)
+        else:
+            ("Error unknow")
+
+        try:
+            dateagenda = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime('%d/%m/%Y')
+            res_initword = "Date of end : "
+            with open('./ttt/doc_ttt10/conv_res.txt', 'r') as filedate:
+                lines=filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if res_initword in line:
+                        print(line)
+                        if dateagenda in line:
+                            print(line)
+                            MSBRES2 = messagebox.showwarning('Info',
+                                'Look at RESERVE onto TTT, there is a RESERVE \
+                                 for patient 10 which is stopped today!')
+        except FileNotFoundError as info_res10:
+            print("No date of end has been found for reserve into file convres.json (patient 10)", info_res10)
         else:
             ("Error unknow")
 
@@ -2967,98 +3138,6 @@ class Application(Frame):
 
     def diag20(self):
         subprocess.call("./diag/diag_patient20.py")
-
-    # Backup
-    def allFilesBackup(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files1",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
-
-        # I have to try with Text (else no scrollbar)
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
-    def allFilesBackup2(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files2",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
-
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
-    def allFilesBackup3(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files3",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
-
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
-    def allFilesBackup4(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files4",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
-
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
-    def allFilesBackup5(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files5",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
-
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
-    def allFilesBackup6(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files6",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
-
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
-    def allFilesBackup7(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files7",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
-
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
 
     def newsTextBox(self):
         self.can.textBox = Text(app, text = "")

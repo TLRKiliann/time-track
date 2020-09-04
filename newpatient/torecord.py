@@ -26,6 +26,19 @@ def get(Nompatient, entree, Birthvalue, Birthentree):
         mot5 = "-----"
         mot6 = "------"
         mot7 = "-------"
+        mot8 = "--------"
+        mot9 = "---------"
+        mot10 = "---------"
+        mot11 = "----------"
+        mot12 = "-----------"
+        mot13 = "------------"
+        mot14 = "-------------"
+        mot15 = "--------------"
+        mot16 = "---------------"
+        mot17 = "----------------"
+        mot18 = "-----------------"
+        mot19 = "------------------"
+        mot20 = "-------------------"
         Nompatient = entree.get()
         Birthvalue = Birthentree.get()
         print(Nompatient)
@@ -224,6 +237,21 @@ def searchLine6(Nompatient, Birthvalue):
 
 def searchLine7(Nompatient, Birthvalue):
     with open('./newpatient/entryfile7.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine8(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile8.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine9(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile9.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine10(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile10.txt', 'w') as file:
         file.write(Nompatient + '\n')
         file.write(Birthvalue + '\n')
 
