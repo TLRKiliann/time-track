@@ -67,253 +67,7 @@ def callBox(self):
         text="Add patient", command=self.addPatientAfter)
     self.fb200=self.can.create_window(self.x200, self.y200, window=self.b200)
 
-    #Patient1
-    # For label below (in me2.add_command)
-    try:
-        with open('./newpatient/entryfile.txt', 'r') as namefile:
-            line1=namefile.readline()
-    except FileNotFoundError as callfile:
-        print("File entryfile.txt doen't exist !", callfile)
-
-    self.data_time=line1
-    self.x2, self.y2 = 129, 200
-    self.Data_write=Entry(self.can)
-    self.new_data1=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data1,
-        highlightbackground='grey', bd=4)
-    self.new_data1.set(line1)
-    self.Data_write=self.can.create_window(self.x2, self.y2,
-        window=self.Data_write)
-
-    self.x3, self.y3 = 271, 200
-    self.b=Button(self.can, width=8, font=16, bg='grey30', fg='coral',
-        activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink)
-    self.fb=self.can.create_window(self.x3, self.y3, window=self.b)
-
-    self.x3, self.y3 = 429, 200
-    self.b=Button(self.can, width=18, font=16, bg='grey30', fg='cyan',
-        activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag1)
-    self.fb=self.can.create_window(self.x3, self.y3, window=self.b)
-
-    self.x4, self.y4 = 597, 200
-    self.b4=Button(self.can, width=10, font=16, bg='grey30', fg='cyan',
-        activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult)
-    self.fb4=self.can.create_window(self.x4, self.y4, window=self.b4)
-
-    # Patient 2
-    try:
-        with open('./newpatient/entryfile2.txt', 'r') as namefile:
-            line2=namefile.readline()
-    except FileNotFoundError as callfile2:
-        print("File entryfile2.txt doen't exist !", callfile2)
-
-    self.new_data2=line2
-    self.x9, self.y9 = 129, 232
-    self.Data_write=Entry(self.can)
-    self.new_data2=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data2,
-      highlightbackground='grey', bd=4)
-    self.new_data2.set(line2)
-    self.Data_write=self.can.create_window(self.x9, self.y9,
-      window=self.Data_write)
-
-    self.x10, self.y10 = 271, 232
-    self.b10=Button(self.can, width=8, font=16, bg='grey25', fg='coral',
-        activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink2)
-    self.fb10=self.can.create_window(self.x10, self.y10, window=self.b10)
-
-    self.x13, self.y13 = 429, 232
-    self.b13=Button(self.can, width=18, font=16, bg='grey25', fg='cyan',
-        activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag2)
-    self.fb13=self.can.create_window(self.x13, self.y13, window=self.b13)
-
-    self.x14, self.y14 = 597, 232
-    self.b14=Button(self.can, width=10, font=16, bg='grey25', fg='cyan',
-        activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult2)
-    self.fb14=self.can.create_window(self.x14, self.y14, window=self.b14)
-
-    # Patient 3
-    try:
-        with open('./newpatient/entryfile3.txt', 'r') as namefile:
-            line3=namefile.readline()
-    except FileNotFoundError as callfile3:
-        print("File entryfile3.txt doen't exist !", callfile3)
-
-    self.new_data3=line3
-    self.x18, self.y18 = 129, 264
-    self.Data_write=Entry(self.can)
-    self.new_data3=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data3,
-      highlightbackground='grey', bd=4)
-    self.new_data3.set(line3)
-    self.Data_write=self.can.create_window(self.x18, self.y18,
-      window=self.Data_write)
-
-    self.x19, self.y19 = 271, 264
-    self.b19=Button(self.can, width=8, font=16, bg='grey20', fg='coral',
-        activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink3)
-    self.fb19=self.can.create_window(self.x19, self.y19, window=self.b19)
-
-    self.x22, self.y22 = 429, 264
-    self.b22=Button(self.can, width=18, font=16, bg='grey20', fg='cyan',
-        activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag3)
-    self.fb22=self.can.create_window(self.x22, self.y22, window=self.b22)
-
-    self.x23, self.y23 = 597, 264
-    self.b23=Button(self.can, width=10, font=16, bg='grey20', fg='cyan',
-        activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult3)
-    self.fb23=self.can.create_window(self.x23, self.y23, window=self.b23)
-
-    # Patient 4
-    try:
-        with open('./newpatient/entryfile4.txt', 'r') as namefile:
-            line4=namefile.readline()
-    except FileNotFoundError as callfile4:
-        print("File entryfile4.txt doen't exist !", callfile4)
-
-    self.new_data4=line4
-    self.x27, self.y27 = 129, 296
-    self.Data_write=Entry(self.can)
-    self.new_data4=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data4,
-      highlightbackground='grey', bd=4)
-    self.new_data4.set(line4)
-    self.Data_write=self.can.create_window(self.x27, self.y27,
-      window=self.Data_write)
-
-    self.x28, self.y28 = 271, 296
-    self.b28=Button(self.can, width=8, font=16, bg='grey18', fg='coral',
-        activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink4)
-    self.fb28=self.can.create_window(self.x28, self.y28, window=self.b28)
-
-    self.x31, self.y31 = 429, 296
-    self.b31=Button(self.can, width=18, font=16, bg='grey18', fg='cyan',
-        activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag4)
-    self.fb31=self.can.create_window(self.x31, self.y31, window=self.b31)
-
-    self.x32, self.y32 = 597, 296
-    self.b32=Button(self.can, width=10, font=16, bg='grey18', fg='cyan',
-        activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult4)
-    self.fb32=self.can.create_window(self.x32, self.y32, window=self.b32)
-
-    #patient5
-    try:
-        with open('./newpatient/entryfile5.txt', 'r') as namefile:
-            line5=namefile.readline()
-    except FileNotFoundError as callfile5:
-        print("File entryfile5.txt doen't exist !", callfile5)
-
-    self.new_data5=line5
-    self.x36, self.y36 = 129, 328
-    self.Data_write=Entry(self.can)
-    self.new_data5=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data5,
-      highlightbackground='grey', bd=4)
-    self.new_data5.set(line5)
-    self.Data_write=self.can.create_window(self.x36, self.y36,
-      window=self.Data_write)
-
-    self.x37, self.y37 = 271, 328
-    self.b37=Button(self.can, width=8, font=16, bg='grey15', fg='coral',
-        activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink5)
-    self.fb37=self.can.create_window(self.x37, self.y37, window=self.b37)
-
-    self.x40, self.y40 = 429, 328
-    self.b40=Button(self.can, width=18, font=16, bg='grey15', fg='cyan',
-        activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag5)
-    self.fb40=self.can.create_window(self.x40, self.y40, window=self.b40)
-
-    self.x41, self.y41 = 597, 328
-    self.b41=Button(self.can, width=10, font=16, bg='grey15', fg='cyan',
-        activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult5)
-    self.fb41=self.can.create_window(self.x41, self.y41, window=self.b41)
-
-    #patient6
-    try:
-        with open('./newpatient/entryfile6.txt', 'r') as namefile:
-            line6=namefile.readline()
-    except FileNotFoundError as callfile6:
-        print("File entryfile6.txt doen't exist !", callfile6)
-
-    self.new_data6=line6
-    self.x45, self.y45 = 129, 360
-    self.Data_write=Entry(self.can)
-    self.new_data6=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data6,
-      highlightbackground='grey', bd=4)
-    self.new_data6.set(line6)
-    self.Data_write=self.can.create_window(self.x45, self.y45,
-      window=self.Data_write)
-
-    self.x46, self.y46 = 271, 360
-    self.b46=Button(self.can, width=8, font=16, bg='grey12', fg='coral',
-        activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink6)
-    self.fb46=self.can.create_window(self.x46, self.y46, window=self.b46)
-
-    self.x49, self.y49 = 429, 360
-    self.b49=Button(self.can, width=18, font=16, bg='grey12', fg='cyan',
-        activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag6)
-    self.fb49=self.can.create_window(self.x49, self.y49, window=self.b49)
-
-    self.x50, self.y50 = 597, 360
-    self.b50=Button(self.can, width=10, font=16, bg='grey12', fg='cyan',
-        activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult6)
-    self.fb50=self.can.create_window(self.x50, self.y50, window=self.b50)
-    
-    #patient7
-    try:
-        with open('./newpatient/entryfile7.txt', 'r') as namefile:
-            line7=namefile.readline()
-    except FileNotFoundError as callfile7:
-        print("File entryfile7.txt doen't exist !", callfile7)
-
-    self.new_data7=line7
-    self.x54, self.y54 = 129, 392
-    self.Data_write=Entry(self.can)
-    self.new_data7=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data7,
-      highlightbackground='grey', bd=4)
-    self.new_data7.set(line7)
-    self.Data_write=self.can.create_window(self.x54, self.y54,
-      window=self.Data_write)
-
-    self.x54, self.y54 = 271, 392
-    self.b54=Button(self.can, width=8, font=16, bg='black', fg='coral',
-        activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink7)
-    self.fb54=self.can.create_window(self.x54, self.y54, window=self.b54)
-
-    self.x57, self.y57 = 429, 392
-    self.b57=Button(self.can, width=18, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag7)
-    self.fb57=self.can.create_window(self.x57, self.y57, window=self.b57)
-
-    self.x58, self.y58 = 597, 392
-    self.b58=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult7)
-    self.fb58=self.can.create_window(self.x58, self.y58, window=self.b58)
-
-    # TextBox
+    # TextBox !!!!!!!!!!!!!!!!!!!!!!!!!!!!@@@@@@########################
     self.x63, self.y63 = 625, 600
     self.t63=Text(self.can, height=15, width=60, font=18, relief=SUNKEN)
     self.t63.insert(INSERT, "Previously (yesterday last infos) : ")
@@ -489,3 +243,309 @@ def callBox(self):
         print("List 7 got less than 6 lines", inforange7)
     else:
         ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi8/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 8 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout8:
+        print("File 8 has not been found", infofileout8)
+    except IndexError as inforange8:
+        print("List 8 got less than 6 lines", inforange8)
+    else:
+        ("Error unknow")
+
+    #Patient1
+    # For label below (in me2.add_command)
+    try:
+        with open('./newpatient/entryfile.txt', 'r') as namefile:
+            line1=namefile.readline()
+    except FileNotFoundError as callfile:
+        print("File entryfile.txt doesn't exist !", callfile)
+
+    self.data_time=line1
+    self.x2, self.y2 = 129, 200
+    self.Data_write=Entry(self.can)
+    self.new_data1=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data1,
+        highlightbackground='grey', bd=4)
+    self.new_data1.set(line1)
+    self.Data_write=self.can.create_window(self.x2, self.y2,
+        window=self.Data_write)
+
+    self.x3, self.y3 = 271, 200
+    self.b=Button(self.can, width=8, font=16, bg='grey30', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink)
+    self.fb=self.can.create_window(self.x3, self.y3, window=self.b)
+
+    self.x3, self.y3 = 429, 200
+    self.b=Button(self.can, width=18, font=16, bg='grey30', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag1)
+    self.fb=self.can.create_window(self.x3, self.y3, window=self.b)
+
+    self.x4, self.y4 = 597, 200
+    self.b4=Button(self.can, width=10, font=16, bg='grey30', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult)
+    self.fb4=self.can.create_window(self.x4, self.y4, window=self.b4)
+
+    # Patient 2
+    try:
+        with open('./newpatient/entryfile2.txt', 'r') as namefile:
+            line2=namefile.readline()
+    except FileNotFoundError as callfile2:
+        print("File entryfile2.txt doesn't exist !", callfile2)
+
+    self.new_data2=line2
+    self.x9, self.y9 = 129, 232
+    self.Data_write=Entry(self.can)
+    self.new_data2=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data2,
+      highlightbackground='grey', bd=4)
+    self.new_data2.set(line2)
+    self.Data_write=self.can.create_window(self.x9, self.y9,
+      window=self.Data_write)
+
+    self.x10, self.y10 = 271, 232
+    self.b10=Button(self.can, width=8, font=16, bg='grey25', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink2)
+    self.fb10=self.can.create_window(self.x10, self.y10, window=self.b10)
+
+    self.x13, self.y13 = 429, 232
+    self.b13=Button(self.can, width=18, font=16, bg='grey25', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag2)
+    self.fb13=self.can.create_window(self.x13, self.y13, window=self.b13)
+
+    self.x14, self.y14 = 597, 232
+    self.b14=Button(self.can, width=10, font=16, bg='grey25', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult2)
+    self.fb14=self.can.create_window(self.x14, self.y14, window=self.b14)
+
+    # Patient 3
+    try:
+        with open('./newpatient/entryfile3.txt', 'r') as namefile:
+            line3=namefile.readline()
+    except FileNotFoundError as callfile3:
+        print("File entryfile3.txt doesn't exist !", callfile3)
+
+    self.new_data3=line3
+    self.x18, self.y18 = 129, 264
+    self.Data_write=Entry(self.can)
+    self.new_data3=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data3,
+      highlightbackground='grey', bd=4)
+    self.new_data3.set(line3)
+    self.Data_write=self.can.create_window(self.x18, self.y18,
+      window=self.Data_write)
+
+    self.x19, self.y19 = 271, 264
+    self.b19=Button(self.can, width=8, font=16, bg='grey20', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink3)
+    self.fb19=self.can.create_window(self.x19, self.y19, window=self.b19)
+
+    self.x22, self.y22 = 429, 264
+    self.b22=Button(self.can, width=18, font=16, bg='grey20', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag3)
+    self.fb22=self.can.create_window(self.x22, self.y22, window=self.b22)
+
+    self.x23, self.y23 = 597, 264
+    self.b23=Button(self.can, width=10, font=16, bg='grey20', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult3)
+    self.fb23=self.can.create_window(self.x23, self.y23, window=self.b23)
+
+    # Patient 4
+    try:
+        with open('./newpatient/entryfile4.txt', 'r') as namefile:
+            line4=namefile.readline()
+    except FileNotFoundError as callfile4:
+        print("File entryfile4.txt doesn't exist !", callfile4)
+
+    self.new_data4=line4
+    self.x27, self.y27 = 129, 296
+    self.Data_write=Entry(self.can)
+    self.new_data4=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data4,
+      highlightbackground='grey', bd=4)
+    self.new_data4.set(line4)
+    self.Data_write=self.can.create_window(self.x27, self.y27,
+      window=self.Data_write)
+
+    self.x28, self.y28 = 271, 296
+    self.b28=Button(self.can, width=8, font=16, bg='grey18', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink4)
+    self.fb28=self.can.create_window(self.x28, self.y28, window=self.b28)
+
+    self.x31, self.y31 = 429, 296
+    self.b31=Button(self.can, width=18, font=16, bg='grey18', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag4)
+    self.fb31=self.can.create_window(self.x31, self.y31, window=self.b31)
+
+    self.x32, self.y32 = 597, 296
+    self.b32=Button(self.can, width=10, font=16, bg='grey18', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult4)
+    self.fb32=self.can.create_window(self.x32, self.y32, window=self.b32)
+
+    #patient5
+    try:
+        with open('./newpatient/entryfile5.txt', 'r') as namefile:
+            line5=namefile.readline()
+    except FileNotFoundError as callfile5:
+        print("File entryfile5.txt doesn't exist !", callfile5)
+
+    self.new_data5=line5
+    self.x36, self.y36 = 129, 328
+    self.Data_write=Entry(self.can)
+    self.new_data5=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data5,
+      highlightbackground='grey', bd=4)
+    self.new_data5.set(line5)
+    self.Data_write=self.can.create_window(self.x36, self.y36,
+      window=self.Data_write)
+
+    self.x37, self.y37 = 271, 328
+    self.b37=Button(self.can, width=8, font=16, bg='grey15', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink5)
+    self.fb37=self.can.create_window(self.x37, self.y37, window=self.b37)
+
+    self.x40, self.y40 = 429, 328
+    self.b40=Button(self.can, width=18, font=16, bg='grey15', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag5)
+    self.fb40=self.can.create_window(self.x40, self.y40, window=self.b40)
+
+    self.x41, self.y41 = 597, 328
+    self.b41=Button(self.can, width=10, font=16, bg='grey15', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult5)
+    self.fb41=self.can.create_window(self.x41, self.y41, window=self.b41)
+
+    #patient6
+    try:
+        with open('./newpatient/entryfile6.txt', 'r') as namefile:
+            line6=namefile.readline()
+    except FileNotFoundError as callfile6:
+        print("File entryfile6.txt doesn't exist !", callfile6)
+
+    self.new_data6=line6
+    self.x45, self.y45 = 129, 360
+    self.Data_write=Entry(self.can)
+    self.new_data6=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data6,
+      highlightbackground='grey', bd=4)
+    self.new_data6.set(line6)
+    self.Data_write=self.can.create_window(self.x45, self.y45,
+      window=self.Data_write)
+
+    self.x46, self.y46 = 271, 360
+    self.b46=Button(self.can, width=8, font=16, bg='grey12', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink6)
+    self.fb46=self.can.create_window(self.x46, self.y46, window=self.b46)
+
+    self.x49, self.y49 = 429, 360
+    self.b49=Button(self.can, width=18, font=16, bg='grey12', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag6)
+    self.fb49=self.can.create_window(self.x49, self.y49, window=self.b49)
+
+    self.x50, self.y50 = 597, 360
+    self.b50=Button(self.can, width=10, font=16, bg='grey12', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult6)
+    self.fb50=self.can.create_window(self.x50, self.y50, window=self.b50)
+    
+    #patient7
+    try:
+        with open('./newpatient/entryfile7.txt', 'r') as namefile:
+            line7=namefile.readline()
+    except FileNotFoundError as callfile7:
+        print("File entryfile7.txt doesn't exist !", callfile7)
+
+    self.new_data7=line7
+    self.x54, self.y54 = 129, 392
+    self.Data_write=Entry(self.can)
+    self.new_data7=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data7,
+      highlightbackground='grey', bd=4)
+    self.new_data7.set(line7)
+    self.Data_write=self.can.create_window(self.x54, self.y54,
+      window=self.Data_write)
+
+    self.x54, self.y54 = 271, 392
+    self.b54=Button(self.can, width=8, font=16, bg='black', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink7)
+    self.fb54=self.can.create_window(self.x54, self.y54, window=self.b54)
+
+    self.x57, self.y57 = 429, 392
+    self.b57=Button(self.can, width=18, font=16, bg='black', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag7)
+    self.fb57=self.can.create_window(self.x57, self.y57, window=self.b57)
+
+    self.x58, self.y58 = 597, 392
+    self.b58=Button(self.can, width=10, font=16, bg='black', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult7)
+    self.fb58=self.can.create_window(self.x58, self.y58, window=self.b58)
+
+    #patient8
+    try:
+        with open('./newpatient/entryfile8.txt', 'r') as namefile:
+            line8=namefile.readline()
+    except FileNotFoundError as callfile8:
+        print("File entryfile8.txt doesn't exist !", callfile8)
+
+    self.new_data8=line8
+    self.x54, self.y54 = 129, 424
+    self.Data_write=Entry(self.can)
+    self.new_data8=StringVar()
+    self.Data_write=Entry(textvariable=self.new_data8,
+      highlightbackground='grey', bd=4)
+    self.new_data8.set(line8)
+    self.Data_write=self.can.create_window(self.x54, self.y54,
+      window=self.Data_write)
+
+    self.x54, self.y54 = 271, 424
+    self.b54=Button(self.can, width=8, font=16, bg='black', fg='coral',
+        activebackground='dark turquoise', text="Allergy",
+        command=self.allergyLink8)
+    self.fb54=self.can.create_window(self.x54, self.y54, window=self.b54)
+
+    self.x57, self.y57 = 429, 424
+    self.b57=Button(self.can, width=18, font=16, bg='black', fg='cyan',
+        activebackground='dark turquoise', text="Diagnostic + ATCD",
+        command=self.diag8)
+    self.fb57=self.can.create_window(self.x57, self.y57, window=self.b57)
+
+    self.x58, self.y58 = 597, 424
+    self.b58=Button(self.can, width=10, font=16, bg='black', fg='cyan',
+        activebackground='dark turquoise', text="Laboratory",
+        command=self.laboResult8)
+    self.fb58=self.can.create_window(self.x58, self.y58, window=self.b58)
+

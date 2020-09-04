@@ -46,6 +46,7 @@ class MenuBar(Frame):
         new_text5=StringVar()
         new_text6=StringVar()
         new_text7=StringVar()
+        new_text8=StringVar()
 
         fileMenu.pack(side=LEFT, padx=3)
         # Partie déroulante du menu 1st
@@ -124,6 +125,13 @@ class MenuBar(Frame):
         except FileNotFoundError as fileout7:
             print("No file entryfile7.txt exist", fileout7)
 
+        try:
+            with open('./newpatient/entryfile8.txt', 'r') as namefile:
+                line8=namefile.readline()
+                new_text8=line8
+        except FileNotFoundError as fileout8:
+            print("No file entryfile8.txt exist", fileout8)
+
         # Agenda menu
         self.cmd_agenda=Menubutton(self, text='Agenda', font=("Times 14"),
             fg='cyan', bg='grey30', relief=GROOVE)
@@ -157,6 +165,10 @@ class MenuBar(Frame):
         me3.add_command(label=new_text7, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda7)
+        me3.add_separator()
+        me3.add_command(label=new_text8, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda8)
         # Integration of agenda menu
         self.cmd_agenda.configure(activeforeground='black', activebackground='cyan', 
             menu=me3)
@@ -194,6 +206,10 @@ class MenuBar(Frame):
         me4.add_command(label=new_text7, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins7Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text8, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins8Coche)
         # Integration of 14b menu
         self.cmd_Besoins.configure(activeforeground='black', activebackground='cyan',
             menu=me4)
@@ -231,6 +247,10 @@ class MenuBar(Frame):
         meSoins.add_command(label=new_text7, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins7)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text8, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins8)
         # Integration of health and care menu
         self.cmd_Soins.configure(activeforeground='black', activebackground='cyan',
             menu=meSoins)
@@ -268,6 +288,10 @@ class MenuBar(Frame):
         meTtt.add_command(label=new_text7, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed7)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text8, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed8)
         # Integration of health and care menu
         self.cmd_ttt.configure(activeforeground='black', activebackground='cyan',
             menu=meTtt)
@@ -305,6 +329,10 @@ class MenuBar(Frame):
         meBmi.add_command(label=new_text7, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB7)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text8, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB8)
         # Integration of 3rd menu
         self.cmd_BMI.configure(activeforeground='black', activebackground='cyan',
             menu=meBmi)
@@ -342,6 +370,10 @@ class MenuBar(Frame):
         meVmed.add_command(label=new_text7, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed7)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text8, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed8)
         # Integration of 3rd menu
         self.cmd_Vmed.configure(activeforeground='black', activebackground='cyan',
             menu=meVmed)
@@ -379,6 +411,10 @@ class MenuBar(Frame):
         mePrint.add_command(label=new_text7, font=('Times 14'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu7)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text8, font=('Times 14'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu8)
         # Integration of nutrition menu
         self.cmd_Print.configure(activeforeground='black', activebackground='cyan',
             menu=mePrint)
@@ -437,7 +473,6 @@ class MenuBar(Frame):
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me7)
         me1.add_separator()
-        # Menu cascade extraordinaire !!!
         me8=Menu(me1)
         me8.add_command(label='All Files.txt', underline=0, font=('Times 14'),
             background='black', activebackground='cyan',
@@ -446,6 +481,15 @@ class MenuBar(Frame):
         me1.add_cascade(label=new_text7, underline=0, font=('Times 14'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me8)
+        me1.add_separator()
+        me9=Menu(me1)
+        me9.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup8)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text8, underline=0, font=('Times 14'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me9)
         # Integration of Graph menu
         self.cmd_Graph.configure(activeforeground='black', activebackground='cyan', menu=me1)
 
@@ -706,6 +750,9 @@ class Application(Frame):
     def besoins7Coche(self):
         subprocess.call('./14besoins/checkb7.py')
 
+    def besoins8Coche(self):
+        subprocess.call('./14besoins/checkb8.py')
+
     def launchPsycho(self):
         subprocess.call('./psychotabs.py')
 
@@ -731,6 +778,9 @@ class Application(Frame):
     def patientAgenda7(self):
         subprocess.call('./patient_agenda/origin_agenda7.py')
 
+    def patientAgenda8(self):
+        subprocess.call('./patient_agenda/origin_agenda8.py')
+
     # Func 14 needs suivi OK
     def suiviSoins1(self):
         subprocess.call("./14besoins/suivi_patient_1.py")
@@ -753,6 +803,9 @@ class Application(Frame):
     def suiviSoins7(self):
         subprocess.call("./14besoins/suivi_patient_7.py")
 
+    def suiviSoins8(self):
+        subprocess.call("./14besoins/suivi_patient_8.py")
+
     # treatments
     def tttMed1(self):
         subprocess.call("./ttt/patienttt1.py")
@@ -774,6 +827,9 @@ class Application(Frame):
 
     def tttMed7(self):
         subprocess.call("./ttt/patienttt7.py")
+
+    def tttMed8(self):
+        subprocess.call("./ttt/patienttt8.py")
     
     # Func BMI
     def calculB(self):
@@ -797,6 +853,9 @@ class Application(Frame):
     def calculB7(self):
         subprocess.call("./calBmi/CalculBmi7.py")
 
+    def calculB8(self):
+        subprocess.call("./calBmi/CalculBmi8.py")
+
     # Func Visit MED
     def visitMed(self):
         subprocess.call("./vmed/vm_patient1.py")
@@ -818,6 +877,9 @@ class Application(Frame):
         
     def visitMed7(self):
         subprocess.call("./vmed/vm_patient7.py")
+
+    def visitMed8(self):
+        subprocess.call("./vmed/vm_patient8.py")
 
     # Allergy OK
     def allergyLink(self):
@@ -841,6 +903,9 @@ class Application(Frame):
     def allergyLink7(self):
         subprocess.call('./allergy/allerpatient7.py')
 
+    def allergyLink8(self):
+        subprocess.call('./allergy/allerpatient8.py')
+
     # Func labo
     def laboResult(self):
         subprocess.call('./labo/resultlabo1.py')
@@ -863,6 +928,9 @@ class Application(Frame):
     def laboResult7(self):
         subprocess.call('./labo/resultlabo7.py')
 
+    def laboResult8(self):
+        subprocess.call('./labo/resultlabo8.py')
+
     # Func Diagnostic
     def diag1(self):
         subprocess.call("./diag/diag_patient1.py")
@@ -884,6 +952,9 @@ class Application(Frame):
 
     def diag7(self):
         subprocess.call("./diag/diag_patient7.py")
+
+    def diag8(self):
+        subprocess.call("./diag/diag_patient8.py")
 
     # Manual nurse
     def manualFile(self):
@@ -910,6 +981,9 @@ class Application(Frame):
 
     def nutritionMenu7(self):
         subprocess.call('./nutrition/nutrit_patient7.py')
+
+    def nutritionMenu8(self):
+        subprocess.call('./nutrition/nutrit_patient8.py')
 
     def newsTextBox(self):
         self.can.textBox = Text(app, text = "")
@@ -998,6 +1072,19 @@ class Application(Frame):
         self.label=Tk()
         self.label.title("Search File")
         filepath = filedialog.askopenfilename(initialdir = "./Backup/Files7",
+            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
+        print(filepath)
+        with open(filepath, 'r') as fichier:
+            content = fichier.read()
+
+        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
+            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
+
+        # Backup
+    def allFilesBackup8(self):
+        self.label=Tk()
+        self.label.title("Search File")
+        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files8",
             title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
         print(filepath)
         with open(filepath, 'r') as fichier:
