@@ -609,7 +609,7 @@ class Application(Frame):
         self.vsb = Scrollbar(self, orient=VERTICAL, command=self.can.yview)
         self.can.configure(yscrollcommand=self.vsb.set)
         self.vsb.pack(side=RIGHT, fill=Y)
-        self.can.pack(side=LEFT, fill=BOTH, expand=YES)
+        #self.can.pack(side=LEFT, fill=BOTH, expand=YES)
         self.can.create_window((4,4), window=self.frame, anchor=NW, tags="self.frame")
         # Insertion of picture
         self.photo = PhotoImage(file='./syno_gif/fondcolorbg.png')
@@ -620,9 +620,9 @@ class Application(Frame):
             font=('Times New Roman', 18, 'bold'), fill='turquoise')
         self.can.create_text(1240, 770, anchor=NE, text="ko@l@tr33",
             font=('Times', 12), fill='turquoise')
-        self.can.pack(side=LEFT, fill=BOTH, expand=YES)
         # Configuration de la Scrollbar sur le Frame
         self.frame.bind("<Configure>", self.onFrameConfigure)
+        self.can.pack(side=LEFT, fill=BOTH, expand=YES)
         # 3 buttons on welcome page.
         # Info button
         self.button1 = Button(self, text="Info", font=('Times 14 bold'),
