@@ -686,45 +686,101 @@ class MenuBar(Frame):
         self.cmd_BMI.pack(side=LEFT, padx=3)
         # drop-down portion of BMI menu
         meBmi = Menu(self.cmd_BMI)
-        meBmi.add_command(label=new_text, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text2, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text2, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB2)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text3, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text3, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB3)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text4, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text4, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB4)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text5, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text5, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB5)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text6, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text6, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB6)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text7, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text7, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB7)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text8, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text8, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB8)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text9, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text9, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB9)
         meBmi.add_separator()
-        meBmi.add_command(label=new_text10, font=('Times 14'), background='black',
+        meBmi.add_command(label=new_text10, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.calculB10)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text11, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB11)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text12, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB12)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text13, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB13)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text14, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB14)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text15, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB15)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text16, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB16)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text17, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB17)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text18, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB18)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text19, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB19)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text20, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB20)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text21, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB21)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text22, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB22)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text23, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB23)
+        meBmi.add_separator()
+        meBmi.add_command(label=new_text24, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.calculB24)
         # Integration of 3rd menu
         self.cmd_BMI.configure(activeforeground='black', activebackground='cyan',
             menu=meBmi)
@@ -735,45 +791,101 @@ class MenuBar(Frame):
         self.cmd_Vmed.pack(side=LEFT, padx=3)
         # drop-down portion of vmed
         meVmed = Menu(self.cmd_Vmed)
-        meVmed.add_command(label=new_text, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text2, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text2, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed2)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text3, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text3, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed3)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text4, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text4, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed4)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text5, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text5, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed5)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text6, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text6, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed6)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text7, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text7, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed7)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text8, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text8, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed8)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text9, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text9, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed9)
         meVmed.add_separator()
-        meVmed.add_command(label=new_text10, font=('Times 14'), background='black',
+        meVmed.add_command(label=new_text10, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.visitMed10)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text11, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed11)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text12, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed12)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text13, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed13)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text14, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed14)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text15, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed15)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text16, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed16)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text17, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed17)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text18, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed18)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text19, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed19)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text20, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed20)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text21, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed21)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text22, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed22)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text23, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed23)
+        meVmed.add_separator()
+        meVmed.add_command(label=new_text24, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.visitMed24)
         # Integration of 3rd menu
         self.cmd_Vmed.configure(activeforeground='black', activebackground='cyan',
             menu=meVmed)
@@ -1441,6 +1553,45 @@ class Application(Frame):
     def calculB10(self):
         subprocess.call("./calBmi/CalculBmi10.py")
 
+    def calculB11(self):
+        subprocess.call("./calBmi/CalculBmi11.py")
+
+    def calculB12(self):
+        subprocess.call("./calBmi/CalculBmi12.py")
+
+    def calculB13(self):
+        subprocess.call("./calBmi/CalculBmi13.py")
+
+    def calculB14(self):
+        subprocess.call("./calBmi/CalculBmi14.py")
+
+    def calculB15(self):
+        subprocess.call("./calBmi/CalculBmi15.py")
+
+    def calculB16(self):
+        subprocess.call("./calBmi/CalculBmi16.py")
+
+    def calculB17(self):
+        subprocess.call("./calBmi/CalculBmi17.py")
+
+    def calculB18(self):
+        subprocess.call("./calBmi/CalculBmi18.py")
+
+    def calculB20(self):
+        subprocess.call("./calBmi/CalculBmi20.py")
+
+    def calculB21(self):
+        subprocess.call("./calBmi/CalculBmi21.py")
+
+    def calculB22(self):
+        subprocess.call("./calBmi/CalculBmi22.py")
+
+    def calculB23(self):
+        subprocess.call("./calBmi/CalculBmi23.py")
+
+    def calculB24(self):
+        subprocess.call("./calBmi/CalculBmi24.py")
+
     # Func Visit MED
     def visitMed(self):
         subprocess.call("./vmed/vm_patient1.py")
@@ -1471,6 +1622,48 @@ class Application(Frame):
 
     def visitMed10(self):
         subprocess.call("./vmed/vm_patient10.py")
+
+    def visitMed11(self):
+        subprocess.call("./vmed/vm_patient11.py")
+
+    def visitMed12(self):
+        subprocess.call("./vmed/vm_patient12.py")
+
+    def visitMed13(self):
+        subprocess.call("./vmed/vm_patient13.py")
+
+    def visitMed14(self):
+        subprocess.call("./vmed/vm_patient14.py")
+
+    def visitMed15(self):
+        subprocess.call("./vmed/vm_patient15.py")
+
+    def visitMed16(self):
+        subprocess.call("./vmed/vm_patient16.py")
+
+    def visitMed17(self):
+        subprocess.call("./vmed/vm_patient17.py")
+
+    def visitMed18(self):
+        subprocess.call("./vmed/vm_patient18.py")
+
+    def visitMed19(self):
+        subprocess.call("./vmed/vm_patient19.py")
+
+    def visitMed20(self):
+        subprocess.call("./vmed/vm_patient20.py")
+
+    def visitMed21(self):
+        subprocess.call("./vmed/vm_patient21.py")
+
+    def visitMed22(self):
+        subprocess.call("./vmed/vm_patient22.py")
+
+    def visitMed23(self):
+        subprocess.call("./vmed/vm_patient23.py")
+
+    def visitMed24(self):
+        subprocess.call("./vmed/vm_patient24.py")
 
     # Allergy OK
     def allergyLink(self):
