@@ -49,6 +49,20 @@ class MenuBar(Frame):
         new_text8=StringVar()
         new_text9=StringVar()
         new_text10=StringVar()
+        new_text11=StringVar()
+        new_text12=StringVar()
+        new_text13=StringVar()
+        new_text14=StringVar()
+        new_text15=StringVar()
+        new_text16=StringVar()
+        new_text17=StringVar()
+        new_text18=StringVar()
+        new_text19=StringVar()
+        new_text20=StringVar()
+        new_text21=StringVar()
+        new_text22=StringVar()
+        new_text23=StringVar()
+        new_text24=StringVar()
 
         fileMenu.pack(side=LEFT, padx=3)
         # Partie déroulante du menu 1st
@@ -148,51 +162,205 @@ class MenuBar(Frame):
         except FileNotFoundError as fileout10:
             print("No file entryfile10.txt exist", fileout10)
 
+        try:
+            with open('./newpatient/entryfile11.txt', 'r') as namefile:
+                line11=namefile.readline()
+                new_text11=line11
+        except FileNotFoundError as fileout11:
+            print("No file entryfile11.txt exist", fileout11)
+
+        try:
+            with open('./newpatient/entryfile12.txt', 'r') as namefile:
+                line12=namefile.readline()
+                new_text12=line12
+        except FileNotFoundError as fileout12:
+            print("No file entryfile12.txt exist", fileout12)
+
+        try:
+            with open('./newpatient/entryfile13.txt', 'r') as namefile:
+                line13=namefile.readline()
+                new_text13=line13
+        except FileNotFoundError as fileout13:
+            print("No file entryfile13.txt exist", fileout13)
+
+        try:
+            with open('./newpatient/entryfile14.txt', 'r') as namefile:
+                line14=namefile.readline()
+                new_text14=line14
+        except FileNotFoundError as fileout14:
+            print("No file entryfile14.txt exist", fileout14)
+
+        try:
+            with open('./newpatient/entryfile15.txt', 'r') as namefile:
+                line15=namefile.readline()
+                new_text15=line15
+        except FileNotFoundError as fileout15:
+            print("No file entryfile15.txt exist", fileout15)
+
+        try:
+            with open('./newpatient/entryfile16.txt', 'r') as namefile:
+                line16=namefile.readline()
+                new_text16=line16
+        except FileNotFoundError as fileout16:
+            print("No file entryfile16.txt exist", fileout16)
+
+        try:
+            with open('./newpatient/entryfile17.txt', 'r') as namefile:
+                line17=namefile.readline()
+                new_text17=line17
+        except FileNotFoundError as fileout17:
+            print("No file entryfile17.txt exist", fileout17)
+
+        try:
+            with open('./newpatient/entryfile18.txt', 'r') as namefile:
+                line18=namefile.readline()
+                new_text18=line18
+        except FileNotFoundError as fileout18:
+            print("No file entryfile18.txt exist", fileout18)
+
+        try:
+            with open('./newpatient/entryfile19.txt', 'r') as namefile:
+                line19=namefile.readline()
+                new_text19=line19
+        except FileNotFoundError as fileout19:
+            print("No file entryfile19.txt exist", fileout19)
+
+        try:
+            with open('./newpatient/entryfile20.txt', 'r') as namefile:
+                line20=namefile.readline()
+                new_text20=line20
+        except FileNotFoundError as fileout20:
+            print("No file entryfile20.txt exist", fileout20)
+
+        try:
+            with open('./newpatient/entryfile21.txt', 'r') as namefile:
+                line21=namefile.readline()
+                new_text21=line21
+        except FileNotFoundError as fileout21:
+            print("No file entryfile21.txt exist", fileout21)
+
+        try:
+            with open('./newpatient/entryfile22.txt', 'r') as namefile:
+                line22=namefile.readline()
+                new_text22=line22
+        except FileNotFoundError as fileout22:
+            print("No file entryfile22.txt exist", fileout22)
+
+        try:
+            with open('./newpatient/entryfile23.txt', 'r') as namefile:
+                line23=namefile.readline()
+                new_text23=line23
+        except FileNotFoundError as fileout23:
+            print("No file entryfile23.txt exist", fileout23)
+
+        try:
+            with open('./newpatient/entryfile24.txt', 'r') as namefile:
+                line24=namefile.readline()
+                new_text24=line24
+        except FileNotFoundError as fileout24:
+            print("No file entryfile24.txt exist", fileout24)
+
         # Agenda menu
         self.cmd_agenda=Menubutton(self, text='Agenda', font=("Times 14"),
             fg='cyan', bg='grey30', relief=GROOVE)
         self.cmd_agenda.pack(side=LEFT, padx=3)
         me3 = Menu(self.cmd_agenda)
         # Partie déroulante du menu agenda
-        me3.add_command(label=new_text, font=('Times 14'), background='black',
+        me3.add_command(label=new_text, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda)
         me3.add_separator()
-        me3.add_command(label=new_text2, font=('Times 14'), background='black',
+        me3.add_command(label=new_text2, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda2)
         me3.add_separator()
-        me3.add_command(label=new_text3, font=('Times 14'), background='black',
+        me3.add_command(label=new_text3, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda3)
         me3.add_separator()
-        me3.add_command(label=new_text4, font=('Times 14'), background='black',
+        me3.add_command(label=new_text4, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda4)
         me3.add_separator()
-        me3.add_command(label=new_text5, font=('Times 14'), background='black',
+        me3.add_command(label=new_text5, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda5)
         me3.add_separator()
-        me3.add_command(label=new_text6, font=('Times 14'), background='black',
+        me3.add_command(label=new_text6, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda6)
         me3.add_separator()
-        me3.add_command(label=new_text7, font=('Times 14'), background='black',
+        me3.add_command(label=new_text7, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda7)
         me3.add_separator()
-        me3.add_command(label=new_text8, font=('Times 14'), background='black',
+        me3.add_command(label=new_text8, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda8)
         me3.add_separator()
-        me3.add_command(label=new_text9, font=('Times 14'), background='black',
+        me3.add_command(label=new_text9, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda9)
         me3.add_separator()
-        me3.add_command(label=new_text10, font=('Times 14'), background='black',
+        me3.add_command(label=new_text10, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.patientAgenda10)
+        me3.add_separator()
+        me3.add_command(label=new_text11, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda11)
+        me3.add_separator()
+        me3.add_command(label=new_text12, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda12)
+        me3.add_separator()
+        me3.add_command(label=new_text13, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda13)
+        me3.add_separator()
+        me3.add_command(label=new_text14, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda14)
+        me3.add_separator()
+        me3.add_command(label=new_text15, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda15)
+        me3.add_separator()
+        me3.add_command(label=new_text16, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda16)
+        me3.add_separator()
+        me3.add_command(label=new_text17, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda17)
+        me3.add_separator()
+        me3.add_command(label=new_text18, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda18)
+        me3.add_separator()
+        me3.add_command(label=new_text19, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda19)
+        me3.add_separator()
+        me3.add_command(label=new_text20, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda20)
+        me3.add_separator()
+        me3.add_command(label=new_text21, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda21)
+        me3.add_separator()
+        me3.add_command(label=new_text22, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda22)
+        me3.add_separator()
+        me3.add_command(label=new_text23, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda23)
+        me3.add_separator()
+        me3.add_command(label=new_text24, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.patientAgenda24)
         # Integration of agenda menu
         self.cmd_agenda.configure(activeforeground='black', activebackground='cyan', 
             menu=me3)
@@ -203,45 +371,101 @@ class MenuBar(Frame):
         self.cmd_Besoins.pack(side=LEFT, padx=3)
         # Partie déroulante du menu 14b
         me4 = Menu(self.cmd_Besoins)
-        me4.add_command(label=new_text, font=('Times 14'), background='black',
+        me4.add_command(label=new_text, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoinsCoche)
         me4.add_separator()
-        me4.add_command(label=new_text2, font=('Times 14'), background='black',
+        me4.add_command(label=new_text2, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins2Coche)
         me4.add_separator()
-        me4.add_command(label=new_text3, font=('Times 14'), background='black',
+        me4.add_command(label=new_text3, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins3Coche)
         me4.add_separator()
-        me4.add_command(label=new_text4, font=('Times 14'), background='black',
+        me4.add_command(label=new_text4, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins4Coche)
         me4.add_separator()
-        me4.add_command(label=new_text5, font=('Times 14'), background='black',
+        me4.add_command(label=new_text5, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins5Coche)
         me4.add_separator()
-        me4.add_command(label=new_text6, font=('Times 14'), background='black',
+        me4.add_command(label=new_text6, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins6Coche)
         me4.add_separator()
-        me4.add_command(label=new_text7, font=('Times 14'), background='black',
+        me4.add_command(label=new_text7, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins7Coche)
         me4.add_separator()
-        me4.add_command(label=new_text8, font=('Times 14'), background='black',
+        me4.add_command(label=new_text8, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins8Coche)
         me4.add_separator()
-        me4.add_command(label=new_text9, font=('Times 14'), background='black',
+        me4.add_command(label=new_text9, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins9Coche)
         me4.add_separator()
-        me4.add_command(label=new_text10, font=('Times 14'), background='black',
+        me4.add_command(label=new_text10, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.besoins10Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text11, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins11Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text12, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins12Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text13, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins13Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text14, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins14Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text15, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins15Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text16, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins16Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text17, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins17Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text18, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins18Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text19, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins19Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text20, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins20Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text21, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins21Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text22, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins22Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text23, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins23Coche)
+        me4.add_separator()
+        me4.add_command(label=new_text24, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.besoins24Coche)
         # Integration of 14b menu
         self.cmd_Besoins.configure(activeforeground='black', activebackground='cyan',
             menu=me4)
@@ -252,45 +476,101 @@ class MenuBar(Frame):
         self.cmd_Soins.pack(side=LEFT, padx=3)
         # Partie déroulante du menu health and care
         meSoins = Menu(self.cmd_Soins)
-        meSoins.add_command(label=new_text, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins1)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text2, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text2, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins2)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text3, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text3, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins3)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text4, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text4, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins4)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text5, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text5, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins5)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text6, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text6, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins6)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text7, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text7, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins7)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text8, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text8, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins8)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text9, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text9, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins9)
         meSoins.add_separator()
-        meSoins.add_command(label=new_text10, font=('Times 14'), background='black',
+        meSoins.add_command(label=new_text10, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins10)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text11, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins11)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text12, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins12)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text13, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins13)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text14, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins14)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text15, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins15)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text16, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins16)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text17, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins17)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text18, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins18)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text19, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins19)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text20, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins20)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text21, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins21)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text22, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins22)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text23, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins23)
+        meSoins.add_separator()
+        meSoins.add_command(label=new_text24, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.suiviSoins24)
         # Integration of health and care menu
         self.cmd_Soins.configure(activeforeground='black', activebackground='cyan',
             menu=meSoins)
@@ -632,7 +912,7 @@ class Application(Frame):
         self.button1_window = self.can.create_window(75, 30, anchor=CENTER,
             window=self.button1)
         # Synopsis button
-        self.button2 = Button(self, text="SYNOPSIS", font=('Times 18 bold'),
+        self.button2 = Button(self, text="Go to app", font=('Times 18 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.showsynopsis)
         self.button2.configure(width=15, bd=3, highlightbackground='blue',
             activebackground='dark turquoise')
@@ -777,38 +1057,8 @@ class Application(Frame):
     def addPatientAfter(self):
         messagebox.showwarning("Warning", "Don't forget to enter allergy too ! ;)")
         subprocess.call('./newpatient/torecord.py')
-        
-    # CheckBox 14 needs OK
-    def besoinsCoche(self):
-        subprocess.call('./14besoins/checkb.py')
 
-    def besoins2Coche(self):
-        subprocess.call('./14besoins/checkb2.py')
-
-    def besoins3Coche(self):
-        subprocess.call('./14besoins/checkb3.py')
-
-    def besoins4Coche(self):
-        subprocess.call('./14besoins/checkb4.py')
-
-    def besoins5Coche(self):
-        subprocess.call('./14besoins/checkb5.py')
-
-    def besoins6Coche(self):
-        subprocess.call('./14besoins/checkb6.py')
-
-    def besoins7Coche(self):
-        subprocess.call('./14besoins/checkb7.py')
-
-    def besoins8Coche(self):
-        subprocess.call('./14besoins/checkb8.py')
-
-    def besoins9Coche(self):
-        subprocess.call('./14besoins/checkb9.py')
-
-    def besoins10Coche(self):
-        subprocess.call('./14besoins/checkb10.py')
-
+    # To launch psychotabs.py
     def launchPsycho(self):
         subprocess.call('./psychotabs.py')
 
@@ -843,6 +1093,121 @@ class Application(Frame):
     def patientAgenda10(self):
         subprocess.call('./patient_agenda/origin_agenda10.py')
 
+    def patientAgenda11(self):
+        subprocess.call('./patient_agenda/origin_agenda11.py')
+
+    def patientAgenda12(self):
+        subprocess.call('./patient_agenda/origin_agenda12.py')
+
+    def patientAgenda13(self):
+        subprocess.call('./patient_agenda/origin_agenda13.py')
+
+    def patientAgenda14(self):
+        subprocess.call('./patient_agenda/origin_agenda14.py')
+
+    def patientAgenda15(self):
+        subprocess.call('./patient_agenda/origin_agenda15.py')
+
+    def patientAgenda16(self):
+        subprocess.call('./patient_agenda/origin_agenda16.py')
+
+    def patientAgenda17(self):
+        subprocess.call('./patient_agenda/origin_agenda17.py')
+
+    def patientAgenda18(self):
+        subprocess.call('./patient_agenda/origin_agenda18.py')
+
+    def patientAgenda19(self):
+        subprocess.call('./patient_agenda/origin_agenda19.py')
+
+    def patientAgenda20(self):
+        subprocess.call('./patient_agenda/origin_agenda20.py')
+
+    def patientAgenda21(self):
+        subprocess.call('./patient_agenda/origin_agenda21.py')
+
+    def patientAgenda22(self):
+        subprocess.call('./patient_agenda/origin_agenda22.py')
+
+    def patientAgenda23(self):
+        subprocess.call('./patient_agenda/origin_agenda23.py')
+
+    def patientAgenda24(self):
+        subprocess.call('./patient_agenda/origin_agenda24.py')
+
+    # CheckBox 14 needs OK
+    def besoinsCoche(self):
+        subprocess.call('./14besoins/checkb.py')
+
+    def besoins2Coche(self):
+        subprocess.call('./14besoins/checkb2.py')
+
+    def besoins3Coche(self):
+        subprocess.call('./14besoins/checkb3.py')
+
+    def besoins4Coche(self):
+        subprocess.call('./14besoins/checkb4.py')
+
+    def besoins5Coche(self):
+        subprocess.call('./14besoins/checkb5.py')
+
+    def besoins6Coche(self):
+        subprocess.call('./14besoins/checkb6.py')
+
+    def besoins7Coche(self):
+        subprocess.call('./14besoins/checkb7.py')
+
+    def besoins8Coche(self):
+        subprocess.call('./14besoins/checkb8.py')
+
+    def besoins9Coche(self):
+        subprocess.call('./14besoins/checkb9.py')
+
+    def besoins10Coche(self):
+        subprocess.call('./14besoins/checkb10.py')
+
+    def besoins11Coche(self):
+        subprocess.call('./14besoins/checkb11.py')
+
+    def besoins12Coche(self):
+        subprocess.call('./14besoins/checkb12.py')
+
+    def besoins13Coche(self):
+        subprocess.call('./14besoins/checkb13.py')
+
+    def besoins14Coche(self):
+        subprocess.call('./14besoins/checkb14.py')
+
+    def besoins15Coche(self):
+        subprocess.call('./14besoins/checkb15.py')
+
+    def besoins16Coche(self):
+        subprocess.call('./14besoins/checkb16.py')
+
+    def besoins17Coche(self):
+        subprocess.call('./14besoins/checkb17.py')
+
+    def besoins18Coche(self):
+        subprocess.call('./14besoins/checkb18.py')
+
+    def besoins19Coche(self):
+        subprocess.call('./14besoins/checkb19.py')
+
+    def besoins20Coche(self):
+        subprocess.call('./14besoins/checkb20.py')
+
+    def besoins21Coche(self):
+        subprocess.call('./14besoins/checkb21.py')
+
+    def besoins22Coche(self):
+        subprocess.call('./14besoins/checkb22.py')
+
+    def besoins23Coche(self):
+        subprocess.call('./14besoins/checkb23.py')
+
+    def besoins24Coche(self):
+        subprocess.call('./14besoins/checkb24.py')
+
     # Func 14 needs suivi OK
     def suiviSoins1(self):
         subprocess.call("./14besoins/suivi_patient_1.py")
@@ -873,6 +1238,48 @@ class Application(Frame):
 
     def suiviSoins10(self):
         subprocess.call("./14besoins/suivi_patient_10.py")
+
+    def suiviSoins11(self):
+        subprocess.call("./14besoins/suivi_patient_11.py")
+
+    def suiviSoins12(self):
+        subprocess.call("./14besoins/suivi_patient_12.py")
+
+    def suiviSoins13(self):
+        subprocess.call("./14besoins/suivi_patient_13.py")
+
+    def suiviSoins14(self):
+        subprocess.call("./14besoins/suivi_patient_14.py")
+
+    def suiviSoins15(self):
+        subprocess.call("./14besoins/suivi_patient_15.py")
+
+    def suiviSoins16(self):
+        subprocess.call("./14besoins/suivi_patient_16.py")
+
+    def suiviSoins17(self):
+        subprocess.call("./14besoins/suivi_patient_17.py")
+
+    def suiviSoins18(self):
+        subprocess.call("./14besoins/suivi_patient_18.py")
+
+    def suiviSoins19(self):
+        subprocess.call("./14besoins/suivi_patient_19.py")
+
+    def suiviSoins20(self):
+        subprocess.call("./14besoins/suivi_patient_20.py")
+
+    def suiviSoins21(self):
+        subprocess.call("./14besoins/suivi_patient_21.py")
+
+    def suiviSoins22(self):
+        subprocess.call("./14besoins/suivi_patient_22.py")
+
+    def suiviSoins23(self):
+        subprocess.call("./14besoins/suivi_patient_23.py")
+
+    def suiviSoins24(self):
+        subprocess.call("./14besoins/suivi_patient_24.py")
 
     # treatments
     def tttMed1(self):
