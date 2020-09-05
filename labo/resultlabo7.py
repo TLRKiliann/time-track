@@ -434,7 +434,7 @@ def recordOption():
             file.write("# Coproculture and treatment : (add what the patient needs)\n")
     else:
         print("+ Coproculture ok, nothing to do")
-    with open('./labo/doc_labo/result.txt', 'a+') as endfile:
+    with open('./labo/doc_labo/result7.txt', 'a+') as endfile:
         endfile.write("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
  
 def confRec():
