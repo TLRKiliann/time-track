@@ -1906,6 +1906,9 @@ class Application(Frame):
     def allergyLink18(self):
         subprocess.call('./allergy/allerpatient18.py')
 
+    def allergyLink19(self):
+        subprocess.call('./allergy/allerpatient19.py')
+
     def allergyLink20(self):
         subprocess.call('./allergy/allerpatient20.py')
 
@@ -1952,6 +1955,48 @@ class Application(Frame):
     def diag10(self):
         subprocess.call("./diag/diag_patient10.py")
 
+    def diag11(self):
+        subprocess.call("./diag/diag_patient11.py")
+
+    def diag12(self):
+        subprocess.call("./diag/diag_patient12.py")
+
+    def diag13(self):
+        subprocess.call("./diag/diag_patient13.py")
+
+    def diag14(self):
+        subprocess.call("./diag/diag_patient14.py")
+
+    def diag15(self):
+        subprocess.call("./diag/diag_patient15.py")
+
+    def diag16(self):
+        subprocess.call("./diag/diag_patient16.py")
+
+    def diag17(self):
+        subprocess.call("./diag/diag_patient17.py")
+
+    def diag18(self):
+        subprocess.call("./diag/diag_patient18.py")
+
+    def diag19(self):
+        subprocess.call("./diag/diag_patient19.py")
+
+    def diag20(self):
+        subprocess.call("./diag/diag_patient20.py")
+
+    def diag21(self):
+        subprocess.call("./diag/diag_patient21.py")
+
+    def diag22(self):
+        subprocess.call("./diag/diag_patient22.py")
+
+    def diag23(self):
+        subprocess.call("./diag/diag_patient23.py")
+
+    def diag24(self):
+        subprocess.call("./diag/diag_patient24.py")
+
     # Func labo
     def laboResult(self):
         subprocess.call('./labo/resultlabo1.py')
@@ -1982,6 +2027,48 @@ class Application(Frame):
 
     def laboResult10(self):
         subprocess.call('./labo/resultlabo10.py')
+
+    def laboResult11(self):
+        subprocess.call('./labo/resultlabo11.py')
+
+    def laboResult12(self):
+        subprocess.call('./labo/resultlabo12.py')
+
+    def laboResult13(self):
+        subprocess.call('./labo/resultlabo13.py')
+
+    def laboResult14(self):
+        subprocess.call('./labo/resultlabo14.py')
+
+    def laboResult15(self):
+        subprocess.call('./labo/resultlabo15.py')
+
+    def laboResult16(self):
+        subprocess.call('./labo/resultlabo16.py')
+
+    def laboResult17(self):
+        subprocess.call('./labo/resultlabo17.py')
+
+    def laboResult18(self):
+        subprocess.call('./labo/resultlabo18.py')
+
+    def laboResult19(self):
+        subprocess.call('./labo/resultlabo19.py')
+
+    def laboResult20(self):
+        subprocess.call('./labo/resultlabo20.py')
+
+    def laboResult21(self):
+        subprocess.call('./labo/resultlabo21.py')
+
+    def laboResult22(self):
+        subprocess.call('./labo/resultlabo22.py')
+
+    def laboResult23(self):
+        subprocess.call('./labo/resultlabo23.py')
+
+    def laboResult24(self):
+        subprocess.call('./labo/resultlabo24.py')
 
     # Menu print
     def nutritionMenu(self):
