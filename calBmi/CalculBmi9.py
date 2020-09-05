@@ -154,33 +154,33 @@ with open('./newpatient/entryfile9.txt', 'r') as filename:
 
 gui = Tk()
 gui.title('Simple BMIcalculator')
-gui.configure(background='#82193e')
+gui.configure(background='RoyalBlue4')
 
 labelTitle = Label(gui, text="Simple BMI", font='Arial 18 bold', 
-    fg='aquamarine', bg='#82193e')
+    fg='aquamarine', bg='RoyalBlue4')
 labelTitle.grid(row=0, column=1, columnspan=2, pady=10)
 
 number1 = StringVar()
 number2 = StringVar()
 
 textDate = Label(gui, text="Date : ",
-    font=18, width=20, fg='cyan', bg='#82193e', anchor='e')
+    font=18, width=20, fg='cyan', bg='RoyalBlue4', anchor='e')
 textDate.grid(row=1, column=1)
 
 textHour = Label(gui, text="Heure : ",
-    font=18, width=20, fg='cyan', bg='#82193e', anchor='e')
+    font=18, width=20, fg='cyan', bg='RoyalBlue4', anchor='e')
 textHour.grid(row=2, column=1)
 
 textName = Label(gui, text="Nom du patient : ",
-    font=18, width=20, fg='cyan', bg='#82193e', anchor='e')
+    font=18, width=20, fg='cyan', bg='RoyalBlue4', anchor='e')
 textName.grid(row=3, column=1)
 
 labelNum1 = Label(gui, text="Entrez le poids en Kg : ",
-    font=18, width=20, fg='cyan', bg='#82193e', anchor='e')
+    font=18, width=20, fg='cyan', bg='RoyalBlue4', anchor='e')
 labelNum1.grid(row=4, column=1)
 
 labelNum2 = Label(gui, text="Entrez la taille en M : ",
-    font=18, width=20, fg='cyan', bg='#82193e', anchor='e')
+    font=18, width=20, fg='cyan', bg='RoyalBlue4', anchor='e')
 labelNum2.grid(row=5, column=1)
 
 textDate = Entry(gui)
