@@ -1032,19 +1032,19 @@ def callBox(self):
     self.x111, self.y111 = 271, 720
     self.b111=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink11)
     self.fb111=self.can.create_window(self.x111, self.y111, window=self.b111)
 
     self.x112, self.y112 = 429, 720
     self.b112=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag11)
     self.fb112=self.can.create_window(self.x112, self.y112, window=self.b112)
 
     self.x113, self.y113 = 597, 720
     self.b113=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult11)
     self.fb113=self.can.create_window(self.x113, self.y113, window=self.b113)
 
     #patient12
@@ -1067,19 +1067,19 @@ def callBox(self):
     self.x121, self.y121 = 271, 752
     self.b121=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink12)
     self.fb121=self.can.create_window(self.x121, self.y121, window=self.b121)
 
     self.x122, self.y122 = 429, 752
     self.b122=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag12)
     self.fb122=self.can.create_window(self.x122, self.y122, window=self.b122)
 
     self.x123, self.y123 = 597, 752
     self.b123=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult12)
     self.fb123=self.can.create_window(self.x123, self.y123, window=self.b123)
 
     #patient13
@@ -1102,19 +1102,19 @@ def callBox(self):
     self.x131, self.y131 = 271, 784
     self.b131=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink13)
     self.fb131=self.can.create_window(self.x131, self.y131, window=self.b131)
 
     self.x132, self.y132 = 429, 784
     self.b132=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag13)
     self.fb132=self.can.create_window(self.x132, self.y132, window=self.b132)
 
     self.x133, self.y133 = 597, 784
     self.b133=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult13)
     self.fb133=self.can.create_window(self.x133, self.y133, window=self.b133)
 
     #patient14
@@ -1137,19 +1137,19 @@ def callBox(self):
     self.x141, self.y141 = 271, 816
     self.b141=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink14)
     self.fb141=self.can.create_window(self.x141, self.y141, window=self.b141)
 
     self.x142, self.y142 = 429, 816
     self.b142=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag14)
     self.fb142=self.can.create_window(self.x142, self.y142, window=self.b142)
 
     self.x143, self.y143 = 597, 816
     self.b143=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult14)
     self.fb143=self.can.create_window(self.x143, self.y143, window=self.b143)
 
     #patient15
@@ -1172,19 +1172,19 @@ def callBox(self):
     self.x151, self.y151 = 271, 848
     self.b151=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink15)
     self.fb151=self.can.create_window(self.x151, self.y151, window=self.b151)
 
     self.x152, self.y152 = 429, 848
     self.b152=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag15)
     self.fb152=self.can.create_window(self.x152, self.y152, window=self.b152)
 
     self.x153, self.y153 = 597, 848
     self.b153=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult15)
     self.fb153=self.can.create_window(self.x153, self.y153, window=self.b153)
 
     #patient16
@@ -1207,19 +1207,19 @@ def callBox(self):
     self.x161, self.y161 = 271, 880
     self.b161=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink16)
     self.fb161=self.can.create_window(self.x161, self.y161, window=self.b161)
 
     self.x162, self.y162 = 429, 880
     self.b162=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag16)
     self.fb162=self.can.create_window(self.x162, self.y162, window=self.b162)
 
     self.x163, self.y163 = 597, 880
     self.b163=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult16)
     self.fb163=self.can.create_window(self.x163, self.y163, window=self.b163)
 
     #patient17
@@ -1242,19 +1242,19 @@ def callBox(self):
     self.x171, self.y171 = 271, 912
     self.b171=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink17)
     self.fb171=self.can.create_window(self.x171, self.y171, window=self.b171)
 
     self.x172, self.y172 = 429, 912
     self.b172=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag17)
     self.fb172=self.can.create_window(self.x172, self.y172, window=self.b172)
 
     self.x173, self.y173 = 597, 912
     self.b173=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult17)
     self.fb173=self.can.create_window(self.x173, self.y173, window=self.b173)
 
     #patient18
@@ -1277,19 +1277,19 @@ def callBox(self):
     self.x181, self.y181 = 271, 944
     self.b181=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink18)
     self.fb181=self.can.create_window(self.x181, self.y181, window=self.b181)
 
     self.x182, self.y182 = 429, 944
     self.b182=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag18)
     self.fb182=self.can.create_window(self.x182, self.y182, window=self.b182)
 
     self.x183, self.y183 = 597, 944
     self.b183=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult18)
     self.fb183=self.can.create_window(self.x183, self.y183, window=self.b183)
 
     #patient19
@@ -1312,19 +1312,19 @@ def callBox(self):
     self.x191, self.y191 = 271, 976
     self.b191=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink19)
     self.fb191=self.can.create_window(self.x191, self.y191, window=self.b191)
 
     self.x192, self.y192 = 429, 976
     self.b192=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag19)
     self.fb192=self.can.create_window(self.x192, self.y192, window=self.b192)
 
     self.x193, self.y193 = 597, 976
     self.b193=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult19)
     self.fb193=self.can.create_window(self.x193, self.y193, window=self.b193)
 
     #patient20
@@ -1347,19 +1347,19 @@ def callBox(self):
     self.x201, self.y201 = 271, 1008
     self.b201=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink20)
     self.fb201=self.can.create_window(self.x201, self.y201, window=self.b201)
 
     self.x202, self.y202 = 429, 1008
     self.b202=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag20)
     self.fb202=self.can.create_window(self.x202, self.y202, window=self.b202)
 
     self.x203, self.y203 = 597, 1008
     self.b203=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult20)
     self.fb203=self.can.create_window(self.x203, self.y203, window=self.b203)
 
     #patient21
@@ -1382,19 +1382,19 @@ def callBox(self):
     self.x211, self.y211 = 271, 1040
     self.b211=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink21)
     self.fb211=self.can.create_window(self.x211, self.y211, window=self.b211)
 
     self.x212, self.y212 = 429, 1040
     self.b212=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag21)
     self.fb212=self.can.create_window(self.x212, self.y212, window=self.b212)
 
     self.x213, self.y213 = 597, 1040
     self.b213=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult21)
     self.fb213=self.can.create_window(self.x213, self.y213, window=self.b213)
 
     #patient22
@@ -1417,19 +1417,19 @@ def callBox(self):
     self.x221, self.y221 = 271, 1072
     self.b221=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink22)
     self.fb221=self.can.create_window(self.x221, self.y221, window=self.b221)
 
     self.x222, self.y222 = 429, 1072
     self.b222=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag22)
     self.fb222=self.can.create_window(self.x222, self.y222, window=self.b222)
 
     self.x223, self.y223 = 597, 1072
     self.b223=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult22)
     self.fb223=self.can.create_window(self.x223, self.y223, window=self.b223)
 
     #patient23
@@ -1452,19 +1452,19 @@ def callBox(self):
     self.x231, self.y231 = 271, 1104
     self.b231=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink23)
     self.fb231=self.can.create_window(self.x231, self.y231, window=self.b231)
 
     self.x232, self.y232 = 429, 1104
     self.b232=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag23)
     self.fb232=self.can.create_window(self.x232, self.y232, window=self.b232)
 
     self.x233, self.y233 = 597, 1104
     self.b233=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult23)
     self.fb233=self.can.create_window(self.x233, self.y233, window=self.b233)
 
     #patient24
@@ -1487,19 +1487,19 @@ def callBox(self):
     self.x241, self.y241 = 271, 1136
     self.b241=Button(self.can, width=8, font=16, bg='black', fg='coral',
         activebackground='dark turquoise', text="Allergy",
-        command=self.allergyLink10)
+        command=self.allergyLink24)
     self.fb241=self.can.create_window(self.x241, self.y241, window=self.b241)
 
     self.x242, self.y242 = 429, 1136
     self.b242=Button(self.can, width=18, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Diagnostic + ATCD",
-        command=self.diag10)
+        command=self.diag24)
     self.fb242=self.can.create_window(self.x242, self.y242, window=self.b242)
 
     self.x243, self.y243 = 597, 1136
     self.b243=Button(self.can, width=10, font=16, bg='black', fg='cyan',
         activebackground='dark turquoise', text="Laboratory",
-        command=self.laboResult10)
+        command=self.laboResult24)
     self.fb243=self.can.create_window(self.x243, self.y243, window=self.b243)
 
     self.can.configure(scrollregion=self.can.bbox(ALL))

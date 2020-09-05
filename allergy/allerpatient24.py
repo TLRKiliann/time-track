@@ -10,7 +10,7 @@ import os
 gui=Tk()
 gui.title("Enter Allergy")
 gui.configure(bg='cyan')
-#gui.geometry('250x240')
+#gui.geometry('250x40')
 
 def get(Allpatient, entryall):
     MsgBox = messagebox.askyesno('Save data', 'Data saved !')
