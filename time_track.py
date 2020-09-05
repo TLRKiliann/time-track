@@ -36,7 +36,7 @@ class ScrollCanvas(Frame):
 class MenuBar(Frame):
     """Barre menu déroulant"""
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='dim grey', padx=0)
+        Frame.__init__(self, borderwidth=5, bg='RoyalBlue3', padx=0)
         # 1st menu
         fileMenu = Menubutton(self, text='Menu', fg='white',
             font=("Times 14"), bg='grey30', relief=GROOVE)
@@ -1230,7 +1230,7 @@ class MenuBar(Frame):
 # Application principale (Main app)
 class Application(Frame):
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='grey22', padx=20, pady=20, relief=GROOVE)
+        Frame.__init__(self, borderwidth=5, bg='deep sky blue', padx=20, pady=20, relief=GROOVE)
         self.master.title('Time-Track- Developed by ko@l@tr33 - 2020')
         mBar = MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=YES)

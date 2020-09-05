@@ -27,19 +27,19 @@ class ScrollCanvas(Frame):
 class MenuBar(Frame):
     """Barre menu déroulant"""
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='dim gray', padx=0)
-        But2=Button(self, text ="Close", fg='cyan', bg='navy', relief=GROOVE,
+        Frame.__init__(self, borderwidth=5, bg='RoyalBlue3', padx=0)
+        But2=Button(self, text ="Close", fg='white', bg='blue', relief=GROOVE,
             activebackground='cyan', command=boss.quit).pack(side=LEFT, padx=3)
 
 # Application principale
 class Application(Frame):
     def __init__(self, boss=None):
         Frame.__init__(self)
-        self.master.title('ANGEL-VISION - Developed by CK - 2020')
+        self.master.title('TIME-TRACK - Developed by CK - 2020')
         mBar=MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=1)
         # ScrollCanvas limite de la zone à parcourir avec la barre
-        self.can=Canvas(self, width=600, height=400, bg='#82193e')
+        self.can=Canvas(self, width=600, height=400, bg='cyan')
         self.frame = Frame(self.can)
         self.vsb = Scrollbar(self, orient=VERTICAL, command=self.can.yview)
         self.can.configure(yscrollcommand=self.vsb.set)
@@ -49,7 +49,7 @@ class Application(Frame):
             tags="self.frame")
         # Insertion du texte
         self.can.create_text(300, 150, anchor=CENTER, text="Care and Monitoring",
-            font=('Times New Roman', 28), fill='aquamarine')
+            font=('Times New Roman', 28), fill='navy')
         self.can.create_text(590, 380, anchor=NE, text="Copyright (C) 2020 Inc.",
             font=('Times', 12), fill='white') 
         self.can.pack(side=LEFT, fill=BOTH, expand=1)
