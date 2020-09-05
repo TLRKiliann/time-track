@@ -14,6 +14,7 @@ from boxapp import callBox
 from agendapp import displayDates
 from tttapp import treatmentFunc
 from tttapp import reserveFunc
+from backapp import *
 
 
 # ScrollBar in class and preparing for main application !
@@ -896,45 +897,101 @@ class MenuBar(Frame):
         self.cmd_Print.pack(side=LEFT, padx=3)
         # drop-down portion of nutrition
         mePrint = Menu(self.cmd_Print)
-        mePrint.add_command(label=new_text, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text2, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text2, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu2)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text3, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text3, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu3)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text4, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text4, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu4)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text5, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text5, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu5)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text6, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text6, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu6)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text7, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text7, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu7)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text8, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text8, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu8)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text9, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text9, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu9)
         mePrint.add_separator()
-        mePrint.add_command(label=new_text10, font=('Times 14'), background='black',
+        mePrint.add_command(label=new_text10, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.nutritionMenu10)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text11, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu11)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text12, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu12)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text13, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu13)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text14, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu14)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text15, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu15)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text16, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu16)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text17, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu17)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text18, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu18)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text19, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu19)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text20, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu20)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text21, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu21)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text22, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu22)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text23, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu23)
+        mePrint.add_separator()
+        mePrint.add_command(label=new_text24, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.nutritionMenu24)
         # Integration of nutrition menu
         self.cmd_Print.configure(activeforeground='black', activebackground='cyan',
             menu=mePrint)
@@ -1577,6 +1634,9 @@ class Application(Frame):
     def calculB18(self):
         subprocess.call("./calBmi/CalculBmi18.py")
 
+    def calculB19(self):
+        subprocess.call("./calBmi/CalculBmi19.py")
+
     def calculB20(self):
         subprocess.call("./calBmi/CalculBmi20.py")
 
@@ -1793,140 +1853,81 @@ class Application(Frame):
     def nutritionMenu10(self):
         subprocess.call('./nutrition/nutrit_patient10.py')
 
+    def nutritionMenu11(self):
+        subprocess.call('./nutrition/nutrit_patient11.py')
+
+    def nutritionMenu12(self):
+        subprocess.call('./nutrition/nutrit_patient12.py')
+
+    def nutritionMenu13(self):
+        subprocess.call('./nutrition/nutrit_patient13.py')
+
+    def nutritionMenu14(self):
+        subprocess.call('./nutrition/nutrit_patient14.py')
+
+    def nutritionMenu15(self):
+        subprocess.call('./nutrition/nutrit_patient15.py')
+
+    def nutritionMenu16(self):
+        subprocess.call('./nutrition/nutrit_patient16.py')
+
+    def nutritionMenu17(self):
+        subprocess.call('./nutrition/nutrit_patient17.py')
+
+    def nutritionMenu18(self):
+        subprocess.call('./nutrition/nutrit_patient18.py')
+
+    def nutritionMenu19(self):
+        subprocess.call('./nutrition/nutrit_patient19.py')
+
+    def nutritionMenu20(self):
+        subprocess.call('./nutrition/nutrit_patient20.py')
+
+    def nutritionMenu21(self):
+        subprocess.call('./nutrition/nutrit_patient21.py')
+
+    def nutritionMenu22(self):
+        subprocess.call('./nutrition/nutrit_patient22.py')
+
+    def nutritionMenu23(self):
+        subprocess.call('./nutrition/nutrit_patient23.py')
+
+    def nutritionMenu24(self):
+        subprocess.call('./nutrition/nutrit_patient24.py')
+
     def newsTextBox(self):
         self.can.textBox = Text(app, text = "")
 
     # Backup
     def allFilesBackup(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files1",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient(self)
 
-        # I have to try with Text (else no scrollbar)
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup2(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files2",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient2(self)
 
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup3(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files3",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient3(self)
 
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup4(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files4",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient4(self)
 
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup5(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files5",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient5(self)
 
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup6(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files6",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient6(self)
 
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup7(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files7",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient7(self)
 
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup8(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files8",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient8(self)
 
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup9(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files9",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
+        backupFuncPatient9(self)
 
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
-    # Backup
     def allFilesBackup10(self):
-        self.label=Tk()
-        self.label.title("Search File")
-        filepath = filedialog.askopenfilename(initialdir = "./Backup/Files10",
-            title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
-        print(filepath)
-        with open(filepath, 'r') as fichier:
-            content = fichier.read()
-
-        self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-            bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
-
+        backupFuncPatient10(self)
 
     def updateFiletxt(self):
         # To backup all files
@@ -1943,8 +1944,6 @@ class Application(Frame):
             except FileNotFoundError as errout:
                 print("+ It is not the right date for backup, next will" \
                     "be at the first of next month)", errout)
-
-        self.can.configure(scrollregion=self.can.bbox(ALL))
 
     def upDateAll(self):
         self.master.destroy()
