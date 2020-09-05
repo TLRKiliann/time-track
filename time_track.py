@@ -1003,88 +1003,214 @@ class MenuBar(Frame):
         # drop-down portion of Graphics menu
         me1 = Menu(self.cmd_Graph)
         me2=Menu(me1)
-        me2.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me2.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup)
-        me1.add_cascade(label=new_text, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me2)
         me1.add_separator()
         me3=Menu(me1)
-        me3.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me3.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup2)
-        me1.add_cascade(label=new_text2, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text2, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me3)
         me1.add_separator()
         me4=Menu(me1)
-        me4.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me4.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup3)
-        me1.add_cascade(label=new_text3, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text3, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me4)
         me1.add_separator()
         me5=Menu(me1)
-        me5.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me5.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup4)
-        me1.add_cascade(label=new_text4, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text4, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me5)
         me1.add_separator()
         me6=Menu(me1)
-        me6.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me6.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup5)
-        me1.add_cascade(label=new_text5, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text5, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me6)
         me1.add_separator()
         me7=Menu(me1)
-        me7.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me7.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup6)
-        me1.add_cascade(label=new_text6, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text6, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me7)
         me1.add_separator()
         me8=Menu(me1)
-        me8.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me8.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup7)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text7, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text7, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me8)
         me1.add_separator()
         me9=Menu(me1)
-        me9.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me9.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup8)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text8, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text8, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me9)
         me1.add_separator()
         me10=Menu(me1)
-        me10.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me10.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup9)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text9, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text9, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me10)
         me1.add_separator()
         me11=Menu(me1)
-        me11.add_command(label='All Files.txt', underline=0, font=('Times 14'),
+        me11.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup10)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text10, underline=0, font=('Times 14'),
+        me1.add_cascade(label=new_text10, underline=0, font=('Times 10'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me11)
+        me1.add_separator()
+        me12=Menu(me1)
+        me12.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup11)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text11, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me12)
+        me1.add_separator()
+        me13=Menu(me1)
+        me13.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup12)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text12, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me13)
+        me1.add_separator()
+        me14=Menu(me1)
+        me14.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup13)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text13, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me14)
+        me1.add_separator()
+        me15=Menu(me1)
+        me15.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup14)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text14, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me15)
+        me1.add_separator()
+        me16=Menu(me1)
+        me16.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup15)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text15, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me16)
+        me1.add_separator()
+        me17=Menu(me1)
+        me17.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup16)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text16, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me17)
+        me1.add_separator()
+        me18=Menu(me1)
+        me18.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup17)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text17, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me18)
+        me1.add_separator()
+        me19=Menu(me1)
+        me19.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup18)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text18, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me19)
+        me1.add_separator()
+        me20=Menu(me1)
+        me20.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup19)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text19, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me20)
+        me1.add_separator()
+        me21=Menu(me1)
+        me21.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup20)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text20, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me21)
+        me1.add_separator()
+        me22=Menu(me1)
+        me22.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup21)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text21, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me22)
+        me1.add_separator()
+        me23=Menu(me1)
+        me23.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup22)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text22, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me23)
+        me1.add_separator()
+        me24=Menu(me1)
+        me24.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup23)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text23, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me24)
+        me1.add_separator()
+        me25=Menu(me1)
+        me25.add_command(label='All Files.txt', underline=0, font=('Times 12'),
+            background='black', activebackground='cyan',
+            foreground='cyan', activeforeground='black', command=boss.allFilesBackup24)
+        # Integration of sub-menu
+        me1.add_cascade(label=new_text24, underline=0, font=('Times 10'),
+            background='black', foreground='cyan', 
+            activeforeground='black', activebackground='cyan', menu=me25)
         # Integration of Graph menu
         self.cmd_Graph.configure(activeforeground='black', activebackground='cyan', menu=me1)
 
@@ -1756,36 +1882,44 @@ class Application(Frame):
     def allergyLink10(self):
         subprocess.call('./allergy/allerpatient10.py')
 
-    # Func labo
-    def laboResult(self):
-        subprocess.call('./labo/resultlabo1.py')
+    def allergyLink11(self):
+        subprocess.call('./allergy/allerpatient11.py')
 
-    def laboResult2(self):
-        subprocess.call('./labo/resultlabo2.py')
+    def allergyLink12(self):
+        subprocess.call('./allergy/allerpatient12.py')
 
-    def laboResult3(self):
-        subprocess.call('./labo/resultlabo3.py')
+    def allergyLink13(self):
+        subprocess.call('./allergy/allerpatient13.py')
 
-    def laboResult4(self):
-        subprocess.call('./labo/resultlabo4.py')
+    def allergyLink14(self):
+        subprocess.call('./allergy/allerpatient14.py')
 
-    def laboResult5(self):
-        subprocess.call('./labo/resultlabo5.py')
+    def allergyLink15(self):
+        subprocess.call('./allergy/allerpatient15.py')
 
-    def laboResult6(self):
-        subprocess.call('./labo/resultlabo6.py')
+    def allergyLink16(self):
+        subprocess.call('./allergy/allerpatient16.py')
 
-    def laboResult7(self):
-        subprocess.call('./labo/resultlabo7.py')
+    def allergyLink17(self):
+        subprocess.call('./allergy/allerpatient17.py')
 
-    def laboResult8(self):
-        subprocess.call('./labo/resultlabo8.py')
+    def allergyLink18(self):
+        subprocess.call('./allergy/allerpatient18.py')
 
-    def laboResult9(self):
-        subprocess.call('./labo/resultlabo9.py')
+    def allergyLink20(self):
+        subprocess.call('./allergy/allerpatient20.py')
 
-    def laboResult10(self):
-        subprocess.call('./labo/resultlabo10.py')
+    def allergyLink21(self):
+        subprocess.call('./allergy/allerpatient21.py')
+
+    def allergyLink22(self):
+        subprocess.call('./allergy/allerpatient22.py')
+
+    def allergyLink23(self):
+        subprocess.call('./allergy/allerpatient23.py')
+
+    def allergyLink24(self):
+        subprocess.call('./allergy/allerpatient24.py')
 
     # Func Diagnostic
     def diag1(self):
@@ -1818,9 +1952,36 @@ class Application(Frame):
     def diag10(self):
         subprocess.call("./diag/diag_patient10.py")
 
-    # Manual nurse
-    def manualFile(self):
-        subprocess.call('./manual/pdfopenmanual.py')
+    # Func labo
+    def laboResult(self):
+        subprocess.call('./labo/resultlabo1.py')
+
+    def laboResult2(self):
+        subprocess.call('./labo/resultlabo2.py')
+
+    def laboResult3(self):
+        subprocess.call('./labo/resultlabo3.py')
+
+    def laboResult4(self):
+        subprocess.call('./labo/resultlabo4.py')
+
+    def laboResult5(self):
+        subprocess.call('./labo/resultlabo5.py')
+
+    def laboResult6(self):
+        subprocess.call('./labo/resultlabo6.py')
+
+    def laboResult7(self):
+        subprocess.call('./labo/resultlabo7.py')
+
+    def laboResult8(self):
+        subprocess.call('./labo/resultlabo8.py')
+
+    def laboResult9(self):
+        subprocess.call('./labo/resultlabo9.py')
+
+    def laboResult10(self):
+        subprocess.call('./labo/resultlabo10.py')
 
     # Menu print
     def nutritionMenu(self):
@@ -1895,6 +2056,10 @@ class Application(Frame):
     def nutritionMenu24(self):
         subprocess.call('./nutrition/nutrit_patient24.py')
 
+    # Manual nurse
+    def manualFile(self):
+        subprocess.call('./manual/pdfopenmanual.py')
+
     def newsTextBox(self):
         self.can.textBox = Text(app, text = "")
 
@@ -1928,6 +2093,48 @@ class Application(Frame):
 
     def allFilesBackup10(self):
         backupFuncPatient10(self)
+
+    def allFilesBackup11(self):
+        backupFuncPatient11(self)
+
+    def allFilesBackup12(self):
+        backupFuncPatient12(self)
+
+    def allFilesBackup13(self):
+        backupFuncPatient13(self)
+
+    def allFilesBackup14(self):
+        backupFuncPatient14(self)
+
+    def allFilesBackup15(self):
+        backupFuncPatient15(self)
+
+    def allFilesBackup16(self):
+        backupFuncPatient16(self)
+
+    def allFilesBackup17(self):
+        backupFuncPatient17(self)
+
+    def allFilesBackup18(self):
+        backupFuncPatient18(self)
+
+    def allFilesBackup19(self):
+        backupFuncPatient19(self)
+
+    def allFilesBackup20(self):
+        backupFuncPatient20(self)
+
+    def allFilesBackup21(self):
+        backupFuncPatient21(self)
+
+    def allFilesBackup22(self):
+        backupFuncPatient22(self)
+
+    def allFilesBackup23(self):
+        backupFuncPatient23(self)
+
+    def allFilesBackup24(self):
+        backupFuncPatient24(self)
 
     def updateFiletxt(self):
         # To backup all files

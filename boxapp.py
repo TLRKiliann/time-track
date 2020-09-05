@@ -326,8 +326,343 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi11/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 11 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout11:
+        print("File 11 has not been found", infofileout11)
+    except IndexError as inforange11:
+        print("List 11 got less than 6 lines", inforange11)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi12/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 12 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout12:
+        print("File 12 has not been found", infofileout12)
+    except IndexError as inforange12:
+        print("List 12 got less than 6 lines", inforange12)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi13/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 13 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout13:
+        print("File 13 has not been found", infofileout13)
+    except IndexError as inforange13:
+        print("List 13 got less than 6 lines", inforange13)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi14/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 14 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout14:
+        print("File 14 has not been found", infofileout14)
+    except IndexError as inforange14:
+        print("List 14 got less than 6 lines", inforange14)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi15/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 15 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout15:
+        print("File 15 has not been found", infofileout15)
+    except IndexError as inforange15:
+        print("List 15 got less than 6 lines", inforange15)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi16/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 16 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout16:
+        print("File 16 has not been found", infofileout16)
+    except IndexError as inforange16:
+        print("List 16 got less than 6 lines", inforange16)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi17/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 17 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout17:
+        print("File 17 has not been found", infofileout17)
+    except IndexError as inforange17:
+        print("List 17 got less than 6 lines", inforange17)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi18/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 18 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout18:
+        print("File 18 has not been found", infofileout18)
+    except IndexError as inforange18:
+        print("List 18 got less than 6 lines", inforange18)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi19/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 19 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout19:
+        print("File 19 has not been found", infofileout19)
+    except IndexError as inforange19:
+        print("List 19 got less than 6 lines", inforange19)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi20/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 20 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout20:
+        print("File 20 has not been found", infofileout20)
+    except IndexError as inforange20:
+        print("List 20 got less than 6 lines", inforange20)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 21 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout21:
+        print("File 21 has not been found", infofileout21)
+    except IndexError as inforange21:
+        print("List 21 got less than 6 lines", inforange21)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi22/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 22 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout22:
+        print("File 22 has not been found", infofileout22)
+    except IndexError as inforange22:
+        print("List 22 got less than 6 lines", inforange22)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi23/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 23 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout23:
+        print("File 23 has not been found", infofileout23)
+    except IndexError as inforange23:
+        print("List 23 got less than 6 lines", inforange23)
+    else:
+        ("Error unknow")
+
+    try:
+        datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./14besoins/doc_suivi24/main_14b.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if datesearch in line:
+                    self.t63.insert(END, "\n\n--- Patient 24 ---\n")
+                    self.t63.insert(INSERT, line)
+                    self.t63.insert(INSERT, lines[i+1])
+                    self.t63.insert(INSERT, lines[i+2])
+                    self.t63.insert(INSERT, lines[i+3])
+                    self.t63.insert(INSERT, lines[i+4])
+                    self.t63.insert(INSERT, lines[i+5])
+                    self.t63.insert(INSERT, lines[i+6])
+                else:
+                    pass
+    except FileNotFoundError as infofileout24:
+        print("File 24 has not been found", infofileout24)
+    except IndexError as inforange24:
+        print("List 24 got less than 6 lines", inforange24)
+    else:
+        ("Error unknow")
+
     #Patient1
-    # For label below (in me2.add_command)
     try:
         with open('./newpatient/entryfile.txt', 'r') as namefile:
             line1=namefile.readline()
