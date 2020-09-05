@@ -10,7 +10,7 @@ import os
 gui=Tk()
 gui.title("Enter Allergy")
 gui.configure(bg='cyan')
-#gui.geometry('250x200')
+#gui.geometry('250x220')
 
 def get(Allpatient, entryall):
     MsgBox = messagebox.askyesno('Save data', 'Data saved !')
@@ -19,17 +19,17 @@ def get(Allpatient, entryall):
         print(Allpatient)
         print(entryall.get())
         try:
-            if os.path.getsize('./allergy/allergyfile6.txt'):
-                print("+ File 'allergyfile6.txt' exist !")
-                with open('./allergy/allergyfile6.txt', 'a+') as namefile:
+            if os.path.getsize('./allergy/allergyfile22.txt'):
+                print("+ File 'allergyfile22.txt' exist !")
+                with open('./allergy/allergyfile22.txt', 'a+') as namefile:
                     namefile.write(entryall.get() + '\n')
                     namefile.write(str('----------------\n'))
                     gui.destroy()
         except FileNotFoundError as outcom:
-            print("+ Sorry, file 'allergyfile6.txt' not exist !")
+            print("+ Sorry, file 'allergyfile22.txt' not exist !")
             print(str(outcom))
-            print("+ File 'allergyfile6.txt' created !")
-            with open('./allergy/allergyfile6.txt', 'a+') as namefile:
+            print("+ File 'allergyfile22.txt' created !")
+            with open('./allergy/allergyfile22.txt', 'a+') as namefile:
                 namefile.write(entryall.get() + '\n')
                 namefile.write(str('----------------\n'))
                 gui.destroy()
