@@ -147,7 +147,7 @@ def confRec():
 
 labeltite=Label(fen, text='14 NEEDS', 
     font="Times 16 bold", width=10,
-    height=3, bg='#82193e', fg='aquamarine')
+    height=3, bg='cyan', fg='navy')
 labeltite.grid(sticky='w', row=0, column=0, padx=20)
 
 with open('./newpatient/entryfile24.txt', 'r') as filename:
@@ -257,12 +257,12 @@ C14 = Checkbutton(fen, text="Apprendre", fg='navy',
 C14.grid(row=14, column=0)
 
 buttonTocheck=Button(fen, text="Save", width=10, fg='yellow',
-    bg='navy', bd=3, highlightbackground='#82193e',
+    bg='blue', bd=3, highlightbackground='cyan',
     activebackground='dark turquoise', command=recordTofile)
 buttonTocheck.grid(sticky='w', row=15, column=0, padx=20, pady=10)
 
 buttonQuit=Button(fen, text='Quit', width=10, fg='white',
-    bg='navy', bd=3, highlightbackground='#82193e',
+    bg='blue', bd=3, highlightbackground='cyan',
     activebackground='dark turquoise', command=quit)
 buttonQuit.grid(sticky='e',row=15, column=0, padx=20, pady=10)
 
