@@ -56,7 +56,7 @@ class MenuBar(Frame):
         me1.add_command(label='Accueil', underline=0, font=("Times 14 bold"),
             background='black',activebackground='aquamarine',
             foreground='aquamarine', activeforeground='black',
-            command=boss.secondPage)
+            command=boss.upDateAll)
         me1.add_command(label="Synopsis", underline=0, font=("Times 14 bold"),
             background='black', activebackground='cyan',
             foreground='aquamarine', activeforeground='black',
@@ -662,46 +662,6 @@ class Application(Frame):
     def effacer(self):
         '''Reinitialize canvas when we pass through another'''
         self.can.delete(ALL)
-
-    # Second page intro (a copy from the main app juste above)
-    def secondPage(self):
-        self.can.delete(ALL)
-        # Insertion d'une image
-        self.photo=PhotoImage(file='./syno_gif/fondcolor2.png')
-        self.item=self.can.create_image(625, 400, image=self.photo)
-        # Insertion du texte
-        self.can.create_text(625, 420, anchor=CENTER,
-            text="Python 3.6 - Tkinter 8.6 - GIMP 2.8",
-            font=('Times New Roman', 18), fill='turquoise')
-        self.can.create_text(1240, 770, anchor=NE, text="ko@l@tr33",
-            font=('Times', 12), fill='turquoise')
-        self.can.pack(side=RIGHT, fill=BOTH, expand=YES)
-        # Configuration de la Scrollbar sur le Frame
-        self.frame.bind("<Configure>", self.onFrameConfigure)
-        # 3 buttons on welcome page.
-        # Info button
-        self.button1 = Button(self, text="Info", font=('Times 14 bold'),
-            bg='RoyalBlue3', fg='cyan', command = self.frameInfo)
-        self.button1.configure(width=10, bd=3, highlightbackground='blue',
-            activebackground='dark turquoise')
-        self.button1_window = self.can.create_window(75, 30, anchor=CENTER,
-            window=self.button1)
-        # Synopsis button
-        self.button2 = Button(self, text="SYNOPSIS", font=('Times 18 bold'),
-            bg='RoyalBlue3', fg='cyan', command = self.showsynopsis)
-        self.button2.configure(width=15, bd=3, highlightbackground='blue',
-            activebackground='dark turquoise')
-        self.button2_window = self.can.create_window(450, 550, anchor=CENTER,
-            window=self.button2)
-        # Statistics button
-        self.button3 = Button(self, text="PSYCHOTABS", font=('Times 18 bold'),
-            bg='RoyalBlue3', fg='cyan', command = self.launchPsycho)
-        self.button3.configure(width=15, bd=3, highlightbackground='blue',
-            activebackground='dark turquoise')
-        self.button3_window = self.can.create_window(790, 550, anchor=CENTER,
-            window=self.button3)
-
-        self.can.configure(scrollregion=self.can.bbox(ALL)) 
 
     def msgExit(self):
         MsgBox = messagebox.askyesno('Quit system', 'Do you want to quit ?')

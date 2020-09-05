@@ -24,7 +24,7 @@ def callBox(self):
     self.x1, self.y1 = 1065, 70
     self.Date_write=Entry(self.can)
     self.data_time=StringVar()
-    self.Date_write=Entry(textvariable=self.data_time, width=10,
+    self.Date_write=Entry(self.can, textvariable=self.data_time, width=10,
         highlightbackground='grey', bd=4)
     self.data_time.set(time.strftime("%d/%m/%Y"))
     self.Date_write=self.can.create_window(self.x1, self.y1,
@@ -34,7 +34,7 @@ def callBox(self):
     self.x2, self.y2 = 1165, 70
     self.Date_write2 = Entry(self.can)
     self.data_time2 = StringVar()
-    self.Date_write2 = Entry(width=10, textvariable=self.data_time2,
+    self.Date_write2 = Entry(self.can, width=10, textvariable=self.data_time2,
         highlightbackground='grey', bd=4)
     self.data_time2.set(time.strftime("%H:%M:%S %p"))
     self.Date_write2=self.can.create_window(self.x2, self.y2,
@@ -338,7 +338,7 @@ def callBox(self):
     self.x10, self.y10 = 129, 400
     self.Data_write=Entry(self.can)
     self.new_data1=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data1,
+    self.Data_write=Entry(self.can, textvariable=self.new_data1,
         highlightbackground='grey', bd=4)
     self.new_data1.set(line1)
     self.Data_write=self.can.create_window(self.x10, self.y10,
@@ -373,7 +373,7 @@ def callBox(self):
     self.x20, self.y20 = 129, 432
     self.Data_write=Entry(self.can)
     self.new_data2=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data2,
+    self.Data_write=Entry(self.can, textvariable=self.new_data2,
       highlightbackground='grey', bd=4)
     self.new_data2.set(line2)
     self.Data_write=self.can.create_window(self.x20, self.y20,
@@ -408,7 +408,7 @@ def callBox(self):
     self.x30, self.y30 = 129, 464
     self.Data_write=Entry(self.can)
     self.new_data3=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data3,
+    self.Data_write=Entry(self.can, textvariable=self.new_data3,
       highlightbackground='grey', bd=4)
     self.new_data3.set(line3)
     self.Data_write=self.can.create_window(self.x30, self.y30,
@@ -443,7 +443,7 @@ def callBox(self):
     self.x40, self.y40 = 129, 496
     self.Data_write=Entry(self.can)
     self.new_data4=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data4,
+    self.Data_write=Entry(self.can, textvariable=self.new_data4,
       highlightbackground='grey', bd=4)
     self.new_data4.set(line4)
     self.Data_write=self.can.create_window(self.x40, self.y40,
@@ -478,7 +478,7 @@ def callBox(self):
     self.x50, self.y50 = 129, 528
     self.Data_write=Entry(self.can)
     self.new_data5=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data5,
+    self.Data_write=Entry(self.can, textvariable=self.new_data5,
       highlightbackground='grey', bd=4)
     self.new_data5.set(line5)
     self.Data_write=self.can.create_window(self.x50, self.y50,
@@ -513,7 +513,7 @@ def callBox(self):
     self.x60, self.y60 = 129, 560
     self.Data_write=Entry(self.can)
     self.new_data6=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data6,
+    self.Data_write=Entry(self.can, textvariable=self.new_data6,
       highlightbackground='grey', bd=4)
     self.new_data6.set(line6)
     self.Data_write=self.can.create_window(self.x60, self.y60,
@@ -548,7 +548,7 @@ def callBox(self):
     self.x70, self.y70 = 129, 592
     self.Data_write=Entry(self.can)
     self.new_data7=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data7,
+    self.Data_write=Entry(self.can, textvariable=self.new_data7,
       highlightbackground='grey', bd=4)
     self.new_data7.set(line7)
     self.Data_write=self.can.create_window(self.x70, self.y70,
@@ -583,7 +583,7 @@ def callBox(self):
     self.x80, self.y80 = 129, 624
     self.Data_write=Entry(self.can)
     self.new_data8=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data8,
+    self.Data_write=Entry(self.can, textvariable=self.new_data8,
       highlightbackground='grey', bd=4)
     self.new_data8.set(line8)
     self.Data_write=self.can.create_window(self.x80, self.y80,
@@ -618,7 +618,7 @@ def callBox(self):
     self.x90, self.y90 = 129, 656
     self.Data_write=Entry(self.can)
     self.new_data9=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data9,
+    self.Data_write=Entry(self.can, textvariable=self.new_data9,
       highlightbackground='grey', bd=4)
     self.new_data9.set(line9)
     self.Data_write=self.can.create_window(self.x90, self.y90,
@@ -653,7 +653,7 @@ def callBox(self):
     self.x100, self.y100 = 129, 688
     self.Data_write=Entry(self.can)
     self.new_data10=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data10,
+    self.Data_write=Entry(self.can, textvariable=self.new_data10,
       highlightbackground='grey', bd=4)
     self.new_data10.set(line10)
     self.Data_write=self.can.create_window(self.x100, self.y100,
@@ -688,7 +688,7 @@ def callBox(self):
     self.x110, self.y110 = 129, 720
     self.Data_write=Entry(self.can)
     self.new_data11=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data11,
+    self.Data_write=Entry(self.can, textvariable=self.new_data11,
       highlightbackground='grey', bd=4)
     self.new_data11.set(line11)
     self.Data_write=self.can.create_window(self.x110, self.y110,
@@ -723,7 +723,7 @@ def callBox(self):
     self.x120, self.y120 = 129, 752
     self.Data_write=Entry(self.can)
     self.new_data12=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data12,
+    self.Data_write=Entry(self.can, textvariable=self.new_data12,
       highlightbackground='grey', bd=4)
     self.new_data12.set(line12)
     self.Data_write=self.can.create_window(self.x120, self.y120,
@@ -758,7 +758,7 @@ def callBox(self):
     self.x130, self.y130 = 129, 784
     self.Data_write=Entry(self.can)
     self.new_data13=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data13,
+    self.Data_write=Entry(self.can, textvariable=self.new_data13,
       highlightbackground='grey', bd=4)
     self.new_data13.set(line13)
     self.Data_write=self.can.create_window(self.x130, self.y130,
@@ -793,7 +793,7 @@ def callBox(self):
     self.x140, self.y140 = 129, 816
     self.Data_write=Entry(self.can)
     self.new_data14=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data14,
+    self.Data_write=Entry(self.can, textvariable=self.new_data14,
       highlightbackground='grey', bd=4)
     self.new_data14.set(line14)
     self.Data_write=self.can.create_window(self.x140, self.y140,
@@ -828,7 +828,7 @@ def callBox(self):
     self.x150, self.y150 = 129, 848
     self.Data_write=Entry(self.can)
     self.new_data15=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data15,
+    self.Data_write=Entry(self.can, textvariable=self.new_data15,
       highlightbackground='grey', bd=4)
     self.new_data15.set(line15)
     self.Data_write=self.can.create_window(self.x150, self.y150,
@@ -863,7 +863,7 @@ def callBox(self):
     self.x160, self.y160 = 129, 880
     self.Data_write=Entry(self.can)
     self.new_data16=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data16,
+    self.Data_write=Entry(self.can, textvariable=self.new_data16,
       highlightbackground='grey', bd=4)
     self.new_data16.set(line16)
     self.Data_write=self.can.create_window(self.x160, self.y160,
@@ -898,7 +898,7 @@ def callBox(self):
     self.x170, self.y170 = 129, 912
     self.Data_write=Entry(self.can)
     self.new_data17=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data17,
+    self.Data_write=Entry(self.can, textvariable=self.new_data17,
       highlightbackground='grey', bd=4)
     self.new_data17.set(line17)
     self.Data_write=self.can.create_window(self.x170, self.y170,
@@ -933,7 +933,7 @@ def callBox(self):
     self.x180, self.y180 = 129, 944
     self.Data_write=Entry(self.can)
     self.new_data18=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data18,
+    self.Data_write=Entry(self.can, textvariable=self.new_data18,
       highlightbackground='grey', bd=4)
     self.new_data18.set(line18)
     self.Data_write=self.can.create_window(self.x180, self.y180,
@@ -968,7 +968,7 @@ def callBox(self):
     self.x190, self.y190 = 129, 976
     self.Data_write=Entry(self.can)
     self.new_data19=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data19,
+    self.Data_write=Entry(self.can, textvariable=self.new_data19,
       highlightbackground='grey', bd=4)
     self.new_data19.set(line19)
     self.Data_write=self.can.create_window(self.x190, self.y190,
@@ -1003,7 +1003,7 @@ def callBox(self):
     self.x200, self.y200 = 129, 1008
     self.Data_write=Entry(self.can)
     self.new_data20=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data20,
+    self.Data_write=Entry(self.can, textvariable=self.new_data20,
       highlightbackground='grey', bd=4)
     self.new_data20.set(line20)
     self.Data_write=self.can.create_window(self.x200, self.y200,
@@ -1038,7 +1038,7 @@ def callBox(self):
     self.x210, self.y210 = 129, 1040
     self.Data_write=Entry(self.can)
     self.new_data21=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data21,
+    self.Data_write=Entry(self.can, textvariable=self.new_data21,
       highlightbackground='grey', bd=4)
     self.new_data21.set(line21)
     self.Data_write=self.can.create_window(self.x210, self.y210,
@@ -1073,7 +1073,7 @@ def callBox(self):
     self.x220, self.y220 = 129, 1072
     self.Data_write=Entry(self.can)
     self.new_data22=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data22,
+    self.Data_write=Entry(self.can, textvariable=self.new_data22,
       highlightbackground='grey', bd=4)
     self.new_data22.set(line22)
     self.Data_write=self.can.create_window(self.x220, self.y220,
@@ -1108,7 +1108,7 @@ def callBox(self):
     self.x230, self.y230 = 129, 1104
     self.Data_write=Entry(self.can)
     self.new_data23=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data23,
+    self.Data_write=Entry(self.can, textvariable=self.new_data23,
       highlightbackground='grey', bd=4)
     self.new_data23.set(line23)
     self.Data_write=self.can.create_window(self.x230, self.y230,
@@ -1143,7 +1143,7 @@ def callBox(self):
     self.x240, self.y240 = 129, 1136
     self.Data_write=Entry(self.can)
     self.new_data24=StringVar()
-    self.Data_write=Entry(textvariable=self.new_data24,
+    self.Data_write=Entry(self.can, textvariable=self.new_data24,
       highlightbackground='grey', bd=4)
     self.new_data24.set(line24)
     self.Data_write=self.can.create_window(self.x240, self.y240,
