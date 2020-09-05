@@ -581,45 +581,101 @@ class MenuBar(Frame):
         self.cmd_ttt.pack(side=LEFT, padx=3)
         # Partie déroulante du menu health and care
         meTtt = Menu(self.cmd_ttt)
-        meTtt.add_command(label=new_text, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed1)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text2, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text2, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed2)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text3, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text3, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed3)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text4, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text4, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed4)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text5, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text5, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed5)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text6, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text6, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed6)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text7, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text7, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed7)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text8, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text8, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed8)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text9, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text9, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed9)
         meTtt.add_separator()
-        meTtt.add_command(label=new_text10, font=('Times 14'), background='black',
+        meTtt.add_command(label=new_text10, font=('Times 10'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.tttMed10)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text11, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed11)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text12, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed12)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text13, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed13)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text14, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed14)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text15, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed15)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text16, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed16)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text17, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed17)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text18, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed18)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text19, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed19)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text20, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed20)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text21, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed21)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text22, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed22)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text23, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed23)
+        meTtt.add_separator()
+        meTtt.add_command(label=new_text24, font=('Times 10'), background='black',
+            activebackground='cyan', foreground='cyan', activeforeground='black',
+            command=boss.tttMed24)
         # Integration of health and care menu
         self.cmd_ttt.configure(activeforeground='black', activebackground='cyan',
             menu=meTtt)
@@ -1311,7 +1367,49 @@ class Application(Frame):
 
     def tttMed10(self):
         subprocess.call("./ttt/patienttt10.py")
-    
+
+    def tttMed11(self):
+        subprocess.call("./ttt/patienttt11.py")
+
+    def tttMed12(self):
+        subprocess.call("./ttt/patienttt12.py")
+
+    def tttMed13(self):
+        subprocess.call("./ttt/patienttt13.py")
+
+    def tttMed14(self):
+        subprocess.call("./ttt/patienttt14.py")
+
+    def tttMed15(self):
+        subprocess.call("./ttt/patienttt15.py")
+
+    def tttMed16(self):
+        subprocess.call("./ttt/patienttt16.py")
+
+    def tttMed17(self):
+        subprocess.call("./ttt/patienttt17.py")
+
+    def tttMed18(self):
+        subprocess.call("./ttt/patienttt18.py")
+
+    def tttMed19(self):
+        subprocess.call("./ttt/patienttt19.py")
+
+    def tttMed20(self):
+        subprocess.call("./ttt/patienttt20.py")
+
+    def tttMed21(self):
+        subprocess.call("./ttt/patienttt21.py")
+
+    def tttMed22(self):
+        subprocess.call("./ttt/patienttt22.py")
+
+    def tttMed23(self):
+        subprocess.call("./ttt/patienttt23.py")
+
+    def tttMed24(self):
+        subprocess.call("./ttt/patienttt24.py")
+
     # Func BMI
     def calculB(self):
         subprocess.call("./calBmi/CalculBmi.py")
