@@ -1230,7 +1230,7 @@ class MenuBar(Frame):
 # Application principale (Main app)
 class Application(Frame):
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='deep sky blue', padx=20, pady=20, relief=GROOVE)
+        Frame.__init__(self, borderwidth=5, bg='RoyalBlue4', padx=20, pady=20, relief=GROOVE)
         self.master.title('Time-Track- Developed by ko@l@tr33 - 2020')
         mBar = MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=YES)
