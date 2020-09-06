@@ -1,6 +1,0 @@
-
-Date : 11/05/2020
-Nom du patient : Jimmy
-+ Surveillance de la température requise
-+ Surveillance urinaire et/ou fécale requise requise
-+ Surveillance posturale et/ou des déplacements requise

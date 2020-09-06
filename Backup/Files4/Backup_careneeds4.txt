@@ -1,6 +1,0 @@
-
-Date : 09/05/2020
-Nom du patient : Klaus
-+ Surveillance de la température requise
-+ Surveillance propreté et/ou téguments requise
-+ Surveillance ou aide pour l'habillage/déshabillage requise

@@ -1,7 +1,0 @@
-Date : 09/05/2020
-Heure : 17:50:40
-Prenom et Nom : Clint
-Poids : 67
-Taille : 1.70
-BMI : 23.18339100346021
-
