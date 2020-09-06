@@ -8,7 +8,7 @@ import time
 import matplotlib.pyplot as plt
 
 
-file = open('./calBmi/doc_BMI10/file_bmi.json')
+file = open('./calBmi/doc_BMI13/file_bmi.json')
 data = json.load(file)
 #file.close
 
