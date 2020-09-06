@@ -1214,19 +1214,6 @@ class MenuBar(Frame):
         # Integration of Graph menu
         self.cmd_Graph.configure(activeforeground='black', activebackground='cyan', menu=me1)
 
-        # Manuals Nurse
-        self.cmd_Intext=Menubutton(self, text='Manuals', font=('Times 14'), fg='cyan',
-            bg='grey30', relief=GROOVE)
-        self.cmd_Intext.pack(side=LEFT, padx=3)
-        # drop-down portion of Manuals Nurse
-        meIntext = Menu(self.cmd_Intext)
-        meIntext.add_command(label='Click on it', font=('Times 14'), 
-            background='black', activebackground='cyan', foreground='cyan',
-            activeforeground='black', command=boss.manualFile)
-        # Integration of Manuals Nurse
-        self.cmd_Intext.configure(activeforeground='black', activebackground='cyan',
-            menu=meIntext)
-
 # Application principale (Main app)
 class Application(Frame):
     def __init__(self, boss=None):
@@ -2142,10 +2129,6 @@ class Application(Frame):
 
     def nutritionMenu24(self):
         subprocess.call('./nutrition/nutrit_patient24.py')
-
-    # Manual nurse
-    def manualFile(self):
-        subprocess.call('./manual/pdfopenmanual.py')
 
     def newsTextBox(self):
         self.can.textBox = Text(app, text = "")
