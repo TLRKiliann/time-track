@@ -40,7 +40,7 @@ def callBox(self):
     self.Date_write2=self.can.create_window(self.x2, self.y2,
         window=self.Date_write2)
 
-    # To display time dynamically
+    # To display time dynamically à revoir (new_file.py)
     # To introduce a new pytient
     self.x3, self.y3 = 135, 110 # here
     self.b3=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
@@ -705,7 +705,7 @@ def callBox(self):
 
     self.x15, self.y15 = 853, 400
     self.b15=Button(self.can, width=10, font=15, bg='grey30', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed)
     self.fb15=self.can.create_window(self.x15, self.y15, window=self.b15)
 
@@ -764,7 +764,7 @@ def callBox(self):
 
     self.x25, self.y25 = 853, 432
     self.b25=Button(self.can, width=10, font=16, bg='grey25', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed2)
     self.fb25=self.can.create_window(self.x25, self.y25, window=self.b25)
 
@@ -823,7 +823,7 @@ def callBox(self):
 
     self.x35, self.y35 = 853, 464
     self.b35=Button(self.can, width=10, font=16, bg='grey20', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed3)
     self.fb35=self.can.create_window(self.x35, self.y35, window=self.b35)
 
@@ -882,7 +882,7 @@ def callBox(self):
 
     self.x45, self.y45 = 853, 496
     self.b45=Button(self.can, width=10, font=16, bg='grey18', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed4)
     self.fb45=self.can.create_window(self.x45, self.y45, window=self.b45)
 
@@ -941,7 +941,7 @@ def callBox(self):
 
     self.x55, self.y55 = 853, 528
     self.b55=Button(self.can, width=10, font=16, bg='grey15', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed5)
     self.fb55=self.can.create_window(self.x55, self.y55, window=self.b55)
 
@@ -1000,7 +1000,7 @@ def callBox(self):
 
     self.x66, self.y66 = 853, 560
     self.b66=Button(self.can, width=10, font=16, bg='grey12', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed6)
     self.fb66=self.can.create_window(self.x66, self.y66, window=self.b66)
 
@@ -1059,7 +1059,7 @@ def callBox(self):
 
     self.x75, self.y75 = 853, 592
     self.b75=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed7)
     self.fb75=self.can.create_window(self.x75, self.y75, window=self.b75)
 
@@ -1118,7 +1118,7 @@ def callBox(self):
 
     self.x85, self.y85 = 853, 624
     self.b85=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed8)
     self.fb85=self.can.create_window(self.x85, self.y85, window=self.b85)
 
@@ -1177,7 +1177,7 @@ def callBox(self):
 
     self.x95, self.y95 = 853, 656
     self.b95=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed9)
     self.fb95=self.can.create_window(self.x95, self.y95, window=self.b95)
 
@@ -1236,7 +1236,7 @@ def callBox(self):
 
     self.x105, self.y105 = 853, 688
     self.b105=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed10)
     self.fb105=self.can.create_window(self.x105, self.y105, window=self.b105)
 
@@ -1295,7 +1295,7 @@ def callBox(self):
 
     self.x115, self.y115 = 853, 720
     self.b115=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed11)
     self.fb115=self.can.create_window(self.x115, self.y115, window=self.b115)
 
@@ -1354,7 +1354,7 @@ def callBox(self):
 
     self.x125, self.y125 = 853, 752
     self.b125=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed12)
     self.fb125=self.can.create_window(self.x125, self.y125, window=self.b125)
 
@@ -1413,7 +1413,7 @@ def callBox(self):
 
     self.x135, self.y135 = 853, 784
     self.b135=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed13)
     self.fb135=self.can.create_window(self.x135, self.y135, window=self.b135)
 
@@ -1472,7 +1472,7 @@ def callBox(self):
 
     self.x145, self.y145 = 853, 816
     self.b145=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed14)
     self.fb145=self.can.create_window(self.x145, self.y145, window=self.b145)
 
@@ -1531,7 +1531,7 @@ def callBox(self):
 
     self.x155, self.y155 = 853, 848
     self.b155=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed15)
     self.fb155=self.can.create_window(self.x155, self.y155, window=self.b155)
 
@@ -1590,7 +1590,7 @@ def callBox(self):
 
     self.x165, self.y165 = 853, 880
     self.b165=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed16)
     self.fb165=self.can.create_window(self.x165, self.y165, window=self.b165)
 
@@ -1649,7 +1649,7 @@ def callBox(self):
 
     self.x175, self.y175 = 853, 912
     self.b175=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed17)
     self.fb175=self.can.create_window(self.x175, self.y175, window=self.b175)
 
@@ -1708,7 +1708,7 @@ def callBox(self):
 
     self.x185, self.y185 = 853, 944
     self.b185=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed18)
     self.fb185=self.can.create_window(self.x185, self.y185, window=self.b185)
 
@@ -1767,7 +1767,7 @@ def callBox(self):
 
     self.x195, self.y195 = 853, 976
     self.b195=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed19)
     self.fb195=self.can.create_window(self.x195, self.y195, window=self.b195)
 
@@ -1826,7 +1826,7 @@ def callBox(self):
 
     self.x205, self.y205 = 853, 1008
     self.b205=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed20)
     self.fb205=self.can.create_window(self.x205, self.y205, window=self.b205)
 
@@ -1885,7 +1885,7 @@ def callBox(self):
 
     self.x215, self.y215 = 853, 1040
     self.b215=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed21)
     self.fb215=self.can.create_window(self.x215, self.y215, window=self.b215)
 
@@ -1944,7 +1944,7 @@ def callBox(self):
 
     self.x225, self.y225 = 853, 1072
     self.b225=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed22)
     self.fb225=self.can.create_window(self.x225, self.y225, window=self.b225)
 
@@ -2003,7 +2003,7 @@ def callBox(self):
 
     self.x235, self.y235 = 853, 1104
     self.b235=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed23)
     self.fb235=self.can.create_window(self.x235, self.y235, window=self.b235)
 
@@ -2062,7 +2062,7 @@ def callBox(self):
 
     self.x245, self.y245 = 853, 1136
     self.b245=Button(self.can, width=10, font=16, bg='black', fg='cyan',
-        activebackground='dark turquoise', text="Visit Medical",
+        activebackground='dark turquoise', text="Medical Visit",
         command=self.visitMed24)
     self.fb245=self.can.create_window(self.x245, self.y245, window=self.b245)
 
