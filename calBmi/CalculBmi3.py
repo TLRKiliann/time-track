@@ -153,7 +153,7 @@ with open('./newpatient/entryfile3.txt', 'r') as filename:
     line1=filename.readline()
 
 gui = Tk()
-gui.title('Simple BMIcalculator')
+gui.title('Simple BMI calculator')
 gui.configure(background='RoyalBlue4')
 
 labelTitle = Label(gui, text="Simple BMI", font='Arial 18 bold', 
