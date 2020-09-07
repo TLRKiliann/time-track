@@ -113,12 +113,7 @@ for i in listeDate:
                 print("+ bmi 24 exist")
                 shutil.copy('./calBmi/bmi24.txt', './Backup/Files24/Backup_Bmi24.txt')
 
-        except FileNotFoundError as infoloop:
-            print("Process interrupted", infoloop)
-
-        try:
-            print("Backup of Treatments files !")
-            if os.path.getsize('./ttt/doc_ttt/intro_ttt.txt'):
+            elif os.path.getsize('./ttt/doc_ttt/intro_ttt.txt'):
                 print("+ ttt 1 exist")
                 shutil.copy('./ttt/doc_ttt/intro_ttt.txt', './Backup/Files1/Backup_ttt.txt')
 
@@ -214,12 +209,7 @@ for i in listeDate:
                 print("+ ttt 24 exist")
                 shutil.copy('./ttt/doc_ttt24/intro_res.txt', './Backup/Files24/Backup_res24.txt')
 
-        except FileNotFoundError as infoloop2:
-            print("Process interrupted", infoloop2)
-
-        try:
-            print("Backup of Diagnosis files !")
-            if os.path.getsize('./diag/doc_diag/diagrecap1.txt'):
+            elif os.path.getsize('./diag/doc_diag/diagrecap1.txt'):
                 print("+ diag 1 exist")
                 shutil.copy('./diag/doc_diag/diagrecap1.txt', './Backup/Files1/Backup_diag1.txt')
 
@@ -315,12 +305,7 @@ for i in listeDate:
                 print("+ diag 24 exist")
                 shutil.copy('./diag/doc_diag24/diagrecap24.txt', './Backup/Files24/Backup_diag24.txt')
 
-        except FileNotFoundError as infoloop3:
-            print("Process interrupted", infoloop3)
-
-        try:
-            print("Backup of Care and Monitoring files !")
-            if os.path.getsize('./14besoins/doc_suivi/patient1_14b.txt'):
+            elif os.path.getsize('./14besoins/doc_suivi/patient1_14b.txt'):
                 print("+ 14besoins 1 exist")
                 shutil.copy('./14besoins/doc_suivi/patient1_14b.txt', './Backup/Files1/Backup_careneeds1.txt')
 
@@ -416,5 +401,5 @@ for i in listeDate:
                 print("+ 14besoins 24 exist")
                 shutil.copy('./14besoins/doc_suivi24/patient24_14b.txt', './Backup/Files24/Backup_careneeds24.txt')
             
-        except FileNotFoundError as infoloop4:
-            print("Process interrupted", infoloop4)
+        except FileNotFoundError as infoloop:
+            print("Process interrupted", infoloop)

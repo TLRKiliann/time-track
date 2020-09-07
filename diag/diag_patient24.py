@@ -42,7 +42,7 @@ class MenuBar(Frame):
 class Application(Frame):
     def __init__(self, boss=None):
         Frame.__init__(self)
-        self.master.title('ANGEL-VISION - Developed by CK - Dec. 2018')
+        self.master.title('ANGEL-VISION - Developed by CK - 2020')
         mBar=MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=1)
         # ScrollCanvas limite de la zone à parcourir avec la barre
