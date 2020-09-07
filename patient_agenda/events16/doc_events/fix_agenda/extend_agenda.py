@@ -52,17 +52,17 @@ with open('./newpatient/entryfile16.txt', 'r') as filename:
 
 fen=Tk()
 fen.title("Agenda")
-fen.configure(background='#82193e')
+fen.configure(background='cyan')
 
 # To place side by side labelo + entrylab
-top=Frame(fen, bg='#82193e')
-bottom=Frame(fen, bg='#82193e')
+top=Frame(fen, bg='cyan')
+bottom=Frame(fen, bg='cyan')
 top.pack(side=TOP)
 bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
 
 labelo=Label(fen, text="Agenda",
     font='Arial 18 bold',
-    fg='turquoise', bg='#82193e')
+    fg='navy', bg='cyan')
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 textname=StringVar()
@@ -77,21 +77,21 @@ textBox.pack(padx=30, pady=30)
 
 buttonEnter=Button(fen, text="Save", width=8, bd=3,
     fg='yellow', bg='navy',activebackground='dark turquoise',
-    highlightbackground='#82193e', command=messFromSafeButt)
+    highlightbackground='light sky blue', command=messFromSafeButt)
 buttonEnter.pack(side='left', padx=10, pady=10)
 
 buttonLire=Button(fen, text="Read", width=8, bd=3,
     fg='cyan', bg='navy', activebackground='dark turquoise',
-    highlightbackground='#82193e', command=lectureFic)
+    highlightbackground='light sky blue', command=lectureFic)
 buttonLire.pack(side='left', padx=10, pady=10)
 
 buttonEffacer=Button(fen, text="Change RDV", width=10, bd=3,
-    fg='cyan', bg='navy', highlightbackground='#82193e',
+    fg='cyan', bg='navy', highlightbackground='light sky blue',
     activebackground='dark turquoise', command=changeText)
 buttonEffacer.pack(side='left', padx=10, pady=10)
 
 buttonClose=Button(fen, text="Quit", width=8, bd=3,
-    fg='white', bg='navy', highlightbackground='#82193e',
+    fg='white', bg='navy', highlightbackground='light sky blue',
     activebackground='dark turquoise', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
