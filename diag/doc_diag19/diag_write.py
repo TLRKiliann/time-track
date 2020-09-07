@@ -46,16 +46,16 @@ def importationFile(fichier, encodage="Utf-8"):
 
 root=Tk()
 root.title("Diagnostics and ATCD")
-root.configure(background='#82193e')
+root.configure(background='cyan')
 
 # To place side by side labelo + entrylab
-top = Frame(root, bg='#82193e')
-bottom = Frame(root, bg='#82193e')
+top = Frame(root, bg='cyan')
+bottom = Frame(root, bg='cyan')
 top.pack(side=TOP)
 bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
 
 labelo=Label(root, text="Diagnostics and ATCD for : ",
-    font='Arial 18 bold', fg='cyan', bg='#82193e')
+    font='Arial 18 bold', fg='navy', bg='cyan')
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 with open('./newpatient/entryfile19.txt', 'r') as filename:
@@ -67,7 +67,7 @@ textname.set(line1)
 entryName.pack(in_=top, side=LEFT, padx=10, pady=20)
 
 labelallergy=Label(root, text="Allergy",
-    font='Arial 18 bold', fg='coral', bg='#82193e')
+    font='Arial 18 bold', fg='coral', bg='cyan')
 labelallergy.pack(padx=5, pady=10)
 
 with open('./allergy/allergyfile19.txt', 'r') as filename:
