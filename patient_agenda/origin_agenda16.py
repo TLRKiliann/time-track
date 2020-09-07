@@ -73,7 +73,7 @@ class Calendar:
         self.wid.append(left)
         left.grid(row=0, column=1)
 
-        header = tk.Label(self.parent, fg='cyan', bg='#82193e',
+        header = tk.Label(self.parent, fg='navy', bg='cyan',
             height=2, text='{}   {}'.format(calendar.month_abbr[m], str(y)))
         self.wid.append(header)
         header.grid(row=0, column=2, columnspan=3)
@@ -93,14 +93,14 @@ class Calendar:
                 if day:
                     #print(calendar.day_name[day])
                     b = tk.Button(self.parent, width=1, text=day,
-                        fg='cyan', bg='navy',
+                        fg='white', bg='navy',
                         command=lambda day=day:self.selection(day, calendar.day_name[(day-1) % 7]))
                     self.wid.append(b)
                     b.grid(row=w, column=d, rowspan=1, columnspan=1, padx=2, pady=2)
 
         sel = tk.Label(self.parent, height=2, text='{} {} {} {}'.format(
             self.day_name, calendar.month_name[self.month_selected],
-            self.day_selected, self.year_selected), fg='cyan', bg='#82193e')
+            self.day_selected, self.year_selected), fg='navy', bg='cyan')
         self.wid.append(sel)
         sel.grid(row=8, column=0, columnspan=7)
 
@@ -119,7 +119,7 @@ if __name__ == '__main__':
         def __init__(self, parent):
             self.parent=parent
             self.labelo=tk.Label(self.parent, text='Agenda',
-                font='Times 18 bold', width=17, height=2, fg='aquamarine', bg='#82193e')
+                font='Times 18 bold', width=17, height=2, fg='navy', bg='cyan')
             self.choose_btn=tk.Button(self.parent, text="1 - Choice a date",
                 font="Times 14", width=20, height=1, fg='cyan', bg='navy',
                 activebackground='dark turquoise', command=self.popup)
@@ -130,7 +130,7 @@ if __name__ == '__main__':
                 width=20, height=1, fg='cyan', bg='navy', activebackground='dark turquoise',
                 command=self.accessDate)
             self.butQuit=tk.Button(self.parent, text='Quit', font="Times 14", width=20,
-                height=1, fg='cyan', bg='navy', activebackground='red', command=quit)
+                height=1, fg='white', bg='navy', activebackground='red', command=quit)
             self.labelo.grid()
             self.choose_btn.grid()
             self.show_btn.grid()
@@ -139,7 +139,7 @@ if __name__ == '__main__':
             self.data = {}
 
         def popup(self):
-            child = tk.Toplevel(bg='#82193e')
+            child = tk.Toplevel(bg='cyan')
             cal = Calendar(child, self.data)
 
         def print_selected_date(self):
