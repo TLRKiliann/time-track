@@ -31,9 +31,9 @@ class ScrollCanvas(Frame):
 class MenuBar(Frame):
     """Barre menu déroulant"""
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='dim gray', padx=0)
+        Frame.__init__(self, borderwidth=5, bg='RoyalBlue4', padx=0)
         # Menu fichier
-        But=Button(self, text ="Close", fg='cyan', bg='navy',
+        But=Button(self, text ="Close", fg='white', bg='navy',
             activebackground='cyan', command=boss.quit).pack(side=LEFT,
             padx=3)
 
@@ -45,7 +45,7 @@ class Application(Frame):
         mBar=MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=1)
         # ScrollCanvas limite de la zone à parcourir avec la barre
-        self.can=Canvas(self, width=600, height=400, bg='#82193e')
+        self.can=Canvas(self, width=600, height=400, bg='cyan')
         self.frame = Frame(self.can)
         self.vsb = Scrollbar(self, orient=VERTICAL, command=self.can.yview)
         self.can.configure(yscrollcommand=self.vsb.set)
@@ -55,8 +55,8 @@ class Application(Frame):
                                   tags="self.frame")
         # Insertion du texte
         self.can.create_text(300, 140, anchor=CENTER, text="Diagnostics and ATCD",
-                    font=('Times New Roman', 28), fill='cyan')
-        self.can.create_text(590, 380, anchor=NE, text="ANGEL-VISION",
+                    font=('Times New Roman', 28), fill='navy')
+        self.can.create_text(590, 380, anchor=NE, text="TIME-TRACK",
                     font=('Times', 12), fill='white') 
         self.can.pack(side=LEFT, fill=BOTH, expand=1)
         # Configuration de la Scrollbar sur le Frame
