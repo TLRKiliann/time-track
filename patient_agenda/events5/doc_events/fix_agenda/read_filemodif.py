@@ -20,16 +20,16 @@ with open('./newpatient/entryfile5.txt', 'r') as filename:
 
 fen=Tk()
 fen.title("RDV have changed")
-fen.configure(background='#82193e')
+fen.configure(background='cyan')
 
 # To place side by side labelo + entrylab
-top=Frame(fen, bg='#82193e')
-bottom=Frame(fen, bg='#82193e')
+top=Frame(fen, bg='cyan')
+bottom=Frame(fen, bg='cyan')
 top.pack(side=TOP)
 bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
 
 labelo=Label(fen, text="RDV have changed",
-    font='Arial 18 bold', fg='turquoise', bg='#82193e')
+    font='Arial 18 bold', fg='navy', bg='cyan')
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 textname=StringVar()
@@ -43,12 +43,12 @@ textBox.pack(padx=30, pady=30)
 buttonSave=Button(fen, text="Save", width=8, bd=3,
     fg='yellow', bg='navy',
     activebackground='dark turquoise', 
-    highlightbackground='#82193e', command=saveData)
+    highlightbackground='light sky blue', command=saveData)
 buttonSave.pack(side='left', padx=10, pady=10)
 
 buttonClose=Button(fen, text="Quit", width=8, bd=3,
     fg='white', bg='navy', activebackground='dark turquoise',
-    highlightbackground='#82193e', command=quit)
+    highlightbackground='light sky blue', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
 importationFile('./patient_agenda/events5/doc_events/fix_agenda/modifrdv.txt')
