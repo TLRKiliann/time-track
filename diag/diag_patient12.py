@@ -32,9 +32,9 @@ class ScrollCanvas(Frame):
 class MenuBar(Frame):
     """Barre menu déroulant"""
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='RoyalBlue4', padx=0)
+        Frame.__init__(self, borderwidth=5, bg='RoyalBlue3', padx=0)
         # Menu fichier
-        But=Button(self, text ="Close", fg='white', bg='navy',
+        But=Button(self, text ="Close", fg='white', bg='blue',
             activebackground='cyan', command=boss.quit).pack(side=LEFT,
             padx=3)
 
@@ -42,7 +42,7 @@ class MenuBar(Frame):
 class Application(Frame):
     def __init__(self, boss=None):
         Frame.__init__(self)
-        self.master.title('ANGEL-VISION - Developed by CK - Dec. 2018')
+        self.master.title('TIME-TRACK - Developed by ko@l@tr33 - 2020')
         mBar=MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=1)
         # ScrollCanvas limite de la zone à parcourir avec la barre
@@ -65,13 +65,15 @@ class Application(Frame):
         # Création des boutons
         self.x2, self.y2 = 200, 250
         self.b2=Button(self.can, width=10, font=16, bg='RoyalBlue3', fg='gold',
-            activebackground='dark turquoise', bd=3, highlightbackground='grey17', 
+            activebackground='dark turquoise', bd=3, 
+            highlightbackground='light sky blue', 
             text="Add", command=self.Frame_Ap1)
         self.fb2=self.can.create_window(self.x2, self.y2, window=self.b2)
 
         self.x3, self.y3 = 400, 250
         self.b3=Button(self.can, width=10, font=16, bg='RoyalBlue3', fg='gold',
-            activebackground='dark turquoise', bd=3, highlightbackground='grey17', 
+            activebackground='dark turquoise', bd=3, 
+            highlightbackground='light sky blue', 
             text="Read", command=self.Frame_Ap2)
         self.fb3=self.can.create_window(self.x3, self.y3, window=self.b3)
         self.pack()

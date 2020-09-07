@@ -35,7 +35,7 @@ class MenuBar(Frame):
 class Application(Frame):
     def __init__(self, boss=None):
         Frame.__init__(self)
-        self.master.title('TIME-TRACK - Developed by CK - 2020')
+        self.master.title('TIME-TRACK - Developed by ko@l@tr33 - 2020')
         mBar=MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=1)
         # ScrollCanvas limite de la zone à parcourir avec la barre
@@ -58,13 +58,13 @@ class Application(Frame):
 
         self.x2, self.y2 = 200, 250
         self.b2=Button(self.can, width=10, font=16, bg='RoyalBlue3', fg='gold',
-            activebackground='dark turquoise', bd=3, highlightbackground='grey17', 
+            activebackground='dark turquoise', bd=3, highlightbackground='light sky blue', 
             text="Add", command=self.lienDirect)
         self.fb2=self.can.create_window(self.x2, self.y2, window=self.b2)
 
         self.x3, self.y3 = 400, 250
         self.b3=Button(self.can, width=10, font=16, bg='RoyalBlue3', fg='gold',
-            activebackground='dark turquoise', bd=3, highlightbackground='grey17', 
+            activebackground='dark turquoise', bd=3, highlightbackground='light sky blue', 
             text="Read", command=self.lectureFic)
         self.fb3=self.can.create_window(self.x3, self.y3, window=self.b3)
         self.pack()

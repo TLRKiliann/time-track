@@ -32,9 +32,9 @@ class ScrollCanvas(Frame):
 class MenuBar(Frame):
     """Barre menu déroulant"""
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='RoyalBlue4', padx=0)
+        Frame.__init__(self, borderwidth=5, bg='RoyalBlue3', padx=0)
         # Menu fichier
-        But=Button(self, text ="Close", fg='white', bg='navy',
+        But=Button(self, text ="Close", fg='white', bg='blue',
             activebackground='cyan', command=boss.quit).pack(side=LEFT,
             padx=3)
 
@@ -42,7 +42,7 @@ class MenuBar(Frame):
 class Application(Frame):
     def __init__(self, boss=None):
         Frame.__init__(self)
-        self.master.title('ANGEL-VISION - Developed by CK - 2020')
+        self.master.title('TIME-TRACK - Developed by ko@l@tr33 - 2020')
         mBar=MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=1)
         # ScrollCanvas limite de la zone à parcourir avec la barre
