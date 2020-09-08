@@ -21,17 +21,6 @@
             "Midi": "2",
             "Soir": "1",
             "Nuit": ""
-        },
-        {
-            "Date": "08/09/2020",
-            "Date of introduction": "03 April 2012",
-            "Date of end": "09/09/2020",
-            "Treatment": "truc",
-            "Dosage": "10 ml",
-            "Matin": "1",
-            "Midi": "",
-            "Soir": "",
-            "Nuit": ""
         }
     ]
 }

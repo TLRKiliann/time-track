@@ -42,6 +42,26 @@ def displayDates(self):
     else:
         ("Error unknow")
 
+    # with ttt
+    try:
+        dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        with open('./ttt/doc_ttt/intro_ttt.txt', 'r') as filedate:
+            lines=filedate.readlines()
+            for i in range(0, len(lines)):
+                line = lines[i]
+                if dateagenda in line:
+                    print(line)
+                    print(lines[i+1])
+                    print(lines[i+2])
+                    MSB2 = messagebox.showwarning('Info',
+                        'Look at AGENDA, there is a ttt to stop tomorrow for : ' + new_text)
+                else:
+                    pass
+    except FileNotFoundError as infofile1:
+        print("File 1 has not been found", infofile1)
+    else:
+        ("Error unknow")
+
     try:
         with open('./newpatient/entryfile2.txt', 'r') as namefile:
             line2=namefile.readline()

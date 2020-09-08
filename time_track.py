@@ -1317,7 +1317,7 @@ class Application(Frame):
             font=('Times', 13), fill='aquamarine')
         self.can.configure(scrollregion=self.can.bbox(ALL))
 
-        # call func in boxapp.py
+    # call func in boxapp.py
     def showsynopsis(self):
         callBox(self)
 
@@ -2186,7 +2186,7 @@ class Application(Frame):
     def updateFiletxt(self):
         # To backup all files
         listeDate = ["01/05/2020", "18/06/2020", "01/07/2020",
-        "01/08/2020", "01/09/2020", "01/10/2020", "01/11/2020",
+        "01/08/2020", "08/09/2020", "01/10/2020", "01/11/2020",
         "01/12/2020"]
         
         for i in listeDate:
