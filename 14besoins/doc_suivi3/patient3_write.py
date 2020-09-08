@@ -20,13 +20,13 @@ def saveData():
         if os.path.getsize('./14besoins/doc_suivi3/main_14b.txt'):
             print("+ File 'main_14b.txt' exist !")
             with open('./14besoins/doc_suivi3/main_14b.txt', 'a+') as namefile:
-                namefile.write(textBox.get("1.0", "end-1c" + '\n\n'))
+                namefile.write(textBox.get("1.0", "end-1c") + '\n\n')
     except FileNotFoundError as outcom:
         print("+ Sorry, file 'main_14b.txt' not exist !")
         print(str(outcom))
         print("+ File 'main_14b.txt' created !")
         with open('./14besoins/doc_suivi3/main_14b.txt', 'a+') as namefile:
-            namefile.write(textBox.get("1.0", "end-1c" + '\n\n'))
+            namefile.write(textBox.get("1.0", "end-1c") + '\n\n')
 
 def messFromSafeButt():
     MsgBox = messagebox.askquestion("Confirm","Are you sure ?\n"
@@ -52,7 +52,7 @@ def ajouterText():
     from initial textBox() 
     """
     textBox.delete('1.0', END)
-    textBox.insert(INSERT, "\n\nEn date du : ")
+    textBox.insert(INSERT, "En date du : ")
     textBox.insert(END, time.strftime("%d/%m/%Y at %H:%M:%S :\n"))
     textBox.update()
 
@@ -89,20 +89,20 @@ def importationLabo(fichier2, encodage="Utf-8"):
 
 root=Tk()
 root.title("Care and monitoring")
-root.configure(background='#82193e')
+root.configure(background='cyan')
 
 # To place side by side labelo + entrylab
-top = Frame(root, bg='#82193e')
-bottom = Frame(root, bg='#82193e')
+top = Frame(root, bg='cyan')
+bottom = Frame(root, bg='cyan')
 top.pack(side=TOP)
 bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
 
 labelo=Label(root, text="Care and monitoring : ",
-    font='Times 18 bold', fg='cyan', bg='#82193e')
+    font='Times 18 bold', fg='navy', bg='cyan')
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 labelallergy=Label(root, text="Allergy",
-    font='Arial 18 bold', fg='coral', bg='#82193e')
+    font='Arial 18 bold', fg='coral', bg='cyan')
 labelallergy.pack(padx=5, pady=5)
 
 # To read name in Entry widget

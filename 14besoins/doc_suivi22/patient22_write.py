@@ -20,13 +20,13 @@ def saveData():
         if os.path.getsize('./14besoins/doc_suivi22/main_14b.txt'):
             print("+ File 'main_14b.txt' exist !")
             with open('./14besoins/doc_suivi22/main_14b.txt', 'a+') as namefile:
-                namefile.write(textBox.get("1.0", "end-1c" + '\n\n'))
+                namefile.write(textBox.get("1.0", "end-1c") + '\n\n')
     except FileNotFoundError as outcom:
         print("+ Sorry, file 'main_14b.txt' not exist !")
         print(str(outcom))
         print("+ File 'main_14b.txt' created !")
         with open('./14besoins/doc_suivi22/main_14b.txt', 'a+') as namefile:
-            namefile.write(textBox.get("1.0", "end-1c" + '\n\n'))
+            namefile.write(textBox.get("1.0", "end-1c") + '\n\n')
 
 def messFromSafeButt():
     MsgBox = messagebox.askquestion("Confirm","Are you sure ?\n"
