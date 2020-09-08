@@ -56,7 +56,7 @@ class Application(Frame):
                                   tags="self.frame")
         # Insertion du texte
         self.can.create_text(300, 140, anchor=CENTER, text="Diagnostics and ATCD",
-                    font=('Times New Roman', 28), fill='cyan')
+                    font=('Times New Roman', 28), fill='navy')
         self.can.create_text(590, 380, anchor=NE, text="TIME-TRACK",
                     font=('Times', 12), fill='white') 
         self.can.pack(side=LEFT, fill=BOTH, expand=1)

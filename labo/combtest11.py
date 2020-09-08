@@ -72,7 +72,7 @@ def recordOption():
             file_2.write(Erychoosen.get())
             file_2.write(" Hb :")
             file_2.write(Hbchoosen.get())
-            file_2.write("\n***************************************************************************")
+            file_2.write("\n***************************************************************************\n")
 
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
