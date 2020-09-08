@@ -52,7 +52,7 @@ def ajouterText():
     from initial textBox() 
     """
     textBox.delete('1.0', END)
-    textBox.insert(INSERT, "En date du : ")
+    textBox.insert(INSERT, "\n\nEn date du : ")
     textBox.insert(END, time.strftime("%d/%m/%Y at %H:%M:%S :\n"))
     textBox.update()
 

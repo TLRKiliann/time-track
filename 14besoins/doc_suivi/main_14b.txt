@@ -11,4 +11,5 @@ Patient name : Edward Snowden
 # Troponin value and treatment : (add what the patient needs)
 
 En date du : 07/09/2020 at 02:05:14 :
-Edward ne se sent pas bien aujourd'hui...
+Edward ne se sent pas bien aujourd'hui.
+Il a trop bu hier et il a des palpitations aujourd'hui.

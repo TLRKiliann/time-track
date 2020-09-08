@@ -77,6 +77,13 @@ def callBox(self):
         #time.strftime("%d/%m/%Y at %H:%M:%S :\n"))
     self.ft63=self.can.create_window(self.x63, self.y63, window=self.t63)
 
+    #Patient1
+    try:
+        with open('./newpatient/entryfile.txt', 'r') as namefile:
+            line1=namefile.readline()
+    except FileNotFoundError as callfile:
+        print("File entryfile.txt doesn't exist !", callfile)
+
     # Display text in textbox from 14 Needs files
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
@@ -85,14 +92,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n--- Patient 1 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line1)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout:
@@ -102,6 +106,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    # Patient 2
+    try:
+        with open('./newpatient/entryfile2.txt', 'r') as namefile:
+            line2=namefile.readline()
+    except FileNotFoundError as callfile2:
+        print("File entryfile2.txt doesn't exist !", callfile2)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi2/main_14b.txt', 'r') as filedate:
@@ -109,14 +120,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 2 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line2)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout1:
@@ -126,6 +134,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    # Patient 3
+    try:
+        with open('./newpatient/entryfile3.txt', 'r') as namefile:
+            line3=namefile.readline()
+    except FileNotFoundError as callfile3:
+        print("File entryfile3.txt doesn't exist !", callfile3)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi3/main_14b.txt', 'r') as filedate:
@@ -133,14 +148,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 3 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line3)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout3:
@@ -150,6 +162,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    # Patient 4
+    try:
+        with open('./newpatient/entryfile4.txt', 'r') as namefile:
+            line4=namefile.readline()
+    except FileNotFoundError as callfile4:
+        print("File entryfile4.txt doesn't exist !", callfile4)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi4/main_14b.txt', 'r') as filedate:
@@ -157,14 +176,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 4 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line4)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout4:
@@ -174,6 +190,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient5
+    try:
+        with open('./newpatient/entryfile5.txt', 'r') as namefile:
+            line5=namefile.readline()
+    except FileNotFoundError as callfile5:
+        print("File entryfile5.txt doesn't exist !", callfile5)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi5/main_14b.txt', 'r') as filedate:
@@ -181,14 +204,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 5 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line5)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout5:
@@ -198,6 +218,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient6
+    try:
+        with open('./newpatient/entryfile6.txt', 'r') as namefile:
+            line6=namefile.readline()
+    except FileNotFoundError as callfile6:
+        print("File entryfile6.txt doesn't exist !", callfile6)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi6/main_14b.txt', 'r') as filedate:
@@ -205,14 +232,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 6 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line6)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout6:
@@ -222,6 +246,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient7
+    try:
+        with open('./newpatient/entryfile7.txt', 'r') as namefile:
+            line7=namefile.readline()
+    except FileNotFoundError as callfile7:
+        print("File entryfile7.txt doesn't exist !", callfile7)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi7/main_14b.txt', 'r') as filedate:
@@ -229,14 +260,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 7 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line7)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout7:
@@ -246,6 +274,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient8
+    try:
+        with open('./newpatient/entryfile8.txt', 'r') as namefile:
+            line8=namefile.readline()
+    except FileNotFoundError as callfile8:
+        print("File entryfile8.txt doesn't exist !", callfile8)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi8/main_14b.txt', 'r') as filedate:
@@ -253,14 +288,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 8 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line8)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout8:
@@ -270,13 +302,12 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #Patient1
-    # For label below (in me2.add_command)
+    #patient9
     try:
-        with open('./newpatient/entryfile.txt', 'r') as namefile:
-            line1=namefile.readline()
-    except FileNotFoundError as callfile:
-        print("File entryfile.txt doesn't exist !", callfile)
+        with open('./newpatient/entryfile9.txt', 'r') as namefile:
+            line9=namefile.readline()
+    except FileNotFoundError as callfile9:
+        print("File entryfile9.txt doesn't exist !", callfile9)
 
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
@@ -285,14 +316,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 9 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line9)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout9:
@@ -302,6 +330,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient10
+    try:
+        with open('./newpatient/entryfile10.txt', 'r') as namefile:
+            line10=namefile.readline()
+    except FileNotFoundError as callfile10:
+        print("File entryfile10.txt doesn't exist !", callfile10)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi10/main_14b.txt', 'r') as filedate:
@@ -309,14 +344,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 10 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line10)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout10:
@@ -326,6 +358,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient11
+    try:
+        with open('./newpatient/entryfile11.txt', 'r') as namefile:
+            line11=namefile.readline()
+    except FileNotFoundError as callfile11:
+        print("File entryfile11.txt doesn't exist !", callfile11)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi11/main_14b.txt', 'r') as filedate:
@@ -333,14 +372,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 11 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line11)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout11:
@@ -350,6 +386,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient12
+    try:
+        with open('./newpatient/entryfile12.txt', 'r') as namefile:
+            line12=namefile.readline()
+    except FileNotFoundError as callfile12:
+        print("File entryfile12.txt doesn't exist !", callfile12)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi12/main_14b.txt', 'r') as filedate:
@@ -357,14 +400,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 12 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line12)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout12:
@@ -374,6 +414,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient13
+    try:
+        with open('./newpatient/entryfile13.txt', 'r') as namefile:
+            line13=namefile.readline()
+    except FileNotFoundError as callfile13:
+        print("File entryfile13.txt doesn't exist !", callfile13)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi13/main_14b.txt', 'r') as filedate:
@@ -381,14 +428,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 13 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line13)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout13:
@@ -398,6 +442,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient14
+    try:
+        with open('./newpatient/entryfile14.txt', 'r') as namefile:
+            line14=namefile.readline()
+    except FileNotFoundError as callfile14:
+        print("File entryfile14.txt doesn't exist !", callfile14)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi14/main_14b.txt', 'r') as filedate:
@@ -405,14 +456,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 14 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line14)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout14:
@@ -422,6 +470,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient15
+    try:
+        with open('./newpatient/entryfile15.txt', 'r') as namefile:
+            line15=namefile.readline()
+    except FileNotFoundError as callfile15:
+        print("File entryfile15.txt doesn't exist !", callfile15)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi15/main_14b.txt', 'r') as filedate:
@@ -429,14 +484,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 15 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line15)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout15:
@@ -446,6 +498,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient16
+    try:
+        with open('./newpatient/entryfile16.txt', 'r') as namefile:
+            line16=namefile.readline()
+    except FileNotFoundError as callfile16:
+        print("File entryfile16.txt doesn't exist !", callfile16)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi16/main_14b.txt', 'r') as filedate:
@@ -453,14 +512,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 16 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line16)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout16:
@@ -470,6 +526,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient17
+    try:
+        with open('./newpatient/entryfile17.txt', 'r') as namefile:
+            line17=namefile.readline()
+    except FileNotFoundError as callfile17:
+        print("File entryfile17.txt doesn't exist !", callfile17)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi17/main_14b.txt', 'r') as filedate:
@@ -477,14 +540,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 17 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line17)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout17:
@@ -494,6 +554,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient18
+    try:
+        with open('./newpatient/entryfile18.txt', 'r') as namefile:
+            line18=namefile.readline()
+    except FileNotFoundError as callfile18:
+        print("File entryfile18.txt doesn't exist !", callfile18)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi18/main_14b.txt', 'r') as filedate:
@@ -501,14 +568,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 18 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line18)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout18:
@@ -518,6 +582,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient19
+    try:
+        with open('./newpatient/entryfile19.txt', 'r') as namefile:
+            line19=namefile.readline()
+    except FileNotFoundError as callfile19:
+        print("File entryfile19.txt doesn't exist !", callfile19)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi19/main_14b.txt', 'r') as filedate:
@@ -525,14 +596,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 19 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line19)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout19:
@@ -542,6 +610,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient20
+    try:
+        with open('./newpatient/entryfile20.txt', 'r') as namefile:
+            line20=namefile.readline()
+    except FileNotFoundError as callfile20:
+        print("File entryfile20.txt doesn't exist !", callfile20)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi20/main_14b.txt', 'r') as filedate:
@@ -549,14 +624,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 20 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line20)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout20:
@@ -566,6 +638,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient21
+    try:
+        with open('./newpatient/entryfile21.txt', 'r') as namefile:
+            line21=namefile.readline()
+    except FileNotFoundError as callfile21:
+        print("File entryfile21.txt doesn't exist !", callfile21)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi21/main_14b.txt', 'r') as filedate:
@@ -573,14 +652,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 21 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line21)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout21:
@@ -590,6 +666,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient22
+    try:
+        with open('./newpatient/entryfile22.txt', 'r') as namefile:
+            line22=namefile.readline()
+    except FileNotFoundError as callfile22:
+        print("File entryfile22.txt doesn't exist !", callfile22)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi22/main_14b.txt', 'r') as filedate:
@@ -597,14 +680,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 22 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line22)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout22:
@@ -614,6 +694,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient23
+    try:
+        with open('./newpatient/entryfile23.txt', 'r') as namefile:
+            line23=namefile.readline()
+    except FileNotFoundError as callfile23:
+        print("File entryfile23.txt doesn't exist !", callfile23)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi23/main_14b.txt', 'r') as filedate:
@@ -621,14 +708,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 23 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line23)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout23:
@@ -638,6 +722,13 @@ def callBox(self):
     else:
         ("Error unknow")
 
+    #patient24
+    try:
+        with open('./newpatient/entryfile24.txt', 'r') as namefile:
+            line24=namefile.readline()
+    except FileNotFoundError as callfile24:
+        print("File entryfile24.txt doesn't exist !", callfile24)
+
     try:
         datesearch = (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./14besoins/doc_suivi24/main_14b.txt', 'r') as filedate:
@@ -645,14 +736,11 @@ def callBox(self):
             for i in range(0, len(lines)):
                 line = lines[i]
                 if datesearch in line:
-                    self.t63.insert(END, "\n\n--- Patient 24 ---\n")
+                    self.t63.insert(END, "\n\n---> " + line24)
                     self.t63.insert(INSERT, line)
                     self.t63.insert(INSERT, lines[i+1])
                     self.t63.insert(INSERT, lines[i+2])
-                    self.t63.insert(INSERT, lines[i+3])
-                    self.t63.insert(INSERT, lines[i+4])
-                    self.t63.insert(INSERT, lines[i+5])
-                    self.t63.insert(INSERT, lines[i+6])
+                    self.t63.insert(INSERT, "Lire suite dans care and monitoring...")
                 else:
                     pass
     except FileNotFoundError as infofileout24:
@@ -661,13 +749,6 @@ def callBox(self):
         print("List 24 got less than 6 lines", inforange24)
     else:
         ("Error unknow")
-
-    #Patient1
-    try:
-        with open('./newpatient/entryfile.txt', 'r') as namefile:
-            line1=namefile.readline()
-    except FileNotFoundError as callfile:
-        print("File entryfile.txt doesn't exist !", callfile)
 
     self.data_time=line1
     self.x10, self.y10 = 129, 400
@@ -721,13 +802,6 @@ def callBox(self):
         command=self.calculB)
     self.fb17=self.can.create_window(self.x17, self.y17, window=self.b17)
 
-    # Patient 2
-    try:
-        with open('./newpatient/entryfile2.txt', 'r') as namefile:
-            line2=namefile.readline()
-    except FileNotFoundError as callfile2:
-        print("File entryfile2.txt doesn't exist !", callfile2)
-
     self.new_data2=line2
     self.x20, self.y20 = 129, 432
     self.Data_write=Entry(self.can)
@@ -779,13 +853,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB2)
     self.fb27=self.can.create_window(self.x27, self.y27, window=self.b27)
-
-    # Patient 3
-    try:
-        with open('./newpatient/entryfile3.txt', 'r') as namefile:
-            line3=namefile.readline()
-    except FileNotFoundError as callfile3:
-        print("File entryfile3.txt doesn't exist !", callfile3)
 
     self.new_data3=line3
     self.x30, self.y30 = 129, 464
@@ -839,13 +906,6 @@ def callBox(self):
         command=self.calculB3)
     self.fb37=self.can.create_window(self.x37, self.y37, window=self.b37)
 
-    # Patient 4
-    try:
-        with open('./newpatient/entryfile4.txt', 'r') as namefile:
-            line4=namefile.readline()
-    except FileNotFoundError as callfile4:
-        print("File entryfile4.txt doesn't exist !", callfile4)
-
     self.new_data4=line4
     self.x40, self.y40 = 129, 496
     self.Data_write=Entry(self.can)
@@ -897,13 +957,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB4)
     self.fb47=self.can.create_window(self.x47, self.y47, window=self.b47)
-
-    #patient5
-    try:
-        with open('./newpatient/entryfile5.txt', 'r') as namefile:
-            line5=namefile.readline()
-    except FileNotFoundError as callfile5:
-        print("File entryfile5.txt doesn't exist !", callfile5)
 
     self.new_data5=line5
     self.x50, self.y50 = 129, 528
@@ -957,13 +1010,6 @@ def callBox(self):
         command=self.calculB5)
     self.fb57=self.can.create_window(self.x57, self.y57, window=self.b57)
 
-    #patient6
-    try:
-        with open('./newpatient/entryfile6.txt', 'r') as namefile:
-            line6=namefile.readline()
-    except FileNotFoundError as callfile6:
-        print("File entryfile6.txt doesn't exist !", callfile6)
-
     self.new_data6=line6
     self.x60, self.y60 = 129, 560
     self.Data_write=Entry(self.can)
@@ -1016,13 +1062,6 @@ def callBox(self):
         command=self.calculB6)
     self.fb68=self.can.create_window(self.x68, self.y68, window=self.b68)
     
-    #patient7
-    try:
-        with open('./newpatient/entryfile7.txt', 'r') as namefile:
-            line7=namefile.readline()
-    except FileNotFoundError as callfile7:
-        print("File entryfile7.txt doesn't exist !", callfile7)
-
     self.new_data7=line7
     self.x70, self.y70 = 129, 592
     self.Data_write=Entry(self.can)
@@ -1074,13 +1113,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB7)
     self.fb77=self.can.create_window(self.x77, self.y77, window=self.b77)
-
-    #patient8
-    try:
-        with open('./newpatient/entryfile8.txt', 'r') as namefile:
-            line8=namefile.readline()
-    except FileNotFoundError as callfile8:
-        print("File entryfile8.txt doesn't exist !", callfile8)
 
     self.new_data8=line8
     self.x80, self.y80 = 129, 624
@@ -1134,13 +1166,6 @@ def callBox(self):
         command=self.calculB8)
     self.fb87=self.can.create_window(self.x87, self.y87, window=self.b87)
 
-    #patient9
-    try:
-        with open('./newpatient/entryfile9.txt', 'r') as namefile:
-            line9=namefile.readline()
-    except FileNotFoundError as callfile9:
-        print("File entryfile9.txt doesn't exist !", callfile9)
-
     self.new_data9=line9
     self.x90, self.y90 = 129, 656
     self.Data_write=Entry(self.can)
@@ -1192,13 +1217,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB9)
     self.fb97=self.can.create_window(self.x97, self.y97, window=self.b97)
-
-    #patient10
-    try:
-        with open('./newpatient/entryfile10.txt', 'r') as namefile:
-            line10=namefile.readline()
-    except FileNotFoundError as callfile10:
-        print("File entryfile10.txt doesn't exist !", callfile10)
 
     self.new_data10=line10
     self.x100, self.y100 = 129, 688
@@ -1252,13 +1270,6 @@ def callBox(self):
         command=self.calculB10)
     self.fb107=self.can.create_window(self.x107, self.y107, window=self.b107)
 
-    #patient11
-    try:
-        with open('./newpatient/entryfile11.txt', 'r') as namefile:
-            line11=namefile.readline()
-    except FileNotFoundError as callfile11:
-        print("File entryfile11.txt doesn't exist !", callfile11)
-
     self.new_data11=line11
     self.x110, self.y110 = 129, 720
     self.Data_write=Entry(self.can)
@@ -1310,13 +1321,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB11)
     self.fb117=self.can.create_window(self.x117, self.y117, window=self.b117)
-
-    #patient12
-    try:
-        with open('./newpatient/entryfile12.txt', 'r') as namefile:
-            line12=namefile.readline()
-    except FileNotFoundError as callfile12:
-        print("File entryfile12.txt doesn't exist !", callfile12)
 
     self.new_data12=line12
     self.x120, self.y120 = 129, 752
@@ -1370,13 +1374,6 @@ def callBox(self):
         command=self.calculB12)
     self.fb127=self.can.create_window(self.x127, self.y127, window=self.b127)
 
-    #patient13
-    try:
-        with open('./newpatient/entryfile13.txt', 'r') as namefile:
-            line13=namefile.readline()
-    except FileNotFoundError as callfile13:
-        print("File entryfile13.txt doesn't exist !", callfile13)
-
     self.new_data13=line13
     self.x130, self.y130 = 129, 784
     self.Data_write=Entry(self.can)
@@ -1428,13 +1425,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB13)
     self.fb137=self.can.create_window(self.x137, self.y137, window=self.b137)
-
-    #patient14
-    try:
-        with open('./newpatient/entryfile14.txt', 'r') as namefile:
-            line14=namefile.readline()
-    except FileNotFoundError as callfile14:
-        print("File entryfile14.txt doesn't exist !", callfile14)
 
     self.new_data14=line14
     self.x140, self.y140 = 129, 816
@@ -1488,13 +1478,6 @@ def callBox(self):
         command=self.calculB14)
     self.fb147=self.can.create_window(self.x147, self.y147, window=self.b147)
 
-    #patient15
-    try:
-        with open('./newpatient/entryfile15.txt', 'r') as namefile:
-            line15=namefile.readline()
-    except FileNotFoundError as callfile15:
-        print("File entryfile15.txt doesn't exist !", callfile15)
-
     self.new_data15=line15
     self.x150, self.y150 = 129, 848
     self.Data_write=Entry(self.can)
@@ -1546,13 +1529,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB15)
     self.fb157=self.can.create_window(self.x157, self.y157, window=self.b157)
-
-    #patient16
-    try:
-        with open('./newpatient/entryfile16.txt', 'r') as namefile:
-            line16=namefile.readline()
-    except FileNotFoundError as callfile16:
-        print("File entryfile16.txt doesn't exist !", callfile16)
 
     self.new_data16=line16
     self.x160, self.y160 = 129, 880
@@ -1606,13 +1582,6 @@ def callBox(self):
         command=self.calculB16)
     self.fb167=self.can.create_window(self.x167, self.y167, window=self.b167)
 
-    #patient17
-    try:
-        with open('./newpatient/entryfile17.txt', 'r') as namefile:
-            line17=namefile.readline()
-    except FileNotFoundError as callfile17:
-        print("File entryfile17.txt doesn't exist !", callfile17)
-
     self.new_data17=line17
     self.x170, self.y170 = 129, 912
     self.Data_write=Entry(self.can)
@@ -1664,13 +1633,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB17)
     self.fb177=self.can.create_window(self.x177, self.y177, window=self.b177)
-
-    #patient18
-    try:
-        with open('./newpatient/entryfile18.txt', 'r') as namefile:
-            line18=namefile.readline()
-    except FileNotFoundError as callfile18:
-        print("File entryfile18.txt doesn't exist !", callfile18)
 
     self.new_data18=line18
     self.x180, self.y180 = 129, 944
@@ -1724,13 +1686,6 @@ def callBox(self):
         command=self.calculB18)
     self.fb187=self.can.create_window(self.x187, self.y187, window=self.b187)
 
-    #patient19
-    try:
-        with open('./newpatient/entryfile19.txt', 'r') as namefile:
-            line19=namefile.readline()
-    except FileNotFoundError as callfile19:
-        print("File entryfile19.txt doesn't exist !", callfile19)
-
     self.new_data19=line19
     self.x190, self.y190 = 129, 976
     self.Data_write=Entry(self.can)
@@ -1782,13 +1737,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB19)
     self.fb197=self.can.create_window(self.x197, self.y197, window=self.b197)
-
-    #patient20
-    try:
-        with open('./newpatient/entryfile20.txt', 'r') as namefile:
-            line20=namefile.readline()
-    except FileNotFoundError as callfile20:
-        print("File entryfile20.txt doesn't exist !", callfile20)
 
     self.new_data20=line20
     self.x200, self.y200 = 129, 1008
@@ -1842,13 +1790,6 @@ def callBox(self):
         command=self.calculB20)
     self.fb207=self.can.create_window(self.x207, self.y207, window=self.b207)
 
-    #patient21
-    try:
-        with open('./newpatient/entryfile21.txt', 'r') as namefile:
-            line21=namefile.readline()
-    except FileNotFoundError as callfile21:
-        print("File entryfile21.txt doesn't exist !", callfile21)
-
     self.new_data21=line21
     self.x210, self.y210 = 129, 1040
     self.Data_write=Entry(self.can)
@@ -1900,13 +1841,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB21)
     self.fb217=self.can.create_window(self.x217, self.y217, window=self.b217)
-
-    #patient22
-    try:
-        with open('./newpatient/entryfile22.txt', 'r') as namefile:
-            line22=namefile.readline()
-    except FileNotFoundError as callfile22:
-        print("File entryfile22.txt doesn't exist !", callfile22)
 
     self.new_data22=line22
     self.x220, self.y220 = 129, 1072
@@ -1960,13 +1894,6 @@ def callBox(self):
         command=self.calculB22)
     self.fb227=self.can.create_window(self.x227, self.y227, window=self.b227)
 
-    #patient23
-    try:
-        with open('./newpatient/entryfile23.txt', 'r') as namefile:
-            line23=namefile.readline()
-    except FileNotFoundError as callfile23:
-        print("File entryfile23.txt doesn't exist !", callfile23)
-
     self.new_data23=line23
     self.x230, self.y230 = 129, 1104
     self.Data_write=Entry(self.can)
@@ -2018,13 +1945,6 @@ def callBox(self):
         activebackground='dark turquoise', text="BMI",
         command=self.calculB23)
     self.fb237=self.can.create_window(self.x237, self.y237, window=self.b237)
-
-    #patient24
-    try:
-        with open('./newpatient/entryfile24.txt', 'r') as namefile:
-            line24=namefile.readline()
-    except FileNotFoundError as callfile24:
-        print("File entryfile24.txt doesn't exist !", callfile24)
 
     self.new_data24=line24
     self.x240, self.y240 = 129, 1136
