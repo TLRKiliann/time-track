@@ -10,6 +10,28 @@
             "First-line": 1,
             "Second-line": 0,
             "Number/24h": "2"
+        },
+        {
+            "Date": "09/09/2020",
+            "Date of introduction": "24 June 2020",
+            "Date of end": "10/09/2020",
+            "Treatment": "Distra",
+            "Dosage": "300 mg",
+            "Reserve": 1,
+            "First-line": 1,
+            "Second-line": 0,
+            "Number/24h": "3"
+        },
+        {
+            "Date": "09/09/2020",
+            "Date of introduction": "06 July 2002",
+            "Date of end": "09/09/2020",
+            "Treatment": "Clopin",
+            "Dosage": "10 mg",
+            "Reserve": 1,
+            "First-line": 1,
+            "Second-line": 0,
+            "Number/24h": "3"
         }
     ]
 }

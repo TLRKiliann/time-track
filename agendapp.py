@@ -3,26 +3,25 @@
 
 
 from tkinter import *
+from tkinter import messagebox
 import os
 import time
 import datetime
 
 
-def displayDates(self):
+def dispAgBox():
     """
     Display messagebox for agenda if an 
     appointment has been fixed for tomorrow:
     """
-    print("Hello, let's see if appointment has been fixed for tomorrow...")
-    time.sleep(1)
-    #a="heyhey !!"
+
+    # Patient 1
     try:
         with open('./newpatient/entryfile.txt', 'r') as namefile:
             line1=namefile.readline()
-            new_text=line1
-    except FileNotFoundError as fileout:
-        print("No file entryfile.txt exist", fileout)
-
+    except FileNotFoundError as callfile:
+        print("File entryfile.txt doesn't exist !", callfile)
+        
     try:
         dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
         with open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'r') as filedate:
@@ -34,33 +33,13 @@ def displayDates(self):
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text)
+                        'Look at AGENDA, there is an appointment for : ' + line1)
                 else:
                     pass
     except FileNotFoundError as infofile1:
         print("File 1 has not been found", infofile1)
     else:
-        ("Error unknow")
-
-    # with ttt
-    try:
-        dateagenda = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        with open('./ttt/doc_ttt/intro_ttt.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if dateagenda in line:
-                    print(line)
-                    print(lines[i+1])
-                    print(lines[i+2])
-                    MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is a ttt to stop tomorrow for : ' + new_text)
-                else:
-                    pass
-    except FileNotFoundError as infofile1:
-        print("File 1 has not been found", infofile1)
-    else:
-        ("Error unknow")
+        ("Error unknow 1")
 
     try:
         with open('./newpatient/entryfile2.txt', 'r') as namefile:

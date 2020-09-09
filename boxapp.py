@@ -3,12 +3,20 @@
 
 
 from tkinter import *
+#from tkinter import messagebox
 import os
 import time
 import datetime
+from backapp import *
+#from agendapp import *
+#from tttapp import *
+
+from agendapp import dispAgBox
+from tttapp import dispTttBox
+from resapp import dispResFunc
 
 
-# Synopsis page
+# Main page
 def callBox(self):
     self.can.delete(ALL)
     self.can.configure(background='cyan')
@@ -17,8 +25,11 @@ def callBox(self):
     self.can.create_text(625, 30, anchor=CENTER, text="TIME-TRACK",
         font=('Times New Roman', 20), fill='blue')
 
-    # To backup à revoir !!!!!!!!!!!!!!!!!!!!!!!!
+    # To backup (main file)
     self.updateFiletxt()
+    dispAgBox()
+    dispTttBox()
+    dispResFunc()
 
     # Display date
     self.x1, self.y1 = 1065, 70
@@ -77,7 +88,7 @@ def callBox(self):
         #time.strftime("%d/%m/%Y at %H:%M:%S :\n"))
     self.ft63=self.can.create_window(self.x63, self.y63, window=self.t63)
 
-    #Patient1
+    # Patient 1
     try:
         with open('./newpatient/entryfile.txt', 'r') as namefile:
             line1=namefile.readline()
@@ -104,7 +115,11 @@ def callBox(self):
     except IndexError as inforange:
         print("List 1 got less than 6 lines", inforange)
     else:
-        ("Error unknow")
+        ("Error unknow 1")
+
+
+
+
 
     # Patient 2
     try:
@@ -190,7 +205,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient5
+    # Patient 5
     try:
         with open('./newpatient/entryfile5.txt', 'r') as namefile:
             line5=namefile.readline()
@@ -218,7 +233,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient6
+    # Patient 6
     try:
         with open('./newpatient/entryfile6.txt', 'r') as namefile:
             line6=namefile.readline()
@@ -246,7 +261,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient7
+    # Patient 7
     try:
         with open('./newpatient/entryfile7.txt', 'r') as namefile:
             line7=namefile.readline()
@@ -274,7 +289,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient8
+    # Patient 8
     try:
         with open('./newpatient/entryfile8.txt', 'r') as namefile:
             line8=namefile.readline()
@@ -302,7 +317,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient9
+    # Patient 9
     try:
         with open('./newpatient/entryfile9.txt', 'r') as namefile:
             line9=namefile.readline()
@@ -330,7 +345,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient10
+    # Patient 10
     try:
         with open('./newpatient/entryfile10.txt', 'r') as namefile:
             line10=namefile.readline()
@@ -358,7 +373,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient11
+    # Patient 11
     try:
         with open('./newpatient/entryfile11.txt', 'r') as namefile:
             line11=namefile.readline()
@@ -386,7 +401,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient12
+    # Patient 12
     try:
         with open('./newpatient/entryfile12.txt', 'r') as namefile:
             line12=namefile.readline()
@@ -414,7 +429,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient13
+    # Patient 13
     try:
         with open('./newpatient/entryfile13.txt', 'r') as namefile:
             line13=namefile.readline()
@@ -442,7 +457,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient14
+    # Patient 14
     try:
         with open('./newpatient/entryfile14.txt', 'r') as namefile:
             line14=namefile.readline()
@@ -470,7 +485,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient15
+    # Patient 15
     try:
         with open('./newpatient/entryfile15.txt', 'r') as namefile:
             line15=namefile.readline()
@@ -498,7 +513,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient16
+    # Patient 16
     try:
         with open('./newpatient/entryfile16.txt', 'r') as namefile:
             line16=namefile.readline()
@@ -526,7 +541,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient17
+    # Patient 17
     try:
         with open('./newpatient/entryfile17.txt', 'r') as namefile:
             line17=namefile.readline()
@@ -554,7 +569,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient18
+    # Patient 18
     try:
         with open('./newpatient/entryfile18.txt', 'r') as namefile:
             line18=namefile.readline()
@@ -582,7 +597,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient19
+    # Patient 19
     try:
         with open('./newpatient/entryfile19.txt', 'r') as namefile:
             line19=namefile.readline()
@@ -610,7 +625,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient20
+    # Patient 20
     try:
         with open('./newpatient/entryfile20.txt', 'r') as namefile:
             line20=namefile.readline()
@@ -638,7 +653,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient21
+    # Patient 21
     try:
         with open('./newpatient/entryfile21.txt', 'r') as namefile:
             line21=namefile.readline()
@@ -666,7 +681,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient22
+    # Patient 22
     try:
         with open('./newpatient/entryfile22.txt', 'r') as namefile:
             line22=namefile.readline()
@@ -694,7 +709,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient23
+    # Patient 23
     try:
         with open('./newpatient/entryfile23.txt', 'r') as namefile:
             line23=namefile.readline()
@@ -722,7 +737,7 @@ def callBox(self):
     else:
         ("Error unknow")
 
-    #patient24
+    # Patient 24
     try:
         with open('./newpatient/entryfile24.txt', 'r') as namefile:
             line24=namefile.readline()

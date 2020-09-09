@@ -10,3 +10,40 @@ Réserve : Oui
 Date of end : 09/12/2020
 Signature : cku
 
+Date : 09/09/2020
+Heure : 18:21:52
+Name : Edward Snowden
+
+Date of introduction : 24 June 2020
+Nom du ttt : Distra
+Dosage du ttt : 300 mg
+Réserve : Oui
+1ère intention : Oui
+Date of end : 10/09/2020
+Signature : cku
+
+Date : 09/09/2020
+Heure : 20:53:39
+Name : Edward Snowden
+
+Date of introduction : 06 July 2002
+Nom du ttt : Clopin
+Dosage du ttt : 10 mg
+Réserve : Oui
+1ère intention : Oui
+
+Date of end : 09/09/2020
+Signature : cku
+
+Date : 09/09/2020
+Heure : 20:53:39
+Name : Edward Snowden
+
+Date of introduction : 06 July 2002
+Nom du ttt : Clopin
+Dosage du ttt : 10 mg
+Réserve : Oui
+1ère intention : Oui
+Date of end : 09/09/2020
+Signature : cku
+

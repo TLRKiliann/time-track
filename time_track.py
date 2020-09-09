@@ -11,10 +11,6 @@ import os
 import itertools
 import subprocess
 from boxapp import callBox
-from agendapp import displayDates
-from tttapp import treatmentFunc
-from tttapp import reserveFunc
-from backapp import *
 
 
 # ScrollBar in class and preparing for main application !
@@ -1148,15 +1144,16 @@ class Application(Frame):
             activebackground='dark turquoise')
         self.button3_window = self.can.create_window(790, 550, anchor=CENTER,
             window=self.button3)
-        self.pack()
-        
+        """
         # To check onto agenda if an appointment exist.
         self.agendaDateSearch()
         # To check onto ttt if a ttt is stopped today.
         self.tttDataSearch()
         # To check onto ttt if a reserve (ttt) is stopped today.
         self.reserveDataSearch()
-
+        """
+        self.pack()
+        
     # Method to reconfigure scrollbar every time.
     def onFrameConfigure(self, event):
         '''Reset the scroll region to encompass the inner frame'''
@@ -1228,16 +1225,18 @@ class Application(Frame):
     # call func in boxapp.py
     def showsynopsis(self):
         callBox(self)
-
+    
+    """
     def agendaDateSearch(self):
-        displayDates(self)
-
+        displayDateBox(self)
+    
     def tttDataSearch(self):
-        treatmentFunc(self)
+        displayTreatBox(self)
 
     def reserveDataSearch(self):
-        reserveFunc(self)
-
+        displayReserveFunc(self)
+    """
+    
     def frameInfo(self):
         """
         Info for button on first page
@@ -1270,13 +1269,15 @@ class Application(Frame):
             bg='grey22', font=('Times', 14),
             text="Path : Menu Bar --> Menu --> MapApp").pack(padx=10, pady=10)
 
-    # For new entry
+    # New entry
     def callPatient1(self):
         subprocess.call('./newpatient/entrypytientfile.py')
 
+    # Delete entry
     def delEverPat(self):
         subprocess.call('./deletepatient/deleverything.py')
 
+    # Add new entry after delete one of them
     def addPatientAfter(self):
         messagebox.showwarning("Warning", "Don't forget to enter allergy too ! ;)")
         subprocess.call('./newpatient/torecord.py')
@@ -2018,7 +2019,7 @@ class Application(Frame):
     def newsTextBox(self):
         self.can.textBox = Text(app, text = "")
 
-    # Backup
+    # To acces files into Backup folder
     def allFilesBackup(self):
         backupFuncPatient(self)
 

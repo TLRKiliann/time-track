@@ -21,6 +21,28 @@
             "Midi": "2",
             "Soir": "1",
             "Nuit": ""
+        },
+        {
+            "Date": "09/09/2020",
+            "Date of introduction": "03 February 2002",
+            "Date of end": "10/09/2020",
+            "Treatment": "Petinimid",
+            "Dosage": "100 mg",
+            "Matin": "1",
+            "Midi": "1",
+            "Soir": "",
+            "Nuit": ""
+        },
+        {
+            "Date": "09/09/2020",
+            "Date of introduction": "02 April 2002",
+            "Date of end": "09/09/2020",
+            "Treatment": "Cipralex ",
+            "Dosage": "10 mg",
+            "Matin": "1",
+            "Midi": "",
+            "Soir": "1",
+            "Nuit": ""
         }
     ]
 }
