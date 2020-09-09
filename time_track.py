@@ -1144,14 +1144,6 @@ class Application(Frame):
             activebackground='dark turquoise')
         self.button3_window = self.can.create_window(790, 550, anchor=CENTER,
             window=self.button3)
-        """
-        # To check onto agenda if an appointment exist.
-        self.agendaDateSearch()
-        # To check onto ttt if a ttt is stopped today.
-        self.tttDataSearch()
-        # To check onto ttt if a reserve (ttt) is stopped today.
-        self.reserveDataSearch()
-        """
         self.pack()
         
     # Method to reconfigure scrollbar every time.
@@ -1222,21 +1214,10 @@ class Application(Frame):
             font=('Times', 13), fill='aquamarine')
         self.can.configure(scrollregion=self.can.bbox(ALL))
 
-    # call func in boxapp.py
+    # call func in boxapp.py (3 files in One !)
     def showsynopsis(self):
         callBox(self)
-    
-    """
-    def agendaDateSearch(self):
-        displayDateBox(self)
-    
-    def tttDataSearch(self):
-        displayTreatBox(self)
 
-    def reserveDataSearch(self):
-        displayReserveFunc(self)
-    """
-    
     def frameInfo(self):
         """
         Info for button on first page
