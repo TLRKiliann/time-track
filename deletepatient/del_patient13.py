@@ -48,7 +48,7 @@ def delFuncFile13():
             os.remove('./ttt/doc_ttt13/intro_res.txt')
             print("+ File intro_res.txt deleted")
     except FileNotFoundError as filefunc5:
-        print("+ File intro_res.txt does not exist", fileres5)
+        print("+ File intro_res.txt does not exist", filefunc5)
 
     try:
         if os.path.getsize('./calBmi/doc_BMI13/file_bmi.json'):
@@ -130,7 +130,7 @@ def delFuncFile13():
     try:
         if os.path.getsize('./newpatient/entryfile13.txt'):
             with open('./newpatient/entryfile13.txt', 'w') as file:
-                file.write("-------")
+                file.write("-------------")
             print("+ File entryfile13.txt deleted")
     except FileNotFoundError as filefunc28:
         print("+ File entryfile13.txt does not exist", filefunc28)

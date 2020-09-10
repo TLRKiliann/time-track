@@ -130,7 +130,7 @@ def delFuncFile18():
     try:
         if os.path.getsize('./newpatient/entryfile18.txt'):
             with open('./newpatient/entryfile18.txt', 'w') as file:
-                file.write("-------")
+                file.write("------------------")
             print("+ File entryfile18.txt deleted")
     except FileNotFoundError as filefunc28:
         print("+ File entryfile18.txt does not exist", filefunc28)

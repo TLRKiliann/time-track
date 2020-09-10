@@ -242,7 +242,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile20()          
+                        delFuncFile21()          
                     else:
                         print("End of test delete files.")
 
@@ -252,7 +252,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile20()          
+                        delFuncFile22()          
                     else:
                         print("End of test delete files.")
 
@@ -262,7 +262,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile20()          
+                        delFuncFile23()          
                     else:
                         print("End of test delete files.")
 
@@ -272,7 +272,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile20()          
+                        delFuncFile24()          
                     else:
                         print("End of test delete files.")
     else:           

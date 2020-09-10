@@ -29,7 +29,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         mot8 = "--------"
         mot9 = "---------"
         mot10 = "----------"
-        """
         mot11 = "-----------"
         mot12 = "------------"
         mot13 = "-------------"
@@ -40,8 +39,10 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         mot18 = "------------------"
         mot19 = "-------------------"
         mot20 = "--------------------"
-        """
-
+        mot21 = "---------------------"
+        mot22 = "----------------------"
+        mot23 = "-----------------------"
+        mot24 = "------------------------"
         Nompatient = entree.get()
         Birthvalue = Birth_entree.get()
         print(Nompatient)
@@ -126,14 +127,14 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot10 in line:
                         searchLine10(Nompatient, Birthvalue)
-        """
+
         if os.path.getsize('./newpatient/entryfile11.txt'):
             with open('./newpatient/entryfile11.txt', 'r') as file:
                 lines = file.readlines()
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot7 in line:
-                        searchLine7(Nompatient, Birthvalue)
+                        searchLine11(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile12.txt'):
             with open('./newpatient/entryfile12.txt', 'r') as file:
@@ -141,7 +142,7 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot5 in line:
-                        searchLine5(Nompatient, Birthvalue)
+                        searchLine12(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile13.txt'):
             with open('./newpatient/entryfile13.txt', 'r') as file:
@@ -149,7 +150,7 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot6 in line:
-                        searchLine6(Nompatient, Birthvalue)
+                        searchLine13(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile14.txt'):
             with open('./newpatient/entryfile14.txt', 'r') as file:
@@ -157,7 +158,7 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot7 in line:
-                        searchLine7(Nompatient, Birthvalue)
+                        searchLine14(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile15.txt'):
             with open('./newpatient/entryfile15.txt', 'r') as file:
@@ -165,7 +166,7 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot7 in line:
-                        searchLine7(Nompatient, Birthvalue)
+                        searchLine15(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile16.txt'):
             with open('./newpatient/entryfile16.txt', 'r') as file:
@@ -173,7 +174,7 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot5 in line:
-                        searchLine5(Nompatient, Birthvalue)
+                        searchLine16(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile17.txt'):
             with open('./newpatient/entryfile17.txt', 'r') as file:
@@ -181,7 +182,7 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot6 in line:
-                        searchLine6(Nompatient, Birthvalue)
+                        searchLine17(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile18.txt'):
             with open('./newpatient/entryfile18.txt', 'r') as file:
@@ -189,7 +190,7 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot7 in line:
-                        searchLine7(Nompatient, Birthvalue)
+                        searchLine18(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile19.txt'):
             with open('./newpatient/entryfile19.txt', 'r') as file:
@@ -197,7 +198,7 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot6 in line:
-                        searchLine6(Nompatient, Birthvalue)
+                        searchLine19(Nompatient, Birthvalue)
 
         if os.path.getsize('./newpatient/entryfile20.txt'):
             with open('./newpatient/entryfile20.txt', 'r') as file:
@@ -205,10 +206,43 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if mot7 in line:
-                        searchLine7(Nompatient, Birthvalue)
+                        searchLine20(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile21.txt'):
+            with open('./newpatient/entryfile21.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine21(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile22.txt'):
+            with open('./newpatient/entryfile22.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine22(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile23.txt'):
+            with open('./newpatient/entryfile23.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine23(Nompatient, Birthvalue)
+
+        if os.path.getsize('./newpatient/entryfile24.txt'):
+            with open('./newpatient/entryfile24.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine24(Nompatient, Birthvalue)
+
         else:
             print("There is no file to edit as entryfile")
-        """
+
         gui.destroy()
 
 def searchLine1(Nompatient, Birthvalue):
@@ -260,6 +294,82 @@ def searchLine10(Nompatient, Birthvalue):
     with open('./newpatient/entryfile10.txt', 'w') as file:
         file.write(Nompatient + '\n')
         file.write(Birthvalue + '\n')
+
+def searchLine11(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile11.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine12(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile12.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine13(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile13.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine14(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile14.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine15(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile15.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine16(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile16.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine17(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile17.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine10(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile10.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine18(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile18.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine19(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile19.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine20(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile20.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine21(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile21.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine22(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile22.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine23(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile23.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
+def searchLine24(Nompatient, Birthvalue):
+    with open('./newpatient/entryfile24.txt', 'w') as file:
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+
 
 labelName = Label(gui)
 labelName = Label(text='Enter Name and Surname : ', font="Times 14 bold", 
