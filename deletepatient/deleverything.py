@@ -25,6 +25,10 @@ from del_patient17 import *
 from del_patient18 import *
 from del_patient19 import *
 from del_patient20 import *
+from del_patient21 import *
+from del_patient22 import *
+from del_patient23 import *
+from del_patient24 import *
 
 
 def get(Nompatient, entree):
@@ -224,6 +228,46 @@ def get(Nompatient, entree):
 
         if os.path.getsize('./newpatient/entryfile20.txt'):
             with open('./newpatient/entryfile20.txt', 'r') as file20:
+                lines = file20.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile20()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile21.txt'):
+            with open('./newpatient/entryfile21.txt', 'r') as file20:
+                lines = file20.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile20()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile22.txt'):
+            with open('./newpatient/entryfile22.txt', 'r') as file20:
+                lines = file20.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile20()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile23.txt'):
+            with open('./newpatient/entryfile23.txt', 'r') as file20:
+                lines = file20.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if Nompatient in line:
+                        delFuncFile20()          
+                    else:
+                        print("End of test delete files.")
+
+        if os.path.getsize('./newpatient/entryfile24.txt'):
+            with open('./newpatient/entryfile24.txt', 'r') as file20:
                 lines = file20.readlines()
                 for i in range(0, len(lines)):
                     line = lines[i]
