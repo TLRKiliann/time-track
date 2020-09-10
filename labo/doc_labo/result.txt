@@ -8,12 +8,3 @@ Patient name : Edward Snowden
 pH : 5 Leuco : +2 Nit : + Pro : +1 Glu : neg Ket : neg Ery : neg Hb : +3
 ***************************************************************************
 
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-Date : 08/09/2020
-Patient name : Edward Snowden
-# ASAT value and treatment : (add what the patient needs)
-# ALAT value and treatment : (add what the patient needs)
-# Gamma-GT value and treatment : (add what the patient needs)
-# Alkaline phosphatase value and treatment : (add what the patient needs)
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
