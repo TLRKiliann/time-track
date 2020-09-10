@@ -98,7 +98,7 @@ ttk.Label(app, text="pH :",
   
 n = tk.StringVar()
 phchoosen = ttk.Combobox(app, width=5, textvariable = n)
-  
+
 # Adding ttk.combobox drop down list
 phchoosen['values'] = (' 5', 
     ' 6', 

@@ -3,14 +3,10 @@
 
 
 from tkinter import *
-#from tkinter import messagebox
 import os
 import time
 import datetime
 from backapp import *
-#from agendapp import *
-#from tttapp import *
-
 from agendapp import dispAgBox
 from tttapp import dispTttBox
 from resapp import dispResFunc

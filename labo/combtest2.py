@@ -29,8 +29,8 @@ def recordOption():
     print("+ Nom du patient : ", textName.get())
     with open('./14besoins/doc_suivi2/main_14b.txt', 'a+') as file:
         with open('./labo/doc_labo/result2.txt', 'a+') as file_2:
-            file.write("\n***************************************************************************")
-            file.write("\nDate : ")
+            file.write("\n***************************************************************************\n")
+            file.write("Date : ")
             file.write(time.strftime("%d/%m/%Y") + '\n')
             file.write("Patient name : ")
             file.write(textName.get())
@@ -51,8 +51,8 @@ def recordOption():
             file.write(" Hb :")
             file.write(Hbchoosen.get())
             file.write("\n***************************************************************************\n")
-            file_2.write("\n\n***************************************************************************")
-            file_2.write("\nDate : ")
+            file_2.write("\n\n***************************************************************************\n")
+            file_2.write("Date : ")
             file_2.write(time.strftime("%d/%m/%Y") + '\n')
             file_2.write("Patient name : ")
             file_2.write(textName.get())
