@@ -1,24 +1,13 @@
 {
     "data": [
         {
-            "Date": "08/09/2020",
-            "Date of introduction": "04 February 2002",
-            "Date of end": "04/10/2020",
-            "Treatment": "clopixol",
-            "Dosage": "10 mg",
-            "Matin": "2",
-            "Midi": "",
-            "Soir": "2",
-            "Nuit": ""
-        },
-        {
-            "Date": "09/09/2020",
-            "Date of introduction": "02 April 2002",
-            "Date of end": "09/09/2020",
-            "Treatment": "Cipralex ",
-            "Dosage": "10 mg",
+            "Date": "10/09/2020",
+            "Date of introduction": "05 April 2003",
+            "Date of end": "10/09/2020",
+            "Treatment": "Solian",
+            "Dosage": "400 mg",
             "Matin": "1",
-            "Midi": "",
+            "Midi": "1",
             "Soir": "1",
             "Nuit": ""
         }

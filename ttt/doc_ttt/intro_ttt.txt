@@ -68,3 +68,17 @@ Soir : 1
 Date of end : 09/09/2020
 Signature : eck
 
+Date : 10/09/2020
+Heure : 17:18:58
+Name : Edward Snowden
+
+Date of introduction : 05 April 2003
+Nom du ttt : Solian
+Dosage du ttt : 400 mg
+Matin : 1
+Midi : 1
+Soir : 1
+
+Date of end : 10/09/2020
+Signature : cku
+
