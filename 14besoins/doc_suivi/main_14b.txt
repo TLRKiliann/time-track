@@ -28,3 +28,23 @@ Patient name : Edward Snowden
 Date : 10/09/2020
 Patient name : Edward Snowden
 # Na value and treatment : (add what the patient needs)
+
+----------------------------------------------------------
+Date : 10/09/2020
+Patient name : Edward Snowden
+# Na value and treatment : (add what the patient needs)
+---------------------------------------------------------
+
+***************************************************************************
+Date : 10/09/2020
+Patient name : Edward Snowden
+pH : 5 Leuco : 0 Nit : + Pro : +3 Glu : +4 Ket : neg Ery : neg Hb : +4
+***************************************************************************
+
+----------------------------------------------------------
+Date : 10/09/2020
+Patient name : Edward Snowden
+# Sediment. velocity value and treatment : (add what the patient needs)
+# C-react. protein value and treatment : (add what the patient needs)
+# Albumina value and treatment : (add what the patient needs)
+---------------------------------------------------------
