@@ -68,374 +68,472 @@ def recordTofile():
 def recordOption():
     print("Date : " + time.strftime("%d/%m/%Y"))
     print("Nom du patient : ", entrytext.get())
-    with open('./labo/doc_labo/result21.txt', 'a+') as file:
-        file.write("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-        file.write("\nDate : ")
-        file.write(time.strftime("%d/%m/%Y")+ '\n')
-        file.write("Nom du patient : ")
-        file.write(entrytext.get())
+    with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+        with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+            file.write("\n----------------------------------------------------------\n")
+            file.write("Date : ")
+            file.write(time.strftime("%d/%m/%Y")+ '\n')
+            file.write("Nom du patient : ")
+            file.write(entrytext.get())
+            file2.write("\n----------------------------------------------------------\n")
+            file2.write("Date : ")
+            file2.write(time.strftime("%d/%m/%Y")+ '\n')
+            file2.write("Nom du patient : ")
+            file2.write(entrytext.get())
 
     print(CheckVar1.get())
     if CheckVar1.get()==1:
         print("+ Na value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Na value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Na value and treatment : (add what the patient needs)\n")
+                file2.write("# Na value and treatment : (add what the patient needs)\n")
     else:
         print("+ Na value ok, nothing to do")
         
     print(CheckVar2.get())
     if CheckVar2.get()==1:
         print("+ K value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# K value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# K value and treatment : (add what the patient needs)\n")
+                file2.write("# K value and treatment : (add what the patient needs)\n")
     else:
         print("+ K value ok, nothing to do")
 
     print(CheckVar3.get())
     if CheckVar3.get()==1:
         print("+ Ca value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Ca value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Ca value and treatment : (add what the patient needs)\n")
+                file2.write("# Ca value and treatment : (add what the patient needs)\n")
     else:
         print("+ Ca value ok, nothing to do")
         
     print(CheckVar4.get())
     if CheckVar4.get()==1:
         print("+ Mg value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Mg value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Mg value and treatment : (add what the patient needs)\n")
+                file2.write("# Mg value and treatment : (add what the patient needs)\n")
     else:
         print("+ Mg value ok, nothing to do")
 
     print(CheckVar5.get())
     if CheckVar5.get()==1:
         print("+ Cl value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Cl value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Cl value and treatment : (add what the patient needs)\n")
+                file2.write("# Cl value and treatment : (add what the patient needs)\n")
     else:
         print("+ Cl value ok, nothing to do")
 
     print(CheckVar6.get())
     if CheckVar6.get()==1:
         print("+ Phosphates value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Phosphates value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Phosphates value and treatment : (add what the patient needs)\n")
+                file2.write("# Phosphates value and treatment : (add what the patient needs)\n")
     else:
         print("+ Phosphates value ok, nothing to do")
 
     print(CheckVar7.get())
     if CheckVar7.get()==1:
         print("+ Bicarbonates value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Bicarbonates value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Bicarbonates value and treatment : (add what the patient needs)\n")
+                file2.write("# Bicarbonates value and treatment : (add what the patient needs)\n")
     else:
         print("+ Bicarbonates value ok, nothing to do")
 
     print(CheckVar8.get())
     if CheckVar8.get()==1:
         print("+ Cardiac workup value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Cardiac workup value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Cardiac workup value and treatment : (add what the patient needs)\n")
+                file2.write("# Cardiac workup value and treatment : (add what the patient needs)\n")
     else:
         print("+ Cardiac workup value ok, nothing to do")
 
     print(CheckVar9.get())
     if CheckVar9.get()==1:
         print("+ CK-MB value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# CK-MB value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# CK-MB value and treatment : (add what the patient needs)\n")
+                file2.write("# CK-MB value and treatment : (add what the patient needs)\n")
     else:
         print("+ CK-MB value ok, nothing to do")
 
     print(CheckVar10.get())
     if CheckVar10.get()==1:
         print("+ Troponin value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Troponin value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Troponin value and treatment : (add what the patient needs)\n")
+                file2.write("# Troponin value and treatment : (add what the patient needs)\n")
     else:
         print("+ Troponin value ok, nothing to do")
 
     print(CheckVar12.get())
     if CheckVar12.get()==1:
         print("+ Cholesterol total value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Cholesterol total value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Cholesterol total value and treatment : (add what the patient needs)\n")
+                file2.write("# Cholesterol total value and treatment : (add what the patient needs)\n")
     else:
         print("+ Cholesterol total value ok, nothing to do")
 
     print(CheckVar13.get())
     if CheckVar13.get()==1:
         print("+ HDL value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# HDL value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# HDL value and treatment : (add what the patient needs)\n")
+                file2.write("# HDL value and treatment : (add what the patient needs)\n")
     else:
         print("+ HDL value ok, nothing to do")
 
     print(CheckVar14.get())
     if CheckVar14.get()==1:
         print("+ LDL value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# LDL value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# LDL value and treatment : (add what the patient needs)\n")
+                file2.write("# LDL value and treatment : (add what the patient needs)\n")
     else:
         print("+ LDL value ok, nothing to do")
 
     print(CheckVar15.get())
     if CheckVar15.get()==1:
         print("+ Triglycerides value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Triglycerides value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Triglycerides value and treatment : (add what the patient needs)\n")
+                file2.write("# Triglycerides value and treatment : (add what the patient needs)\n")
     else:
         print("+ Triglycerides value ok, nothing to do")
 
     print(CheckVar16.get())
     if CheckVar16.get()==1:
         print("+ ASAT value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# ASAT value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# ASAT value and treatment : (add what the patient needs)\n")
+                file2.write("# ASAT value and treatment : (add what the patient needs)\n")
     else:
         print("+ ASAT value ok, nothing to do")
 
     print(CheckVar17.get())
     if CheckVar17.get()==1:
         print("+ ALAT value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# ALAT value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# ALAT value and treatment : (add what the patient needs)\n")
+                file2.write("# ALAT value and treatment : (add what the patient needs)\n")
     else:
         print("+ ALAT value ok, nothing to do")
 
     print(CheckVar18.get())
     if CheckVar18.get()==1:
         print("+ Gamma-GT value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Gamma-GT value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Gamma-GT value and treatment : (add what the patient needs)\n")
+                file2.write("# Gamma-GT value and treatment : (add what the patient needs)\n")
     else:
         print("+ Gamma-GT value ok, nothing to do")
 
     print(CheckVar19.get())
     if CheckVar19.get()==1:
         print("+ Alkaline phosphatase value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Alkaline phosphatase value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Alkaline phosphatase value and treatment : (add what the patient needs)\n")
+                file2.write("# Alkaline phosphatase value and treatment : (add what the patient needs)\n")
     else:
         print("+ Alkaline phosphatase value ok, nothing to do")
 
     print(CheckVar20.get())
     if CheckVar20.get()==1:
         print("+ Bilirubin direct value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Bilirubin direct value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Bilirubin direct value and treatment : (add what the patient needs)\n")
+                file2.write("# Bilirubin direct value and treatment : (add what the patient needs)\n")
     else:
         print("+ Bilirubin direct value ok, nothing to do")
 
     print(CheckVar21.get())
     if CheckVar21.get()==1:
         print("+ Bilirubin indirect value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Bilirubin indirect value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Bilirubin indirect value and treatment : (add what the patient needs)\n")
+                file2.write("# Bilirubin indirect value and treatment : (add what the patient needs)\n")
     else:
         print("+ Bilirubin indirect value ok, nothing to do")
 
     print(CheckVar22.get())
     if CheckVar22.get()==1:
         print("+ LDH value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# LDH value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# LDH value and treatment : (add what the patient needs)\n")
+                file2.write("# LDH value and treatment : (add what the patient needs)\n")
     else:
         print("+ LDH value ok, nothing to do")
 
     print(CheckVar23.get())
     if CheckVar23.get()==1:
         print("+ Uric acid value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Uric acid value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Uric acid value and treatment : (add what the patient needs)\n")
+                file2.write("# Uric acid value and treatment : (add what the patient needs)\n")
     else:
         print("+ Uric acid value ok, nothing to do")
 
     print(CheckVar24.get())
     if CheckVar24.get()==1:
         print("+ TP value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# TP value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# TP value and treatment : (add what the patient needs)\n")
+                file2.write("# TP value and treatment : (add what the patient needs)\n")
     else:
         print("+ TP value ok, nothing to do")
 
     print(CheckVar25.get())
     if CheckVar25.get()==1:
         print("+ INR value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# INR value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# INR value and treatment : (add what the patient needs)\n")
+                file2.write("# INR value and treatment : (add what the patient needs)\n")
     else:
         print("+ INR value ok, nothing to do")
 
     print(CheckVar26.get())
     if CheckVar26.get()==1:
         print("+ Fasting glucose value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Fasting glucose value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Fasting glucose value and treatment : (add what the patient needs)\n")
+                file2.write("# Fasting glucose value and treatment : (add what the patient needs)\n")
     else:
         print("+ Fasting glucose value ok, nothing to do")
 
     print(CheckVar27.get())
     if CheckVar27.get()==1:
         print("+ Postprandial glucose value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Postprandial glucose value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Postprandial glucose value and treatment : (add what the patient needs)\n")
+                file2.write("# Postprandial glucose value and treatment : (add what the patient needs)\n")
     else:
         print("+ Postprandial glucose value ok, nothing to do")
 
     print(CheckVar28.get())
     if CheckVar28.get()==1:
         print("+ HbA1c value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# HbA1c value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# HbA1c value and treatment : (add what the patient needs)\n")
+                file2.write("# HbA1c value and treatment : (add what the patient needs)\n")
     else:
         print("+ HbA1c value ok, nothing to do")
 
     print(CheckVar29.get())
     if CheckVar29.get()==1:
         print("+ Iron value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Iron value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Iron value and treatment : (add what the patient needs)\n")
+                file2.write("# Iron value and treatment : (add what the patient needs)\n")
     else:
         print("+ Iron value ok, nothing to do")
 
     print(CheckVar30.get())
     if CheckVar30.get()==1:
         print("+ Ferritine value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Ferritine value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Ferritine value and treatment : (add what the patient needs)\n")
+                file2.write("# Ferritine value and treatment : (add what the patient needs)\n")
     else:
         print("+ Ferritine value ok, nothing to do")
 
     print(CheckVar31.get())
     if CheckVar31.get()==1:
         print("+ Vitamin B12 value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Vitamin B12 value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Vitamin B12 value and treatment : (add what the patient needs)\n")
+                file2.write("# Vitamin B12 value and treatment : (add what the patient needs)\n")
     else:
         print("+ Vitamin B12 value ok, nothing to do")
 
     print(CheckVar32.get())
     if CheckVar32.get()==1:
         print("+ Folates (B9) value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Folates (B9) value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Folates (B9) value and treatment : (add what the patient needs)\n")
+                file2.write("# Folates (B9) value and treatment : (add what the patient needs)\n")
     else:
         print("+ Folates (B9) value ok, nothing to do")
 
     print(CheckVar33.get())
     if CheckVar33.get()==1:
         print("+ Urea value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Urea value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Urea value and treatment : (add what the patient needs)\n")
+                file2.write("# Urea value and treatment : (add what the patient needs)\n")
     else:
         print("+ Urea value ok, nothing to do")
 
     print(CheckVar34.get())
     if CheckVar34.get()==1:
         print("+ Creat value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Creat value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Creat value and treatment : (add what the patient needs)\n")
+                file2.write("# Creat value and treatment : (add what the patient needs)\n")
     else:
         print("+ Creat value ok, nothing to do")
 
     print(CheckVar35.get())
     if CheckVar35.get()==1:
         print("+ Sediment. velocity value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Sediment. velocity value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Sediment. velocity value and treatment : (add what the patient needs)\n")
+                file2.write("# Sediment. velocity value and treatment : (add what the patient needs)\n")
     else:
         print("+ Sediment. velocity value ok, nothing to do")
 
     print(CheckVar36.get())
     if CheckVar36.get()==1:
         print("+ C-react. protein value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# C-react. protein value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# C-react. protein value and treatment : (add what the patient needs)\n")
+                file2.write("# C-react. protein value and treatment : (add what the patient needs)\n")
     else:
         print("+ C-react. protein value ok, nothing to do")
 
     print(CheckVar37.get())
     if CheckVar37.get()==1:
         print("+ Albumina value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Albumina value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Albumina value and treatment : (add what the patient needs)\n")
+                file2.write("# Albumina value and treatment : (add what the patient needs)\n")
     else:
         print("+ Albumina value ok, nothing to do")
 
     print(CheckVar38.get())
     if CheckVar38.get()==1:
         print("+ Cortisol value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Cortisol value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Cortisol value and treatment : (add what the patient needs)\n")
+                file2.write("# Cortisol value and treatment : (add what the patient needs)\n")
     else:
         print("+ Cortisol value ok, nothing to do")
 
     print(CheckVar39.get())
     if CheckVar39.get()==1:
         print("+ ACTH value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# ACTH value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# ACTH value and treatment : (add what the patient needs)\n")
+                file2.write("# ACTH value and treatment : (add what the patient needs)\n")
     else:
         print("+ ACTH value ok, nothing to do")
 
     print(CheckVar40.get())
     if CheckVar40.get()==1:
         print("+ TSH value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# TSH value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# TSH value and treatment : (add what the patient needs)\n")
+                file2.write("# TSH value and treatment : (add what the patient needs)\n")
     else:
         print("+ TSH value ok, nothing to do")
 
     print(CheckVar41.get())
     if CheckVar41.get()==1:
         print("+ free T4 value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# free T4 value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# free T4 value and treatment : (add what the patient needs)\n")
+                file2.write("# free T4 value and treatment : (add what the patient needs)\n")
     else:
         print("+ free T4 value ok, nothing to do")
 
     print(CheckVar42.get())
     if CheckVar42.get()==1:
         print("+ free free T3 value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# free free T3 value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# free free T3 value and treatment : (add what the patient needs)\n")
+                file2.write("# free free T3 value and treatment : (add what the patient needs)\n")
     else:
         print("+ free free T3 value ok, nothing to do")
 
     print(CheckVar43.get())
     if CheckVar43.get()==1:
         print("+ free total T3 value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# free total T3 value and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# free total T3 value and treatment : (add what the patient needs)\n")
+                file2.write("# free total T3 value and treatment : (add what the patient needs)\n")
     else:
         print("+ free total T3 value ok, nothing to do")
 
     print(CheckVar44.get())
     if CheckVar44.get()==1:
         print("+ Stix (strip) was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Stix (strip) and treatment will be... : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Stix (strip) and treatment will be... : (add what the patient needs)\n")
+                file2.write("# Stix (strip) and treatment will be... : (add what the patient needs)\n")
     else:
         print("+ Stix (strip) ok, nothing to do")
 
     print(CheckVar45.get())
     if CheckVar45.get()==1:
         print("+ Uricult done value was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Uricult done and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
     else:
         print("+ Uricult ok, nothing to do")
 
     print(CheckVar46.get())
     if CheckVar46.get()==1:
         print("+ Coproculture was checked !")
-        with open('./labo/doc_labo/result21.txt', 'a+') as file:
-            file.write("# Coproculture and treatment : (add what the patient needs)\n")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result21.txt', 'a+') as file2:
+                file.write("# Coproculture and treatment : (add what the patient needs)\n")
+                file2.write("# Coproculture and treatment : (add what the patient needs)\n")
     else:
         print("+ Coproculture ok, nothing to do")
-    with open('./labo/doc_labo/result.txt', 'a+') as endfile:
-        endfile.write("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+        with open('./14besoins/doc_suivi21/main_14b.txt', 'a+') as endfile:
+            with open('./labo/doc_labo/result21.txt', 'a+') as endfile2:
+                endfile.write("\n----------------------------------------------------------\n")
+                endfile2.write("\n----------------------------------------------------------\n")
  
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
