@@ -530,10 +530,10 @@ def recordOption():
                 file2.write("# Coproculture and treatment : (add what the patient needs)\n")
     else:
         print("+ Coproculture ok, nothing to do")
-    with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as endfile:
-        with open('./labo/doc_labo/result.txt', 'a+') as endfile2:
-            endfile.write("---------------------------------------------------------\n")
-            endfile2.write("---------------------------------------------------------\n")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as endfile:
+            with open('./labo/doc_labo/result.txt', 'a+') as endfile2:
+                endfile.write("---------------------------------------------------------\n")
+                endfile2.write("---------------------------------------------------------\n")
  
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
