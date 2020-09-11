@@ -454,7 +454,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins1)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text2, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text2, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins2)
         #meSoins.add_separator()
@@ -462,7 +462,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins3)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text4, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text4, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins4)
         #meSoins.add_separator()
@@ -470,7 +470,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins5)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text6, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text6, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins6)
         #meSoins.add_separator()
@@ -478,7 +478,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins7)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text8, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text8, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins8)
         #meSoins.add_separator()
@@ -486,7 +486,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins9)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text10, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text10, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins10)
         #meSoins.add_separator()
@@ -494,7 +494,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins11)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text12, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text12, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins12)
         #meSoins.add_separator()
@@ -502,7 +502,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins13)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text14, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text14, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins14)
         #meSoins.add_separator()
@@ -510,7 +510,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins15)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text16, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text16, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins16)
         #meSoins.add_separator()
@@ -518,7 +518,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins17)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text18, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text18, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins18)
         #meSoins.add_separator()
@@ -526,7 +526,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins19)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text20, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text20, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins20)
         #meSoins.add_separator()
@@ -534,7 +534,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins21)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text22, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text22, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins22)
         #meSoins.add_separator()
@@ -542,7 +542,7 @@ class MenuBar(Frame):
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins23)
         #meSoins.add_separator()
-        meSoins.add_command(label=new_text24, font=('Times 12'), background='cyan',
+        meSoins.add_command(label=new_text24, font=('Times 12'), background='black',
             activebackground='cyan', foreground='cyan', activeforeground='black',
             command=boss.suiviSoins24)
         # Integration of health and care menu
@@ -910,42 +910,42 @@ class MenuBar(Frame):
         me2.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup)
-        me1.add_cascade(label=new_text, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me2)
         me3=Menu(me1)
         me3.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup2)
-        me1.add_cascade(label=new_text2, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text2, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me3)
         me4=Menu(me1)
         me4.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup3)
-        me1.add_cascade(label=new_text3, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text3, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me4)
         me5=Menu(me1)
         me5.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup4)
-        me1.add_cascade(label=new_text4, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text4, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me5)
         me6=Menu(me1)
         me6.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup5)
-        me1.add_cascade(label=new_text5, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text5, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me6)
         me7=Menu(me1)
         me7.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup6)
-        me1.add_cascade(label=new_text6, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text6, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me7)
         me8=Menu(me1)
@@ -953,7 +953,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup7)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text7, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text7, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me8)
         me9=Menu(me1)
@@ -961,7 +961,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup8)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text8, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text8, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me9)
         me10=Menu(me1)
@@ -969,7 +969,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup9)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text9, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text9, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me10)
         me11=Menu(me1)
@@ -977,7 +977,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup10)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text10, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text10, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me11)
         me12=Menu(me1)
@@ -985,7 +985,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup11)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text11, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text11, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me12)
         me13=Menu(me1)
@@ -993,7 +993,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup12)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text12, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text12, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me13)
         me14=Menu(me1)
@@ -1001,7 +1001,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup13)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text13, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text13, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me14)
         me15=Menu(me1)
@@ -1009,7 +1009,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup14)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text14, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text14, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me15)
         me16=Menu(me1)
@@ -1017,7 +1017,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup15)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text15, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text15, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me16)
         me17=Menu(me1)
@@ -1025,7 +1025,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup16)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text16, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text16, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me17)
         me18=Menu(me1)
@@ -1033,7 +1033,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup17)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text17, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text17, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me18)
         me19=Menu(me1)
@@ -1041,7 +1041,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup18)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text18, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text18, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me19)
         me20=Menu(me1)
@@ -1049,7 +1049,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup19)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text19, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text19, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me20)
         me21=Menu(me1)
@@ -1057,7 +1057,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup20)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text20, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text20, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me21)
         me22=Menu(me1)
@@ -1065,7 +1065,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup21)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text21, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text21, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me22)
         me23=Menu(me1)
@@ -1073,7 +1073,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup22)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text22, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text22, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me23)
         me24=Menu(me1)
@@ -1081,7 +1081,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup23)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text23, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text23, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me24)
         me25=Menu(me1)
@@ -1089,7 +1089,7 @@ class MenuBar(Frame):
             background='black', activebackground='cyan',
             foreground='cyan', activeforeground='black', command=boss.allFilesBackup24)
         # Integration of sub-menu
-        me1.add_cascade(label=new_text24, underline=0, font=('Times 10'),
+        me1.add_cascade(label=new_text24, underline=0, font=('Times 12'),
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me25)
         # Integration of Graph menu
