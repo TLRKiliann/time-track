@@ -282,24 +282,24 @@ def get(Nompatient, entree):
 
 gui=Tk()
 gui.title("Enter new patient")
-gui.configure(bg='gray17')
+gui.configure(bg='cyan')
 gui.geometry('300x200')
 
 labelName = Label(gui)
 labelName = Label(text='Enter Name to delete : ', font="Times 14 bold", 
-    fg='cyan', bg='gray17')
+    fg='cyan', bg='cyan')
 labelName.pack(pady=10)
 
 Nompatient=StringVar()
 Nompatient.set('Firstname + Lastname')
-entree = Entry(gui, textvariable=Nompatient, highlightbackground='gray', bd=4)
+entree = Entry(gui, textvariable=Nompatient, highlightbackground='light sky blue', bd=4)
 entree.pack()
 
-bouton1 = Button(gui, text="Delete", width=8, fg='yellow', bg='navy',
+bouton1 = Button(gui, text="Delete", width=8, fg='yellow', bg='RoyalBlue3',
     command = lambda: get(Nompatient, entree))
 bouton1.pack(side=LEFT, padx=30, pady=10)
 
-buttQuit=Button(gui, text="Quit", width=8, fg='cyan', bg='navy', 
+buttQuit=Button(gui, text="Quit", width=8, fg='cyan', bg='RoyalBlue3', 
     command=quit)
 buttQuit.pack(side=LEFT, padx=15, pady=10)
 
