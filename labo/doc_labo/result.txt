@@ -29,3 +29,9 @@ Patient name : Edward Snowden
 # C-react. protein value and treatment : (add what the patient needs)
 # Albumina value and treatment : (add what the patient needs)
 ---------------------------------------------------------
+
+---------------------------------------------------------
+Date : 11/09/2020
+Patient name : Edward Snowden
+# Cl value and treatment : (add what the patient needs)
+---------------------------------------------------------
