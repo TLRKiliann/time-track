@@ -734,3 +734,4 @@ def callBox(self):
         print("List 24 got less than 6 lines", inforange24)
     else:
         ("Error unknow")
+    self.can.configure(scrollregion=self.can.bbox(ALL))

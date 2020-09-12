@@ -49,35 +49,36 @@ def callResident(self):
 
     # To display time dynamically à revoir (new_file.py)
     # To introduce a new pytient
-    self.x3, self.y3 = 200, 150 # here
+    self.x3, self.y3 = 200, 160 # here
     self.b3=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
         bg='RoyalBlue3', fg='white', activebackground='dark turquoise',
         text="New Entry", command=self.callPatient1)
     self.fb3=self.can.create_window(self.x3, self.y3, window=self.b3)
 
     # To add one patient and files
-    self.x4, self.y4 = 400, 150
+    self.x4, self.y4 = 400, 160
     self.b4=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
         bg='RoyalBlue3', fg='cyan', activebackground='dark turquoise', 
         text="Add patient", command=self.addPatientAfter)
     self.fb4=self.can.create_window(self.x4, self.y4, window=self.b4)
     
     # To refresh canvas + menu bar
-    self.x5, self.y5 = 600, 150
-    self.b5=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
-        bg='RoyalBlue3', fg='SpringGreen2', activebackground='yellow', activeforeground='blue',
+    self.x5, self.y5 = 600, 160
+    self.b5=Button(self.can, width=10, font=16, bd=3, bg='RoyalBlue3',
+        fg='SpringGreen2', highlightbackground='blue',
+        activebackground='yellow', activeforeground='blue',
         text="Refresh", command=self.upDateAll)
     self.fb5=self.can.create_window(self.x5, self.y5, window=self.b5)
 
     # To delete one patient and all files
-    self.x6, self.y6 = 800, 150
+    self.x6, self.y6 = 800, 160
     self.b6=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
-        bg='RoyalBlue3', fg='coral', activebackground='black', activeforeground='red',
-        text="Delete patient", command=self.delEverPat)
+        bg='RoyalBlue3', fg='coral', activebackground='black', 
+        activeforeground='red', text="Delete patient", command=self.delEverPat)
     self.fb6=self.can.create_window(self.x6, self.y6, window=self.b6)
 
     # To go to resident page
-    self.x6, self.y6 = 1000, 150
+    self.x6, self.y6 = 1000, 160
     self.b6=Button(self.can, width=10, font=16, bd=3, bg='RoyalBlue3', fg='white',
         highlightbackground='blue', activebackground='dark turquoise',
         activeforeground='white', text="TextBox page", command=self.showSynopsis)
