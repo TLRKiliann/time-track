@@ -9,7 +9,7 @@ import time
 
 fen = Tk()
 fen.title("14 needs")
-fen.configure(bg='cyan')
+fen.configure(bg='RoyalBlue4')
 
 def recordTofile():
     MsgBox = messagebox.askyesno('Record', 'Results will be saved into Care and Monitoring, ok ?')
@@ -147,7 +147,7 @@ def confRec():
 
 labeltite=Label(fen, text='14 NEEDS', 
     font="Times 16 bold", width=10,
-    height=3, bg='cyan', fg='navy')
+    height=3, bg='RoyalBlue4', fg='cyan')
 labeltite.grid(sticky='w', row=0, column=0, padx=20)
 
 with open('./newpatient/entryfile10.txt', 'r') as filename:
