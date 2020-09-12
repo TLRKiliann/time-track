@@ -12,6 +12,7 @@ import itertools
 import subprocess
 from boxapp import callBox
 from patcaps import callResident
+from backapp import *
 
 
 # ScrollBar in class and preparing for main application !
@@ -69,10 +70,14 @@ class MenuBar(Frame):
             background='black',activebackground='aquamarine',
             foreground='aquamarine', activeforeground='black',
             command=boss.upDateAll)
-        me1.add_command(label="Synopsis", underline=0, font=("Times 14 bold"),
+        me1.add_command(label="Textbox", underline=0, font=("Times 14 bold"),
             background='black', activebackground='cyan',
             foreground='aquamarine', activeforeground='black',
-            command=boss.showsynopsis)
+            command=boss.showSynopsis)
+        me1.add_command(label="Residents", underline=0, font=("Times 14 bold"),
+            background='black', activebackground='cyan',
+            foreground='aquamarine', activeforeground='black',
+            command=boss.showPatients)
         me1.add_command(label="Psychotabs", underline=0, font=("Times 14 bold"),
             background='black',  activebackground='cyan',
             foreground='aquamarine', activeforeground='black',
@@ -1132,14 +1137,14 @@ class Application(Frame):
         self.button1_window = self.can.create_window(75, 30, anchor=CENTER,
             window=self.button1)
         # Synopsis button
-        self.button2 = Button(self, text="Go to app", font=('Times 18 bold'),
-            bg='RoyalBlue3', fg='cyan', command = self.showsynopsis)
+        self.button2 = Button(self, text="TEXTBOX", font=('Times 18 bold'),
+            bg='RoyalBlue3', fg='cyan', command = self.showSynopsis)
         self.button2.configure(width=15, bd=3, highlightbackground='blue',
             activebackground='dark turquoise')
         self.button2_window = self.can.create_window(450, 550, anchor=CENTER,
             window=self.button2)
         # Psychotabs button
-        self.button3 = Button(self, text="PSYCHOTABS", font=('Times 18 bold'),
+        self.button3 = Button(self, text="RESIDENTS", font=('Times 18 bold'),
             bg='RoyalBlue3', fg='cyan', command = self.showPatients)
         self.button3.configure(width=15, bd=3, highlightbackground='blue', 
             activebackground='dark turquoise')
@@ -1211,7 +1216,7 @@ class Application(Frame):
         self.can.configure(scrollregion=self.can.bbox(ALL))
 
     # call func in boxapp.py (3 files in One !)
-    def showsynopsis(self):
+    def showSynopsis(self):
         callBox(self)
 
     def showPatients(self):

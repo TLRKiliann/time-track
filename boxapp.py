@@ -16,10 +16,10 @@ from patcaps import callResident
 def callBox(self):
     self.can.delete(ALL)
     self.can.configure(background='cyan')
-    #self.photo=PhotoImage(file='./syno_gif/fondcolor2.png')
-    #self.item=self.can.create_image(625, 400, image=self.photo)
-    self.can.create_text(625, 30, anchor=CENTER, text="TIME-TRACK",
-        font=('Times New Roman', 20), fill='blue')
+    self.photo=PhotoImage(file='./syno_gif/title_tt.png')
+    self.item=self.can.create_image(625, 85, image=self.photo)
+    #self.can.create_text(625, 30, anchor=CENTER, text="TIME-TRACK",
+    #    font=('Times New Roman', 20), fill='blue')
 
     # To backup (main file)
     self.updateFiletxt()
@@ -47,45 +47,16 @@ def callBox(self):
     self.Date_write2=self.can.create_window(self.x2, self.y2,
         window=self.Date_write2)
 
-    # To display time dynamically à revoir (new_file.py)
-    # To introduce a new pytient
-    self.x3, self.y3 = 135, 110 # here
-    self.b3=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
-        bg='RoyalBlue3', fg='white', activebackground='dark turquoise',
-        text="New Entry", command=self.callPatient1)
-    self.fb3=self.can.create_window(self.x3, self.y3, window=self.b3)
-
-    # To add one patient and files
-    self.x4, self.y4 = 135, 170
-    self.b4=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
-        bg='RoyalBlue3', fg='cyan', activebackground='dark turquoise', 
-        text="Add patient", command=self.addPatientAfter)
-    self.fb4=self.can.create_window(self.x4, self.y4, window=self.b4)
-    
-    # To refresh canvas + menu bar
-    self.x5, self.y5 = 135, 230
-    self.b5=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
-        bg='RoyalBlue3', fg='SpringGreen2', activebackground='yellow', activeforeground='blue',
-        text="Refresh", command=self.upDateAll)
-    self.fb5=self.can.create_window(self.x5, self.y5, window=self.b5)
-
-    # To delete one patient and all files
-    self.x6, self.y6 = 135, 290
-    self.b6=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
-        bg='RoyalBlue3', fg='coral', activebackground='black', activeforeground='red',
-        text="Delete patient", command=self.delEverPat)
-    self.fb6=self.can.create_window(self.x6, self.y6, window=self.b6)
-
     # To go to resident page
-    self.x6, self.y6 = 135, 350
+    self.x6, self.y6 = 115, 75
     self.b6=Button(self.can, width=10, font=16, bd=3, bg='RoyalBlue3', fg='white', 
         highlightbackground='blue', activebackground='dark turquoise',
         activeforeground='white', text="Resident page", command=self.showPatients)
     self.fb6=self.can.create_window(self.x6, self.y6, window=self.b6)
 
     # TextBox
-    self.x63, self.y63 = 625, 200
-    self.t63=Text(self.can, height=15, width=70, font=18, relief=SUNKEN)
+    self.x63, self.y63 = 625, 450
+    self.t63=Text(self.can, height=30, width=80, font=18, relief=SUNKEN)
     self.t63.insert(INSERT, "Previously (yesterday last infos) : ")
     self.t63.insert(END, (datetime.datetime.now() + datetime.timedelta(days=-1)).strftime('%d/%m/%Y'))
         #time.strftime("%d/%m/%Y at %H:%M:%S :\n"))
