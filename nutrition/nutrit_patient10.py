@@ -27,7 +27,7 @@ def recordOption():
     print(CheckVar1.get())
     if CheckVar1.get()==1:
         print("Gluten intolerance")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Gluten intolerance\n")
             file.write(str('----------------\n'))
     else:
@@ -36,7 +36,7 @@ def recordOption():
     print(CheckVar2.get())
     if CheckVar2.get()==1:
         print("Lactose intolerance")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Lactose intolerance\n")
             file.write(str('----------------\n'))
     else:
@@ -45,7 +45,7 @@ def recordOption():
     print(CheckVar3.get())
     if CheckVar3.get()==1:
         print("Saccharose intolerance")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Saccharose intolerance\n")
             file.write(str('----------------\n'))
     else:
@@ -54,7 +54,7 @@ def recordOption():
     print(CheckVar4.get())
     if CheckVar4.get()==1:
         print("Fructose intolerance")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Fructose intolerance\n")
             file.write(str('----------------\n'))
     else:
@@ -63,7 +63,7 @@ def recordOption():
     print(CheckVar5.get())
     if CheckVar5.get()==1:
         print("Eggs")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Eggs\n")
             file.write(str('----------------\n'))
     else:
@@ -72,7 +72,7 @@ def recordOption():
     print(CheckVar6.get())
     if CheckVar6.get()==1:
         print("Fish")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Fish\n")
             file.write(str('----------------\n'))
     else:
@@ -82,7 +82,7 @@ def recordOption():
     print(CheckVar7.get())
     if CheckVar7.get()==1:
         print("Shellfish")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Shellfish\n")
             file.write(str('----------------\n'))
     else:
@@ -91,7 +91,7 @@ def recordOption():
     print(CheckVar8.get())
     if CheckVar8.get()==1:
         print("Molluscs")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Molluscs\n")
             file.write(str('----------------\n'))
     else:
@@ -100,7 +100,7 @@ def recordOption():
     print(CheckVar9.get())
     if CheckVar9.get()==1:
         print("Groundnut")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Groundnut\n")
             file.write(str('----------------\n'))
     else:
@@ -109,7 +109,7 @@ def recordOption():
     print(CheckVar10.get())
     if CheckVar10.get()==1:
         print("Oleaginous")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Oleaginous\n")
             file.write(str('----------------\n'))
     else:
@@ -118,7 +118,7 @@ def recordOption():
     print(CheckVar11.get())
     if CheckVar11.get()==1:
         print("Sesame")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Sesame\n")
             file.write(str('----------------\n'))
     else:
@@ -127,7 +127,7 @@ def recordOption():
     print(CheckVar12.get())
     if CheckVar12.get()==1:
         print("Soya")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Soya\n")
             file.write(str('----------------\n'))
     else:
@@ -136,7 +136,7 @@ def recordOption():
     print(CheckVar13.get())
     if CheckVar13.get()==1:
         print("Cereals")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Cereals\n")
             file.write(str('----------------\n'))
     else:
@@ -145,7 +145,7 @@ def recordOption():
     print(CheckVar14.get())
     if CheckVar14.get()==1:
         print("Latex")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Latex\n")
             file.write(str('----------------\n'))
     else:
@@ -154,7 +154,7 @@ def recordOption():
     print(CheckVar15.get())
     if CheckVar15.get()==1:
         print("Rosacea")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Rosacea\n")
             file.write(str('----------------\n'))
     else:
@@ -163,7 +163,7 @@ def recordOption():
     print(CheckVar16.get())
     if CheckVar16.get()==1:
         print("Umbellifers")
-        with open('./allergy/allergyfile2.txt', 'a+') as file:
+        with open('./allergy/allergyfile10.txt', 'a+') as file:
             file.write("Umbellifers\n")
             file.write(str('----------------\n'))
     else:
@@ -177,7 +177,7 @@ Intolabel = Label(gui, text="Intolerances : ", font="Times 18 bold",
 Intolabel.grid(sticky='w', row=0, column=0, pady=10)
 
 # To read name in Entry widget
-with open('./newpatient/entryfile2.txt', 'r') as filename:
+with open('./newpatient/entryfile10.txt', 'r') as filename:
     line1=filename.readline()
 
 text_entry = StringVar()
