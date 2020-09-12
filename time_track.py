@@ -11,6 +11,7 @@ import os
 import itertools
 import subprocess
 from boxapp import callBox
+from patcaps import callResident
 
 
 # ScrollBar in class and preparing for main application !
@@ -1139,7 +1140,7 @@ class Application(Frame):
             window=self.button2)
         # Psychotabs button
         self.button3 = Button(self, text="PSYCHOTABS", font=('Times 18 bold'),
-            bg='RoyalBlue3', fg='cyan', command = self.launchPsycho)
+            bg='RoyalBlue3', fg='cyan', command = self.showPatients)
         self.button3.configure(width=15, bd=3, highlightbackground='blue', 
             activebackground='dark turquoise')
         self.button3_window = self.can.create_window(790, 550, anchor=CENTER,
@@ -1191,9 +1192,10 @@ class Application(Frame):
             "After it, Care and Monitoring is available only if you have entered one "
             "or more needs of patient.\n"
             "1 ---> Name\n"
-            "2 ---> Allergy\n"
-            "3 ---> 14 Needs\n"
-            "4 ---> Care and monitoring\n\n"
+            "2 ---> Refresh (button)\n"
+            "3 ---> Allergy\n"
+            "4 ---> 14 Needs\n"
+            "5 ---> Care and monitoring\n\n"
 
             "Care and monitoring retrieve all data from :\n"
             "----------------------------------------------------\n"
@@ -1211,6 +1213,9 @@ class Application(Frame):
     # call func in boxapp.py (3 files in One !)
     def showsynopsis(self):
         callBox(self)
+
+    def showPatients(self):
+        callResident(self)
 
     def frameInfo(self):
         """
