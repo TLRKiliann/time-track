@@ -72,11 +72,11 @@ def delFuncFile1():
         print("+ File bmi.txt does not exist", filefunc16)
 
     try:
-        if os.path.getsize('./diag/doc_diag/diagrecap.txt'):
-            os.remove('./diag/doc_diag/diagrecap.txt')
-            print("+ File diagrecap.txt deleted")
+        if os.path.getsize('./diag/doc_diag/diagrecap1.txt'):
+            os.remove('./diag/doc_diag/diagrecap1.txt')
+            print("+ File diagrecap1.txt deleted")
     except FileNotFoundError as filefunc18:
-        print("+ File diagrecap.txt does not exist", filefunc18)
+        print("+ File diagrecap1.txt does not exist", filefunc18)
 
     try:
         if os.path.getsize('./labo/doc_labo/result.txt'):
@@ -121,17 +121,24 @@ def delFuncFile1():
         print("+ File patient_calendar.txt does not exist", filefunc26)
 
     try:
+        if os.path.getsize('./vmed/doc_vmed/resultvmed.txt'):
+            os.remove('./vmed/doc_vmed/resultvmed.txt')
+            print("+ File resultvmed.txt.txt deleted")
+    except FileNotFoundError as filefunc27:
+        print("+ File resultvmed.txt.txt does not exist", filefunc27)
+
+    try:
         if os.path.getsize('./allergy/allergyfile.txt'):
             os.remove('./allergy/allergyfile.txt')
             print("+ File allergyfile.txt deleted")
-    except FileNotFoundError as filefunc27:
-        print("+ File allergyfile.txt does not exist", filefunc27)
+    except FileNotFoundError as filefunc28:
+        print("+ File allergyfile.txt does not exist", filefunc28)
 
     try:
         if os.path.getsize('./newpatient/entryfile.txt'):
             with open('./newpatient/entryfile.txt', 'w') as file:
                 file.write("-")
             print("+ File entryfile.txt reborn")
-    except FileNotFoundError as filefunc28:
-        print("+ File entryfile.txt does not exist", filefunc28)
+    except FileNotFoundError as filefunc29:
+        print("+ File entryfile.txt does not exist", filefunc29)
     print("!!! All files have been deleted !!!")

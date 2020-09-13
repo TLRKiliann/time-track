@@ -33,7 +33,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + line1)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + line1)
                 else:
                     pass
     except FileNotFoundError as infofile1:
@@ -59,7 +59,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text2)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text2)
                 else:
                     pass
     except FileNotFoundError as infofile2:
@@ -85,7 +85,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text3)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text3)
                 else:
                     pass
     except FileNotFoundError as infofile3:
@@ -111,7 +111,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text4)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text4)
                 else:
                     pass
     except FileNotFoundError as infofile4:
@@ -137,7 +137,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text5)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text5)
                 else:
                     pass
     except FileNotFoundError as infofile5:
@@ -163,7 +163,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text6)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text6)
                 else:
                     pass
     except FileNotFoundError as infofile6:
@@ -189,7 +189,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text7)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text7)
                 else:
                     pass
     except FileNotFoundError as infofile7:
@@ -215,7 +215,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text8)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text8)
                 else:
                     pass
     except FileNotFoundError as infofile8:
@@ -241,7 +241,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text9)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text9)
                 else:
                     pass
     except FileNotFoundError as infofile9:
@@ -267,7 +267,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text10)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text10)
                 else:
                     pass
     except FileNotFoundError as infofile10:
@@ -293,7 +293,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text11)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text11)
                 else:
                     pass
     except FileNotFoundError as infofile11:
@@ -319,7 +319,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text12)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text12)
                 else:
                     pass
     except FileNotFoundError as infofile12:
@@ -345,7 +345,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text13)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text13)
                 else:
                     pass
     except FileNotFoundError as infofile13:
@@ -371,7 +371,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text14)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text14)
                 else:
                     pass
     except FileNotFoundError as infofile14:
@@ -397,7 +397,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text15)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text15)
                 else:
                     pass
     except FileNotFoundError as infofile15:
@@ -423,7 +423,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text16)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text16)
                 else:
                     pass
     except FileNotFoundError as infofile16:
@@ -449,7 +449,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text17)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text17)
                 else:
                     pass
     except FileNotFoundError as infofile17:
@@ -475,7 +475,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text18)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text18)
                 else:
                     pass
     except FileNotFoundError as infofile18:
@@ -501,7 +501,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text19)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text19)
                 else:
                     pass
     except FileNotFoundError as infofile19:
@@ -527,7 +527,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text20)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text20)
                 else:
                     pass
     except FileNotFoundError as infofile20:
@@ -553,7 +553,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text21)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text21)
                 else:
                     pass
     except FileNotFoundError as infofile21:
@@ -579,7 +579,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text22)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text22)
                 else:
                     pass
     except FileNotFoundError as infofile22:
@@ -605,7 +605,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text23)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text23)
                 else:
                     pass
     except FileNotFoundError as infofile23:
@@ -631,7 +631,7 @@ def dispAgBox():
                     print(lines[i+1])
                     print(lines[i+2])
                     MSB2 = messagebox.showwarning('Info',
-                        'Look at AGENDA, there is an appointment for : ' + new_text24)
+                        'Look at AGENDA, there is an appointment tomorrow for : ' + new_text24)
                 else:
                     pass
     except FileNotFoundError as infofile24:

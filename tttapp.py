@@ -29,7 +29,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + line_text1)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + line_text1)
                     else:
                         pass
     except FileNotFoundError as info_ttt:
@@ -56,7 +56,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text2)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text2)
     except FileNotFoundError as info_ttt2:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 2)", info_ttt2)
     else:
@@ -81,7 +81,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text3)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text3)
     except FileNotFoundError as info_ttt3:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 3)", info_ttt3)
     else:
@@ -106,7 +106,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text4)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text4)
     except FileNotFoundError as info_ttt4:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 4)", info_ttt4)
     else:
@@ -131,7 +131,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text5)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text5)
     except FileNotFoundError as info_ttt5:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 5)", info_ttt5)
     else:
@@ -156,7 +156,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text6)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text6)
     except FileNotFoundError as info_ttt6:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 6)", info_ttt6)
     else:
@@ -181,7 +181,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text7)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text7)
     except FileNotFoundError as info_ttt7:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 7)", info_ttt7)
     else:
@@ -206,7 +206,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text8)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text8)
     except FileNotFoundError as info_ttt8:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 8)", info_ttt8)
     else:
@@ -231,7 +231,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text9)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text9)
     except FileNotFoundError as info_ttt9:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 9)", info_ttt9)
     else:
@@ -256,7 +256,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text10)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text10)
     except FileNotFoundError as info_ttt10:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 10)", info_ttt10)
     else:
@@ -281,7 +281,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text11)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text11)
     except FileNotFoundError as info_ttt11:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 11)", info_ttt11)
     else:
@@ -306,7 +306,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text12)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text12)
     except FileNotFoundError as info_ttt12:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 12)", info_ttt12)
     else:
@@ -331,7 +331,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text13)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text13)
     except FileNotFoundError as info_ttt13:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 13)", info_ttt13)
     else:
@@ -356,7 +356,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text14)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text14)
     except FileNotFoundError as info_ttt14:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 14)", info_ttt14)
     else:
@@ -381,7 +381,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text15)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text15)
     except FileNotFoundError as info_ttt15:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 15)", info_ttt15)
     else:
@@ -406,7 +406,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text16)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text16)
     except FileNotFoundError as info_ttt16:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 16)", info_ttt16)
     else:
@@ -431,7 +431,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text17)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text17)
     except FileNotFoundError as info_ttt17:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 17)", info_ttt17)
     else:
@@ -456,7 +456,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text18)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text18)
     except FileNotFoundError as info_ttt18:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 18)", info_ttt18)
     else:
@@ -481,7 +481,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text19)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text19)
     except FileNotFoundError as info_ttt19:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 19)", info_ttt19)
     else:
@@ -506,7 +506,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text20)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text20)
     except FileNotFoundError as info_ttt20:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 20)", info_ttt20)
     else:
@@ -531,7 +531,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text21)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text21)
     except FileNotFoundError as info_ttt21:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 21)", info_ttt21)
     else:
@@ -556,7 +556,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text22)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text22)
     except FileNotFoundError as info_ttt22:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 22)", info_ttt22)
     else:
@@ -581,7 +581,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text23)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text23)
     except FileNotFoundError as info_ttt23:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 23)", info_ttt23)
     else:
@@ -606,7 +606,7 @@ def dispTttBox():
                     if word_treattostop in line:
                         print(line)
                         MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop today for : ' + ttt_text24)
+                            'Look at TTT, there is a ttt to stop tomorrow for : ' + ttt_text24)
     except FileNotFoundError as info_ttt24:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 24)", info_ttt24)
     else:
