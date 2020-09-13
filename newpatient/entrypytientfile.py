@@ -14,8 +14,8 @@ gui.configure(bg='cyan')
 
 def get(Nompatient, entree, Birthvalue, Birth_entree):
     """
-    Test at first time and
-    after when file was earased
+    Entry at first time
+    a patient with entry button
     """
     MsgBox = messagebox.askyesno('Save data', 'Do you want to save ?')
     if MsgBox == 1:

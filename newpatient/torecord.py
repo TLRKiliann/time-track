@@ -14,11 +14,12 @@ gui.configure(bg='cyan')
 
 def get(Nompatient, entree, Birthvalue, Birth_entree):
     """
-    Test at first time and
-    after when file was earased
+    Add a patient with
+    add button
     """
     MsgBox = messagebox.askyesno('Save data', 'Do you want to save ?')
     if MsgBox == 1:
+
         mot = "-"
         mot2 = "--"
         mot3 = "---"
@@ -43,283 +44,207 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         mot22 = "----------------------"
         mot23 = "-----------------------"
         mot24 = "------------------------"
+
         Nompatient = entree.get()
         Birthvalue = Birth_entree.get()
         print(Nompatient)
         print(Birthvalue)
 
-        putain_list = [mot, mot2, mot3, mot4, mot5, 
-        mot6, mot7, mot8, mot9, mot10, mot11,mot12, 
-        mot13, mot14, mot15, mot16, mot17, mot18, 
-        mot19, mot20, mot21, mot22, mot23, mot24]
-        
-        for i in putain_list:
-            if os.path.getsize('./newpatient/entryfile.txt'):
-                with open('./newpatient/entryfile.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot in line:
-                            searchLine1(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
 
-            elif os.path.getsize('./newpatient/entryfile2.txt'):
-                with open('./newpatient/entryfile2.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot2 in line:
-                            searchLine2(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile.txt'):
+            with open('./newpatient/entryfile.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot in line:
+                        searchLine1(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile3.txt'):
-                with open('./newpatient/entryfile3.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot3 in line:
-                            searchLine3(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile2.txt'):
+            with open('./newpatient/entryfile2.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot2 in line:
+                        searchLine2(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile4.txt'):
-                with open('./newpatient/entryfile4.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot4 in line:
-                            searchLine4(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile3.txt'):
+            with open('./newpatient/entryfile3.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot3 in line:
+                        searchLine3(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile5.txt'):
-                with open('./newpatient/entryfile5.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot5 in line:
-                            searchLine5(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile4.txt'):
+            with open('./newpatient/entryfile4.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot4 in line:
+                        searchLine4(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile6.txt'):
-                with open('./newpatient/entryfile6.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot6 in line:
-                            searchLine6(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile5.txt'):
+            with open('./newpatient/entryfile5.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot5 in line:
+                        searchLine5(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile7.txt'):
-                with open('./newpatient/entryfile7.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine7(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile6.txt'):
+            with open('./newpatient/entryfile6.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot6 in line:
+                        searchLine6(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile8.txt'):
-                with open('./newpatient/entryfile8.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot8 in line:
-                            searchLine8(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile7.txt'):
+            with open('./newpatient/entryfile7.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot7 in line:
+                        searchLine7(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile9.txt'):
-                with open('./newpatient/entryfile9.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot9 in line:
-                            searchLine9(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile8.txt'):
+            with open('./newpatient/entryfile8.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot8 in line:
+                        searchLine8(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile10.txt'):
-                with open('./newpatient/entryfile10.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot10 in line:
-                            searchLine10(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile9.txt'):
+            with open('./newpatient/entryfile9.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot9 in line:
+                        searchLine9(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile11.txt'):
-                with open('./newpatient/entryfile11.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine11(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile10.txt'):
+            with open('./newpatient/entryfile10.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot10 in line:
+                        searchLine10(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile12.txt'):
-                with open('./newpatient/entryfile12.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot5 in line:
-                            searchLine12(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile11.txt'):
+            with open('./newpatient/entryfile11.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot11 in line:
+                        searchLine11(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile13.txt'):
-                with open('./newpatient/entryfile13.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot6 in line:
-                            searchLine13(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile12.txt'):
+            with open('./newpatient/entryfile12.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot12 in line:
+                        searchLine12(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile14.txt'):
-                with open('./newpatient/entryfile14.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine14(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile13.txt'):
+            with open('./newpatient/entryfile13.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot13 in line:
+                        searchLine13(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile15.txt'):
-                with open('./newpatient/entryfile15.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine15(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile14.txt'):
+            with open('./newpatient/entryfile14.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot14 in line:
+                        searchLine14(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile16.txt'):
-                with open('./newpatient/entryfile16.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot5 in line:
-                            searchLine16(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile15.txt'):
+            with open('./newpatient/entryfile15.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot15 in line:
+                        searchLine15(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile17.txt'):
-                with open('./newpatient/entryfile17.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot6 in line:
-                            searchLine17(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile16.txt'):
+            with open('./newpatient/entryfile16.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot16 in line:
+                        searchLine16(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile18.txt'):
-                with open('./newpatient/entryfile18.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine18(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile17.txt'):
+            with open('./newpatient/entryfile17.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot17 in line:
+                        searchLine17(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile19.txt'):
-                with open('./newpatient/entryfile19.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot6 in line:
-                            searchLine19(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile18.txt'):
+            with open('./newpatient/entryfile18.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot18 in line:
+                        searchLine18(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile20.txt'):
-                with open('./newpatient/entryfile20.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine20(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile19.txt'):
+            with open('./newpatient/entryfile19.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot19 in line:
+                        searchLine19(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile21.txt'):
-                with open('./newpatient/entryfile21.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine21(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile20.txt'):
+            with open('./newpatient/entryfile20.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot20 in line:
+                        searchLine20(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile22.txt'):
-                with open('./newpatient/entryfile22.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine22(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile21.txt'):
+            with open('./newpatient/entryfile21.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot21 in line:
+                        searchLine21(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile23.txt'):
-                with open('./newpatient/entryfile23.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine23(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile22.txt'):
+            with open('./newpatient/entryfile22.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot22 in line:
+                        searchLine22(Nompatient, Birthvalue)
 
-            elif os.path.getsize('./newpatient/entryfile24.txt'):
-                with open('./newpatient/entryfile24.txt', 'r') as file:
-                    lines = file.readlines()
-                    for i in range(0, len(lines)):
-                        line = lines[i]
-                        if mot7 in line:
-                            searchLine24(Nompatient, Birthvalue)
-                            break
-                        else:
-                            pass
+        if os.path.getsize('./newpatient/entryfile23.txt'):
+            with open('./newpatient/entryfile23.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot23 in line:
+                        searchLine23(Nompatient, Birthvalue)
 
-            else:
-                print("There is no file to edit as entryfile")
+
+        if os.path.getsize('./newpatient/entryfile24.txt'):
+            with open('./newpatient/entryfile24.txt', 'r') as file:
+                lines = file.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if mot24 in line:
+                        searchLine24(Nompatient, Birthvalue)
+        else:
+            print("There is no file to edit as entryfile")
 
         gui.destroy()
 
