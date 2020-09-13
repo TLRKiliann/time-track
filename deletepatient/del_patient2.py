@@ -8,6 +8,9 @@ import subprocess
 
 
 def delFuncFile2():
+	"""
+	vmed + diag to modify
+	"""
     try:
         if os.path.getsize('./14besoins/doc_suivi2/main_14b.txt'):
             os.remove('./14besoins/doc_suivi2/main_14b.txt')
@@ -121,18 +124,25 @@ def delFuncFile2():
         print("+ File patient_calendar.txt does not exist", filefunc16)
 
     try:
+        if os.path.getsize('./vmed/doc_vmed2/resultvmed.txt'):
+            os.remove('./vmed/doc_vmed2/resultvmed.txt')
+            print("+ File resultvmed.txt.txt deleted")
+    except FileNotFoundError as filefunc17:
+        print("+ File resultvmed.txt.txt does not exist", filefunc17)
+
+    try:
         if os.path.getsize('./allergy/allergyfile2.txt'):
             os.remove('./allergy/allergyfile2.txt')
             print("+ File allergyfile2.txt deleted")
-    except FileNotFoundError as filefunc17:
-        print("+ File allergyfile2.txt does not exist", filefunc17)
+    except FileNotFoundError as filefunc18:
+        print("+ File allergyfile2.txt does not exist", filefunc18)
 
     try:
         if os.path.getsize('./newpatient/entryfile2.txt'):
             with open('./newpatient/entryfile2.txt', 'w') as file:
                 file.write("--")
             print("+ File entryfile2.txt reborn")
-    except FileNotFoundError as filefunc18:
-        print("+ File entryfile2.txt not exist", filefunc18)
+    except FileNotFoundError as filefunc19:
+        print("+ File entryfile2.txt not exist", filefunc19)
     print("!!! All files have been deleted !!!")
     
