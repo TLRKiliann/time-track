@@ -235,7 +235,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     if mot23 in line:
                         searchLine23(Nompatient, Birthvalue)
 
-
         if os.path.getsize('./newpatient/entryfile24.txt'):
             with open('./newpatient/entryfile24.txt', 'r') as file:
                 lines = file.readlines()

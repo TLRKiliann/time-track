@@ -72,11 +72,11 @@ def delFuncFile10():
         print("+ File bmi10.txt does not exist", filefunc9)
 
     try:
-        if os.path.getsize('./diag/doc_diag10/diagrecap.txt'):
-            os.remove('./diag/doc_diag10/diagrecap.txt')
-            print("+ File diagrecap.txt deleted")
+        if os.path.getsize('./diag/doc_diag10/diagrecap10.txt'):
+            os.remove('./diag/doc_diag10/diagrecap10.txt')
+            print("+ File diagrecap10.txt deleted")
     except FileNotFoundError as filefunc10:
-        print("+ File diagrecap.txt does not exist", filefunc10)
+        print("+ File diagrecap10.txt does not exist", filefunc10)
 
     try:
         if os.path.getsize('./labo/doc_labo/result10.txt'):
@@ -121,18 +121,25 @@ def delFuncFile10():
         print("+ File patient_calendar.txt does not exist", filefunc16)
 
     try:
+        if os.path.getsize('./vmed/doc_vmed10/resultvmed.txt'):
+            os.remove('./vmed/doc_vmed10/resultvmed.txt')
+            print("+ File resultvmed.txt deleted")
+    except FileNotFoundError as filefunc17:
+        print("+ File resultvmed.txt does not exist", filefunc17)
+
+    try:
         if os.path.getsize('./allergy/allergyfile10.txt'):
             os.remove('./allergy/allergyfile10.txt')
             print("+ File allergyfile10.txt deleted")
-    except FileNotFoundError as filefunc17:
-        print("+ File allergyfile10.txt does not exist", filefunc17)
+    except FileNotFoundError as filefunc18:
+        print("+ File allergyfile10.txt does not exist", filefunc18)
 
     try:
         if os.path.getsize('./newpatient/entryfile10.txt'):
             with open('./newpatient/entryfile10.txt', 'w') as file:
                 file.write("----------")
             print("+ File entryfile10.txt deleted")
-    except FileNotFoundError as filefunc18:
-        print("+ File entryfile10.txt does not exist", filefunc18)
+    except FileNotFoundError as filefunc19:
+        print("+ File entryfile10.txt does not exist", filefunc19)
     print("!!! All files have been deleted !!!")
     

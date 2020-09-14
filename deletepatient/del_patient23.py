@@ -72,11 +72,11 @@ def delFuncFile23():
         print("+ File bmi23.txt does not exist", filefunc9)
 
     try:
-        if os.path.getsize('./diag/doc_diag23/diagrecap.txt'):
-            os.remove('./diag/doc_diag23/diagrecap.txt')
-            print("+ File diagrecap.txt deleted")
+        if os.path.getsize('./diag/doc_diag23/diagrecap23.txt'):
+            os.remove('./diag/doc_diag23/diagrecap23.txt')
+            print("+ File diagrecap23.txt deleted")
     except FileNotFoundError as filefunc10:
-        print("+ File diagrecap.txt does not exist", filefunc10)
+        print("+ File diagrecap23.txt does not exist", filefunc10)
 
     try:
         if os.path.getsize('./labo/doc_labo/result23.txt'):
@@ -121,18 +121,25 @@ def delFuncFile23():
         print("+ File patient_calendar.txt does not exist", filefunc16)
 
     try:
+        if os.path.getsize('./vmed/doc_vmed23/resultvmed.txt'):
+            os.remove('./vmed/doc_vmed23/resultvmed.txt')
+            print("+ File resultvmed.txt deleted")
+    except FileNotFoundError as filefunc17:
+        print("+ File resultvmed.txt does not exist", filefunc17)
+
+    try:
         if os.path.getsize('./allergy/allergyfile23.txt'):
             os.remove('./allergy/allergyfile23.txt')
             print("+ File allergyfile23.txt deleted")
-    except FileNotFoundError as filefunc17:
-        print("+ File allergyfile23.txt does not exist", filefunc17)
+    except FileNotFoundError as filefunc18:
+        print("+ File allergyfile23.txt does not exist", filefunc18)
 
     try:
         if os.path.getsize('./newpatient/entryfile23.txt'):
             with open('./newpatient/entryfile23.txt', 'w') as file:
                 file.write("-----------------------")
             print("+ File entryfile23.txt deleted")
-    except FileNotFoundError as filefunc28:
-        print("+ File entryfile23.txt does not exist", filefunc28)
+    except FileNotFoundError as filefunc19:
+        print("+ File entryfile23.txt does not exist", filefunc19)
     print("!!! All files have been deleted !!!")
     

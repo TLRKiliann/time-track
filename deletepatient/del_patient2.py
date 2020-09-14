@@ -75,8 +75,8 @@ def delFuncFile2():
         print("+ File bmi2.txt does not exist", filefunc9)
 
     try:
-        if os.path.getsize('./diag/doc_diag2/diagrecap.txt'):
-            os.remove('./diag/doc_diag2/diagrecap.txt')
+        if os.path.getsize('./diag/doc_diag2/diagrecap2.txt'):
+            os.remove('./diag/doc_diag2/diagrecap2.txt')
             print("+ File diagrecap.txt deleted")
     except FileNotFoundError as filefunc10:
         print("+ File diagrecap.txt does not exist", filefunc10)

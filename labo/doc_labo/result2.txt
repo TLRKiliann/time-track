@@ -1,9 +1,7 @@
 
----
-
 
 ***************************************************************************
 Date : 14/09/2020
-Patient name : Aaron Schwartz
+Patient name : Ian Curtis
 pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
 ***************************************************************************
