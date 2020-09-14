@@ -160,7 +160,10 @@ if __name__ == '__main__':
                     subprocess.call('./patient_agenda/events19/entrer_event1.py')
 
         def accessDate(self):
-            subprocess.call('./patient_agenda/events19/doc_events/fix_agenda/read_file.py')
+            try:
+                subprocess.call('./patient_agenda/events19/doc_events/fix_agenda/read_file.py')
+            except FileNotFoundError as notegenda:
+                print("+ Agenda not created !", notegenda)
 
     root = tk.Tk()
     app = Control(root)
