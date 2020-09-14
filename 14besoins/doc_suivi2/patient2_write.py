@@ -89,20 +89,20 @@ def importationLabo(fichier2, encodage="Utf-8"):
 
 root=Tk()
 root.title("Care and monitoring")
-root.configure(background='#82193e')
+root.configure(background='cyan')
 
 # To place side by side labelo + entrylab
-top = Frame(root, bg='#82193e')
-bottom = Frame(root, bg='#82193e')
+top = Frame(root, bg='cyan')
+bottom = Frame(root, bg='cyan')
 top.pack(side=TOP)
 bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
 
 labelo=Label(root, text="Care and monitoring : ",
-    font='Times 18 bold', fg='cyan', bg='#82193e')
+    font='Times 18 bold', fg='navy', bg='cyan')
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 labelallergy=Label(root, text="Allergy",
-    font='Arial 18 bold', fg='coral', bg='#82193e')
+    font='Arial 18 bold', fg='coral', bg='cyan')
 labelallergy.pack(padx=5, pady=5)
 
 # To read name in Entry widget
@@ -136,22 +136,22 @@ textBox.pack(padx=30, pady=30)
 
 buttonLire=Button(root, text="Read", fg='cyan', bg='navy',
     activebackground='dark turquoise', activeforeground='navy',
-    bd=3, highlightbackground='grey17', command=lectureFic)
+    bd=3, highlightbackground='navy', command=lectureFic)
 buttonLire.pack(side='left', padx=10, pady=10)
 
 buttonAjouter=Button(root, text="1-Add", fg='yellow', bg='navy',
     activebackground='dark turquoise', activeforeground='navy',
-    bd=3, highlightbackground='grey17', command=ajouterText)
+    bd=3, highlightbackground='navy', command=ajouterText)
 buttonAjouter.pack(side='left', padx=10, pady=10)
 
 buttonEnter=Button(root, text="2-Save", fg='yellow', bg='navy',
     activebackground='dark turquoise', activeforeground='navy',
-    bd=3, highlightbackground='grey17', command=messFromSafeButt)
+    bd=3, highlightbackground='navy', command=messFromSafeButt)
 buttonEnter.pack(side='left', padx=10, pady=10)
 
 buttonQuitter=Button(root, text="Quit", fg='white', bg='navy',
     width=10, activebackground='cyan', activeforeground='navy',
-    bd=3, highlightbackground='grey17', command=quit)
+    bd=3, highlightbackground='navy', command=quit)
 buttonQuitter.pack(side='right', padx=10, pady=10)
 
 importationFile('./14besoins/doc_suivi2/patient2_14b.txt', encodage='Utf-8')

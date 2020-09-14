@@ -14,20 +14,20 @@ def importationFile(fichier, encodage="Utf-8"):
 
 fen=Tk()
 fen.title("Care and monitoring")
-fen.configure(background='#82193e')
+fen.configure(background='cyan')
 
 # To place side by side labelo + entrylab
-top = Frame(fen, bg='#82193e')
-bottom = Frame(fen, bg='#82193e')
+top = Frame(fen, bg='cyan')
+bottom = Frame(fen, bg='cyan')
 top.pack(side=TOP)
 bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
 
 labelo=Label(fen, text="Care and monitoring : ",
-    font='Times 18 bold', fg='cyan', bg='#82193e')
+    font='Times 18 bold', fg='navy', bg='cyan')
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 labelallergy=Label(fen, text="Allergy",
-    font='Arial 18 bold', fg='coral', bg='#82193e')
+    font='Arial 18 bold', fg='coral', bg='cyan')
 labelallergy.pack(padx=5, pady=5)
 
 # To read name in Entry widget
