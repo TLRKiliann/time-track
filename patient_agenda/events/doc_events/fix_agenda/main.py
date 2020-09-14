@@ -65,10 +65,10 @@ def save_input():
             with open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'a+') as fw2:
                 for line in fr.readlines():
                     if magicword in line:
-                        fw1.writelines(str("\n+++ Changes about rdv +++\n"))
-                        fw1.writelines(textBox.get('0.0', '12.0'))
-                        fw2.writelines(str("\n+++ Changes about rdv +++\n"))
-                        fw2.writelines(textBox.get('0.0', '12.0'))
+                        fw1.writelines(str("+++ Changes about rdv +++\n"))
+                        fw1.writelines(textBox.get("0.0", "end-1c") + "\n")
+                        fw2.writelines(str("+++ Changes about rdv +++\n"))
+                        fw2.writelines(textBox.get("0.0", "end-1c") + "\n")
                         print("Modification finish")
                         break
                     else:
@@ -81,27 +81,7 @@ def modifList():
     subprocess.call('./patient_agenda/events/doc_events/fix_agenda/read_filemodif.py')
 
 def deleteTextbox():
-    textBox.delete('0.0', '12.0')
-
-def reorderFile():
-    """
-    To order list of dates
-    and extract next line
-    to rebuild a correct
-    file in order
-    """
-    magicword = regexpi_var.get()            
-    with open('./patient_agenda/events/doc_events/fix_agenda/modifrdv.txt', 'r') as textfile2:
-        lines = textfile2.readlines()
-        for a in range(len(lines)):
-            line = lines[a]
-            if magicword in line:
-                print(lines[a])
-                print(lines[a+1])
-                textBox.insert(INSERT, "\nWith modification of date :\n")
-                textBox.insert(INSERT, lines[a])
-                textBox.insert(INSERT, lines[a+1])
-                textBox.insert(INSERT, lines[a+2])
+    textBox.delete('0.0', "end-1c")
 
 with open('./newpatient/entryfile.txt', 'r') as filename:
     line1 = filename.readline()
@@ -154,11 +134,6 @@ buttonDelete = Button(gui, text="Clear", width=8, bd=3,
     fg='cyan', bg='navy', highlightbackground='light sky blue',
     activebackground='dark turquoise', command = deleteTextbox)
 buttonDelete.grid(sticky='w', row=5, column=2, padx=10, pady=10)
-
-buttonEnter = Button(gui, text="Add changes", width=10, bd=3,
-    fg='cyan', bg='navy', highlightbackground='light sky blue',
-    activebackground='dark turquoise', command = reorderFile)
-buttonEnter.grid(sticky='e', row=5, column=2, pady=10)
 
 buttonQuit = Button(gui)
 buttonQuit = Button(text='Quit', width=8, bd=3,

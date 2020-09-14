@@ -1,0 +1,15 @@
+{
+    "data": [
+        {
+            "Date": "14/09/2020",
+            "Date of introduction": "02 April 2020",
+            "Date of end": "15/09/2020",
+            "Treatment": "Risperdal",
+            "Dosage": "10 mg",
+            "Reserve": 1,
+            "First-line": 1,
+            "Second-line": 0,
+            "Number/24h": "3"
+        }
+    ]
+}

@@ -7,3 +7,11 @@ pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
 En date du : 13/09/2020 at 09:58:42 :
 Mr a fugué en Engleterre.
 
+
+----------------------------------------------------------
+Date : 14/09/2020
+Patient name : Julian Assange
+# Bilirubin direct value and treatment : (add what the patient needs)
+# Bilirubin indirect value and treatment : (add what the patient needs)
+# Uric acid value and treatment : (add what the patient needs)
+---------------------------------------------------------
