@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 #!-*-encoding:Utf-8-*-
 
-from tkinter import *
 
+from tkinter import *
+from tkinter import messagebox
+
+
+with open('./newpatient/entryfile5.txt', 'r') as filename:
+    line1=filename.readline()
 
 def importationFile(fichier):
     file = open(fichier, 'r')
@@ -13,10 +18,11 @@ def importationFile(fichier):
 
 def saveData():         
     with open('./patient_agenda/events5/doc_events/fix_agenda/modifrdv.txt', 'w') as textfile2:
-        textfile2.writelines(textBox.get('0.0', '12.0'))
+        textfile2.writelines(textBox.get("0.0", "end-1c") + "\n")
 
-with open('./newpatient/entryfile5.txt', 'r') as filename:
-    line1=filename.readline()
+def msgBox2():
+    messagebox.showwarning('WARNING',
+        'No modifrdv.txt file exist for : ' + line1)
 
 fen=Tk()
 fen.title("RDV have changed")
@@ -51,6 +57,10 @@ buttonClose=Button(fen, text="Quit", width=8, bd=3,
     highlightbackground='light sky blue', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
-importationFile('./patient_agenda/events5/doc_events/fix_agenda/modifrdv.txt')
+try:
+    importationFile('./patient_agenda/events5/doc_events/fix_agenda/modifrdv.txt')
+except FileNotFoundError as mod_file:
+    print("+ No modifrdv.txt file has been found !", mod_file)
+    msgBox2()
 
 fen.mainloop()
