@@ -22,7 +22,7 @@ def saveData():
 
 def msgBox2():
     messagebox.showwarning('WARNING',
-        '+ No modifrdv.txt file exist for : ' + line1)
+        'No modifrdv.txt file exist for : ' + line1)
 
 fen=Tk()
 fen.title("RDV have changed")

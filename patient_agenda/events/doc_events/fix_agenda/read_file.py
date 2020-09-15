@@ -18,7 +18,7 @@ def importationFile(fichier):
 
 def msgBox():
     messagebox.showwarning('WARNING',
-        '+ No fixed_rdv.txt file exist for : ' + line1)
+        'No fixed_rdv.txt file exist for : ' + line1)
 
 fen=Tk()
 fen.title("RDV set up")
