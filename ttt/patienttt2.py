@@ -589,7 +589,7 @@ comboDay.bind("<<ComboboxSelected>>", callbackDay)
 comboDay.grid(row=10, column=0, pady=10)
 
 def changeMonth():
-    comboMonth["values"] = [' January',  
+    comboMonth["values"] = [' January',
                           ' February', 
                           ' March', 
                           ' April', 
@@ -607,7 +607,7 @@ labelMonth = tk.Label(app,
 labelMonth.grid(row=9, column=1)
 
 comboMonth = ttk.Combobox(app,
-    values=[' January',  
+    values=[' January',
           ' February', 
           ' March', 
           ' April', 
@@ -660,11 +660,11 @@ def finishDay():
     comboFinishDay["values"] = ['01', '02', '03', '04',
                                 '05', '06', '07', '08',
                                 '09', '10', '11', '12',
-                                '13', '14', '15', '15',
-                                '16', '17', '18', '19',
-                                '20', '21', '22', '23',
-                                '24', '25', '26', '27',
-                                '28', '29', '30', '31']
+                                '13', '14', '15', '16',
+                                '17', '18', '19', '20',
+                                '21', '22', '23', '24',
+                                '25', '26', '27', '28',
+                                '29', '30', '31']
 
 labelFinishDay = tk.Label(app,
     text = "Choose the day :", font=12, fg='cyan', bg='RoyalBlue4')
@@ -674,16 +674,16 @@ comboFinishDay = ttk.Combobox(app,
     values=['01', '02', '03', '04',
             '05', '06', '07', '08',
             '09', '10', '11', '12',
-            '13', '14', '15', '15',
-            '16', '17', '18', '19',
-            '20', '21', '22', '23',
-            '24', '25', '26', '27',
-            '28', '29', '30', '31'], postcommand=finishDay)
+            '13', '14', '15', '16',
+            '17', '18', '19', '20',
+            '21', '22', '23', '24',
+            '25', '26', '27', '28',
+            '29', '30', '31'], postcommand=finishDay)
 comboFinishDay.bind("<<ComboboxSelected>>", callbackFinishDay)
 comboFinishDay.grid(row=13, column=0, pady=10)
 
 def finishMonth():
-    comboFinishMonth["values"] = ['01',  
+    comboFinishMonth["values"] = ['01',
                                 '02', 
                                 '03', 
                                 '04', 
