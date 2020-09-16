@@ -21,10 +21,10 @@ def importationFile(fichier):
         textBox.update()
 
 def retrieve_input():
-    inputValue = textBox.get("1.0","end-1c" + '\n')
+    inputValue = textBox.get("1.0", "end-1c" + '\n')
     print(inputValue)
     file = open('./patient_agenda/events20/doc_events/fix_agenda/fixed_rdv.txt', 'a+')
-    file.write(textBox.get("1.0","end-1c") + '\n\n')
+    file.write(textBox.get("1.0", "end-1c") + '\n\n')
     file.close()
     
 def messFromSafeButt():
@@ -43,6 +43,12 @@ def lectureFic():
     print(file.read())
     file.close()
     subprocess.call('./patient_agenda/events20/doc_events/fix_agenda/read_file.py')
+
+def rdvChanged():
+    """
+    To read file modifrdv.txt
+    """
+    subprocess.call('./patient_agenda/events20/doc_events/fix_agenda/read_filemodif.py')
 
 def changeText():
     subprocess.call('./patient_agenda/events20/doc_events/fix_agenda/main.py')
@@ -85,7 +91,12 @@ buttonLire=Button(fen, text="Read", width=8, bd=3,
     highlightbackground='light sky blue', command=lectureFic)
 buttonLire.pack(side='left', padx=10, pady=10)
 
-buttonEffacer=Button(fen, text="Change RDV", width=10, bd=3,
+buttonLire=Button(fen, text="RDV Changed", width=10, bd=3,
+    fg='cyan', bg='navy', activebackground='dark turquoise',
+    highlightbackground='light sky blue', command=rdvChanged)
+buttonLire.pack(side='left', padx=10, pady=10)
+
+buttonEffacer=Button(fen, text="Modify RDV", width=10, bd=3,
     fg='cyan', bg='navy', highlightbackground='light sky blue',
     activebackground='dark turquoise', command=changeText)
 buttonEffacer.pack(side='left', padx=10, pady=10)
