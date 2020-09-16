@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 #!-*-encoding:Utf-8-*-
 
-from tkinter import *
 
+from tkinter import *
+from tkinter import messagebox
+
+
+with open('./newpatient/entryfile12.txt', 'r') as filename:
+    line1=filename.readline()
 
 def importationFile(fichier):
     file = open(fichier, 'r')
@@ -11,8 +16,9 @@ def importationFile(fichier):
     for li in content:
         textBox.insert(END, li)
 
-with open('./newpatient/entryfile12.txt', 'r') as filename:
-    line1=filename.readline()
+def msgBox():
+    messagebox.showwarning('WARNING',
+        'No fixed_rdv.txt file exist for : ' + line1)
 
 fen=Tk()
 fen.title("RDV set up")
@@ -41,6 +47,10 @@ buttonClose=Button(fen, text="Quit", width=8, bd=3,
     activebackground='dark turquoise', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
-importationFile('./patient_agenda/events12/doc_events/fix_agenda/fixed_rdv.txt')
+try:
+    importationFile('./patient_agenda/events12/doc_events/fix_agenda/fixed_rdv.txt')
+except FileNotFoundError as fixed:
+    print("+ No fixed_rdv.txt file exist !", fixed)
+    msgBox()
 
 fen.mainloop()
