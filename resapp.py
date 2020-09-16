@@ -33,7 +33,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text1)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text1 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res1:
         print("No date of end has been found for reserve into file convres.json (patient 1)", info_res1)
     else:
@@ -58,7 +59,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text2)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text2 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res2:
         print("No date of end has been found for reserve into file convres.json (patient 2)", info_res2)
     else:
@@ -83,7 +85,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text3)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text3 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res3:
         print("No date of end has been found for reserve into file convres.json (patient 3)", info_res3)
     else:
@@ -108,7 +111,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text4)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text4 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res4:
         print("No date of end has been found for reserve into file convres.json (patient 4)", info_res4)
     else:
@@ -133,7 +137,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text5)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text5 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res5:
         print("No date of end has been found for reserve into file convres.json (patient 5)", info_res5)
     else:
@@ -158,7 +163,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text6)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text6 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res6:
         print("No date of end has been found for reserve into file convres.json (patient 6)", info_res6)
     else:
@@ -183,7 +189,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text7)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text7 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res7:
         print("No date of end has been found for reserve into file convres.json (patient 7)", info_res7)
     else:
@@ -208,7 +215,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text8)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text8 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res8:
         print("No date of end has been found for reserve into file convres.json (patient 8)", info_res8)
     else:
@@ -233,7 +241,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text9)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text9 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res9:
         print("No date of end has been found for reserve into file convres.json (patient 9)", info_res9)
     else:
@@ -258,7 +267,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text10) 
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text10 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res10:
         print("No date of end has been found for reserve into file convres.json (patient 10)", info_res10)
     else:
@@ -283,7 +293,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text11) 
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text11 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res11:
         print("No date of end has been found for reserve into file convres.json (patient 11)", info_res11)
     else:
@@ -308,7 +319,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text12) 
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text12 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res12:
         print("No date of end has been found for reserve into file convres.json (patient 12)", info_res12)
     else:
@@ -333,7 +345,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text13) 
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text13 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res13:
         print("No date of end has been found for reserve into file convres.json (patient 13)", info_res13)
     else:
@@ -358,7 +371,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text14) 
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text14 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res14:
         print("No date of end has been found for reserve into file convres.json (patient 14)", info_res14)
     else:
@@ -383,7 +397,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text15) 
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text15 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res15:
         print("No date of end has been found for reserve into file convres.json (patient 15)", info_res15)
     else:
@@ -408,7 +423,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text16)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text16 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res16:
         print("No date of end has been found for reserve into file convres.json (patient 16)", info_res16)
     else:
@@ -433,7 +449,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text17)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text17 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res17:
         print("No date of end has been found for reserve into file convres.json (patient 17)", info_res17)
     else:
@@ -458,7 +475,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text18)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text18 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res18:
         print("No date of end has been found for reserve into file convres.json (patient 18)", info_res18)
     else:
@@ -483,7 +501,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text19)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text19 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res19:
         print("No date of end has been found for reserve into file convres.json (patient 19)", info_res19)
     else:
@@ -508,7 +527,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text20)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text20 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res20:
         print("No date of end has been found for reserve into file convres.json (patient 20)", info_res20)
     else:
@@ -533,7 +553,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text21)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text21 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res21:
         print("No date of end has been found for reserve into file convres.json (patient 21)", info_res21)
     else:
@@ -558,7 +579,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text22)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text22 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res22:
         print("No date of end has been found for reserve into file convres.json (patient 22)", info_res22)
     else:
@@ -583,7 +605,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text23)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text23 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res23:
         print("No date of end has been found for reserve into file convres.json (patient 23)", info_res23)
     else:
@@ -608,7 +631,8 @@ def dispResFunc():
                     if word_treattostop in line:
                         print(line)
                         MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text24)
+                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text24 + \
+                            lines[i] + lines[i-4] + lines[i-3])
     except FileNotFoundError as info_res24:
         print("No date of end has been found for reserve into file convres.json (patient 24)", info_res24)
     else:

@@ -10,6 +10,17 @@
             "First-line": 1,
             "Second-line": 0,
             "Number/24h": "3"
+        },
+        {
+            "Date": "16/09/2020",
+            "Date of introduction": "17 March 2003",
+            "Date of end": "17/09/2020",
+            "Treatment": "Temesta",
+            "Dosage": "2,5 mg",
+            "Reserve": 1,
+            "First-line": 1,
+            "Second-line": 0,
+            "Number/24h": "2"
         }
     ]
 }
