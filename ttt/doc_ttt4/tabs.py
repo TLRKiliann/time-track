@@ -193,15 +193,16 @@ class app(Frame):
         Frame.__init__(self, master)
         self.text_name=StringVar()
         self.labelo=Label(master, text="Treatments for : ", width=20,
-            font='Times 18 bold', fg='cyan', bg='gray17')
+            font='Times 18 bold', fg='cyan', bg='RoyalBlue4')
         self.labelo.grid(sticky='w', row=0, column=0, padx=30, pady=5)
         with open('./newpatient/entryfile4.txt', 'r') as file:
             line1=file.readline()
+
         self.text_name.set(line1)
         self.entryName=Entry(master, textvariable=self.text_name)
         self.entryName.grid(sticky='w', row=0, column=0, padx=250, pady=5)
         self.labelallergy=Label(master, text="Allergy : ",
-            font='Arial 18 bold', fg='coral', bg='gray17')
+            font='Arial 18 bold', fg='coral', bg='RoyalBlue4')
         self.labelallergy.grid(row=0, column=0, padx=10, pady=5)
         with open('./allergy/allergyfile4.txt', 'r') as allerfile:
             lineA1=allerfile.readline()
@@ -211,11 +212,13 @@ class app(Frame):
             lineA5=allerfile.readline()
             lineA6=allerfile.readline()
             lineA7=allerfile.readline()
+
         self.text_all=StringVar()
         self.text_all.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
         self.Entryall=Entry(master, textvariable=self.text_all, width=60)
         self.Entryall.grid(sticky='e', row=0, column=0, padx=120, pady=5)
-        self.buttQuit=Button(master, text="Close", bg='gray30', fg='cyan', command=quit)
+        self.buttQuit=Button(master, text="Close", bg='RoyalBlue3', fg='cyan',
+            activebackground='cyan', activeforeground='navy', command=quit)
         self.buttQuit.grid(sticky='e', row=0, column=0, padx=10)
         self.grid()
         self.create_widgets()
@@ -380,7 +383,7 @@ class app(Frame):
                 self.entries[126].insert(0, list5[14])
                 self.entries[127].insert(0, list6[14])
         except IndexError as infottt:
-            print("End of medication reached, there are more tbas than ttt !", infottt)
+            print("End of medication reached, there are more tabs than ttt !", infottt)
         else:
             print("Error unknow")
 
@@ -395,5 +398,5 @@ os.remove('./ttt/doc_ttt4/data_end.json')
 
 prog = app()
 prog.master.title('Medication')
-prog.master.configure(bg='gray17')
+prog.master.configure(bg='RoyalBlue4')
 prog.mainloop()
