@@ -39,12 +39,12 @@ def showTreat():
             subprocess.call('./ttt/doc_ttt/tabs.py')
     except FileNotFoundError as no_tabs:
         print("+ Sorry, it's not possible to show tab of ttt, \
-convdose.json file missing !")
+            convdose.json file missing !")
         tttTabs()
 
 def tttTabs():
     MSBTABS = messagebox.showinfo("Info", "No ttt recorded for \
-patient 1, convdose.json file missing !") 
+        this patient, convdose.json file missing !") 
 
 def showReserve():
     """
@@ -56,12 +56,12 @@ def showReserve():
             subprocess.call('./ttt/doc_ttt/tabres.py')
     except FileNotFoundError as no_tabs:
         print("+ Sorry, it's not possible to show tab of reserve, \
-convres.json file missing !")
+            convres.json file missing !")
         reserveTabs()
 
 def reserveTabs():
     MSBTABS = messagebox.showinfo("Info", "No reserve recorded for \
-patient 1, convres.json file missing !")
+        this patient, convres.json file missing !")
 
 def deleteTreatment():
     """
@@ -438,8 +438,21 @@ def copyToReserve():
         with open('./ttt/doc_ttt/convres.json', 'w') as datafile:
             json.dump(dataDose, datafile, indent=4)
 
+def readFileStory():
+    try:
+        if os.path.getsize("./ttt/doc_ttt/intro_ttt.txt"):
+            subprocess.call("./ttt/doc_ttt/readstory.py")
+    except FileNotFoundError as no_storyfile:
+        print("+ Sorry, it's not possible to show tab of ttt, \
+            no ttt has been introduced !", no_storyfile)
+        noStory()
+
+def noStory():
+    MSBstory = messagebox.showinfo("Info", "None historic of ttt is available, \
+        no ttt has been introduced !") 
+
 app = tk.Tk()
-app.title("Introduction of treatement (ttt)")
+app.title("Introduction of treatements (ttt)")
 app.configure(bg='RoyalBlue4')
 
 textLab = tk.Label(app, text="Introduction of treatement (ttt)",
@@ -530,7 +543,8 @@ delete_text.set("Enter ttt to stop")
 deleteTreat = tk.Entry(textvariable=delete_text,
     highlightbackground='red', bd=4)
 deleteTreat.grid(row=3, column=2)
-# TTT to stop
+
+# Button to stop ttt and R
 buttStopttt = tk.Button(app, text="Stop ttt", width=10, fg='yellow',
     bg='red', bd=3, highlightbackground='RoyalBlue4',
     activebackground='coral', command=deleteTreatment)
@@ -542,7 +556,8 @@ delete_res.set("Enter R to stop")
 deleteRes = tk.Entry(textvariable=delete_res,
     highlightbackground='red', bd=4)
 deleteRes.grid(row=5, column=2)
-# Reserves to stop
+
+# Buttons with functions
 buttStopttt = tk.Button(app, text="Stop R", width=10, fg='yellow',
     bg='red', bd=3, highlightbackground='RoyalBlue4',
     activebackground='coral', command=deleteReserve, padx=10)
@@ -566,11 +581,11 @@ def changeDay():
     comboDay["values"] = ['01', '02', '03', '04',
                           '05', '06', '07', '08',
                           '09', '10', '11', '12',
-                          '13', '14', '15', '15',
-                          '16', '17', '18', '19',
-                          '20', '21', '22', '23',
-                          '24', '25', '26', '27',
-                          '28', '29', '30', '31']
+                          '13', '14', '15', '16',
+                          '17', '18', '19', '20',
+                          '21', '22', '23', '24',
+                          '25', '26', '27', '28',
+                          '29', '30', '31']
 
 labelDay = tk.Label(app,
     text = "Choose the day :", font=12, fg='cyan', bg='RoyalBlue4')
@@ -580,11 +595,11 @@ comboDay = ttk.Combobox(app,
     values=['01', '02', '03', '04',
             '05', '06', '07', '08',
             '09', '10', '11', '12',
-            '13', '14', '15', '15',
-            '16', '17', '18', '19',
-            '20', '21', '22', '23',
-            '24', '25', '26', '27',
-            '28', '29', '30', '31'], postcommand=changeDay)
+            '13', '14', '15', '16',
+            '17', '18', '19', '20',
+            '21', '22', '23', '24',
+            '25', '26', '27', '28',
+            '29', '30', '31'], postcommand=changeDay)
 comboDay.bind("<<ComboboxSelected>>", callbackDay)
 comboDay.grid(row=10, column=0, pady=10)
 
@@ -623,7 +638,7 @@ comboMonth.bind("<<ComboboxSelected>>", callbackMonth)
 comboMonth.grid(row=10, column=1, pady=10)
 
 def changeYear():
-    comboYear["values"] = [' 2000', ' 2001', ' 2002', ' 2003',
+    comboYear["values"] = ['', ' 2000', ' 2001', ' 2002', ' 2003',
                           ' 2004', ' 2005', ' 2006', ' 2007',
                           ' 2008', ' 2009', ' 2010', ' 2011',
                           ' 2012', ' 2013', ' 2014', ' 2015',
@@ -638,7 +653,7 @@ labelYear = tk.Label(app,
 labelYear.grid(row=9, column=2)
 
 comboYear = ttk.Combobox(app,
-    values=[' 2000', ' 2001', ' 2002', ' 2003',
+    values=['', ' 2000', ' 2001', ' 2002', ' 2003',
             ' 2004', ' 2005', ' 2006', ' 2007',
             ' 2008', ' 2009', ' 2010', ' 2011',
             ' 2012', ' 2013', ' 2014', ' 2015',
@@ -655,6 +670,11 @@ comboYear.current(20)
 textDateF = tk.Label(app, text="Processing end date :", 
     font=('Arial 14 bold'), fg='aquamarine', bg='RoyalBlue4', width=40, anchor='w')
 textDateF.grid(row=11, column=0, columnspan=2, pady=10)
+
+buttStory = tk.Button(app, text="Historic", width=10, fg='cyan',
+    bg='RoyalBlue3', bd=3, highlightbackground='RoyalBlue4', 
+    activebackground='dark turquoise', command=readFileStory)
+buttStory.grid(row=11, column=3)
 
 def finishDay():
     comboFinishDay["values"] = ['01', '02', '03', '04',
@@ -751,7 +771,7 @@ Cma = tk.Checkbutton(app, text="Morning --->", fg='navy',
     width=15, anchor='w')
 Cma.grid(row=16, column=0)
 
-LabDose = tk.Label(app, text='Morning dose : ', font=12,
+LabDose = tk.Label(app, text='Morning take : ', font=12,
     width=20, fg='cyan', bg='RoyalBlue4')
 LabDose.grid(row=16, column=1)
 
@@ -766,7 +786,7 @@ Cmi = tk.Checkbutton(app, text="Noon --->", fg='navy',
     width=15, anchor='w')
 Cmi.grid(row=17, column=0)
 
-LabDose = tk.Label(app, text='Take of noon : ', font=12, 
+LabDose = tk.Label(app, text='Lunchtime take : ', font=12, 
     width=20, fg='cyan', bg='RoyalBlue4')
 LabDose.grid(row=17, column=1)
 
@@ -781,7 +801,7 @@ Csoir = tk.Checkbutton(app, text="Evening --->", fg='navy',
     width=15, anchor='w')
 Csoir.grid(row=18, column=0)
 
-LabDose = tk.Label(app, text='Evening outlet : ', font=12,
+LabDose = tk.Label(app, text='Evening take : ', font=12,
     width=20, fg='cyan', bg='RoyalBlue4')
 LabDose.grid(row=18, column=1)
 
@@ -797,7 +817,7 @@ Cnuit = tk.Checkbutton(app, text="Night --->", fg='navy',
 Cnuit.grid(row=19, column=0)
 
 # Entry nbre de x/24h
-LabDose = tk.Label(app, text='Take of night : ', font=12,
+LabDose = tk.Label(app, text='Night-time take : ', font=12,
     width=20, fg='cyan', bg='RoyalBlue4')
 LabDose.grid(row=19, column=1)
 
@@ -826,35 +846,34 @@ C3 = tk.Checkbutton(app, text="Second-line", fg='navy',
     width=20, anchor='w')
 C3.grid(row=20, column=2, pady=10)
 
-# Buttons with functions
-buttCopy = tk.Button(app, text="Save ttt", width=10, fg='yellow',
-    bg='RoyalBlue3', bd=3, highlightbackground='RoyalBlue4', 
-    activebackground='dark turquoise', command=copyTttMess)
-buttCopy.grid(row=21, column=0)
-
-buttCopy = tk.Button(app, text="Save R", width=10, fg='yellow',
-    bg='RoyalBlue3', bd=3, highlightbackground='RoyalBlue4', 
-    activebackground='dark turquoise', command=copyResMess)
-buttCopy.grid(row=22, column=0)
-
 LabelR = tk.Label(app, text='Number of R/24h : ', font=12, 
     width=20, fg='cyan', bg='RoyalBlue4')
-LabelR.grid(row=21, column=1)
+LabelR.grid(row=21, column=0)
 
 Rnbre = tk.Entry(app)
 Rnbre = tk.Entry(highlightbackground='grey', bd=4)
-Rnbre.grid(row=21, column=2)
+Rnbre.grid(row=21, column=1)
 
 LabSign = tk.Label(app, text='Signature :', font=12, 
     width=15, fg='red', bg='pale green')
-LabSign.grid(row=22, column=1, pady=10)
+LabSign.grid(row=22, column=0, pady=10)
 
 textSign = tk.Entry(app)
 textSign = tk.Entry(highlightbackground='grey', bd=4)
-textSign.grid(row=22, column=2, pady=10)
+textSign.grid(row=22, column=1, pady=10)
+
+buttCopy = tk.Button(app, text="Save ttt", width=10, fg='yellow',
+    bg='RoyalBlue3', bd=3, highlightbackground='RoyalBlue4',
+    activebackground='dark turquoise', command=copyTttMess)
+buttCopy.grid(row=21, column=2)
+
+buttCopy = tk.Button(app, text="Save R", width=10, fg='yellow',
+    bg='RoyalBlue3', bd=3, highlightbackground='RoyalBlue4',
+    activebackground='dark turquoise', command=copyResMess)
+buttCopy.grid(row=22, column=2)
 
 buttQuit = tk.Button(app, text="Quit", width=10, fg='white',
-    bg='RoyalBlue3', bd=3, highlightbackground='RoyalBlue4', 
+    bg='RoyalBlue3', bd=3, highlightbackground='RoyalBlue4',
     activebackground='dark turquoise', command=quit)
 buttQuit.grid(row=22, column=3)
 
