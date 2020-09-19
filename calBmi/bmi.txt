@@ -1,7 +1,0 @@
-Date : 0108/2020
-Heure : 11:18:43
-Prenom et Nom : Julian Assange
-Poids : 89
-Taille : 1.86
-BMI : 25.725517400855587
-

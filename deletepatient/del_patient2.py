@@ -8,9 +8,9 @@ import subprocess
 
 
 def delFuncFile2():
-	"""
-	vmed + diag to modify
-	"""
+    """
+    vmed + diag to modify
+    """
     try:
         if os.path.getsize('./14besoins/doc_suivi2/main_14b.txt'):
             os.remove('./14besoins/doc_suivi2/main_14b.txt')
