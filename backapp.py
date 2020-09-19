@@ -16,7 +16,6 @@ def backupFuncPatient(self):
     with open(filepath, 'r') as fichier:
         content = fichier.read()
 
-    # I have to try with Text (else no scrollbar)
     self.label=Label(self.label, justify=LEFT, font=('Times 14'),
         bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
 

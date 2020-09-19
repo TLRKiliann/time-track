@@ -13,3 +13,17 @@ Patient name : Julian Assange
 # Bilirubin indirect value and treatment : (add what the patient needs)
 # Uric acid value and treatment : (add what the patient needs)
 ---------------------------------------------------------
+
+---------------------------------------------------------
+Date : 19/09/2020
+Patient name : Julian Assange
+# TP value and treatment : (add what the patient needs)
+# INR value and treatment : (add what the patient needs)
+---------------------------------------------------------
+
+
+***************************************************************************
+Date : 19/09/2020
+Patient name : Julian Assange
+pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
+***************************************************************************
