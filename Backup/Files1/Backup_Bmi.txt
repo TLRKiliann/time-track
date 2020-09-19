@@ -1,56 +1,7 @@
-Date : 08/02/2020
-Heure : 10:39:25
-Prenom et Nom : Edward Snowden
+Date : 0108/2020
+Heure : 11:18:43
+Prenom et Nom : Julian Assange
 Poids : 89
 Taille : 1.86
 BMI : 25.725517400855587
-
-Date : 08/03/2020
-Heure : 10:39:25
-Prenom et Nom : Edward Snowden
-Poids : 75
-Taille : 1.86
-BMI : 21.678806798473808
-
-Date : 08/04/2020
-Heure : 10:39:25
-Prenom et Nom : Edward Snowden
-Poids : 78
-Taille : 1.86
-BMI : 22.54595907041276
-
-Date : 08/05/2020
-Heure : 10:39:25
-Prenom et Nom : Edward Snowden
-Poids : 88
-Taille : 1.86
-BMI : 25.4364666435426
-
-Date : 08/06/2020
-Heure : 10:39:25
-Prenom et Nom : Edward Snowden
-Poids : 83
-Taille : 1.86
-BMI : 23.991212856977683
-
-Date : 08/07/2020
-Heure : 10:39:25
-Prenom et Nom : Edward Snowden
-Poids : 79
-Taille : 1.86
-BMI : 22.835009827725745
-
-Date : 08/08/2020
-Heure : 10:39:25
-Prenom et Nom : Edward Snowden
-Poids : 75
-Taille : 1.86
-BMI : 21.678806798473808
-
-Date : 08/09/2020
-Heure : 10:54:23
-Prenom et Nom : Edward Snowden
-Poids : 74
-Taille : 1.86
-BMI : 21.389756041160826
 

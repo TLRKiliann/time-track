@@ -18,14 +18,14 @@ def callResident(self):
     self.can.configure(background='cyan')
     self.photo=PhotoImage(file='./syno_gif/title_tt.png')
     self.item=self.can.create_image(625, 85, image=self.photo)
-    #self.can.create_text(625, 30, anchor=CENTER, text="TIME-TRACK",
-    #    font=('Times New Roman', 20), fill='blue')
 
+    """
     # To backup (main file)
     self.updateFiletxt()
     dispAgBox()
     dispTttBox()
     dispResFunc()
+    """
 
     # Display date
     self.x1, self.y1 = 1065, 70
@@ -49,7 +49,7 @@ def callResident(self):
 
     # To display time dynamically à revoir (new_file.py)
     # To introduce a new pytient
-    self.x3, self.y3 = 200, 160 # here
+    self.x3, self.y3 = 200, 160
     self.b3=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
         bg='RoyalBlue3', fg='white', activebackground='dark turquoise',
         text="New Entry", command=self.callPatient1)

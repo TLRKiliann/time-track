@@ -18,8 +18,6 @@ def callBox(self):
     self.can.configure(background='cyan')
     self.photo=PhotoImage(file='./syno_gif/title_tt.png')
     self.item=self.can.create_image(625, 85, image=self.photo)
-    #self.can.create_text(625, 30, anchor=CENTER, text="TIME-TRACK",
-    #    font=('Times New Roman', 20), fill='blue')
 
     # To backup (main file)
     self.updateFiletxt()

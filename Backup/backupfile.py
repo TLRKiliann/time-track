@@ -10,7 +10,7 @@ import shutil
 
 # To backup all files
 listeDate = ["01/05/2020", "01/06/2020", "01/07/2020",
-"01/08/2020", "08/09/2020", "01/10/2020", "01/11/2020",
+"01/08/2020", "19/09/2020", "01/10/2020", "01/11/2020",
 "01/12/2020"]
 
 for i in listeDate:
@@ -521,169 +521,169 @@ for i in listeDate:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi/patient1_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi/main_14b.txt'):
                 print("+ 14besoins 1 exist")
-                shutil.copy('./14besoins/doc_suivi/patient1_14b.txt', './Backup/Files1/Backup_careneeds1.txt')
+                shutil.copy('./14besoins/doc_suivi/main_14b.txt', './Backup/Files1/Backup_careneeds1.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi2/patient2_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi2/main_14b.txt'):
                 print("+ 14besoins 2 exist")
-                shutil.copy('./14besoins/doc_suivi2/patient2_14b.txt', './Backup/Files2/Backup_careneeds2.txt')
+                shutil.copy('./14besoins/doc_suivi2/main_14b.txt', './Backup/Files2/Backup_careneeds2.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi3/patient3_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi3/main_14b.txt'):
                 print("+ 14besoins 3 exist")
-                shutil.copy('./14besoins/doc_suivi3/patient3_14b.txt', './Backup/Files3/Backup_careneeds3.txt')
+                shutil.copy('./14besoins/doc_suivi3/main_14b.txt', './Backup/Files3/Backup_careneeds3.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi4/patient4_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi4/main_14b.txt'):
                 print("+ 14besoins 4 exist")
-                shutil.copy('./14besoins/doc_suivi4/patient4_14b.txt', './Backup/Files4/Backup_careneeds4.txt')
+                shutil.copy('./14besoins/doc_suivi4/main_14b.txt', './Backup/Files4/Backup_careneeds4.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi5/patient5_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi5/main_14b.txt'):
                 print("+ 14besoins 5 exist")
-                shutil.copy('./14besoins/doc_suivi5/patient5_14b.txt', './Backup/Files5/Backup_careneeds5.txt')
+                shutil.copy('./14besoins/doc_suivi5/main_14b.txt', './Backup/Files5/Backup_careneeds5.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi6/patient6_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi6/main_14b.txt'):
                 print("+ 14besoins 6 exist")
-                shutil.copy('./14besoins/doc_suivi6/patient6_14b.txt', './Backup/Files6/Backup_careneeds6.txt')
+                shutil.copy('./14besoins/doc_suivi6/main_14b.txt', './Backup/Files6/Backup_careneeds6.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi7/patient7_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi7/main_14b.txt'):
                 print("+ 14besoins 7 exist")
-                shutil.copy('./14besoins/doc_suivi7/patient7_14b.txt', './Backup/Files7/Backup_careneeds7.txt')
+                shutil.copy('./14besoins/doc_suivi7/main_14b.txt', './Backup/Files7/Backup_careneeds7.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi8/patient8_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi8/main_14b.txt'):
                 print("+ 14besoins 8 exist")
-                shutil.copy('./14besoins/doc_suivi8/patient8_14b.txt', './Backup/Files8/Backup_careneeds8.txt')
+                shutil.copy('./14besoins/doc_suivi8/main_14b.txt', './Backup/Files8/Backup_careneeds8.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi9/patient9_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi9/main_14b.txt'):
                 print("+ 14besoins 9 exist")
-                shutil.copy('./14besoins/doc_suivi9/patient9_14b.txt', './Backup/Files9/Backup_careneeds9.txt')
+                shutil.copy('./14besoins/doc_suivi9/main_14b.txt', './Backup/Files9/Backup_careneeds9.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi10/patient10_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi10/main_14b.txt'):
                 print("+ 14besoins 10 exist")
-                shutil.copy('./14besoins/doc_suivi10/patient10_14b.txt', './Backup/Files10/Backup_careneeds10.txt')
+                shutil.copy('./14besoins/doc_suivi10/main_14b.txt', './Backup/Files10/Backup_careneeds10.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi11/patient11_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi11/main_14b.txt'):
                 print("+ 14besoins 11 exist")
-                shutil.copy('./14besoins/doc_suivi11/patient11_14b.txt', './Backup/Files11/Backup_careneeds11.txt')
+                shutil.copy('./14besoins/doc_suivi11/main_14b.txt', './Backup/Files11/Backup_careneeds11.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi12/patient12_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi12/main_14b.txt'):
                 print("+ 14besoins 12 exist")
-                shutil.copy('./14besoins/doc_suivi12/patient12_14b.txt', './Backup/Files12/Backup_careneeds12.txt')
+                shutil.copy('./14besoins/doc_suivi12/main_14b.txt', './Backup/Files12/Backup_careneeds12.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi13/patient13_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi13/main_14b.txt'):
                 print("+ 14besoins 13 exist")
-                shutil.copy('./14besoins/doc_suivi13/patient13_14b.txt', './Backup/Files13/Backup_careneeds13.txt')
+                shutil.copy('./14besoins/doc_suivi13/main_14b.txt', './Backup/Files13/Backup_careneeds13.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi14/patient14_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi14/main_14b.txt'):
                 print("+ 14besoins 14 exist")
-                shutil.copy('./14besoins/doc_suivi14/patient14_14b.txt', './Backup/Files14/Backup_careneeds14.txt')
+                shutil.copy('./14besoins/doc_suivi14/main_14b.txt', './Backup/Files14/Backup_careneeds14.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi15/patient15_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi15/main_14b.txt'):
                 print("+ 14besoins 15 exist")
-                shutil.copy('./14besoins/doc_suivi15/patient15_14b.txt', './Backup/Files15/Backup_careneeds15.txt')
+                shutil.copy('./14besoins/doc_suivi15/main_14b.txt', './Backup/Files15/Backup_careneeds15.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi16/patient16_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi16/main_14b.txt'):
                 print("+ 14besoins 16 exist")
-                shutil.copy('./14besoins/doc_suivi16/patient16_14b.txt', './Backup/Files16/Backup_careneeds16.txt')
+                shutil.copy('./14besoins/doc_suivi16/main_14b.txt', './Backup/Files16/Backup_careneeds16.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi17/patient17_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi17/main_14b.txt'):
                 print("+ 14besoins 17 exist")
-                shutil.copy('./14besoins/doc_suivi17/patient17_14b.txt', './Backup/Files17/Backup_careneeds17.txt')
+                shutil.copy('./14besoins/doc_suivi17/main_14b.txt', './Backup/Files17/Backup_careneeds17.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi18/patient18_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi18/main_14b.txt'):
                 print("+ 14besoins 18 exist")
-                shutil.copy('./14besoins/doc_suivi18/patient18_14b.txt', './Backup/Files18/Backup_careneeds18.txt')
+                shutil.copy('./14besoins/doc_suivi18/main_14b.txt', './Backup/Files18/Backup_careneeds18.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi19/patient19_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi19/main_14b.txt'):
                 print("+ 14besoins 19 exist")
-                shutil.copy('./14besoins/doc_suivi19/patient19_14b.txt', './Backup/Files19/Backup_careneeds19.txt')
+                shutil.copy('./14besoins/doc_suivi19/main_14b.txt', './Backup/Files19/Backup_careneeds19.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi20/patient20_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi20/main_14b.txt'):
                 print("+ 14besoins 20 exist")
-                shutil.copy('./14besoins/doc_suivi20/patient20_14b.txt', './Backup/Files20/Backup_careneeds20.txt')
+                shutil.copy('./14besoins/doc_suivi20/main_14b.txt', './Backup/Files20/Backup_careneeds20.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi21/patient21_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi21/main_14b.txt'):
                 print("+ 14besoins 21 exist")
-                shutil.copy('./14besoins/doc_suivi21/patient21_14b.txt', './Backup/Files21/Backup_careneeds21.txt')
+                shutil.copy('./14besoins/doc_suivi21/main_14b.txt', './Backup/Files21/Backup_careneeds21.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi22/patient22_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi22/main_14b.txt'):
                 print("+ 14besoins 22 exist")
-                shutil.copy('./14besoins/doc_suivi22/patient22_14b.txt', './Backup/Files22/Backup_careneeds22.txt')
+                shutil.copy('./14besoins/doc_suivi22/main_14b.txt', './Backup/Files22/Backup_careneeds22.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi23/patient23_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi23/main_14b.txt'):
                 print("+ 14besoins 23 exist")
-                shutil.copy('./14besoins/doc_suivi23/patient23_14b.txt', './Backup/Files23/Backup_careneeds23.txt')
+                shutil.copy('./14besoins/doc_suivi23/main_14b.txt', './Backup/Files23/Backup_careneeds23.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
 
         try:
-            if os.path.getsize('./14besoins/doc_suivi24/patient24_14b.txt'):
+            if os.path.getsize('./14besoins/doc_suivi24/main_14b.txt'):
                 print("+ 14besoins 24 exist")
-                shutil.copy('./14besoins/doc_suivi24/patient24_14b.txt', './Backup/Files24/Backup_careneeds24.txt')
+                shutil.copy('./14besoins/doc_suivi24/main_14b.txt', './Backup/Files24/Backup_careneeds24.txt')
         except FileNotFoundError as filenot:
             print("Not found", filenot)
