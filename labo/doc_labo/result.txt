@@ -2,8 +2,9 @@
 ---
 
 ---------------------------------------------------------
-Date : 20/09/2020
-Patient name : Tom
-# Na value and treatment : (add what the patient needs)
-# Ca value and treatment : (add what the patient needs)
+
+Date : 21/09/2020
+Patient name : xcd
+# Iron value and treatment : (add what the patient needs)
+# Ferritine value and treatment : (add what the patient needs)
 ---------------------------------------------------------

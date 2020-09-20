@@ -1,0 +1,21 @@
+Date : 01/09/2020
+Heure : 23:31:04
+Prenom et Nom : Jason
+Poids : 86
+Taille : 1.86
+BMI : 24.858365128916635
+
+Date : 10/09/2020
+Heure : 23:31:04
+Prenom et Nom : Jason
+Poids : 89
+Taille : 1.86
+BMI : 25.725517400855587
+
+Date : 15/09/2020
+Heure : 23:31:04
+Prenom et Nom : Jason
+Poids : 79
+Taille : 1.86
+BMI : 22.835009827725745
+

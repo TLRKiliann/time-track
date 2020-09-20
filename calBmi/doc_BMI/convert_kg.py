@@ -65,7 +65,6 @@ print("\nList of weight :")
 print("------------------------")
 print(list2)
 
-#list3 = [int(list2) for list2 in list2]
 list2 = list(map(int, list2))
 
 # or seaborn-darkgrid
