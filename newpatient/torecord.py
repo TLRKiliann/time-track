@@ -315,132 +315,173 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
 
 def searchLine1(Nompatient, Birthvalue):
     MsgBox = messagebox.askyesno('Save data', 'Do you want to save ?')
-    file = open('./newpatient/entryfile.txt', 'w')
-    file.write(Nompatient + '\n')
-    file.write(Birthvalue + '\n')
-    file.close()
+    if MsgBox == 1:
+        file = open('./newpatient/entryfile.txt', 'w')
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+        file.close()
 
 def searchLine2(Nompatient, Birthvalue):
-    MsgBox = messagebox.askyesno('Save data', 'Do you want to save ?')
-    file = open('./newpatient/entryfile2.txt', 'w')
-    file.write(Nompatient + '\n')
-    file.write(Birthvalue + '\n')
-    file.close()
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 2 ?')
+    if MsgBox == 1:
+        file = open('./newpatient/entryfile2.txt', 'w')
+        file.write(Nompatient + '\n')
+        file.write(Birthvalue + '\n')
+        file.close()
 
 def searchLine3(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile3.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 3 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile3.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine4(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile4.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 4 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile4.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine5(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile5.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 5 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile5.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine6(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile6.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 6 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile6.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine7(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile7.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 7 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile7.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine8(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile8.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 8 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile8.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine9(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile9.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 9 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile9.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine10(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile10.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 10 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile10.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine11(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile11.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 11 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile11.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine12(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile12.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 12 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile12.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine13(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile13.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 13 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile13.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine14(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile14.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 14 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile14.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine15(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile15.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 15 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile15.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine16(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile16.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 16 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile16.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine17(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile17.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
-
-def searchLine10(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile10.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 17 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile17.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine18(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile18.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 18 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile18.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine19(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile19.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 19 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile19.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine20(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile20.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 20 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile20.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine21(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile21.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 21 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile21.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine22(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile22.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 22 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile22.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine23(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile23.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 23 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile23.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 def searchLine24(Nompatient, Birthvalue):
-    with open('./newpatient/entryfile24.txt', 'w') as file:
-        file.write(Nompatient + '\n')
-        file.write(Birthvalue + '\n')
+    MsgBox = messagebox.askyesno('Save data', 'Do you want to save for patient 24 ?')
+    if MsgBox == 1:
+        with open('./newpatient/entryfile24.txt', 'w') as file:
+            file.write(Nompatient + '\n')
+            file.write(Birthvalue + '\n')
 
 
 labelName = Label(gui)
