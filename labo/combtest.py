@@ -29,7 +29,7 @@ def recordOption():
     print("+ Nom du patient : ", textName.get())
     with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
         with open('./labo/doc_labo/result.txt', 'a+') as file_2:
-            file.write("\n***************************************************************************\n")
+            file.write("\n\n***************************************************************************\n")
             file.write("Date : ")
             file.write(time.strftime("%d/%m/%Y") + '\n')
             file.write("Patient name : ")
@@ -50,7 +50,7 @@ def recordOption():
             file.write(Erychoosen.get())
             file.write(" Hb :")
             file.write(Hbchoosen.get())
-            file.write("\n***************************************************************************\n")
+            file.write("\n***************************************************************************\n\n")
             file_2.write("\n\n***************************************************************************\n")
             file_2.write("Date : ")
             file_2.write(time.strftime("%d/%m/%Y") + '\n')
@@ -72,7 +72,7 @@ def recordOption():
             file_2.write(Erychoosen.get())
             file_2.write(" Hb :")
             file_2.write(Hbchoosen.get())
-            file_2.write("\n***************************************************************************\n")
+            file_2.write("\n***************************************************************************\n\n")
 
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
