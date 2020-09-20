@@ -63,19 +63,19 @@ def recordTofile():
         confRec()
         app.destroy()
     else:
-        messagebox.showinfo('Return', 'You will return back')
+        messagebox.showinfo('Return', 'Ok, nothing changed')
 
 def recordOption():
     print("Date : " + time.strftime("%d/%m/%Y"))
     print("Nom du patient : ", entrytext.get())
     with open('./14besoins/doc_suivi4/main_14b.txt', 'a+') as file:
         with open('./labo/doc_labo/result4.txt', 'a+') as file2:
-            file.write("\n----------------------------------------------------------\n")
+            file.write("\n\n----------------------------------------------------------\n")
             file.write("Date : ")
             file.write(time.strftime("%d/%m/%Y")+ '\n')
             file.write("Nom du patient : ")
             file.write(entrytext.get())
-            file2.write("\n----------------------------------------------------------\n")
+            file2.write("\n----------------------------------------------------------\n\n")
             file2.write("Date : ")
             file2.write(time.strftime("%d/%m/%Y")+ '\n')
             file2.write("Nom du patient : ")
