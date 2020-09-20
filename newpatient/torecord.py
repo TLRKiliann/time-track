@@ -55,6 +55,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot in line:
                         searchLine1(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot2 == '--':
         if os.path.getsize('./newpatient/entryfile2.txt'):
@@ -64,6 +66,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot2 in line:
                         searchLine2(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot3 == '---':
         if os.path.getsize('./newpatient/entryfile3.txt'):
@@ -73,6 +77,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot3 in line:
                         searchLine3(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot4 == '----':
         if os.path.getsize('./newpatient/entryfile4.txt'):
@@ -82,6 +88,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot4 in line:
                         searchLine4(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot5 == '-----':
         if os.path.getsize('./newpatient/entryfile5.txt'):
@@ -91,6 +99,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot5 in line:
                         searchLine5(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot6 == '------':
         if os.path.getsize('./newpatient/entryfile6.txt'):
@@ -100,6 +110,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot6 in line:
                         searchLine6(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot7 == '-------':
         if os.path.getsize('./newpatient/entryfile7.txt'):
@@ -109,6 +121,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot7 in line:
                         searchLine7(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot8 == '--------':
         if os.path.getsize('./newpatient/entryfile8.txt'):
@@ -118,6 +132,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot8 in line:
                         searchLine8(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot9 == '---------':
         if os.path.getsize('./newpatient/entryfile9.txt'):
@@ -127,6 +143,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot9 in line:
                         searchLine9(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot10 == '----------':
         if os.path.getsize('./newpatient/entryfile10.txt'):
@@ -136,6 +154,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot10 in line:
                         searchLine10(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot11 == '-----------':
         if os.path.getsize('./newpatient/entryfile11.txt'):
@@ -145,6 +165,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot11 in line:
                         searchLine11(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot12 == '------------':
         if os.path.getsize('./newpatient/entryfile12.txt'):
@@ -154,6 +176,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot12 in line:
                         searchLine12(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot13 == '-------------':
         if os.path.getsize('./newpatient/entryfile13.txt'):
@@ -163,6 +187,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot13 in line:
                         searchLine13(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot14 == '--------------':
         if os.path.getsize('./newpatient/entryfile14.txt'):
@@ -172,6 +198,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot14 in line:
                         searchLine14(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot15 == '---------------':
         if os.path.getsize('./newpatient/entryfile15.txt'):
@@ -181,6 +209,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot15 in line:
                         searchLine15(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot16 == '----------------':
         if os.path.getsize('./newpatient/entryfile16.txt'):
@@ -190,6 +220,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot16 in line:
                         searchLine16(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot17 == '-----------------':
         if os.path.getsize('./newpatient/entryfile17.txt'):
@@ -199,6 +231,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot17 in line:
                         searchLine17(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot18 == '------------------':
         if os.path.getsize('./newpatient/entryfile18.txt'):
@@ -208,6 +242,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot18 in line:
                         searchLine18(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot19 == '-------------------':
         if os.path.getsize('./newpatient/entryfile19.txt'):
@@ -217,6 +253,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot19 in line:
                         searchLine19(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot20 == '--------------------':
         if os.path.getsize('./newpatient/entryfile20.txt'):
@@ -226,6 +264,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot20 in line:
                         searchLine20(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot21 == '---------------------':
         if os.path.getsize('./newpatient/entryfile21.txt'):
@@ -235,6 +275,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot21 in line:
                         searchLine21(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot22 == '----------------------':
         if os.path.getsize('./newpatient/entryfile22.txt'):
@@ -244,6 +286,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot22 in line:
                         searchLine22(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot23 == '-----------------------':
         if os.path.getsize('./newpatient/entryfile23.txt'):
@@ -253,6 +297,8 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
                     line = lines[i]
                     if mot23 in line:
                         searchLine23(Nompatient, Birthvalue)
+    else:
+        pass
 
     if mot24 == '------------------------':
         if os.path.getsize('./newpatient/entryfile24.txt'):

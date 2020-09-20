@@ -48,7 +48,7 @@ def delFuncFile18():
             os.remove('./ttt/doc_ttt18/intro_res.txt')
             print("+ File intro_res.txt deleted")
     except FileNotFoundError as filefunc6:
-        print("+ File intro_res.txt does not exist", fileres6)
+        print("+ File intro_res.txt does not exist", filefunc6)
 
     try:
         if os.path.getsize('./calBmi/doc_BMI18/file_bmi.json'):
