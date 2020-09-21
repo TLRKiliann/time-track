@@ -186,7 +186,7 @@ labelNum2.grid(row=5, column=1)
 textDate = Entry(gui)
 time_string = IntVar() 
 textDate = Entry(textvariable=time_string, highlightbackground='gray', bd=4)
-time_string.set(time.strftime("%d/%m/%Y"))
+time_string.set(time.strftime("%-d-%-m-%Y"))
 textDate.grid(row=1, column=2)
 
 textHour = Entry(gui)

@@ -1,35 +1,42 @@
-Date : 01/08/2020
-Heure : 10:10:33
+Date : 22-9-2020
+Heure : 00:59:57
 Prenom et Nom : xcd
 Poids : 89
 Taille : 1.86
 BMI : 25.725517400855587
 
-Date : 05/08/2020
-Heure : 10:10:33
+Date : 1-8-2020
+Heure : 01:00:51
 Prenom et Nom : xcd
-Poids : 86
+Poids : 89
 Taille : 1.86
-BMI : 24.858365128916635
+BMI : 25.725517400855587
 
-Date : 10/08/2020
-Heure : 10:10:33
+Date : 4-8-2020
+Heure : 01:00:51
+Prenom et Nom : xcd
+Poids : 80
+Taille : 1.86
+BMI : 23.12406058503873
+
+Date : 8-8-2020
+Heure : 01:00:51
+Prenom et Nom : xcd
+Poids : 77
+Taille : 1.86
+BMI : 22.25690831309978
+
+Date : 1-9-2020
+Heure : 01:00:51
 Prenom et Nom : xcd
 Poids : 79
 Taille : 1.86
 BMI : 22.835009827725745
 
-Date : 02/09/2020
-Heure : 10:10:33
+Date : 5-9-2020
+Heure : 01:00:51
 Prenom et Nom : xcd
-Poids : 83
+Poids : 74
 Taille : 1.86
-BMI : 23.991212856977683
-
-Date : 21/09/2020
-Heure : 10:43:27
-Prenom et Nom : xcd
-Poids : 89.5
-Taille : 1.86
-BMI : 25.87004277951208
+BMI : 21.389756041160826
 
