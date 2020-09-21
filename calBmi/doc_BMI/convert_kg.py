@@ -65,7 +65,13 @@ print("\nList of weight :")
 print("------------------------")
 print(list2)
 
-list2 = list(map(int, list2))
+# Visual order of lists
+print("La liste 1 correspond à : ", list1)
+print("La liste 2 correspond à : ", list2)
+
+#list3 = [int(list1) for list1 in list1]
+list1 = list(map(str, list1))
+list2 = list(map(float, list2))
 
 # or seaborn-darkgrid
 show_grid = True

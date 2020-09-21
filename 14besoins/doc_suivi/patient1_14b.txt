@@ -1,0 +1,9 @@
+---####-|--- Affichage des besoins du patient à surveiller ---|-####---
+
+En date du : 21/09/2020 à 09:44:24 :
+Patient name : xcd
++ Surveillance pour éviter les dangers requise
++ Surveillance ou aide pour l'habillage/déshabillage requise
++ Accompagner ou aider la personne à se réaliser
+---
+
