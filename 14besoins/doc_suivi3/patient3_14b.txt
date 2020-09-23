@@ -1,5 +1,8 @@
+---####-|--- Affichage des besoins du patient à surveiller ---|-####---
 
-Date : 14/09/2020
+En date du : 23/09/2020 à 23:14:00 :
 Patient name : Aaron Schwartz
-+ Surveillance alimentaire et/ou hydratation requise
 + Surveillance propreté et/ou téguments requise
++ Surveillance ou aide pour l'habillage/déshabillage requise
+---
+

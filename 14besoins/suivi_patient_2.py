@@ -104,7 +104,6 @@ class Application(Frame):
         self.MsgBox1msg = messagebox.showinfo("Warning", "File '14 needs'"
             "was not created. Check options to '14 needs' !")
 
-
 if __name__=='__main__':
     app = Application()
     app.mainloop()
