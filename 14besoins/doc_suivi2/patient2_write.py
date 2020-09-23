@@ -41,9 +41,7 @@ def messFromSafeButt():
 
 def lectureFic():
     with open('./14besoins/doc_suivi2/patient2_14b.txt', 'r') as f1read:
-        with open('./labo/doc_labo/result2.txt', 'r') as f2read:
-            print(f1read.read())
-            print(f2read.read())
+        print(f1read.read())
     subprocess.call('./14besoins/doc_suivi2/patient2_read.py')
 
 def ajouterText():

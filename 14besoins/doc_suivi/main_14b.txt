@@ -1,24 +1,26 @@
-En date du : 21/09/2020 à 09:44:24 :
+En date du : 23/09/2020 à 22:44:46 :
 Patient name : xcd
 + Surveillance pour éviter les dangers requise
-+ Surveillance ou aide pour l'habillage/déshabillage requise
-+ Accompagner ou aider la personne à se réaliser
++ Surveillance propreté et/ou téguments requise
 ---
 
-En date du : 21/09/2020 à 09:44:33 :
-test 1
-
----####-|--- Affichage des besoins du patient à surveiller ---|-####---
-
-En date du : 21/09/2020 à 09:44:24 :
+En date du : 23/09/2020 à 22:44:58 :
 Patient name : xcd
 + Surveillance pour éviter les dangers requise
-Faire truc 1
-+ Surveillance ou aide pour l'habillage/déshabillage requise
-Faire truc 2
-+ Accompagner ou aider la personne à se réaliser
-Faire truc 3
----
+truc1
++ Surveillance propreté et/ou téguments requise
+truc2
 
+En date du : 23/09/2020 à 22:47:07 :
+ok test 2
 
+En date du : 23/09/2020 à 22:47:28 :
+ok test 3
+
+En date du : 23/09/2020 à 22:47:48 :
+Patient name : xcd
++ Surveillance pour éviter les dangers requise
+truc 3
++ Surveillance propreté et/ou téguments requise
+truc 4
 

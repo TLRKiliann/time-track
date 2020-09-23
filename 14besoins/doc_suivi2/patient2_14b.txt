@@ -1,7 +1,7 @@
 ---####-|--- Affichage des besoins du patient à surveiller ---|-####---
 
-En date du : 23/09/2020 à 22:44:46 :
-Patient name : xcd
+En date du : 23/09/2020 à 22:49:04 :
+Patient name : Jeffrey
 + Surveillance pour éviter les dangers requise
 + Surveillance propreté et/ou téguments requise
 ---
