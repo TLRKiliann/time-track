@@ -1,0 +1,28 @@
+Date : 24/09/2020
+Heure : 01:42:16
+Name : xcd
+
+Date of introduction : 04 April 2001
+Nom du ttt : clopin
+Dosage du ttt : 10 mg
+Matin : 1
+
+Soir : 1
+
+Date of end : //
+Signature : ec
+
+Date : 24/09/2020
+Heure : 01:49:31
+Name : xcd
+
+Date of introduction :  2020
+Nom du ttt : Zolpi
+Dosage du ttt : 10 mg
+Matin : 1
+
+Soir : 1
+
+Date of end : 25/09/2020
+Signature : ec
+

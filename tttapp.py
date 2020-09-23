@@ -60,7 +60,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt2:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 2)", info_ttt2)
     else:
-        ("Error unknow")
+        ("Error unknow 2")
 
     try:
         with open('./newpatient/entryfile3.txt', 'r') as namefile:
@@ -86,7 +86,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt3:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 3)", info_ttt3)
     else:
-        ("Error unknow")
+        ("Error unknow 3")
 
     try:
         with open('./newpatient/entryfile4.txt', 'r') as namefile:
@@ -112,7 +112,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt4:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 4)", info_ttt4)
     else:
-        ("Error unknow")
+        ("Error unknow 4")
 
     try:
         with open('./newpatient/entryfile5.txt', 'r') as namefile:
@@ -138,7 +138,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt5:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 5)", info_ttt5)
     else:
-        ("Error unknow")
+        ("Error unknow 5")
 
     try:
         with open('./newpatient/entryfile6.txt', 'r') as namefile:
@@ -164,7 +164,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt6:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 6)", info_ttt6)
     else:
-        ("Error unknow")
+        ("Error unknow 6")
 
     try:
         with open('./newpatient/entryfile7.txt', 'r') as namefile:
@@ -190,7 +190,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt7:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 7)", info_ttt7)
     else:
-        ("Error unknow")
+        ("Error unknow 7")
 
     try:
         with open('./newpatient/entryfile8.txt', 'r') as namefile:
@@ -216,7 +216,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt8:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 8)", info_ttt8)
     else:
-        ("Error unknow")
+        ("Error unknow 8")
 
     try:
         with open('./newpatient/entryfile9.txt', 'r') as namefile:
@@ -242,7 +242,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt9:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 9)", info_ttt9)
     else:
-        ("Error unknow")
+        ("Error unknow 9")
 
     try:
         with open('./newpatient/entryfile10.txt', 'r') as namefile:
@@ -268,7 +268,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt10:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 10)", info_ttt10)
     else:
-        ("Error unknow")
+        ("Error unknow 10")
 
     try:
         with open('./newpatient/entryfile11.txt', 'r') as namefile:
@@ -294,7 +294,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt11:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 11)", info_ttt11)
     else:
-        ("Error unknow")
+        ("Error unknow 11")
 
     try:
         with open('./newpatient/entryfile12.txt', 'r') as namefile:
@@ -320,7 +320,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt12:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 12)", info_ttt12)
     else:
-        ("Error unknow")
+        ("Error unknow 12")
 
     try:
         with open('./newpatient/entryfile13.txt', 'r') as namefile:
@@ -346,7 +346,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt13:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 13)", info_ttt13)
     else:
-        ("Error unknow")
+        ("Error unknow 13")
 
     try:
         with open('./newpatient/entryfile14.txt', 'r') as namefile:
@@ -372,7 +372,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt14:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 14)", info_ttt14)
     else:
-        ("Error unknow")
+        ("Error unknow 14")
 
     try:
         with open('./newpatient/entryfile15.txt', 'r') as namefile:
@@ -398,7 +398,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt15:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 15)", info_ttt15)
     else:
-        ("Error unknow")
+        ("Error unknow 15")
 
     try:
         with open('./newpatient/entryfile16.txt', 'r') as namefile:
@@ -424,7 +424,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt16:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 16)", info_ttt16)
     else:
-        ("Error unknow")
+        ("Error unknow 16")
 
     try:
         with open('./newpatient/entryfile17.txt', 'r') as namefile:
@@ -450,7 +450,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt17:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 17)", info_ttt17)
     else:
-        ("Error unknow")
+        ("Error unknow 17")
 
     try:
         with open('./newpatient/entryfile18.txt', 'r') as namefile:
@@ -476,7 +476,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt18:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 18)", info_ttt18)
     else:
-        ("Error unknow")
+        ("Error unknow 18")
 
     try:
         with open('./newpatient/entryfile19.txt', 'r') as namefile:
@@ -502,7 +502,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt19:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 19)", info_ttt19)
     else:
-        ("Error unknow")
+        ("Error unknow 19")
 
     try:
         with open('./newpatient/entryfile20.txt', 'r') as namefile:
@@ -528,7 +528,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt20:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 20)", info_ttt20)
     else:
-        ("Error unknow")
+        ("Error unknow 20")
 
     try:
         with open('./newpatient/entryfile21.txt', 'r') as namefile:
@@ -554,7 +554,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt21:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 21)", info_ttt21)
     else:
-        ("Error unknow")
+        ("Error unknow 21")
 
     try:
         with open('./newpatient/entryfile22.txt', 'r') as namefile:
@@ -580,7 +580,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt22:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 22)", info_ttt22)
     else:
-        ("Error unknow")
+        ("Error unknow 22")
 
     try:
         with open('./newpatient/entryfile23.txt', 'r') as namefile:
@@ -606,7 +606,7 @@ def dispTttBox():
     except FileNotFoundError as info_ttt23:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 23)", info_ttt23)
     else:
-        ("Error unknow")
+        ("Error unknow 23")
 
     try:
         with open('./newpatient/entryfile24.txt', 'r') as namefile:
@@ -632,4 +632,4 @@ def dispTttBox():
     except FileNotFoundError as info_ttt24:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 24)", info_ttt24)
     else:
-        ("Error unknow")
+        ("Error unknow 24")
