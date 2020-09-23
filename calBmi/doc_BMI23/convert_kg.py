@@ -66,7 +66,7 @@ print("------------------------")
 print(list2)
 
 #list3 = [int(list2) for list2 in list2]
-list2 = list(map(int, list2))
+list2 = list(map(float, list2))
 
 # or seaborn-darkgrid
 show_grid = True
