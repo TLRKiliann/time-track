@@ -177,9 +177,9 @@ def recordOption():
         print("Nothing to do")
 
     with open('./14besoins/doc_suivi2/patient2_14b.txt', 'a+') as file:
-            with open('./14besoins/doc_suivi2/main_14b.txt', 'a+') as file_2:
-                file.write("---\n\n")
-                file_2.write("---\n\n")
+        with open('./14besoins/doc_suivi2/main_14b.txt', 'a+') as file_2:
+            file.write("---\n\n")
+            file_2.write("---\n\n")
 
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
