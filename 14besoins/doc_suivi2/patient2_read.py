@@ -68,5 +68,4 @@ try:
 except FileNotFoundError as filereach:
     print("File main_14b.txt not exist", filereach)
 
-
 fen.mainloop()

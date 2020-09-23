@@ -59,7 +59,7 @@ textBox.pack(padx=30, pady=30)
 
 buttonClose=Button(fen, text="Quit", fg='white', width=10, bd=3,
     bg='navy', activebackground='dark turquoise', activeforeground='navy', 
-    highlightbackground='#82193e', command=quit)
+    highlightbackground='grey17', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
 try:

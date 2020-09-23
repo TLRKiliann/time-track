@@ -27,12 +27,13 @@ def recordOption():
     print("+ Nom du patient : ", entryName.get())
     with open('./14besoins/doc_suivi2/patient2_14b.txt', 'a+') as file:
         with open('./14besoins/doc_suivi2/main_14b.txt', 'a+') as file_2:
-            file.write("\nDate : ")
-            file.write(time.strftime("%d/%m/%Y") + '\n')
+            file.write("---####-|--- Affichage des besoins du patient à surveiller ---|-####---\n")
+            file.write("\nEn date du : ")
+            file.write(time.strftime("%d/%m/%Y à %H:%M:%S :") + '\n')
             file.write("Patient name : ")
             file.write(entryName.get())
-            file_2.write("\nDate : ")
-            file_2.write(time.strftime("%d/%m/%Y") + '\n')
+            file_2.write("En date du : ")
+            file_2.write(time.strftime("%d/%m/%Y à %H:%M:%S :") + '\n')
             file_2.write("Patient name : ")
             file_2.write(entryName.get())
     print(CheckVar1.get())
@@ -174,6 +175,11 @@ def recordOption():
                 file_2.write("+ Accompagnement ou aide dans l'apprentissage requis\n")
     else:
         print("Nothing to do")
+
+    with open('./14besoins/doc_suivi2/patient2_14b.txt', 'a+') as file:
+            with open('./14besoins/doc_suivi2/main_14b.txt', 'a+') as file_2:
+                file.write("---\n\n")
+                file_2.write("---\n\n")
 
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
