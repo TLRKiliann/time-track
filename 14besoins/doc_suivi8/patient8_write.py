@@ -51,7 +51,7 @@ def ajouterText():
     """
     textBox.delete('0.0', END)
     textBox.insert(INSERT, "En date du : ")
-    textBox.insert(END, time.strftime("%d/%m/%Y at %H:%M:%S :\n"))
+    textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :\n"))
     textBox.update()
 
 def importationFile(fichier, encodage="Utf-8"):

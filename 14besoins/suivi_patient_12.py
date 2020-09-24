@@ -86,12 +86,6 @@ class Application(Frame):
         except FileNotFoundError as outmsg:
             print("+ Sorry, file '14 needs' not exist !", outmsg)
             self.commentFileRecNeeds()
-        try:        
-            if os.path.getsize('./labo/doc_labo/result12.txt'):
-                print("+ File 'result12.txt' exist !")
-        except FileNotFoundError as outcom:
-            print("+ Sorry, file 'result12.txt' not exist !", outcom)
-            self.commentFileRecResult()
 
     def lectureFic(self):
         """
@@ -101,29 +95,14 @@ class Application(Frame):
         try:
             if os.path.getsize('./14besoins/doc_suivi12/patient12_14b.txt'):
                 print("+ File '14 needs' exist (read)!")
+                subprocess.call('./14besoins/doc_suivi8/patient12_read.py')
         except FileNotFoundError as outnote:
             print("+ Sorry, file '14 needs' not exist !", outnote)
             self.commentFileRecNeeds()
-        try:        
-            if os.path.getsize('./labo/doc_labo/result12.txt'):
-                print("+ File 'result12.txt' exist !")
-                subprocess.call('./14besoins/doc_suivi12/patient12_read.py')
-        except FileNotFoundError as outputcomment:
-            print("+ Sorry, file 'result12.txt' not exist !", outputcomment)
-            self.commentFileRecResult()
 
     def commentFileRecNeeds(self):
         self.MsgBox1msg = messagebox.showinfo("Warning", "File '14 needs'"
             "was not created. Check options to '14 needs' !")
-
-    def commentFileRecResult(self):
-        self.MsgBox2msg = messagebox.showinfo("Warning", "File 'result12.txt'"
-            "was not created. Check options to 'labo' !")
-        self.createFileLabo()
-
-    def createFileLabo(self):
-        with open('./labo/doc_labo/result12.txt', 'w') as filelab:
-            filelab.write("\n---\n")
 
 if __name__=='__main__':
     app = Application()
