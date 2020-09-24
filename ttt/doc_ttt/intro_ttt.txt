@@ -110,3 +110,17 @@ Soir : 1
 Date of end : 25/09/2020
 Signature : ec
 
+Date : 24/09/2020
+Heure : 08:55:55
+Name : xcd
+
+Date of introduction :  2020
+Nom du ttt : Sirup
+Dosage du ttt : 
+Matin : 1
+
+
+
+Date of end : 25/09/2020
+Signature : ec
+
