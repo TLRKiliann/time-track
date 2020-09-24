@@ -10,6 +10,17 @@
             "First-line": 1,
             "Second-line": 0,
             "Number/24h": "2"
+        },
+        {
+            "Date": "24/09/2020",
+            "Date of introduction": "",
+            "Date of end": "25/09/2020",
+            "Treatment": "test_res",
+            "Dosage": "10 mg",
+            "Reserve": 1,
+            "First-line": 1,
+            "Second-line": 0,
+            "Number/24h": "2"
         }
     ]
 }

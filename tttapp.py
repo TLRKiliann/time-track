@@ -38,9 +38,9 @@ def dispTttBox():
                         'for : ' + "\n" + line_text1 + "Date of end : " + date_end + "\n" + name_treat + \
                         "\n" + dose_ttt) 
     except IndexError as error_ttt:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 1)", error_ttt)
+        print("No date of end has been found for ttt into file convdose.json (patient 1)", error_ttt)
     except FileNotFoundError as info_ttt:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 1)", info_ttt)
+        print("No date of end has been found for ttt into file convdose.json (patient 1)", info_ttt)
     else:
         ("Error unknow 1")
 
@@ -70,9 +70,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text2 + "Date of end : " + date_end2 + "\n" + name_treat2 + \
                         "\n" + dose_ttt2) 
     except IndexError as error_ttt2:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 2)", error_ttt2)
+        print("No date of end has been found for ttt into file convdose.json (patient 2)", error_ttt2)
     except FileNotFoundError as info_ttt2:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 2)", info_ttt2)
+        print("No date of end has been found for ttt into file convdose.json (patient 2)", info_ttt2)
     else:
         ("Error unknow 2")
 
@@ -102,9 +102,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text3 + "Date of end : " + date_end3 + "\n" + name_treat3 + \
                         "\n" + dose_ttt3) 
     except IndexError as error_ttt3:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 3)", error_ttt3)
+        print("No date of end has been found for ttt into file convdose.json (patient 3)", error_ttt3)
     except FileNotFoundError as info_ttt3:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 3)", info_ttt3)
+        print("No date of end has been found for ttt into file convdose.json (patient 3)", info_ttt3)
     else:
         ("Error unknow 3")
 
@@ -134,9 +134,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text4 + "Date of end : " + date_end4 + "\n" + name_treat4 + \
                         "\n" + dose_ttt4) 
     except IndexError as error_ttt4:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 4)", error_ttt4)
+        print("No date of end has been found for ttt into file convdose.json (patient 4)", error_ttt4)
     except FileNotFoundError as info_ttt4:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 4)", info_ttt4)
+        print("No date of end has been found for ttt into file convdose.json (patient 4)", info_ttt4)
     else:
         ("Error unknow 4")
 
@@ -166,9 +166,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text5 + "Date of end : " + date_end5 + "\n" + name_treat5 + \
                         "\n" + dose_ttt5) 
     except IndexError as error_ttt5:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 5)", error_ttt5)
+        print("No date of end has been found for ttt into file convdose.json (patient 5)", error_ttt5)
     except FileNotFoundError as info_ttt5:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 5)", info_ttt5)
+        print("No date of end has been found for ttt into file convdose.json (patient 5)", info_ttt5)
     else:
         ("Error unknow 5")
 
@@ -198,9 +198,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text6 + "Date of end : " + date_end6 + "\n" + name_treat6 + \
                         "\n" + dose_ttt6) 
     except IndexError as error_ttt6:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 6)", error_ttt6)
+        print("No date of end has been found for ttt into file convdose.json (patient 6)", error_ttt6)
     except FileNotFoundError as info_ttt6:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 6)", info_ttt6)
+        print("No date of end has been found for ttt into file convdose.json (patient 6)", info_ttt6)
     else:
         ("Error unknow 6")
 
@@ -230,9 +230,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text7 + "Date of end : " + date_end7 + "\n" + name_treat7 + \
                         "\n" + dose_ttt7) 
     except IndexError as error_ttt7:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 7)", error_ttt7)
+        print("No date of end has been found for ttt into file convdose.json (patient 7)", error_ttt7)
     except FileNotFoundError as info_ttt7:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 7)", info_ttt7)
+        print("No date of end has been found for ttt into file convdose.json (patient 7)", info_ttt7)
     else:
         ("Error unknow 7")
 
@@ -262,9 +262,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text8 + "Date of end : " + date_end8 + "\n" + name_treat8 + \
                         "\n" + dose_ttt8) 
     except IndexError as error_ttt8:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 8)", error_ttt8)
+        print("No date of end has been found for ttt into file convdose.json (patient 8)", error_ttt8)
     except FileNotFoundError as info_ttt8:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 8)", info_ttt8)
+        print("No date of end has been found for ttt into file convdose.json (patient 8)", info_ttt8)
     else:
         ("Error unknow 8")
 
@@ -294,9 +294,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text9 + "Date of end : " + date_end9 + "\n" + name_treat9 + \
                         "\n" + dose_ttt9) 
     except IndexError as error_ttt9:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 9)", error_ttt9)
+        print("No date of end has been found for ttt into file convdose.json (patient 9)", error_ttt9)
     except FileNotFoundError as info_ttt9:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 9)", info_ttt9)
+        print("No date of end has been found for ttt into file convdose.json (patient 9)", info_ttt9)
     else:
         ("Error unknow 9")
 
@@ -326,9 +326,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text10 + "Date of end : " + date_end10 + "\n" + name_treat10 + \
                         "\n" + dose_ttt10) 
     except IndexError as error_ttt10:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 10)", error_ttt10)
+        print("No date of end has been found for ttt into file convdose.json (patient 10)", error_ttt10)
     except FileNotFoundError as info_ttt10:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 10)", info_ttt10)
+        print("No date of end has been found for ttt into file convdose.json (patient 10)", info_ttt10)
     else:
         ("Error unknow 10")
 
@@ -358,9 +358,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text11 + "Date of end : " + date_end11 + "\n" + name_treat11 + \
                         "\n" + dose_ttt11) 
     except IndexError as error_ttt11:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 11)", error_ttt11)
+        print("No date of end has been found for ttt into file convdose.json (patient 11)", error_ttt11)
     except FileNotFoundError as info_ttt11:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 11)", info_ttt11)
+        print("No date of end has been found for ttt into file convdose.json (patient 11)", info_ttt11)
     else:
         ("Error unknow 11")
 
@@ -390,9 +390,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text12 + "Date of end : " + date_end12 + "\n" + name_treat12 + \
                         "\n" + dose_ttt12) 
     except IndexError as error_ttt12:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 12)", error_ttt12)
+        print("No date of end has been found for ttt into file convdose.json (patient 12)", error_ttt12)
     except FileNotFoundError as info_ttt12:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 12)", info_ttt12)
+        print("No date of end has been found for ttt into file convdose.json (patient 12)", info_ttt12)
     else:
         ("Error unknow 12")
 
@@ -422,9 +422,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text13 + "Date of end : " + date_end13 + "\n" + name_treat13 + \
                         "\n" + dose_ttt13) 
     except IndexError as error_ttt13:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 13)", error_ttt13)
+        print("No date of end has been found for ttt into file convdose.json (patient 13)", error_ttt13)
     except FileNotFoundError as info_ttt13:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 13)", info_ttt13)
+        print("No date of end has been found for ttt into file convdose.json (patient 13)", info_ttt13)
     else:
         ("Error unknow 13")
 
@@ -454,9 +454,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text14 + "Date of end : " + date_end14 + "\n" + name_treat14 + \
                         "\n" + dose_ttt14) 
     except IndexError as error_ttt14:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 14)", error_ttt14)
+        print("No date of end has been found for ttt into file convdose.json (patient 14)", error_ttt14)
     except FileNotFoundError as info_ttt14:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 14)", info_ttt14)
+        print("No date of end has been found for ttt into file convdose.json (patient 14)", info_ttt14)
     else:
         ("Error unknow 14")
 
@@ -486,9 +486,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text15 + "Date of end : " + date_end15 + "\n" + name_treat15 + \
                         "\n" + dose_ttt15) 
     except IndexError as error_ttt15:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 15)", error_ttt15)
+        print("No date of end has been found for ttt into file convdose.json (patient 15)", error_ttt15)
     except FileNotFoundError as info_ttt15:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 15)", info_ttt15)
+        print("No date of end has been found for ttt into file convdose.json (patient 15)", info_ttt15)
     else:
         ("Error unknow 15")
 
@@ -518,9 +518,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text16 + "Date of end : " + date_end16 + "\n" + name_treat16 + \
                         "\n" + dose_ttt16) 
     except IndexError as error_ttt16:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 16)", error_ttt16)
+        print("No date of end has been found for ttt into file convdose.json (patient 16)", error_ttt16)
     except FileNotFoundError as info_ttt16:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 16)", info_ttt16)
+        print("No date of end has been found for ttt into file convdose.json (patient 16)", info_ttt16)
     else:
         ("Error unknow 16")
 
@@ -550,9 +550,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text17 + "Date of end : " + date_end17 + "\n" + name_treat17 + \
                         "\n" + dose_ttt17) 
     except IndexError as error_ttt17:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 17)", error_ttt17)
+        print("No date of end has been found for ttt into file convdose.json (patient 17)", error_ttt17)
     except FileNotFoundError as info_ttt17:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 17)", info_ttt17)
+        print("No date of end has been found for ttt into file convdose.json (patient 17)", info_ttt17)
     else:
         ("Error unknow 17")
 
@@ -582,9 +582,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text18 + "Date of end : " + date_end18 + "\n" + name_treat18 + \
                         "\n" + dose_ttt18) 
     except IndexError as error_ttt18:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 18)", error_ttt18)
+        print("No date of end has been found for ttt into file convdose.json (patient 18)", error_ttt18)
     except FileNotFoundError as info_ttt18:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 18)", info_ttt18)
+        print("No date of end has been found for ttt into file convdose.json (patient 18)", info_ttt18)
     else:
         ("Error unknow 18")
 
@@ -614,9 +614,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text19 + "Date of end : " + date_end19 + "\n" + name_treat19 + \
                         "\n" + dose_ttt19) 
     except IndexError as error_ttt19:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 19)", error_ttt19)
+        print("No date of end has been found for ttt into file convdose.json (patient 19)", error_ttt19)
     except FileNotFoundError as info_ttt19:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 19)", info_ttt19)
+        print("No date of end has been found for ttt into file convdose.json (patient 19)", info_ttt19)
     else:
         ("Error unknow 19")
 
@@ -646,9 +646,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text20 + "Date of end : " + date_end20 + "\n" + name_treat20 + \
                         "\n" + dose_ttt20) 
     except IndexError as error_ttt20:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 20)", error_ttt20)
+        print("No date of end has been found for ttt into file convdose.json (patient 20)", error_ttt20)
     except FileNotFoundError as info_ttt20:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 20)", info_ttt20)
+        print("No date of end has been found for ttt into file convdose.json (patient 20)", info_ttt20)
     else:
         ("Error unknow 20")
 
@@ -678,9 +678,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text21 + "Date of end : " + date_end21 + "\n" + name_treat21 + \
                         "\n" + dose_ttt21) 
     except IndexError as error_ttt21:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 21)", error_ttt21)
+        print("No date of end has been found for ttt into file convdose.json (patient 21)", error_ttt21)
     except FileNotFoundError as info_ttt21:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 21)", info_ttt21)
+        print("No date of end has been found for ttt into file convdose.json (patient 21)", info_ttt21)
     else:
         ("Error unknow 21")
 
@@ -710,9 +710,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text22 + "Date of end : " + date_end22 + "\n" + name_treat22 + \
                         "\n" + dose_ttt22) 
     except IndexError as error_ttt22:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 22)", error_ttt22)
+        print("No date of end has been found for ttt into file convdose.json (patient 22)", error_ttt22)
     except FileNotFoundError as info_ttt22:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 22)", info_ttt22)
+        print("No date of end has been found for ttt into file convdose.json (patient 22)", info_ttt22)
     else:
         ("Error unknow 22")
 
@@ -742,9 +742,9 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text23 + "Date of end : " + date_end23 + "\n" + name_treat23 + \
                         "\n" + dose_ttt23) 
     except IndexError as error_ttt23:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 23)", error_ttt23)
+        print("No date of end has been found for ttt into file convdose.json (patient 23)", error_ttt23)
     except FileNotFoundError as info_ttt23:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 23)", info_ttt23)
+        print("No date of end has been found for ttt into file convdose.json (patient 23)", info_ttt23)
     else:
         ("Error unknow 23")
 
@@ -774,8 +774,8 @@ def dispTttBox():
                         'for : ' + "\n" + ttt_text24 + "Date of end : " + date_end24 + "\n" + name_treat24 + \
                         "\n" + dose_ttt24) 
     except IndexError as error_ttt24:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 24)", error_ttt24)
+        print("No date of end has been found for ttt into file convdose.json (patient 24)", error_ttt24)
     except FileNotFoundError as info_ttt24:
-        print("No date of end has been found for ttt into file intro_ttt.txt (patient 24)", info_ttt24)
+        print("No date of end has been found for ttt into file convdose.json (patient 24)", info_ttt24)
     else:
         ("Error unknow 24")

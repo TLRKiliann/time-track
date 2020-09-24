@@ -40,3 +40,17 @@ Soir : 1
 Date of end : 17/09/2020
 Signature : cku
 
+Date : 24/09/2020
+Heure : 22:50:04
+Name : Gérard Lanvin
+
+Date of introduction :  2020
+Nom du ttt : test1
+Dosage du ttt : 10mg
+Matin : 1
+
+Soir : 1
+
+Date of end : 25/09/2020
+Signature : ec
+

@@ -32,6 +32,17 @@
             "Midi": "",
             "Soir": "1",
             "Nuit": ""
+        },
+        {
+            "Date": "24/09/2020",
+            "Date of introduction": " 2020",
+            "Date of end": "25/09/2020",
+            "Treatment": "test1",
+            "Dosage": "10mg",
+            "Matin": "1",
+            "Midi": "",
+            "Soir": "1",
+            "Nuit": ""
         }
     ]
 }

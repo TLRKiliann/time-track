@@ -10,3 +10,36 @@ Réserve : Oui
 Date of end : //
 Signature : ec
 
+Date : 24/09/2020
+Heure : 22:55:33
+Name : xcd
+
+Date of introduction : 
+Nom du ttt : test_res
+Dosage du ttt : 10 mg
+
+Date of end : 25/09/2020
+Signature : ec
+
+Date : 24/09/2020
+Heure : 22:55:33
+Name : xcd
+
+Date of introduction : 
+Nom du ttt : test_res
+Dosage du ttt : 10 mg
+Date of end : 25/09/2020
+Signature : ec
+
+Date : 24/09/2020
+Heure : 22:55:33
+Name : xcd
+
+Date of introduction : 
+Nom du ttt : test_res
+Dosage du ttt : 10 mg
+Réserve : Oui
+1ère intention : Oui
+Date of end : 25/09/2020
+Signature : ec
+

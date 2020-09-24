@@ -4,6 +4,7 @@
 
 from tkinter import *
 from tkinter import messagebox
+import json
 import os
 import time
 import datetime
@@ -17,623 +18,769 @@ def dispResFunc():
     # Patient 1
     try:
         with open('./newpatient/entryfile.txt', 'r') as namefile:
-            res_text1=namefile.readline()
+            res_text1 = namefile.readline()
     except FileNotFoundError as callfile:
         print("File entryfile.txt doesn't exist !", callfile)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text1 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res1:
-        print("No date of end has been found for reserve into file convres.json (patient 1)", info_res1)
+        word_ttstop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file = open('./ttt/doc_ttt/convres.json')
+        data = json.load(file)
+        for (key, value) in data.items():
+            listdata_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata_x:
+                print(str(value[x]["Date of end"]))
+                date_end = (str(value[x]["Date of end"]))
+                if date_end == word_ttstop:
+                    print(date_end)
+                    name_treat = (str(value[x]["Treatment"]))
+                    print(name_treat)
+                    dose_ttt = (str(value[x]["Dosage"]))
+                    print(dose_ttt)
+                    MSBTTT2 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop + " " + \
+                        'for : ' + "\n" + res_text1 + "Date of end : " + date_end + "\n" + name_treat + \
+                        "\n" + dose_ttt) 
+    except IndexError as error_ttt:
+        print("No date of end has been found for reserve into file convres.json (patient 1)", error_ttt)
+    except FileNotFoundError as info_ttt:
+        print("No date of end has been found for reserve into file convres.json (patient 1)", info_ttt)
     else:
-        ("Error unknow")
+        ("Error unknow 1")
 
-    # Patient 2
     try:
-        with open('./newpatient/entryfile2.txt', 'r') as namefile:
-            res_text2=namefile.readline()
+        with open('./newpatient/entryfile2.txt', 'r') as namefile2:
+            res_text2 = namefile2.readline()
     except FileNotFoundError as callfile2:
         print("File entryfile2.txt doesn't exist !", callfile2)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt2/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text2 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res2:
-        print("No date of end has been found for reserve into file convres.json (patient 2)", info_res2)
+        word_ttstop2 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file2 = open('./ttt/doc_ttt2/convres.json')
+        data2 = json.load(file2)
+        for (key, value) in data2.items():
+            listdata2_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata2_x:
+                print(str(value[x]["Date of end"]))
+                date_end2 = (str(value[x]["Date of end"]))
+                if date_end2 == word_ttstop2:
+                    print(date_end2)
+                    name_treat2 = (str(value[x]["Treatment"]))
+                    print(name_treat2)
+                    dose_ttt2 = (str(value[x]["Dosage"]))
+                    print(dose_ttt2)
+                    MSBTTT2 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop2 + " " + \
+                        'for : ' + "\n" + res_text2 + "Date of end : " + date_end2 + "\n" + name_treat2 + \
+                        "\n" + dose_ttt2) 
+    except IndexError as error_ttt2:
+        print("No date of end has been found for reserve into file convres.json (patient 2)", error_ttt2)
+    except FileNotFoundError as info_ttt2:
+        print("No date of end has been found for reserve into file convres.json (patient 2)", info_ttt2)
     else:
-        ("Error unknow")
+        ("Error unknow 2")
 
-    # Patient 3
     try:
-        with open('./newpatient/entryfile3.txt', 'r') as namefile:
-            res_text3=namefile.readline()
+        with open('./newpatient/entryfile3.txt', 'r') as namefile3:
+            res_text3 = namefile3.readline()
     except FileNotFoundError as callfile3:
         print("File entryfile3.txt doesn't exist !", callfile3)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt3/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text3 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res3:
-        print("No date of end has been found for reserve into file convres.json (patient 3)", info_res3)
+        word_ttstop3 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file3 = open('./ttt/doc_ttt3/convres.json')
+        data3 = json.load(file3)
+        for (key, value) in data3.items():
+            listdata3_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata3_x:
+                print(str(value[x]["Date of end"]))
+                date_end3 = (str(value[x]["Date of end"]))
+                if date_end3 == word_ttstop3:
+                    print(date_end3)
+                    name_treat3 = (str(value[x]["Treatment"]))
+                    print(name_treat3)
+                    dose_ttt3 = (str(value[x]["Dosage"]))
+                    print(dose_ttt3)
+                    MSBTTT3 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop3 + " " + \
+                        'for : ' + "\n" + res_text3 + "Date of end : " + date_end3 + "\n" + name_treat3 + \
+                        "\n" + dose_ttt3) 
+    except IndexError as error_ttt3:
+        print("No date of end has been found for reserve into file convres.json (patient 3)", error_ttt3)
+    except FileNotFoundError as info_ttt3:
+        print("No date of end has been found for reserve into file convres.json (patient 3)", info_ttt3)
     else:
-        ("Error unknow")
+        ("Error unknow 3")
 
-    # Patient 4
     try:
-        with open('./newpatient/entryfile4.txt', 'r') as namefile:
-            res_text4=namefile.readline()
+        with open('./newpatient/entryfile4.txt', 'r') as namefile4:
+            res_text4 = namefile4.readline()
     except FileNotFoundError as callfile4:
         print("File entryfile4.txt doesn't exist !", callfile4)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt4/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text4 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res4:
-        print("No date of end has been found for reserve into file convres.json (patient 4)", info_res4)
+        word_ttstop4 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file4 = open('./ttt/doc_ttt4/convres.json')
+        data4 = json.load(file4)
+        for (key, value) in data4.items():
+            listdata4_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata4_x:
+                print(str(value[x]["Date of end"]))
+                date_end4 = (str(value[x]["Date of end"]))
+                if date_end4 == word_ttstop4:
+                    print(date_end4)
+                    name_treat4 = (str(value[x]["Treatment"]))
+                    print(name_treat4)
+                    dose_ttt4 = (str(value[x]["Dosage"]))
+                    print(dose_ttt4)
+                    MSBTTT4 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop4 + " " + \
+                        'for : ' + "\n" + res_text4 + "Date of end : " + date_end4 + "\n" + name_treat4 + \
+                        "\n" + dose_ttt4) 
+    except IndexError as error_ttt4:
+        print("No date of end has been found for reserve into file convres.json (patient 4)", error_ttt4)
+    except FileNotFoundError as info_ttt4:
+        print("No date of end has been found for reserve into file convres.json (patient 4)", info_ttt4)
     else:
-        ("Error unknow")
+        ("Error unknow 4")
 
-    # Patient 5
     try:
-        with open('./newpatient/entryfile5.txt', 'r') as namefile:
-            res_text5=namefile.readline()
+        with open('./newpatient/entryfile5.txt', 'r') as namefile5:
+            res_text5 = namefile5.readline()
     except FileNotFoundError as callfile5:
         print("File entryfile5.txt doesn't exist !", callfile5)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt5/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text5 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res5:
-        print("No date of end has been found for reserve into file convres.json (patient 5)", info_res5)
+        word_ttstop5 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file5 = open('./ttt/doc_ttt5/convres.json')
+        data5 = json.load(file5)
+        for (key, value) in data5.items():
+            listdata5_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata5_x:
+                print(str(value[x]["Date of end"]))
+                date_end5 = (str(value[x]["Date of end"]))
+                if date_end5 == word_ttstop5:
+                    print(date_end5)
+                    name_treat5 = (str(value[x]["Treatment"]))
+                    print(name_treat5)
+                    dose_ttt5 = (str(value[x]["Dosage"]))
+                    print(dose_ttt5)
+                    MSBTTT5 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop5 + " " + \
+                        'for : ' + "\n" + res_text5 + "Date of end : " + date_end5 + "\n" + name_treat5 + \
+                        "\n" + dose_ttt5) 
+    except IndexError as error_ttt5:
+        print("No date of end has been found for reserve into file convres.json (patient 5)", error_ttt5)
+    except FileNotFoundError as info_ttt5:
+        print("No date of end has been found for reserve into file convres.json (patient 5)", info_ttt5)
     else:
-        ("Error unknow")
+        ("Error unknow 5")
 
-    # Patient 6
     try:
-        with open('./newpatient/entryfile6.txt', 'r') as namefile:
-            res_text6=namefile.readline()
+        with open('./newpatient/entryfile6.txt', 'r') as namefile6:
+            res_text6 = namefile6.readline()
     except FileNotFoundError as callfile6:
         print("File entryfile6.txt doesn't exist !", callfile6)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt6/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text6 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res6:
-        print("No date of end has been found for reserve into file convres.json (patient 6)", info_res6)
+        word_ttstop6 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file6 = open('./ttt/doc_ttt6/convres.json')
+        data6 = json.load(file6)
+        for (key, value) in data6.items():
+            listdata6_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata6_x:
+                print(str(value[x]["Date of end"]))
+                date_end6 = (str(value[x]["Date of end"]))
+                if date_end6 == word_ttstop6:
+                    print(date_end6)
+                    name_treat6 = (str(value[x]["Treatment"]))
+                    print(name_treat6)
+                    dose_ttt6 = (str(value[x]["Dosage"]))
+                    print(dose_ttt6)
+                    MSBTTT6 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop6 + " " + \
+                        'for : ' + "\n" + res_text6 + "Date of end : " + date_end6 + "\n" + name_treat6 + \
+                        "\n" + dose_ttt6) 
+    except IndexError as error_ttt6:
+        print("No date of end has been found for reserve into file convres.json (patient 6)", error_ttt6)
+    except FileNotFoundError as info_ttt6:
+        print("No date of end has been found for reserve into file convres.json (patient 6)", info_ttt6)
     else:
-        ("Error unknow")
+        ("Error unknow 6")
 
-    # Patient 7
     try:
-        with open('./newpatient/entryfile7.txt', 'r') as namefile:
-            res_text7=namefile.readline()
+        with open('./newpatient/entryfile7.txt', 'r') as namefile7:
+            res_text7 = namefile7.readline()
     except FileNotFoundError as callfile7:
         print("File entryfile7.txt doesn't exist !", callfile7)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt7/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text7 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res7:
-        print("No date of end has been found for reserve into file convres.json (patient 7)", info_res7)
+        word_ttstop7 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file7 = open('./ttt/doc_ttt7/convres.json')
+        data7 = json.load(file7)
+        for (key, value) in data7.items():
+            listdata7_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata7_x:
+                print(str(value[x]["Date of end"]))
+                date_end7 = (str(value[x]["Date of end"]))
+                if date_end7 == word_ttstop7:
+                    print(date_end7)
+                    name_treat7 = (str(value[x]["Treatment"]))
+                    print(name_treat7)
+                    dose_ttt7 = (str(value[x]["Dosage"]))
+                    print(dose_ttt7)
+                    MSBTTT7 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop7 + " " + \
+                        'for : ' + "\n" + res_text7 + "Date of end : " + date_end7 + "\n" + name_treat7 + \
+                        "\n" + dose_ttt7) 
+    except IndexError as error_ttt7:
+        print("No date of end has been found for reserve into file convres.json (patient 7)", error_ttt7)
+    except FileNotFoundError as info_ttt7:
+        print("No date of end has been found for reserve into file convres.json (patient 7)", info_ttt7)
     else:
-        ("Error unknow")
+        ("Error unknow 7")
 
-    # Patient 8
     try:
-        with open('./newpatient/entryfile8.txt', 'r') as namefile:
-            res_text8=namefile.readline()
+        with open('./newpatient/entryfile8.txt', 'r') as namefile8:
+            res_text8 = namefile8.readline()
     except FileNotFoundError as callfile8:
         print("File entryfile8.txt doesn't exist !", callfile8)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt8/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text8 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res8:
-        print("No date of end has been found for reserve into file convres.json (patient 8)", info_res8)
+        word_ttstop8 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file8 = open('./ttt/doc_ttt8/convres.json')
+        data8 = json.load(file8)
+        for (key, value) in data8.items():
+            listdata8_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata8_x:
+                print(str(value[x]["Date of end"]))
+                date_end8 = (str(value[x]["Date of end"]))
+                if date_end8 == word_ttstop8:
+                    print(date_end8)
+                    name_treat8 = (str(value[x]["Treatment"]))
+                    print(name_treat8)
+                    dose_ttt8 = (str(value[x]["Dosage"]))
+                    print(dose_ttt8)
+                    MSBTTT8 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop8 + " " + \
+                        'for : ' + "\n" + res_text8 + "Date of end : " + date_end8 + "\n" + name_treat8 + \
+                        "\n" + dose_ttt8) 
+    except IndexError as error_ttt8:
+        print("No date of end has been found for reserve into file convres.json (patient 8)", error_ttt8)
+    except FileNotFoundError as info_ttt8:
+        print("No date of end has been found for reserve into file convres.json (patient 8)", info_ttt8)
     else:
-        ("Error unknow")
+        ("Error unknow 8")
 
-    # Patient 9
     try:
-        with open('./newpatient/entryfile9.txt', 'r') as namefile:
-            res_text9=namefile.readline()
+        with open('./newpatient/entryfile9.txt', 'r') as namefile9:
+            res_text9 = namefile9.readline()
     except FileNotFoundError as callfile9:
         print("File entryfile9.txt doesn't exist !", callfile9)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt9/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text9 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res9:
-        print("No date of end has been found for reserve into file convres.json (patient 9)", info_res9)
+        word_ttstop9 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file9 = open('./ttt/doc_ttt9/convres.json')
+        data9 = json.load(file9)
+        for (key, value) in data9.items():
+            listdata9_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata9_x:
+                print(str(value[x]["Date of end"]))
+                date_end9 = (str(value[x]["Date of end"]))
+                if date_end9 == word_ttstop9:
+                    print(date_end9)
+                    name_treat9 = (str(value[x]["Treatment"]))
+                    print(name_treat9)
+                    dose_ttt9 = (str(value[x]["Dosage"]))
+                    print(dose_ttt9)
+                    MSBTTT9 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop9 + " " + \
+                        'for : ' + "\n" + res_text9 + "Date of end : " + date_end9 + "\n" + name_treat9 + \
+                        "\n" + dose_ttt9) 
+    except IndexError as error_ttt9:
+        print("No date of end has been found for reserve into file convres.json (patient 9)", error_ttt9)
+    except FileNotFoundError as info_ttt9:
+        print("No date of end has been found for reserve into file convres.json (patient 9)", info_ttt9)
     else:
-        ("Error unknow")
+        ("Error unknow 9")
 
-    # Patient 10
     try:
-        with open('./newpatient/entryfile10.txt', 'r') as namefile:
-            res_text10=namefile.readline()
+        with open('./newpatient/entryfile10.txt', 'r') as namefile10:
+            res_text10 = namefile10.readline()
     except FileNotFoundError as callfile10:
         print("File entryfile10.txt doesn't exist !", callfile10)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt10/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text10 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res10:
-        print("No date of end has been found for reserve into file convres.json (patient 10)", info_res10)
+        word_ttstop10 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file10 = open('./ttt/doc_ttt10/convres.json')
+        data10 = json.load(file10)
+        for (key, value) in data10.items():
+            listdata10_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata10_x:
+                print(str(value[x]["Date of end"]))
+                date_end10 = (str(value[x]["Date of end"]))
+                if date_end10 == word_ttstop10:
+                    print(date_end10)
+                    name_treat10 = (str(value[x]["Treatment"]))
+                    print(name_treat10)
+                    dose_ttt10 = (str(value[x]["Dosage"]))
+                    print(dose_ttt10)
+                    MSBTTT10 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop10 + " " + \
+                        'for : ' + "\n" + res_text10 + "Date of end : " + date_end10 + "\n" + name_treat10 + \
+                        "\n" + dose_ttt10) 
+    except IndexError as error_ttt10:
+        print("No date of end has been found for reserve into file convres.json (patient 10)", error_ttt10)
+    except FileNotFoundError as info_ttt10:
+        print("No date of end has been found for reserve into file convres.json (patient 10)", info_ttt10)
     else:
-        ("Error unknow")
+        ("Error unknow 10")
 
-    # Patient 11
     try:
-        with open('./newpatient/entryfile11.txt', 'r') as namefile:
-            res_text11=namefile.readline()
+        with open('./newpatient/entryfile11.txt', 'r') as namefile11:
+            res_text11 = namefile11.readline()
     except FileNotFoundError as callfile11:
         print("File entryfile11.txt doesn't exist !", callfile11)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt11/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text11 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res11:
-        print("No date of end has been found for reserve into file convres.json (patient 11)", info_res11)
+        word_ttstop11 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file11 = open('./ttt/doc_ttt11/convres.json')
+        data11 = json.load(file11)
+        for (key, value) in data11.items():
+            listdata11_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata11_x:
+                print(str(value[x]["Date of end"]))
+                date_end11 = (str(value[x]["Date of end"]))
+                if date_end11 == word_ttstop11:
+                    print(date_end11)
+                    name_treat11 = (str(value[x]["Treatment"]))
+                    print(name_treat11)
+                    dose_ttt11 = (str(value[x]["Dosage"]))
+                    print(dose_ttt11)
+                    MSBTTT11 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop11 + " " + \
+                        'for : ' + "\n" + res_text11 + "Date of end : " + date_end11 + "\n" + name_treat11 + \
+                        "\n" + dose_ttt11) 
+    except IndexError as error_ttt11:
+        print("No date of end has been found for reserve into file convres.json (patient 11)", error_ttt11)
+    except FileNotFoundError as info_ttt11:
+        print("No date of end has been found for reserve into file convres.json (patient 11)", info_ttt11)
     else:
-        ("Error unknow")
+        ("Error unknow 11")
 
-    # Patient 12
     try:
-        with open('./newpatient/entryfile12.txt', 'r') as namefile:
-            res_text12=namefile.readline()
+        with open('./newpatient/entryfile12.txt', 'r') as namefile12:
+            res_text12 = namefile12.readline()
     except FileNotFoundError as callfile12:
         print("File entryfile12.txt doesn't exist !", callfile12)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt12/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text12 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res12:
-        print("No date of end has been found for reserve into file convres.json (patient 12)", info_res12)
+        word_ttstop12 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file12 = open('./ttt/doc_ttt12/convres.json')
+        data12 = json.load(file12)
+        for (key, value) in data12.items():
+            listdata12_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata12_x:
+                print(str(value[x]["Date of end"]))
+                date_end12 = (str(value[x]["Date of end"]))
+                if date_end12 == word_ttstop12:
+                    print(date_end12)
+                    name_treat12 = (str(value[x]["Treatment"]))
+                    print(name_treat12)
+                    dose_ttt12 = (str(value[x]["Dosage"]))
+                    print(dose_ttt12)
+                    MSBTTT12 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop12 + " " + \
+                        'for : ' + "\n" + res_text12 + "Date of end : " + date_end12 + "\n" + name_treat12 + \
+                        "\n" + dose_ttt12) 
+    except IndexError as error_ttt12:
+        print("No date of end has been found for reserve into file convres.json (patient 12)", error_ttt12)
+    except FileNotFoundError as info_ttt12:
+        print("No date of end has been found for reserve into file convres.json (patient 12)", info_ttt12)
     else:
-        ("Error unknow")
+        ("Error unknow 12")
 
-    # Patient 13
     try:
-        with open('./newpatient/entryfile13.txt', 'r') as namefile:
-            res_text13=namefile.readline()
+        with open('./newpatient/entryfile13.txt', 'r') as namefile13:
+            res_text13 = namefile13.readline()
     except FileNotFoundError as callfile13:
         print("File entryfile13.txt doesn't exist !", callfile13)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt13/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text13 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res13:
-        print("No date of end has been found for reserve into file convres.json (patient 13)", info_res13)
+        word_ttstop13 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file13 = open('./ttt/doc_ttt13/convres.json')
+        data13 = json.load(file13)
+        for (key, value) in data13.items():
+            listdata13_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata13_x:
+                print(str(value[x]["Date of end"]))
+                date_end13 = (str(value[x]["Date of end"]))
+                if date_end13 == word_ttstop13:
+                    print(date_end13)
+                    name_treat13 = (str(value[x]["Treatment"]))
+                    print(name_treat13)
+                    dose_ttt13 = (str(value[x]["Dosage"]))
+                    print(dose_ttt13)
+                    MSBTTT13 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop13 + " " + \
+                        'for : ' + "\n" + res_text13 + "Date of end : " + date_end13 + "\n" + name_treat13 + \
+                        "\n" + dose_ttt13) 
+    except IndexError as error_ttt13:
+        print("No date of end has been found for reserve into file convres.json (patient 13)", error_ttt13)
+    except FileNotFoundError as info_ttt13:
+        print("No date of end has been found for reserve into file convres.json (patient 13)", info_ttt13)
     else:
-        ("Error unknow")
+        ("Error unknow 13")
 
-    # Patient 14
     try:
-        with open('./newpatient/entryfile14.txt', 'r') as namefile:
-            res_text14=namefile.readline()
+        with open('./newpatient/entryfile14.txt', 'r') as namefile14:
+            res_text14 = namefile14.readline()
     except FileNotFoundError as callfile14:
         print("File entryfile14.txt doesn't exist !", callfile14)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt14/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text14 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res14:
-        print("No date of end has been found for reserve into file convres.json (patient 14)", info_res14)
+        word_ttstop14 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file14 = open('./ttt/doc_ttt14/convres.json')
+        data14 = json.load(file14)
+        for (key, value) in data14.items():
+            listdata14_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata14_x:
+                print(str(value[x]["Date of end"]))
+                date_end14 = (str(value[x]["Date of end"]))
+                if date_end14 == word_ttstop14:
+                    print(date_end14)
+                    name_treat14 = (str(value[x]["Treatment"]))
+                    print(name_treat14)
+                    dose_ttt14 = (str(value[x]["Dosage"]))
+                    print(dose_ttt14)
+                    MSBTTT14 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop14 + " " + \
+                        'for : ' + "\n" + res_text14 + "Date of end : " + date_end14 + "\n" + name_treat14 + \
+                        "\n" + dose_ttt14) 
+    except IndexError as error_ttt14:
+        print("No date of end has been found for reserve into file convres.json (patient 14)", error_ttt14)
+    except FileNotFoundError as info_ttt14:
+        print("No date of end has been found for reserve into file convres.json (patient 14)", info_ttt14)
     else:
-        ("Error unknow")
+        ("Error unknow 14")
 
-    # Patient 15
     try:
-        with open('./newpatient/entryfile15.txt', 'r') as namefile:
-            res_text15=namefile.readline()
+        with open('./newpatient/entryfile15.txt', 'r') as namefile15:
+            res_text15 = namefile15.readline()
     except FileNotFoundError as callfile15:
         print("File entryfile15.txt doesn't exist !", callfile15)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt15/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text15 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res15:
-        print("No date of end has been found for reserve into file convres.json (patient 15)", info_res15)
+        word_ttstop15 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file15 = open('./ttt/doc_ttt15/convres.json')
+        data15 = json.load(file15)
+        for (key, value) in data15.items():
+            listdata15_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata15_x:
+                print(str(value[x]["Date of end"]))
+                date_end15 = (str(value[x]["Date of end"]))
+                if date_end15 == word_ttstop15:
+                    print(date_end15)
+                    name_treat15 = (str(value[x]["Treatment"]))
+                    print(name_treat15)
+                    dose_ttt15 = (str(value[x]["Dosage"]))
+                    print(dose_ttt15)
+                    MSBTTT15 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop15 + " " + \
+                        'for : ' + "\n" + res_text15 + "Date of end : " + date_end15 + "\n" + name_treat15 + \
+                        "\n" + dose_ttt15) 
+    except IndexError as error_ttt15:
+        print("No date of end has been found for reserve into file convres.json (patient 15)", error_ttt15)
+    except FileNotFoundError as info_ttt15:
+        print("No date of end has been found for reserve into file convres.json (patient 15)", info_ttt15)
     else:
-        ("Error unknow")
+        ("Error unknow 15")
 
-    # Patient 16
     try:
-        with open('./newpatient/entryfile16.txt', 'r') as namefile:
-            res_text16=namefile.readline()
+        with open('./newpatient/entryfile16.txt', 'r') as namefile16:
+            res_text16 = namefile16.readline()
     except FileNotFoundError as callfile16:
         print("File entryfile16.txt doesn't exist !", callfile16)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt16/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text16 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res16:
-        print("No date of end has been found for reserve into file convres.json (patient 16)", info_res16)
+        word_ttstop16 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file16 = open('./ttt/doc_ttt16/convres.json')
+        data16 = json.load(file16)
+        for (key, value) in data16.items():
+            listdata16_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata16_x:
+                print(str(value[x]["Date of end"]))
+                date_end16 = (str(value[x]["Date of end"]))
+                if date_end16 == word_ttstop16:
+                    print(date_end16)
+                    name_treat16 = (str(value[x]["Treatment"]))
+                    print(name_treat16)
+                    dose_ttt16 = (str(value[x]["Dosage"]))
+                    print(dose_ttt16)
+                    MSBTTT16 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop16 + " " + \
+                        'for : ' + "\n" + res_text16 + "Date of end : " + date_end16 + "\n" + name_treat16 + \
+                        "\n" + dose_ttt16) 
+    except IndexError as error_ttt16:
+        print("No date of end has been found for reserve into file convres.json (patient 16)", error_ttt16)
+    except FileNotFoundError as info_ttt16:
+        print("No date of end has been found for reserve into file convres.json (patient 16)", info_ttt16)
     else:
-        ("Error unknow")
+        ("Error unknow 16")
 
-    # Patient 17
     try:
-        with open('./newpatient/entryfile17.txt', 'r') as namefile:
-            res_text17=namefile.readline()
+        with open('./newpatient/entryfile17.txt', 'r') as namefile17:
+            res_text17 = namefile17.readline()
     except FileNotFoundError as callfile17:
         print("File entryfile17.txt doesn't exist !", callfile17)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt17/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text17 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res17:
-        print("No date of end has been found for reserve into file convres.json (patient 17)", info_res17)
+        word_ttstop17 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file17 = open('./ttt/doc_ttt17/convres.json')
+        data17 = json.load(file17)
+        for (key, value) in data17.items():
+            listdata17_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata17_x:
+                print(str(value[x]["Date of end"]))
+                date_end17 = (str(value[x]["Date of end"]))
+                if date_end17 == word_ttstop17:
+                    print(date_end17)
+                    name_treat17 = (str(value[x]["Treatment"]))
+                    print(name_treat17)
+                    dose_ttt17 = (str(value[x]["Dosage"]))
+                    print(dose_ttt17)
+                    MSBTTT17 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop17 + " " + \
+                        'for : ' + "\n" + res_text17 + "Date of end : " + date_end17 + "\n" + name_treat17 + \
+                        "\n" + dose_ttt17) 
+    except IndexError as error_ttt17:
+        print("No date of end has been found for reserve into file convres.json (patient 17)", error_ttt17)
+    except FileNotFoundError as info_ttt17:
+        print("No date of end has been found for reserve into file convres.json (patient 17)", info_ttt17)
     else:
-        ("Error unknow")
+        ("Error unknow 17")
 
-    # Patient 18
     try:
-        with open('./newpatient/entryfile18.txt', 'r') as namefile:
-            res_text18=namefile.readline()
+        with open('./newpatient/entryfile18.txt', 'r') as namefile18:
+            res_text18 = namefile18.readline()
     except FileNotFoundError as callfile18:
         print("File entryfile18.txt doesn't exist !", callfile18)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt18/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text18 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res18:
-        print("No date of end has been found for reserve into file convres.json (patient 18)", info_res18)
+        word_ttstop18 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file18 = open('./ttt/doc_ttt18/convres.json')
+        data18 = json.load(file18)
+        for (key, value) in data18.items():
+            listdata18_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata18_x:
+                print(str(value[x]["Date of end"]))
+                date_end18 = (str(value[x]["Date of end"]))
+                if date_end18 == word_ttstop18:
+                    print(date_end18)
+                    name_treat18 = (str(value[x]["Treatment"]))
+                    print(name_treat18)
+                    dose_ttt18 = (str(value[x]["Dosage"]))
+                    print(dose_ttt18)
+                    MSBTTT18 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop18 + " " + \
+                        'for : ' + "\n" + res_text18 + "Date of end : " + date_end18 + "\n" + name_treat18 + \
+                        "\n" + dose_ttt18) 
+    except IndexError as error_ttt18:
+        print("No date of end has been found for reserve into file convres.json (patient 18)", error_ttt18)
+    except FileNotFoundError as info_ttt18:
+        print("No date of end has been found for reserve into file convres.json (patient 18)", info_ttt18)
     else:
-        ("Error unknow")
+        ("Error unknow 18")
 
-    # Patient 19
     try:
-        with open('./newpatient/entryfile19.txt', 'r') as namefile:
-            res_text19=namefile.readline()
+        with open('./newpatient/entryfile19.txt', 'r') as namefile19:
+            res_text19 = namefile19.readline()
     except FileNotFoundError as callfile19:
         print("File entryfile19.txt doesn't exist !", callfile19)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt19/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text19 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res19:
-        print("No date of end has been found for reserve into file convres.json (patient 19)", info_res19)
+        word_ttstop19 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file19 = open('./ttt/doc_ttt19/convres.json')
+        data19 = json.load(file19)
+        for (key, value) in data19.items():
+            listdata19_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata19_x:
+                print(str(value[x]["Date of end"]))
+                date_end19 = (str(value[x]["Date of end"]))
+                if date_end19 == word_ttstop19:
+                    print(date_end19)
+                    name_treat19 = (str(value[x]["Treatment"]))
+                    print(name_treat19)
+                    dose_ttt19 = (str(value[x]["Dosage"]))
+                    print(dose_ttt19)
+                    MSBTTT19 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop19 + " " + \
+                        'for : ' + "\n" + res_text19 + "Date of end : " + date_end19 + "\n" + name_treat19 + \
+                        "\n" + dose_ttt19) 
+    except IndexError as error_ttt19:
+        print("No date of end has been found for reserve into file convres.json (patient 19)", error_ttt19)
+    except FileNotFoundError as info_ttt19:
+        print("No date of end has been found for reserve into file convres.json (patient 19)", info_ttt19)
     else:
-        ("Error unknow")
+        ("Error unknow 19")
 
     # Patient 20
     try:
-        with open('./newpatient/entryfile20.txt', 'r') as namefile:
-            res_text20=namefile.readline()
+        with open('./newpatient/entryfile20.txt', 'r') as namefile20:
+            res_text20 = namefile20.readline()
     except FileNotFoundError as callfile20:
         print("File entryfile20.txt doesn't exist !", callfile20)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt20/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text20 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res20:
-        print("No date of end has been found for reserve into file convres.json (patient 20)", info_res20)
+        word_ttstop20 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file20 = open('./ttt/doc_ttt20/convres.json')
+        data20 = json.load(file20)
+        for (key, value) in data20.items():
+            listdata20_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata20_x:
+                print(str(value[x]["Date of end"]))
+                date_end20 = (str(value[x]["Date of end"]))
+                if date_end20 == word_ttstop20:
+                    print(date_end20)
+                    name_treat20 = (str(value[x]["Treatment"]))
+                    print(name_treat20)
+                    dose_ttt20 = (str(value[x]["Dosage"]))
+                    print(dose_ttt20)
+                    MSBTTT20 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop20 + " " + \
+                        'for : ' + "\n" + res_text20 + "Date of end : " + date_end20 + "\n" + name_treat20 + \
+                        "\n" + dose_ttt20) 
+    except IndexError as error_ttt20:
+        print("No date of end has been found for reserve into file convres.json (patient 20)", error_ttt20)
+    except FileNotFoundError as info_ttt20:
+        print("No date of end has been found for reserve into file convres.json (patient 20)", info_ttt20)
     else:
-        ("Error unknow")
+        ("Error unknow 20")
 
-    # Patient 21
     try:
-        with open('./newpatient/entryfile21.txt', 'r') as namefile:
-            res_text21=namefile.readline()
+        with open('./newpatient/entryfile21.txt', 'r') as namefile21:
+            res_text21 = namefile21.readline()
     except FileNotFoundError as callfile21:
         print("File entryfile21.txt doesn't exist !", callfile21)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt21/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text21 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res21:
-        print("No date of end has been found for reserve into file convres.json (patient 21)", info_res21)
+        word_ttstop21 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file21 = open('./ttt/doc_ttt21/convres.json')
+        data21 = json.load(file21)
+        for (key, value) in data21.items():
+            listdata21_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata21_x:
+                print(str(value[x]["Date of end"]))
+                date_end21 = (str(value[x]["Date of end"]))
+                if date_end21 == word_ttstop21:
+                    print(date_end21)
+                    name_treat21 = (str(value[x]["Treatment"]))
+                    print(name_treat21)
+                    dose_ttt21 = (str(value[x]["Dosage"]))
+                    print(dose_ttt21)
+                    MSBTTT21 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop21 + " " + \
+                        'for : ' + "\n" + res_text21 + "Date of end : " + date_end21 + "\n" + name_treat21 + \
+                        "\n" + dose_ttt21) 
+    except IndexError as error_ttt21:
+        print("No date of end has been found for reserve into file convres.json (patient 21)", error_ttt21)
+    except FileNotFoundError as info_ttt21:
+        print("No date of end has been found for reserve into file convres.json (patient 21)", info_ttt21)
     else:
-        ("Error unknow")
+        ("Error unknow 21")
 
-    # Patient 22
     try:
-        with open('./newpatient/entryfile22.txt', 'r') as namefile:
-            res_text22=namefile.readline()
+        with open('./newpatient/entryfile22.txt', 'r') as namefile22:
+            res_text22 = namefile22.readline()
     except FileNotFoundError as callfile22:
         print("File entryfile22.txt doesn't exist !", callfile22)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt22/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text22 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res22:
-        print("No date of end has been found for reserve into file convres.json (patient 22)", info_res22)
+        word_ttstop22 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file22 = open('./ttt/doc_ttt22/convres.json')
+        data22 = json.load(file22)
+        for (key, value) in data22.items():
+            listdata22_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata22_x:
+                print(str(value[x]["Date of end"]))
+                date_end22 = (str(value[x]["Date of end"]))
+                if date_end22 == word_ttstop22:
+                    print(date_end22)
+                    name_treat22 = (str(value[x]["Treatment"]))
+                    print(name_treat22)
+                    dose_ttt22 = (str(value[x]["Dosage"]))
+                    print(dose_ttt22)
+                    MSBTTT22 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop22 + " " + \
+                        'for : ' + "\n" + res_text22 + "Date of end : " + date_end22 + "\n" + name_treat22 + \
+                        "\n" + dose_ttt22) 
+    except IndexError as error_ttt22:
+        print("No date of end has been found for reserve into file convres.json (patient 22)", error_ttt22)
+    except FileNotFoundError as info_ttt22:
+        print("No date of end has been found for reserve into file convres.json (patient 22)", info_ttt22)
     else:
-        ("Error unknow")
+        ("Error unknow 22")
 
-    # Patient 23
     try:
-        with open('./newpatient/entryfile23.txt', 'r') as namefile:
-            res_text23=namefile.readline()
+        with open('./newpatient/entryfile23.txt', 'r') as namefile23:
+            res_text23 = namefile23.readline()
     except FileNotFoundError as callfile23:
         print("File entryfile23.txt doesn't exist !", callfile23)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt23/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text23 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res23:
-        print("No date of end has been found for reserve into file convres.json (patient 23)", info_res23)
+        word_ttstop23 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file23 = open('./ttt/doc_ttt23/convres.json')
+        data23 = json.load(file23)
+        for (key, value) in data23.items():
+            listdata23_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata23_x:
+                print(str(value[x]["Date of end"]))
+                date_end23 = (str(value[x]["Date of end"]))
+                if date_end23 == word_ttstop23:
+                    print(date_end23)
+                    name_treat23 = (str(value[x]["Treatment"]))
+                    print(name_treat23)
+                    dose_ttt23 = (str(value[x]["Dosage"]))
+                    print(dose_ttt23)
+                    MSBTTT23 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop23 + " " + \
+                        'for : ' + "\n" + res_text23 + "Date of end : " + date_end23 + "\n" + name_treat23 + \
+                        "\n" + dose_ttt23) 
+    except IndexError as error_ttt23:
+        print("No date of end has been found for reserve into file convres.json (patient 23)", error_ttt23)
+    except FileNotFoundError as info_ttt23:
+        print("No date of end has been found for reserve into file convres.json (patient 23)", info_ttt23)
     else:
-        ("Error unknow")
+        ("Error unknow 23")
 
-    # Patient 24
     try:
-        with open('./newpatient/entryfile24.txt', 'r') as namefile:
-            res_text24=namefile.readline()
+        with open('./newpatient/entryfile24.txt', 'r') as namefile24:
+            res_text24 = namefile24.readline()
     except FileNotFoundError as callfile24:
         print("File entryfile24.txt doesn't exist !", callfile24)
 
     try:
-        word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        res_initword = "Date of end : "
-        with open('./ttt/doc_ttt24/intro_res.txt', 'r') as filedate:
-            lines=filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if res_initword in line:
-                    print(line)
-                    if word_treattostop in line:
-                        print(line)
-                        MSBRES2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a reserve to stop tomorrow for : ' + res_text24 + \
-                            lines[i] + lines[i-4] + lines[i-3])
-    except FileNotFoundError as info_res24:
-        print("No date of end has been found for reserve into file convres.json (patient 24)", info_res24)
+        word_ttstop24 = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
+        file24 = open('./ttt/doc_ttt24/convres.json')
+        data24 = json.load(file24)
+        for (key, value) in data24.items():
+            listdata24_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+            for x in listdata24_x:
+                print(str(value[x]["Date of end"]))
+                date_end24 = (str(value[x]["Date of end"]))
+                if date_end24 == word_ttstop24:
+                    print(date_end24)
+                    name_treat24 = (str(value[x]["Treatment"]))
+                    print(name_treat24)
+                    dose_ttt24 = (str(value[x]["Dosage"]))
+                    print(dose_ttt24)
+                    MSBTTT24 = messagebox.showwarning('Warning',
+                        'Look at TTT, there is a ttt to stop at' + " " + word_ttstop24 + " " + \
+                        'for : ' + "\n" + res_text24 + "Date of end : " + date_end24 + "\n" + name_treat24 + \
+                        "\n" + dose_ttt24) 
+    except IndexError as error_ttt24:
+        print("No date of end has been found for reserve into file convres.json (patient 24)", error_ttt24)
+    except FileNotFoundError as info_ttt24:
+        print("No date of end has been found for reserve into file convres.json (patient 24)", info_ttt24)
     else:
-        ("Error unknow")
+        ("Error unknow 24")
