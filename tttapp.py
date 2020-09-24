@@ -4,6 +4,7 @@
 
 from tkinter import *
 from tkinter import messagebox
+import json
 import os
 import time
 import datetime
@@ -19,18 +20,34 @@ def dispTttBox():
 
     try:
         word_treattostop = (datetime.datetime.now() + datetime.timedelta(days=1)).strftime('%d/%m/%Y')
-        initword = "Date of end : "
-        with open('./ttt/doc_ttt/intro_ttt.txt', 'r') as filedate:
-            lines = filedate.readlines()
-            for i in range(0, len(lines)):
-                line = lines[i]
-                if initword in line:
-                    print(line)
-                    if word_treattostop in line:
+        #initword = value[0]["Date of end"]
+        #with open('./ttt/doc_ttt/intro_ttt.txt', 'r') as filedate:
+        x = 0 or 1 or 2 or 3 or 4 or 5 or 6
+        file = open('./ttt/doc_ttt/convdose.json')
+        data=json.load(file)
+        for (key, value) in data.items():
+            print(str(value[x]["Date of end"]))
+            datend = (str(value[x]["Date of end"]))
+            if datend == word_treattostop:
+                print(datend)
+                name_treat = (str(value[x]["Treatment"]))
+                print(name_treat)
+                dose = (str(value[x]["Dosage"]))
+                print(dose)
+                """
+                lines = filedate.readlines()
+                for i in range(0, len(lines)):
+                    line = lines[i]
+                    if initword in line:
                         print(line)
-                        MSBTTT2 = messagebox.showwarning('Info',
-                            'Look at TTT, there is a ttt to stop tomorrow for : ' + line_text1 + \
-                            lines[i] + lines[i-6] + lines[i-5])
+                        if word_treattostop in line:
+                            print(line)
+                """
+                MSBTTT2 = messagebox.showwarning('Warning',
+                    'Look at TTT, there is a ttt to stop at' + " " + word_treattostop + " " + 'for : ' + \
+                    "\n" + line_text1 + "Date of end : " +datend + "\n" + name_treat + "\n" + dose) #+ lines[i-6] + lines[i-5])
+    except IndexError as error_ttt:
+        print("No date of end has been found for ttt into file intro_ttt.txt (patient 1)", error_ttt)
     except FileNotFoundError as info_ttt:
         print("No date of end has been found for ttt into file intro_ttt.txt (patient 1)", info_ttt)
     else:

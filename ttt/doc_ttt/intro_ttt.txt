@@ -26,3 +26,87 @@ Soir : 1
 Date of end : 25/09/2020
 Signature : ec
 
+Date : 24/09/2020
+Heure : 02:05:44
+Name : xcd
+
+Date of introduction :  2020
+Nom du ttt : test1
+Dosage du ttt : 10 mg
+Matin : 1
+
+Soir : 1
+
+Date of end : 25/09/2020
+Signature : ec
+
+Date : 24/09/2020
+Heure : 02:28:51
+Name : xcd
+
+Date of introduction :  2020
+Nom du ttt : test1
+Dosage du ttt : 10 mg
+Matin : 1
+
+
+
+Date of end : 25/09/2020
+Signature : ec
+
+Date : 24/09/2020
+Heure : 02:44:39
+Name : xcd
+
+Date of introduction :  2020
+Nom du ttt : test1
+Dosage du ttt : 10mg
+Matin : 1
+
+Soir : 1
+
+Date of end : 25/09/2020
+Signature : ec
+
+Date : 24/09/2020
+Heure : 02:54:11
+Name : xcd
+
+Date of introduction :  2020
+Nom du ttt : test1
+Dosage du ttt : 10mg
+Matin : 1
+
+Soir : 1
+
+Date of end : 25/09/2020
+Signature : ec
+
+Date : 24/09/2020
+Heure : 02:57:50
+Name : xcd
+
+Date of introduction :  2020
+Nom du ttt : test1
+Dosage du ttt : 10mg
+Matin : 1
+
+Soir : 1
+
+Date of end : 25/09/2020
+Signature : ec
+
+Date : 24/09/2020
+Heure : 03:02:42
+Name : xcd
+
+Date of introduction :  2020
+Nom du ttt : ziprexa
+Dosage du ttt : 20 mg
+Matin : 1
+
+Soir : 1
+
+Date of end : 25/09/2020
+Signature : ec
+
