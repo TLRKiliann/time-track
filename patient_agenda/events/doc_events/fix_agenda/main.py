@@ -62,17 +62,17 @@ def save_input():
     magicword = regexpi_var.get()
     with open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'r') as fr:
         with open('./patient_agenda/events/doc_events/fix_agenda/modifrdv.txt', 'a+') as fw1:
-            with open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'a+') as fw2:
-                for line in fr.readlines():
-                    if magicword in line:
-                        fw1.writelines(str("+++ Changes about rdv +++\n"))
-                        fw1.writelines(textBox.get("0.0", "end-1c") + "\n")
-                        fw2.writelines(str("+++ Changes about rdv +++\n"))
-                        fw2.writelines(textBox.get("0.0", "end-1c") + "\n")
-                        print("Modification finish")
-                        break
-                    else:
-                        print("None file has been writted")
+            #with open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'a+') as fw2:
+            for line in fr.readlines():
+                if magicword in line:
+                    fw1.writelines(str("+++ Changes about rdv +++\n"))
+                    fw1.writelines(textBox.get("0.0", "end-1c") + "\n")
+                    #fw2.writelines(str("+++ Changes about rdv +++\n"))
+                    #fw2.writelines(textBox.get("0.0", "end-1c") + "\n")
+                    print("Modification finish")
+                    break
+                else:
+                    print("None file has been writted")
 
 def modifList():
     """

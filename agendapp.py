@@ -12,7 +12,8 @@ import datetime
 def dispAgBox():
     """
     Display messagebox for agenda if an 
-    appointment has been fixed for tomorrow:
+    appointment has been fixed for tomorrow.
+    Display nothing if rdv canceled
     """
 
     # Patient 1

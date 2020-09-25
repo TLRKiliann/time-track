@@ -13,8 +13,14 @@ def backupFuncPatient(self):
     filepath = filedialog.askopenfilename(initialdir = "./Backup/Files1",
         title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
     print(filepath)
-    with open(filepath, 'r') as fichier:
-        content = fichier.read()
+
+    try:
+        with open(filepath, 'r') as fichier:
+            fichier.read()
+    except FileNotFoundError as error_path:
+        print("+ The file does not exist !", error_path)
+    except UnboundLocalError as error_unbound:
+        print("+ Local variable !", error_unbound)
 
     self.label=Label(self.label, justify=LEFT, font=('Times 14'),
         bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
