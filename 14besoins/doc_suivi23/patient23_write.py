@@ -20,13 +20,13 @@ def saveData():
         if os.path.getsize('./14besoins/doc_suivi23/main_14b.txt'):
             print("+ File 'main_14b.txt' exist !")
             with open('./14besoins/doc_suivi23/main_14b.txt', 'a+') as namefile:
-                namefile.write(textBox.get("1.0", "end-1c") + '\n\n')
+                namefile.write(textBox.get("0.0", "end-1c") + '\n\n')
     except FileNotFoundError as outcom:
         print("+ Sorry, file 'main_14b.txt' not exist !")
         print(str(outcom))
         print("+ File 'main_14b.txt' created !")
         with open('./14besoins/doc_suivi23/main_14b.txt', 'a+') as namefile:
-            namefile.write(textBox.get("1.0", "end-1c") + '\n\n')
+            namefile.write(textBox.get("0.0", "end-1c") + '\n\n')
 
 def messFromSafeButt():
     MsgBox = messagebox.askquestion("Confirm","Are you sure ?\n"
@@ -41,9 +41,7 @@ def messFromSafeButt():
 
 def lectureFic():
     with open('./14besoins/doc_suivi23/patient23_14b.txt', 'r') as f1read:
-        with open('./labo/doc_labo/result23.txt', 'r') as f2read:
-            print(f1read.read())
-            print(f2read.read())
+        print(f1read.read())
     subprocess.call('./14besoins/doc_suivi23/patient23_read.py')
 
 def ajouterText():
@@ -51,9 +49,9 @@ def ajouterText():
     To retrieve data 
     from initial textBox() 
     """
-    textBox.delete('1.0', END)
+    textBox.delete('0.0', END)
     textBox.insert(INSERT, "En date du : ")
-    textBox.insert(END, time.strftime("%d/%m/%Y at %H:%M:%S :\n"))
+    textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :\n"))
     textBox.update()
 
 def importationFile(fichier, encodage="Utf-8"):
@@ -70,22 +68,6 @@ def importationFile(fichier, encodage="Utf-8"):
                     textBox.insert(END, li)
     except FileNotFoundError as outcom:
         print("+ Sorry, file 'patient23_14b.txt' not exist !", outcom)
-
-def importationLabo(fichier2, encodage="Utf-8"):
-    """
-    To test if txt
-    patient exist
-    """
-    try:        
-        if os.path.getsize(fichier2):
-            print("+ File 'result23.txt' exist !")
-            with open(fichier2, 'r', encoding=encodage) as filelab:
-                content2=filelab.readlines()
-                for li in content2:
-                    textBox.insert(END, li)
-    except FileNotFoundError as outcom:
-        print("+ Sorry, file 'result23.txt' not exist !")
-        print(str(outcom))
 
 root=Tk()
 root.title("Care and monitoring")
@@ -130,8 +112,6 @@ Entryaller=Entry(root, textvariable=text_aller, width=60)
 Entryaller.pack(padx=10, pady=5)
 
 textBox=Text(root, height=15, width=60, font=18, relief=SUNKEN)
-textBox.insert(INSERT, "En date du : ")
-textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :\n"))
 textBox.pack(padx=30, pady=30)
 
 buttonLire=Button(root, text="Read", fg='cyan', bg='navy',
@@ -155,7 +135,5 @@ buttonQuitter=Button(root, text="Quit", fg='white', bg='navy',
 buttonQuitter.pack(side='right', padx=10, pady=10)
 
 importationFile('./14besoins/doc_suivi23/patient23_14b.txt', encodage='Utf-8')
-
-importationLabo('./labo/doc_labo/result23.txt', encodage='Utf-8')
 
 mainloop()
