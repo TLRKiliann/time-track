@@ -95,7 +95,7 @@ class Application(Frame):
         try:
             if os.path.getsize('./14besoins/doc_suivi12/patient12_14b.txt'):
                 print("+ File '14 needs' exist (read)!")
-                subprocess.call('./14besoins/doc_suivi8/patient12_read.py')
+                subprocess.call('./14besoins/doc_suivi12/patient12_read.py')
         except FileNotFoundError as outnote:
             print("+ Sorry, file '14 needs' not exist !", outnote)
             self.commentFileRecNeeds()
