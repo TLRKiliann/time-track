@@ -302,13 +302,16 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
     gui.destroy()
 
 labelName = Label(gui)
-labelName = Label(text='Enter Name and Surname : ', font="Times 14 bold", 
-    fg='RoyalBlue4', bg='cyan')
+labelName = Label(text='Enter NAME : ', 
+    font="Times 14 bold", 
+    fg='RoyalBlue3', bg='cyan')
 labelName.pack(pady=10)
 
 Nompatient=StringVar()
 Nompatient.set('Firstname + Lastname')
-entree = Entry(gui, textvariable=Nompatient, highlightbackground='light sky blue', bd=4)
+entree = Entry(gui, textvariable=Nompatient, 
+    highlightbackground='light sky blue', 
+    bd=4)
 entree.pack()
 
 labelBirth = Label(gui)
@@ -318,18 +321,19 @@ labelBirth.pack(pady=10)
 
 Birthvalue=StringVar()
 Birthvalue.set('Format: 00/00/0000')
-Birth_entree = Entry(gui, textvariable=Birthvalue, highlightbackground='light sky blue', bd=4)
+Birth_entree = Entry(gui, textvariable=Birthvalue, 
+    highlightbackground='light sky blue', bd=4)
 Birth_entree.pack()
 
 bouton1 = Button(gui, text="Enter", width=8, bd=3,
-    fg='yellow', bg='RoyalBlue4', highlightbackground='light sky blue',
+    fg='yellow', bg='RoyalBlue3', highlightbackground='light sky blue',
     activebackground='dark turquoise',
     command = lambda: get(Nompatient, entree, Birthvalue, Birth_entree))
-bouton1.pack(side=LEFT, padx=30, pady=10)
+bouton1.pack(side=LEFT, padx=10, pady=20)
 
 buttQuit=Button(gui, text="Quit", width=8, bd=3,
-    fg='white', bg='RoyalBlue4', highlightbackground='light sky blue',
+    fg='cyan', bg='RoyalBlue3', highlightbackground='light sky blue',
     activebackground='dark turquoise', command=quit)
-buttQuit.pack(side=LEFT, padx=15, pady=10)
+buttQuit.pack(side=LEFT, padx=10, pady=20)
 
 gui.mainloop()
