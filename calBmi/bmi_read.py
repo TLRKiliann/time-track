@@ -16,7 +16,7 @@ def importationFile(fichier, encodage="Utf-8"):
         textBox.insert(END, li)
 
 def msgBox():
-	MSB=messagebox.showinfo('Info', 'File bmi.txt does not exist')
+    MSB=messagebox.showinfo('Info', 'File bmi.txt does not exist')
 
 fen=Tk()
 fen.title("BMI results")
@@ -64,14 +64,14 @@ textBox=Text(fen, height=15, width=60, font=18)
 textBox.pack(padx=30, pady=30)
 
 buttonClose=Button(fen, text="Quit", width=10, fg='cyan', 
-	bg='gray30', activebackground='dark turquoise', 
+    bg='gray30', activebackground='dark turquoise', 
     activeforeground='navy', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
 try:
-	importationFile('./calBmi/bmi.txt', encodage="Utf-8")
+    importationFile('./calBmi/bmi.txt', encodage="Utf-8")
 except FileNotFoundError as error_call:
-	print("+ importationFile bmi.txt patient 1 failed !")
-	msgBox()
+    print("+ importationFile bmi2.txt " + line1 + " failed !")
+    msgBox()
 
 fen.mainloop()
