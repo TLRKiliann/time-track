@@ -1,6 +1,13 @@
 +++ Changes about rdv +++
-26/09/2020 : ECG à 18h00 chez Dr Pipo
+28/09/2020 : test1
 Annulé !
+
+
+
++++ Changes about rdv +++
+27/09/2020 : test2
+Annulé ! ok
+
 
 
 

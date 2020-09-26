@@ -66,6 +66,6 @@ try:
     importationFile('./14besoins/doc_suivi/main_14b.txt',
         encodage="Utf-8")
 except FileNotFoundError as filereach:
-    print("File main_14b.txt not exist", filereach)
+    print("+ File main_14b.txt not exist", filereach)
 
 fen.mainloop()

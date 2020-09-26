@@ -1,34 +1,12 @@
-En date du : 23/09/2020 à 22:44:46 :
-Patient name : xcd
+En date du : 26/09/2020 à 10:42:48 :
+Patient name : exec tech
 + Surveillance pour éviter les dangers requise
-+ Surveillance propreté et/ou téguments requise
 ---
 
-En date du : 23/09/2020 à 22:44:58 :
-Patient name : xcd
+En date du : 26/09/2020 à 10:43:05 :
 + Surveillance pour éviter les dangers requise
-truc1
-+ Surveillance propreté et/ou téguments requise
-truc2
+Risque de chute en se levant du lit.
 
-En date du : 23/09/2020 à 22:47:07 :
-ok test 2
-
-En date du : 23/09/2020 à 22:47:28 :
-ok test 3
-
-En date du : 23/09/2020 à 22:47:48 :
-Patient name : xcd
-+ Surveillance pour éviter les dangers requise
-truc 3
-+ Surveillance propreté et/ou téguments requise
-truc 4
-
-
-
-***************************************************************************
-Date : 23/09/2020
-Patient name : xcd
-pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
-***************************************************************************
+En date du : 26/09/2020 à 10:43:40 :
+Bcp de demandes et se perd ensuite.
 

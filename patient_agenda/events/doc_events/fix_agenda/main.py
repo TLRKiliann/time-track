@@ -17,29 +17,36 @@ def searchExpress():
     To read in 2 files simultaneously
     """
     mot = regexpi_var.get()
-    with open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'r') as textfile1:
-        lines = textfile1.readlines()
-        for i in range(len(lines)):
-            line = lines[i]
-            if mot in line:
-                print("Nous y voici !") 
-                print(lines[i])
-                print(lines[i+1])
-                textBox.insert(INSERT, lines[i])
-                textBox.insert(INSERT, lines[i+1])
-                textBox.insert(INSERT, lines[i+2])
-                    
-    with open('./patient_agenda/events/doc_events/fix_agenda/modifrdv.txt', 'r') as textfile2:
-        lines = textfile2.readlines()
-        for a in range(len(lines)):
-            line = lines[a]
-            if mot in line:
-                print(lines[a])
-                print(lines[a+1])
-                textBox.insert(INSERT, "\nWith modification of appointment :\n")
-                textBox.insert(INSERT, lines[a])
-                textBox.insert(INSERT, lines[a+1])
-                textBox.insert(INSERT, lines[a+2])
+    try:
+        with open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'r') as textfile1:
+            lines = textfile1.readlines()
+            for i in range(len(lines)):
+                line = lines[i]
+                if mot in line:
+                    print("+ To open file fixed_rdv.txt !") 
+                    print(lines[i])
+                    print(lines[i+1])
+                    textBox.insert(INSERT, lines[i])
+                    textBox.insert(INSERT, lines[i+1])
+                    textBox.insert(INSERT, lines[i+2])
+    except FileNotFoundError as file_search:
+        MsgBox=messagebox.showinfo('Info', 'File fixed_rdv.txt not found !')
+         
+    try:           
+        with open('./patient_agenda/events/doc_events/fix_agenda/modifrdv.txt', 'r') as textfile2:
+            lines = textfile2.readlines()
+            for a in range(len(lines)):
+                line = lines[a]
+                if mot in line:
+                    print("+ To open file modifrdv.txt !") 
+                    print(lines[a])
+                    print(lines[a+1])
+                    textBox.insert(INSERT, "\nWith modification of appointment :\n")
+                    textBox.insert(INSERT, lines[a])
+                    textBox.insert(INSERT, lines[a+1])
+                    textBox.insert(INSERT, lines[a+2])
+    except FileNotFoundError as file_search:
+        MsgBox=messagebox.showinfo('Info', 'File modifrdv.txt not found !')
 
 def messFromSafeButt():
     MsgBox = messagebox.askquestion("Confirm","Are you sure ?\n"

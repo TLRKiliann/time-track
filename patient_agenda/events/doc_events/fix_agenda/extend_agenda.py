@@ -42,6 +42,9 @@ def lectureFic():
     file = open('./patient_agenda/events/doc_events/fix_agenda/fixed_rdv.txt', 'r')
     print(file.read())
     file.close()
+    file2 = open('./patient_agenda/events/doc_events/fix_agenda/modifrdv.txt', 'r')
+    print(file2.read())
+    file2.close()
     subprocess.call('./patient_agenda/events/doc_events/fix_agenda/read_file.py')
 
 def rdvChanged():

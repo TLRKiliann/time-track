@@ -16,9 +16,20 @@ def importationFile(fichier):
     for li in content:
         textBox.insert(END, li)
 
+def importationFileModif(fichier2):
+    file2 = open(fichier2, 'r')
+    content_modif=file2.readlines()
+    file2.close()
+    for lu in content_modif:
+        textBox.insert(END, lu)
+
 def msgBox():
     messagebox.showwarning('WARNING',
         'No fixed_rdv.txt file exist for : ' + line1)
+
+def msgBox_2():
+    messagebox.showwarning('WARNING',
+        'No modifrdv.txt file exist for : ' + line1)
 
 fen=Tk()
 fen.title("RDV set up")
@@ -52,5 +63,11 @@ try:
 except FileNotFoundError as fixed:
     print("+ No fixed_rdv.txt file exist !", fixed)
     msgBox()
+
+try:
+    importationFileModif('./patient_agenda/events/doc_events/fix_agenda/modifrdv.txt')
+except FileNotFoundError as fixed_2:
+    print("+ No modifrdv.txt file exist !", fixed_2)
+    msgBox_2()
 
 fen.mainloop()
