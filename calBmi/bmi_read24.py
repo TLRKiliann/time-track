@@ -3,6 +3,7 @@
 
 
 from tkinter import *
+from tkinter import messagebox
 import os
 import subprocess
 
@@ -13,6 +14,9 @@ def importationFile(fichier, encodage="Utf-8"):
     file.close()
     for li in content:
         textBox.insert(END, li)
+
+def msgBox():
+    MSB=messagebox.showinfo('Info', 'File bmi24.txt does not exist')
 
 fen=Tk()
 fen.title("BMI results")
@@ -60,11 +64,14 @@ textBox=Text(fen, height=15, width=60, font=18)
 textBox.pack(padx=30, pady=30)
 
 buttonClose=Button(fen, text="Quit", width=10, fg='cyan', 
-	bg='gray30', activebackground='dark turquoise', 
+    bg='gray30', activebackground='dark turquoise', 
     activeforeground='navy', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
-importationFile('./calBmi/bmi24.txt',
-    encodage="Utf-8")
+try:
+    importationFile('./calBmi/bmi24.txt', encodage="Utf-8")
+except FileNotFoundError as error_call:
+    print("+ importationFile bmi24.txt " + line1 + " failed !")
+    msgBox()
 
 fen.mainloop()
