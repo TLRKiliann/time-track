@@ -6,24 +6,38 @@ from tkinter import *
 from tkinter import filedialog
 
 
-# Backup files
+""" To access to backup files
+from the main file time-track.py
+with a GUI textbox
+"""
 def backupFuncPatient(self):
-    self.label=Tk()
-    self.label.title("Search File")
+    self.fen=Tk()
+    self.fen.title("Search File")
+    self.fen.configure(bg='cyan')
     filepath = filedialog.askopenfilename(initialdir = "./Backup/Files1",
         title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
     print(filepath)
 
+    self.textBox=Text(self.fen, height=30, width=60, font=18, relief=SUNKEN)
+    self.textBox.pack(padx=30, pady=30)
+
+    try:
+        if not filepath:
+            self.fen.destroy()
+    except Exception as ex_file:
+        print("+ Error unknow", ex_file)
+
     try:
         with open(filepath, 'r') as fichier:
-            fichier.read()
-    except FileNotFoundError as error_path:
-        print("+ The file does not exist !", error_path)
-    except UnboundLocalError as error_unbound:
-        print("+ Local variable !", error_unbound)
-
-    self.label=Label(self.label, justify=LEFT, font=('Times 14'),
-        bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
+            content=fichier.readlines()
+            for li in content:
+                self.textBox.insert(END, li)
+    except FileNotFoundError as error_file:
+        print("+ File not found !", error_file)
+    except TypeError as type_err:
+        print("+ Type (of files) Error !", type_err)
+    except UnboundLocalError as unb_err:
+            print("+ Unbound Local Error", unb_err)
 
 def backupFuncPatient2(self):
     self.label=Tk()
@@ -31,8 +45,22 @@ def backupFuncPatient2(self):
     filepath = filedialog.askopenfilename(initialdir = "./Backup/Files2",
         title = "Select file", filetypes = (("txt files","*.txt"),("all files","*.*")))
     print(filepath)
-    with open(filepath, 'r') as fichier:
-        content = fichier.read()
+    #self.label.withdraw()
+    try:
+        if not filepath:
+            self.label.destroy()
+    except Exception as ex_file:
+        print("+ Error unknow", ex_file)
+
+    try:
+        with open(filepath, 'r') as fichier:
+            content=fichier.read()
+    except FileNotFoundError as error_file:
+        print("+ File not found !", error_file)
+    except TypeError as type_err:
+        print("+ Type (of files) Error !", type_err)
+    except UnboundLocalError as unb_err:
+            print("+ Unbound Local Error", unb_err)
 
     self.label=Label(self.label, justify=LEFT, font=('Times 14'),
         bg='gray22', fg='cyan', text=content).pack(padx=3, pady=3)
