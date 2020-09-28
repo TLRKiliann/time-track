@@ -70,7 +70,7 @@ list2 = list(map(float, list2))
 
 # or seaborn-darkgrid
 show_grid = True
-with plt.style.context(('dark_background')):
+with plt.style.context('dark_background'):
     plt.plot(list1, list2)
     plt.ylabel('Kg')
     plt.xlabel('Dates')

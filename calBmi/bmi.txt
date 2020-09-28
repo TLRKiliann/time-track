@@ -1,0 +1,35 @@
+Date : 01-08-2020
+Heure : 22:00:44
+Prenom et Nom : exec tech
+Poids : 89
+Taille : 1.86
+BMI : 25.725517400855587
+
+Date : 05-08-2020
+Heure : 22:00:44
+Prenom et Nom : exec tech
+Poids : 85
+Taille : 1.86
+BMI : 24.56931437160365
+
+Date : 01-09-2020
+Heure : 22:00:44
+Prenom et Nom : exec tech
+Poids : 87
+Taille : 1.86
+BMI : 25.14741588622962
+
+Date : 05-09-2020
+Heure : 22:00:44
+Prenom et Nom : exec tech
+Poids : 77
+Taille : 1.86
+BMI : 22.25690831309978
+
+Date : 28-09-2020
+Heure : 22:08:16
+Prenom et Nom : exec tech
+Poids : 75
+Taille : 1.89
+BMI : 20.99605274208449
+

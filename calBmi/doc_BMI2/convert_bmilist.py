@@ -68,7 +68,7 @@ list2 = list(map(float, list2))
 
 # or seaborn-darkgrid
 show_grid = True
-with plt.style.context(('dark_background')):
+with plt.style.context('dark_background'):
     plt.bar(list1, list2)
     plt.ylabel('BMI')
     plt.xlabel('Dates')

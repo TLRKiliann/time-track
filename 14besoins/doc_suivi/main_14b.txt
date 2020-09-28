@@ -13,3 +13,45 @@ Bcp de demandes et se perd ensuite.
 En date du : 25/09/2020 à 22:18:20 :
 Test yesterday 1
 
+
+
+----------------------------------------------------------
+Date : 26/09/2020
+Patient name : exec tech
+# TP value and treatment : (add what the patient needs)
+# INR value and treatment : (add what the patient needs)
+# free free T3 value and treatment : (add what the patient needs)
+# free total T3 value and treatment : (add what the patient needs)
+---------------------------------------------------------
+En date du : 26/09/2020 à 22:48:56 :
+test 2
+test 2
+
+
+
+***************************************************************************
+Date : 26/09/2020
+Patient name : exec tech
+pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
+***************************************************************************
+
+En date du : 26/09/2020 à 22:50:21 :
+test 3
+test 4
+
+---####-|--- Affichage des besoins du patient à surveiller ---|-####---
+
+En date du : 26/09/2020 à 10:42:48 :
+Patient name : exec tech
++ Surveillance pour éviter les dangers requise
+truc à faire ....
+---
+
+
+
+En date du : 26/09/2020 à 22:51:48 :
+test 5
+test 5
+test 5
+
+
