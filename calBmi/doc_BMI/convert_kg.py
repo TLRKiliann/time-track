@@ -5,11 +5,8 @@
 import os
 import json
 import matplotlib
-#from matplotlib import pyplot
-from matplotlib import dates
-#import matplotlib
 import matplotlib.pyplot as plt
-#import matplotlib.dates
+from matplotlib import dates
 import datetime
 import time
 
@@ -75,7 +72,7 @@ print(list2)
 list2 = list(map(float, list2))
 list1 = list(map(str, list1))
 #list1.sort(key=lambda date: datetime.strptime(date, "%d-%m-%y"))
-
+"""
 converted_dates = list(map(datetime.datetime.strptime, list1, len(list1)*['%d-%m-%Y']))
 x_axis = converted_dates
 formatter = dates.DateFormatter('%d-%m-%Y')
@@ -95,29 +92,14 @@ with plt.style.context('dark_background'):
     plt.show()
 
 
+
 """
-# first example
-converted_dates = matplotlib.dates.datestr2num(list1)
-print(converted_dates)
-
-show_grid = True
-with plt.style.context('dark_background'):
-    x_axis = (converted_dates)
-    y_axis = (list2)
-    plt.plot_date( x_axis, y_axis, '-' )
-    plt.ylabel('Kg')
-    plt.xlabel('Dates')
-    plt.title('Kg per date')
-    plt.xticks(rotation=45)
-    plt.grid(show_grid)
-    plt.show()
-
 # second example
 print(list1[0])
 
 list_data=str(list1[0])
 
-list_convert = datetime.datetime.strptime(list_data, "%d-%m-%y")
+list_convert = datetime.datetime.strptime(list_data, "%d-%m-%Y")
 int_date = date2num(list_convert)
 
 print(int_date)
@@ -130,8 +112,8 @@ axes.xaxis.set_major_locator(locator)
 axes.xaxis.set_major_formatter(AutoDateFormatter(locator))
 
 # apply autoformatter for displaying of dates 
-min_date = date2num(datetime.datetime.strptime('01-01-20', "%d-%m-%y")) 
-max_date = date2num(datetime.datetime.strptime('28-12-20', "%d-%m-%y")) 
+min_date = date2num(datetime.datetime.strptime('01-01-20', "%d-%m-%Y")) 
+max_date = date2num(datetime.datetime.strptime('28-12-20', "%d-%m-%Y")) 
 axes.set_xlim([min_date, max_date]) 
 figure.autofmt_xdate() 
   
@@ -152,5 +134,3 @@ with plt.style.context('dark_background'):
     plt.xticks(rotation=45)
     plt.grid(show_grid)
     plt.show()
-
-"""
