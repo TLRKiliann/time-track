@@ -7,6 +7,9 @@ import json
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib import dates
+from matplotlib.dates import date2num
+from matplotlib.dates import AutoDateLocator
+from matplotlib.dates import AutoDateFormatter
 import datetime
 import time
 
@@ -72,14 +75,30 @@ print(list2)
 list2 = list(map(float, list2))
 list1 = list(map(str, list1))
 #list1.sort(key=lambda date: datetime.strptime(date, "%d-%m-%y"))
-"""
+
 converted_dates = list(map(datetime.datetime.strptime, list1, len(list1)*['%d-%m-%Y']))
 x_axis = converted_dates
 formatter = dates.DateFormatter('%d-%m-%Y')
 y_axis = list2
+
+"""On peut ajouter ce bloc pour l'année entière !!!
+Il faut regarder comment ajouter des subplot à mon 
+avis c'est faux la partie ci-dessous.
+Aussi regarder les couleur de fond et calquer les 
+dates sur la grille.
+"""
+figure, axes = plt.subplots()
+locator = AutoDateLocator()
+axes.xaxis.set_major_locator(locator) 
+axes.xaxis.set_major_formatter(AutoDateFormatter(locator))
+min_date = date2num(datetime.datetime.strptime('01-01-2020', "%d-%m-%Y"))
+max_date = date2num(datetime.datetime.strptime('28-12-2020', "%d-%m-%Y"))
+axes.set_xlim([min_date, max_date])
+
 show_grid = True
 with plt.style.context('dark_background'):
     plt.plot(x_axis, y_axis, '-')
+
     ax = plt.gcf().axes[0] 
     ax.xaxis.set_major_formatter(formatter)
     plt.ylabel('Kg')
@@ -90,8 +109,6 @@ with plt.style.context('dark_background'):
     plt.gcf().autofmt_xdate(rotation=25)
 
     plt.show()
-
-
 
 """
 # second example
@@ -112,8 +129,8 @@ axes.xaxis.set_major_locator(locator)
 axes.xaxis.set_major_formatter(AutoDateFormatter(locator))
 
 # apply autoformatter for displaying of dates 
-min_date = date2num(datetime.datetime.strptime('01-01-20', "%d-%m-%Y")) 
-max_date = date2num(datetime.datetime.strptime('28-12-20', "%d-%m-%Y")) 
+min_date = date2num(datetime.datetime.strptime('01-01-2020', "%d-%m-%Y")) 
+max_date = date2num(datetime.datetime.strptime('28-12-2020', "%d-%m-%Y")) 
 axes.set_xlim([min_date, max_date]) 
 figure.autofmt_xdate() 
   
@@ -126,7 +143,7 @@ plt.show()
 show_grid = True
 with plt.style.context('dark_background'):
     plt.plot_date(list1, list2, '-')
-    ax.xaxis.set_major_formatter(DateFormatter("%d-%m-%y"))
+    ax.xaxis.set_major_formatter(DateFormatter("%d-%m-%Y"))
     fig.autofmt_xdate()
     plt.ylabel('Kg')
     plt.xlabel('Dates')
@@ -134,3 +151,4 @@ with plt.style.context('dark_background'):
     plt.xticks(rotation=45)
     plt.grid(show_grid)
     plt.show()
+"""
