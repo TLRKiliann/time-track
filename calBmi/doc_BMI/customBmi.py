@@ -12,24 +12,24 @@ def get(monthVal, month_start, monthEnd, month_end):
     Entry at first time
     a patient with entry button
     """
-    MsgBox = messagebox.askyesno('Enter data', 'Do you want to enter dates ?')
+    MsgBox = messagebox.askyesno('Enter dates', 'Do you want to enter these dates ?')
     if MsgBox == 1:
         monthVal = month_start.get()
         monthEnd = month_end.get()
         print(monthVal)
         print(monthEnd)
         try:
-            if os.path.getsize('./calBmi/doc_BMI/file_month.txt'):
-                print("+ File 'file_month.txt' exist !")
-                with open('./calBmi/doc_BMI/file_month.txt', 'w+') as namefile:
+            if os.path.getsize('./calBmi/doc_BMI/custom_kg.txt'):
+                print("+ File 'custom_kg.txt' exist !")
+                with open('./calBmi/doc_BMI/custom_kg.txt', 'w+') as namefile:
                     namefile.write(monthVal)
                     namefile.write('\n')
                     namefile.write(monthEnd)
         except FileNotFoundError as outcom1:
-            print("+ Sorry, file 'file_month.txt' not exist !")
+            print("+ Sorry, file 'custom_kg.txt' not exist !")
             print(str(outcom1))
-            print("+ File 'file_month.txt' created !")
-            with open('./calBmi/doc_BMI/file_month.txt', 'w+') as namefile:
+            print("+ File 'custom_kg.txt' created !")
+            with open('./calBmi/doc_BMI/custom_kg.txt', 'w+') as namefile:
                 namefile.write(monthVal)
                 namefile.write('\n')
                 namefile.write(monthEnd)

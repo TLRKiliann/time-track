@@ -100,10 +100,10 @@ with plt.style.context('dark_background'):
     axes.set_xlim([min_date, max_date])
     #figure.autofmt_xdate()
 
-    plt.plot(x_axis, y_axis, 'ro-')
+    plt.plot(x_axis, y_axis, 'o-', color='cyan')
     plt.ylabel('Kg')
     plt.xlabel('Dates')
-    plt.title('Kg/Date for 1 year')
+    plt.title('Kg for one year')
     #plt.xticks(rotation=45)
     plt.legend(['kg/date'])
     plt.grid(show_grid)
@@ -118,19 +118,19 @@ ax=fig.add_subplot(111)
 """
 
 try:
-    if os.path.getsize('./calBmi/doc_BMI/monthBmi.py'):
-        subprocess.call('./calBmi/doc_BMI/monthBmi.py')
+    if os.path.getsize('./calBmi/doc_BMI/customBmi.py'):
+        subprocess.call('./calBmi/doc_BMI/customBmi.py')
 except FileNotFoundError as callfile1:
-    print("+ File monthBmi.py doesn't exist !", callfile1)
+    print("+ File customBmi.py doesn't exist !", callfile1)
 
 try:
-    with open('./calBmi/doc_BMI/file_month.txt', 'r') as namefile:
+    with open('./calBmi/doc_BMI/custom_kg.txt', 'r') as namefile:
         line_1=namefile.readline()
         print(line_1)
         line_2=namefile.readline()
         print(line_2)
 except FileNotFoundError as callfile2:
-    print("+ File file_month.txt doesn't exist !", callfile2)
+    print("+ File custom_kg.txt doesn't exist !", callfile2)
 
 printmonth=len(line_1)
 convert_line=line_1[0:-1]
@@ -149,10 +149,10 @@ with plt.style.context('dark_background'):
     max_date = date2num(datetime.datetime.strptime(line_2, "%d-%m-%Y"))
     axes.set_xlim([min_date, max_date])
 
-    plt.plot(x_axis, y_axis, 'cyan')
+    plt.plot(x_axis, y_axis, 'o-', color='cyan')
     plt.ylabel('Kg')
     plt.xlabel('Dates')
-    plt.title('Kg/Date for 1 month')
+    plt.title('Kg/Date customised')
     #plt.xticks(rotation=45)
     plt.legend(['kg/date'])
     plt.grid(show_grid)
