@@ -42,7 +42,7 @@ def call_result(textBox, number1, number2):
 
 def buttRecord():
     """
-    Pour rentrer le BMI
+    To enter BMI in an text zone entry
     """
     num1 = float((number1.get()))
     num2 = float((number2.get()))
@@ -117,40 +117,47 @@ def readBmi():
 
 def buttdel():
     """
-    To earase last line 
-    of tensor.json
+    To earase last data if the usr would to delete it.
     """
-    try:
-        if os.path.getsize('./calBmi/doc_BMI/file_bmi.json'):
-            with open('./calBmi/doc_BMI/file_bmi.json', 'r') as file:
-                data = json.load(file)
-            for key, value in data.items():
-                print("Last value of bmi deleted")
-                print(value[-1])
-                del value[-1]
-            with open('./calBmi/doc_BMI/file_bmi.json', 'w') as file:
-                data = json.dump(data, file, indent=4)
-            print("Last value of 'file_bmi.json' has been deleted !")
-    except FileNotFoundError:
-        print('+ Sorry, file asked not exist !')
+    MSB_War = messagebox.askyesno('Warning', '!!! Warning !!! If you' \
+        'continue, last result will be delete !!!')
+    if MSB_War == 1:
+        try:
+            if os.path.getsize('./calBmi/doc_BMI/file_bmi.json'):
+                with open('./calBmi/doc_BMI/file_bmi.json', 'r') as file:
+                    data = json.load(file)
+                for key, value in data.items():
+                    print("Last value of bmi deleted")
+                    print(value[-1])
+                    del value[-1]
+                with open('./calBmi/doc_BMI/file_bmi.json', 'w') as file:
+                    data = json.dump(data, file, indent=4)
+                print("Last value of 'file_bmi.json' has been deleted !")
+        except FileNotFoundError:
+            print('+ Sorry, file asked not exist !')
 
-    try:
-        if os.path.getsize('./calBmi/doc_BMI/file_kg.json'):
-            with open('./calBmi/doc_BMI/file_kg.json', 'r') as file:
-                data = json.load(file)
-            for key, value in data.items():
-                print("Last value of weight deleted")
-                print(value[-1])
-                del value[-1]
-            with open('./calBmi/doc_BMI/file_kg.json', 'w') as file:
-                data = json.dump(data, file, indent=4)
-            print("Last value of 'file_kg.json' has been deleted !")
-    except FileNotFoundError:
-        print('+ Sorry, file asked not exist !')
+        try:
+            if os.path.getsize('./calBmi/doc_BMI/file_kg.json'):
+                with open('./calBmi/doc_BMI/file_kg.json', 'r') as file:
+                    data = json.load(file)
+                for key, value in data.items():
+                    print("Last value of weight deleted")
+                    print(value[-1])
+                    del value[-1]
+                with open('./calBmi/doc_BMI/file_kg.json', 'w') as file:
+                    data = json.dump(data, file, indent=4)
+                print("Last value of 'file_kg.json' has been deleted !")
+        except FileNotFoundError:
+            print('+ Sorry, file asked not exist !')
+    else:
+        MSB_War = messagebox.showinfo('Info', 'Ok, no data was deleted.')
 
 # To read name of patient for entry widget
-with open('./newpatient/entryfile.txt', 'r') as filename:
-    line1=filename.readline()
+try:
+    with open('./newpatient/entryfile.txt', 'r') as filename:
+        line1=filename.readline()
+except FileNotFoundError as no_file:
+    print("+ No entryfile exist !")
 
 gui = Tk()
 gui.title('Simple BMI calculator')
@@ -216,38 +223,38 @@ textBox.grid(row=6, column=1, columnspan=2, pady=10)
 
 call_result = partial(call_result, textBox, number1, number2)
 
-buttonCal = Button(gui, text="1-Calcul", width=12, fg='yellow',
-    bg='turquoise4', activeforeground='gray40',
+buttonCal = Button(gui, text="1-Calcul", width=12, bd=3, 
+    fg='yellow', bg='RoyalBlue3', activeforeground='gray40',
     activebackground='turquoise2', command=call_result)
 buttonCal.grid(sticky='w', row=10, column=1)
 
-buttonCal = Button(gui, text="2-Save", width=12, fg='yellow',
-    bg='turquoise4', activeforeground='gray40',
+buttonCal = Button(gui, text="2-Save", width=12, bd=3, 
+    fg='yellow', bg='RoyalBlue3', activeforeground='gray40',
     activebackground='turquoise2', command=buttRecord)
 buttonCal.grid(sticky='w', row=11, column=1)
 
-buttonCal = Button(gui, text="Cancel last check", width=12, fg='yellow',
-    bg='coral', activeforeground='white',
+buttonCal = Button(gui, text="Cancel last check", width=12, 
+    bd=3, fg='white', bg='coral', activeforeground='white',
     activebackground='red', command=buttdel)
 buttonCal.grid(row=11, column=1, columnspan=2)
 
-buttonCal2 = Button(gui, text="Read", width=12, fg='light blue',
-    bg='turquoise4', activebackground='dark turquoise',
-    command=readBmi)
+buttonCal2 = Button(gui, text="Read", width=12, bd=3, 
+    fg='cyan', bg='RoyalBlue3', 
+    activebackground='dark turquoise', command=readBmi)
 buttonCal2.grid(sticky='w', row=12, column=1)
 
-buttonCal = Button(gui, text="Graph BMI", width=12, fg='blue2',
-    bg='turquoise3', activeforeground='gray30',
+buttonCal = Button(gui, text="Graph BMI", width=12, bd=3, 
+    fg='cyan', bg='RoyalBlue3', activeforeground='gray30',
     activebackground='turquoise', command=viewGraphicBmi)
 buttonCal.grid(sticky='e', row=10, column=2)
 
-buttonCal = Button(gui, text="Graph Weight", width=12, fg='blue2',
-    bg='turquoise3', activeforeground='gray30',
+buttonCal = Button(gui, text="Graph Weight", width=12, bd=3, 
+    fg='cyan', bg='RoyalBlue3', activeforeground='gray30',
     activebackground='turquoise', command=viewGraphicKilo)
 buttonCal.grid(sticky='e', row=11, column=2)
 
-buttonCal2 = Button(gui, text="Quit", width=12, fg='cyan',
-    bg='gray30', activebackground='dark turquoise',
+buttonCal2 = Button(gui, text="Quit", width=12, bd=3, 
+    fg='white', bg='RoyalBlue3', activebackground='turquoise',
     command=quit)
 buttonCal2.grid(sticky='e', row=12, column=2)
 
