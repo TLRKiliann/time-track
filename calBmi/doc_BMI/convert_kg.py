@@ -3,6 +3,7 @@
 
 
 import os
+import subprocess
 import json
 import matplotlib
 import matplotlib.pyplot as plt
@@ -115,6 +116,25 @@ axes.bar(int_date, list2, label ="", color ="cyan")
 """
 #ax=fig.add_subplot(111)
 
+try:
+    if os.path.getsize('./calBmi/doc_BMI/monthBmi.py'):
+        subprocess.call('./calBmi/doc_BMI/monthBmi.py')
+except FileNotFoundError as callfile1:
+    print("+ File monthBmi.py doesn't exist !", callfile1)
+
+try:
+    with open('./calBmi/doc_BMI/file_month.txt', 'r') as namefile:
+        line_1=namefile.readline()
+        print(line_1)
+        line_2=namefile.readline()
+        print(line_2)
+except FileNotFoundError as callfile2:
+    print("+ File file_month.txt doesn't exist !", callfile2)
+
+printmonth=len(line_1)
+convert_line=line_1[0:-1]
+print(convert_line)
+
 # or seaborn-darkgrid
 show_grid = True
 with plt.style.context('dark_background'):
@@ -124,8 +144,8 @@ with plt.style.context('dark_background'):
     axes.xaxis.set_major_locator(locator)
     ax = plt.gcf().axes[0]
     ax.xaxis.set_major_formatter(formatter)
-    min_date = date2num(datetime.datetime.strptime('01-08-2020', "%d-%m-%Y"))
-    max_date = date2num(datetime.datetime.strptime('30-08-2020', "%d-%m-%Y"))
+    min_date = date2num(datetime.datetime.strptime(convert_line, "%d-%m-%Y"))
+    max_date = date2num(datetime.datetime.strptime(line_2, "%d-%m-%Y"))
     axes.set_xlim([min_date, max_date])
 
     plt.plot(x_axis, y_axis, 'cyan')
