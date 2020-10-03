@@ -111,10 +111,11 @@ with plt.style.context('dark_background'):
     plt.show()
 
 """
+A bosser !!!
 figure, axes = plt.subplots()
 axes.bar(int_date, list2, label ="", color ="cyan")
+ax=fig.add_subplot(111)
 """
-#ax=fig.add_subplot(111)
 
 try:
     if os.path.getsize('./calBmi/doc_BMI/monthBmi.py'):
