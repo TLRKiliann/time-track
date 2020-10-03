@@ -73,5 +73,6 @@ with plt.style.context(('dark_background')):
     plt.xlabel('Dates')
     plt.title('BMI/Date')
     plt.xticks(rotation=45)
+    plt.legend(['BMI'])
     plt.grid(show_grid)
     plt.show()
