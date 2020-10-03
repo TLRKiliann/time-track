@@ -71,7 +71,7 @@ with plt.style.context(('dark_background')):
     plt.bar(list1, list2)
     plt.ylabel('BMI')
     plt.xlabel('Dates')
-    plt.title('BMI per date')
+    plt.title('BMI/Date')
     plt.xticks(rotation=45)
     plt.grid(show_grid)
     plt.show()
