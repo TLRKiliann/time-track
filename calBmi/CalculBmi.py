@@ -225,37 +225,44 @@ call_result = partial(call_result, textBox, number1, number2)
 
 buttonCal = Button(gui, text="1-Calcul", width=12, bd=3, 
     fg='yellow', bg='RoyalBlue3', activeforeground='gray40',
-    activebackground='turquoise2', command=call_result)
+    activebackground='turquoise2', highlightbackground='cyan',
+    command=call_result)
 buttonCal.grid(sticky='w', row=10, column=1)
 
 buttonCal = Button(gui, text="2-Save", width=12, bd=3, 
     fg='yellow', bg='RoyalBlue3', activeforeground='gray40',
-    activebackground='turquoise2', command=buttRecord)
+    activebackground='turquoise2', highlightbackground='cyan',
+    command=buttRecord)
 buttonCal.grid(sticky='w', row=11, column=1)
 
 buttonCal = Button(gui, text="Cancel last check", width=12, 
     bd=3, fg='white', bg='coral', activeforeground='white',
-    activebackground='red', command=buttdel)
+    activebackground='red', highlightbackground='orange',
+    command=buttdel)
 buttonCal.grid(row=11, column=1, columnspan=2)
 
 buttonCal2 = Button(gui, text="Read", width=12, bd=3, 
-    fg='cyan', bg='RoyalBlue3', 
-    activebackground='dark turquoise', command=readBmi)
+    fg='coral', bg='RoyalBlue3', 
+    activebackground='dark turquoise', 
+    highlightbackground='cyan',
+    command=readBmi)
 buttonCal2.grid(sticky='w', row=12, column=1)
 
 buttonCal = Button(gui, text="Graph BMI", width=12, bd=3, 
-    fg='cyan', bg='RoyalBlue3', activeforeground='gray30',
-    activebackground='turquoise', command=viewGraphicBmi)
-buttonCal.grid(sticky='e', row=10, column=2)
+    fg='cyan', bg='RoyalBlue3', activeforeground='gray40',
+    activebackground='turquoise', highlightbackground='cyan',
+    command=viewGraphicBmi)
+buttonCal.grid(sticky='e', row=10, column=2, pady=10)
 
 buttonCal = Button(gui, text="Graph Weight", width=12, bd=3, 
-    fg='cyan', bg='RoyalBlue3', activeforeground='gray30',
-    activebackground='turquoise', command=viewGraphicKilo)
+    fg='cyan', bg='RoyalBlue3', activeforeground='gray40',
+    activebackground='turquoise', highlightbackground='cyan',
+    command=viewGraphicKilo)
 buttonCal.grid(sticky='e', row=11, column=2)
 
 buttonCal2 = Button(gui, text="Quit", width=12, bd=3, 
     fg='white', bg='RoyalBlue3', activebackground='turquoise',
-    command=quit)
-buttonCal2.grid(sticky='e', row=12, column=2)
+    highlightbackground='cyan', command=quit)
+buttonCal2.grid(sticky='e', row=12, column=2, pady=10)
 
 gui.mainloop()
