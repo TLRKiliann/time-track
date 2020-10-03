@@ -107,13 +107,13 @@ def buttRecord():
     messagebox.showinfo('Record', 'Data saved')
 
 def viewGraphicBmi():
-    subprocess.call('./calBmi/doc_BMI/convert_bmilist.py')
+    subprocess.run('./calBmi/doc_BMI/convert_bmilist.py')
 
 def viewGraphicKilo():
-    subprocess.call('./calBmi/doc_BMI/convert_kg.py')
+    subprocess.run('./calBmi/doc_BMI/convert_kg.py')
 
 def readBmi():
-    subprocess.call('./calBmi/bmi_read.py')
+    subprocess.run('./calBmi/bmi_read.py')
 
 def buttdel():
     """
