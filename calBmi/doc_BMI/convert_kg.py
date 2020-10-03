@@ -110,19 +110,14 @@ with plt.style.context('dark_background'):
     plt.gcf().autofmt_xdate(rotation=45)
     plt.show()
 
-"""
-A bosser !!!
-figure, axes = plt.subplots()
-axes.bar(int_date, list2, label ="", color ="cyan")
-ax=fig.add_subplot(111)
-"""
-
+# to verify if file exist.
 try:
     if os.path.getsize('./calBmi/doc_BMI/customBmi.py'):
         subprocess.call('./calBmi/doc_BMI/customBmi.py')
 except FileNotFoundError as callfile1:
     print("+ File customBmi.py doesn't exist !", callfile1)
 
+# to read into file the dates entered.
 try:
     with open('./calBmi/doc_BMI/custom_kg.txt', 'r') as namefile:
         line_1=namefile.readline()
@@ -132,13 +127,14 @@ try:
 except FileNotFoundError as callfile2:
     print("+ File custom_kg.txt doesn't exist !", callfile2)
 
+# to delete '\n' at the end of line_1
 printmonth=len(line_1)
 convert_line=line_1[0:-1]
 print(convert_line)
 
 # or seaborn-darkgrid
 show_grid = True
-with plt.style.context('dark_background'):
+with plt.style.context('seaborn-darkgrid'):
     figure, axes = plt.subplots()
 
     locator = AutoDateLocator()
@@ -149,7 +145,7 @@ with plt.style.context('dark_background'):
     max_date = date2num(datetime.datetime.strptime(line_2, "%d-%m-%Y"))
     axes.set_xlim([min_date, max_date])
 
-    plt.plot(x_axis, y_axis, 'o-', color='cyan')
+    plt.plot(x_axis, y_axis, 'o-', color='purple')
     plt.ylabel('Kg')
     plt.xlabel('Dates')
     plt.title('Kg/Date customised')
