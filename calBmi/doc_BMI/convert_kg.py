@@ -80,12 +80,6 @@ x_axis = converted_dates
 formatter = dates.DateFormatter('%d-%m-%Y')
 y_axis = list2
 
-"""
-A revoir et à corriger.
-Il s'agit là d'un algo 
-pour une année^d'affichage.
-"""
-
 show_grid = True
 with plt.style.context('dark_background'):
     figure, axes = plt.subplots()

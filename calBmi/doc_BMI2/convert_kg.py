@@ -3,12 +3,19 @@
 
 
 import os
+import subprocess
 import json
-import time
+import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib import dates
+from matplotlib.dates import date2num
+from matplotlib.dates import AutoDateLocator
+from matplotlib.dates import AutoDateFormatter
+import datetime
+import time
 
 
-file = open('./calBmi/doc_BMI22/file_kg.json')
+file = open('./calBmi/doc_BMI2/file_kg.json')
 data = json.load(file)
 #file.close
 

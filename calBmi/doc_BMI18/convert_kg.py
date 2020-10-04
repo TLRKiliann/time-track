@@ -3,9 +3,16 @@
 
 
 import os
+import subprocess
 import json
-import time
+import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib import dates
+from matplotlib.dates import date2num
+from matplotlib.dates import AutoDateLocator
+from matplotlib.dates import AutoDateFormatter
+import datetime
+import time
 
 
 file = open('./calBmi/doc_BMI18/file_kg.json')
@@ -65,16 +72,79 @@ print("\nList of weight :")
 print("------------------------")
 print(list2)
 
-#list3 = [int(list2) for list2 in list2]
 list2 = list(map(float, list2))
+list1 = list(map(str, list1))
+
+converted_dates = list(map(datetime.datetime.strptime, list1, len(list1)*['%d-%m-%Y']))
+x_axis = converted_dates
+formatter = dates.DateFormatter('%d-%m-%Y')
+y_axis = list2
+
+show_grid = True
+with plt.style.context('dark_background'):
+    figure, axes = plt.subplots()
+    # apply autoformatter for displaying of dates 
+    locator = AutoDateLocator()
+    axes.xaxis.set_major_locator(locator)
+    ax = plt.gcf().axes[0]
+    ax.xaxis.set_major_formatter(formatter)
+    #axes.xaxis.set_major_formatter(AutoDateFormatter(locator))
+    min_date = date2num(datetime.datetime.strptime('01-01-2020', "%d-%m-%Y"))
+    max_date = date2num(datetime.datetime.strptime('31-12-2020', "%d-%m-%Y"))
+    axes.set_xlim([min_date, max_date])
+    #figure.autofmt_xdate()
+
+    plt.plot(x_axis, y_axis, 'o-', color='cyan')
+    plt.ylabel('Kg')
+    plt.xlabel('Dates')
+    plt.title('Kg for one year')
+    #plt.xticks(rotation=45)
+    plt.legend(['kg/date'])
+    plt.grid(show_grid)
+    plt.gcf().autofmt_xdate(rotation=45)
+    plt.show()
+
+# to verify if file exist.
+try:
+    if os.path.getsize('./calBmi/doc_BMI18/customBmi.py'):
+        subprocess.run('./calBmi/doc_BMI18/customBmi.py')
+except FileNotFoundError as callfile1:
+    print("+ File customBmi.py doesn't exist !", callfile1)
+
+# to read into file the dates entered.
+try:
+    with open('./calBmi/doc_BMI18/custom_kg.txt', 'r') as namefile:
+        line_1=namefile.readline()
+        print(line_1)
+        line_2=namefile.readline()
+        print(line_2)
+except FileNotFoundError as callfile2:
+    print("+ File custom_kg.txt doesn't exist !", callfile2)
+
+# to delete '\n' at the end of line_1
+printmonth=len(line_1)
+convert_line=line_1[0:-1]
+print(convert_line)
 
 # or seaborn-darkgrid
 show_grid = True
-with plt.style.context(('dark_background')):
-    plt.plot(list1, list2)
+with plt.style.context('seaborn-darkgrid'):
+    figure, axes = plt.subplots()
+
+    locator = AutoDateLocator()
+    axes.xaxis.set_major_locator(locator)
+    ax = plt.gcf().axes[0]
+    ax.xaxis.set_major_formatter(formatter)
+    min_date = date2num(datetime.datetime.strptime(convert_line, "%d-%m-%Y"))
+    max_date = date2num(datetime.datetime.strptime(line_2, "%d-%m-%Y"))
+    axes.set_xlim([min_date, max_date])
+
+    plt.plot(x_axis, y_axis, 'o-', color='purple')
     plt.ylabel('Kg')
     plt.xlabel('Dates')
-    plt.title('Kg per date')
-    plt.xticks(rotation=45)
+    plt.title('Kg/Date customised')
+    #plt.xticks(rotation=45)
+    plt.legend(['kg/date'])
     plt.grid(show_grid)
+    plt.gcf().autofmt_xdate(rotation=45)
     plt.show()
