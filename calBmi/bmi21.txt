@@ -1,0 +1,35 @@
+Date : 01-08-2020
+Heure : 22:23:46
+Prenom et Nom : Janet Jackson
+Poids : 75
+Taille : 1.80
+BMI : 23.148148148148145
+
+Date : 05-08-2020
+Heure : 22:23:46
+Prenom et Nom : Janet Jackson
+Poids : 73
+Taille : 1.80
+BMI : 22.530864197530864
+
+Date : 15-08-2020
+Heure : 22:23:46
+Prenom et Nom : Janet Jackson
+Poids : 74.5
+Taille : 1.80
+BMI : 22.993827160493826
+
+Date : 01-09-2020
+Heure : 22:23:46
+Prenom et Nom : Janet Jackson
+Poids : 74
+Taille : 1.80
+BMI : 22.839506172839506
+
+Date : 05-09-2020
+Heure : 22:23:46
+Prenom et Nom : Janet Jackson
+Poids : 75.5
+Taille : 1.80
+BMI : 23.30246913580247
+
