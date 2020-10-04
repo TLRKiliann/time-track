@@ -1256,750 +1256,750 @@ class Application(Frame):
 
     # New entry
     def callPatient1(self):
-        subprocess.call('./newpatient/entrypytientfile.py')
+        subprocess.run('./newpatient/entrypytientfile.py')
 
     # Delete entry
     def delEverPat(self):
-        subprocess.call('./deletepatient/deleverything.py')
+        subprocess.run('./deletepatient/deleverything.py')
 
     # Add new entry after delete one of them
     def addPatientAfter(self):
         messagebox.showwarning("Warning", "Don't forget to enter allergy too ! ;)")
-        subprocess.call('./newpatient/torecord.py')
+        subprocess.run('./newpatient/torecord.py')
 
     # To launch psychotabs.py
     def launchPsycho(self):
-        subprocess.call('./psychotabs.py')
+        subprocess.run('./psychotabs.py')
 
     # Agenda
     def patientAgenda(self):
-        subprocess.call('./patient_agenda/origin_agenda.py')
+        subprocess.run('./patient_agenda/origin_agenda.py')
 
     def patientAgenda2(self):
-        subprocess.call('./patient_agenda/origin_agenda2.py')
+        subprocess.run('./patient_agenda/origin_agenda2.py')
 
     def patientAgenda3(self):
-        subprocess.call('./patient_agenda/origin_agenda3.py')
+        subprocess.run('./patient_agenda/origin_agenda3.py')
 
     def patientAgenda4(self):
-        subprocess.call('./patient_agenda/origin_agenda4.py')
+        subprocess.run('./patient_agenda/origin_agenda4.py')
 
     def patientAgenda5(self):
-        subprocess.call('./patient_agenda/origin_agenda5.py')
+        subprocess.run('./patient_agenda/origin_agenda5.py')
 
     def patientAgenda6(self):
-        subprocess.call('./patient_agenda/origin_agenda6.py')
+        subprocess.run('./patient_agenda/origin_agenda6.py')
 
     def patientAgenda7(self):
-        subprocess.call('./patient_agenda/origin_agenda7.py')
+        subprocess.run('./patient_agenda/origin_agenda7.py')
 
     def patientAgenda8(self):
-        subprocess.call('./patient_agenda/origin_agenda8.py')
+        subprocess.run('./patient_agenda/origin_agenda8.py')
 
     def patientAgenda9(self):
-        subprocess.call('./patient_agenda/origin_agenda9.py')
+        subprocess.run('./patient_agenda/origin_agenda9.py')
 
     def patientAgenda10(self):
-        subprocess.call('./patient_agenda/origin_agenda10.py')
+        subprocess.run('./patient_agenda/origin_agenda10.py')
 
     def patientAgenda11(self):
-        subprocess.call('./patient_agenda/origin_agenda11.py')
+        subprocess.run('./patient_agenda/origin_agenda11.py')
 
     def patientAgenda12(self):
-        subprocess.call('./patient_agenda/origin_agenda12.py')
+        subprocess.run('./patient_agenda/origin_agenda12.py')
 
     def patientAgenda13(self):
-        subprocess.call('./patient_agenda/origin_agenda13.py')
+        subprocess.run('./patient_agenda/origin_agenda13.py')
 
     def patientAgenda14(self):
-        subprocess.call('./patient_agenda/origin_agenda14.py')
+        subprocess.run('./patient_agenda/origin_agenda14.py')
 
     def patientAgenda15(self):
-        subprocess.call('./patient_agenda/origin_agenda15.py')
+        subprocess.run('./patient_agenda/origin_agenda15.py')
 
     def patientAgenda16(self):
-        subprocess.call('./patient_agenda/origin_agenda16.py')
+        subprocess.run('./patient_agenda/origin_agenda16.py')
 
     def patientAgenda17(self):
-        subprocess.call('./patient_agenda/origin_agenda17.py')
+        subprocess.run('./patient_agenda/origin_agenda17.py')
 
     def patientAgenda18(self):
-        subprocess.call('./patient_agenda/origin_agenda18.py')
+        subprocess.run('./patient_agenda/origin_agenda18.py')
 
     def patientAgenda19(self):
-        subprocess.call('./patient_agenda/origin_agenda19.py')
+        subprocess.run('./patient_agenda/origin_agenda19.py')
 
     def patientAgenda20(self):
-        subprocess.call('./patient_agenda/origin_agenda20.py')
+        subprocess.run('./patient_agenda/origin_agenda20.py')
 
     def patientAgenda21(self):
-        subprocess.call('./patient_agenda/origin_agenda21.py')
+        subprocess.run('./patient_agenda/origin_agenda21.py')
 
     def patientAgenda22(self):
-        subprocess.call('./patient_agenda/origin_agenda22.py')
+        subprocess.run('./patient_agenda/origin_agenda22.py')
 
     def patientAgenda23(self):
-        subprocess.call('./patient_agenda/origin_agenda23.py')
+        subprocess.run('./patient_agenda/origin_agenda23.py')
 
     def patientAgenda24(self):
-        subprocess.call('./patient_agenda/origin_agenda24.py')
+        subprocess.run('./patient_agenda/origin_agenda24.py')
 
     # CheckBox 14 needs OK
     def besoinsCoche(self):
-        subprocess.call('./14besoins/checkb.py')
+        subprocess.run('./14besoins/checkb.py')
 
     def besoins2Coche(self):
-        subprocess.call('./14besoins/checkb2.py')
+        subprocess.run('./14besoins/checkb2.py')
 
     def besoins3Coche(self):
-        subprocess.call('./14besoins/checkb3.py')
+        subprocess.run('./14besoins/checkb3.py')
 
     def besoins4Coche(self):
-        subprocess.call('./14besoins/checkb4.py')
+        subprocess.run('./14besoins/checkb4.py')
 
     def besoins5Coche(self):
-        subprocess.call('./14besoins/checkb5.py')
+        subprocess.run('./14besoins/checkb5.py')
 
     def besoins6Coche(self):
-        subprocess.call('./14besoins/checkb6.py')
+        subprocess.run('./14besoins/checkb6.py')
 
     def besoins7Coche(self):
-        subprocess.call('./14besoins/checkb7.py')
+        subprocess.run('./14besoins/checkb7.py')
 
     def besoins8Coche(self):
-        subprocess.call('./14besoins/checkb8.py')
+        subprocess.run('./14besoins/checkb8.py')
 
     def besoins9Coche(self):
-        subprocess.call('./14besoins/checkb9.py')
+        subprocess.run('./14besoins/checkb9.py')
 
     def besoins10Coche(self):
-        subprocess.call('./14besoins/checkb10.py')
+        subprocess.run('./14besoins/checkb10.py')
 
     def besoins11Coche(self):
-        subprocess.call('./14besoins/checkb11.py')
+        subprocess.run('./14besoins/checkb11.py')
 
     def besoins12Coche(self):
-        subprocess.call('./14besoins/checkb12.py')
+        subprocess.run('./14besoins/checkb12.py')
 
     def besoins13Coche(self):
-        subprocess.call('./14besoins/checkb13.py')
+        subprocess.run('./14besoins/checkb13.py')
 
     def besoins14Coche(self):
-        subprocess.call('./14besoins/checkb14.py')
+        subprocess.run('./14besoins/checkb14.py')
 
     def besoins15Coche(self):
-        subprocess.call('./14besoins/checkb15.py')
+        subprocess.run('./14besoins/checkb15.py')
 
     def besoins16Coche(self):
-        subprocess.call('./14besoins/checkb16.py')
+        subprocess.run('./14besoins/checkb16.py')
 
     def besoins17Coche(self):
-        subprocess.call('./14besoins/checkb17.py')
+        subprocess.run('./14besoins/checkb17.py')
 
     def besoins18Coche(self):
-        subprocess.call('./14besoins/checkb18.py')
+        subprocess.run('./14besoins/checkb18.py')
 
     def besoins19Coche(self):
-        subprocess.call('./14besoins/checkb19.py')
+        subprocess.run('./14besoins/checkb19.py')
 
     def besoins20Coche(self):
-        subprocess.call('./14besoins/checkb20.py')
+        subprocess.run('./14besoins/checkb20.py')
 
     def besoins21Coche(self):
-        subprocess.call('./14besoins/checkb21.py')
+        subprocess.run('./14besoins/checkb21.py')
 
     def besoins22Coche(self):
-        subprocess.call('./14besoins/checkb22.py')
+        subprocess.run('./14besoins/checkb22.py')
 
     def besoins23Coche(self):
-        subprocess.call('./14besoins/checkb23.py')
+        subprocess.run('./14besoins/checkb23.py')
 
     def besoins24Coche(self):
-        subprocess.call('./14besoins/checkb24.py')
+        subprocess.run('./14besoins/checkb24.py')
 
     # Func 14 needs suivi OK
     def suiviSoins1(self):
-        subprocess.call("./14besoins/suivi_patient_1.py")
+        subprocess.run("./14besoins/suivi_patient_1.py")
 
     def suiviSoins2(self):
-        subprocess.call("./14besoins/suivi_patient_2.py")
+        subprocess.run("./14besoins/suivi_patient_2.py")
 
     def suiviSoins3(self):
-        subprocess.call("./14besoins/suivi_patient_3.py")
+        subprocess.run("./14besoins/suivi_patient_3.py")
 
     def suiviSoins4(self):
-        subprocess.call("./14besoins/suivi_patient_4.py")
+        subprocess.run("./14besoins/suivi_patient_4.py")
 
     def suiviSoins5(self):
-        subprocess.call("./14besoins/suivi_patient_5.py")
+        subprocess.run("./14besoins/suivi_patient_5.py")
 
     def suiviSoins6(self):
-        subprocess.call("./14besoins/suivi_patient_6.py")
+        subprocess.run("./14besoins/suivi_patient_6.py")
 
     def suiviSoins7(self):
-        subprocess.call("./14besoins/suivi_patient_7.py")
+        subprocess.run("./14besoins/suivi_patient_7.py")
 
     def suiviSoins8(self):
-        subprocess.call("./14besoins/suivi_patient_8.py")
+        subprocess.run("./14besoins/suivi_patient_8.py")
 
     def suiviSoins9(self):
-        subprocess.call("./14besoins/suivi_patient_9.py")
+        subprocess.run("./14besoins/suivi_patient_9.py")
 
     def suiviSoins10(self):
-        subprocess.call("./14besoins/suivi_patient_10.py")
+        subprocess.run("./14besoins/suivi_patient_10.py")
 
     def suiviSoins11(self):
-        subprocess.call("./14besoins/suivi_patient_11.py")
+        subprocess.run("./14besoins/suivi_patient_11.py")
 
     def suiviSoins12(self):
-        subprocess.call("./14besoins/suivi_patient_12.py")
+        subprocess.run("./14besoins/suivi_patient_12.py")
 
     def suiviSoins13(self):
-        subprocess.call("./14besoins/suivi_patient_13.py")
+        subprocess.run("./14besoins/suivi_patient_13.py")
 
     def suiviSoins14(self):
-        subprocess.call("./14besoins/suivi_patient_14.py")
+        subprocess.run("./14besoins/suivi_patient_14.py")
 
     def suiviSoins15(self):
-        subprocess.call("./14besoins/suivi_patient_15.py")
+        subprocess.run("./14besoins/suivi_patient_15.py")
 
     def suiviSoins16(self):
-        subprocess.call("./14besoins/suivi_patient_16.py")
+        subprocess.run("./14besoins/suivi_patient_16.py")
 
     def suiviSoins17(self):
-        subprocess.call("./14besoins/suivi_patient_17.py")
+        subprocess.run("./14besoins/suivi_patient_17.py")
 
     def suiviSoins18(self):
-        subprocess.call("./14besoins/suivi_patient_18.py")
+        subprocess.run("./14besoins/suivi_patient_18.py")
 
     def suiviSoins19(self):
-        subprocess.call("./14besoins/suivi_patient_19.py")
+        subprocess.run("./14besoins/suivi_patient_19.py")
 
     def suiviSoins20(self):
-        subprocess.call("./14besoins/suivi_patient_20.py")
+        subprocess.run("./14besoins/suivi_patient_20.py")
 
     def suiviSoins21(self):
-        subprocess.call("./14besoins/suivi_patient_21.py")
+        subprocess.run("./14besoins/suivi_patient_21.py")
 
     def suiviSoins22(self):
-        subprocess.call("./14besoins/suivi_patient_22.py")
+        subprocess.run("./14besoins/suivi_patient_22.py")
 
     def suiviSoins23(self):
-        subprocess.call("./14besoins/suivi_patient_23.py")
+        subprocess.run("./14besoins/suivi_patient_23.py")
 
     def suiviSoins24(self):
-        subprocess.call("./14besoins/suivi_patient_24.py")
+        subprocess.run("./14besoins/suivi_patient_24.py")
 
     # treatments
     def tttMed1(self):
-        subprocess.call("./ttt/patienttt1.py")
+        subprocess.run("./ttt/patienttt1.py")
 
     def tttMed2(self):
-        subprocess.call("./ttt/patienttt2.py")
+        subprocess.run("./ttt/patienttt2.py")
 
     def tttMed3(self):
-        subprocess.call("./ttt/patienttt3.py")
+        subprocess.run("./ttt/patienttt3.py")
 
     def tttMed4(self):
-        subprocess.call("./ttt/patienttt4.py")
+        subprocess.run("./ttt/patienttt4.py")
 
     def tttMed5(self):
-        subprocess.call("./ttt/patienttt5.py")
+        subprocess.run("./ttt/patienttt5.py")
 
     def tttMed6(self):
-        subprocess.call("./ttt/patienttt6.py")
+        subprocess.run("./ttt/patienttt6.py")
 
     def tttMed7(self):
-        subprocess.call("./ttt/patienttt7.py")
+        subprocess.run("./ttt/patienttt7.py")
 
     def tttMed8(self):
-        subprocess.call("./ttt/patienttt8.py")
+        subprocess.run("./ttt/patienttt8.py")
 
     def tttMed9(self):
-        subprocess.call("./ttt/patienttt9.py")
+        subprocess.run("./ttt/patienttt9.py")
 
     def tttMed10(self):
-        subprocess.call("./ttt/patienttt10.py")
+        subprocess.run("./ttt/patienttt10.py")
 
     def tttMed11(self):
-        subprocess.call("./ttt/patienttt11.py")
+        subprocess.run("./ttt/patienttt11.py")
 
     def tttMed12(self):
-        subprocess.call("./ttt/patienttt12.py")
+        subprocess.run("./ttt/patienttt12.py")
 
     def tttMed13(self):
-        subprocess.call("./ttt/patienttt13.py")
+        subprocess.run("./ttt/patienttt13.py")
 
     def tttMed14(self):
-        subprocess.call("./ttt/patienttt14.py")
+        subprocess.run("./ttt/patienttt14.py")
 
     def tttMed15(self):
-        subprocess.call("./ttt/patienttt15.py")
+        subprocess.run("./ttt/patienttt15.py")
 
     def tttMed16(self):
-        subprocess.call("./ttt/patienttt16.py")
+        subprocess.run("./ttt/patienttt16.py")
 
     def tttMed17(self):
-        subprocess.call("./ttt/patienttt17.py")
+        subprocess.run("./ttt/patienttt17.py")
 
     def tttMed18(self):
-        subprocess.call("./ttt/patienttt18.py")
+        subprocess.run("./ttt/patienttt18.py")
 
     def tttMed19(self):
-        subprocess.call("./ttt/patienttt19.py")
+        subprocess.run("./ttt/patienttt19.py")
 
     def tttMed20(self):
-        subprocess.call("./ttt/patienttt20.py")
+        subprocess.run("./ttt/patienttt20.py")
 
     def tttMed21(self):
-        subprocess.call("./ttt/patienttt21.py")
+        subprocess.run("./ttt/patienttt21.py")
 
     def tttMed22(self):
-        subprocess.call("./ttt/patienttt22.py")
+        subprocess.run("./ttt/patienttt22.py")
 
     def tttMed23(self):
-        subprocess.call("./ttt/patienttt23.py")
+        subprocess.run("./ttt/patienttt23.py")
 
     def tttMed24(self):
-        subprocess.call("./ttt/patienttt24.py")
+        subprocess.run("./ttt/patienttt24.py")
 
     # Func BMI
     def calculB(self):
-        subprocess.call("./calBmi/CalculBmi.py")
+        subprocess.run("./calBmi/CalculBmi.py")
 
     def calculB2(self):
-        subprocess.call("./calBmi/CalculBmi2.py")
+        subprocess.run("./calBmi/CalculBmi2.py")
 
     def calculB3(self):
-        subprocess.call("./calBmi/CalculBmi3.py")
+        subprocess.run("./calBmi/CalculBmi3.py")
 
     def calculB4(self):
-        subprocess.call("./calBmi/CalculBmi4.py")
+        subprocess.run("./calBmi/CalculBmi4.py")
 
     def calculB5(self):
-        subprocess.call("./calBmi/CalculBmi5.py")
+        subprocess.run("./calBmi/CalculBmi5.py")
 
     def calculB6(self):
-        subprocess.call("./calBmi/CalculBmi6.py")
+        subprocess.run("./calBmi/CalculBmi6.py")
 
     def calculB7(self):
-        subprocess.call("./calBmi/CalculBmi7.py")
+        subprocess.run("./calBmi/CalculBmi7.py")
 
     def calculB8(self):
-        subprocess.call("./calBmi/CalculBmi8.py")
+        subprocess.run("./calBmi/CalculBmi8.py")
 
     def calculB9(self):
-        subprocess.call("./calBmi/CalculBmi9.py")
+        subprocess.run("./calBmi/CalculBmi9.py")
 
     def calculB10(self):
-        subprocess.call("./calBmi/CalculBmi10.py")
+        subprocess.run("./calBmi/CalculBmi10.py")
 
     def calculB11(self):
-        subprocess.call("./calBmi/CalculBmi11.py")
+        subprocess.run("./calBmi/CalculBmi11.py")
 
     def calculB12(self):
-        subprocess.call("./calBmi/CalculBmi12.py")
+        subprocess.run("./calBmi/CalculBmi12.py")
 
     def calculB13(self):
-        subprocess.call("./calBmi/CalculBmi13.py")
+        subprocess.run("./calBmi/CalculBmi13.py")
 
     def calculB14(self):
-        subprocess.call("./calBmi/CalculBmi14.py")
+        subprocess.run("./calBmi/CalculBmi14.py")
 
     def calculB15(self):
-        subprocess.call("./calBmi/CalculBmi15.py")
+        subprocess.run("./calBmi/CalculBmi15.py")
 
     def calculB16(self):
-        subprocess.call("./calBmi/CalculBmi16.py")
+        subprocess.run("./calBmi/CalculBmi16.py")
 
     def calculB17(self):
-        subprocess.call("./calBmi/CalculBmi17.py")
+        subprocess.run("./calBmi/CalculBmi17.py")
 
     def calculB18(self):
-        subprocess.call("./calBmi/CalculBmi18.py")
+        subprocess.run("./calBmi/CalculBmi18.py")
 
     def calculB19(self):
-        subprocess.call("./calBmi/CalculBmi19.py")
+        subprocess.run("./calBmi/CalculBmi19.py")
 
     def calculB20(self):
-        subprocess.call("./calBmi/CalculBmi20.py")
+        subprocess.run("./calBmi/CalculBmi20.py")
 
     def calculB21(self):
-        subprocess.call("./calBmi/CalculBmi21.py")
+        subprocess.run("./calBmi/CalculBmi21.py")
 
     def calculB22(self):
-        subprocess.call("./calBmi/CalculBmi22.py")
+        subprocess.run("./calBmi/CalculBmi22.py")
 
     def calculB23(self):
-        subprocess.call("./calBmi/CalculBmi23.py")
+        subprocess.run("./calBmi/CalculBmi23.py")
 
     def calculB24(self):
-        subprocess.call("./calBmi/CalculBmi24.py")
+        subprocess.run("./calBmi/CalculBmi24.py")
 
     # Func Visit MED
     def visitMed(self):
-        subprocess.call("./vmed/vm_patient1.py")
+        subprocess.run("./vmed/vm_patient1.py")
         
     def visitMed2(self):
-        subprocess.call("./vmed/vm_patient2.py")
+        subprocess.run("./vmed/vm_patient2.py")
         
     def visitMed3(self):
-        subprocess.call("./vmed/vm_patient3.py")
+        subprocess.run("./vmed/vm_patient3.py")
         
     def visitMed4(self):
-        subprocess.call("./vmed/vm_patient4.py")
+        subprocess.run("./vmed/vm_patient4.py")
         
     def visitMed5(self):
-        subprocess.call("./vmed/vm_patient5.py")
+        subprocess.run("./vmed/vm_patient5.py")
         
     def visitMed6(self):
-        subprocess.call("./vmed/vm_patient6.py")
+        subprocess.run("./vmed/vm_patient6.py")
         
     def visitMed7(self):
-        subprocess.call("./vmed/vm_patient7.py")
+        subprocess.run("./vmed/vm_patient7.py")
 
     def visitMed8(self):
-        subprocess.call("./vmed/vm_patient8.py")
+        subprocess.run("./vmed/vm_patient8.py")
 
     def visitMed9(self):
-        subprocess.call("./vmed/vm_patient9.py")
+        subprocess.run("./vmed/vm_patient9.py")
 
     def visitMed10(self):
-        subprocess.call("./vmed/vm_patient10.py")
+        subprocess.run("./vmed/vm_patient10.py")
 
     def visitMed11(self):
-        subprocess.call("./vmed/vm_patient11.py")
+        subprocess.run("./vmed/vm_patient11.py")
 
     def visitMed12(self):
-        subprocess.call("./vmed/vm_patient12.py")
+        subprocess.run("./vmed/vm_patient12.py")
 
     def visitMed13(self):
-        subprocess.call("./vmed/vm_patient13.py")
+        subprocess.run("./vmed/vm_patient13.py")
 
     def visitMed14(self):
-        subprocess.call("./vmed/vm_patient14.py")
+        subprocess.run("./vmed/vm_patient14.py")
 
     def visitMed15(self):
-        subprocess.call("./vmed/vm_patient15.py")
+        subprocess.run("./vmed/vm_patient15.py")
 
     def visitMed16(self):
-        subprocess.call("./vmed/vm_patient16.py")
+        subprocess.run("./vmed/vm_patient16.py")
 
     def visitMed17(self):
-        subprocess.call("./vmed/vm_patient17.py")
+        subprocess.run("./vmed/vm_patient17.py")
 
     def visitMed18(self):
-        subprocess.call("./vmed/vm_patient18.py")
+        subprocess.run("./vmed/vm_patient18.py")
 
     def visitMed19(self):
-        subprocess.call("./vmed/vm_patient19.py")
+        subprocess.run("./vmed/vm_patient19.py")
 
     def visitMed20(self):
-        subprocess.call("./vmed/vm_patient20.py")
+        subprocess.run("./vmed/vm_patient20.py")
 
     def visitMed21(self):
-        subprocess.call("./vmed/vm_patient21.py")
+        subprocess.run("./vmed/vm_patient21.py")
 
     def visitMed22(self):
-        subprocess.call("./vmed/vm_patient22.py")
+        subprocess.run("./vmed/vm_patient22.py")
 
     def visitMed23(self):
-        subprocess.call("./vmed/vm_patient23.py")
+        subprocess.run("./vmed/vm_patient23.py")
 
     def visitMed24(self):
-        subprocess.call("./vmed/vm_patient24.py")
+        subprocess.run("./vmed/vm_patient24.py")
 
     # Allergy OK
     def allergyLink(self):
-        subprocess.call('./allergy/allerpatient1.py')
+        subprocess.run('./allergy/allerpatient1.py')
 
     def allergyLink2(self):
-        subprocess.call('./allergy/allerpatient2.py')
+        subprocess.run('./allergy/allerpatient2.py')
 
     def allergyLink3(self):
-        subprocess.call('./allergy/allerpatient3.py')
+        subprocess.run('./allergy/allerpatient3.py')
 
     def allergyLink4(self):
-        subprocess.call('./allergy/allerpatient4.py')
+        subprocess.run('./allergy/allerpatient4.py')
 
     def allergyLink5(self):
-        subprocess.call('./allergy/allerpatient5.py')
+        subprocess.run('./allergy/allerpatient5.py')
 
     def allergyLink6(self):
-        subprocess.call('./allergy/allerpatient6.py')
+        subprocess.run('./allergy/allerpatient6.py')
 
     def allergyLink7(self):
-        subprocess.call('./allergy/allerpatient7.py')
+        subprocess.run('./allergy/allerpatient7.py')
 
     def allergyLink8(self):
-        subprocess.call('./allergy/allerpatient8.py')
+        subprocess.run('./allergy/allerpatient8.py')
 
     def allergyLink9(self):
-        subprocess.call('./allergy/allerpatient9.py')
+        subprocess.run('./allergy/allerpatient9.py')
 
     def allergyLink10(self):
-        subprocess.call('./allergy/allerpatient10.py')
+        subprocess.run('./allergy/allerpatient10.py')
 
     def allergyLink11(self):
-        subprocess.call('./allergy/allerpatient11.py')
+        subprocess.run('./allergy/allerpatient11.py')
 
     def allergyLink12(self):
-        subprocess.call('./allergy/allerpatient12.py')
+        subprocess.run('./allergy/allerpatient12.py')
 
     def allergyLink13(self):
-        subprocess.call('./allergy/allerpatient13.py')
+        subprocess.run('./allergy/allerpatient13.py')
 
     def allergyLink14(self):
-        subprocess.call('./allergy/allerpatient14.py')
+        subprocess.run('./allergy/allerpatient14.py')
 
     def allergyLink15(self):
-        subprocess.call('./allergy/allerpatient15.py')
+        subprocess.run('./allergy/allerpatient15.py')
 
     def allergyLink16(self):
-        subprocess.call('./allergy/allerpatient16.py')
+        subprocess.run('./allergy/allerpatient16.py')
 
     def allergyLink17(self):
-        subprocess.call('./allergy/allerpatient17.py')
+        subprocess.run('./allergy/allerpatient17.py')
 
     def allergyLink18(self):
-        subprocess.call('./allergy/allerpatient18.py')
+        subprocess.run('./allergy/allerpatient18.py')
 
     def allergyLink19(self):
-        subprocess.call('./allergy/allerpatient19.py')
+        subprocess.run('./allergy/allerpatient19.py')
 
     def allergyLink20(self):
-        subprocess.call('./allergy/allerpatient20.py')
+        subprocess.run('./allergy/allerpatient20.py')
 
     def allergyLink21(self):
-        subprocess.call('./allergy/allerpatient21.py')
+        subprocess.run('./allergy/allerpatient21.py')
 
     def allergyLink22(self):
-        subprocess.call('./allergy/allerpatient22.py')
+        subprocess.run('./allergy/allerpatient22.py')
 
     def allergyLink23(self):
-        subprocess.call('./allergy/allerpatient23.py')
+        subprocess.run('./allergy/allerpatient23.py')
 
     def allergyLink24(self):
-        subprocess.call('./allergy/allerpatient24.py')
+        subprocess.run('./allergy/allerpatient24.py')
 
     # Func Diagnostic
     def diag1(self):
-        subprocess.call("./diag/diag_patient1.py")
+        subprocess.run("./diag/diag_patient1.py")
 
     def diag2(self):
-        subprocess.call("./diag/diag_patient2.py")
+        subprocess.run("./diag/diag_patient2.py")
 
     def diag3(self):
-        subprocess.call("./diag/diag_patient3.py")
+        subprocess.run("./diag/diag_patient3.py")
 
     def diag4(self):
-        subprocess.call("./diag/diag_patient4.py")
+        subprocess.run("./diag/diag_patient4.py")
 
     def diag5(self):
-        subprocess.call("./diag/diag_patient5.py")
+        subprocess.run("./diag/diag_patient5.py")
 
     def diag6(self):
-        subprocess.call("./diag/diag_patient6.py")
+        subprocess.run("./diag/diag_patient6.py")
 
     def diag7(self):
-        subprocess.call("./diag/diag_patient7.py")
+        subprocess.run("./diag/diag_patient7.py")
 
     def diag8(self):
-        subprocess.call("./diag/diag_patient8.py")
+        subprocess.run("./diag/diag_patient8.py")
 
     def diag9(self):
-        subprocess.call("./diag/diag_patient9.py")
+        subprocess.run("./diag/diag_patient9.py")
 
     def diag10(self):
-        subprocess.call("./diag/diag_patient10.py")
+        subprocess.run("./diag/diag_patient10.py")
 
     def diag11(self):
-        subprocess.call("./diag/diag_patient11.py")
+        subprocess.run("./diag/diag_patient11.py")
 
     def diag12(self):
-        subprocess.call("./diag/diag_patient12.py")
+        subprocess.run("./diag/diag_patient12.py")
 
     def diag13(self):
-        subprocess.call("./diag/diag_patient13.py")
+        subprocess.run("./diag/diag_patient13.py")
 
     def diag14(self):
-        subprocess.call("./diag/diag_patient14.py")
+        subprocess.run("./diag/diag_patient14.py")
 
     def diag15(self):
-        subprocess.call("./diag/diag_patient15.py")
+        subprocess.run("./diag/diag_patient15.py")
 
     def diag16(self):
-        subprocess.call("./diag/diag_patient16.py")
+        subprocess.run("./diag/diag_patient16.py")
 
     def diag17(self):
-        subprocess.call("./diag/diag_patient17.py")
+        subprocess.run("./diag/diag_patient17.py")
 
     def diag18(self):
-        subprocess.call("./diag/diag_patient18.py")
+        subprocess.run("./diag/diag_patient18.py")
 
     def diag19(self):
-        subprocess.call("./diag/diag_patient19.py")
+        subprocess.run("./diag/diag_patient19.py")
 
     def diag20(self):
-        subprocess.call("./diag/diag_patient20.py")
+        subprocess.run("./diag/diag_patient20.py")
 
     def diag21(self):
-        subprocess.call("./diag/diag_patient21.py")
+        subprocess.run("./diag/diag_patient21.py")
 
     def diag22(self):
-        subprocess.call("./diag/diag_patient22.py")
+        subprocess.run("./diag/diag_patient22.py")
 
     def diag23(self):
-        subprocess.call("./diag/diag_patient23.py")
+        subprocess.run("./diag/diag_patient23.py")
 
     def diag24(self):
-        subprocess.call("./diag/diag_patient24.py")
+        subprocess.run("./diag/diag_patient24.py")
 
     # Func labo
     def laboResult(self):
-        subprocess.call('./labo/resultlabo1.py')
+        subprocess.run('./labo/resultlabo1.py')
 
     def laboResult2(self):
-        subprocess.call('./labo/resultlabo2.py')
+        subprocess.run('./labo/resultlabo2.py')
 
     def laboResult3(self):
-        subprocess.call('./labo/resultlabo3.py')
+        subprocess.run('./labo/resultlabo3.py')
 
     def laboResult4(self):
-        subprocess.call('./labo/resultlabo4.py')
+        subprocess.run('./labo/resultlabo4.py')
 
     def laboResult5(self):
-        subprocess.call('./labo/resultlabo5.py')
+        subprocess.run('./labo/resultlabo5.py')
 
     def laboResult6(self):
-        subprocess.call('./labo/resultlabo6.py')
+        subprocess.run('./labo/resultlabo6.py')
 
     def laboResult7(self):
-        subprocess.call('./labo/resultlabo7.py')
+        subprocess.run('./labo/resultlabo7.py')
 
     def laboResult8(self):
-        subprocess.call('./labo/resultlabo8.py')
+        subprocess.run('./labo/resultlabo8.py')
 
     def laboResult9(self):
-        subprocess.call('./labo/resultlabo9.py')
+        subprocess.run('./labo/resultlabo9.py')
 
     def laboResult10(self):
-        subprocess.call('./labo/resultlabo10.py')
+        subprocess.run('./labo/resultlabo10.py')
 
     def laboResult11(self):
-        subprocess.call('./labo/resultlabo11.py')
+        subprocess.run('./labo/resultlabo11.py')
 
     def laboResult12(self):
-        subprocess.call('./labo/resultlabo12.py')
+        subprocess.run('./labo/resultlabo12.py')
 
     def laboResult13(self):
-        subprocess.call('./labo/resultlabo13.py')
+        subprocess.run('./labo/resultlabo13.py')
 
     def laboResult14(self):
-        subprocess.call('./labo/resultlabo14.py')
+        subprocess.run('./labo/resultlabo14.py')
 
     def laboResult15(self):
-        subprocess.call('./labo/resultlabo15.py')
+        subprocess.run('./labo/resultlabo15.py')
 
     def laboResult16(self):
-        subprocess.call('./labo/resultlabo16.py')
+        subprocess.run('./labo/resultlabo16.py')
 
     def laboResult17(self):
-        subprocess.call('./labo/resultlabo17.py')
+        subprocess.run('./labo/resultlabo17.py')
 
     def laboResult18(self):
-        subprocess.call('./labo/resultlabo18.py')
+        subprocess.run('./labo/resultlabo18.py')
 
     def laboResult19(self):
-        subprocess.call('./labo/resultlabo19.py')
+        subprocess.run('./labo/resultlabo19.py')
 
     def laboResult20(self):
-        subprocess.call('./labo/resultlabo20.py')
+        subprocess.run('./labo/resultlabo20.py')
 
     def laboResult21(self):
-        subprocess.call('./labo/resultlabo21.py')
+        subprocess.run('./labo/resultlabo21.py')
 
     def laboResult22(self):
-        subprocess.call('./labo/resultlabo22.py')
+        subprocess.run('./labo/resultlabo22.py')
 
     def laboResult23(self):
-        subprocess.call('./labo/resultlabo23.py')
+        subprocess.run('./labo/resultlabo23.py')
 
     def laboResult24(self):
-        subprocess.call('./labo/resultlabo24.py')
+        subprocess.run('./labo/resultlabo24.py')
 
     # Menu print
     def nutritionMenu(self):
-        subprocess.call('./nutrition/nutrit_patient1.py')
+        subprocess.run('./nutrition/nutrit_patient1.py')
 
     def nutritionMenu2(self):
-        subprocess.call('./nutrition/nutrit_patient2.py')
+        subprocess.run('./nutrition/nutrit_patient2.py')
 
     def nutritionMenu3(self):
-        subprocess.call('./nutrition/nutrit_patient3.py')
+        subprocess.run('./nutrition/nutrit_patient3.py')
 
     def nutritionMenu4(self):
-        subprocess.call('./nutrition/nutrit_patient4.py')
+        subprocess.run('./nutrition/nutrit_patient4.py')
 
     def nutritionMenu5(self):
-        subprocess.call('./nutrition/nutrit_patient5.py')
+        subprocess.run('./nutrition/nutrit_patient5.py')
 
     def nutritionMenu6(self):
-        subprocess.call('./nutrition/nutrit_patient6.py')
+        subprocess.run('./nutrition/nutrit_patient6.py')
 
     def nutritionMenu7(self):
-        subprocess.call('./nutrition/nutrit_patient7.py')
+        subprocess.run('./nutrition/nutrit_patient7.py')
 
     def nutritionMenu8(self):
-        subprocess.call('./nutrition/nutrit_patient8.py')
+        subprocess.run('./nutrition/nutrit_patient8.py')
 
     def nutritionMenu9(self):
-        subprocess.call('./nutrition/nutrit_patient9.py')
+        subprocess.run('./nutrition/nutrit_patient9.py')
 
     def nutritionMenu10(self):
-        subprocess.call('./nutrition/nutrit_patient10.py')
+        subprocess.run('./nutrition/nutrit_patient10.py')
 
     def nutritionMenu11(self):
-        subprocess.call('./nutrition/nutrit_patient11.py')
+        subprocess.run('./nutrition/nutrit_patient11.py')
 
     def nutritionMenu12(self):
-        subprocess.call('./nutrition/nutrit_patient12.py')
+        subprocess.run('./nutrition/nutrit_patient12.py')
 
     def nutritionMenu13(self):
-        subprocess.call('./nutrition/nutrit_patient13.py')
+        subprocess.run('./nutrition/nutrit_patient13.py')
 
     def nutritionMenu14(self):
-        subprocess.call('./nutrition/nutrit_patient14.py')
+        subprocess.run('./nutrition/nutrit_patient14.py')
 
     def nutritionMenu15(self):
-        subprocess.call('./nutrition/nutrit_patient15.py')
+        subprocess.run('./nutrition/nutrit_patient15.py')
 
     def nutritionMenu16(self):
-        subprocess.call('./nutrition/nutrit_patient16.py')
+        subprocess.run('./nutrition/nutrit_patient16.py')
 
     def nutritionMenu17(self):
-        subprocess.call('./nutrition/nutrit_patient17.py')
+        subprocess.run('./nutrition/nutrit_patient17.py')
 
     def nutritionMenu18(self):
-        subprocess.call('./nutrition/nutrit_patient18.py')
+        subprocess.run('./nutrition/nutrit_patient18.py')
 
     def nutritionMenu19(self):
-        subprocess.call('./nutrition/nutrit_patient19.py')
+        subprocess.run('./nutrition/nutrit_patient19.py')
 
     def nutritionMenu20(self):
-        subprocess.call('./nutrition/nutrit_patient20.py')
+        subprocess.run('./nutrition/nutrit_patient20.py')
 
     def nutritionMenu21(self):
-        subprocess.call('./nutrition/nutrit_patient21.py')
+        subprocess.run('./nutrition/nutrit_patient21.py')
 
     def nutritionMenu22(self):
-        subprocess.call('./nutrition/nutrit_patient22.py')
+        subprocess.run('./nutrition/nutrit_patient22.py')
 
     def nutritionMenu23(self):
-        subprocess.call('./nutrition/nutrit_patient23.py')
+        subprocess.run('./nutrition/nutrit_patient23.py')
 
     def nutritionMenu24(self):
-        subprocess.call('./nutrition/nutrit_patient24.py')
+        subprocess.run('./nutrition/nutrit_patient24.py')
     
     """
     def newsTextBox(self):
@@ -2084,12 +2084,12 @@ class Application(Frame):
         listeDate = ["01/05/2020", "18/06/2020", "01/07/2020",
         "01/08/2020", "19/09/2020", "01/10/2020", "01/11/2020",
         "01/12/2020"]
-        
+
         for i in listeDate:
             try:
                 if time.strftime("%d/%m/%Y") == i:
                     MSB = messagebox.showinfo('Info', 'Backup is done at the first of each month')
-                    subprocess.call('./Backup/backupfile.py')
+                    subprocess.run('./Backup/backupfile.py')
                     print("+ Backup is done !")
             except FileNotFoundError as errout:
                 print("+ It is not the right date for backup, next will" \
@@ -2097,7 +2097,7 @@ class Application(Frame):
 
     def upDateAll(self):
         self.master.destroy()
-        subprocess.call('./time_track.py')
+        subprocess.run('./time_track.py')
 
 if __name__=='__main__':
     app = Application()
