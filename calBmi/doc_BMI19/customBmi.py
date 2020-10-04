@@ -19,9 +19,9 @@ def get(monthVal, month_start, monthEnd, month_end):
         print(monthVal)
         print(monthEnd)
         try:
-            if os.path.getsize('./calBmi/doc_BMI/custom_kg.txt'):
+            if os.path.getsize('./calBmi/doc_BMI19/custom_kg.txt'):
                 print("+ File 'custom_kg.txt' exist !")
-                with open('./calBmi/doc_BMI/custom_kg.txt', 'w+') as namefile:
+                with open('./calBmi/doc_BMI19/custom_kg.txt', 'w+') as namefile:
                     namefile.write(monthVal)
                     namefile.write('\n')
                     namefile.write(monthEnd)
@@ -29,7 +29,7 @@ def get(monthVal, month_start, monthEnd, month_end):
             print("+ Sorry, file 'custom_kg.txt' not exist !")
             print(str(outcom1))
             print("+ File 'custom_kg.txt' created !")
-            with open('./calBmi/doc_BMI/custom_kg.txt', 'w+') as namefile:
+            with open('./calBmi/doc_BMI19/custom_kg.txt', 'w+') as namefile:
                 namefile.write(monthVal)
                 namefile.write('\n')
                 namefile.write(monthEnd)
