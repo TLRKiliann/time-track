@@ -2,12 +2,21 @@
 # -*-encoding:Utf-8-*-
 
 
-from tkinter import *
+"""
+To delete all files for patient 6
+when usr delete patient by pressing
+the delete button.
+"""
+
+
 import os
-import subprocess
 
 
 def delFuncFile6():
+    """
+    This function delete all files with
+    a test before removing files.
+    """
     try:
         if os.path.getsize('./14besoins/doc_suivi6/main_14b.txt'):
             os.remove('./14besoins/doc_suivi6/main_14b.txt')
@@ -16,7 +25,7 @@ def delFuncFile6():
         print("+ File main_14b.txt does not exist", filefunc1)
 
     try:
-        if os.path.getsize :
+        if os.path.getsize('./14besoins/doc_suivi6/patient6_14b.txt'):
             os.remove('./14besoins/doc_suivi6/patient6_14b.txt')
             print("+ File patient6_14b.txt deleted")
     except FileNotFoundError as filefunc2:

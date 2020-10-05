@@ -2,14 +2,20 @@
 # -*-encoding:Utf-8-*-
 
 
-from tkinter import *
+"""
+To delete all files for patient 2
+when usr delete patient by pressing
+the delete button.
+"""
+
+
 import os
-import subprocess
 
 
 def delFuncFile2():
     """
-    vmed + diag to modify
+    This function delete all files with
+    a test before removing files.
     """
     try:
         if os.path.getsize('./14besoins/doc_suivi2/main_14b.txt'):

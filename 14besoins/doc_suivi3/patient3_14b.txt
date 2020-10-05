@@ -1,8 +1,0 @@
----####-|--- Affichage des besoins du patient à surveiller ---|-####---
-
-En date du : 23/09/2020 à 23:14:00 :
-Patient name : Aaron Schwartz
-+ Surveillance propreté et/ou téguments requise
-+ Surveillance ou aide pour l'habillage/déshabillage requise
----
-
