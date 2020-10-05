@@ -14,8 +14,10 @@ gui.configure(bg='cyan')
 
 def get(Nompatient, entree, Birthvalue, Birth_entree):
     """
-    Entry at first time
-    a patient with entry button
+    Entry at first time a patient
+    (when program is open for the
+    first time) and when entry button 
+    is pressed.
     """
     MsgBox = messagebox.askyesno('Save data', 'Do you want to save ?')
     if MsgBox == 1:
@@ -26,7 +28,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile.txt'):
                 print("+ File 'entryfile.txt' exist !")
-                #searchLine1(Nompatient, Birthvalue)
         except FileNotFoundError as outcom5:
             print("+ Sorry, file 'entryfile.txt' not exist !")
             print(str(outcom5))
@@ -38,7 +39,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile2.txt'):
                 print("+ File 'entryfile2.txt' exist !")
-                #searchLine2(Nompatient, Birthvalue)
         except FileNotFoundError as outcom5:
             print("+ Sorry, file 'entryfile2.txt' not exist !")
             print(str(outcom5))
@@ -50,7 +50,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile3.txt'):
                 print("+ File 'entryfile3.txt' exist !")
-                #searchLine3(Nompatient, Birthvalue)
         except FileNotFoundError as outcom4:
             print("+ Sorry, file 'entryfile3.txt' not exist !")
             print(str(outcom4))
@@ -62,7 +61,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile4.txt'):
                 print("+ File 'entryfile4.txt' exist !")
-                #searchLine4(Nompatient, Birthvalue)
         except FileNotFoundError as outcom3:
             print("+ Sorry, file 'entryfile4.txt' not exist !")
             print(str(outcom3))
@@ -74,7 +72,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile5.txt'):
                 print("+ File 'entryfile5.txt' exist !")
-                #searchLine5(Nompatient, Birthvalue)
         except FileNotFoundError as outcom2:
             print("+ Sorry, file 'entryfile5.txt' not exist !")
             print(str(outcom2))
@@ -86,7 +83,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile6.txt'):
                 print("+ File 'entryfile6.txt' exist !")
-                #searchLine6(Nompatient, Birthvalue)
         except FileNotFoundError as outcom1:
             print("+ Sorry, file 'entryfile.txt6' not exist !")
             print(str(outcom1))
@@ -98,7 +94,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile7.txt'):
                 print("+ File 'entryfile7.txt' exist !")
-                #searchLine7(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile7.txt' not exist !")
             print(str(outcom))
@@ -110,7 +105,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile8.txt'):
                 print("+ File 'entryfile8.txt' exist !")
-                #searchLine8(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile8.txt' not exist !")
             print(str(outcom))
@@ -122,7 +116,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile9.txt'):
                 print("+ File 'entryfile9.txt' exist !")
-                #searchLine9(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile9.txt' not exist !")
             print(str(outcom))
@@ -134,7 +127,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile10.txt'):
                 print("+ File 'entryfile10.txt' exist !")
-                #searchLine10(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile10.txt' not exist !")
             print(str(outcom))
@@ -146,7 +138,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile11.txt'):
                 print("+ File 'entryfile11.txt' exist !")
-                #searchLine11(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile11.txt' not exist !")
             print(str(outcom))
@@ -158,7 +149,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile12.txt'):
                 print("+ File 'entryfile12.txt' exist !")
-                #searchLine12(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile12.txt' not exist !")
             print(str(outcom))
@@ -170,7 +160,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile13.txt'):
                 print("+ File 'entryfile13.txt' exist !")
-                #searchLine13(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile13.txt' not exist !")
             print(str(outcom))
@@ -182,7 +171,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile14.txt'):
                 print("+ File 'entryfile14.txt' exist !")
-                #searchLine14(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile14.txt' not exist !")
             print(str(outcom))
@@ -194,7 +182,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile15.txt'):
                 print("+ File 'entryfile15.txt' exist !")
-                #searchLine15(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile15.txt' not exist !")
             print(str(outcom))
@@ -206,7 +193,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile16.txt'):
                 print("+ File 'entryfile16.txt' exist !")
-                #searchLine16(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile16.txt' not exist !")
             print(str(outcom))
@@ -218,7 +204,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile17.txt'):
                 print("+ File 'entryfile17.txt' exist !")
-                #searchLine17(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile17.txt' not exist !")
             print(str(outcom))
@@ -230,7 +215,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile18.txt'):
                 print("+ File 'entryfile18.txt' exist !")
-                #searchLine18(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile18.txt' not exist !")
             print(str(outcom))
@@ -242,7 +226,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile20.txt'):
                 print("+ File 'entryfile20.txt' exist !")
-                #searchLine20(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile20.txt' not exist !")
             print(str(outcom))
@@ -254,7 +237,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile21.txt'):
                 print("+ File 'entryfile21.txt' exist !")
-                #searchLine21(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile21.txt' not exist !")
             print(str(outcom))
@@ -266,7 +248,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile22.txt'):
                 print("+ File 'entryfile22.txt' exist !")
-                #searchLine22(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile22.txt' not exist !")
             print(str(outcom))
@@ -278,7 +259,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile23.txt'):
                 print("+ File 'entryfile23.txt' exist !")
-                #searchLine23(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile23.txt' not exist !")
             print(str(outcom))
@@ -290,7 +270,6 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
         try:
             if os.path.getsize('./newpatient/entryfile24.txt'):
                 print("+ File 'entryfile24.txt' exist !")
-                #searchLine24(Nompatient, Birthvalue)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'entryfile24.txt' not exist !")
             print(str(outcom))
@@ -302,15 +281,15 @@ def get(Nompatient, entree, Birthvalue, Birth_entree):
     gui.destroy()
 
 labelName = Label(gui)
-labelName = Label(text='Enter NAME : ', 
-    font="Times 14 bold", 
+labelName = Label(text='Enter NAME : ',
+    font="Times 14 bold",
     fg='RoyalBlue3', bg='cyan')
 labelName.pack(pady=10)
 
 Nompatient=StringVar()
 Nompatient.set('Firstname + Lastname')
-entree = Entry(gui, textvariable=Nompatient, 
-    highlightbackground='light sky blue', 
+entree = Entry(gui, textvariable=Nompatient,
+    highlightbackground='light sky blue',
     bd=4)
 entree.pack()
 
@@ -321,7 +300,7 @@ labelBirth.pack(pady=10)
 
 Birthvalue=StringVar()
 Birthvalue.set('Format: 00/00/0000')
-Birth_entree = Entry(gui, textvariable=Birthvalue, 
+Birth_entree = Entry(gui, textvariable=Birthvalue,
     highlightbackground='light sky blue', bd=4)
 Birth_entree.pack()
 
