@@ -1304,12 +1304,21 @@ class Application(Frame):
         subprocess.run('./patient_agenda/origin_agenda.py', check=True)
 
     def patientAgenda2(self):
+        """
+            To call agenda app for patient 2
+        """
         subprocess.run('./patient_agenda/origin_agenda2.py', check=True)
 
     def patientAgenda3(self):
+        """
+            To call agenda app for patient 3
+        """
         subprocess.run('./patient_agenda/origin_agenda3.py', check=True)
 
     def patientAgenda4(self):
+        """
+            To call agenda app for patient 4
+        """
         subprocess.run('./patient_agenda/origin_agenda4.py', check=True)
 
     def patientAgenda5(self):
@@ -2107,7 +2116,7 @@ class Application(Frame):
     def allFilesBackup24(self):
         backupFuncPatient24(self)
 
-    def updateFiletxt(self):
+    def updateFiletxt():
         """
             To backup all files
         """
@@ -2118,7 +2127,7 @@ class Application(Frame):
         for i in listeDate:
             try:
                 if time.strftime("%d/%m/%Y") == i:
-                    MSB = messagebox.showinfo('Info', 'Backup is done at the first of each month')
+                    messagebox.showinfo('Info', 'Backup is done at the first of each month')
                     subprocess.run('./Backup/backupfile.py')
                     print("+ Backup is done !")
             except FileNotFoundError as errout:
@@ -2133,7 +2142,7 @@ class Application(Frame):
             data.
         """
         self.master.destroy()
-        subprocess.run('./time_track.py')
+        subprocess.run('./time_track.py', check=True)
 
 if __name__=='__main__':
     app = Application()
