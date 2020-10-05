@@ -2,8 +2,8 @@
 # -*-encoding:Utf-8-*-
 
 
-#from tkinter import *
-#from tkinter import messagebox
+from tkinter import *
+from tkinter import messagebox
 import os
 from del_patient1 import *
 from del_patient2 import *
