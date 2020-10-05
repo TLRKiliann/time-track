@@ -65,6 +65,13 @@ def delFuncFile12():
         print("+ File file_kg.json does not exist", filefunc8)
 
     try:
+        if os.path.getsize('./calBmi/doc_BMI12/custom_kg.txt'):
+            os.remove('./calBmi/doc_BMI12/custom_kg.txt')
+            print("+ File custom_kg.txt deleted")
+    except FileNotFoundError as filefunc81:
+        print("+ File custom_kg.txt does not exist", filefunc81)
+
+    try:
         if os.path.getsize('./calBmi/bmi12.txt'):
             os.remove('./calBmi/bmi12.txt')
             print("+ File bmi12.txt deleted")
