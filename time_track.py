@@ -4,11 +4,11 @@
 
 from tkinter import *
 from tkinter import messagebox
-from tkinter import filedialog
+#from tkinter import filedialog
 import time
-import datetime
-import os
-import itertools
+#import datetime
+#import os
+#import itertools
 import subprocess
 from boxapp import callBox
 from patcaps import callResident
@@ -1273,733 +1273,733 @@ class Application(Frame):
 
     # Agenda
     def patientAgenda(self):
-        subprocess.run('./patient_agenda/origin_agenda.py')
+        subprocess.run('./patient_agenda/origin_agenda.py', check=True)
 
     def patientAgenda2(self):
-        subprocess.run('./patient_agenda/origin_agenda2.py')
+        subprocess.run('./patient_agenda/origin_agenda2.py', check=True)
 
     def patientAgenda3(self):
-        subprocess.run('./patient_agenda/origin_agenda3.py')
+        subprocess.run('./patient_agenda/origin_agenda3.py', check=True)
 
     def patientAgenda4(self):
-        subprocess.run('./patient_agenda/origin_agenda4.py')
+        subprocess.run('./patient_agenda/origin_agenda4.py', check=True)
 
     def patientAgenda5(self):
-        subprocess.run('./patient_agenda/origin_agenda5.py')
+        subprocess.run('./patient_agenda/origin_agenda5.py', check=True)
 
     def patientAgenda6(self):
-        subprocess.run('./patient_agenda/origin_agenda6.py')
+        subprocess.run('./patient_agenda/origin_agenda6.py', check=True)
 
     def patientAgenda7(self):
-        subprocess.run('./patient_agenda/origin_agenda7.py')
+        subprocess.run('./patient_agenda/origin_agenda7.py', check=True)
 
     def patientAgenda8(self):
-        subprocess.run('./patient_agenda/origin_agenda8.py')
+        subprocess.run('./patient_agenda/origin_agenda8.py', check=True)
 
     def patientAgenda9(self):
-        subprocess.run('./patient_agenda/origin_agenda9.py')
+        subprocess.run('./patient_agenda/origin_agenda9.py', check=True)
 
     def patientAgenda10(self):
-        subprocess.run('./patient_agenda/origin_agenda10.py')
+        subprocess.run('./patient_agenda/origin_agenda10.py', check=True)
 
     def patientAgenda11(self):
-        subprocess.run('./patient_agenda/origin_agenda11.py')
+        subprocess.run('./patient_agenda/origin_agenda11.py', check=True)
 
     def patientAgenda12(self):
-        subprocess.run('./patient_agenda/origin_agenda12.py')
+        subprocess.run('./patient_agenda/origin_agenda12.py', check=True)
 
     def patientAgenda13(self):
-        subprocess.run('./patient_agenda/origin_agenda13.py')
+        subprocess.run('./patient_agenda/origin_agenda13.py', check=True)
 
     def patientAgenda14(self):
-        subprocess.run('./patient_agenda/origin_agenda14.py')
+        subprocess.run('./patient_agenda/origin_agenda14.py', check=True)
 
     def patientAgenda15(self):
-        subprocess.run('./patient_agenda/origin_agenda15.py')
+        subprocess.run('./patient_agenda/origin_agenda15.py', check=True)
 
     def patientAgenda16(self):
-        subprocess.run('./patient_agenda/origin_agenda16.py')
+        subprocess.run('./patient_agenda/origin_agenda16.py', check=True)
 
     def patientAgenda17(self):
-        subprocess.run('./patient_agenda/origin_agenda17.py')
+        subprocess.run('./patient_agenda/origin_agenda17.py', check=True)
 
     def patientAgenda18(self):
-        subprocess.run('./patient_agenda/origin_agenda18.py')
+        subprocess.run('./patient_agenda/origin_agenda18.py', check=True)
 
     def patientAgenda19(self):
-        subprocess.run('./patient_agenda/origin_agenda19.py')
+        subprocess.run('./patient_agenda/origin_agenda19.py', check=True)
 
     def patientAgenda20(self):
-        subprocess.run('./patient_agenda/origin_agenda20.py')
+        subprocess.run('./patient_agenda/origin_agenda20.py', check=True)
 
     def patientAgenda21(self):
-        subprocess.run('./patient_agenda/origin_agenda21.py')
+        subprocess.run('./patient_agenda/origin_agenda21.py', check=True)
 
     def patientAgenda22(self):
-        subprocess.run('./patient_agenda/origin_agenda22.py')
+        subprocess.run('./patient_agenda/origin_agenda22.py', check=True)
 
     def patientAgenda23(self):
-        subprocess.run('./patient_agenda/origin_agenda23.py')
+        subprocess.run('./patient_agenda/origin_agenda23.py', check=True)
 
     def patientAgenda24(self):
-        subprocess.run('./patient_agenda/origin_agenda24.py')
+        subprocess.run('./patient_agenda/origin_agenda24.py', check=True)
 
     # CheckBox 14 needs OK
     def besoinsCoche(self):
-        subprocess.run('./14besoins/checkb.py')
+        subprocess.run('./14besoins/checkb.py', check=True)
 
     def besoins2Coche(self):
-        subprocess.run('./14besoins/checkb2.py')
+        subprocess.run('./14besoins/checkb2.py', check=True)
 
     def besoins3Coche(self):
-        subprocess.run('./14besoins/checkb3.py')
+        subprocess.run('./14besoins/checkb3.py', check=True)
 
     def besoins4Coche(self):
-        subprocess.run('./14besoins/checkb4.py')
+        subprocess.run('./14besoins/checkb4.py', check=True)
 
     def besoins5Coche(self):
-        subprocess.run('./14besoins/checkb5.py')
+        subprocess.run('./14besoins/checkb5.py', check=True)
 
     def besoins6Coche(self):
-        subprocess.run('./14besoins/checkb6.py')
+        subprocess.run('./14besoins/checkb6.py', check=True)
 
     def besoins7Coche(self):
-        subprocess.run('./14besoins/checkb7.py')
+        subprocess.run('./14besoins/checkb7.py', check=True)
 
     def besoins8Coche(self):
-        subprocess.run('./14besoins/checkb8.py')
+        subprocess.run('./14besoins/checkb8.py', check=True)
 
     def besoins9Coche(self):
-        subprocess.run('./14besoins/checkb9.py')
+        subprocess.run('./14besoins/checkb9.py', check=True)
 
     def besoins10Coche(self):
-        subprocess.run('./14besoins/checkb10.py')
+        subprocess.run('./14besoins/checkb10.py', check=True)
 
     def besoins11Coche(self):
-        subprocess.run('./14besoins/checkb11.py')
+        subprocess.run('./14besoins/checkb11.py', check=True)
 
     def besoins12Coche(self):
-        subprocess.run('./14besoins/checkb12.py')
+        subprocess.run('./14besoins/checkb12.py', check=True)
 
     def besoins13Coche(self):
-        subprocess.run('./14besoins/checkb13.py')
+        subprocess.run('./14besoins/checkb13.py', check=True)
 
     def besoins14Coche(self):
-        subprocess.run('./14besoins/checkb14.py')
+        subprocess.run('./14besoins/checkb14.py', check=True)
 
     def besoins15Coche(self):
-        subprocess.run('./14besoins/checkb15.py')
+        subprocess.run('./14besoins/checkb15.py', check=True)
 
     def besoins16Coche(self):
-        subprocess.run('./14besoins/checkb16.py')
+        subprocess.run('./14besoins/checkb16.py', check=True)
 
     def besoins17Coche(self):
-        subprocess.run('./14besoins/checkb17.py')
+        subprocess.run('./14besoins/checkb17.py', check=True)
 
     def besoins18Coche(self):
-        subprocess.run('./14besoins/checkb18.py')
+        subprocess.run('./14besoins/checkb18.py', check=True)
 
     def besoins19Coche(self):
-        subprocess.run('./14besoins/checkb19.py')
+        subprocess.run('./14besoins/checkb19.py', check=True)
 
     def besoins20Coche(self):
-        subprocess.run('./14besoins/checkb20.py')
+        subprocess.run('./14besoins/checkb20.py', check=True)
 
     def besoins21Coche(self):
-        subprocess.run('./14besoins/checkb21.py')
+        subprocess.run('./14besoins/checkb21.py', check=True)
 
     def besoins22Coche(self):
-        subprocess.run('./14besoins/checkb22.py')
+        subprocess.run('./14besoins/checkb22.py', check=True)
 
     def besoins23Coche(self):
-        subprocess.run('./14besoins/checkb23.py')
+        subprocess.run('./14besoins/checkb23.py', check=True)
 
     def besoins24Coche(self):
-        subprocess.run('./14besoins/checkb24.py')
+        subprocess.run('./14besoins/checkb24.py', check=True)
 
     # Func 14 needs suivi OK
     def suiviSoins1(self):
-        subprocess.run("./14besoins/suivi_patient_1.py")
+        subprocess.run("./14besoins/suivi_patient_1.py", check=True)
 
     def suiviSoins2(self):
-        subprocess.run("./14besoins/suivi_patient_2.py")
+        subprocess.run("./14besoins/suivi_patient_2.py", check=True)
 
     def suiviSoins3(self):
-        subprocess.run("./14besoins/suivi_patient_3.py")
+        subprocess.run("./14besoins/suivi_patient_3.py", check=True)
 
     def suiviSoins4(self):
-        subprocess.run("./14besoins/suivi_patient_4.py")
+        subprocess.run("./14besoins/suivi_patient_4.py", check=True)
 
     def suiviSoins5(self):
-        subprocess.run("./14besoins/suivi_patient_5.py")
+        subprocess.run("./14besoins/suivi_patient_5.py", check=True)
 
     def suiviSoins6(self):
-        subprocess.run("./14besoins/suivi_patient_6.py")
+        subprocess.run("./14besoins/suivi_patient_6.py", check=True)
 
     def suiviSoins7(self):
-        subprocess.run("./14besoins/suivi_patient_7.py")
+        subprocess.run("./14besoins/suivi_patient_7.py", check=True)
 
     def suiviSoins8(self):
-        subprocess.run("./14besoins/suivi_patient_8.py")
+        subprocess.run("./14besoins/suivi_patient_8.py", check=True)
 
     def suiviSoins9(self):
-        subprocess.run("./14besoins/suivi_patient_9.py")
+        subprocess.run("./14besoins/suivi_patient_9.py", check=True)
 
     def suiviSoins10(self):
-        subprocess.run("./14besoins/suivi_patient_10.py")
+        subprocess.run("./14besoins/suivi_patient_10.py", check=True)
 
     def suiviSoins11(self):
-        subprocess.run("./14besoins/suivi_patient_11.py")
+        subprocess.run("./14besoins/suivi_patient_11.py", check=True)
 
     def suiviSoins12(self):
-        subprocess.run("./14besoins/suivi_patient_12.py")
+        subprocess.run("./14besoins/suivi_patient_12.py", check=True)
 
     def suiviSoins13(self):
-        subprocess.run("./14besoins/suivi_patient_13.py")
+        subprocess.run("./14besoins/suivi_patient_13.py", check=True)
 
     def suiviSoins14(self):
-        subprocess.run("./14besoins/suivi_patient_14.py")
+        subprocess.run("./14besoins/suivi_patient_14.py", check=True)
 
     def suiviSoins15(self):
-        subprocess.run("./14besoins/suivi_patient_15.py")
+        subprocess.run("./14besoins/suivi_patient_15.py", check=True)
 
     def suiviSoins16(self):
-        subprocess.run("./14besoins/suivi_patient_16.py")
+        subprocess.run("./14besoins/suivi_patient_16.py", check=True)
 
     def suiviSoins17(self):
-        subprocess.run("./14besoins/suivi_patient_17.py")
+        subprocess.run("./14besoins/suivi_patient_17.py", check=True)
 
     def suiviSoins18(self):
-        subprocess.run("./14besoins/suivi_patient_18.py")
+        subprocess.run("./14besoins/suivi_patient_18.py", check=True)
 
     def suiviSoins19(self):
-        subprocess.run("./14besoins/suivi_patient_19.py")
+        subprocess.run("./14besoins/suivi_patient_19.py", check=True)
 
     def suiviSoins20(self):
-        subprocess.run("./14besoins/suivi_patient_20.py")
+        subprocess.run("./14besoins/suivi_patient_20.py", check=True)
 
     def suiviSoins21(self):
-        subprocess.run("./14besoins/suivi_patient_21.py")
+        subprocess.run("./14besoins/suivi_patient_21.py", check=True)
 
     def suiviSoins22(self):
-        subprocess.run("./14besoins/suivi_patient_22.py")
+        subprocess.run("./14besoins/suivi_patient_22.py", check=True)
 
     def suiviSoins23(self):
-        subprocess.run("./14besoins/suivi_patient_23.py")
+        subprocess.run("./14besoins/suivi_patient_23.py", check=True)
 
     def suiviSoins24(self):
-        subprocess.run("./14besoins/suivi_patient_24.py")
+        subprocess.run("./14besoins/suivi_patient_24.py", check=True)
 
     # treatments
     def tttMed1(self):
-        subprocess.run("./ttt/patienttt1.py")
+        subprocess.run("./ttt/patienttt1.py", check=True)
 
     def tttMed2(self):
-        subprocess.run("./ttt/patienttt2.py")
+        subprocess.run("./ttt/patienttt2.py", check=True)
 
     def tttMed3(self):
-        subprocess.run("./ttt/patienttt3.py")
+        subprocess.run("./ttt/patienttt3.py", check=True)
 
     def tttMed4(self):
-        subprocess.run("./ttt/patienttt4.py")
+        subprocess.run("./ttt/patienttt4.py", check=True)
 
     def tttMed5(self):
-        subprocess.run("./ttt/patienttt5.py")
+        subprocess.run("./ttt/patienttt5.py", check=True)
 
     def tttMed6(self):
-        subprocess.run("./ttt/patienttt6.py")
+        subprocess.run("./ttt/patienttt6.py", check=True)
 
     def tttMed7(self):
-        subprocess.run("./ttt/patienttt7.py")
+        subprocess.run("./ttt/patienttt7.py", check=True)
 
     def tttMed8(self):
-        subprocess.run("./ttt/patienttt8.py")
+        subprocess.run("./ttt/patienttt8.py", check=True)
 
     def tttMed9(self):
-        subprocess.run("./ttt/patienttt9.py")
+        subprocess.run("./ttt/patienttt9.py", check=True)
 
     def tttMed10(self):
-        subprocess.run("./ttt/patienttt10.py")
+        subprocess.run("./ttt/patienttt10.py", check=True)
 
     def tttMed11(self):
-        subprocess.run("./ttt/patienttt11.py")
+        subprocess.run("./ttt/patienttt11.py", check=True)
 
     def tttMed12(self):
-        subprocess.run("./ttt/patienttt12.py")
+        subprocess.run("./ttt/patienttt12.py", check=True)
 
     def tttMed13(self):
-        subprocess.run("./ttt/patienttt13.py")
+        subprocess.run("./ttt/patienttt13.py", check=True)
 
     def tttMed14(self):
-        subprocess.run("./ttt/patienttt14.py")
+        subprocess.run("./ttt/patienttt14.py", check=True)
 
     def tttMed15(self):
-        subprocess.run("./ttt/patienttt15.py")
+        subprocess.run("./ttt/patienttt15.py", check=True)
 
     def tttMed16(self):
-        subprocess.run("./ttt/patienttt16.py")
+        subprocess.run("./ttt/patienttt16.py", check=True)
 
     def tttMed17(self):
-        subprocess.run("./ttt/patienttt17.py")
+        subprocess.run("./ttt/patienttt17.py", check=True)
 
     def tttMed18(self):
-        subprocess.run("./ttt/patienttt18.py")
+        subprocess.run("./ttt/patienttt18.py", check=True)
 
     def tttMed19(self):
-        subprocess.run("./ttt/patienttt19.py")
+        subprocess.run("./ttt/patienttt19.py", check=True)
 
     def tttMed20(self):
-        subprocess.run("./ttt/patienttt20.py")
+        subprocess.run("./ttt/patienttt20.py", check=True)
 
     def tttMed21(self):
-        subprocess.run("./ttt/patienttt21.py")
+        subprocess.run("./ttt/patienttt21.py", check=True)
 
     def tttMed22(self):
-        subprocess.run("./ttt/patienttt22.py")
+        subprocess.run("./ttt/patienttt22.py", check=True)
 
     def tttMed23(self):
-        subprocess.run("./ttt/patienttt23.py")
+        subprocess.run("./ttt/patienttt23.py", check=True)
 
     def tttMed24(self):
-        subprocess.run("./ttt/patienttt24.py")
+        subprocess.run("./ttt/patienttt24.py", check=True)
 
     # Func BMI
     def calculB(self):
-        subprocess.run("./calBmi/CalculBmi.py")
+        subprocess.run("./calBmi/CalculBmi.py", check=True)
 
     def calculB2(self):
-        subprocess.run("./calBmi/CalculBmi2.py")
+        subprocess.run("./calBmi/CalculBmi2.py", check=True)
 
     def calculB3(self):
-        subprocess.run("./calBmi/CalculBmi3.py")
+        subprocess.run("./calBmi/CalculBmi3.py", check=True)
 
     def calculB4(self):
-        subprocess.run("./calBmi/CalculBmi4.py")
+        subprocess.run("./calBmi/CalculBmi4.py", check=True)
 
     def calculB5(self):
-        subprocess.run("./calBmi/CalculBmi5.py")
+        subprocess.run("./calBmi/CalculBmi5.py", check=True)
 
     def calculB6(self):
-        subprocess.run("./calBmi/CalculBmi6.py")
+        subprocess.run("./calBmi/CalculBmi6.py", check=True)
 
     def calculB7(self):
-        subprocess.run("./calBmi/CalculBmi7.py")
+        subprocess.run("./calBmi/CalculBmi7.py", check=True)
 
     def calculB8(self):
-        subprocess.run("./calBmi/CalculBmi8.py")
+        subprocess.run("./calBmi/CalculBmi8.py", check=True)
 
     def calculB9(self):
-        subprocess.run("./calBmi/CalculBmi9.py")
+        subprocess.run("./calBmi/CalculBmi9.py", check=True)
 
     def calculB10(self):
-        subprocess.run("./calBmi/CalculBmi10.py")
+        subprocess.run("./calBmi/CalculBmi10.py", check=True)
 
     def calculB11(self):
-        subprocess.run("./calBmi/CalculBmi11.py")
+        subprocess.run("./calBmi/CalculBmi11.py", check=True)
 
     def calculB12(self):
-        subprocess.run("./calBmi/CalculBmi12.py")
+        subprocess.run("./calBmi/CalculBmi12.py", check=True)
 
     def calculB13(self):
-        subprocess.run("./calBmi/CalculBmi13.py")
+        subprocess.run("./calBmi/CalculBmi13.py", check=True)
 
     def calculB14(self):
-        subprocess.run("./calBmi/CalculBmi14.py")
+        subprocess.run("./calBmi/CalculBmi14.py", check=True)
 
     def calculB15(self):
-        subprocess.run("./calBmi/CalculBmi15.py")
+        subprocess.run("./calBmi/CalculBmi15.py", check=True)
 
     def calculB16(self):
-        subprocess.run("./calBmi/CalculBmi16.py")
+        subprocess.run("./calBmi/CalculBmi16.py", check=True)
 
     def calculB17(self):
-        subprocess.run("./calBmi/CalculBmi17.py")
+        subprocess.run("./calBmi/CalculBmi17.py", check=True)
 
     def calculB18(self):
-        subprocess.run("./calBmi/CalculBmi18.py")
+        subprocess.run("./calBmi/CalculBmi18.py", check=True)
 
     def calculB19(self):
-        subprocess.run("./calBmi/CalculBmi19.py")
+        subprocess.run("./calBmi/CalculBmi19.py", check=True)
 
     def calculB20(self):
-        subprocess.run("./calBmi/CalculBmi20.py")
+        subprocess.run("./calBmi/CalculBmi20.py", check=True)
 
     def calculB21(self):
-        subprocess.run("./calBmi/CalculBmi21.py")
+        subprocess.run("./calBmi/CalculBmi21.py", check=True)
 
     def calculB22(self):
-        subprocess.run("./calBmi/CalculBmi22.py")
+        subprocess.run("./calBmi/CalculBmi22.py", check=True)
 
     def calculB23(self):
-        subprocess.run("./calBmi/CalculBmi23.py")
+        subprocess.run("./calBmi/CalculBmi23.py", check=True)
 
     def calculB24(self):
-        subprocess.run("./calBmi/CalculBmi24.py")
+        subprocess.run("./calBmi/CalculBmi24.py", check=True)
 
     # Func Visit MED
     def visitMed(self):
-        subprocess.run("./vmed/vm_patient1.py")
+        subprocess.run("./vmed/vm_patient1.py", check=True)
         
     def visitMed2(self):
-        subprocess.run("./vmed/vm_patient2.py")
+        subprocess.run("./vmed/vm_patient2.py", check=True)
         
     def visitMed3(self):
-        subprocess.run("./vmed/vm_patient3.py")
+        subprocess.run("./vmed/vm_patient3.py", check=True)
         
     def visitMed4(self):
-        subprocess.run("./vmed/vm_patient4.py")
+        subprocess.run("./vmed/vm_patient4.py", check=True)
         
     def visitMed5(self):
-        subprocess.run("./vmed/vm_patient5.py")
+        subprocess.run("./vmed/vm_patient5.py", check=True)
         
     def visitMed6(self):
-        subprocess.run("./vmed/vm_patient6.py")
+        subprocess.run("./vmed/vm_patient6.py", check=True)
         
     def visitMed7(self):
-        subprocess.run("./vmed/vm_patient7.py")
+        subprocess.run("./vmed/vm_patient7.py", check=True)
 
     def visitMed8(self):
-        subprocess.run("./vmed/vm_patient8.py")
+        subprocess.run("./vmed/vm_patient8.py", check=True)
 
     def visitMed9(self):
-        subprocess.run("./vmed/vm_patient9.py")
+        subprocess.run("./vmed/vm_patient9.py", check=True)
 
     def visitMed10(self):
-        subprocess.run("./vmed/vm_patient10.py")
+        subprocess.run("./vmed/vm_patient10.py", check=True)
 
     def visitMed11(self):
-        subprocess.run("./vmed/vm_patient11.py")
+        subprocess.run("./vmed/vm_patient11.py", check=True)
 
     def visitMed12(self):
-        subprocess.run("./vmed/vm_patient12.py")
+        subprocess.run("./vmed/vm_patient12.py", check=True)
 
     def visitMed13(self):
-        subprocess.run("./vmed/vm_patient13.py")
+        subprocess.run("./vmed/vm_patient13.py", check=True)
 
     def visitMed14(self):
-        subprocess.run("./vmed/vm_patient14.py")
+        subprocess.run("./vmed/vm_patient14.py", check=True)
 
     def visitMed15(self):
-        subprocess.run("./vmed/vm_patient15.py")
+        subprocess.run("./vmed/vm_patient15.py", check=True)
 
     def visitMed16(self):
-        subprocess.run("./vmed/vm_patient16.py")
+        subprocess.run("./vmed/vm_patient16.py", check=True)
 
     def visitMed17(self):
-        subprocess.run("./vmed/vm_patient17.py")
+        subprocess.run("./vmed/vm_patient17.py", check=True)
 
     def visitMed18(self):
-        subprocess.run("./vmed/vm_patient18.py")
+        subprocess.run("./vmed/vm_patient18.py", check=True)
 
     def visitMed19(self):
-        subprocess.run("./vmed/vm_patient19.py")
+        subprocess.run("./vmed/vm_patient19.py", check=True)
 
     def visitMed20(self):
-        subprocess.run("./vmed/vm_patient20.py")
+        subprocess.run("./vmed/vm_patient20.py", check=True)
 
     def visitMed21(self):
-        subprocess.run("./vmed/vm_patient21.py")
+        subprocess.run("./vmed/vm_patient21.py", check=True)
 
     def visitMed22(self):
-        subprocess.run("./vmed/vm_patient22.py")
+        subprocess.run("./vmed/vm_patient22.py", check=True)
 
     def visitMed23(self):
-        subprocess.run("./vmed/vm_patient23.py")
+        subprocess.run("./vmed/vm_patient23.py", check=True)
 
     def visitMed24(self):
-        subprocess.run("./vmed/vm_patient24.py")
+        subprocess.run("./vmed/vm_patient24.py", check=True)
 
     # Allergy OK
     def allergyLink(self):
-        subprocess.run('./allergy/allerpatient1.py')
+        subprocess.run('./allergy/allerpatient1.py', check=True)
 
     def allergyLink2(self):
-        subprocess.run('./allergy/allerpatient2.py')
+        subprocess.run('./allergy/allerpatient2.py', check=True)
 
     def allergyLink3(self):
-        subprocess.run('./allergy/allerpatient3.py')
+        subprocess.run('./allergy/allerpatient3.py', check=True)
 
     def allergyLink4(self):
-        subprocess.run('./allergy/allerpatient4.py')
+        subprocess.run('./allergy/allerpatient4.py', check=True)
 
     def allergyLink5(self):
-        subprocess.run('./allergy/allerpatient5.py')
+        subprocess.run('./allergy/allerpatient5.py', check=True)
 
     def allergyLink6(self):
-        subprocess.run('./allergy/allerpatient6.py')
+        subprocess.run('./allergy/allerpatient6.py', check=True)
 
     def allergyLink7(self):
-        subprocess.run('./allergy/allerpatient7.py')
+        subprocess.run('./allergy/allerpatient7.py', check=True)
 
     def allergyLink8(self):
-        subprocess.run('./allergy/allerpatient8.py')
+        subprocess.run('./allergy/allerpatient8.py', check=True)
 
     def allergyLink9(self):
-        subprocess.run('./allergy/allerpatient9.py')
+        subprocess.run('./allergy/allerpatient9.py', check=True)
 
     def allergyLink10(self):
-        subprocess.run('./allergy/allerpatient10.py')
+        subprocess.run('./allergy/allerpatient10.py', check=True)
 
     def allergyLink11(self):
-        subprocess.run('./allergy/allerpatient11.py')
+        subprocess.run('./allergy/allerpatient11.py', check=True)
 
     def allergyLink12(self):
-        subprocess.run('./allergy/allerpatient12.py')
+        subprocess.run('./allergy/allerpatient12.py', check=True)
 
     def allergyLink13(self):
-        subprocess.run('./allergy/allerpatient13.py')
+        subprocess.run('./allergy/allerpatient13.py', check=True)
 
     def allergyLink14(self):
-        subprocess.run('./allergy/allerpatient14.py')
+        subprocess.run('./allergy/allerpatient14.py', check=True)
 
     def allergyLink15(self):
-        subprocess.run('./allergy/allerpatient15.py')
+        subprocess.run('./allergy/allerpatient15.py', check=True)
 
     def allergyLink16(self):
-        subprocess.run('./allergy/allerpatient16.py')
+        subprocess.run('./allergy/allerpatient16.py', check=True)
 
     def allergyLink17(self):
-        subprocess.run('./allergy/allerpatient17.py')
+        subprocess.run('./allergy/allerpatient17.py', check=True)
 
     def allergyLink18(self):
-        subprocess.run('./allergy/allerpatient18.py')
+        subprocess.run('./allergy/allerpatient18.py', check=True)
 
     def allergyLink19(self):
-        subprocess.run('./allergy/allerpatient19.py')
+        subprocess.run('./allergy/allerpatient19.py', check=True)
 
     def allergyLink20(self):
-        subprocess.run('./allergy/allerpatient20.py')
+        subprocess.run('./allergy/allerpatient20.py', check=True)
 
     def allergyLink21(self):
-        subprocess.run('./allergy/allerpatient21.py')
+        subprocess.run('./allergy/allerpatient21.py', check=True)
 
     def allergyLink22(self):
-        subprocess.run('./allergy/allerpatient22.py')
+        subprocess.run('./allergy/allerpatient22.py', check=True)
 
     def allergyLink23(self):
-        subprocess.run('./allergy/allerpatient23.py')
+        subprocess.run('./allergy/allerpatient23.py', check=True)
 
     def allergyLink24(self):
-        subprocess.run('./allergy/allerpatient24.py')
+        subprocess.run('./allergy/allerpatient24.py', check=True)
 
     # Func Diagnostic
     def diag1(self):
-        subprocess.run("./diag/diag_patient1.py")
+        subprocess.run("./diag/diag_patient1.py", check=True)
 
     def diag2(self):
-        subprocess.run("./diag/diag_patient2.py")
+        subprocess.run("./diag/diag_patient2.py", check=True)
 
     def diag3(self):
-        subprocess.run("./diag/diag_patient3.py")
+        subprocess.run("./diag/diag_patient3.py", check=True)
 
     def diag4(self):
-        subprocess.run("./diag/diag_patient4.py")
+        subprocess.run("./diag/diag_patient4.py", check=True)
 
     def diag5(self):
-        subprocess.run("./diag/diag_patient5.py")
+        subprocess.run("./diag/diag_patient5.py", check=True)
 
     def diag6(self):
-        subprocess.run("./diag/diag_patient6.py")
+        subprocess.run("./diag/diag_patient6.py", check=True)
 
     def diag7(self):
-        subprocess.run("./diag/diag_patient7.py")
+        subprocess.run("./diag/diag_patient7.py", check=True)
 
     def diag8(self):
-        subprocess.run("./diag/diag_patient8.py")
+        subprocess.run("./diag/diag_patient8.py", check=True)
 
     def diag9(self):
-        subprocess.run("./diag/diag_patient9.py")
+        subprocess.run("./diag/diag_patient9.py", check=True)
 
     def diag10(self):
-        subprocess.run("./diag/diag_patient10.py")
+        subprocess.run("./diag/diag_patient10.py", check=True)
 
     def diag11(self):
-        subprocess.run("./diag/diag_patient11.py")
+        subprocess.run("./diag/diag_patient11.py", check=True)
 
     def diag12(self):
-        subprocess.run("./diag/diag_patient12.py")
+        subprocess.run("./diag/diag_patient12.py", check=True)
 
     def diag13(self):
-        subprocess.run("./diag/diag_patient13.py")
+        subprocess.run("./diag/diag_patient13.py", check=True)
 
     def diag14(self):
-        subprocess.run("./diag/diag_patient14.py")
+        subprocess.run("./diag/diag_patient14.py", check=True)
 
     def diag15(self):
-        subprocess.run("./diag/diag_patient15.py")
+        subprocess.run("./diag/diag_patient15.py", check=True)
 
     def diag16(self):
-        subprocess.run("./diag/diag_patient16.py")
+        subprocess.run("./diag/diag_patient16.py", check=True)
 
     def diag17(self):
-        subprocess.run("./diag/diag_patient17.py")
+        subprocess.run("./diag/diag_patient17.py", check=True)
 
     def diag18(self):
-        subprocess.run("./diag/diag_patient18.py")
+        subprocess.run("./diag/diag_patient18.py", check=True)
 
     def diag19(self):
-        subprocess.run("./diag/diag_patient19.py")
+        subprocess.run("./diag/diag_patient19.py", check=True)
 
     def diag20(self):
-        subprocess.run("./diag/diag_patient20.py")
+        subprocess.run("./diag/diag_patient20.py", check=True)
 
     def diag21(self):
-        subprocess.run("./diag/diag_patient21.py")
+        subprocess.run("./diag/diag_patient21.py", check=True)
 
     def diag22(self):
-        subprocess.run("./diag/diag_patient22.py")
+        subprocess.run("./diag/diag_patient22.py", check=True)
 
     def diag23(self):
-        subprocess.run("./diag/diag_patient23.py")
+        subprocess.run("./diag/diag_patient23.py", check=True)
 
     def diag24(self):
-        subprocess.run("./diag/diag_patient24.py")
+        subprocess.run("./diag/diag_patient24.py", check=True)
 
     # Func labo
     def laboResult(self):
-        subprocess.run('./labo/resultlabo1.py')
+        subprocess.run('./labo/resultlabo1.py', check=True)
 
     def laboResult2(self):
-        subprocess.run('./labo/resultlabo2.py')
+        subprocess.run('./labo/resultlabo2.py', check=True)
 
     def laboResult3(self):
-        subprocess.run('./labo/resultlabo3.py')
+        subprocess.run('./labo/resultlabo3.py', check=True)
 
     def laboResult4(self):
-        subprocess.run('./labo/resultlabo4.py')
+        subprocess.run('./labo/resultlabo4.py', check=True)
 
     def laboResult5(self):
-        subprocess.run('./labo/resultlabo5.py')
+        subprocess.run('./labo/resultlabo5.py', check=True)
 
     def laboResult6(self):
-        subprocess.run('./labo/resultlabo6.py')
+        subprocess.run('./labo/resultlabo6.py', check=True)
 
     def laboResult7(self):
-        subprocess.run('./labo/resultlabo7.py')
+        subprocess.run('./labo/resultlabo7.py', check=True)
 
     def laboResult8(self):
-        subprocess.run('./labo/resultlabo8.py')
+        subprocess.run('./labo/resultlabo8.py', check=True)
 
     def laboResult9(self):
-        subprocess.run('./labo/resultlabo9.py')
+        subprocess.run('./labo/resultlabo9.py', check=True)
 
     def laboResult10(self):
-        subprocess.run('./labo/resultlabo10.py')
+        subprocess.run('./labo/resultlabo10.py', check=True)
 
     def laboResult11(self):
-        subprocess.run('./labo/resultlabo11.py')
+        subprocess.run('./labo/resultlabo11.py', check=True)
 
     def laboResult12(self):
-        subprocess.run('./labo/resultlabo12.py')
+        subprocess.run('./labo/resultlabo12.py', check=True)
 
     def laboResult13(self):
-        subprocess.run('./labo/resultlabo13.py')
+        subprocess.run('./labo/resultlabo13.py', check=True)
 
     def laboResult14(self):
-        subprocess.run('./labo/resultlabo14.py')
+        subprocess.run('./labo/resultlabo14.py', check=True)
 
     def laboResult15(self):
-        subprocess.run('./labo/resultlabo15.py')
+        subprocess.run('./labo/resultlabo15.py', check=True)
 
     def laboResult16(self):
-        subprocess.run('./labo/resultlabo16.py')
+        subprocess.run('./labo/resultlabo16.py', check=True)
 
     def laboResult17(self):
-        subprocess.run('./labo/resultlabo17.py')
+        subprocess.run('./labo/resultlabo17.py', check=True)
 
     def laboResult18(self):
-        subprocess.run('./labo/resultlabo18.py')
+        subprocess.run('./labo/resultlabo18.py', check=True)
 
     def laboResult19(self):
-        subprocess.run('./labo/resultlabo19.py')
+        subprocess.run('./labo/resultlabo19.py', check=True)
 
     def laboResult20(self):
-        subprocess.run('./labo/resultlabo20.py')
+        subprocess.run('./labo/resultlabo20.py', check=True)
 
     def laboResult21(self):
-        subprocess.run('./labo/resultlabo21.py')
+        subprocess.run('./labo/resultlabo21.py', check=True)
 
     def laboResult22(self):
-        subprocess.run('./labo/resultlabo22.py')
+        subprocess.run('./labo/resultlabo22.py', check=True)
 
     def laboResult23(self):
-        subprocess.run('./labo/resultlabo23.py')
+        subprocess.run('./labo/resultlabo23.py', check=True)
 
     def laboResult24(self):
-        subprocess.run('./labo/resultlabo24.py')
+        subprocess.run('./labo/resultlabo24.py', check=True)
 
     # Menu print
     def nutritionMenu(self):
-        subprocess.run('./nutrition/nutrit_patient1.py')
+        subprocess.run('./nutrition/nutrit_patient1.py', check=True)
 
     def nutritionMenu2(self):
-        subprocess.run('./nutrition/nutrit_patient2.py')
+        subprocess.run('./nutrition/nutrit_patient2.py', check=True)
 
     def nutritionMenu3(self):
-        subprocess.run('./nutrition/nutrit_patient3.py')
+        subprocess.run('./nutrition/nutrit_patient3.py', check=True)
 
     def nutritionMenu4(self):
-        subprocess.run('./nutrition/nutrit_patient4.py')
+        subprocess.run('./nutrition/nutrit_patient4.py', check=True)
 
     def nutritionMenu5(self):
-        subprocess.run('./nutrition/nutrit_patient5.py')
+        subprocess.run('./nutrition/nutrit_patient5.py', check=True)
 
     def nutritionMenu6(self):
-        subprocess.run('./nutrition/nutrit_patient6.py')
+        subprocess.run('./nutrition/nutrit_patient6.py', check=True)
 
     def nutritionMenu7(self):
-        subprocess.run('./nutrition/nutrit_patient7.py')
+        subprocess.run('./nutrition/nutrit_patient7.py', check=True)
 
     def nutritionMenu8(self):
-        subprocess.run('./nutrition/nutrit_patient8.py')
+        subprocess.run('./nutrition/nutrit_patient8.py', check=True)
 
     def nutritionMenu9(self):
-        subprocess.run('./nutrition/nutrit_patient9.py')
+        subprocess.run('./nutrition/nutrit_patient9.py', check=True)
 
     def nutritionMenu10(self):
-        subprocess.run('./nutrition/nutrit_patient10.py')
+        subprocess.run('./nutrition/nutrit_patient10.py', check=True)
 
     def nutritionMenu11(self):
-        subprocess.run('./nutrition/nutrit_patient11.py')
+        subprocess.run('./nutrition/nutrit_patient11.py', check=True)
 
     def nutritionMenu12(self):
-        subprocess.run('./nutrition/nutrit_patient12.py')
+        subprocess.run('./nutrition/nutrit_patient12.py', check=True)
 
     def nutritionMenu13(self):
-        subprocess.run('./nutrition/nutrit_patient13.py')
+        subprocess.run('./nutrition/nutrit_patient13.py', check=True)
 
     def nutritionMenu14(self):
-        subprocess.run('./nutrition/nutrit_patient14.py')
+        subprocess.run('./nutrition/nutrit_patient14.py', check=True)
 
     def nutritionMenu15(self):
-        subprocess.run('./nutrition/nutrit_patient15.py')
+        subprocess.run('./nutrition/nutrit_patient15.py', check=True)
 
     def nutritionMenu16(self):
-        subprocess.run('./nutrition/nutrit_patient16.py')
+        subprocess.run('./nutrition/nutrit_patient16.py', check=True)
 
     def nutritionMenu17(self):
-        subprocess.run('./nutrition/nutrit_patient17.py')
+        subprocess.run('./nutrition/nutrit_patient17.py', check=True)
 
     def nutritionMenu18(self):
-        subprocess.run('./nutrition/nutrit_patient18.py')
+        subprocess.run('./nutrition/nutrit_patient18.py', check=True)
 
     def nutritionMenu19(self):
-        subprocess.run('./nutrition/nutrit_patient19.py')
+        subprocess.run('./nutrition/nutrit_patient19.py', check=True)
 
     def nutritionMenu20(self):
-        subprocess.run('./nutrition/nutrit_patient20.py')
+        subprocess.run('./nutrition/nutrit_patient20.py', check=True)
 
     def nutritionMenu21(self):
-        subprocess.run('./nutrition/nutrit_patient21.py')
+        subprocess.run('./nutrition/nutrit_patient21.py', check=True)
 
     def nutritionMenu22(self):
-        subprocess.run('./nutrition/nutrit_patient22.py')
+        subprocess.run('./nutrition/nutrit_patient22.py', check=True)
 
     def nutritionMenu23(self):
-        subprocess.run('./nutrition/nutrit_patient23.py')
+        subprocess.run('./nutrition/nutrit_patient23.py', check=True)
 
     def nutritionMenu24(self):
-        subprocess.run('./nutrition/nutrit_patient24.py')
+        subprocess.run('./nutrition/nutrit_patient24.py', check=True)
     
     """
     def newsTextBox(self):
