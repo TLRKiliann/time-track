@@ -3,9 +3,16 @@
 
 
 import os
+import subprocess
 import json
-import time
+import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib import dates
+from matplotlib.dates import date2num
+from matplotlib.dates import AutoDateLocator
+from matplotlib.dates import AutoDateFormatter
+import datetime
+import time
 
 
 file = open('./calBmi/doc_BMI22/file_bmi.json')
@@ -44,7 +51,7 @@ dicolist = {}
 for data_list1, data_list2 in zip(data_list1, data_list2):
     dicolist[data_list1] = data_list2
 
-print("\nDisplay dictionary :")
+print("\nAffichage du dictionnaire :")
 print("---------------------------")
 print(dicolist)
 
@@ -63,16 +70,32 @@ print("\nList of BMI :")
 print("------------------------")
 print(list2)
 
-#list3 = [int(list2) for list2 in list2]
 list2 = list(map(float, list2))
+list1 = list(map(str, list1))
+
+converted_dates = list(map(datetime.datetime.strptime, list1, len(list1)*['%d-%m-%Y']))
+x_axis = converted_dates
+formatter = dates.DateFormatter('%d-%m-%Y')
+y_axis = list2
 
 # or seaborn-darkgrid
 show_grid = True
 with plt.style.context(('dark_background')):
-    plt.bar(list1, list2)
+    figure, axes = plt.subplots()
+    locator = AutoDateLocator()
+    axes.xaxis.set_major_locator(locator)
+    ax = plt.gcf().axes[0]
+    ax.xaxis.set_major_formatter(formatter)
+    min_date = date2num(datetime.datetime.strptime("01-01-2020", "%d-%m-%Y"))
+    max_date = date2num(datetime.datetime.strptime("31-12-2020", "%d-%m-%Y"))
+    axes.set_xlim([min_date, max_date])
+
+    plt.bar(x_axis, y_axis, width=3, color='yellow')
     plt.ylabel('BMI')
     plt.xlabel('Dates')
-    plt.title('BMI per date')
-    plt.xticks(rotation=45)
+    plt.title('BMI for one year')
+    #plt.xticks(rotation=45)
+    plt.legend(['BMI/date'])
     plt.grid(show_grid)
+    plt.gcf().autofmt_xdate(rotation=45)
     plt.show()
