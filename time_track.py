@@ -15,8 +15,10 @@ from patcaps import callResident
 from backapp import *
 
 
-# ScrollBar in class and preparing for main application !
 class ScrollCanvas(Frame):
+    """
+        To prepare ScrollBar for main application.
+    """
     def __init__(self, boss=None):
         Frame.__init__(self, borderwidth=borderwidth, relief=relief)
         self.can = Canvas(self, width=width, height=height, bd=bd,
@@ -30,9 +32,10 @@ class ScrollCanvas(Frame):
                                   tags="self.frame")
         self.frame.bind("<Configure>", self.onFrameConfigure)
 
-# Class to menubar
 class MenuBar(Frame):
-    """Barre menu déroulant"""
+    """
+        Menu down
+    """
     def __init__(self, boss=None):
         Frame.__init__(self, borderwidth=5, bg='RoyalBlue3', padx=0)
         # 1st menu
@@ -1103,6 +1106,9 @@ class MenuBar(Frame):
 
 # Application principale (Main app)
 class Application(Frame):
+    """
+        Main app to display first page.
+    """
     def __init__(self, boss=None):
         Frame.__init__(self, borderwidth=5, bg='RoyalBlue4', padx=20, pady=20, relief=GROOVE)
         self.master.title('Time-Track- Developed by ko@l@tr33 - 2020')
@@ -1162,6 +1168,10 @@ class Application(Frame):
         self.can.delete(ALL)
 
     def msgExit(self):
+        """
+            If usr want to quit, a question 
+            into a msgbox appear.
+        """
         MsgBox = messagebox.askyesno('Quit system', 'Do you want to quit ?')
         if MsgBox == 1:
             self.master.destroy()
@@ -1169,8 +1179,11 @@ class Application(Frame):
             NoforQ = messagebox.showinfo('Return', 'You will now return to the'
                 'application screen')
 
-    # Installation of python and tkinter page
     def instalpy(self):
+        """
+            Explanation about skills 
+            and how to use app
+        """
         self.can.delete(ALL)
         self.photo=PhotoImage(file='./syno_gif/pyt.gif')
         self.item=self.can.create_image(700, 400, image=self.photo)
@@ -1215,16 +1228,21 @@ class Application(Frame):
             font=('Times', 13), fill='aquamarine')
         self.can.configure(scrollregion=self.can.bbox(ALL))
 
-    # call func in boxapp.py (3 files in One !)
     def showSynopsis(self):
+        """
+            To call func in boxapp.py
+        """
         callBox(self)
 
     def showPatients(self):
+        """
+            To call func in patcaps.py
+        """
         callResident(self)
 
     def frameInfo(self):
         """
-        Info for button on first page
+            Info for button on first page
         """
         self.lab=Tk()
         self.lab.title("ATCD")
@@ -1254,25 +1272,35 @@ class Application(Frame):
             bg='grey22', font=('Times', 14),
             text="Path : Menu Bar --> Menu --> MapApp").pack(padx=10, pady=10)
 
-    # New entry
     def callPatient1(self):
-        subprocess.run('./newpatient/entrypytientfile.py')
+        """
+            To enter a new patient.
+        """
+        subprocess.run('./newpatient/entrypytientfile.py', check=True)
 
-    # Delete entry
     def delEverPat(self):
-        subprocess.run('./deletepatient/deleverything.py')
+        """
+            To delete patient
+        """
+        subprocess.run('./deletepatient/deleverything.py', check=True)
 
-    # Add new entry after delete one of them
     def addPatientAfter(self):
+        """
+            To add new patient after delete one of them
+        """
         messagebox.showwarning("Warning", "Don't forget to enter allergy too ! ;)")
-        subprocess.run('./newpatient/torecord.py')
+        subprocess.run('./newpatient/torecord.py', check=True)
 
-    # To launch psychotabs.py
     def launchPsycho(self):
-        subprocess.run('./psychotabs.py')
+        """
+            To launch psychotabs.py
+        """
+        subprocess.run('./psychotabs.py', check=True)
 
-    # Agenda
     def patientAgenda(self):
+        """
+            To call agenda app for patient 1
+        """
         subprocess.run('./patient_agenda/origin_agenda.py', check=True)
 
     def patientAgenda2(self):
@@ -2080,7 +2108,9 @@ class Application(Frame):
         backupFuncPatient24(self)
 
     def updateFiletxt(self):
-        # To backup all files
+        """
+            To backup all files
+        """
         listeDate = ["01/05/2020", "18/06/2020", "01/07/2020",
         "01/08/2020", "19/09/2020", "01/10/2020", "01/11/2020",
         "01/12/2020"]
@@ -2096,6 +2126,12 @@ class Application(Frame):
                     "be at the first of next month)", errout)
 
     def upDateAll(self):
+        """
+            To reset app by pressing 
+            refresh button. Close,
+            open directly and update
+            data.
+        """
         self.master.destroy()
         subprocess.run('./time_track.py')
 
