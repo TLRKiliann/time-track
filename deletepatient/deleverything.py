@@ -2,8 +2,8 @@
 # -*-encoding:Utf-8-*-
 
 
-from tkinter import *
-from tkinter import messagebox
+#from tkinter import *
+#from tkinter import messagebox
 import os
 from del_patient1 import *
 from del_patient2 import *
@@ -32,6 +32,10 @@ from del_patient24 import *
 
 
 def get(Nompatient, entree):
+    """
+    To delete patient name and all files by functions
+    with a msgbox to verify the choice.
+    """
     MsgBox = messagebox.askyesno('Save data', 'Do you want to delete ?')
     if MsgBox == 1:
         Nompatient = entree.get()
@@ -102,7 +106,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile7()          
+                        delFuncFile7()
                     else:
                         print("End of test delete files.")
 
@@ -112,7 +116,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile8()          
+                        delFuncFile8()
                     else:
                         print("End of test delete files.")
 
@@ -122,7 +126,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile9()          
+                        delFuncFile9()
                     else:
                         print("End of test delete files.")
 
@@ -132,7 +136,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile10()          
+                        delFuncFile10()
                     else:
                         print("End of test delete files.")
 
@@ -142,7 +146,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile11()          
+                        delFuncFile11()
                     else:
                         print("End of test delete files.")
 
@@ -162,7 +166,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile13()          
+                        delFuncFile13()
                     else:
                         print("End of test delete files.")
 
@@ -172,7 +176,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile14()          
+                        delFuncFile14()
                     else:
                         print("End of test delete files.")
 
@@ -182,7 +186,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile15()          
+                        delFuncFile15()
                     else:
                         print("End of test delete files.")
 
@@ -192,7 +196,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile16()          
+                        delFuncFile16()
                     else:
                         print("End of test delete files.")
 
@@ -202,7 +206,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile17()          
+                        delFuncFile17()
                     else:
                         print("End of test delete files.")
 
@@ -212,7 +216,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile18()          
+                        delFuncFile18()
                     else:
                         print("End of test delete files.")
 
@@ -222,7 +226,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile19()          
+                        delFuncFile19()
                     else:
                         print("End of test delete files.")
 
@@ -232,7 +236,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile20()          
+                        delFuncFile20()
                     else:
                         print("End of test delete files.")
 
@@ -242,7 +246,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile21()          
+                        delFuncFile21()
                     else:
                         print("End of test delete files.")
 
@@ -252,7 +256,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile22()          
+                        delFuncFile22()
                     else:
                         print("End of test delete files.")
 
@@ -262,7 +266,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile23()          
+                        delFuncFile23()
                     else:
                         print("End of test delete files.")
 
@@ -272,7 +276,7 @@ def get(Nompatient, entree):
                 for i in range(0, len(lines)):
                     line = lines[i]
                     if Nompatient in line:
-                        delFuncFile24()          
+                        delFuncFile24()
                     else:
                         print("End of test delete files.")
     else:           
@@ -286,24 +290,24 @@ gui.configure(bg='cyan')
 #gui.geometry('300x200')
 
 labelName = Label(gui)
-labelName = Label(text='Enter NAME to delete : ', 
-	font="Times 14 bold", 
+labelName = Label(text='Enter NAME to delete : ',
+    font="Times 14 bold",
     fg='RoyalBlue4', bg='cyan')
 labelName.pack(pady=10)
 
 Nompatient=StringVar()
 Nompatient.set('Firstname + Lastname')
-entree = Entry(gui, textvariable=Nompatient, 
-	highlightbackground='light sky blue', bd=4)
+entree = Entry(gui, textvariable=Nompatient,
+    highlightbackground='light sky blue', bd=4)
 entree.pack()
 
 bouton1 = Button(gui, text="Delete", fg='yellow', bg='RoyalBlue3',
-	width=8, bd=4, highlightbackground='cyan', 
+    width=8, bd=4, highlightbackground='cyan', 
     command = lambda: get(Nompatient, entree))
 bouton1.pack(side=LEFT, padx=10, pady=20)
 
 buttQuit=Button(gui, text="Quit", fg='cyan', bg='RoyalBlue3',
-	width=8, bd=4, highlightbackground='cyan',
+    width=8, bd=4, highlightbackground='cyan',
     command=quit)
 buttQuit.pack(side=LEFT, padx=10, pady=20)
 
