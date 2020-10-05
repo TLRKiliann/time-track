@@ -2116,7 +2116,7 @@ class Application(Frame):
     def allFilesBackup24(self):
         backupFuncPatient24(self)
 
-    def updateFiletxt():
+    def updateFiletxt(self):
         """
             To backup all files
         """
