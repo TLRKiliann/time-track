@@ -89,7 +89,7 @@ def recordOption():
                 file.write("# Abilify : (add result of dosage here)\n")
                 file2.write("# Abilify : (add result of dosage here)\n")
     else:
-        print("+ Na value ok, nothing to do")
+        print("+ Abilify value ok, nothing to do")
         
     print(CheckVar2.get())
     if CheckVar2.get()==1:
@@ -530,11 +530,81 @@ def recordOption():
                 file2.write("# Coproculture and treatment : (add what the patient needs)\n")
     else:
         print("+ Coproculture ok, nothing to do")
+
+    print(CheckVar47.get())
+    if CheckVar47.get()==1:
+        print("+ Uricult done value was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+    else:
+        print("+ Uricult ok, nothing to do")
+
+    print(CheckVar48.get())
+    if CheckVar48.get()==1:
+        print("+ Uricult done value was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+    else:
+        print("+ Uricult ok, nothing to do")
+
+    print(CheckVar49.get())
+    if CheckVar49.get()==1:
+        print("+ Uricult done value was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+    else:
+        print("+ Uricult ok, nothing to do")
+
+    print(CheckVar50.get())
+    if CheckVar50.get()==1:
+        print("+ Uricult done value was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+    else:
+        print("+ Uricult ok, nothing to do")
+
+    print(CheckVar51.get())
+    if CheckVar51.get()==1:
+        print("+ Uricult done value was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+    else:
+        print("+ Uricult ok, nothing to do")
+
+    print(CheckVar52.get())
+    if CheckVar52.get()==1:
+        print("+ Uricult done value was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+    else:
+        print("+ Uricult ok, nothing to do")
+
+    print(CheckVar53.get())
+    if CheckVar53.get()==1:
+        print("+ Uricult done value was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+    else:
+        print("+ Uricult ok, nothing to do")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as endfile:
             with open('./labo/doc_labo/result.txt', 'a+') as endfile2:
                 endfile.write("---------------------------------------------------------\n")
                 endfile2.write("---------------------------------------------------------\n")
- 
+
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
 
@@ -678,14 +748,14 @@ C17 = Checkbutton(app, text="Truxal", fg='navy',
     bg='cyan', variable=CheckVar17, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C17.grid(sticky='e', row=2, column=2, padx=10)
+C17.grid(sticky='e', row=2, column=3, padx=10)
 
 CheckVar18 = IntVar()
 C18 = Checkbutton(app, text="Zyprexa", fg='navy', 
     bg='cyan', variable=CheckVar18, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C18.grid(sticky='e', row=3, column=2, padx=10)
+C18.grid(sticky='e', row=3, column=3, padx=10)
 
 # MAE
 labelresult2=Label(app, text='--- Médicaments anti-épileptiques ---', 
@@ -827,99 +897,138 @@ C37 = Checkbutton(app, text="Trobalt", fg='navy',
     bg='cyan', variable=CheckVar37, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C37.grid(sticky='e', row=8, column=2, padx=10)
+C37.grid(sticky='e', row=8, column=3, padx=10)
 
 CheckVar38 = IntVar()
 C38 = Checkbutton(app, text="Vimpat", fg='navy', 
     bg='cyan', variable=CheckVar38, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C38.grid(sticky='e', row=9, column=2, padx=10)
+C38.grid(sticky='e', row=9, column=3, padx=10)
 
 CheckVar39 = IntVar()
 C39 = Checkbutton(app, text="Zonegran", fg='navy', 
     bg='cyan', variable=CheckVar39, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C39.grid(sticky='e', row=10, column=2, padx=10)
+C39.grid(sticky='e', row=10, column=3, padx=10)
 
 # ATD
-labelinf=Label(app, text='--- Antidépresseurs ---', 
+labelinf=Label(app, text='--- Antidépresseurs ---',
     font="Times 14 bold", width=97,
     height=1, bg='RoyalBlue3', fg='white')
-labelinf.grid(sticky='w', row=23, column=0, columnspan=4, padx=10)
+labelinf.grid(sticky='w', row=14, column=0, columnspan=4, padx=10)
 
 CheckVar40 = IntVar()
-C40 = Checkbutton(app, text="TSH", fg='navy', 
+C40 = Checkbutton(app, text="Anafranil", fg='navy', 
     bg='cyan', variable=CheckVar40, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C40.grid(sticky='w', row=24, column=0, padx=10)
+C40.grid(sticky='w', row=15, column=0, padx=10)
 
 CheckVar41 = IntVar()
-C41 = Checkbutton(app, text="free T4", fg='navy', 
+C41 = Checkbutton(app, text="Citalopram", fg='navy', 
     bg='cyan', variable=CheckVar41, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C41.grid(sticky='w', row=25, column=0, padx=10)
+C41.grid(sticky='w', row=16, column=0, padx=10)
 
 CheckVar42 = IntVar()
-C42 = Checkbutton(app, text="free T3", fg='navy', 
+C42 = Checkbutton(app, text="Cipralex", fg='navy', 
     bg='cyan', variable=CheckVar42, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C42.grid(sticky='w', row=24, column=1, padx=30)
+C42.grid(sticky='w', row=17, column=0, padx=10)
 
 CheckVar43 = IntVar()
-C43 = Checkbutton(app, text="total T3", fg='navy', 
+C43 = Checkbutton(app, text="Cymbalta", fg='navy', 
     bg='cyan', variable=CheckVar43, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C43.grid(sticky='w', row=25, column=1, padx=30)
-
-# Urinary infection
-labelinfuri=Label(app, text='--- Urinary infection ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='grey30', fg='white')
-labelinfuri.grid(sticky='w', row=26, column=0, columnspan=2, padx=10)
+C43.grid(sticky='w', row=18, column=0, padx=10)
 
 CheckVar44 = IntVar()
-C44 = Checkbutton(app, text="Stix (strip)", fg='navy', 
+C44 = Checkbutton(app, text="Deroxat", fg='navy', 
     bg='cyan', variable=CheckVar44, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C44.grid(sticky='w', row=27, column=0, padx=10)
-
-# Stix
-ButtStix=Button(app, text='- Combur -', width=20,
-    height=1, bg='navy', fg='cyan', command=comburTips)
-ButtStix.grid(row=27, column=1, padx=20)
+C44.grid(sticky='w', row=15, column=1, padx=30)
 
 CheckVar45 = IntVar()
-C45 = Checkbutton(app, text="Uricult", fg='navy', 
+C45 = Checkbutton(app, text="Effexor", fg='navy', 
     bg='cyan', variable=CheckVar45, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C45.grid(sticky='w', row=28, column=0, padx=10)
-
-# Coproculture
-labecopro=Label(app, text='--- Coproculture ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='grey30', fg='white')
-labecopro.grid(row=26, column=2, padx=10)
+C45.grid(sticky='w', row=16, column=1, padx=30)
 
 CheckVar46 = IntVar()
-C46 = Checkbutton(app, text="Check", fg='navy', 
+C46 = Checkbutton(app, text="Floxifral", fg='navy', 
     bg='cyan', variable=CheckVar46, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C46.grid(sticky='w', row=27, column=2, padx=10)
+C46.grid(sticky='w', row=17, column=1, padx=30)
+
+CheckVar47 = IntVar()
+C47 = Checkbutton(app, text="Fluctine", fg='navy', 
+    bg='cyan', variable=CheckVar47, 
+    onvalue=1, offvalue=0, height=1, 
+    width=20, anchor="w")
+C47.grid(sticky='w', row=18, column=1, padx=30)
+
+CheckVar48 = IntVar()
+C48 = Checkbutton(app, text="Ludiomil", fg='navy', 
+    bg='cyan', variable=CheckVar48, 
+    onvalue=1, offvalue=0, height=1, 
+    width=20, anchor="w")
+C48.grid(sticky='w', row=15, column=2, padx=20)
+
+CheckVar49 = IntVar()
+C49 = Checkbutton(app, text="Remeron", fg='navy', 
+    bg='cyan', variable=CheckVar49, 
+    onvalue=1, offvalue=0, height=1, 
+    width=20, anchor="w")
+C49.grid(sticky='w', row=16, column=2, padx=20)
+
+CheckVar50 = IntVar()
+C50 = Checkbutton(app, text="Saroten", fg='navy', 
+    bg='cyan', variable=CheckVar50, 
+    onvalue=1, offvalue=0, height=1, 
+    width=20, anchor="w")
+C50.grid(sticky='w', row=17, column=2, padx=20)
+
+CheckVar51 = IntVar()
+C51 = Checkbutton(app, text="Sertraline", fg='navy', 
+    bg='cyan', variable=CheckVar51, 
+    onvalue=1, offvalue=0, height=1, 
+    width=20, anchor="w")
+C51.grid(sticky='w', row=18, column=2, padx=20)
+
+CheckVar52 = IntVar()
+C52 = Checkbutton(app, text="Surmontil", fg='navy', 
+    bg='cyan', variable=CheckVar52, 
+    onvalue=1, offvalue=0, height=1, 
+    width=20, anchor="w")
+C52.grid(sticky='e', row=15, column=3, padx=10)
+
+CheckVar53 = IntVar()
+C53 = Checkbutton(app, text="Wellbutrin", fg='navy', 
+    bg='cyan', variable=CheckVar53, 
+    onvalue=1, offvalue=0, height=1, 
+    width=20, anchor="w")
+C53.grid(sticky='e', row=16, column=3, padx=10)
+
 
 # Printable sheet
 labelinfuri=Label(app, text='--- Printable ---', 
     font="Times 14 bold", width=46,
     height=1, bg='grey30', fg='cyan')
 labelinfuri.grid(sticky='w', row=29, column=0, columnspan=2, padx=10)
+
+# Printable sheet
+labeltest=Label(app, text='--- Printable2 ---', 
+    font="Times 14 bold", width=45,
+    height=1, bg='grey30', fg='cyan')
+labeltest.grid(sticky='e', row=29, column=2, columnspan=2, padx=10)
 
 # Buttons printable sheet
 buttonsheet=Button(app, text="Complete lab sheet", width=15,
@@ -934,11 +1043,11 @@ buttonsheet.grid(row=30, column=1, padx=10, pady=10)
 buttonsave=Button(app, text="Save", width=10, bd=3,
     fg='yellow', bg='RoyalBlue3', activebackground='dark turquoise',
     highlightbackground='RoyalBlue4', command=recordTofile)
-buttonsave.grid(row=44, column=2, pady=10)
+buttonsave.grid(sticky='e', row=44, column=2, pady=10)
 
 buttonquit=Button(app, text='Quit', width=10, bd=3,
     fg='white', bg='RoyalBlue3', activebackground='dark turquoise',
     highlightbackground='RoyalBlue4', command=quit)
-buttonquit.grid(sticky='e', row=44, column=2, padx=10, pady=10)
+buttonquit.grid(sticky='e', row=44, column=3, padx=10, pady=10)
 
 app.mainloop()
