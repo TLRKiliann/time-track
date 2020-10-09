@@ -736,118 +736,118 @@ C24 = Checkbutton(app, text="Gabitril", fg='navy',
     bg='cyan', variable=CheckVar24, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C24.grid(sticky='w', row=8, column=1, padx=10)
+C24.grid(sticky='w', row=13, column=0, padx=10)
 
 CheckVar25 = IntVar()
 C25 = Checkbutton(app, text="Inovelon", fg='navy', 
     bg='cyan', variable=CheckVar25, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C25.grid(sticky='w', row=9, column=1, padx=10)
+C25.grid(sticky='w', row=8, column=1, padx=30)
 
 CheckVar26 = IntVar()
 C26 = Checkbutton(app, text="Keppra", fg='navy', 
     bg='cyan', variable=CheckVar26, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C26.grid(sticky='w', row=10, column=1, padx=10)
+C26.grid(sticky='w', row=9, column=1, padx=30)
 
 CheckVar27 = IntVar()
 C27 = Checkbutton(app, text="Lamictal", fg='navy', 
     bg='cyan', variable=CheckVar27, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C27.grid(sticky='w', row=11, column=1, padx=10)
+C27.grid(sticky='w', row=10, column=1, padx=30)
 
 CheckVar28 = IntVar()
 C28 = Checkbutton(app, text="Lyrica", fg='navy', 
     bg='cyan', variable=CheckVar28, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C28.grid(sticky='w', row=12, column=1, padx=10)
+C28.grid(sticky='w', row=11, column=1, padx=30)
 
 CheckVar29 = IntVar()
 C29 = Checkbutton(app, text="Myzoline", fg='navy', 
     bg='cyan', variable=CheckVar29, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C29.grid(sticky='w', row=8, column=2, padx=10)
+C29.grid(sticky='w', row=12, column=1, padx=30)
 
 CheckVar30 = IntVar()
 C30 = Checkbutton(app, text="Neurontin", fg='navy', 
     bg='cyan', variable=CheckVar30, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C30.grid(sticky='w', row=9, column=2, padx=10)
+C30.grid(sticky='w', row=13, column=1, padx=30)
 
 CheckVar31 = IntVar()
 C31 = Checkbutton(app, text="Phenobarbital", fg='navy', 
     bg='cyan', variable=CheckVar31, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C31.grid(sticky='e', row=10, column=2, padx=10)
+C31.grid(sticky='w', row=8, column=2, padx=20)
 
 CheckVar32 = IntVar()
 C32 = Checkbutton(app, text="Phenytoïne", fg='navy', 
     bg='cyan', variable=CheckVar32, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C32.grid(sticky='e', row=11, column=2, padx=10)
+C32.grid(sticky='w', row=9, column=2, padx=20)
 
 CheckVar33 = IntVar()
 C33 = Checkbutton(app, text="Sabril", fg='navy', 
     bg='cyan', variable=CheckVar33, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C33.grid(sticky='w', row=12, column=2, padx=10)
+C33.grid(sticky='w', row=10, column=2, padx=20)
 
 CheckVar34 = IntVar()
 C34 = Checkbutton(app, text="Taloxa", fg='navy', 
     bg='cyan', variable=CheckVar34, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C34.grid(sticky='e', row=9, column=2, padx=10)
+C34.grid(sticky='w', row=11, column=2, padx=20)
 
 CheckVar35 = IntVar()
 C35 = Checkbutton(app, text="Topamax", fg='navy', 
     bg='cyan', variable=CheckVar35, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C35.grid(sticky='e', row=10, column=2, padx=10)
+C35.grid(sticky='w', row=12, column=2, padx=20)
 
 CheckVar36 = IntVar()
 C36 = Checkbutton(app, text="Trileptal", fg='navy', 
     bg='cyan', variable=CheckVar36, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C36.grid(sticky='e', row=11, column=2, padx=10)
+C36.grid(sticky='w', row=13, column=2, padx=20)
 
 CheckVar37 = IntVar()
 C37 = Checkbutton(app, text="Trobalt", fg='navy', 
     bg='cyan', variable=CheckVar37, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C37.grid(sticky='e', row=12, column=2, padx=10)
+C37.grid(sticky='e', row=8, column=2, padx=10)
 
 CheckVar38 = IntVar()
 C38 = Checkbutton(app, text="Vimpat", fg='navy', 
     bg='cyan', variable=CheckVar38, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C38.grid(sticky='e', row=8, column=2, padx=10)
+C38.grid(sticky='e', row=9, column=2, padx=10)
 
 CheckVar39 = IntVar()
 C39 = Checkbutton(app, text="Zonegran", fg='navy', 
     bg='cyan', variable=CheckVar39, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
-C39.grid(sticky='e', row=9, column=2, padx=10)
+C39.grid(sticky='e', row=10, column=2, padx=10)
 
-# Endocrinology
-labelinf=Label(app, text='--- Endocrinology ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='grey30', fg='white')
-labelinf.grid(sticky='w', row=23, column=0, columnspan=2, padx=10)
+# ATD
+labelinf=Label(app, text='--- Antidépresseurs ---', 
+    font="Times 14 bold", width=97,
+    height=1, bg='RoyalBlue3', fg='white')
+labelinf.grid(sticky='w', row=23, column=0, columnspan=4, padx=10)
 
 CheckVar40 = IntVar()
 C40 = Checkbutton(app, text="TSH", fg='navy', 
