@@ -83,7 +83,7 @@ def recordOption():
 
     print(CheckVar1.get())
     if CheckVar1.get()==1:
-        print("+ Na value was checked !")
+        print("+ Abilify value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
                 file.write("# Abilify : (add result of dosage here)\n")
@@ -93,513 +93,523 @@ def recordOption():
         
     print(CheckVar2.get())
     if CheckVar2.get()==1:
-        print("+ K value was checked !")
+        print("+ Clopixol value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# K value and treatment : (add what the patient needs)\n")
-                file2.write("# K value and treatment : (add what the patient needs)\n")
+                file.write("# Clopixol value and treatment : (add result of dosage here)\n")
+                file2.write("# Clopixol value and treatment : (add result of dosage here)\n")
     else:
-        print("+ K value ok, nothing to do")
+        print("+ Clopixol value ok, nothing to do")
 
     print(CheckVar3.get())
     if CheckVar3.get()==1:
-        print("+ Ca value was checked !")
+        print("+ Clozapine value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Ca value and treatment : (add what the patient needs)\n")
-                file2.write("# Ca value and treatment : (add what the patient needs)\n")
+                file.write("# Clozapine value and treatment : (add result of dosage here)\n")
+                file2.write("# Clozapine value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Ca value ok, nothing to do")
+        print("+ Clozapine value ok, nothing to do")
         
     print(CheckVar4.get())
     if CheckVar4.get()==1:
-        print("+ Mg value was checked !")
+        print("+ Dogmatil value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Mg value and treatment : (add what the patient needs)\n")
-                file2.write("# Mg value and treatment : (add what the patient needs)\n")
+                file.write("# Dogmatil value and treatment : (add result of dosage here)\n")
+                file2.write("# Dogmatil value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Mg value ok, nothing to do")
+        print("+ Dogmatil value ok, nothing to do")
 
     print(CheckVar5.get())
     if CheckVar5.get()==1:
-        print("+ Cl value was checked !")
+        print("+ Entumine value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Cl value and treatment : (add what the patient needs)\n")
-                file2.write("# Cl value and treatment : (add what the patient needs)\n")
+                file.write("# Entumine value and treatment : (add result of dosage here)\n")
+                file2.write("# Entumine value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Cl value ok, nothing to do")
+        print("+ Entumine value ok, nothing to do")
 
     print(CheckVar6.get())
     if CheckVar6.get()==1:
-        print("+ Phosphates value was checked !")
+        print("+ Fluanxol value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Phosphates value and treatment : (add what the patient needs)\n")
-                file2.write("# Phosphates value and treatment : (add what the patient needs)\n")
+                file.write("# Fluanxol value and treatment : (add result of dosage here)\n")
+                file2.write("# Fluanxol value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Phosphates value ok, nothing to do")
+        print("+ Fluanxol value ok, nothing to do")
 
     print(CheckVar7.get())
     if CheckVar7.get()==1:
-        print("+ Bicarbonates value was checked !")
+        print("+ Haldol value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Bicarbonates value and treatment : (add what the patient needs)\n")
-                file2.write("# Bicarbonates value and treatment : (add what the patient needs)\n")
+                file.write("# Haldol value and treatment : (add result of dosage here)\n")
+                file2.write("# Haldol value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Bicarbonates value ok, nothing to do")
+        print("+ Haldol value ok, nothing to do")
 
     print(CheckVar8.get())
     if CheckVar8.get()==1:
-        print("+ Cardiac workup value was checked !")
+        print("+ Invega value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Cardiac workup value and treatment : (add what the patient needs)\n")
-                file2.write("# Cardiac workup value and treatment : (add what the patient needs)\n")
+                file.write("# Invega value and treatment : (add result of dosage here)\n")
+                file2.write("# Invega value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Cardiac workup value ok, nothing to do")
+        print("+ Invega value ok, nothing to do")
 
     print(CheckVar9.get())
     if CheckVar9.get()==1:
-        print("+ CK-MB value was checked !")
+        print("+ Nozinan value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# CK-MB value and treatment : (add what the patient needs)\n")
-                file2.write("# CK-MB value and treatment : (add what the patient needs)\n")
+                file.write("# Nozinan value and treatment : (add result of dosage here)\n")
+                file2.write("# Nozinan value and treatment : (add result of dosage here)\n")
     else:
-        print("+ CK-MB value ok, nothing to do")
+        print("+ Nozinan value ok, nothing to do")
 
     print(CheckVar10.get())
     if CheckVar10.get()==1:
-        print("+ Troponin value was checked !")
+        print("+ Prazine value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Troponin value and treatment : (add what the patient needs)\n")
-                file2.write("# Troponin value and treatment : (add what the patient needs)\n")
+                file.write("# Prazine value and treatment : (add result of dosage here)\n")
+                file2.write("# Prazine value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Troponin value ok, nothing to do")
+        print("+ Prazine value ok, nothing to do")
 
     print(CheckVar12.get())
     if CheckVar12.get()==1:
-        print("+ Cholesterol total value was checked !")
+        print("+ Quetiapine value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Cholesterol total value and treatment : (add what the patient needs)\n")
-                file2.write("# Cholesterol total value and treatment : (add what the patient needs)\n")
+                file.write("# Quetiapine value and treatment : (add result of dosage here)\n")
+                file2.write("# Quetiapine value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Cholesterol total value ok, nothing to do")
+        print("+ Quetiapine value ok, nothing to do")
 
     print(CheckVar13.get())
     if CheckVar13.get()==1:
-        print("+ HDL value was checked !")
+        print("+ Risperdal value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# HDL value and treatment : (add what the patient needs)\n")
-                file2.write("# HDL value and treatment : (add what the patient needs)\n")
+                file.write("# Risperdal value and treatment : (add result of dosage here)\n")
+                file2.write("# Risperdal value and treatment : (add result of dosage here)\n")
     else:
-        print("+ HDL value ok, nothing to do")
+        print("+ Risperdal value ok, nothing to do")
 
     print(CheckVar14.get())
     if CheckVar14.get()==1:
-        print("+ LDL value was checked !")
+        print("+ Serdolect value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# LDL value and treatment : (add what the patient needs)\n")
-                file2.write("# LDL value and treatment : (add what the patient needs)\n")
+                file.write("# Serdolect value and treatment : (add result of dosage here)\n")
+                file2.write("# Serdolect value and treatment : (add result of dosage here)\n")
     else:
-        print("+ LDL value ok, nothing to do")
+        print("+ Serdolect value ok, nothing to do")
 
     print(CheckVar15.get())
     if CheckVar15.get()==1:
-        print("+ Triglycerides value was checked !")
+        print("+ Solian value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Triglycerides value and treatment : (add what the patient needs)\n")
-                file2.write("# Triglycerides value and treatment : (add what the patient needs)\n")
+                file.write("# Solian value and treatment : (add result of dosage here)\n")
+                file2.write("# Solian value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Triglycerides value ok, nothing to do")
+        print("+ Solian value ok, nothing to do")
 
     print(CheckVar16.get())
     if CheckVar16.get()==1:
-        print("+ ASAT value was checked !")
+        print("+ Tiapridal value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# ASAT value and treatment : (add what the patient needs)\n")
-                file2.write("# ASAT value and treatment : (add what the patient needs)\n")
+                file.write("# Tiapridal value and treatment : (add result of dosage here)\n")
+                file2.write("# Tiapridal value and treatment : (add result of dosage here)\n")
     else:
-        print("+ ASAT value ok, nothing to do")
+        print("+ Tiapridal value ok, nothing to do")
 
     print(CheckVar17.get())
     if CheckVar17.get()==1:
-        print("+ ALAT value was checked !")
+        print("+ Truxal value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# ALAT value and treatment : (add what the patient needs)\n")
-                file2.write("# ALAT value and treatment : (add what the patient needs)\n")
+                file.write("# Truxal value and treatment : (add result of dosage here)\n")
+                file2.write("# Truxal value and treatment : (add result of dosage here)\n")
     else:
-        print("+ ALAT value ok, nothing to do")
+        print("+ Truxal value ok, nothing to do")
 
     print(CheckVar18.get())
     if CheckVar18.get()==1:
-        print("+ Gamma-GT value was checked !")
+        print("+ Zyprexa value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Gamma-GT value and treatment : (add what the patient needs)\n")
-                file2.write("# Gamma-GT value and treatment : (add what the patient needs)\n")
+                file.write("# Zyprexa value and treatment : (add result of dosage here)\n")
+                file2.write("# Zyprexa value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Gamma-GT value ok, nothing to do")
+        print("+ Zyprexa value ok, nothing to do")
 
     print(CheckVar19.get())
     if CheckVar19.get()==1:
-        print("+ Alkaline phosphatase value was checked !")
+        print("+ Briviact value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Alkaline phosphatase value and treatment : (add what the patient needs)\n")
-                file2.write("# Alkaline phosphatase value and treatment : (add what the patient needs)\n")
+                file.write("# Briviact value and treatment : (add result of dosage here)\n")
+                file2.write("# Briviact value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Alkaline phosphatase value ok, nothing to do")
+        print("+ Briviact value ok, nothing to do")
 
     print(CheckVar20.get())
     if CheckVar20.get()==1:
-        print("+ Bilirubin direct value was checked !")
+        print("+ Carbamazepine value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Bilirubin direct value and treatment : (add what the patient needs)\n")
-                file2.write("# Bilirubin direct value and treatment : (add what the patient needs)\n")
+                file.write("# Carbamazepine value and treatment : (add result of dosage here)\n")
+                file2.write("# Carbamazepine value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Bilirubin direct value ok, nothing to do")
+        print("+ Carbamazepine value ok, nothing to do")
 
     print(CheckVar21.get())
     if CheckVar21.get()==1:
-        print("+ Bilirubin indirect value was checked !")
+        print("+ Depakine value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Bilirubin indirect value and treatment : (add what the patient needs)\n")
-                file2.write("# Bilirubin indirect value and treatment : (add what the patient needs)\n")
+                file.write("# Depakine value and treatment : (add result of dosage here)\n")
+                file2.write("# Depakine value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Bilirubin indirect value ok, nothing to do")
+        print("+ Depakine value ok, nothing to do")
 
     print(CheckVar22.get())
     if CheckVar22.get()==1:
-        print("+ LDH value was checked !")
+        print("+ Ethosuximide value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# LDH value and treatment : (add what the patient needs)\n")
-                file2.write("# LDH value and treatment : (add what the patient needs)\n")
+                file.write("# Ethosuximide value and treatment : (add result of dosage here)\n")
+                file2.write("# Ethosuximide value and treatment : (add result of dosage here)\n")
     else:
-        print("+ LDH value ok, nothing to do")
+        print("+ Ethosuximide value ok, nothing to do")
 
     print(CheckVar23.get())
     if CheckVar23.get()==1:
-        print("+ Uric acid value was checked !")
+        print("+ Fycompa value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uric acid value and treatment : (add what the patient needs)\n")
-                file2.write("# Uric acid value and treatment : (add what the patient needs)\n")
+                file.write("# Fycompa value and treatment : (add result of dosage here)\n")
+                file2.write("# Fycompa value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Uric acid value ok, nothing to do")
+        print("+ Fycompa value ok, nothing to do")
 
     print(CheckVar24.get())
     if CheckVar24.get()==1:
-        print("+ TP value was checked !")
+        print("+ Gabitril value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# TP value and treatment : (add what the patient needs)\n")
-                file2.write("# TP value and treatment : (add what the patient needs)\n")
+                file.write("# Gabitril value and treatment : (add result of dosage here)\n")
+                file2.write("# Gabitril value and treatment : (add result of dosage here)\n")
     else:
-        print("+ TP value ok, nothing to do")
+        print("+ Gabitril value ok, nothing to do")
 
     print(CheckVar25.get())
     if CheckVar25.get()==1:
-        print("+ INR value was checked !")
+        print("+ Inovelon value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# INR value and treatment : (add what the patient needs)\n")
-                file2.write("# INR value and treatment : (add what the patient needs)\n")
+                file.write("# Inovelon value and treatment : (add result of dosage here)\n")
+                file2.write("# Inovelon value and treatment : (add result of dosage here)\n")
     else:
-        print("+ INR value ok, nothing to do")
+        print("+ Inovelon value ok, nothing to do")
 
     print(CheckVar26.get())
     if CheckVar26.get()==1:
-        print("+ Fasting glucose value was checked !")
+        print("+ Keppra value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Fasting glucose value and treatment : (add what the patient needs)\n")
-                file2.write("# Fasting glucose value and treatment : (add what the patient needs)\n")
+                file.write("# Keppra value and treatment : (add result of dosage here)\n")
+                file2.write("# Keppra value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Fasting glucose value ok, nothing to do")
+        print("+ Keppra value ok, nothing to do")
 
     print(CheckVar27.get())
     if CheckVar27.get()==1:
-        print("+ Postprandial glucose value was checked !")
+        print("+ Lamictal value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Postprandial glucose value and treatment : (add what the patient needs)\n")
-                file2.write("# Postprandial glucose value and treatment : (add what the patient needs)\n")
+                file.write("# Lamictal value and treatment : (add result of dosage here)\n")
+                file2.write("# Lamictal value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Postprandial glucose value ok, nothing to do")
+        print("+ Lamictal value ok, nothing to do")
 
     print(CheckVar28.get())
     if CheckVar28.get()==1:
-        print("+ HbA1c value was checked !")
+        print("+ Lyrica value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# HbA1c value and treatment : (add what the patient needs)\n")
-                file2.write("# HbA1c value and treatment : (add what the patient needs)\n")
+                file.write("# Lyrica value and treatment : (add result of dosage here)\n")
+                file2.write("# Lyrica value and treatment : (add result of dosage here)\n")
     else:
-        print("+ HbA1c value ok, nothing to do")
+        print("+ Lyrica value ok, nothing to do")
 
     print(CheckVar29.get())
     if CheckVar29.get()==1:
-        print("+ Iron value was checked !")
+        print("+ Myzoline value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Iron value and treatment : (add what the patient needs)\n")
-                file2.write("# Iron value and treatment : (add what the patient needs)\n")
+                file.write("# Myzoline value and treatment : (add result of dosage here)\n")
+                file2.write("# Myzoline value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Iron value ok, nothing to do")
+        print("+ Myzoline value ok, nothing to do")
 
     print(CheckVar30.get())
     if CheckVar30.get()==1:
-        print("+ Ferritine value was checked !")
+        print("+ Neurontin value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Ferritine value and treatment : (add what the patient needs)\n")
-                file2.write("# Ferritine value and treatment : (add what the patient needs)\n")
+                file.write("# Neurontin value and treatment : (add result of dosage here)\n")
+                file2.write("# Neurontin value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Ferritine value ok, nothing to do")
+        print("+ Neurontin value ok, nothing to do")
 
     print(CheckVar31.get())
     if CheckVar31.get()==1:
-        print("+ Vitamin B12 value was checked !")
+        print("+ Phenobarbital value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Vitamin B12 value and treatment : (add what the patient needs)\n")
-                file2.write("# Vitamin B12 value and treatment : (add what the patient needs)\n")
+                file.write("# Phenobarbital value and treatment : (add result of dosage here)\n")
+                file2.write("# Phenobarbital value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Vitamin B12 value ok, nothing to do")
+        print("+ Phenobarbital value ok, nothing to do")
 
     print(CheckVar32.get())
     if CheckVar32.get()==1:
-        print("+ Folates (B9) value was checked !")
+        print("+ Phenytoine value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Folates (B9) value and treatment : (add what the patient needs)\n")
-                file2.write("# Folates (B9) value and treatment : (add what the patient needs)\n")
+                file.write("# Phenytoine value and treatment : (add result of dosage here)\n")
+                file2.write("# Phenytoine value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Folates (B9) value ok, nothing to do")
+        print("+ Phenytoine value ok, nothing to do")
 
     print(CheckVar33.get())
     if CheckVar33.get()==1:
-        print("+ Urea value was checked !")
+        print("+ Sabril value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Urea value and treatment : (add what the patient needs)\n")
-                file2.write("# Urea value and treatment : (add what the patient needs)\n")
+                file.write("# Sabril value and treatment : (add result of dosage here)\n")
+                file2.write("# Sabril value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Urea value ok, nothing to do")
+        print("+ Sabril value ok, nothing to do")
 
     print(CheckVar34.get())
     if CheckVar34.get()==1:
-        print("+ Creat value was checked !")
+        print("+ Taloxa value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Creat value and treatment : (add what the patient needs)\n")
-                file2.write("# Creat value and treatment : (add what the patient needs)\n")
+                file.write("# Taloxa value and treatment : (add result of dosage here)\n")
+                file2.write("# Taloxa value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Creat value ok, nothing to do")
+        print("+ Taloxa value ok, nothing to do")
 
     print(CheckVar35.get())
     if CheckVar35.get()==1:
-        print("+ Sediment. velocity value was checked !")
+        print("+ Topamax value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Sediment. velocity value and treatment : (add what the patient needs)\n")
-                file2.write("# Sediment. velocity value and treatment : (add what the patient needs)\n")
+                file.write("# Topamax value and treatment : (add result of dosage here)\n")
+                file2.write("# Topamax value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Sediment. velocity value ok, nothing to do")
+        print("+ Topamax value ok, nothing to do")
 
     print(CheckVar36.get())
     if CheckVar36.get()==1:
-        print("+ C-react. protein value was checked !")
+        print("+ Trileptal value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# C-react. protein value and treatment : (add what the patient needs)\n")
-                file2.write("# C-react. protein value and treatment : (add what the patient needs)\n")
+                file.write("# Trileptal value and treatment : (add result of dosage here)\n")
+                file2.write("# Trileptal value and treatment : (add result of dosage here)\n")
     else:
-        print("+ C-react. protein value ok, nothing to do")
+        print("+ Trileptal value ok, nothing to do")
 
     print(CheckVar37.get())
     if CheckVar37.get()==1:
-        print("+ Albumina value was checked !")
+        print("+ Trobalt value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Albumina value and treatment : (add what the patient needs)\n")
-                file2.write("# Albumina value and treatment : (add what the patient needs)\n")
+                file.write("# Trobalt value and treatment : (add result of dosage here)\n")
+                file2.write("# Trobalt value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Albumina value ok, nothing to do")
+        print("+ Trobalt value ok, nothing to do")
 
     print(CheckVar38.get())
     if CheckVar38.get()==1:
-        print("+ Cortisol value was checked !")
+        print("+ Vimpat value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Cortisol value and treatment : (add what the patient needs)\n")
-                file2.write("# Cortisol value and treatment : (add what the patient needs)\n")
+                file.write("# Vimpat value and treatment : (add result of dosage here)\n")
+                file2.write("# Vimpat value and treatment : (add result of dosage here)\n")
     else:
-        print("+ Cortisol value ok, nothing to do")
+        print("+ Vimpat value ok, nothing to do")
 
     print(CheckVar39.get())
     if CheckVar39.get()==1:
-        print("+ ACTH value was checked !")
+        print("+ Zonegran value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# ACTH value and treatment : (add what the patient needs)\n")
-                file2.write("# ACTH value and treatment : (add what the patient needs)\n")
+                file.write("# Zonegran value and treatment : (add result of dosage here)\n")
+                file2.write("# Zonegran value and treatment : (add result of dosage here)\n")
     else:
-        print("+ ACTH value ok, nothing to do")
+        print("+ Zonegran value ok, nothing to do")
 
     print(CheckVar40.get())
     if CheckVar40.get()==1:
-        print("+ TSH value was checked !")
+        print("+ Anafranil value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# TSH value and treatment : (add what the patient needs)\n")
-                file2.write("# TSH value and treatment : (add what the patient needs)\n")
+                file.write("# Anafranil value and treatment : (add result of dosage here)\n")
+                file2.write("# Anafranil value and treatment : (add result of dosage here)\n")
     else:
-        print("+ TSH value ok, nothing to do")
+        print("+ Anafranil value ok, nothing to do")
 
     print(CheckVar41.get())
     if CheckVar41.get()==1:
-        print("+ free T4 value was checked !")
+        print("+ Citalopram value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# free T4 value and treatment : (add what the patient needs)\n")
-                file2.write("# free T4 value and treatment : (add what the patient needs)\n")
+                file.write("# Citalopram value and treatment : (add result of dosage here)\n")
+                file2.write("# Citalopram value and treatment : (add result of dosage here)\n")
     else:
-        print("+ free T4 value ok, nothing to do")
+        print("+ Citalopram value ok, nothing to do")
 
     print(CheckVar42.get())
     if CheckVar42.get()==1:
-        print("+ free free T3 value was checked !")
+        print("+ Cipralex value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# free free T3 value and treatment : (add what the patient needs)\n")
-                file2.write("# free free T3 value and treatment : (add what the patient needs)\n")
+                file.write("# Cipralex value and treatment : (add result of dosage here)\n")
+                file2.write("# Cipralex value and treatment : (add result of dosage here)\n")
     else:
-        print("+ free free T3 value ok, nothing to do")
+        print("+ Cipralex value ok, nothing to do")
 
     print(CheckVar43.get())
     if CheckVar43.get()==1:
-        print("+ free total T3 value was checked !")
+        print("+ Cymbalta value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# free total T3 value and treatment : (add what the patient needs)\n")
-                file2.write("# free total T3 value and treatment : (add what the patient needs)\n")
+                file.write("# Cymbalta value and treatment : (add result of dosage here)\n")
+                file2.write("# Cymbalta value and treatment : (add result of dosage here)\n")
     else:
-        print("+ free total T3 value ok, nothing to do")
+        print("+ Cymbalta value ok, nothing to do")
 
     print(CheckVar44.get())
     if CheckVar44.get()==1:
-        print("+ Stix (strip) was checked !")
+        print("+ Deroxat was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Stix (strip) and treatment will be... : (add what the patient needs)\n")
-                file2.write("# Stix (strip) and treatment will be... : (add what the patient needs)\n")
+                file.write("# Deroxat and treatment will be... : (add result of dosage here)\n")
+                file2.write("# Deroxat and treatment will be... : (add result of dosage here)\n")
     else:
-        print("+ Stix (strip) ok, nothing to do")
+        print("+ Deroxat ok, nothing to do")
 
     print(CheckVar45.get())
     if CheckVar45.get()==1:
-        print("+ Uricult done value was checked !")
+        print("+ Effexor value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Effexor and treatment : (add result of dosage here)\n")
+                file2.write("# Effexor and treatment : (add result of dosage here)\n")
     else:
-        print("+ Uricult ok, nothing to do")
+        print("+ Effexor ok, nothing to do")
 
     print(CheckVar46.get())
     if CheckVar46.get()==1:
-        print("+ Coproculture was checked !")
+        print("+ Floxifral was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Coproculture and treatment : (add what the patient needs)\n")
-                file2.write("# Coproculture and treatment : (add what the patient needs)\n")
+                file.write("# Floxifral and treatment : (add result of dosage here)\n")
+                file2.write("# Floxifral and treatment : (add result of dosage here)\n")
     else:
-        print("+ Coproculture ok, nothing to do")
+        print("+ Floxifral ok, nothing to do")
 
     print(CheckVar47.get())
     if CheckVar47.get()==1:
-        print("+ Uricult done value was checked !")
+        print("+ Fluctine was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Fluctine and treatment : (add result of dosage here)\n")
+                file2.write("# Fluctine and treatment : (add result of dosage here)\n")
     else:
-        print("+ Uricult ok, nothing to do")
+        print("+ Fluctine ok, nothing to do")
 
     print(CheckVar48.get())
     if CheckVar48.get()==1:
-        print("+ Uricult done value was checked !")
+        print("+ Ludiomil value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Ludiomil and treatment : (add result of dosage here)\n")
+                file2.write("# Ludiomil and treatment : (add result of dosage here)\n")
     else:
-        print("+ Uricult ok, nothing to do")
+        print("+ Ludiomil ok, nothing to do")
 
     print(CheckVar49.get())
     if CheckVar49.get()==1:
-        print("+ Uricult done value was checked !")
+        print("+ Remeron value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Remeron and treatment : (add result of dosage here)\n")
+                file2.write("# Remeron and treatment : (add result of dosage here)\n")
     else:
-        print("+ Uricult ok, nothing to do")
+        print("+ Remeron ok, nothing to do")
 
     print(CheckVar50.get())
     if CheckVar50.get()==1:
-        print("+ Uricult done value was checked !")
+        print("+ Saroten value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Saroten and treatment : (add result of dosage here)\n")
+                file2.write("# Saroten and treatment : (add result of dosage here)\n")
     else:
-        print("+ Uricult ok, nothing to do")
+        print("+ Saroten ok, nothing to do")
 
     print(CheckVar51.get())
     if CheckVar51.get()==1:
         print("+ Uricult done value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Uricult done and treatment : (add result of dosage here)\n")
+                file2.write("# Uricult done and treatment : (add result of dosage here)\n")
     else:
         print("+ Uricult ok, nothing to do")
 
     print(CheckVar52.get())
     if CheckVar52.get()==1:
-        print("+ Uricult done value was checked !")
+        print("+ Sertraline value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Sertraline and treatment : (add result of dosage here)\n")
+                file2.write("# Sertraline and treatment : (add result of dosage here)\n")
     else:
-        print("+ Uricult ok, nothing to do")
+        print("+ Sertraline ok, nothing to do")
 
     print(CheckVar53.get())
     if CheckVar53.get()==1:
-        print("+ Uricult done value was checked !")
+        print("+ Surmontil value was checked !")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Surmontil and treatment : (add result of dosage here)\n")
+                file2.write("# Surmontil and treatment : (add result of dosage here)\n")
     else:
-        print("+ Uricult ok, nothing to do")
+        print("+ Surmontil ok, nothing to do")
+
+    print(CheckVar54.get())
+    if CheckVar54.get()==1:
+        print("+ Wellbutrin value was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Wellbutrin and treatment : (add result of dosage here)\n")
+                file2.write("# Wellbutrin and treatment : (add result of dosage here)\n")
+    else:
+        print("+ Wellbutrin ok, nothing to do")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as endfile:
             with open('./labo/doc_labo/result.txt', 'a+') as endfile2:
                 endfile.write("---------------------------------------------------------\n")
