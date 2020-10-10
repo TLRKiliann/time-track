@@ -1,114 +1,30 @@
-En date du : 26/09/2020 à 10:42:48 :
+En date du : 10/10/2020 à 10:04:00 :
 Patient name : exec tech
 + Surveillance pour éviter les dangers requise
 ---
-
-En date du : 26/09/2020 à 10:43:05 :
-+ Surveillance pour éviter les dangers requise
-Risque de chute en se levant du lit.
-
-En date du : 26/09/2020 à 10:43:40 :
-Bcp de demandes et se perd ensuite.
-
-En date du : 25/09/2020 à 22:18:20 :
-Test yesterday 1
-
-
-
-----------------------------------------------------------
-Date : 26/09/2020
-Patient name : exec tech
-# TP value and treatment : (add what the patient needs)
-# INR value and treatment : (add what the patient needs)
-# free free T3 value and treatment : (add what the patient needs)
-# free total T3 value and treatment : (add what the patient needs)
----------------------------------------------------------
-En date du : 26/09/2020 à 22:48:56 :
-test 2
-test 2
-
-
-
-***************************************************************************
-Date : 26/09/2020
-Patient name : exec tech
-pH : 5 Leuco : 0 Nit : - Pro : neg Glu : neg Ket : neg Ery : neg Hb : neg
-***************************************************************************
-
-En date du : 26/09/2020 à 22:50:21 :
-test 3
-test 4
 
 ---####-|--- Affichage des besoins du patient à surveiller ---|-####---
 
-En date du : 26/09/2020 à 10:42:48 :
+En date du : 10/10/2020 à 10:04:00 :
 Patient name : exec tech
 + Surveillance pour éviter les dangers requise
-truc à faire ....
+truc 1 (for test)
 ---
 
 
 
-En date du : 26/09/2020 à 22:51:48 :
-test 5
-test 5
-test 5
-
-
+En date du : 10/10/2020 à 10:04:59 :
+test 2
 
 
 ----------------------------------------------------------
-Date : 09/10/2020
+Date : 10/10/2020
 Patient name : exec tech
-# Abilify : (add result of dosage here)
-# Clopixol : (add result of dosage here)
-# Clozapine : (add result of dosage here)
-# Dogmatil : (add result of dosage here)
-# Entumine : (add result of dosage here)
-# Fluanxol : (add result of dosage here)
-# Haldol : (add result of dosage here)
-# Invega : (add result of dosage here)
-# Nozinan : (add result of dosage here)
-# Prazine : (add result of dosage here)
-# Quetiapine : (add result of dosage here)
-# Risperdal : (add result of dosage here)
-# Serdolect : (add result of dosage here)
-# Solian : (add result of dosage here)
-# Tiapridal : (add result of dosage here)
-# Truxal : (add result of dosage here)
-# Zyprexa : (add result of dosage here)
-# Briviact : (add result of dosage here)
-# Carbamazepine : (add result of dosage here)
-# Depakine : (add result of dosage here)
-# Ethosuximide : (add result of dosage here)
-# Fycompa : (add result of dosage here)
-# Gabitril : (add result of dosage here)
-# Inovelon : (add result of dosage here)
-# Keppra : (add result of dosage here)
-# Lamictal : (add result of dosage here)
-# Lyrica : (add result of dosage here)
-# Myzoline : (add result of dosage here)
-# Neurontin : (add result of dosage here)
 # Phenobarbital : (add result of dosage here)
 # Phenytoine : (add result of dosage here)
 # Sabril : (add result of dosage here)
-# Taloxa : (add result of dosage here)
-# Topamax : (add result of dosage here)
-# Trileptal : (add result of dosage here)
-# Trobalt : (add result of dosage here)
-# Vimpat : (add result of dosage here)
-# Zonegran : (add result of dosage here)
-# Anafranil : (add result of dosage here)
-# Citalopram : (add result of dosage here)
-# Cipralex : (add result of dosage here)
-# Cymbalta : (add result of dosage here)
-# Deroxat : (add result of dosage here)
-# Effexor : (add result of dosage here)
-# Floxifral : (add result of dosage here)
-# Fluctine : (add result of dosage here)
-# Ludiomil : (add result of dosage here)
-# Remeron : (add result of dosage here)
-# Saroten : (add result of dosage here)
-# Sertraline : (add result of dosage here)
-# Surmontil : (add result of dosage here)
-# Wellbutrin : (add result of dosage here)
+---------------------------------------------------------
+
+En date du : 10/10/2020 à 10:05:39 :
+test 3
+
