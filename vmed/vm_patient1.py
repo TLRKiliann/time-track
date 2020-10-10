@@ -4,8 +4,8 @@
 
 from tkinter import *
 from tkinter import messagebox
-import subprocess
 import os
+import subprocess
 
 
 # La ScrollBar en class! Préparation pour l'application.
@@ -27,9 +27,9 @@ class ScrollCanvas(Frame):
 class MenuBar(Frame):
     """Barre menu déroulant"""
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='dim gray', padx=0)
-        But2=Button(self, text ="Close", fg='cyan', bg='navy', relief=GROOVE,
-            activebackground='cyan', command=boss.quit).pack(side=LEFT, padx=3)
+        Frame.__init__(self, borderwidth=5, bg='cyan', padx=0)
+        But2=Button(self, text ="Close", fg='cyan', bg='RoyalBlue4', relief=GROOVE,
+        	activebackground='aquamarine', command=boss.quit).pack(side=LEFT, padx=3)
 
 # Application principale
 class Application(Frame):
@@ -39,7 +39,7 @@ class Application(Frame):
         mBar=MenuBar(self)
         mBar.pack(side=TOP, fill=X, expand=1)
         # ScrollCanvas limite de la zone à parcourir avec la barre
-        self.can=Canvas(self, width=600, height=400, bg='#82193e')
+        self.can=Canvas(self, width=600, height=400, bg='RoyalBlue3')
         self.frame = Frame(self.can)
         self.vsb = Scrollbar(self, orient=VERTICAL, command=self.can.yview)
         self.can.configure(yscrollcommand=self.vsb.set)
@@ -57,14 +57,14 @@ class Application(Frame):
         self.frame.bind("<Configure>", self.onFrameConfigure)
         # Button to add
         self.x2, self.y2 = 200, 250
-        self.b2=Button(self.can, width=10, font=16, bg='RoyalBlue3', fg='yellow',
-            activebackground='dark turquoise', bd=3, highlightbackground='#82193e', 
+        self.b2=Button(self.can, width=10, font=16, bg='RoyalBlue2', fg='white',
+            activebackground='aquamarine', bd=3, highlightbackground='RoyalBlue3',
             text="Add", command=self.lienDirect)
         self.fb2=self.can.create_window(self.x2, self.y2, window=self.b2)
         # Button to read
         self.x3, self.y3 = 400, 250
-        self.b3=Button(self.can, width=10, font=16, bg='RoyalBlue3', fg='yellow',
-            activebackground='dark turquoise', bd=3, highlightbackground='#82193e', 
+        self.b3=Button(self.can, width=10, font=16, bg='RoyalBlue2', fg='white',
+            activebackground='aquamarine', bd=3, highlightbackground='RoyalBlue3',
             text="Read", command=self.lectureFic)
         self.fb3=self.can.create_window(self.x3, self.y3, window=self.b3)
         self.pack()
@@ -79,10 +79,10 @@ class Application(Frame):
         try:
             if os.path.getsize('./vmed/doc_vmed/resultvmed.txt'):
                 print("+ File 'VMED' exist (add)!")
-                subprocess.call('./vmed/doc_vmed/vmed_write.py')
+                subprocess.run('./vmed/doc_vmed/vmed_write.py', check=True)
         except FileNotFoundError as outmsg:
             print("+ Sorry, file 'VMED' not exist !", outmsg)
-            print("+ File VMED created !")
+            print("+ File VMED created !!!")
             with open('./vmed/doc_vmed/resultvmed.txt', 'w') as file:
                 file.write(".")
             self.confRec()
@@ -92,7 +92,7 @@ class Application(Frame):
         try:
             if os.path.getsize('./vmed/doc_vmed/resultvmed.txt'):
                 print("+ File 'VMED' exist (read)!")
-                subprocess.call('./vmed/doc_vmed/vmed_read.py')
+                subprocess.run('./vmed/doc_vmed/vmed_read.py', check=True)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'VMED' not exist !", outcom)
             with open('./vmed/doc_vmed/resultvmed.txt', 'w') as file:
