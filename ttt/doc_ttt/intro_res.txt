@@ -3,12 +3,10 @@ Heure : 11:33:58
 Name : exec tech
 
 Date of introduction : 
-Nom du ttt : Remeron
-Dosage du ttt : 15 mg
-
-
-Soir : 1
-
+Nom du ttt : Temesta
+Dosage du ttt : 2,5 mg
+Réserve : Oui
+1ère intention : Oui
 Date of end : 11/10/2020
 Signature : ck
 
