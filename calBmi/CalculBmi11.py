@@ -107,10 +107,20 @@ def buttRecord():
     messagebox.showinfo('Record', 'Data saved')
 
 def viewGraphicBmi():
-    subprocess.call('./calBmi/doc_BMI11/convert_bmilist.py')
+    try:
+        if os.path.getsize('./calBmi/doc_BMI11/file_bmi.json'):
+            subprocess.run('./calBmi/doc_BMI11/convert_bmilist.py', check=True)
+    except FileNotFoundError as no_file:
+        print("No BMI file exist !", no_file)
+        messagebox.showinfo('INFO', 'No BMI file found !')
 
 def viewGraphicKilo():
-    subprocess.call('./calBmi/doc_BMI11/convert_kg.py')
+    try:
+        if os.path.getsize('./calBmi/doc_BMI11/file_kg.json'):
+            subprocess.run('./calBmi/doc_BMI11/convert_kg.py', check=True)
+    except FileNotFoundError as no_file:
+        print("No kg file exist !", no_file)
+        messagebox.showinfo('INFO', 'No kg file found !')
 
 def readBmi():
     subprocess.call('./calBmi/bmi_read11.py')
