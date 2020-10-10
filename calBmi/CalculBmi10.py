@@ -112,7 +112,7 @@ def viewGraphicBmi():
             subprocess.run('./calBmi/doc_BMI10/convert_bmilist.py', check=True)
     except FileNotFoundError as no_file:
         print("No BMI file exist !", no_file)
-        messagebox.showinfo('INFO', 'No BMI file found !')
+        messagebox.showinfo('INFO', 'BMI file not found !')
 
 def viewGraphicKilo():
     try:
@@ -120,7 +120,7 @@ def viewGraphicKilo():
             subprocess.run('./calBmi/doc_BMI10/convert_kg.py', check=True)
     except FileNotFoundError as no_file:
         print("No kg file exist !", no_file)
-        messagebox.showinfo('INFO', 'No kg file found !')
+        messagebox.showinfo('INFO', 'Kg file not found !')
 
 def readBmi():
     subprocess.call('./calBmi/bmi_read10.py')
