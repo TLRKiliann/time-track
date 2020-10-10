@@ -13,9 +13,9 @@ import time
 
 def sheetLabo():
     """
-    For openning file at pdf 
-    format with a bit prog-sys code.
-    For Linux, Windows and MAC.
+        For openning file at pdf 
+        format with a bit prog-sys code.
+        For Linux, Windows and MAC.
     """
     becall = platform.system()
     print(platform.system())
@@ -29,9 +29,9 @@ def sheetLabo():
 
 def sheetMicrobio():
     """
-    For openning file at pdf 
-    format with a bit prog-sys code.
-    For Linux, Windows and MAC.
+        For openning file at pdf 
+        format with a bit prog-sys code.
+        For Linux, Windows and MAC.
     """
     callplatform = platform.system()
     print(platform.system())
@@ -45,10 +45,10 @@ def sheetMicrobio():
 
 def printLabo():
     """
-    Need to be modified in 
-    function of platform's 
-    user !!! Here, it's 
-    for linux ! ;)
+        Need to be modified in 
+        function of platform's 
+        user !!! Here, it's 
+        for linux ! ;)
     """
     #lpr = subprocess.Popen("/usr/bin/lpr", stdin=subprocess.PIPE)
     #lpr.stdin.write('4.15.0-96-generic')
@@ -70,12 +70,12 @@ def recordOption():
     print("Nom du patient : ", entrytext.get())
     with open('./14besoins/doc_suivi4/main_14b.txt', 'a+') as file:
         with open('./labo/doc_labo/result6.txt', 'a+') as file2:
-            file.write("\n\n----------------------------------------------------------\n")
+            file.write("\n----------------------------------------------------------\n")
             file.write("Date : ")
             file.write(time.strftime("%d/%m/%Y")+ '\n')
             file.write("Nom du patient : ")
             file.write(entrytext.get())
-            file2.write("\n----------------------------------------------------------\n\n")
+            file2.write("\n----------------------------------------------------------\n")
             file2.write("Date : ")
             file2.write(time.strftime("%d/%m/%Y")+ '\n')
             file2.write("Nom du patient : ")
@@ -532,8 +532,8 @@ def recordOption():
         print("+ Coproculture ok, nothing to do")
         with open('./14besoins/doc_suivi4/main_14b.txt', 'a+') as endfile:
             with open('./labo/doc_labo/result6.txt', 'a+') as endfile2:
-                endfile.write("\n----------------------------------------------------------\n")
-                endfile2.write("\n----------------------------------------------------------\n")
+                endfile.write("\n----------------------------------------------------------\n\n")
+                endfile2.write("\n----------------------------------------------------------\n\n")
  
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")

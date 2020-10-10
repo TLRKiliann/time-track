@@ -13,9 +13,9 @@ import time
 
 def sheetLabo():
     """
-    For openning file at pdf 
-    format with a bit prog-sys code.
-    For Linux, Windows and MAC.
+        For openning file at pdf 
+        format with a bit prog-sys code.
+        For Linux, Windows and MAC.
     """
     becall = platform.system()
     print(platform.system())
@@ -29,9 +29,9 @@ def sheetLabo():
 
 def sheetMicrobio():
     """
-    For openning file at pdf 
-    format with a bit prog-sys code.
-    For Linux, Windows and MAC.
+        For openning file at pdf 
+        format with a bit prog-sys code.
+        For Linux, Windows and MAC.
     """
     callplatform = platform.system()
     print(platform.system())
@@ -45,10 +45,10 @@ def sheetMicrobio():
 
 def printLabo():
     """
-    Need to be modified in 
-    function of platform's 
-    user !!! Here, it's 
-    for linux ! ;)
+        Need to be modified in 
+        function of platform's 
+        user !!! Here, it's 
+        for linux ! ;)
     """
     #lpr = subprocess.Popen("/usr/bin/lpr", stdin=subprocess.PIPE)
     #lpr.stdin.write('4.15.0-96-generic')
