@@ -82,7 +82,7 @@ class Application(Frame):
         try:
             if os.path.getsize('./vmed/doc_vmed4/resultvmed.txt'):
                 print("+ File 'VMED4' exist (add)!")
-                subprocess.call('./vmed/doc_vmed4/vmed_write.py')
+                subprocess.run('./vmed/doc_vmed4/vmed_write.py', check=True)
         except FileNotFoundError as outmsg:
             print("+ Sorry, file 'VMED4' not exist !", outmsg)
             print("+ File VMED4 created !")
@@ -95,7 +95,7 @@ class Application(Frame):
         try:
             if os.path.getsize('./vmed/doc_vmed4/resultvmed.txt'):
                 print("+ File 'VMED4' exist (read)!")
-                subprocess.call('./vmed/doc_vmed4/vmed_read.py')
+                subprocess.run('./vmed/doc_vmed4/vmed_read.py', check=True)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'VMED4' not exist !", outcom)
             with open('./vmed/doc_vmed4/resultvmed.txt', 'w') as file:
