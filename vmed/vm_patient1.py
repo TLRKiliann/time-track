@@ -31,7 +31,7 @@ class MenuBar(Frame):
     def __init__(self, boss=None):
         Frame.__init__(self, borderwidth=5, bg='cyan', padx=0)
         But2=Button(self, text ="Close", fg='cyan', bg='RoyalBlue4', relief=GROOVE,
-        	activebackground='aquamarine', command=boss.quit).pack(side=LEFT, padx=3)
+            activebackground='aquamarine', command=boss.quit).pack(side=LEFT, padx=3)
 
 # Application principale
 class Application(Frame):
