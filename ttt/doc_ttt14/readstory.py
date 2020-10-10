@@ -3,8 +3,8 @@
 
 
 from tkinter import *
+from tkinter import messagebox
 import os
-import subprocess
 
 
 def importationFile(fichier, encodage="Utf-8"):
@@ -13,6 +13,13 @@ def importationFile(fichier, encodage="Utf-8"):
     file.close()
     for li in content:
         textBox.insert(END, li)
+
+def importationFile2(fichier2, encodage="Utf-8"):
+    file2 = open(fichier2, 'r', encoding=encodage)
+    content=file2.readlines()
+    file2.close()
+    for li2 in content:
+        textBox.insert(END, li2)
 
 fen=Tk()
 fen.title("Historic of ttt")
@@ -60,12 +67,23 @@ textBox=Text(fen, height=15, width=60, font=18)
 textBox.pack(padx=30, pady=30)
 
 buttonClose=Button(fen, text="Quit", width=10, bd=3, fg='white', 
-	bg='RoyalBlue3', highlightbackground='RoyalBlue4',
+    bg='RoyalBlue3', highlightbackground='RoyalBlue4',
     activebackground='dark turquoise', 
     activeforeground='navy', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
-importationFile('./ttt/doc_ttt14/intro_ttt.txt',
-    encodage="Utf-8")
+try:
+    if os.path.getsize('./ttt/doc_ttt14/intro_ttt.txt'):
+        importationFile('./ttt/doc_ttt14/intro_ttt.txt', encodage="Utf-8")
+except FileNotFoundError as no_file:
+    print("+ File intro_ttt not found !")
+    messagebox.showinfo('INFO', 'File intro_ttt not found !')
+
+try:
+    if os.path.getsize('./ttt/doc_ttt14/intro_res.txt'):
+        importationFile2('./ttt/doc_ttt14/intro_res.txt', encodage="Utf-8")
+except FileNotFoundError as no_file:
+    print("+ File intro_res not found !")
+    messagebox.showinfo('INFO', 'File intro_res not found !')
 
 fen.mainloop()
