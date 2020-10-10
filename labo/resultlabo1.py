@@ -1017,7 +1017,6 @@ C53 = Checkbutton(app, text="Wellbutrin", fg='navy',
     width=20, anchor="w")
 C53.grid(sticky='e', row=16, column=3, padx=10)
 
-
 # Printable sheet
 labelinfuri=Label(app, text='--- Printable ---', 
     font="Times 14 bold", width=46,

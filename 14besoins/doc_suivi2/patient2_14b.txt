@@ -1,8 +1,8 @@
 ---####-|--- Affichage des besoins du patient à surveiller ---|-####---
 
-En date du : 23/09/2020 à 22:49:04 :
-Patient name : Jeffrey
-+ Surveillance pour éviter les dangers requise
-+ Surveillance propreté et/ou téguments requise
+En date du : 10/10/2020 à 18:03:02 :
+Patient name : Aaron Schwartz
++ Surveillance ou aide pour l'habillage/déshabillage requise
++ Agir pour aider la personne dans ses valeurs et croyances
 ---
 
