@@ -774,21 +774,21 @@ C19 = Checkbutton(app, text="Briviact", fg='navy',
 C19.grid(sticky='w', row=8, column=0, padx=10)
 
 CheckVar20 = IntVar()
-C20 = Checkbutton(app, text="Carbamazepine (Tégrétol)", fg='navy', 
+C20 = Checkbutton(app, text="Carbamazepine", fg='navy', 
     bg='cyan', variable=CheckVar20, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
 C20.grid(sticky='w', row=9, column=0, padx=10)
 
 CheckVar21 = IntVar()
-C21 = Checkbutton(app, text="Depakine (Valproate)", fg='navy', 
+C21 = Checkbutton(app, text="Depakine", fg='navy', 
     bg='cyan', variable=CheckVar21, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
 C21.grid(sticky='w', row=10, column=0, padx=10)
 
 CheckVar22 = IntVar()
-C22 = Checkbutton(app, text="Ethosuximide (Petinimid)", fg='navy', 
+C22 = Checkbutton(app, text="Ethosuximide", fg='navy', 
     bg='cyan', variable=CheckVar22, 
     onvalue=1, offvalue=0, height=1, 
     width=20, anchor="w")
