@@ -15,8 +15,10 @@ class ScrollCanvas(Frame):
         self.can=Canvas(self, width=width, height=height, bd=bd, bg=bg,
             relief=relief)
         self.frame = Frame(self.can)
+
         self.vsb = Scrollbar(self, orient=VERTICAL, command=self.can.yview)
         self.can.configure(yscrollcommand=self.vsb.set)
+        
         self.vsb.pack(side=RIGHT, fill=Y)
         self.can.pack(side=LEFT, fill=BOTH, expand=YES)
         self.can.create_window((4, 4), window=self.frame, anchor=NW,
