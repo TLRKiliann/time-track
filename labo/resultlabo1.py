@@ -638,123 +638,124 @@ labelresult=Label(app, text='--- Neuroleptiques ---',
 labelresult.grid(row=1, column=0, columnspan=4)
 
 CheckVar1 = IntVar()
-C1 = Checkbutton(app, text="Abilify", fg='navy', 
+C1 = Checkbutton(app, text="Abilify (aripiprazol)", fg='navy', 
     bg='cyan', variable=CheckVar1, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C1.grid(sticky='w', row=2, column=0, padx=10)
 
 CheckVar2 = IntVar()
-C2 = Checkbutton(app, text="Clopixol", fg='navy', 
+C2 = Checkbutton(app, text="Clopixol (zuclopenthixol)", fg='navy', 
     bg='cyan', variable=CheckVar2, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C2.grid(sticky='w', row=3, column=0, padx=10)
 
 CheckVar3 = IntVar()
-C3 = Checkbutton(app, text="Clozapine", fg='navy', 
+C3 = Checkbutton(app, text="Clozapine (clopin, leponex)", fg='navy', 
     bg='cyan', variable=CheckVar3, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C3.grid(sticky='w', row=4, column=0, padx=10)
 
 CheckVar4 = IntVar()
-C4 = Checkbutton(app, text="Dogmatil", fg='navy', 
+C4 = Checkbutton(app, text="Dogmatil (sulprid)", fg='navy', 
     bg='cyan', variable=CheckVar4, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C4.grid(sticky='w', row=5, column=0, padx=10)
 
 CheckVar5 = IntVar()
-C5 = Checkbutton(app, text="Entumine", fg='navy', 
+C5 = Checkbutton(app, text="Entumine (clotiapin)", fg='navy', 
     bg='cyan', variable=CheckVar5, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C5.grid(sticky='w', row=6, column=0, padx=10)
 
 CheckVar6 = IntVar()
-C6 = Checkbutton(app, text="Fluanxol", fg='navy', 
+C6 = Checkbutton(app, text="Fluanxol (flupentixol)", fg='navy', 
     bg='cyan', variable=CheckVar6, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C6.grid(sticky='w', row=2, column=1, padx=30)
 
 CheckVar7 = IntVar()
-C7 = Checkbutton(app, text="Haldol", fg='navy', 
+C7 = Checkbutton(app, text="Haldol (haloperidol)", fg='navy', 
     bg='cyan', variable=CheckVar7, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C7.grid(sticky='w', row=3, column=1, padx=30)
 
 CheckVar8 = IntVar()
-C8 = Checkbutton(app, text="Invega", fg='navy', 
+C8 = Checkbutton(app, text="Invega (paliperidon)", fg='navy', 
     bg='cyan', variable=CheckVar8, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C8.grid(sticky='w', row=4, column=1, padx=30)
 
 CheckVar9 = IntVar()
-C9 = Checkbutton(app, text="Nozinan", fg='navy', 
+C9 = Checkbutton(app, text="Nozinan (levomepromazin)", fg='navy', 
     bg='cyan', variable=CheckVar9, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C9.grid(sticky='w', row=5, column=1, padx=30)
 
 CheckVar10 = IntVar()
-C10 = Checkbutton(app, text="Prazine", fg='navy', 
+C10 = Checkbutton(app, text="Prazine (promazin)", fg='navy', 
     bg='cyan', variable=CheckVar10, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C10.grid(sticky='w', row=6, column=1, padx=30)
 
 # second column
 CheckVar12 = IntVar()
-C12 = Checkbutton(app, text="Quetiapine", fg='navy', 
+C12 = Checkbutton(app, text="Quetiapine (seroquel, sequase)", fg='navy', 
     bg='cyan', variable=CheckVar12, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C12.grid(sticky='w', row=2, column=2, padx=20)
 
 CheckVar13 = IntVar()
-C13 = Checkbutton(app, text="Risperdal", fg='navy', 
+C13 = Checkbutton(app, text="Risperdal (risperidon)", fg='navy', 
     bg='cyan', variable=CheckVar13, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C13.grid(sticky='w', row=3, column=2, padx=20)
 
 CheckVar14 = IntVar()
-C14 = Checkbutton(app, text="Serdolect", fg='navy', 
+C14 = Checkbutton(app, text="Serdolect (sertindol)", fg='navy', 
     bg='cyan', variable=CheckVar14, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C14.grid(sticky='w', row=4, column=2, padx=20)
 
 CheckVar15 = IntVar()
-C15 = Checkbutton(app, text="Solian", fg='navy', 
+C15 = Checkbutton(app, text="Solian (amisulprid)", fg='navy', 
     bg='cyan', variable=CheckVar15, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C15.grid(sticky='w', row=5, column=2, padx=20)
 
 CheckVar16 = IntVar()
-C16 = Checkbutton(app, text="Tiapridal", fg='navy', 
+C16 = Checkbutton(app, text="Tiapridal (tiaprid)", fg='navy', 
     bg='cyan', variable=CheckVar16, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C16.grid(sticky='w', row=6, column=2, padx=20)
 
+# third column
 CheckVar17 = IntVar()
-C17 = Checkbutton(app, text="Truxal", fg='navy', 
+C17 = Checkbutton(app, text="Truxal (chlorprothixen)", fg='navy', 
     bg='cyan', variable=CheckVar17, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C17.grid(sticky='e', row=2, column=3, padx=10)
 
 CheckVar18 = IntVar()
-C18 = Checkbutton(app, text="Zyprexa", fg='navy', 
+C18 = Checkbutton(app, text="Zyprexa (olanzapin)", fg='navy', 
     bg='cyan', variable=CheckVar18, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=30, anchor="w")
 C18.grid(sticky='e', row=3, column=3, padx=10)
 
 # MAE
