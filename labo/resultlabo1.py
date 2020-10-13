@@ -600,6 +600,16 @@ def recordOption():
                 file2.write("# Wellbutrin : (add result of dosage here)\n")
     else:
         print("+ Wellbutrin ok, nothing to do")
+
+    print(CheckVar54.get())
+    if CheckVar54.get()==1:
+        print("+ Lithium was checked !")
+        with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result.txt', 'a+') as file2:
+                file.write("# Lithium : (add result of dosage here)\n")
+                file2.write("# Lithium : (add result of dosage here)\n")
+    else:
+        print("+ Lithium ok, nothing to do")
         with open('./14besoins/doc_suivi/main_14b.txt', 'a+') as endfile:
             with open('./labo/doc_labo/result.txt', 'a+') as endfile2:
                 endfile.write("---------------------------------------------------------\n\n")
@@ -634,7 +644,7 @@ entryname.grid(sticky='w', row=0, column=2)
 # NL
 labelresult=Label(app, text='--- Neuroleptiques ---', 
     font="Times 14 bold", width=132,
-    height=1, bg='RoyalBlue3', fg='white')
+    height=1, bg='RoyalBlue3', fg='aquamarine')
 labelresult.grid(row=1, column=0, columnspan=4)
 
 CheckVar1 = IntVar()
@@ -761,7 +771,7 @@ C18.grid(sticky='e', row=3, column=3, padx=10)
 # MAE
 labelresult2=Label(app, text='--- Médicaments anti-épileptiques ---', 
     font="Times 14 bold", width=132,
-    height=1, bg='RoyalBlue3', fg='white')
+    height=1, bg='RoyalBlue3', fg='aquamarine')
 labelresult2.grid(sticky='w', row=7, column=0, columnspan=4, padx=10)
 
 #separator = Label(app, height=5, bd=2, relief=SUNKEN)
@@ -917,7 +927,7 @@ C39.grid(sticky='e', row=10, column=3, padx=10)
 # ATD
 labelinf=Label(app, text='--- Antidépresseurs ---',
     font="Times 14 bold", width=132,
-    height=1, bg='RoyalBlue3', fg='white')
+    height=1, bg='RoyalBlue3', fg='aquamarine')
 labelinf.grid(sticky='w', row=14, column=0, columnspan=4, padx=10)
 
 CheckVar40 = IntVar()
@@ -1018,36 +1028,43 @@ C53 = Checkbutton(app, text="Wellbutrin (bupropion)", fg='navy',
     width=30, anchor="w")
 C53.grid(sticky='e', row=16, column=3, padx=10)
 
-# Printable sheet
-labelinfuri=Label(app, text='--- Printable ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='grey30', fg='cyan')
-labelinfuri.grid(sticky='w', row=29, column=0, columnspan=2, padx=10)
+# Lithium
+labeltest=Label(app, text='--- Thymorégulateur ---', 
+    font="Times 14 bold", width=61,
+    height=1, bg='RoyalBlue3', fg='aquamarine')
+labeltest.grid(sticky='w', row=29, column=2, columnspan=2, padx=20)
+
+CheckVar54 = IntVar()
+C54 = Checkbutton(app, text="Lithiofor (lithium)", fg='navy', 
+    bg='cyan', variable=CheckVar54, 
+    onvalue=1, offvalue=0, height=1, 
+    width=30, anchor="w")
+C54.grid(sticky='w', row=30, column=2, padx=20)
 
 # Printable sheet
-labeltest=Label(app, text='--- Printable2 ---', 
-    font="Times 14 bold", width=45,
-    height=1, bg='grey30', fg='cyan')
-labeltest.grid(sticky='e', row=29, column=2, columnspan=2, padx=10)
+labelinfuri=Label(app, text='--- Printable ---', 
+    font="Times 14 bold", width=61,
+    height=1, bg='navy', fg='aquamarine')
+labelinfuri.grid(sticky='w', row=29, column=0, columnspan=2, padx=20)
 
 # Buttons printable sheet
 buttonsheet=Button(app, text="Complete lab sheet", width=15,
     fg='cyan', bg='navy', command=sheetLabo)
-buttonsheet.grid(row=30, column=0, padx=10, pady=10)
+buttonsheet.grid(row=31, column=0, padx=10, pady=10)
 
 buttonsheet=Button(app, text="Microbiology sheet", width=15,
     fg='cyan', bg='navy', command=sheetMicrobio)
-buttonsheet.grid(row=30, column=1, padx=10, pady=10)
+buttonsheet.grid(row=31, column=1, padx=10, pady=10)
 
 # Button save and quit
 buttonsave=Button(app, text="Save", width=10, bd=3,
-    fg='yellow', bg='RoyalBlue3', activebackground='dark turquoise',
+    fg='aquamarine', bg='RoyalBlue3', activebackground='dark turquoise',
     highlightbackground='RoyalBlue4', command=recordTofile)
-buttonsave.grid(sticky='e', row=44, column=2, pady=10)
+buttonsave.grid(sticky='e', row=31, column=2, padx=20, pady=10)
 
 buttonquit=Button(app, text='Quit', width=10, bd=3,
     fg='white', bg='RoyalBlue3', activebackground='dark turquoise',
     highlightbackground='RoyalBlue4', command=quit)
-buttonquit.grid(sticky='e', row=44, column=3, padx=10, pady=10)
+buttonquit.grid(sticky='e', row=31, column=3, padx=20, pady=10)
 
 app.mainloop()
