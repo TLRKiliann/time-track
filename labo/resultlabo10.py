@@ -73,473 +73,553 @@ def recordOption():
             file.write("\n----------------------------------------------------------\n")
             file.write("Date : ")
             file.write(time.strftime("%d/%m/%Y")+ '\n')
-            file.write("Nom du patient : ")
+            file.write("Patient name : ")
             file.write(entrytext.get())
-            file2.write("\n----------------------------------------------------------\n")
+            file2.write("\n---------------------------------------------------------\n")
             file2.write("Date : ")
             file2.write(time.strftime("%d/%m/%Y")+ '\n')
-            file2.write("Nom du patient : ")
+            file2.write("Patient name : ")
             file2.write(entrytext.get())
 
     print(CheckVar1.get())
     if CheckVar1.get()==1:
-        print("+ Na value was checked !")
+        print("+ Abilify was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Na value and treatment : (add what the patient needs)\n")
-                file2.write("# Na value and treatment : (add what the patient needs)\n")
+                file.write("# Abilify : (add result of dosage here)\n")
+                file2.write("# Abilify : (add result of dosage here)\n")
     else:
-        print("+ Na value ok, nothing to do")
+        print("+ Abilify ok, nothing to do")
         
     print(CheckVar2.get())
     if CheckVar2.get()==1:
-        print("+ K value was checked !")
+        print("+ Clopixol was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# K value and treatment : (add what the patient needs)\n")
-                file2.write("# K value and treatment : (add what the patient needs)\n")
+                file.write("# Clopixol : (add result of dosage here)\n")
+                file2.write("# Clopixol : (add result of dosage here)\n")
     else:
-        print("+ K value ok, nothing to do")
+        print("+ Clopixol ok, nothing to do")
 
     print(CheckVar3.get())
     if CheckVar3.get()==1:
-        print("+ Ca value was checked !")
+        print("+ Clozapine was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Ca value and treatment : (add what the patient needs)\n")
-                file2.write("# Ca value and treatment : (add what the patient needs)\n")
+                file.write("# Clozapine : (add result of dosage here)\n")
+                file2.write("# Clozapine : (add result of dosage here)\n")
     else:
-        print("+ Ca value ok, nothing to do")
+        print("+ Clozapine ok, nothing to do")
         
     print(CheckVar4.get())
     if CheckVar4.get()==1:
-        print("+ Mg value was checked !")
+        print("+ Dogmatil was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Mg value and treatment : (add what the patient needs)\n")
-                file2.write("# Mg value and treatment : (add what the patient needs)\n")
+                file.write("# Dogmatil : (add result of dosage here)\n")
+                file2.write("# Dogmatil : (add result of dosage here)\n")
     else:
-        print("+ Mg value ok, nothing to do")
+        print("+ Dogmatil ok, nothing to do")
 
     print(CheckVar5.get())
     if CheckVar5.get()==1:
-        print("+ Cl value was checked !")
+        print("+ Entumine was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Cl value and treatment : (add what the patient needs)\n")
-                file2.write("# Cl value and treatment : (add what the patient needs)\n")
+                file.write("# Entumine : (add result of dosage here)\n")
+                file2.write("# Entumine : (add result of dosage here)\n")
     else:
-        print("+ Cl value ok, nothing to do")
+        print("+ Entumine ok, nothing to do")
 
     print(CheckVar6.get())
     if CheckVar6.get()==1:
-        print("+ Phosphates value was checked !")
+        print("+ Fluanxol was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Phosphates value and treatment : (add what the patient needs)\n")
-                file2.write("# Phosphates value and treatment : (add what the patient needs)\n")
+                file.write("# Fluanxol : (add result of dosage here)\n")
+                file2.write("# Fluanxol : (add result of dosage here)\n")
     else:
-        print("+ Phosphates value ok, nothing to do")
+        print("+ Fluanxol ok, nothing to do")
 
     print(CheckVar7.get())
     if CheckVar7.get()==1:
-        print("+ Bicarbonates value was checked !")
+        print("+ Haldol was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Bicarbonates value and treatment : (add what the patient needs)\n")
-                file2.write("# Bicarbonates value and treatment : (add what the patient needs)\n")
+                file.write("# Haldol : (add result of dosage here)\n")
+                file2.write("# Haldol : (add result of dosage here)\n")
     else:
-        print("+ Bicarbonates value ok, nothing to do")
+        print("+ Haldol ok, nothing to do")
 
     print(CheckVar8.get())
     if CheckVar8.get()==1:
-        print("+ Cardiac workup value was checked !")
+        print("+ Invega was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Cardiac workup value and treatment : (add what the patient needs)\n")
-                file2.write("# Cardiac workup value and treatment : (add what the patient needs)\n")
+                file.write("# Invega : (add result of dosage here)\n")
+                file2.write("# Invega : (add result of dosage here)\n")
     else:
-        print("+ Cardiac workup value ok, nothing to do")
+        print("+ Invega ok, nothing to do")
 
     print(CheckVar9.get())
     if CheckVar9.get()==1:
-        print("+ CK-MB value was checked !")
+        print("+ Nozinan was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# CK-MB value and treatment : (add what the patient needs)\n")
-                file2.write("# CK-MB value and treatment : (add what the patient needs)\n")
+                file.write("# Nozinan : (add result of dosage here)\n")
+                file2.write("# Nozinan : (add result of dosage here)\n")
     else:
-        print("+ CK-MB value ok, nothing to do")
+        print("+ Nozinan ok, nothing to do")
 
     print(CheckVar10.get())
     if CheckVar10.get()==1:
-        print("+ Troponin value was checked !")
+        print("+ Prazine was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Troponin value and treatment : (add what the patient needs)\n")
-                file2.write("# Troponin value and treatment : (add what the patient needs)\n")
+                file.write("# Prazine : (add result of dosage here)\n")
+                file2.write("# Prazine : (add result of dosage here)\n")
     else:
-        print("+ Troponin value ok, nothing to do")
+        print("+ Prazine ok, nothing to do")
 
     print(CheckVar12.get())
     if CheckVar12.get()==1:
-        print("+ Cholesterol total value was checked !")
+        print("+ Quetiapine was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Cholesterol total value and treatment : (add what the patient needs)\n")
-                file2.write("# Cholesterol total value and treatment : (add what the patient needs)\n")
+                file.write("# Quetiapine : (add result of dosage here)\n")
+                file2.write("# Quetiapine : (add result of dosage here)\n")
     else:
-        print("+ Cholesterol total value ok, nothing to do")
+        print("+ Quetiapine ok, nothing to do")
 
     print(CheckVar13.get())
     if CheckVar13.get()==1:
-        print("+ HDL value was checked !")
+        print("+ Risperdal was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# HDL value and treatment : (add what the patient needs)\n")
-                file2.write("# HDL value and treatment : (add what the patient needs)\n")
+                file.write("# Risperdal : (add result of dosage here)\n")
+                file2.write("# Risperdal : (add result of dosage here)\n")
     else:
-        print("+ HDL value ok, nothing to do")
+        print("+ Risperdal ok, nothing to do")
 
     print(CheckVar14.get())
     if CheckVar14.get()==1:
-        print("+ LDL value was checked !")
+        print("+ Serdolect was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# LDL value and treatment : (add what the patient needs)\n")
-                file2.write("# LDL value and treatment : (add what the patient needs)\n")
+                file.write("# Serdolect : (add result of dosage here)\n")
+                file2.write("# Serdolect : (add result of dosage here)\n")
     else:
-        print("+ LDL value ok, nothing to do")
+        print("+ Serdolect ok, nothing to do")
 
     print(CheckVar15.get())
     if CheckVar15.get()==1:
-        print("+ Triglycerides value was checked !")
+        print("+ Solian was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Triglycerides value and treatment : (add what the patient needs)\n")
-                file2.write("# Triglycerides value and treatment : (add what the patient needs)\n")
+                file.write("# Solian : (add result of dosage here)\n")
+                file2.write("# Solian : (add result of dosage here)\n")
     else:
-        print("+ Triglycerides value ok, nothing to do")
+        print("+ Solian ok, nothing to do")
 
     print(CheckVar16.get())
     if CheckVar16.get()==1:
-        print("+ ASAT value was checked !")
+        print("+ Tiapridal was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# ASAT value and treatment : (add what the patient needs)\n")
-                file2.write("# ASAT value and treatment : (add what the patient needs)\n")
+                file.write("# Tiapridal : (add result of dosage here)\n")
+                file2.write("# Tiapridal : (add result of dosage here)\n")
     else:
-        print("+ ASAT value ok, nothing to do")
+        print("+ Tiapridal ok, nothing to do")
 
     print(CheckVar17.get())
     if CheckVar17.get()==1:
-        print("+ ALAT value was checked !")
+        print("+ Truxal was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# ALAT value and treatment : (add what the patient needs)\n")
-                file2.write("# ALAT value and treatment : (add what the patient needs)\n")
+                file.write("# Truxal : (add result of dosage here)\n")
+                file2.write("# Truxal : (add result of dosage here)\n")
     else:
-        print("+ ALAT value ok, nothing to do")
+        print("+ Truxal ok, nothing to do")
 
     print(CheckVar18.get())
     if CheckVar18.get()==1:
-        print("+ Gamma-GT value was checked !")
+        print("+ Zyprexa was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Gamma-GT value and treatment : (add what the patient needs)\n")
-                file2.write("# Gamma-GT value and treatment : (add what the patient needs)\n")
+                file.write("# Zyprexa : (add result of dosage here)\n")
+                file2.write("# Zyprexa : (add result of dosage here)\n")
     else:
-        print("+ Gamma-GT value ok, nothing to do")
+        print("+ Zyprexa ok, nothing to do")
 
     print(CheckVar19.get())
     if CheckVar19.get()==1:
-        print("+ Alkaline phosphatase value was checked !")
+        print("+ Briviact was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Alkaline phosphatase value and treatment : (add what the patient needs)\n")
-                file2.write("# Alkaline phosphatase value and treatment : (add what the patient needs)\n")
+                file.write("# Briviact : (add result of dosage here)\n")
+                file2.write("# Briviact : (add result of dosage here)\n")
     else:
-        print("+ Alkaline phosphatase value ok, nothing to do")
+        print("+ Briviact ok, nothing to do")
 
     print(CheckVar20.get())
     if CheckVar20.get()==1:
-        print("+ Bilirubin direct value was checked !")
+        print("+ Carbamazepine was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Bilirubin direct value and treatment : (add what the patient needs)\n")
-                file2.write("# Bilirubin direct value and treatment : (add what the patient needs)\n")
+                file.write("# Carbamazepine : (add result of dosage here)\n")
+                file2.write("# Carbamazepine : (add result of dosage here)\n")
     else:
-        print("+ Bilirubin direct value ok, nothing to do")
+        print("+ Carbamazepine ok, nothing to do")
 
     print(CheckVar21.get())
     if CheckVar21.get()==1:
-        print("+ Bilirubin indirect value was checked !")
+        print("+ Depakine was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Bilirubin indirect value and treatment : (add what the patient needs)\n")
-                file2.write("# Bilirubin indirect value and treatment : (add what the patient needs)\n")
+                file.write("# Depakine : (add result of dosage here)\n")
+                file2.write("# Depakine : (add result of dosage here)\n")
     else:
-        print("+ Bilirubin indirect value ok, nothing to do")
+        print("+ Depakine ok, nothing to do")
 
     print(CheckVar22.get())
     if CheckVar22.get()==1:
-        print("+ LDH value was checked !")
+        print("+ Ethosuximide was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# LDH value and treatment : (add what the patient needs)\n")
-                file2.write("# LDH value and treatment : (add what the patient needs)\n")
+                file.write("# Ethosuximide : (add result of dosage here)\n")
+                file2.write("# Ethosuximide : (add result of dosage here)\n")
     else:
-        print("+ LDH value ok, nothing to do")
+        print("+ Ethosuximide ok, nothing to do")
 
     print(CheckVar23.get())
     if CheckVar23.get()==1:
-        print("+ Uric acid value was checked !")
+        print("+ Fycompa was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Uric acid value and treatment : (add what the patient needs)\n")
-                file2.write("# Uric acid value and treatment : (add what the patient needs)\n")
+                file.write("# Fycompa : (add result of dosage here)\n")
+                file2.write("# Fycompa : (add result of dosage here)\n")
     else:
-        print("+ Uric acid value ok, nothing to do")
+        print("+ Fycompa ok, nothing to do")
 
     print(CheckVar24.get())
     if CheckVar24.get()==1:
-        print("+ TP value was checked !")
+        print("+ Gabitril was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# TP value and treatment : (add what the patient needs)\n")
-                file2.write("# TP value and treatment : (add what the patient needs)\n")
+                file.write("# Gabitril : (add result of dosage here)\n")
+                file2.write("# Gabitril : (add result of dosage here)\n")
     else:
-        print("+ TP value ok, nothing to do")
+        print("+ Gabitril ok, nothing to do")
 
     print(CheckVar25.get())
     if CheckVar25.get()==1:
-        print("+ INR value was checked !")
+        print("+ Inovelon was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# INR value and treatment : (add what the patient needs)\n")
-                file2.write("# INR value and treatment : (add what the patient needs)\n")
+                file.write("# Inovelon : (add result of dosage here)\n")
+                file2.write("# Inovelon : (add result of dosage here)\n")
     else:
-        print("+ INR value ok, nothing to do")
+        print("+ Inovelon ok, nothing to do")
 
     print(CheckVar26.get())
     if CheckVar26.get()==1:
-        print("+ Fasting glucose value was checked !")
+        print("+ Keppra was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Fasting glucose value and treatment : (add what the patient needs)\n")
-                file2.write("# Fasting glucose value and treatment : (add what the patient needs)\n")
+                file.write("# Keppra : (add result of dosage here)\n")
+                file2.write("# Keppra : (add result of dosage here)\n")
     else:
-        print("+ Fasting glucose value ok, nothing to do")
+        print("+ Keppra ok, nothing to do")
 
     print(CheckVar27.get())
     if CheckVar27.get()==1:
-        print("+ Postprandial glucose value was checked !")
+        print("+ Lamictal was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Postprandial glucose value and treatment : (add what the patient needs)\n")
-                file2.write("# Postprandial glucose value and treatment : (add what the patient needs)\n")
+                file.write("# Lamictal : (add result of dosage here)\n")
+                file2.write("# Lamictal : (add result of dosage here)\n")
     else:
-        print("+ Postprandial glucose value ok, nothing to do")
+        print("+ Lamictal ok, nothing to do")
 
     print(CheckVar28.get())
     if CheckVar28.get()==1:
-        print("+ HbA1c value was checked !")
+        print("+ Lyrica was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# HbA1c value and treatment : (add what the patient needs)\n")
-                file2.write("# HbA1c value and treatment : (add what the patient needs)\n")
+                file.write("# Lyrica : (add result of dosage here)\n")
+                file2.write("# Lyrica : (add result of dosage here)\n")
     else:
-        print("+ HbA1c value ok, nothing to do")
+        print("+ Lyrica ok, nothing to do")
 
     print(CheckVar29.get())
     if CheckVar29.get()==1:
-        print("+ Iron value was checked !")
+        print("+ Myzoline was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Iron value and treatment : (add what the patient needs)\n")
-                file2.write("# Iron value and treatment : (add what the patient needs)\n")
+                file.write("# Myzoline : (add result of dosage here)\n")
+                file2.write("# Myzoline : (add result of dosage here)\n")
     else:
-        print("+ Iron value ok, nothing to do")
+        print("+ Myzoline ok, nothing to do")
 
     print(CheckVar30.get())
     if CheckVar30.get()==1:
-        print("+ Ferritine value was checked !")
+        print("+ Neurontin was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Ferritine value and treatment : (add what the patient needs)\n")
-                file2.write("# Ferritine value and treatment : (add what the patient needs)\n")
+                file.write("# Neurontin : (add result of dosage here)\n")
+                file2.write("# Neurontin : (add result of dosage here)\n")
     else:
-        print("+ Ferritine value ok, nothing to do")
+        print("+ Neurontin ok, nothing to do")
 
     print(CheckVar31.get())
     if CheckVar31.get()==1:
-        print("+ Vitamin B12 value was checked !")
+        print("+ Phenobarbital was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Vitamin B12 value and treatment : (add what the patient needs)\n")
-                file2.write("# Vitamin B12 value and treatment : (add what the patient needs)\n")
+                file.write("# Phenobarbital : (add result of dosage here)\n")
+                file2.write("# Phenobarbital : (add result of dosage here)\n")
     else:
-        print("+ Vitamin B12 value ok, nothing to do")
+        print("+ Phenobarbital ok, nothing to do")
 
     print(CheckVar32.get())
     if CheckVar32.get()==1:
-        print("+ Folates (B9) value was checked !")
+        print("+ Phenytoine was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Folates (B9) value and treatment : (add what the patient needs)\n")
-                file2.write("# Folates (B9) value and treatment : (add what the patient needs)\n")
+                file.write("# Phenytoine : (add result of dosage here)\n")
+                file2.write("# Phenytoine : (add result of dosage here)\n")
     else:
-        print("+ Folates (B9) value ok, nothing to do")
+        print("+ Phenytoine ok, nothing to do")
 
     print(CheckVar33.get())
     if CheckVar33.get()==1:
-        print("+ Urea value was checked !")
+        print("+ Sabril was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Urea value and treatment : (add what the patient needs)\n")
-                file2.write("# Urea value and treatment : (add what the patient needs)\n")
+                file.write("# Sabril : (add result of dosage here)\n")
+                file2.write("# Sabril : (add result of dosage here)\n")
     else:
-        print("+ Urea value ok, nothing to do")
+        print("+ Sabril ok, nothing to do")
 
     print(CheckVar34.get())
     if CheckVar34.get()==1:
-        print("+ Creat value was checked !")
+        print("+ Taloxa was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Creat value and treatment : (add what the patient needs)\n")
-                file2.write("# Creat value and treatment : (add what the patient needs)\n")
+                file.write("# Taloxa : (add result of dosage here)\n")
+                file2.write("# Taloxa : (add result of dosage here)\n")
     else:
-        print("+ Creat value ok, nothing to do")
+        print("+ Taloxa ok, nothing to do")
 
     print(CheckVar35.get())
     if CheckVar35.get()==1:
-        print("+ Sediment. velocity value was checked !")
+        print("+ Topamax was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Sediment. velocity value and treatment : (add what the patient needs)\n")
-                file2.write("# Sediment. velocity value and treatment : (add what the patient needs)\n")
+                file.write("# Topamax : (add result of dosage here)\n")
+                file2.write("# Topamax : (add result of dosage here)\n")
     else:
-        print("+ Sediment. velocity value ok, nothing to do")
+        print("+ Topamax ok, nothing to do")
 
     print(CheckVar36.get())
     if CheckVar36.get()==1:
-        print("+ C-react. protein value was checked !")
+        print("+ Trileptal was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# C-react. protein value and treatment : (add what the patient needs)\n")
-                file2.write("# C-react. protein value and treatment : (add what the patient needs)\n")
+                file.write("# Trileptal : (add result of dosage here)\n")
+                file2.write("# Trileptal : (add result of dosage here)\n")
     else:
-        print("+ C-react. protein value ok, nothing to do")
+        print("+ Trileptal ok, nothing to do")
 
     print(CheckVar37.get())
     if CheckVar37.get()==1:
-        print("+ Albumina value was checked !")
+        print("+ Trobalt was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Albumina value and treatment : (add what the patient needs)\n")
-                file2.write("# Albumina value and treatment : (add what the patient needs)\n")
+                file.write("# Trobalt : (add result of dosage here)\n")
+                file2.write("# Trobalt : (add result of dosage here)\n")
     else:
-        print("+ Albumina value ok, nothing to do")
+        print("+ Trobalt ok, nothing to do")
 
     print(CheckVar38.get())
     if CheckVar38.get()==1:
-        print("+ Cortisol value was checked !")
+        print("+ Vimpat was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Cortisol value and treatment : (add what the patient needs)\n")
-                file2.write("# Cortisol value and treatment : (add what the patient needs)\n")
+                file.write("# Vimpat : (add result of dosage here)\n")
+                file2.write("# Vimpat : (add result of dosage here)\n")
     else:
-        print("+ Cortisol value ok, nothing to do")
+        print("+ Vimpat ok, nothing to do")
 
     print(CheckVar39.get())
     if CheckVar39.get()==1:
-        print("+ ACTH value was checked !")
+        print("+ Zonegran was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# ACTH value and treatment : (add what the patient needs)\n")
-                file2.write("# ACTH value and treatment : (add what the patient needs)\n")
+                file.write("# Zonegran : (add result of dosage here)\n")
+                file2.write("# Zonegran : (add result of dosage here)\n")
     else:
-        print("+ ACTH value ok, nothing to do")
+        print("+ Zonegran ok, nothing to do")
 
     print(CheckVar40.get())
     if CheckVar40.get()==1:
-        print("+ TSH value was checked !")
+        print("+ Anafranil was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# TSH value and treatment : (add what the patient needs)\n")
-                file2.write("# TSH value and treatment : (add what the patient needs)\n")
+                file.write("# Anafranil : (add result of dosage here)\n")
+                file2.write("# Anafranil : (add result of dosage here)\n")
     else:
-        print("+ TSH value ok, nothing to do")
+        print("+ Anafranil ok, nothing to do")
 
     print(CheckVar41.get())
     if CheckVar41.get()==1:
-        print("+ free T4 value was checked !")
+        print("+ Citalopram was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# free T4 value and treatment : (add what the patient needs)\n")
-                file2.write("# free T4 value and treatment : (add what the patient needs)\n")
+                file.write("# Citalopram : (add result of dosage here)\n")
+                file2.write("# Citalopram : (add result of dosage here)\n")
     else:
-        print("+ free T4 value ok, nothing to do")
+        print("+ Citalopram ok, nothing to do")
 
     print(CheckVar42.get())
     if CheckVar42.get()==1:
-        print("+ free free T3 value was checked !")
+        print("+ Cipralex was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# free free T3 value and treatment : (add what the patient needs)\n")
-                file2.write("# free free T3 value and treatment : (add what the patient needs)\n")
+                file.write("# Cipralex : (add result of dosage here)\n")
+                file2.write("# Cipralex : (add result of dosage here)\n")
     else:
-        print("+ free free T3 value ok, nothing to do")
+        print("+ Cipralex ok, nothing to do")
 
     print(CheckVar43.get())
     if CheckVar43.get()==1:
-        print("+ free total T3 value was checked !")
+        print("+ Cymbalta was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# free total T3 value and treatment : (add what the patient needs)\n")
-                file2.write("# free total T3 value and treatment : (add what the patient needs)\n")
+                file.write("# Cymbalta : (add result of dosage here)\n")
+                file2.write("# Cymbalta : (add result of dosage here)\n")
     else:
-        print("+ free total T3 value ok, nothing to do")
+        print("+ Cymbalta ok, nothing to do")
 
     print(CheckVar44.get())
     if CheckVar44.get()==1:
-        print("+ Stix (strip) was checked !")
+        print("+ Deroxat was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Stix (strip) and treatment will be... : (add what the patient needs)\n")
-                file2.write("# Stix (strip) and treatment will be... : (add what the patient needs)\n")
+                file.write("# Deroxat : (add result of dosage here)\n")
+                file2.write("# Deroxat : (add result of dosage here)\n")
     else:
-        print("+ Stix (strip) ok, nothing to do")
+        print("+ Deroxat ok, nothing to do")
 
     print(CheckVar45.get())
     if CheckVar45.get()==1:
-        print("+ Uricult done value was checked !")
+        print("+ Effexor was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Uricult done and treatment : (add what the patient needs)\n")
-                file2.write("# Uricult done and treatment : (add what the patient needs)\n")
+                file.write("# Effexor : (add result of dosage here)\n")
+                file2.write("# Effexor : (add result of dosage here)\n")
     else:
-        print("+ Uricult ok, nothing to do")
+        print("+ Effexor ok, nothing to do")
 
     print(CheckVar46.get())
     if CheckVar46.get()==1:
-        print("+ Coproculture was checked !")
+        print("+ Floxifral was checked !")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
             with open('./labo/doc_labo/result10.txt', 'a+') as file2:
-                file.write("# Coproculture and treatment : (add what the patient needs)\n")
-                file2.write("# Coproculture and treatment : (add what the patient needs)\n")
+                file.write("# Floxifral : (add result of dosage here)\n")
+                file2.write("# Floxifral : (add result of dosage here)\n")
     else:
-        print("+ Coproculture ok, nothing to do")
+        print("+ Floxifral ok, nothing to do")
+
+    print(CheckVar47.get())
+    if CheckVar47.get()==1:
+        print("+ Fluctine was checked !")
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result10.txt', 'a+') as file2:
+                file.write("# Fluctine : (add result of dosage here)\n")
+                file2.write("# Fluctine : (add result of dosage here)\n")
+    else:
+        print("+ Fluctine ok, nothing to do")
+
+    print(CheckVar48.get())
+    if CheckVar48.get()==1:
+        print("+ Ludiomil was checked !")
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result10.txt', 'a+') as file2:
+                file.write("# Ludiomil : (add result of dosage here)\n")
+                file2.write("# Ludiomil : (add result of dosage here)\n")
+    else:
+        print("+ Ludiomil ok, nothing to do")
+
+    print(CheckVar49.get())
+    if CheckVar49.get()==1:
+        print("+ Remeron was checked !")
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result10.txt', 'a+') as file2:
+                file.write("# Remeron : (add result of dosage here)\n")
+                file2.write("# Remeron : (add result of dosage here)\n")
+    else:
+        print("+ Remeron ok, nothing to do")
+
+    print(CheckVar50.get())
+    if CheckVar50.get()==1:
+        print("+ Saroten was checked !")
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result10.txt', 'a+') as file2:
+                file.write("# Saroten : (add result of dosage here)\n")
+                file2.write("# Saroten : (add result of dosage here)\n")
+    else:
+        print("+ Saroten ok, nothing to do")
+
+    print(CheckVar51.get())
+    if CheckVar51.get()==1:
+        print("+ Sertraline was checked !")
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result10.txt', 'a+') as file2:
+                file.write("# Sertraline : (add result of dosage here)\n")
+                file2.write("# Sertraline : (add result of dosage here)\n")
+    else:
+        print("+ Sertraline ok, nothing to do")
+
+    print(CheckVar52.get())
+    if CheckVar52.get()==1:
+        print("+ Surmontil was checked !")
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result10.txt', 'a+') as file2:
+                file.write("# Surmontil : (add result of dosage here)\n")
+                file2.write("# Surmontil : (add result of dosage here)\n")
+    else:
+        print("+ Surmontil ok, nothing to do")
+
+    print(CheckVar53.get())
+    if CheckVar53.get()==1:
+        print("+ Wellbutrin was checked !")
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result10.txt', 'a+') as file2:
+                file.write("# Wellbutrin : (add result of dosage here)\n")
+                file2.write("# Wellbutrin : (add result of dosage here)\n")
+    else:
+        print("+ Wellbutrin ok, nothing to do")
+
+    print(CheckVar54.get())
+    if CheckVar54.get()==1:
+        print("+ Lithium was checked !")
+        with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as file:
+            with open('./labo/doc_labo/result10.txt', 'a+') as file2:
+                file.write("# Lithium : (add result of dosage here)\n")
+                file2.write("# Lithium : (add result of dosage here)\n")
+    else:
+        print("+ Lithium ok, nothing to do")
         with open('./14besoins/doc_suivi10/main_14b.txt', 'a+') as endfile:
             with open('./labo/doc_labo/result10.txt', 'a+') as endfile2:
-                endfile.write("\n----------------------------------------------------------\n\n")
-                endfile2.write("\n----------------------------------------------------------\n\n")
- 
+                endfile.write("---------------------------------------------------------\n\n")
+                endfile2.write("---------------------------------------------------------\n\n")
+
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
 
 def comburTips():
-    subprocess.call('./labo/combtest10.py')
+    subprocess.call('./labo/combtest.py')
 
 app = Tk()
 app.title("Labo check")
@@ -561,420 +641,430 @@ entrytext.set(line1)
 entryname=Entry(app, textvariable=entrytext, width=20)
 entryname.grid(sticky='w', row=0, column=2)
 
-# Electrolytes
-labelresult=Label(app, text='--- Electrolytes ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelresult.grid(sticky='w', row=1, column=0, columnspan=2, padx=10)
+# NL
+labelresult=Label(app, text='--- Neuroleptiques ---', 
+    font="Times 14 bold", width=132,
+    height=1, bg='RoyalBlue3', fg='aquamarine')
+labelresult.grid(row=1, column=0, columnspan=4)
 
 CheckVar1 = IntVar()
-C1 = Checkbutton(app, text="Na⁺", fg='navy', 
+C1 = Checkbutton(app, text="Abilify (aripiprazol)", fg='navy', 
     bg='cyan', variable=CheckVar1, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=26, anchor="w")
 C1.grid(sticky='w', row=2, column=0, padx=10)
 
 CheckVar2 = IntVar()
-C2 = Checkbutton(app, text="K⁺", fg='navy', 
+C2 = Checkbutton(app, text="Clopixol (zuclopenthixol)", fg='navy', 
     bg='cyan', variable=CheckVar2, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
+    width=26, anchor="w")
 C2.grid(sticky='w', row=3, column=0, padx=10)
 
 CheckVar3 = IntVar()
-C3 = Checkbutton(app, text="Ca⁺ (total)", fg='navy', 
+C3 = Checkbutton(app, text="Clozapine (clopin, leponex)", fg='navy', 
     bg='cyan', variable=CheckVar3, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C3.grid(sticky='w', row=2, column=1, padx=30)
+    width=26, anchor="w")
+C3.grid(sticky='w', row=4, column=0, padx=10)
 
 CheckVar4 = IntVar()
-C4 = Checkbutton(app, text="Mg⁺", fg='navy', 
+C4 = Checkbutton(app, text="Dogmatil (sulprid)", fg='navy', 
     bg='cyan', variable=CheckVar4, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C4.grid(sticky='w', row=3, column=1, padx=30)
+    width=26, anchor="w")
+C4.grid(sticky='w', row=5, column=0, padx=10)
 
 CheckVar5 = IntVar()
-C5 = Checkbutton(app, text="Cl⁻", fg='navy', 
+C5 = Checkbutton(app, text="Entumine (clotiapin)", fg='navy', 
     bg='cyan', variable=CheckVar5, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C5.grid(sticky='w', row=4, column=1, padx=30)
+    width=26, anchor="w")
+C5.grid(sticky='w', row=6, column=0, padx=10)
 
 CheckVar6 = IntVar()
-C6 = Checkbutton(app, text="Phosphates (HPO4²⁻)", fg='navy', 
+C6 = Checkbutton(app, text="Fluanxol (flupentixol)", fg='navy', 
     bg='cyan', variable=CheckVar6, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C6.grid(sticky='w', row=4, column=0, padx=10)
+    width=26, anchor="w")
+C6.grid(sticky='w', row=2, column=1, padx=30)
 
 CheckVar7 = IntVar()
-C7 = Checkbutton(app, text="Bicarbonates (HCO₃⁻)", fg='navy', 
+C7 = Checkbutton(app, text="Haldol (haloperidol)", fg='navy', 
     bg='cyan', variable=CheckVar7, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C7.grid(sticky='w', row=5, column=0, padx=10)
-
-# Cardio-vasc
-labelcardio=Label(app, text='--- Cardiovascular ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelcardio.grid(row=1, column=2, padx=10)
+    width=26, anchor="w")
+C7.grid(sticky='w', row=3, column=1, padx=30)
 
 CheckVar8 = IntVar()
-C8 = Checkbutton(app, text="Cardiac workup", fg='navy', 
+C8 = Checkbutton(app, text="Invega (paliperidon)", fg='navy', 
     bg='cyan', variable=CheckVar8, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C8.grid(sticky='w', row=2, column=2, padx=10)
+    width=26, anchor="w")
+C8.grid(sticky='w', row=4, column=1, padx=30)
 
 CheckVar9 = IntVar()
-C9 = Checkbutton(app, text="CK-MB", fg='navy', 
+C9 = Checkbutton(app, text="Nozinan (levomepromazin)", fg='navy', 
     bg='cyan', variable=CheckVar9, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C9.grid(sticky='w', row=3, column=2, padx=10)
+    width=26, anchor="w")
+C9.grid(sticky='w', row=5, column=1, padx=30)
 
 CheckVar10 = IntVar()
-C10 = Checkbutton(app, text="Troponin", fg='navy', 
+C10 = Checkbutton(app, text="Prazine (promazin)", fg='navy', 
     bg='cyan', variable=CheckVar10, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C10.grid(sticky='w', row=4, column=2, padx=10)
+    width=26, anchor="w")
+C10.grid(sticky='w', row=6, column=1, padx=30)
 
 # second column
 CheckVar12 = IntVar()
-C12 = Checkbutton(app, text="Cholesterol total", fg='navy', 
+C12 = Checkbutton(app, text="Quetiapine (seroquel, sequase)", fg='navy', 
     bg='cyan', variable=CheckVar12, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C12.grid(sticky='e', row=2, column=2, padx=20)
+    width=26, anchor="w")
+C12.grid(sticky='w', row=2, column=2, padx=20)
 
 CheckVar13 = IntVar()
-C13 = Checkbutton(app, text="HDL", fg='navy', 
+C13 = Checkbutton(app, text="Risperdal (risperidon)", fg='navy', 
     bg='cyan', variable=CheckVar13, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C13.grid(sticky='e', row=3, column=2, padx=20)
+    width=26, anchor="w")
+C13.grid(sticky='w', row=3, column=2, padx=20)
 
 CheckVar14 = IntVar()
-C14 = Checkbutton(app, text="LDL", fg='navy', 
+C14 = Checkbutton(app, text="Serdolect (sertindol)", fg='navy', 
     bg='cyan', variable=CheckVar14, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C14.grid(sticky='e', row=4, column=2, padx=20)
+    width=26, anchor="w")
+C14.grid(sticky='w', row=4, column=2, padx=20)
 
 CheckVar15 = IntVar()
-C15 = Checkbutton(app, text="Triglycerides", fg='navy', 
+C15 = Checkbutton(app, text="Solian (amisulprid)", fg='navy', 
     bg='cyan', variable=CheckVar15, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C15.grid(sticky='e', row=5, column=2, padx=20)
+    width=26, anchor="w")
+C15.grid(sticky='w', row=5, column=2, padx=20)
 
-# Hepatologia
-labelresult2=Label(app, text='--- Hepathology ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelresult2.grid(sticky='w', row=7, column=0, columnspan=2, padx=10)
+CheckVar16 = IntVar()
+C16 = Checkbutton(app, text="Tiapridal (tiaprid)", fg='navy', 
+    bg='cyan', variable=CheckVar16, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C16.grid(sticky='w', row=6, column=2, padx=20)
+
+# third column
+CheckVar17 = IntVar()
+C17 = Checkbutton(app, text="Truxal (chlorprothixen)", fg='navy', 
+    bg='cyan', variable=CheckVar17, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C17.grid(sticky='e', row=2, column=3, padx=10)
+
+CheckVar18 = IntVar()
+C18 = Checkbutton(app, text="Zyprexa (olanzapin)", fg='navy', 
+    bg='cyan', variable=CheckVar18, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C18.grid(sticky='e', row=3, column=3, padx=10)
+
+# MAE
+labelresult2=Label(app, text='--- Médicaments anti-épileptiques ---', 
+    font="Times 14 bold", width=132,
+    height=1, bg='RoyalBlue3', fg='aquamarine')
+labelresult2.grid(sticky='w', row=7, column=0, columnspan=4, padx=10)
 
 #separator = Label(app, height=5, bd=2, relief=SUNKEN)
 #separator.grid(sticky='ns', row=2, column=1)
 
-CheckVar16 = IntVar()
-C16 = Checkbutton(app, text="ASAT", fg='navy', 
-    bg='cyan', variable=CheckVar16, 
-    onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C16.grid(sticky='w', row=8, column=0, padx=10)
-
-CheckVar17 = IntVar()
-C17 = Checkbutton(app, text="ALAT", fg='navy', 
-    bg='cyan', variable=CheckVar17, 
-    onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C17.grid(sticky='w', row=9, column=0, padx=10)
-
-CheckVar18 = IntVar()
-C18 = Checkbutton(app, text="Gamma-GT", fg='navy', 
-    bg='cyan', variable=CheckVar18, 
-    onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C18.grid(sticky='w', row=10, column=0, padx=10)
-
 CheckVar19 = IntVar()
-C19 = Checkbutton(app, text="Alkaline phosphatase", fg='navy', 
+C19 = Checkbutton(app, text="Briviact (brivaracetam)", fg='navy', 
     bg='cyan', variable=CheckVar19, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C19.grid(sticky='w', row=11, column=0, padx=10)
+    width=26, anchor="w")
+C19.grid(sticky='w', row=8, column=0, padx=10)
 
 CheckVar20 = IntVar()
-C20 = Checkbutton(app, text="Bilirubin direct", fg='navy', 
+C20 = Checkbutton(app, text="Carbamazepine (tegretol)", fg='navy', 
     bg='cyan', variable=CheckVar20, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C20.grid(sticky='w', row=10, column=1, padx=30)
+    width=26, anchor="w")
+C20.grid(sticky='w', row=9, column=0, padx=10)
 
 CheckVar21 = IntVar()
-C21 = Checkbutton(app, text="Bilirubin indirect", fg='navy', 
+C21 = Checkbutton(app, text="Depakine (valproate)", fg='navy', 
     bg='cyan', variable=CheckVar21, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C21.grid(sticky='w', row=11, column=1, padx=30)
+    width=26, anchor="w")
+C21.grid(sticky='w', row=10, column=0, padx=10)
 
 CheckVar22 = IntVar()
-C22 = Checkbutton(app, text="LDH", fg='navy', 
+C22 = Checkbutton(app, text="Ethosuximide (petinimid)", fg='navy', 
     bg='cyan', variable=CheckVar22, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C22.grid(sticky='w', row=8, column=1, padx=30)
+    width=26, anchor="w")
+C22.grid(sticky='w', row=11, column=0, padx=10)
 
 CheckVar23 = IntVar()
-C23 = Checkbutton(app, text="Uric acid", fg='navy', 
+C23 = Checkbutton(app, text="Fycompa (perampanel)", fg='navy',
     bg='cyan', variable=CheckVar23, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C23.grid(sticky='w', row=9, column=1, padx=30)
-
-# Coagulation
-labelresult3=Label(app, text='--- Coagulation ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelresult3.grid(row=7, column=2, padx=10)
+    width=26, anchor="w")
+C23.grid(sticky='w', row=12, column=0, padx=10)
 
 CheckVar24 = IntVar()
-C24 = Checkbutton(app, text="TP", fg='navy', 
+C24 = Checkbutton(app, text="Gabitril (tiagabine)", fg='navy', 
     bg='cyan', variable=CheckVar24, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C24.grid(sticky='w', row=8, column=2, padx=10)
+    width=26, anchor="w")
+C24.grid(sticky='w', row=13, column=0, padx=10)
 
 CheckVar25 = IntVar()
-C25 = Checkbutton(app, text="INR", fg='navy', 
+C25 = Checkbutton(app, text="Inovelon (rufinamid)", fg='navy', 
     bg='cyan', variable=CheckVar25, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C25.grid(sticky='w', row=9, column=2, padx=10)
-
-# Glucids
-labelgluco=Label(app, text='--- Carbohydrates ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelgluco.grid(sticky='w', row=12, column=0, columnspan=2, padx=10)
+    width=26, anchor="w")
+C25.grid(sticky='w', row=8, column=1, padx=30)
 
 CheckVar26 = IntVar()
-C26 = Checkbutton(app, text="Fasting glucose", fg='navy', 
+C26 = Checkbutton(app, text="Keppra (levetiracetam)", fg='navy', 
     bg='cyan', variable=CheckVar26, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C26.grid(sticky='w', row=13, column=0, padx=10)
+    width=26, anchor="w")
+C26.grid(sticky='w', row=9, column=1, padx=30)
 
 CheckVar27 = IntVar()
-C27 = Checkbutton(app, text="Postprandial glucose", fg='navy', 
+C27 = Checkbutton(app, text="Lamictal (lamotrigine)", fg='navy', 
     bg='cyan', variable=CheckVar27, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C27.grid(sticky='w', row=14, column=0, padx=10)
+    width=26, anchor="w")
+C27.grid(sticky='w', row=10, column=1, padx=30)
 
 CheckVar28 = IntVar()
-C28 = Checkbutton(app, text="HbA1c", fg='navy', 
+C28 = Checkbutton(app, text="Lyrica (pregabalin)", fg='navy', 
     bg='cyan', variable=CheckVar28, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C28.grid(sticky='w', row=15, column=0, padx=10)
-
-# Anemia
-labelanemia=Label(app, text='--- Anemia ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelanemia.grid(row=12, column=2, padx=10)
+    width=26, anchor="w")
+C28.grid(sticky='w', row=11, column=1, padx=30)
 
 CheckVar29 = IntVar()
-C29 = Checkbutton(app, text="Iron", fg='navy', 
+C29 = Checkbutton(app, text="Myzoline (primidon)", fg='navy', 
     bg='cyan', variable=CheckVar29, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C29.grid(sticky='w', row=13, column=2, padx=10)
+    width=26, anchor="w")
+C29.grid(sticky='w', row=12, column=1, padx=30)
 
 CheckVar30 = IntVar()
-C30 = Checkbutton(app, text="Ferritin", fg='navy', 
+C30 = Checkbutton(app, text="Neurontin (gabapentin)", fg='navy', 
     bg='cyan', variable=CheckVar30, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C30.grid(sticky='w', row=14, column=2, padx=10)
+    width=26, anchor="w")
+C30.grid(sticky='w', row=13, column=1, padx=30)
 
 CheckVar31 = IntVar()
-C31 = Checkbutton(app, text="Vitamin B12", fg='navy', 
+C31 = Checkbutton(app, text="Phenobarbital (aphenylbarbit)", fg='navy', 
     bg='cyan', variable=CheckVar31, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C31.grid(sticky='e', row=13, column=2, padx=10)
+    width=26, anchor="w")
+C31.grid(sticky='w', row=8, column=2, padx=20)
 
 CheckVar32 = IntVar()
-C32 = Checkbutton(app, text="Folates (B9)", fg='navy', 
+C32 = Checkbutton(app, text="Phenytoïne", fg='navy', 
     bg='cyan', variable=CheckVar32, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C32.grid(sticky='e', row=14, column=2, padx=10)
-
-# Reins
-labelinf=Label(app, text='--- Renal ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelinf.grid(sticky='w', row=17, column=0, columnspan=2, padx=10)
+    width=26, anchor="w")
+C32.grid(sticky='w', row=9, column=2, padx=20)
 
 CheckVar33 = IntVar()
-C33 = Checkbutton(app, text="Urea", fg='navy', 
+C33 = Checkbutton(app, text="Sabril (vigabatrin)", fg='navy', 
     bg='cyan', variable=CheckVar33, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C33.grid(sticky='w', row=18, column=0, padx=10)
+    width=26, anchor="w")
+C33.grid(sticky='w', row=10, column=2, padx=20)
 
 CheckVar34 = IntVar()
-C34 = Checkbutton(app, text="Creat.", fg='navy', 
+C34 = Checkbutton(app, text="Taloxa (felbamate)", fg='navy', 
     bg='cyan', variable=CheckVar34, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C34.grid(sticky='w', row=19, column=0, padx=10)
-
-# Inflammation
-labelinf=Label(app, text='--- Inflammation ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelinf.grid(row=17, column=2, padx=10)
+    width=26, anchor="w")
+C34.grid(sticky='w', row=11, column=2, padx=20)
 
 CheckVar35 = IntVar()
-C35 = Checkbutton(app, text="Sediment. velocity", fg='navy', 
+C35 = Checkbutton(app, text="Topamax (topiramate)", fg='navy', 
     bg='cyan', variable=CheckVar35, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C35.grid(sticky='w', row=18, column=2, padx=10)
+    width=26, anchor="w")
+C35.grid(sticky='w', row=12, column=2, padx=20)
 
 CheckVar36 = IntVar()
-C36 = Checkbutton(app, text="C-react. protein", fg='navy', 
+C36 = Checkbutton(app, text="Trileptal (oxcarbazepin)", fg='navy', 
     bg='cyan', variable=CheckVar36, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C36.grid(sticky='w', row=19, column=2, padx=10)
+    width=26, anchor="w")
+C36.grid(sticky='w', row=13, column=2, padx=20)
 
 CheckVar37 = IntVar()
-C37 = Checkbutton(app, text="Albumina", fg='navy', 
+C37 = Checkbutton(app, text="Trobalt (retigabin)", fg='navy', 
     bg='cyan', variable=CheckVar37, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C37.grid(sticky='w', row=20, column=2, padx=10)
+    width=26, anchor="w")
+C37.grid(sticky='e', row=8, column=3, padx=10)
 
 CheckVar38 = IntVar()
-C38 = Checkbutton(app, text="Cortisol", fg='navy', 
+C38 = Checkbutton(app, text="Vimpat (lacosamid)", fg='navy', 
     bg='cyan', variable=CheckVar38, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C38.grid(sticky='e', row=18, column=2, padx=10)
+    width=26, anchor="w")
+C38.grid(sticky='e', row=9, column=3, padx=10)
 
 CheckVar39 = IntVar()
-C39 = Checkbutton(app, text="ACTH", fg='navy', 
+C39 = Checkbutton(app, text="Zonegran (zonisamid)", fg='navy', 
     bg='cyan', variable=CheckVar39, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C39.grid(sticky='e', row=19, column=2, padx=10)
+    width=26, anchor="w")
+C39.grid(sticky='e', row=10, column=3, padx=10)
 
-# Endocrinology
-labelinf=Label(app, text='--- Endocrinology ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelinf.grid(sticky='w', row=23, column=0, columnspan=2, padx=10)
+# ATD
+labelinf=Label(app, text='--- Antidépresseurs ---',
+    font="Times 14 bold", width=132,
+    height=1, bg='RoyalBlue3', fg='aquamarine')
+labelinf.grid(sticky='w', row=14, column=0, columnspan=4, padx=10)
 
 CheckVar40 = IntVar()
-C40 = Checkbutton(app, text="TSH", fg='navy', 
+C40 = Checkbutton(app, text="Anafrani (clomipramin)", fg='navy', 
     bg='cyan', variable=CheckVar40, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C40.grid(sticky='w', row=24, column=0, padx=10)
+    width=26, anchor="w")
+C40.grid(sticky='w', row=15, column=0, padx=10)
 
 CheckVar41 = IntVar()
-C41 = Checkbutton(app, text="free T4", fg='navy', 
+C41 = Checkbutton(app, text="Citalopram", fg='navy', 
     bg='cyan', variable=CheckVar41, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C41.grid(sticky='w', row=25, column=0, padx=10)
+    width=26, anchor="w")
+C41.grid(sticky='w', row=16, column=0, padx=10)
 
 CheckVar42 = IntVar()
-C42 = Checkbutton(app, text="free T3", fg='navy', 
+C42 = Checkbutton(app, text="Cipralex (escitalopram)", fg='navy', 
     bg='cyan', variable=CheckVar42, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C42.grid(sticky='w', row=24, column=1, padx=30)
+    width=26, anchor="w")
+C42.grid(sticky='w', row=17, column=0, padx=10)
 
 CheckVar43 = IntVar()
-C43 = Checkbutton(app, text="total T3", fg='navy', 
+C43 = Checkbutton(app, text="Cymbalta (duloxetin)", fg='navy', 
     bg='cyan', variable=CheckVar43, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C43.grid(sticky='w', row=25, column=1, padx=30)
-
-# Urinary infection
-labelinfuri=Label(app, text='--- Urinary infection ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labelinfuri.grid(sticky='w', row=26, column=0, columnspan=2, padx=10)
+    width=26, anchor="w")
+C43.grid(sticky='w', row=18, column=0, padx=10)
 
 CheckVar44 = IntVar()
-C44 = Checkbutton(app, text="Stix (strip)", fg='navy', 
+C44 = Checkbutton(app, text="Deroxat (paroxetin)", fg='navy', 
     bg='cyan', variable=CheckVar44, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C44.grid(sticky='w', row=27, column=0, padx=10)
-
-# Stix
-ButtStix=Button(app, text='- Combur -', width=20,
-    height=1, bg='navy', fg='cyan', command=comburTips)
-ButtStix.grid(row=27, column=1, padx=20)
+    width=26, anchor="w")
+C44.grid(sticky='w', row=15, column=1, padx=30)
 
 CheckVar45 = IntVar()
-C45 = Checkbutton(app, text="Uricult", fg='navy', 
+C45 = Checkbutton(app, text="Effexor (venlafaxin)", fg='navy', 
     bg='cyan', variable=CheckVar45, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C45.grid(sticky='w', row=28, column=0, padx=10)
-
-# Coproculture
-labecopro=Label(app, text='--- Coproculture ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='white')
-labecopro.grid(row=26, column=2, padx=10)
+    width=26, anchor="w")
+C45.grid(sticky='w', row=16, column=1, padx=30)
 
 CheckVar46 = IntVar()
-C46 = Checkbutton(app, text="Check", fg='navy', 
+C46 = Checkbutton(app, text="Floxifral (fluvoxamin)", fg='navy', 
     bg='cyan', variable=CheckVar46, 
     onvalue=1, offvalue=0, height=1, 
-    width=20, anchor="w")
-C46.grid(sticky='w', row=27, column=2, padx=10)
+    width=26, anchor="w")
+C46.grid(sticky='w', row=17, column=1, padx=30)
+
+CheckVar47 = IntVar()
+C47 = Checkbutton(app, text="Fluctine (fluoxetin)", fg='navy', 
+    bg='cyan', variable=CheckVar47, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C47.grid(sticky='w', row=18, column=1, padx=30)
+
+CheckVar48 = IntVar()
+C48 = Checkbutton(app, text="Ludiomil (maprotilin)", fg='navy', 
+    bg='cyan', variable=CheckVar48, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C48.grid(sticky='w', row=15, column=2, padx=20)
+
+CheckVar49 = IntVar()
+C49 = Checkbutton(app, text="Remeron (mirtazapin)", fg='navy', 
+    bg='cyan', variable=CheckVar49, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C49.grid(sticky='w', row=16, column=2, padx=20)
+
+CheckVar50 = IntVar()
+C50 = Checkbutton(app, text="Saroten (amitriptylin)", fg='navy', 
+    bg='cyan', variable=CheckVar50, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C50.grid(sticky='w', row=17, column=2, padx=20)
+
+CheckVar51 = IntVar()
+C51 = Checkbutton(app, text="Sertraline (zoloft)", fg='navy', 
+    bg='cyan', variable=CheckVar51, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C51.grid(sticky='w', row=18, column=2, padx=20)
+
+CheckVar52 = IntVar()
+C52 = Checkbutton(app, text="Surmontil (trimipramin)", fg='navy', 
+    bg='cyan', variable=CheckVar52, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C52.grid(sticky='e', row=15, column=3, padx=10)
+
+CheckVar53 = IntVar()
+C53 = Checkbutton(app, text="Wellbutrin (bupropion)", fg='navy', 
+    bg='cyan', variable=CheckVar53, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C53.grid(sticky='e', row=16, column=3, padx=10)
+
+# Lithium
+labeltest=Label(app, text='--- Thymorégulateur ---', 
+    font="Times 14 bold", width=26,
+    height=1, bg='RoyalBlue3', fg='aquamarine')
+labeltest.grid(sticky='w', row=29, column=2, padx=20)
+
+CheckVar54 = IntVar()
+C54 = Checkbutton(app, text="Lithiofor (lithium)", fg='navy', 
+    bg='cyan', variable=CheckVar54, 
+    onvalue=1, offvalue=0, height=1, 
+    width=26, anchor="w")
+C54.grid(sticky='w', row=30, column=2, padx=20)
 
 # Printable sheet
 labelinfuri=Label(app, text='--- Printable ---', 
-    font="Times 14 bold", width=46,
-    height=1, bg='gray30', fg='cyan')
+    font="Times 14 bold", width=60,
+    height=1, bg='navy', fg='aquamarine')
 labelinfuri.grid(sticky='w', row=29, column=0, columnspan=2, padx=10)
 
 # Buttons printable sheet
 buttonsheet=Button(app, text="Complete lab sheet", width=15,
     fg='cyan', bg='navy', command=sheetLabo)
-buttonsheet.grid(row=30, column=0, padx=10, pady=10)
+buttonsheet.grid(row=31, column=0, padx=10, pady=10)
 
 buttonsheet=Button(app, text="Microbiology sheet", width=15,
     fg='cyan', bg='navy', command=sheetMicrobio)
-buttonsheet.grid(row=30, column=1, padx=10, pady=10)
+buttonsheet.grid(row=31, column=1, padx=10, pady=10)
 
 # Button save and quit
 buttonsave=Button(app, text="Save", width=10, bd=3,
-    fg='yellow', bg='RoyalBlue3', activebackground='dark turquoise',
+    fg='aquamarine', bg='RoyalBlue3', activebackground='dark turquoise',
     highlightbackground='RoyalBlue4', command=recordTofile)
-buttonsave.grid(row=44, column=2, pady=10)
+buttonsave.grid(sticky='e', row=31, column=2, padx=20, pady=10)
 
 buttonquit=Button(app, text='Quit', width=10, bd=3,
     fg='white', bg='RoyalBlue3', activebackground='dark turquoise',
     highlightbackground='RoyalBlue4', command=quit)
-buttonquit.grid(sticky='e', row=44, column=2, padx=10, pady=10)
+buttonquit.grid(sticky='e', row=31, column=3, padx=20, pady=10)
 
 app.mainloop()
