@@ -807,7 +807,7 @@ C22.grid(sticky='w', row=11, column=0, padx=10)
 
 CheckVar23 = IntVar()
 C23 = Checkbutton(app, text="Fycompa (perampanel)", fg='navy',
-	bg='cyan', variable=CheckVar23, 
+    bg='cyan', variable=CheckVar23, 
     onvalue=1, offvalue=0, height=1, 
     width=30, anchor="w")
 C23.grid(sticky='w', row=12, column=0, padx=10)
@@ -1043,9 +1043,9 @@ C54.grid(sticky='w', row=30, column=2, padx=20)
 
 # Printable sheet
 labelinfuri=Label(app, text='--- Printable ---', 
-    font="Times 14 bold", width=61,
+    font="Times 14 bold", width=63,
     height=1, bg='navy', fg='aquamarine')
-labelinfuri.grid(sticky='w', row=29, column=0, columnspan=2, padx=20)
+labelinfuri.grid(sticky='w', row=29, column=0, columnspan=2, padx=10)
 
 # Buttons printable sheet
 buttonsheet=Button(app, text="Complete lab sheet", width=15,
