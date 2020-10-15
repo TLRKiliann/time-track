@@ -78,16 +78,16 @@ with open('./allergy/allergyfile3.txt', 'r') as allerfile:
 
 root=Tk()
 root.title("Results of Medical Visit")
-root.configure(background='#82193e')
+root.configure(background='cyan')
 
 # To place side by side labelo + entrylab
-top = Frame(root, bg='#82193e')
-bottom = Frame(root, bg='#82193e')
+top = Frame(root, bg='cyan')
+bottom = Frame(root, bg='cyan')
 top.pack(side=TOP)
 bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
 
 labelo=Label(root, text="Results of Medical Visit for : ",
-    font='Arial 18 bold', fg='cyan', bg='#82193e')
+    font='Arial 18 bold', fg='navy', bg='cyan')
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 text_name=StringVar()
@@ -96,7 +96,7 @@ text_name.set(line1)
 Entryname.pack(in_=top, side=LEFT, padx=10, pady=20)
 
 labelallergy=Label(root, text="Allergy",
-    font='Arial 18 bold', fg='coral', bg='#82193e')
+    font='Arial 18 bold', fg='coral', bg='cyan')
 labelallergy.pack(padx=5, pady=5)
 
 text_all=StringVar()
