@@ -92,8 +92,7 @@ class Application(Frame):
             print("+ Sorry, file 'Diag' not exist !", outmsg)
             print("+ File diag.txt created !")
             with open('./diag/doc_diag2/diagrecap2.txt', 'w') as file:
-                file.write("Diagnostics :\n")
-            #self.confRec()
+                file.write("--- Diagnostics ---\n")
             self.confRec()
 
     def Frame_Ap2(self):

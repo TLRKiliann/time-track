@@ -94,7 +94,7 @@ class Application(Frame):
             print("+ Sorry, file 'Diag' not exist !", outmsg)
             print("+ File diag.txt created !")
             with open('./diag/doc_diag/diagrecap1.txt', 'w') as file:
-                file.write("Diagnostics :\n")
+                file.write("--- Diagnostics ---\n")
             self.confRec()
 
     def Frame_Ap2(self):
@@ -113,8 +113,7 @@ class Application(Frame):
         self.MsgBox2msg = messagebox.showinfo("Warning", "File 'Diag'"
             "was created, but no Diagnosis has been checked !")
         subprocess.call('./diag/doc_diag/diag_write.py')
-
-
+        
 if __name__=='__main__':
     app = Application()
     app.mainloop()
