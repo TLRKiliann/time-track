@@ -27,16 +27,16 @@ with open('./allergy/allergyfile22.txt', 'r') as allerfile:
 
 fen=Tk()
 fen.title("Results of Medical Visit")
-fen.configure(background='#82193e')
+fen.configure(background='cyan')
 
 # To place side by side labelo + entrylab
-top = Frame(fen, bg='#82193e')
-bottom = Frame(fen, bg='#82193e')
+top = Frame(fen, bg='cyan')
+bottom = Frame(fen, bg='cyan')
 top.pack(side=TOP)
 bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
 
 labelo=Label(fen, text="Results of Medical Visit for : ",
-    font='Arial 18 bold', fg='cyan', bg='#82193e')
+    font='Arial 18 bold', fg='navy', bg='cyan')
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 text_name=StringVar()
@@ -45,7 +45,7 @@ Entryname=Entry(fen, textvariable=text_name)
 Entryname.pack(in_=top, side=LEFT, padx=10, pady=20)
 
 labelallergy=Label(fen, text="Allergy",
-    font='Arial 18 bold', fg='coral', bg='#82193e')
+    font='Arial 18 bold', fg='coral', bg='cyan')
 labelallergy.pack(padx=5, pady=5)
 
 text_aller=StringVar()
