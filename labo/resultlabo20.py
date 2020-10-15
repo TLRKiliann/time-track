@@ -610,10 +610,11 @@ def recordOption():
                 file2.write("# Lithium : (add result of dosage here)\n")
     else:
         print("+ Lithium ok, nothing to do")
-        with open('./14besoins/doc_suivi20/main_14b.txt', 'a+') as endfile:
-            with open('./labo/doc_labo/result20.txt', 'a+') as endfile2:
-                endfile.write("---------------------------------------------------------\n\n")
-                endfile2.write("---------------------------------------------------------\n\n")
+
+    with open('./14besoins/doc_suivi20/main_14b.txt', 'a+') as endfile:
+        with open('./labo/doc_labo/result20.txt', 'a+') as endfile2:
+            endfile.write("---------------------------------------------------------\n\n")
+            endfile2.write("---------------------------------------------------------\n\n")
 
 def confRec():
     MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
