@@ -107,7 +107,7 @@ with plt.style.context('dark_background'):
 # to verify if file exist.
 try:
     if os.path.getsize('./calBmi/doc_BMI18/customBmi.py'):
-        subprocess.run('./calBmi/doc_BMI18/customBmi.py')
+        subprocess.run('./calBmi/doc_BMI18/customBmi.py', check=True)
 except FileNotFoundError as callfile1:
     print("+ File customBmi.py doesn't exist !", callfile1)
 
