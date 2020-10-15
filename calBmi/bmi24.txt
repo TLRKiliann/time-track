@@ -1,0 +1,21 @@
+Date : 01-08-2020
+Heure : 21:14:09
+Prenom et Nom : Gérard Lanvin
+Poids : 89
+Taille : 1.86
+BMI : 25.725517400855587
+
+Date : 10-08-2020
+Heure : 21:14:09
+Prenom et Nom : Gérard Lanvin
+Poids : 84
+Taille : 1.86
+BMI : 24.280263614290668
+
+Date : 25-08-2020
+Heure : 21:14:09
+Prenom et Nom : Gérard Lanvin
+Poids : 86
+Taille : 1.86
+BMI : 24.858365128916635
+
