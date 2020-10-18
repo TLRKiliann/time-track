@@ -1,0 +1,8 @@
+---####-|--- Affichage des besoins du patient à surveiller ---|-####---
+
+En date du : 18/10/2020 à 12:46:09 :
+Patient name : Gérard Lanvin
++ Accompagnement ou aide dans se recréer requis
++ Accompagnement ou aide dans l'apprentissage requis
+---
+

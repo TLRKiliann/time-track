@@ -30,3 +30,28 @@ En date du : 09/10/2020 à 11:33:07 :
 test pour nouveau rdv chez Dr Truc
 Il va faire tel truc.
 
+En date du : 18/10/2020 à 12:47:58 :
+test 1
+
+---####-|--- Affichage des besoins du patient à surveiller ---|-####---
+
+En date du : 10/10/2020 à 10:50:46 :
+Patient name : exec tech
++ Surveillance posturale et/ou des déplacements requise
+---
+
+---####-|--- Affichage des besoins du patient à surveiller ---|-####---
+
+En date du : 10/10/2020 à 10:51:13 :
+Patient name : exec tech
++ Surveillance pour éviter les dangers requise
+turc1
++ Surveillance propreté et/ou téguments requise
+truc2
+---
+
+
+
+En date du : 18/10/2020 à 12:48:53 :
+truc 3
+
