@@ -29,7 +29,7 @@ class ScrollCanvas(Frame):
 class MenuBar(Frame):
     """Barre menu déroulant"""
     def __init__(self, boss=None):
-        Frame.__init__(self, borderwidth=5, bg='dim gray', padx=0)
+        Frame.__init__(self, borderwidth=5, bg='cyan', padx=0)
         But2=Button(self, text ="Close", fg='cyan', bg='RoyalBlue4', relief=GROOVE,
             activebackground='aquamarine', command=boss.quit).pack(side=LEFT, padx=3)
 
