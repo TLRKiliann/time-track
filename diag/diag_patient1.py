@@ -76,7 +76,7 @@ class Application(Frame):
         self.pack()
 
     # Méthode pour reconfigurer la scrollbar à chaque fois
-    def onFrameConfigure(self, event):
+    def onFrameConfigure(self):
         '''Reset the scroll region to encompass the inner frame'''
         self.can.configure(scrollregion=self.can.bbox(ALL))
 
