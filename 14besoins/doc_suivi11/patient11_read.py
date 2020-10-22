@@ -1,16 +1,11 @@
 #!/usr/bin/python3
-# -*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 
 from tkinter import *
+from tkinter import messagebox
+import os
 
-
-def importationFile(fichier, encodage="Utf-8"):
-    file = open(fichier, 'r', encoding=encodage)
-    content=file.readlines()
-    file.close()
-    for li in content:
-        textBox.insert(END, li)
 
 fen=Tk()
 fen.title("Care and monitoring")
@@ -54,6 +49,13 @@ text_all.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
 Entryall=Entry(fen, textvariable=text_all, width=60)
 Entryall.pack(padx=10, pady=5)
 
+def importationFile(fichier, encodage="Utf-8"):
+    file = open(fichier, 'r', encoding=encodage)
+    content=file.readlines()
+    file.close()
+    for li in content:
+        textBox.insert(END, li)
+
 textBox=Text(fen, height=15, width=60, font=18, relief=SUNKEN)
 textBox.pack(padx=30, pady=30)
 
@@ -63,9 +65,10 @@ buttonClose=Button(fen, text="Quit", fg='white', width=10, bd=3,
 buttonClose.pack(side='right', padx=10, pady=10)
 
 try:
-    importationFile('./14besoins/doc_suivi11/main_14b.txt',
-        encodage="Utf-8")
-except FileNotFoundError as filereach:
-    print("File main_14b.txt not exist", filereach)
+    if os.path.getsize('./14besoins/doc_suivi11/main_14b.txt'):
+        importationFile('./14besoins/doc_suivi11/main_14b.txt', encodage="Utf-8")
+except FileNotFoundError as file_reach:
+    print("+ File not found !", file_reach)
+    messagebox.showwarning("WARNING", "File does not exist or file not found !")
 
 fen.mainloop()
