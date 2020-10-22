@@ -71,13 +71,15 @@ class Application(Frame):
         self.fb3=self.can.create_window(self.x3, self.y3, window=self.b3)
         self.pack()
 
-    # Méthode pour reconfigurer la scrollbar à chaque fois
+    # Method to reconfigure scrollbar everytime
     def onFrameConfigure(self, event):
         '''Reset the scroll region to encompass the inner frame'''
         self.can.configure(scrollregion=self.can.bbox(ALL))
 
-    # Func to add
     def lienDirect(self):
+        """
+        To verify and write in VM file
+        """
         try:
             if os.path.getsize('./vmed/doc_vmed/resultvmed.txt'):
                 print("+ File 'VMED' exist (add)!")
@@ -86,11 +88,13 @@ class Application(Frame):
             print("+ Sorry, file 'VMED' not exist !", outmsg)
             print("+ File VMED created !!!")
             with open('./vmed/doc_vmed/resultvmed.txt', 'w') as file:
-                file.write(".")
+                file.write("--- MEDICAL VISIT ---\n")
             self.confRec()
 
-    # Func to read
     def lectureFic(self):
+        """
+        To verify and read diag file
+        """
         try:
             if os.path.getsize('./vmed/doc_vmed/resultvmed.txt'):
                 print("+ File 'VMED' exist (read)!")
@@ -98,12 +102,13 @@ class Application(Frame):
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'VMED' not exist !", outcom)
             with open('./vmed/doc_vmed/resultvmed.txt', 'w') as file:
-                file.write(".")
+                file.write("--- MEDICAL VISIT ---\n")
             self.confRec()
 
     def confRec(self):
         self.MsgBox2msg = messagebox.showinfo("Warning", "File 'VMED'"
             "was created, but no Medical Visit has been checked !")
+        subprocess.run('./diag/doc_diag/diag_write.py', check=True)
 
 if __name__=='__main__':
     app = Application()

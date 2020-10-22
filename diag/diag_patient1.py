@@ -4,8 +4,6 @@
 
 from tkinter import *
 from tkinter import messagebox
-import matplotlib.pyplot as plt
-import matplotlib as mpl
 import subprocess
 import os
 
@@ -89,7 +87,7 @@ class Application(Frame):
         try:
             if os.path.getsize('./diag/doc_diag/diagrecap1.txt'):
                 print("+ File 'Diag' exist (add)!")
-                subprocess.call('./diag/doc_diag/diag_write.py')
+                subprocess.run('./diag/doc_diag/diag_write.py', check=True)
         except FileNotFoundError as outmsg:
             print("+ Sorry, file 'Diag' not exist !", outmsg)
             print("+ File diag.txt created !")
@@ -104,7 +102,7 @@ class Application(Frame):
         try:
             if os.path.getsize('./diag/doc_diag/diagrecap1.txt'):
                 print("+ File 'Diag' exist (read)!")
-                subprocess.call('./diag/doc_diag/diag_read.py')
+                subprocess.run('./diag/doc_diag/diag_read.py', check=True)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'Diag' not exist !", outcom)
             self.confRec()
@@ -112,7 +110,7 @@ class Application(Frame):
     def confRec(self):
         self.MsgBox2msg = messagebox.showinfo("Warning", "File 'Diag'"
             "was created, but no Diagnosis has been checked !")
-        subprocess.call('./diag/doc_diag/diag_write.py')
+        subprocess.run('./diag/doc_diag/diag_write.py', check=True)
         
 if __name__=='__main__':
     app = Application()

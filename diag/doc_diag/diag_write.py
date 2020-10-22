@@ -108,7 +108,13 @@ buttonQuitter=Button(root, text="Quit", fg='white', bg='navy',
     bd=3, highlightbackground='grey17', command=quit)
 buttonQuitter.pack(side='right', padx=10, pady=10)
 
-importationFile('./diag/doc_diag/diagrecap1.txt',
-    encodage="Utf-8")
+try:
+    if os.path.getsize('./diag/doc_diag/diagrecap1.txt'):
+        importationFile('./diag/doc_diag/diagrecap1.txt', 
+            encodage="Utf-8")
+except FileNotFoundError as err_file:
+    print("+ File not found !")
+    messagebox.showwarning('WARNING', 'File does not exist \
+        or not found !')
 
 mainloop()

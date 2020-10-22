@@ -4,8 +4,6 @@
 
 from tkinter import *
 from tkinter import messagebox
-import matplotlib.pyplot as plt
-import matplotlib as mpl
 import subprocess
 import os
 

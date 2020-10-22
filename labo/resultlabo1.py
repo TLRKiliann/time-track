@@ -21,7 +21,7 @@ def sheetLabo():
     print(platform.system())
     
     if becall == 'Linux':
-        os.system('gio open "./labo/labosheet.pdf"') # Linux
+        os.system('gio open "/labo/labosheet.pdf"') # Linux
     elif becall =='Darwin':
         subprocess.call('open', './labo/labosheet.pdf' ) # Mac
     else:
