@@ -101,14 +101,12 @@ class Application(Frame):
                 subprocess.run('./vmed/doc_vmed/vmed_read.py', check=True)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'VMED' not exist !", outcom)
-            with open('./vmed/doc_vmed/resultvmed.txt', 'w') as file:
-                file.write("--- MEDICAL VISIT ---\n")
             self.confRec()
 
     def confRec(self):
-        self.MsgBox2msg = messagebox.showinfo("Warning", "File 'VMED'"
+        self.MsgBox2msg = messagebox.showinfo("Warning", "File 'VMED' "
             "was created, but no Medical Visit has been checked !")
-        subprocess.run('./diag/doc_diag/diag_write.py', check=True)
+        subprocess.run('./vmed/doc_vmed/vmed_write.py', check=True)
 
 if __name__=='__main__':
     app = Application()

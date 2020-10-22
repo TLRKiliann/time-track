@@ -9,41 +9,6 @@ import os
 import subprocess
 
 
-def retrieve_input():
-    file = open('./diag/doc_diag/diagrecap1.txt', 'a+')
-    file.write(textBox.get("1.0","end-1c") + "\n\n")
-    file.close()
-
-def messFromSafeButt():
-    MsgBox = messagebox.askquestion("Confirm","Are you sure ?\n"
-        "It will save all data !")
-    if MsgBox == 'yes':
-        retrieve_input()
-        textBox.insert(INSERT, "\n---Data saved !---")
-        print("+ Data saved !")
-    else:
-        textBox.insert(INSERT, "Nothing has been saved !")
-        print("+ Nothing has been saved !")
-
-def lectureFic():
-    file = open('./diag/doc_diag/diagrecap1.txt', 'r')
-    print(file.read())
-    file.close()
-    subprocess.call('./diag/doc_diag/diag_read.py')
-
-def ajouterText():
-    textBox.delete('1.0', END)
-    textBox.insert(INSERT, "En date du : ")
-    textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :") + '\n')
-    textBox.update()
-
-def importationFile(fichier, encodage="Utf-8"):
-    file = open(fichier, 'r', encoding=encodage)
-    content=file.readlines()
-    file.close()
-    for li in content:
-        textBox.insert(END, li)
-
 root=Tk()
 root.title("Diagnostics and ATCD")
 root.configure(background='cyan')
@@ -84,6 +49,41 @@ entrytext.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
 entryName=Entry(root, textvariable=entrytext, width=60)
 entryName.pack(padx=10, pady=10)
 
+def retrieve_input():
+    file = open('./diag/doc_diag/diagrecap1.txt', 'a+')
+    file.write(textBox.get("1.0","end-1c") + "\n\n")
+    file.close()
+
+def messFromSafeButt():
+    MsgBox = messagebox.askquestion("Confirm","Are you sure ?\n"
+        "It will save all data !")
+    if MsgBox == 'yes':
+        retrieve_input()
+        textBox.insert(INSERT, "\n---Data saved !---")
+        print("+ Data saved !")
+    else:
+        textBox.insert(INSERT, "Nothing has been saved !")
+        print("+ Nothing has been saved !")
+
+def lectureFic():
+    file = open('./diag/doc_diag/diagrecap1.txt', 'r')
+    print(file.read())
+    file.close()
+    subprocess.call('./diag/doc_diag/diag_read.py')
+
+def ajouterText():
+    textBox.delete('1.0', END)
+    textBox.insert(INSERT, "En date du : ")
+    textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :") + '\n')
+    textBox.update()
+
+def importationFile(fichier, encodage="Utf-8"):
+    file = open(fichier, 'r', encoding=encodage)
+    content=file.readlines()
+    file.close()
+    for li in content:
+        textBox.insert(END, li)
+
 textBox=Text(root, height=15, width=60, font=18, relief=SUNKEN)
 #textBox.insert(INSERT, "En date du : ")
 #textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :\n"))
@@ -114,8 +114,7 @@ try:
         importationFile('./diag/doc_diag/diagrecap1.txt', 
             encodage="Utf-8")
 except FileNotFoundError as err_file:
-    print("+ File not found !")
-    messagebox.showwarning('WARNING', 'File does not exist \
-        or not found !')
+    print("+ File not found !", err_file)
+    messagebox.showwarning('WARNING', 'File does not exist or not found !')
 
 mainloop()

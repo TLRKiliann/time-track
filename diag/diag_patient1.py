@@ -105,16 +105,13 @@ class Application(Frame):
                 subprocess.run('./diag/doc_diag/diag_read.py', check=True)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'Diag' not exist !", outcom)
-            with open('./diag/doc_diag/diagrecap1.txt', 'w') as file:
-                file.write("--- Diagnostics ---\n")
             self.confRec()
 
     def confRec(self):
-        self.MsgBox2msg = messagebox.showinfo("Warning", "File 'Diag'"
+        self.MsgBox2msg = messagebox.showinfo("Warning", "File 'Diag' "
             "was created, but no Diagnosis has been checked !")
         subprocess.run('./diag/doc_diag/diag_write.py', check=True)
         
 if __name__=='__main__':
     app = Application()
     app.mainloop()
-    
