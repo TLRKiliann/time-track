@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-#!-*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 
 from tkinter import *
 from tkinter import messagebox
-import subprocess
 import os
+import subprocess
 
 
 # La ScrollBar en class! Préparation pour l'application.
@@ -62,13 +62,15 @@ class Application(Frame):
         # Création des boutons
         self.x2, self.y2 = 200, 250
         self.b2=Button(self.can, width=10, font=16, bg='RoyalBlue3', fg='gold',
-            activebackground='dark turquoise', bd=3, highlightbackground='grey17', 
+            activebackground='dark turquoise', bd=3, 
+            highlightbackground='light sky blue', 
             text="Add", command=self.Frame_Ap1)
         self.fb2=self.can.create_window(self.x2, self.y2, window=self.b2)
 
         self.x3, self.y3 = 400, 250
         self.b3=Button(self.can, width=10, font=16, bg='RoyalBlue3', fg='gold',
-            activebackground='dark turquoise', bd=3, highlightbackground='grey17', 
+            activebackground='dark turquoise', bd=3, 
+            highlightbackground='light sky blue', 
             text="Read", command=self.Frame_Ap2)
         self.fb3=self.can.create_window(self.x3, self.y3, window=self.b3)
         self.pack()
@@ -85,12 +87,12 @@ class Application(Frame):
         try:
             if os.path.getsize('./diag/doc_diag22/diagrecap22.txt'):
                 print("+ File 'Diag' exist (add)!")
-                subprocess.call('./diag/doc_diag22/diag_write.py')
+                subprocess.run('./diag/doc_diag22/diag_write.py', check=True)
         except FileNotFoundError as outmsg:
             print("+ Sorry, file 'Diag' not exist !", outmsg)
             print("+ File diag.txt created !")
             with open('./diag/doc_diag22/diagrecap22.txt', 'w') as file:
-                file.write("--- Diagnostics ---\n")
+                file.write("--- DIAGNOSTICS ---\n")
             self.confRec()
 
     def Frame_Ap2(self):
@@ -100,17 +102,16 @@ class Application(Frame):
         try:
             if os.path.getsize('./diag/doc_diag22/diagrecap22.txt'):
                 print("+ File 'Diag' exist (read)!")
-                subprocess.call('./diag/doc_diag22/diag_read.py')
+                subprocess.run('./diag/doc_diag22/diag_read.py', check=True)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'Diag' not exist !", outcom)
             self.confRec()
 
     def confRec(self):
-        self.MsgBox2msg = messagebox.showinfo("Warning", "File 'Diag'"
+        self.MsgBox2msg = messagebox.showinfo("Warning", "File 'Diag' "
             "was created, but no Diagnosis has been checked !")
-        subprocess.call('./diag/doc_diag22/diag_write.py')
-
+        subprocess.run('./diag/doc_diag22/diag_write.py', check=True)
+        
 if __name__=='__main__':
     app = Application()
     app.mainloop()
-    
