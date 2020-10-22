@@ -5,9 +5,8 @@
 import tkinter
 from tkinter import *
 from tkinter import messagebox
-import subprocess
-import os
 import time
+import os
 
 
 root=Tk()
@@ -136,6 +135,11 @@ buttonQuitter=Button(root, text="Quit", fg='white', bg='navy',
     bd=3, highlightbackground='grey17', command=quit)
 buttonQuitter.pack(side='right', padx=10, pady=10)
 
-importationFile('./14besoins/doc_suivi/patient1_14b.txt', encodage='Utf-8')
+try:
+    if os.path.getsize('./14besoins/doc_suivi/patient1_14b.txt'):
+        importationFile('./14besoins/doc_suivi/patient1_14b.txt', encodage='Utf-8')
+except FileNotFoundError as err_nffile:
+    print("+ File not found !", err_nffile)
+    messagebox.showwarning("WARNING", "File does not exist or file not found !")
 
 mainloop()
