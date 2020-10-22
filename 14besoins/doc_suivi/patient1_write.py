@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 
 import tkinter
@@ -9,6 +9,48 @@ import subprocess
 import os
 import time
 
+
+root=Tk()
+root.title("Care and monitoring")
+root.configure(background='cyan')
+
+# To place side by side labelo + entrylab
+top = Frame(root, bg='cyan')
+bottom = Frame(root, bg='cyan')
+top.pack(side=TOP)
+bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
+
+labelo=Label(root, text="Care and monitoring : ",
+    font='Times 18 bold', fg='navy', bg='cyan')
+labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
+
+labelallergy=Label(root, text="Allergy",
+    font='Arial 18 bold', fg='coral', bg='cyan')
+labelallergy.pack(padx=5, pady=5)
+
+# To read name in Entry widget
+with open('./newpatient/entryfile.txt', 'r') as filename:
+    line1=filename.readline()
+
+text_name=StringVar()
+Entryname=Entry(root, textvariable=text_name)
+text_name.set(line1)
+Entryname.pack(in_=top, side=LEFT, padx=10, pady=20)
+
+# To read allergy in Entry widget
+with open('./allergy/allergyfile.txt', 'r') as allerfile:
+    lineA1=allerfile.readline()
+    lineA2=allerfile.readline()
+    lineA3=allerfile.readline()
+    lineA4=allerfile.readline()
+    lineA5=allerfile.readline()
+    lineA6=allerfile.readline()
+    lineA7=allerfile.readline()
+
+text_aller=StringVar()
+text_aller.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
+Entryaller=Entry(root, textvariable=text_aller, width=60)
+Entryaller.pack(padx=10, pady=5)
 
 def saveData():
     """
@@ -69,49 +111,6 @@ def importationFile(fichier, encodage="Utf-8"):
     except FileNotFoundError as outcom:
         print("+ Sorry, file 'main_14b.txt' not exist !", outcom)
 
-root=Tk()
-root.title("Care and monitoring")
-root.configure(background='cyan')
-
-# To place side by side labelo + entrylab
-top = Frame(root, bg='cyan')
-bottom = Frame(root, bg='cyan')
-top.pack(side=TOP)
-bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
-
-labelo=Label(root, text="Care and monitoring : ",
-    font='Times 18 bold', fg='navy', bg='cyan')
-labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
-
-labelallergy=Label(root, text="Allergy",
-    font='Arial 18 bold', fg='coral', bg='cyan')
-labelallergy.pack(padx=5, pady=5)
-
-# To read name in Entry widget
-with open('./newpatient/entryfile.txt', 'r') as filename:
-    line1=filename.readline()
-
-text_name=StringVar()
-Entryname=Entry(root, textvariable=text_name)
-text_name.set(line1)
-Entryname.pack(in_=top, side=LEFT, padx=10, pady=20)
-
-# To read allergy in Entry widget
-with open('./allergy/allergyfile.txt', 'r') as allerfile:
-    lineA1=allerfile.readline()
-    lineA2=allerfile.readline()
-    lineA3=allerfile.readline()
-    lineA4=allerfile.readline()
-    lineA5=allerfile.readline()
-    lineA6=allerfile.readline()
-    lineA7=allerfile.readline()
-
-text_aller=StringVar()
-text_aller.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
-Entryaller=Entry(root, textvariable=text_aller, width=60)
-Entryaller.pack(padx=10, pady=5)
-
-# Here that's ok
 textBox=Text(root, height=15, width=60, font=18, relief=SUNKEN)
 #textBox.insert(INSERT, "En date du : ")
 #textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :"))
