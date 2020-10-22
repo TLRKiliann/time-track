@@ -1,12 +1,55 @@
 #!/usr/bin/python3
-# -*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 
 from tkinter import *
-import subprocess
-import time
 from tkinter import messagebox
+import time
+import os
+import subprocess
 
+
+root=Tk()
+root.title("Results of Medical Visit")
+root.configure(background='cyan')
+
+# To place side by side labelo + entrylab
+top = Frame(root, bg='cyan')
+bottom = Frame(root, bg='cyan')
+top.pack(side=TOP)
+bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
+
+labelo=Label(root, text="Results of Medical Visit for : ",
+    font='Arial 18 bold', fg='navy', bg='cyan')
+labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
+
+# To read name in Entry widget
+with open('./newpatient/entryfile18.txt', 'r') as filename:
+    line1=filename.readline()
+
+text_name=StringVar()
+Entryname=Entry(root, textvariable=text_name)
+text_name.set(line1)
+Entryname.pack(in_=top, side=LEFT, padx=10, pady=20)
+
+labelallergy=Label(root, text="Allergy",
+    font='Arial 18 bold', fg='coral', bg='cyan')
+labelallergy.pack(padx=5, pady=5)
+
+# To read allergy in Entry widget
+with open('./allergy/allergyfile18.txt', 'r') as allerfile:
+    lineA1=allerfile.readline()
+    lineA2=allerfile.readline()
+    lineA3=allerfile.readline()
+    lineA4=allerfile.readline()
+    lineA5=allerfile.readline()
+    lineA6=allerfile.readline()
+    lineA7=allerfile.readline()
+
+text_all=StringVar()
+text_all.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
+Entryaller=Entry(root, textvariable=text_all, width=60)
+Entryaller.pack(padx=10, pady=5)
 
 def saveData():
     """
@@ -14,7 +57,7 @@ def saveData():
     exist or not. Already test
     it before.
     """
-    with open('./vmed/doc_vmed18/resultvmed.txt', 'a+') as filerecord:
+    with open('./vmed/doc_vmed18/resultvmed18.txt', 'a+') as filerecord:
         filerecord.write(textBox.get("1.0", "end-1c"))
         filerecord.write(str('\n\n'))
 
@@ -37,7 +80,7 @@ def readerFile():
     """
     To read into the txt file.
     """
-    with open('./vmed/doc_vmed18/resultvmed.txt', 'r') as filereader:
+    with open('./vmed/doc_vmed18/resultvmed18.txt', 'r') as filereader:
         print(filereader.read())
     subprocess.call('./vmed/doc_vmed18/vmed_read.py')
 
@@ -62,51 +105,9 @@ def importationFile(fichier, encodage="Utf-8"):
     for li in content:
         textBox.insert(END, li)
 
-# To read name in Entry widget
-with open('./newpatient/entryfile18.txt', 'r') as filename:
-    line1=filename.readline()
-
-# To read allergy in Entry widget
-with open('./allergy/allergyfile18.txt', 'r') as allerfile:
-    lineA1=allerfile.readline()
-    lineA2=allerfile.readline()
-    lineA3=allerfile.readline()
-    lineA4=allerfile.readline()
-    lineA5=allerfile.readline()
-    lineA6=allerfile.readline()
-    lineA7=allerfile.readline()
-
-root=Tk()
-root.title("Results of Medical Visit")
-root.configure(background='cyan')
-
-# To place side by side labelo + entrylab
-top = Frame(root, bg='cyan')
-bottom = Frame(root, bg='cyan')
-top.pack(side=TOP)
-bottom.pack(side=BOTTOM, fill=BOTH, expand=YES)
-
-labelo=Label(root, text="Results of Medical Visit for : ",
-    font='Arial 18 bold', fg='navy', bg='cyan')
-labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
-
-text_name=StringVar()
-Entryname=Entry(root, textvariable=text_name)
-text_name.set(line1)
-Entryname.pack(in_=top, side=LEFT, padx=10, pady=20)
-
-labelallergy=Label(root, text="Allergy",
-    font='Arial 18 bold', fg='coral', bg='cyan')
-labelallergy.pack(padx=5, pady=5)
-
-text_all=StringVar()
-text_all.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
-Entryaller=Entry(root, textvariable=text_all, width=60)
-Entryaller.pack(padx=10, pady=5)
-
 textBox=Text(root, height=15, width=60, font=18, relief=SUNKEN)
-textBox.insert(INSERT, "\nEn date du : ")
-textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :\n"))
+#textBox.insert(INSERT, "\nEn date du : ")
+#textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :\n"))
 textBox.pack(padx=30, pady=30)
 
 buttonLire=Button(root, text="Read", width=8, bd=3,
@@ -130,7 +131,13 @@ buttonQuitter=Button(root, text="Quit", width=8, bd=3,
     activebackground='red', command=quit)
 buttonQuitter.pack(side='right', padx=10, pady=10)
 
-importationFile('./vmed/doc_vmed18/resultvmed.txt',
-    encodage="Utf-8")
+try:
+    if os.path.getsize('./vmed/doc_vmed18/resultvmed18.txt'):
+        importationFile('./vmed/doc_vmed18/resultvmed18.txt',
+            encodage="Utf-8")
+except FileNotFoundError as err_file:
+    print("+ File not found !", err_file)
+    messagebox.showwarning("WARNING", "File does not exist "
+        "or not found !")
 
 mainloop()
