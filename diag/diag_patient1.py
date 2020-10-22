@@ -4,8 +4,8 @@
 
 from tkinter import *
 from tkinter import messagebox
-import subprocess
 import os
+import subprocess
 
 
 # La ScrollBar en class! Préparation pour l'application.
@@ -105,6 +105,8 @@ class Application(Frame):
                 subprocess.run('./diag/doc_diag/diag_read.py', check=True)
         except FileNotFoundError as outcom:
             print("+ Sorry, file 'Diag' not exist !", outcom)
+            with open('./diag/doc_diag/diagrecap1.txt', 'w') as file:
+                file.write("--- Diagnostics ---\n")
             self.confRec()
 
     def confRec(self):
