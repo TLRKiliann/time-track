@@ -1,16 +1,12 @@
 #!/usr/bin/python3
-# -*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 
 from tkinter import *
+from tkinter import messagebox
+import os
+import subprocess
 
-
-def importationFile(fichier, encodage="Utf-8"):
-    file = open(fichier, 'r', encoding=encodage)
-    content=file.readlines()
-    file.close()
-    for li in content:
-        textBox.insert(END, li)
 
 fen=Tk()
 fen.title("Diagnostics and ATCD")
@@ -27,7 +23,7 @@ labelo=Label(fen, text="Diagnostics and ATCD for : ",
 labelo.pack(in_=top, side=LEFT, padx=5, pady=20)
 
 with open('./newpatient/entryfile15.txt', 'r') as filename:
-	line1=filename.readline()
+    line1=filename.readline()
 
 entrytext=StringVar()
 entrytext.set(line1)
@@ -52,6 +48,13 @@ entrytext.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
 entryName=Entry(fen, textvariable=entrytext, width=60)
 entryName.pack(padx=10, pady=10)
 
+def importationFile(fichier, encodage="Utf-8"):
+    file = open(fichier, 'r', encoding=encodage)
+    content=file.readlines()
+    file.close()
+    for li in content:
+        textBox.insert(END, li)
+
 textBox=Text(fen, height=15, width=60, font=18, relief=SUNKEN)
 textBox.pack(padx=30, pady=30)
 
@@ -60,7 +63,13 @@ buttonClose=Button(fen, text="Quit", fg='white', width=10, bd=3,
     highlightbackground='grey17', command=quit)
 buttonClose.pack(side='right', padx=10, pady=10)
 
-importationFile('./diag/doc_diag15/diagrecap15.txt',
-    encodage="Utf-8")
+try:
+    if os.path.getsize('./diag/doc_diag15/diagrecap15.txt'):
+        importationFile('./diag/doc_diag15/diagrecap15.txt',
+            encodage="Utf-8")
+except FileNotFoundError as err_file:
+    print("+ File not found !", err_file)
+    messagebox.showwarning("WARNING", "File does not exist or "
+        "file not found !")
 
 fen.mainloop()
