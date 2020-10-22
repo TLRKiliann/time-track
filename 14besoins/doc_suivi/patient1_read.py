@@ -65,10 +65,10 @@ buttonClose=Button(fen, text="Quit", fg='white', width=10, bd=3,
 buttonClose.pack(side='right', padx=10, pady=10)
 
 try:
-	if os.path.getsize('./14besoins/doc_suivi/main_14b.txt'):
-		importationFile('./14besoins/doc_suivi/main_14b.txt', encodage="Utf-8")
+    if os.path.getsize('./14besoins/doc_suivi/main_14b.txt'):
+        importationFile('./14besoins/doc_suivi/main_14b.txt', encodage="Utf-8")
 except FileNotFoundError as file_reach:
-	print("+ File not found !", file_reach)
-	messagebox.showwarning("WARNING", "File does not exist or file not found !")
+    print("+ File not found !", file_reach)
+    messagebox.showwarning("WARNING", "File does not exist or file not found !")
 
 fen.mainloop()
