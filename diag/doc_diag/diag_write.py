@@ -115,6 +115,7 @@ try:
             encodage="Utf-8")
 except FileNotFoundError as err_file:
     print("+ File not found !", err_file)
-    messagebox.showwarning('WARNING', 'File does not exist or not found !')
+    messagebox.showwarning("WARNING", "File does not exist or " 
+        "file not found !")
 
 mainloop()

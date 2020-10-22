@@ -1,1 +1,13 @@
 --- MEDICAL VISIT ---
+En date du : 22/10/2020 à 13:13:47 :
+test1
+test2
+test3
+test4
+
+En date du : 22/10/2020 à 13:14:41 :
+test5
+test6
+test7
+test8
+
