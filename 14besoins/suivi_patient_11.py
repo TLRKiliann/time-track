@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#!-*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 
 from tkinter import *
@@ -82,7 +82,7 @@ class Application(Frame):
         try:
             if os.path.getsize('./14besoins/doc_suivi11/patient11_14b.txt'):
                 print("+ File '14 needs' exist (add)!")
-                subprocess.call('./14besoins/doc_suivi11/patient11_write.py')
+                subprocess.run('./14besoins/doc_suivi11/patient11_write.py', check=True)
         except FileNotFoundError as outmsg:
             print("+ Sorry, file '14 needs' not exist !", outmsg)
             self.commentFileRecNeeds()
@@ -95,7 +95,7 @@ class Application(Frame):
         try:
             if os.path.getsize('./14besoins/doc_suivi11/patient11_14b.txt'):
                 print("+ File '14 needs' exist (read)!")
-                subprocess.call('./14besoins/doc_suivi11/patient11_read.py')
+                subprocess.run('./14besoins/doc_suivi11/patient11_read.py', check=True)
         except FileNotFoundError as outnote:
             print("+ Sorry, file '14 needs' not exist !", outnote)
             self.commentFileRecNeeds()
