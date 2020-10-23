@@ -13,7 +13,7 @@ gui.configure(bg='cyan')
 #gui.geometry('250x200')
 
 labelName = Label(gui)
-labelName = Label(text='Enter Allergy', font="Times 16 bold", 
+labelName = Label(text='Enter Allergy', font="Times 16 bold",
     fg='navy', bg='cyan')
 labelName.pack(pady=10)
 
@@ -51,7 +51,7 @@ bouton1 = Button(gui, text="Save", width=8, bd=3, fg='yellow', bg='RoyalBlue3',
     command = lambda: get(Allpatient, entryall))
 bouton1.pack(side=LEFT, padx=10, pady=20)
 
-buttQuit=Button(gui, text="Quit", width=8, bd=3, fg='white', bg='RoyalBlue3', 
+buttQuit=Button(gui, text="Quit", width=8, bd=3, fg='white', bg='RoyalBlue3',
     highlightbackground='cyan', activebackground='dark turquoise',
     command=quit)
 buttQuit.pack(padx=10, pady=20)
