@@ -65,3 +65,10 @@ truc1
 + Surveillance propreté et/ou téguments requise
 truc2
 
+En date du : 23/10/2020 à 12:00:26 :
+Patient name : exec tech
++ Surveillance de la température requise
++ Surveillance pour éviter les dangers requise
++ Stimulation ou aide pour la communication requise
+---
+

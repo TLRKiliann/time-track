@@ -13,3 +13,12 @@ Patient name : exec tech
 + Surveillance propreté et/ou téguments requise
 ---
 
+---####-|--- Affichage des besoins du patient à surveiller ---|-####---
+
+En date du : 23/10/2020 à 12:00:26 :
+Patient name : exec tech
++ Surveillance de la température requise
++ Surveillance pour éviter les dangers requise
++ Stimulation ou aide pour la communication requise
+---
+
