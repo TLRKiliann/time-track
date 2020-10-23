@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 
 from tkinter import *
@@ -11,6 +11,16 @@ gui=Tk()
 gui.title("Enter Allergy")
 gui.configure(bg='cyan')
 #gui.geometry('250x200')
+
+labelName = Label(gui)
+labelName = Label(text='Enter Allergy', font="Times 16 bold", 
+    fg='navy', bg='cyan')
+labelName.pack(pady=10)
+
+Allpatient=StringVar()
+Allpatient.set('Allergy (no-food)')
+entryall = Entry(gui, textvariable=Allpatient, highlightbackground='gray', bd=4)
+entryall.pack(pady=10)
 
 def get(Allpatient, entryall):
     MsgBox = messagebox.askyesno('Save data', 'Data saved !')
@@ -35,16 +45,6 @@ def get(Allpatient, entryall):
                 gui.destroy()
     else:           
         NoforQ = messagebox.showinfo('Return', 'Data not saved')
-
-labelName = Label(gui)
-labelName = Label(text='Enter Allergy', font="Times 16 bold", 
-    fg='navy', bg='cyan')
-labelName.pack(pady=10)
-
-Allpatient=StringVar()
-Allpatient.set('Allergy (no-food)')
-entryall = Entry(gui, textvariable=Allpatient, highlightbackground='gray', bd=4)
-entryall.pack(pady=10)
 
 bouton1 = Button(gui, text="Save", width=8, bd=3, fg='yellow', bg='RoyalBlue3',
     highlightbackground='cyan', activebackground='dark turquoise',
