@@ -1,73 +1,14 @@
 #!/usr/bin/python3
-# -*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 
 import tkinter
 from tkinter import *
 from tkinter import messagebox
-import subprocess
-import os
 import time
+import os
+import subprocess
 
-
-def saveData():
-    """
-    To record data from result4.txt
-    and from patient4_14b.txt into 
-    txt main file
-    """
-    try:        
-        if os.path.getsize('./14besoins/doc_suivi4/main_14b.txt'):
-            print("+ File 'main_14b.txt' exist !")
-            with open('./14besoins/doc_suivi4/main_14b.txt', 'a+') as namefile:
-                namefile.write(textBox.get("0.0", "end-1c") + '\n\n')
-    except FileNotFoundError as outcom:
-        print("+ Sorry, file 'main_14b.txt' not exist !")
-        print(str(outcom))
-        print("+ File 'main_14b.txt' created !")
-        with open('./14besoins/doc_suivi4/main_14b.txt', 'a+') as namefile:
-            namefile.write(textBox.get("0.0", "end-1c") + '\n\n')
-
-def messFromSafeButt():
-    MsgBox = messagebox.askquestion("Confirm","Are you sure ?\n"
-        "It will save all data !")
-    if MsgBox == 'yes':
-        saveData()
-        textBox.insert(INSERT, "\n---Data saved !---")
-        print("+ Data saved !")
-    else:
-        textBox.insert(INSERT, "\n---Nothing has been saved !---")
-        print("+ Nothing has been saved !")
-
-def lectureFic():
-    with open('./14besoins/doc_suivi4/patient4_14b.txt', 'r') as f1read:
-        print(f1read.read())
-    subprocess.call('./14besoins/doc_suivi4/patient4_read.py')
-
-def ajouterText():
-    """
-    To retrieve data 
-    from initial textBox() 
-    """
-    textBox.delete('0.0', END)
-    textBox.insert(INSERT, "En date du : ")
-    textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :\n"))
-    textBox.update()
-
-def importationFile(fichier, encodage="Utf-8"):
-    """
-    To test if txt
-    patient exist
-    """
-    try:        
-        if os.path.getsize(fichier):
-            print("+ File 'patient4_14b.txt' exist !")
-            with open(fichier, 'r', encoding=encodage) as fileneeds:
-                content=fileneeds.readlines()
-                for li in content:
-                    textBox.insert(END, li)
-    except FileNotFoundError as outcom:
-        print("+ Sorry, file 'patient4_14b.txt' not exist !", outcom)
 
 root=Tk()
 root.title("Care and monitoring")
@@ -111,7 +52,68 @@ text_aller.set(lineA1 + ', ' + lineA3 + ', ' + lineA5 + ', ' + lineA7)
 Entryaller=Entry(root, textvariable=text_aller, width=60)
 Entryaller.pack(padx=10, pady=5)
 
+def saveData():
+    """
+    To record data from result.txt
+    and from patient4_14b.txt into 
+    txt main file
+    """
+    try:        
+        if os.path.getsize('./14besoins/doc_suivi4/main_14b.txt'):
+            print("+ File 'main_14b.txt' exist !")
+            with open('./14besoins/doc_suivi4/main_14b.txt', 'a+') as namefile:
+                namefile.write(textBox.get("0.0", "end-1c") + '\n\n')
+    except FileNotFoundError as outcom:
+        print("+ Sorry, file 'main_14b.txt' not exist !")
+        print(str(outcom))
+        print("+ File 'main_14b.txt' created !")
+        with open('./14besoins/doc_suivi4/main_14b.txt', 'a+') as namefile:
+            namefile.write(textBox.get("0.0", "end-1c") + '\n\n')
+
+def messFromSafeButt():
+    MsgBox = messagebox.askquestion("Confirm","Are you sure ?\n"
+        "It will save all data !")
+    if MsgBox == 'yes':
+        saveData()
+        textBox.insert(INSERT, "\n---Data saved !---")
+        print("+ Data saved !")
+    else:
+        textBox.insert(INSERT, "\n---Nothing has been saved !---")
+        print("+ Nothing has been saved !")
+
+def lectureFic():
+    with open('./14besoins/doc_suivi4/patient4_14b.txt', 'r') as f1read:
+        print(f1read.read())
+    subprocess.run('./14besoins/doc_suivi4/patient4_read.py', check=True)
+
+def ajouterText():
+    """
+    To retrieve data 
+    from initial textBox() 
+    """
+    textBox.delete('0.0', END)
+    textBox.insert(INSERT, "En date du : ")
+    textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :\n"))
+    textBox.update()
+
+def importationFile(fichier, encodage="Utf-8"):
+    """
+    To test if txt
+    patient exist
+    """
+    try:        
+        if os.path.getsize(fichier):
+            print("+ File 'patient4_14b.txt' exist !")
+            with open(fichier, 'r', encoding=encodage) as fileneeds:
+                content=fileneeds.readlines()
+                for li in content:
+                    textBox.insert(END, li)
+    except FileNotFoundError as outcom:
+        print("+ Sorry, file 'main_14b.txt' not exist !", outcom)
+
 textBox=Text(root, height=15, width=60, font=18, relief=SUNKEN)
+#textBox.insert(INSERT, "En date du : ")
+#textBox.insert(END, time.strftime("%d/%m/%Y à %H:%M:%S :"))
 textBox.pack(padx=30, pady=30)
 
 buttonLire=Button(root, text="Read", fg='cyan', bg='navy',
@@ -134,6 +136,11 @@ buttonQuitter=Button(root, text="Quit", fg='white', bg='navy',
     bd=3, highlightbackground='grey17', command=quit)
 buttonQuitter.pack(side='right', padx=10, pady=10)
 
-importationFile('./14besoins/doc_suivi4/patient4_14b.txt', encodage='Utf-8')
+try:
+    if os.path.getsize('./14besoins/doc_suivi4/patient4_14b.txt'):
+        importationFile('./14besoins/doc_suivi4/patient4_14b.txt', encodage='Utf-8')
+except FileNotFoundError as err_nffile:
+    print("+ File not found !", err_nffile)
+    messagebox.showwarning("WARNING", "File does not exist or file not found !")
 
 mainloop()

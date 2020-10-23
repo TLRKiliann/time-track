@@ -7,6 +7,7 @@ from tkinter import *
 from tkinter import messagebox
 import time
 import os
+import subprocess
 
 
 root=Tk()
@@ -83,7 +84,7 @@ def messFromSafeButt():
 def lectureFic():
     with open('./14besoins/doc_suivi/patient1_14b.txt', 'r') as f1read:
         print(f1read.read())
-    subprocess.call('./14besoins/doc_suivi/patient1_read.py')
+    subprocess.run('./14besoins/doc_suivi/patient1_read.py', check=True)
 
 def ajouterText():
     """

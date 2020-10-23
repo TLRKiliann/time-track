@@ -55,3 +55,13 @@ truc2
 En date du : 18/10/2020 à 12:48:53 :
 truc 3
 
+En date du : 23/10/2020 à 11:30:40 :
+ok tout roule...
+
+En date du : 23/10/2020 à 11:33:38 :
+Patient name : exec tech
++ Surveillance pour éviter les dangers requise
+truc1
++ Surveillance propreté et/ou téguments requise
+truc2
+
