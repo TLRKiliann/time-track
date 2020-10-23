@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# -*- coding:utf-8 -*-
+# -*- coding: utf-8 -*-
 
 
 from tkinter import *
@@ -10,6 +10,19 @@ import time
 fen = Tk()
 fen.title("14 needs")
 fen.configure(bg='RoyalBlue4')
+
+labeltite=Label(fen, text='14 NEEDS', 
+    font="Times 16 bold", width=10,
+    height=3, bg='RoyalBlue4', fg='cyan')
+labeltite.grid(sticky='w', row=0, column=0, padx=20)
+
+with open('./newpatient/entryfile23.txt', 'r') as filename:
+    line1=filename.readline()
+
+textname=StringVar()
+entryName=Entry(fen, textvariable=textname)
+textname.set(line1)
+entryName.grid(sticky='e', row=0, column=0, padx=30, pady=20)
 
 def recordTofile():
     MsgBox = messagebox.askyesno('Record', 'Results will be saved into Care and Monitoring, ok ?')
@@ -143,7 +156,6 @@ def recordOption():
             with open('./14besoins/doc_suivi23/main_14b.txt', 'a+') as file_2:
                 file.write("+ Agir pour aider la personne dans ses valeurs et croyances\n")
                 file_2.write("+ Agir pour aider la personne dans ses valeurs et croyances\n")
-
     else:
         print("Nothing to do")
 
@@ -154,7 +166,6 @@ def recordOption():
             with open('./14besoins/doc_suivi23/main_14b.txt', 'a+') as file_2:
                 file.write("+ Accompagner ou aider la personne à se réaliser\n")
                 file_2.write("+ Accompagner ou aider la personne à se réaliser\n")
-
     else:
         print("Nothing to do")
 
@@ -184,20 +195,7 @@ def recordOption():
             file_2.write("---\n\n")
 
 def confRec():
-    MsgBox2msg = messagebox.showinfo("Confirmation", "Record confirmed and finished !")
-
-labeltite=Label(fen, text='14 NEEDS', 
-    font="Times 16 bold", width=10,
-    height=3, bg='RoyalBlue4', fg='cyan')
-labeltite.grid(sticky='w', row=0, column=0, padx=20)
-
-with open('./newpatient/entryfile23.txt', 'r') as filename:
-    line1=filename.readline()
-
-textname=StringVar()
-entryName=Entry(fen, textvariable=textname)
-textname.set(line1)
-entryName.grid(sticky='e', row=0, column=0, padx=30, pady=20)
+    messagebox.showinfo("Confirmation", "Record confirmed and finished !")
 
 CheckVar1 = IntVar()
 C1 = Checkbutton(fen, text="Respirer", fg='navy', 
