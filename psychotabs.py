@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#!-*-encoding:Utf-8-*-
+# -*- coding: utf-8 -*-
 
 from tkinter import *
    
