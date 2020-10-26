@@ -29,7 +29,7 @@ def callResident(self):
 
     # Display date
     self.x1, self.y1 = 1065, 70
-    self.Date_write=Entry(self.can)
+    #self.Date_write=Entry(self.can)
     self.data_time=StringVar()
     self.Date_write=Entry(self.can, textvariable=self.data_time, width=10,
         highlightbackground='grey', bd=4)
@@ -61,7 +61,7 @@ def callResident(self):
         bg='RoyalBlue3', fg='cyan', activebackground='dark turquoise',
         activeforeground='white', text="Add patient", command=self.addPatientAfter)
     self.fb4=self.can.create_window(self.x4, self.y4, window=self.b4)
-    
+
     # To refresh canvas + menu bar
     self.x5, self.y5 = 600, 160
     self.b5=Button(self.can, width=10, font=16, bd=3, bg='RoyalBlue3',
@@ -73,7 +73,7 @@ def callResident(self):
     # To delete one patient and all files
     self.x6, self.y6 = 800, 160
     self.b6=Button(self.can, width=10, font=16, bd=3, highlightbackground='blue',
-        bg='RoyalBlue3', fg='coral', activebackground='red', 
+        bg='RoyalBlue3', fg='coral', activebackground='red',
         activeforeground='white', text="Delete patient", command=self.delEverPat)
     self.fb6=self.can.create_window(self.x6, self.y6, window=self.b6)
 
@@ -93,7 +93,7 @@ def callResident(self):
 
     self.data_time=line1
     self.x10, self.y10 = 129, 230
-    self.Data_write=Entry(self.can)
+    #self.Data_write=Entry(self.can)
     self.new_data1=StringVar()
     self.Data_write=Entry(self.can, textvariable=self.new_data1,
         highlightbackground='grey', bd=4)

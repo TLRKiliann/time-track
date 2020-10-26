@@ -910,11 +910,11 @@ class MenuBar(Frame):
             menu=mePrint)
 
         # Menu for showing all Graphs togather per patient 
-        self.cmd_Graph=Menubutton(self, text='Global', font=("Times 14"), fg='cyan',
+        self.cmd_backup=Menubutton(self, text='Global', font=("Times 14"), fg='cyan',
             bg='grey30', relief=GROOVE)
-        self.cmd_Graph.pack(side=LEFT, padx=3)
+        self.cmd_backup.pack(side=LEFT, padx=3)
         # drop-down portion of Graphics menu
-        me1 = Menu(self.cmd_Graph)
+        me1 = Menu(self.cmd_backup)
         me2=Menu(me1)
         me2.add_command(label='All Files.txt', underline=0, font=('Times 12'),
             background='black', activebackground='cyan',
@@ -1102,7 +1102,7 @@ class MenuBar(Frame):
             background='black', foreground='cyan', 
             activeforeground='black', activebackground='cyan', menu=me25)
         # Integration of Graph menu
-        self.cmd_Graph.configure(activeforeground='black', activebackground='cyan', menu=me1)
+        self.cmd_backup.configure(activeforeground='black', activebackground='cyan', menu=me1)
 
 # Application principale (Main app)
 class Application(Frame):
@@ -1157,7 +1157,7 @@ class Application(Frame):
         self.button3_window = self.can.create_window(790, 550, anchor=CENTER,
             window=self.button3)
         self.pack()
-        
+
     # Method to reconfigure scrollbar every time.
     def onFrameConfigure(self, event):
         '''Reset the scroll region to encompass the inner frame'''
@@ -1262,8 +1262,8 @@ class Application(Frame):
         self.lab5=Label(self.labFra, justify=LEFT, fg='cyan',
             bg='grey22', font=('Times', 14),
             text="\nMenu Bar and Synopsis are the most usefull skills\n"
-            "to perform onto this app ! If you need help, you\n" 
-            "can go to MapApp to access map of this app and\n" 
+            "to perform onto this app ! If you need help, you\n"
+            "can go to MapApp to access map of this app and\n"
             "understand how the app is used.\n\n"
             "Enjoy it ! ;)\n").pack(padx=10)
         self.separator = Frame(self.labFra, height=2, bd=1, relief=SUNKEN)
@@ -2037,11 +2037,6 @@ class Application(Frame):
 
     def nutritionMenu24(self):
         subprocess.run('./nutrition/nutrit_patient24.py', check=True)
-    
-    """
-    def newsTextBox(self):
-        self.can.textBox = Text(app, text = "")
-    """
 
     # To acces files into Backup folder
     def allFilesBackup(self):
