@@ -2,6 +2,12 @@
 # -*-encoding:Utf-8-*-
 
 
+"""
+    To display table of medication
+    into a grid interface.
+"""
+
+
 from tkinter import *
 from string import ascii_lowercase
 import json
@@ -189,6 +195,9 @@ for nightm in list6:
 print("\nThat seems correct!\n")
 
 class app(Frame):
+    """
+        A loop to catch value one after one more into grid.
+    """
     def __init__(self, master = None):
         Frame.__init__(self, master)
         self.text_name=StringVar()
@@ -264,7 +273,7 @@ class app(Frame):
                 self.entries[20].insert(0, list3[1])
                 self.entries[21].insert(0, list4[1])
                 self.entries[22].insert(0, list5[1])
-                self.entries[23].insert(0, list6[1]) 
+                self.entries[23].insert(0, list6[1])
 
                 self.entries[24].insert(0, liststart[2])
                 self.entries[25].insert(0, listend[2])
