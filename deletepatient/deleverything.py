@@ -285,7 +285,7 @@ def get(Nompatient, entree):
     gui.destroy()
 
 gui=Tk()
-gui.title("Enter new patient")
+gui.title("Delete patient")
 gui.configure(bg='cyan')
 #gui.geometry('300x200')
 
