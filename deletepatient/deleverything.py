@@ -280,7 +280,7 @@ def get(Nompatient, entree):
                     else:
                         print("End of test delete files.")
     else:           
-        NoforQ = messagebox.showinfo('Return', 'None file was found !')
+        messagebox.showinfo('Return', 'None file was found !')
 
     gui.destroy()
 

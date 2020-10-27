@@ -34,7 +34,7 @@ def get(Allpatient, entryall):
                 namefile.write(str('----------------\n'))
                 gui.destroy()
     else:     
-        NoforQ = messagebox.showinfo('Return', 'Data not saved')
+        messagebox.showinfo('Return', 'Data not saved')
 
 labelName = Label(gui)
 labelName = Label(text='Enter Allergy', font="Times 16 bold", 
